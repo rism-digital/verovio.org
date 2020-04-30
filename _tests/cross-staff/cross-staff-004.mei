@@ -142,7 +142,7 @@
 							</staff>
 							<staff xml:id="staff-L38F1" n="2">
 								<layer xml:id="layer-L38F1" n="1">
-									<mRest xml:id="mrest-000000063950376"/>
+									<mSpace xml:id="mrest-000000063950376"/>
 								</layer>
 							</staff>
 							<slur xml:id="slur-000000195990846" staff="1" startid="#note-L40F2" endid="#note-L65F2" curvedir="above"/>
@@ -166,7 +166,7 @@
 							</staff>
 							<staff xml:id="staff-L46F1" n="2">
 								<layer xml:id="layer-L46F1" n="1">
-									<mRest xml:id="mrest-000000056824717"/>
+									<mSpace xml:id="mrest-000000056824717"/>
 								</layer>
 							</staff>
 						</measure>
