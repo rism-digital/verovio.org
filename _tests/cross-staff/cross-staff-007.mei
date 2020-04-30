@@ -20,18 +20,6 @@
 				</application>
 			</appInfo>
 		</encodingDesc>
-		<extMeta>
-			<frames xmlns="http://www.humdrum.org/ns/humxml">
-				<metaFrame n="13" token="!!!RDF**kern: > = above" xml:id="L14">
-					<frameInfo>
-						<startTime float="4" />
-						<frameType>reference</frameType>
-						<referenceKey>RDF**kern</referenceKey>
-						<referenceValue>&gt; = above</referenceValue>
-					</frameInfo>
-				</metaFrame>
-			</frames>
-		</extMeta>
 	</meiHead>
 	<music>
 		<body>
