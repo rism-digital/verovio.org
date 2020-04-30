@@ -1,4 +1,4 @@
-Verovio 2.7.0-dev-093d856-dirty
+Verovio 2.7.0-dev-def8a60-dirty
 
 Example usage:
 
@@ -64,7 +64,7 @@ General layout options
  --grace-right-align               Align the right position of a grace group with all staves
  --hairpin-size <f>                The haripin size in MEI units (default: 3.00; min: 1.00; max: 8.00)
  --lyric-hyphen-length <f>         The lyric hyphen and dash length (default: 1.20; min: 0.50; max: 3.00)
- --lyric-hyphen-width <f>          The lyric hyphen and dash width (default: 0.20; min: 0.10; max: 0.50)
+ --lyric-line-thickness <f>        The lyric extender line thickness (default: 0.25; min: 0.10; max: 0.50)
  --lyric-no-start-hyphen           Do not show hyphens at the beginning of a system
  --lyric-size <f>                  The lyrics size in MEI units (default: 4.50; min: 2.00; max: 8.00)
  --lyric-top-min-margin <f>        The minmal margin above the lyrics in MEI units (default: 2.00; min: 0.00; max: 8.00)
