@@ -22,7 +22,7 @@ how-active: how-structure
             
             <h4>Page-based data structure</h4>
             <p>
-                  For practical reasons, the Verovio library uses a page-based customization of MEI internally.  Since the modifications introduced by the customization are very limited, the Verovio library can also be used to render un-customized MEI files. With the page-based customization, the content of the music is encoded in <code>&lt;page&gt;</code> elements that are themselves contained in a <code>&lt;pages&gt;</code> element within <code>&lt;mdiv&gt;</code>. 
+                For practical reasons, the Verovio library uses a page-based customization of MEI internally.  Since the modifications introduced by the customization are very limited, the Verovio library can also be used to render un-customized MEI files. With the page-based customization, the content of the music is encoded in <code>&lt;page&gt;</code> elements that are themselves contained in a <code>&lt;pages&gt;</code> element within <code>&lt;mdiv&gt;</code>. 
             </p>     
             <p>
                  A <code>&lt;page&gt;</code> element contains <code>&lt;system&gt;</code> elements. From then on, the encoding is identical to standard MEI. That is, a <code>&lt;system&gt;</code> element will contain <code>&lt;measure&gt;</code> elements or <code>&lt;staff&gt;</code> elements that are both un-customized, depending on whether or not the music is measured or un-measured respectively. 
@@ -63,7 +63,7 @@ how-active: how-structure
             
             <h4>SVG structure</h4>
             <p>
-                    One advantage of SVG rendering over other formats (e.g., images or PDF) is that SVG is rendered natively in most modern web-browsers. Because it is in XML, it also has the advantage that it is well suitable to interaction since every graphic is an XML element that is easy addressable. With Verovio, we also have the advantage that the SVG is organized in such a way that the MEI structure is preserved as much as possible. For example, a <code>&lt;note&gt;</code> element with an <code>xml:id</code> attribute in the MEI file will have a corresponding <code>&lt;g&gt;</code> element in the SVG with and <code>class</code> attribute <code>"note"</code> and an <code>id</code> attribute corresponding to the <code>xml:id</code>. This makes interaction with the SVG very easy. The hierarchy of the element is also preserved as shown below.
+                One advantage of SVG rendering over other formats (e.g., images or PDF) is that SVG is rendered natively in all modern web-browsers. Because it is in XML, it also has the advantage that it is well suitable to interaction since every graphic is an XML element that is easy addressable. With Verovio, we also have the advantage that the SVG is organized in such a way that the MEI structure is preserved as much as possible. For example, a <code>&lt;note&gt;</code> element with an <code>xml:id</code> attribute in the MEI file will have a corresponding <code>&lt;g&gt;</code> element in the SVG with and <code>class</code> attribute <code>"note"</code> and an <code>id</code> attribute corresponding to the <code>xml:id</code>. This makes interaction with the SVG very easy. The hierarchy of the element is also preserved as shown below.
             </p>
                 
 {% highlight xml %}
