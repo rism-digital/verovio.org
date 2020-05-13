@@ -60,7 +60,7 @@
 											<note xml:id="note-L20F2" dur="8" staff="2" accid="n" oct="3" pname="b"/>
 										</tuplet>
 									</beam>
-									<beam xml:id="beam-000000063110100">
+									<beam xml:id="beam-000000063110100" beam.with="below">
 										<tuplet xml:id="tuplet-000000054472058" num="3" numbase="2" num.visible="false" bracket.visible="false"
 											num.format="count">
 											<note xml:id="note-L21F2" dur="8" staff="2" oct="4" pname="c" accid.ges="n"/>
@@ -84,7 +84,7 @@
 						<measure xml:id="measure-L24" n="52">
 							<staff xml:id="staff-L24F2" n="1">
 								<layer xml:id="layer-L24F2" n="1">
-									<beam xml:id="beam-000000016665385">
+									<beam xml:id="beam-000000016665385" beam.with="below">                                              
 										<tuplet xml:id="tuplet-000000193696755" num="3" numbase="2" num.visible="false" bracket.visible="false"
 											num.format="count">
 											<note xml:id="note-L25F2" dur="8" staff="2" oct="3" pname="a" accid.ges="f"/>
@@ -92,7 +92,7 @@
 											<note xml:id="note-L27F2" dur="8" staff="2" accid="n" oct="3" pname="e"/>
 										</tuplet>
 									</beam>
-									<beam xml:id="beam-000000118497949">
+									<beam xml:id="beam-000000118497949" beam.with="below">
 										<tuplet xml:id="tuplet-000000042221341" num="3" numbase="2" num.visible="false" bracket.visible="false"
 											num.format="count">
 											<note xml:id="note-L28F2" dur="8" staff="2" oct="3" pname="f" accid.ges="n"/>
@@ -100,7 +100,7 @@
 											<note xml:id="note-L30F2" dur="8" staff="2" accid="n" oct="2" pname="b"/>
 										</tuplet>
 									</beam>
-									<beam xml:id="beam-000000133586887">
+									<beam xml:id="beam-000000133586887" beam.with="below">
 										<tuplet xml:id="tuplet-000000171982388" num="3" numbase="2" num.visible="false" bracket.visible="false"
 											num.format="count">
 											<note xml:id="note-L31F2" dur="8" staff="2" oct="3" pname="c" accid.ges="n"/>
@@ -108,7 +108,7 @@
 											<note xml:id="note-L33F2" dur="8" staff="2" oct="2" pname="g" accid.ges="n"/>
 										</tuplet>
 									</beam>
-									<beam xml:id="beam-000000120425451">
+									<beam xml:id="beam-000000120425451" beam.with="below">
 										<tuplet xml:id="tuplet-000000086905277" num="3" numbase="2" num.visible="false" bracket.visible="false"
 											num.format="count">
 											<note xml:id="note-L34F2" dur="8" staff="2" oct="2" pname="a" accid.ges="f"/>
@@ -132,7 +132,7 @@
 								<layer xml:id="layer-L38F2" n="1">
 									<note xml:id="note-L40F2" dots="1" dur="4" staff="2" oct="2" pname="f" accid.ges="n"/>
 									<note xml:id="note-L41F2" dur="8" staff="2" oct="2" pname="c" accid.ges="n"/>
-									<beam xml:id="beam-000000110113407">
+									<beam xml:id="beam-000000110113407" beam.with="below">
 										<note xml:id="note-L42F2" dur="8" staff="2" oct="2" pname="a" accid.ges="f"/>
 										<note xml:id="note-L43F2" dur="8" staff="2" oct="2" pname="f" accid.ges="n"/>
 										<note xml:id="note-L44F2" dur="8" staff="2" oct="3" pname="c" accid.ges="n"/>
@@ -142,7 +142,7 @@
 							</staff>
 							<staff xml:id="staff-L38F1" n="2">
 								<layer xml:id="layer-L38F1" n="1">
-									<mRest xml:id="mrest-000000063950376"/>
+									<mSpace xml:id="mrest-000000063950376"/>
 								</layer>
 							</staff>
 							<slur xml:id="slur-000000195990846" staff="1" startid="#note-L40F2" endid="#note-L65F2" curvedir="above"/>
@@ -150,7 +150,7 @@
 						<measure xml:id="measure-L46" n="54">
 							<staff xml:id="staff-L46F2" n="1">
 								<layer xml:id="layer-L46F2" n="1">
-									<beam xml:id="beam-000000198385374">
+									<beam xml:id="beam-000000198385374" beam.with="below">
 										<note xml:id="note-L47F2" dur="8" staff="2" oct="3" pname="f" accid.ges="n"/>
 										<note xml:id="note-L48F2" dur="8" staff="2" oct="3" pname="c" accid.ges="n"/>
 										<note xml:id="note-L49F2" dur="8" staff="2" oct="3" pname="a" accid.ges="f"/>
@@ -166,7 +166,7 @@
 							</staff>
 							<staff xml:id="staff-L46F1" n="2">
 								<layer xml:id="layer-L46F1" n="1">
-									<mRest xml:id="mrest-000000056824717"/>
+									<mSpace xml:id="mrest-000000056824717"/>
 								</layer>
 							</staff>
 						</measure>
