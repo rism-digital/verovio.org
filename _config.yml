@@ -13,3 +13,5 @@ tests-verovio-edit-path: "https://editor.verovio.org/?file=https://raw.githubuse
 collections:
     tests:
         output: true
+    faqs:
+        output: false

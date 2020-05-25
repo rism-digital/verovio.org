@@ -16,12 +16,12 @@ how-active: how-test-suite
             <div class="list-group sublist-group">
                 {% assign categories = "" | split: ',' %}
                 {% for collection in site.collections %}
-                    {% unless collection.label == "posts" %}
+                    {% if collection.label == "tests" %}
                         {% for file in collection.files %}
                             {% assign path = file.path | split: '/' %}
                             {% assign categories = categories | push: path[1] %}
                         {% endfor %}
-                    {% endunless %}
+                    {% endif %}
                 {% endfor %}
     
                 {% assign categories = categories | uniq | sort %}

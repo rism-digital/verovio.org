@@ -207,7 +207,7 @@
     
     {% assign categories = "" | split: ',' %}
     {% for collection in site.collections %}
-        {% unless collection.label == "posts" %}
+        {% if collection.label == "tests" %}
     <div class="panel test-group" id="examples">
 
         {% for f in collection.files %}
@@ -309,7 +309,7 @@
         {% endfor %}
 
     </div>
-        {% endunless %}
+        {% endif %}
     {% endfor %}
 
     <div id="localStorageFile"></div>
