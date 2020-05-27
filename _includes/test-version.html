@@ -115,7 +115,7 @@
             // Set the passed options
             vrvToolkit.setOptions( options );
             vrvToolkit.loadData(data);
-            $(div + '-meiCode pre').text(vrvToolkit.getMEI( ));
+            $(div + '-meiCode pre').text(data);
             $(div + '-meiDiv').show();
             svg = vrvToolkit.renderToSVG(page, {});
         }
