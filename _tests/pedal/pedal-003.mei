@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Piano pedal as line</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-05-12</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Pedal markings may be rendered as lines.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" meter.sym="common" n="1" lines="5" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer>
+                           <note dur="4" oct="3" pname="b" />
+                           <note dur="4" oct="3" pname="f" />
+                           <note dur="4" oct="3" pname="g" />
+                           <note dur="4" oct="3" pname="d" />
+                        </layer>
+                     </staff>
+                     <pedal form="line" staff="1" tstamp="1" dir="down" />
+                     <pedal form="line" staff="1" tstamp="5" dir="up" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer>
+                           <note dur="4" oct="3" pname="b" />
+                           <note dur="4" oct="3" pname="f" />
+                           <note dur="4" oct="3" pname="g" />
+                           <note dur="4" oct="3" pname="d" />
+                        </layer>
+                     </staff>
+                     <pedal form="line" staff="1" tstamp="1" dir="down" />
+                     <pedal form="line" staff="1" tstamp="2.5" dir="up" />
+                     <pedal form="line" staff="1" tstamp="3" dir="down" />
+                     <pedal form="line" staff="1" tstamp="4.5" dir="up" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

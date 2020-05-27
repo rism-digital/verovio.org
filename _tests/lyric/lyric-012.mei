@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Lyric abbrevatations</title>
+         </titleStmt>
+         <pubStmt >
+            <distributor>
+               <ptr target="https://kern.humdrum.org/cgi-bin/ksdata?l=users/craig/classical/landini&amp;file=echo.krn&amp;f=kern"/>
+            </distributor>
+         </pubStmt>
+         <notesStmt>
+            <annot>Support for 'label' and 'labelAbbr' within 'verse'</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="1">
+               <name>Verovio</name>
+               <p>Minimal support - layout is not properly handled</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="80">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig count="3" unit="4" />
+                        <instrDef midi.instrnum="52" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="G" line="2" dis="8" dis.place="below" />
+                        <keySig sig="0" />
+                        <meterSig count="3" unit="4" />
+                        <instrDef midi.instrnum="52" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <section>
+                     <measure n="1">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dots="1" dur="4" oct="4" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <label>V 1.</label>
+                                    <labelAbbr>1.</labelAbbr>
+                                    <syl con="d" wordpos="i"> E</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <label>V 2.</label>
+                                    <labelAbbr>2.</labelAbbr>
+                                    <syl con="d" wordpos="i">L'er</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">cho</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">be</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="f" accid="s">
+                                 <verse n="1">
+                                    <syl>la</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>con</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dots="1" dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <label>V 1.</label>
+                                    <labelAbbr>1.</labelAbbr>
+                                    <syl con="d" wordpos="i"> E</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <label>V 2.</label>
+                                    <labelAbbr>2.</labelAbbr>
+                                    <syl con="d" wordpos="i">L'er</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">cho</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">be</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>la</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>con</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="2">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">pri</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>gran</syl>
+                                 </verse>
+                              </note>
+                              <beam>
+                                 <note dur="8" oct="4" pname="f" accid.ges="n">
+                                    <verse n="1">
+                                       <syl>ma</syl>
+                                    </verse>
+                                    <verse n="2">
+                                       <syl con="d" wordpos="i">fres</syl>
+                                    </verse>
+                                 </note>
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              </beam>
+                              <beam>
+                                 <note dur="8" oct="4" pname="f" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="2" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">pri</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>gran</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>ma</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">fres</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="3">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>ve</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>che</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ra,</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ça</syl>
+                                 </verse>
+                              </note>
+                              <beam>
+                                 <note dur="8" oct="4" pname="f" accid.ges="n">
+                                    <verse n="1">
+                                       <syl>che'l</syl>
+                                    </verse>
+                                    <verse n="2">
+                                       <syl> E</syl>
+                                    </verse>
+                                 </note>
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>ve</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>che</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ra,</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ça</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>che'l</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl> E</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="4">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>cor</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>fior'</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>fa</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">co</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ral</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>pro</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="3" pname="b" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>le</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl> i</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>cor</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>fior'</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>fa</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">co</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ral</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>pro</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="3" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>le</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl> i</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="5">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>gra</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">pra</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">re,</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ti,</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>gra</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">pra</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">re,</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ti,</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="6">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">Tem</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl> E</syl>
+                                 </verse>
+                              </note>
+                              <beam>
+                                 <note dur="8" oct="4" pname="c" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              </beam>
+                              <beam>
+                                 <note dur="8" oct="4" pname="c" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">Tem</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl> E</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="c" accid.ges="n" />
+                              <note dur="4" oct="3" pname="b" accid.ges="n" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="7">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">p'è</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">al</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">d'an</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>bo</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>na</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i"> a</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>mo</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>dor</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">p'è</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">al</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">d'an</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>bo</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>na</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i"> a</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>mo</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>dor</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="8">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>ra</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>na</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">re</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ti</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>ra</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>na</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">re</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ti</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="9">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="4" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl> E</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">so</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>star</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>in</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="2" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl> E</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">so</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>star</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>in</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="10">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>con</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">si</syl>
+                                 </verse>
+                              </note>
+                              <tuplet num="3" numbase="2" bracket.place="above" bracket.visible="false" num.format="count">
+                                 <beam>
+                                    <note dur="8" oct="4" pname="f" accid.ges="n">
+                                       <verse n="1">
+                                          <syl con="d" wordpos="i">lie</syl>
+                                       </verse>
+                                       <verse n="2">
+                                          <syl wordpos="t">mil</syl>
+                                       </verse>
+                                    </note>
+                                    <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                    <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 </beam>
+                              </tuplet>
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ta</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">ma</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>con</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">si</syl>
+                                 </verse>
+                              </note>
+                              <beam>
+                                 <note dur="8" oct="3" pname="a" accid.ges="n">
+                                    <verse n="1">
+                                       <syl con="d" wordpos="i">lie</syl>
+                                    </verse>
+                                    <verse n="2">
+                                       <syl wordpos="t">mil</syl>
+                                    </verse>
+                                 </note>
+                                 <note dur="8" oct="3" pname="b" accid.ges="n" />
+                              </beam>
+                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ta</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">ma</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="11">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ce</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>ne</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ra.</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ra.</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ce</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>ne</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ra.</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ra.</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+                  <section>
+                     <measure left="rptstart" n="12">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dots="1" dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>Noi</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>In</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ve</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">que</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">giam</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">sto</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dots="1" dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>Noi</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>In</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ve</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">que</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">giam</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">sto</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="13">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">l'a</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">va</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>e'l</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">go</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">l'a</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">va</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                                 <verse n="2">
+                                    <syl wordpos="t">go</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="b" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>e'l</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="14">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">tem</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">tem</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="4" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">tem</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">tem</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="e" accid.ges="n" />
+                              <note dur="4" oct="4" pname="d" accid.ges="n" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="15">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">po</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">po</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="2" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">po</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">po</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="16">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>che</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i"> o</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>pur</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">gni</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>chiam'</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">co</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>che</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i"> o</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>pur</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">gni</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>chiam'</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">co</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure n="17">
+                        <staff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note dur="8" oct="4" pname="a" accid.ges="n">
+                                    <verse n="1">
+                                       <syl con="d" wordpos="i">al</syl>
+                                    </verse>
+                                    <verse n="2">
+                                       <syl>à</syl>
+                                    </verse>
+                                 </note>
+                                 <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              </beam>
+                              <tuplet num="3" numbase="2" bracket.place="above" bracket.visible="false" num.format="count">
+                                 <beam>
+                                    <note dur="8" oct="4" pname="f" accid.ges="n" />
+                                    <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                    <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 </beam>
+                              </tuplet>
+                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>le</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">va</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">al</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>à</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="3" pname="b" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>le</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl con="d" wordpos="i">va</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="c" accid.ges="n" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure right="rptend" n="18">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>gri</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>ghe</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">a.</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ça.</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl>gri</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl>ghe</syl>
+                                 </verse>
+                              </note>
+                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">a.</syl>
+                                 </verse>
+                                 <verse n="2">
+                                    <syl wordpos="t">ça.</syl>
+                                 </verse>
+                              </note>
+                              <rest dur="4" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
