@@ -1,70 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://www.music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-	<meiHead>
-		<fileDesc>
-			<titleStmt>
-				<title>Spacing example</title>
-			</titleStmt>
-			<pubStmt>
-				<date>2017-05-04</date>
-			</pubStmt>
-			<notesStmt>
-				<annot>Verovio supports custom spacing of staves and systems.</annot>
-			</notesStmt>
-		</fileDesc>
-		<encodingDesc>
-			<appInfo>
-				<application version="unknown">
-					<name>Verovio</name>
-				</application>
-			</appInfo>
-		</encodingDesc>
-	</meiHead>
-	<music>
-		<body>
-			<mdiv>
-				<score>
-					<scoreDef>
-						<staffGrp symbol="bracket">
-							<staffDef n="1" xml:id="s1" clef.line="2" clef.shape="G" key.sig="1f" label="Violino I" lines="5"/>
-						</staffGrp>
-					</scoreDef>
-					<section>
-						<measure xml:id="d648110e8532" n="1">
-							<staff xml:id="staff-000000119844232" n="1">
-								<layer xml:id="layer-000000047223408" n="1">
-									<beam>
-										<note pname="e" oct="4" dur="16"/>
-										<note pname="e" oct="4" dur="16"/>
-										<note pname="e" oct="4" dur="16"/>
-										<note pname="e" oct="4" dur="16"/>
-									</beam>
-									<beam>
-										<note pname="e" oct="4" dur="8"/>
-										<note pname="e" oct="4" dur="8"/>
-									</beam>
-									<beam>
-										<note pname="e" oct="4" dur="8" dots="1"/>
-										<note pname="e" oct="4" dur="8" dots="1"/>
-									</beam>
-									<note pname="e" oct="4" dur="4"/>
-									<note pname="e" oct="4" dur="4"/>
-									<note pname="e" oct="4" dur="4" dots="1"/>
-									<note pname="e" oct="4" dur="4" dots="1"/>
-									<note pname="e" oct="4" dur="2"/>
-									<note pname="e" oct="4" dur="2"/>
-									<note pname="e" oct="4" dur="2" dots="1"/>
-									<note pname="e" oct="4" dur="2" dots="1"/>
-									<note pname="e" oct="4" dur="1"/>
-									<note pname="e" oct="4" dur="1"/>
-								</layer>
-							</staff>
-						</measure>
-					</section>
-				</score>
-			</mdiv>
-		</body>
-	</music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Spacing example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-04</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports custom spacing of staves and systems.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="e" />
+                              <note dots="1" dur="8" oct="4" pname="e" />
+                           </beam>
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dots="1" dur="4" oct="4" pname="e" />
+                           <note dots="1" dur="4" oct="4" pname="e" />
+                           <note dur="2" oct="4" pname="e" />
+                           <note dur="2" oct="4" pname="e" />
+                           <note dots="1" dur="2" oct="4" pname="e" />
+                           <note dots="1" dur="2" oct="4" pname="e" />
+                           <note dur="1" oct="4" pname="e" />
+                           <note dur="1" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

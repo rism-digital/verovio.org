@@ -2,158 +2,158 @@
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-    <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title>Cross-staff beams with mixed stem direction</title>
-                <respStmt>
-                    <persName role="composer">Ludwig van Beethoven</persName>
-                </respStmt>
-            </titleStmt>
-            <pubStmt>
-                <respStmt>
-                    <persName role="encoder" auth.uri="http://d-nb.info/gnd" auth="GND" codedval="1138881465">Werner Goebl</persName>
-                </respStmt>
-            </pubStmt>
-            <notesStmt>
-                <annot>Cross-staff beams can have mixed stem direction defined in MEI.</annot>
-            </notesStmt>
-        </fileDesc>
-        <encodingDesc xml:id="encoding-0000000462012660">
-            <appInfo xml:id="app-0000000296046912">
-                <application xml:id="application-0000000479841714" version="3.0.0" label="0">
-                    <name xml:id="name-0000000283256295">Verovio</name>
-                </application>
-            </appInfo>
-        </encodingDesc>
-    </meiHead>
-    <music>
-        <body>
-            <mdiv xml:id="Op-77">
-                <score xml:id="score-0000000781455625">
-                    <scoreDef xml:id="scoredef-0000000770579331" midi.bpm="120" key.mode="major" key.sig="2f" meter.count="4" meter.unit="4" meter.sym="common">
-                        <staffGrp xml:id="staffgrp-0000000664100862" symbol="brace" bar.thru="true">
-                            <staffDef xml:id="staffdef-0000001721228111" n="1" lines="5" clef.shape="G" clef.line="2">
-                                <instrDef xml:id="instrdef-0000001070674175" midi.channel="0" midi.instrnum="0"/>
-                            </staffDef>
-                            <staffDef xml:id="staffdef-0000000058203222" n="2" lines="5" clef.shape="F" clef.line="4">
-                                <instrDef xml:id="instrdef-0000000480024105" midi.channel="1" midi.instrnum="0"/>
-                            </staffDef>
-                        </staffGrp>
-                    </scoreDef>
-                    <section xml:id="F-Cadenza">
-                        <scoreDef xml:id="scoredef-0000001370513728" key.sig="0"/>
-                        <measure xml:id="measure-0000000377599771" metcon="false" n="221">
-                            <staff xml:id="staff-0000000612092584" n="1">
-                                <layer xml:id="layer-0000000752574108" n="1">
-                                    <beam xml:id="beam-0000001981835973">
-                                        <note xml:id="note-0000001245833241" dur="32" oct="5" pname="d" stem.dir="down"/>
-                                        <note xml:id="note-0000000753723237" dur="32" oct="5" pname="c" stem.dir="down"/>
-                                        <note xml:id="note-0000001967894253" dur="32" oct="4" pname="b" stem.dir="down"/>
-                                        <note xml:id="note-0000001003062724" dur="32" oct="4" pname="a" stem.dir="down"/>
-                                        <note xml:id="note-0000000728573318" dur="32" oct="4" pname="g" stem.dir="down"/>
-                                        <note xml:id="note-0000000180000432" dur="32" oct="4" pname="f" stem.dir="down"/>
-                                        <note xml:id="note-0000001610285648" dur="32" oct="4" pname="e" stem.dir="down"/>
-                                        <note xml:id="note-0000001481966442" dur="32" oct="4" pname="d" stem.dir="down"/>
-                                        <note xml:id="note-0000000894652788" dur="32" staff="2" oct="4" pname="c" stem.dir="up"/>
-                                        <note xml:id="note-0000001896395269" dur="32" staff="2" oct="3" pname="b" stem.dir="up"/>
-                                        <note xml:id="note-0000001910480956" dur="32" staff="2" oct="3" pname="a" stem.dir="up"/>
-                                        <note xml:id="note-0000000277937548" dur="32" staff="2" oct="3" pname="g" stem.dir="up"/>
-                                        <note xml:id="note-0000000519437011" dur="32" staff="2" oct="3" pname="f" stem.dir="up"/>
-                                        <note xml:id="note-0000000656818822" dur="32" staff="2" oct="3" pname="e" stem.dir="up"/>
-                                        <note xml:id="note-0000001087995774" dur="32" staff="2" oct="3" pname="d" stem.dir="up"/>
-                                        <note xml:id="note-0000000121719413" dur="32" staff="2" oct="3" pname="c" stem.dir="up"/>
-                                        <note xml:id="note-0000001333742347" dur="32" staff="2" oct="2" pname="b" stem.dir="up"/>
-                                        <note xml:id="note-0000000773318643" dur="32" staff="2" oct="2" pname="a" stem.dir="up"/>
-                                        <note xml:id="note-0000000595401257" dur="32" staff="2" oct="2" pname="g" stem.dir="up"/>
-                                        <note xml:id="note-0000001782615026" dur="32" staff="2" oct="2" pname="a" stem.dir="up"/>
-                                    </beam>
-                                    <beam xml:id="beam-0000000866382685">
-                                        <note xml:id="note-0000001354660135" dur="32" staff="2" oct="2" pname="b" stem.dir="up"/>
-                                        <note xml:id="note-0000000151263451" dur="32" staff="2" oct="3" pname="c" stem.dir="up"/>
-                                        <note xml:id="note-0000001811666556" dur="32" staff="2" oct="3" pname="d" stem.dir="up"/>
-                                        <note xml:id="note-0000001656659526" dur="32" staff="2" oct="3" pname="e" stem.dir="up"/>
-                                        <note xml:id="note-0000001351170127" dur="32" staff="2" oct="3" pname="f" stem.dir="up"/>
-                                        <note xml:id="note-0000001624241111" dur="32" staff="2" oct="3" pname="g" stem.dir="up"/>
-                                        <note xml:id="note-0000001955715560" dur="32" staff="2" oct="3" pname="a" stem.dir="up"/>
-                                        <note xml:id="note-0000000326715938" dur="32" staff="2" oct="3" pname="b" stem.dir="up"/>
-                                        <note xml:id="note-0000002146568234" dur="32" oct="4" pname="c" stem.dir="down"/>
-                                        <note xml:id="note-0000001794522885" dur="32" oct="4" pname="d" stem.dir="down"/>
-                                        <note xml:id="note-0000001285789727" dur="32" oct="4" pname="e" stem.dir="down"/>
-                                        <note xml:id="note-0000000140001928" dur="32" oct="4" pname="f" stem.dir="down"/>
-                                        <note xml:id="note-0000001517810431" dur="32" oct="4" pname="g" stem.dir="down"/>
-                                        <note xml:id="note-0000002029154751" dur="32" oct="4" pname="a" stem.dir="down"/>
-                                        <note xml:id="note-0000001963585697" dur="32" oct="4" pname="b" stem.dir="down"/>
-                                        <note xml:id="note-0000001603606030" dur="32" oct="5" pname="c" stem.dir="down"/>
-                                        <note xml:id="note-0000000886776360" dur="32" oct="5" pname="d" stem.dir="down"/>
-                                    </beam>
-                                    <beam xml:id="beam-0000000513772340">
-                                        <note xml:id="note-0000002087457440" dur="32" oct="5" pname="e" stem.dir="down"/>
-                                        <note xml:id="note-0000000456853041" dur="32" oct="5" pname="f" stem.dir="down"/>
-                                        <note xml:id="note-0000001075022062" dur="32" oct="5" pname="g" stem.dir="down"/>
-                                        <note xml:id="note-0000001115873823" dur="32" oct="5" pname="a" stem.dir="down"/>
-                                        <note xml:id="note-0000000516653910" dur="32" oct="5" pname="b" stem.dir="down"/>
-                                        <note xml:id="note-0000001125880549" dur="32" oct="6" pname="c" stem.dir="down"/>
-                                        <note xml:id="note-0000001195973326" dur="32" oct="6" pname="d" stem.dir="down"/>
-                                        <note xml:id="note-0000000276754162" dur="32" oct="6" pname="e" stem.dir="down"/>
-                                        <note xml:id="note-0000002105104979" dur="32" oct="6" pname="f" stem.dir="down"/>
-                                        <note xml:id="note-0000000706297728" dur="32" oct="6" pname="g" stem.dir="down"/>
-                                        <note xml:id="note-0000001603797527" dur="32" oct="6" pname="f" stem.dir="down"/>
-                                        <note xml:id="note-0000001957782792" dur="32" oct="6" pname="e" stem.dir="down"/>
-                                        <note xml:id="note-0000000710945810" dur="32" oct="6" pname="d" stem.dir="down"/>
-                                        <note xml:id="note-0000000267216762" dur="32" oct="6" pname="c" stem.dir="down"/>
-                                        <note xml:id="note-0000000723813057" dur="32" oct="5" pname="b" stem.dir="down"/>
-                                        <note xml:id="note-0000001778672391" dur="32" oct="5" pname="a" stem.dir="down"/>
-                                        <note xml:id="note-0000001174509297" dur="32" oct="5" pname="g" stem.dir="down"/>
-                                        <note xml:id="note-0000000308071455" dur="32" oct="5" pname="f" stem.dir="down"/>
-                                        <note xml:id="note-0000000173871268" dur="32" oct="5" pname="e" stem.dir="down"/>
-                                        <note xml:id="note-0000001676641356" dur="32" oct="5" pname="d" stem.dir="down"/>
-                                        <note xml:id="note-0000000030854358" dur="32" oct="5" pname="c" stem.dir="down"/>
-                                        <note xml:id="note-0000000030854357" dur="32" oct="4" pname="b" stem.dir="down"/>
-                                        <note xml:id="note-0000000030854356" dur="32" oct="4" pname="a" stem.dir="down"/>
-                                    </beam>
-                                    <beam xml:id="beam-0000001025635979">
-                                        <tuplet xml:id="tuplet-0000000012664584" num="3" numbase="2" bracket.visible="false">
-                                            <note xml:id="note-0000000252782235" dur="8" oct="4" pname="g" stem.dir="down">
-                                                <artic xml:id="artic-0000000788369879" artic="stacc"/>
-                                            </note>
-                                            <note xml:id="note-0000000262756661" dur="8" oct="4" pname="a" stem.dir="down">
-                                                <artic xml:id="artic-0000000924823195" artic="stacc"/>
-                                            </note>
-                                            <note xml:id="note-0000000016801379" dur="8" oct="4" pname="b" stem.dir="down">
-                                                <artic xml:id="artic-0000001060419096" artic="stacc"/>
-                                            </note>
-                                        </tuplet>
-                                    </beam>
-                                </layer>
-                            </staff>
-                            <staff xml:id="staff-0000000946646715" n="2">
-                                <layer xml:id="layer-0000001732482029" n="1">
-                                    <space xml:id="space-0000000094691730" dur="1"/>
-                                    <space xml:id="space-0000000094691731" dur="1"/>
-                                    <space xml:id="space-0000000094691732" dur="8"/>
-                                    <clef xml:id="clef-0000002052127936" shape="G" line="2"/>
-                                </layer>
-                            </staff>
-                            <dynam xml:id="dynam-0000000861065704" place="below" staff="1" tstamp="1.000000" vgrp="115">p</dynam>
-                            <tempo xml:id="tempo-0000000322333630" place="above" staff="1" startid="#note-0000001245833241" midi.bpm="160">non troppo presto</tempo>
-                            <slur xml:id="slur-0000000158454363" startid="#note-0000000252782235" endid="#note-0000000016801379" curvedir="above"/>
-                        </measure>
-                        <measure xml:id="measure-0000001492170144" n="222" right="invis">
-                            <staff xml:id="staff-0000001537383607" n="1">
-                                <layer xml:id="layer-0000000309551311" n="1">
-                                    <note xml:id="note-0000001644451421" dur="8" oct="5" pname="c" stem.dir="down"/>
-                                </layer>
-                            </staff>
-                            <staff xml:id="staff-0000000415384898" n="2">
-                                <layer xml:id="layer-0000001526849532" n="1">
-                                    <note xml:id="note-0000001224485932" dur="8" oct="4" pname="c" stem.dir="up"/>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-        </body>
-    </music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff beams with mixed stem direction</title>
+            <respStmt>
+               <persName role="composer">Ludwig van Beethoven</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder" auth.uri="http://d-nb.info/gnd" auth="GND" codedval="1138881465">Werner Goebl</persName>
+            </respStmt>
+         </pubStmt>
+         <notesStmt>
+            <annot>Cross-staff beams can have mixed stem direction defined in MEI.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc xml:id="encoding-0000000462012660">
+         <appInfo xml:id="app-0000000296046912">
+            <application xml:id="application-0000000479841714" version="3.0.0" label="0">
+               <name xml:id="name-0000000283256295">Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="120" key.mode="major" key.sig="2f" meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <instrDef midi.channel="0" midi.instrnum="0" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4">
+                        <instrDef midi.channel="1" midi.instrnum="0" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <scoreDef key.sig="0" />
+                  <measure metcon="false" n="221">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-0000001245833241" dur="32" oct="5" pname="d" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" />
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                              <note dur="32" oct="4" pname="g" stem.dir="down" />
+                              <note dur="32" oct="4" pname="f" stem.dir="down" />
+                              <note dur="32" oct="4" pname="e" stem.dir="down" />
+                              <note dur="32" oct="4" pname="d" stem.dir="down" />
+                              <note dur="32" staff="2" oct="4" pname="c" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="b" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="a" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="g" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="f" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="e" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="d" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="c" stem.dir="up" />
+                              <note dur="32" staff="2" oct="2" pname="b" stem.dir="up" />
+                              <note dur="32" staff="2" oct="2" pname="a" stem.dir="up" />
+                              <note dur="32" staff="2" oct="2" pname="g" stem.dir="up" />
+                              <note dur="32" staff="2" oct="2" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur="32" staff="2" oct="2" pname="b" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="c" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="d" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="e" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="f" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="g" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="a" stem.dir="up" />
+                              <note dur="32" staff="2" oct="3" pname="b" stem.dir="up" />
+                              <note dur="32" oct="4" pname="c" stem.dir="down" />
+                              <note dur="32" oct="4" pname="d" stem.dir="down" />
+                              <note dur="32" oct="4" pname="e" stem.dir="down" />
+                              <note dur="32" oct="4" pname="f" stem.dir="down" />
+                              <note dur="32" oct="4" pname="g" stem.dir="down" />
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" />
+                              <note dur="32" oct="5" pname="d" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="32" oct="5" pname="e" stem.dir="down" />
+                              <note dur="32" oct="5" pname="f" stem.dir="down" />
+                              <note dur="32" oct="5" pname="g" stem.dir="down" />
+                              <note dur="32" oct="5" pname="a" stem.dir="down" />
+                              <note dur="32" oct="5" pname="b" stem.dir="down" />
+                              <note dur="32" oct="6" pname="c" stem.dir="down" />
+                              <note dur="32" oct="6" pname="d" stem.dir="down" />
+                              <note dur="32" oct="6" pname="e" stem.dir="down" />
+                              <note dur="32" oct="6" pname="f" stem.dir="down" />
+                              <note dur="32" oct="6" pname="g" stem.dir="down" />
+                              <note dur="32" oct="6" pname="f" stem.dir="down" />
+                              <note dur="32" oct="6" pname="e" stem.dir="down" />
+                              <note dur="32" oct="6" pname="d" stem.dir="down" />
+                              <note dur="32" oct="6" pname="c" stem.dir="down" />
+                              <note dur="32" oct="5" pname="b" stem.dir="down" />
+                              <note dur="32" oct="5" pname="a" stem.dir="down" />
+                              <note dur="32" oct="5" pname="g" stem.dir="down" />
+                              <note dur="32" oct="5" pname="f" stem.dir="down" />
+                              <note dur="32" oct="5" pname="e" stem.dir="down" />
+                              <note dur="32" oct="5" pname="d" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" />
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false">
+                                 <note xml:id="note-0000000252782235" dur="8" oct="4" pname="g" stem.dir="down">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <note dur="8" oct="4" pname="a" stem.dir="down">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <note xml:id="note-0000000016801379" dur="8" oct="4" pname="b" stem.dir="down">
+                                    <artic artic="stacc" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="1" />
+                           <space dur="1" />
+                           <space dur="8" />
+                           <clef shape="G" line="2" />
+                        </layer>
+                     </staff>
+                     <dynam place="below" staff="1" tstamp="1.000000" vgrp="115">p</dynam>
+                     <tempo place="above" staff="1" startid="#note-0000001245833241" midi.bpm="160">non troppo presto</tempo>
+                     <slur startid="#note-0000000252782235" endid="#note-0000000016801379" curvedir="above" />
+                  </measure>
+                  <measure right="invis" n="222">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="8" oct="5" pname="c" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="8" oct="4" pname="c" stem.dir="up" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

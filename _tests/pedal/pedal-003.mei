@@ -28,35 +28,35 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" meter.sym="common" n="1" lines="5" />
+                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" meter.sym="common" />
                   </staffGrp>
                </scoreDef>
                <section>
                   <measure>
                      <staff n="1">
-                        <layer>
+                        <layer n="1">
                            <note dur="4" oct="3" pname="b" />
                            <note dur="4" oct="3" pname="f" />
                            <note dur="4" oct="3" pname="g" />
                            <note dur="4" oct="3" pname="d" />
                         </layer>
                      </staff>
-                     <pedal form="line" staff="1" tstamp="1" dir="down" />
-                     <pedal form="line" staff="1" tstamp="5" dir="up" />
+                     <pedal staff="1" tstamp="1.000000" dir="down" form="line" />
+                     <pedal staff="1" tstamp="5.000000" dir="up" form="line" />
                   </measure>
                   <measure>
                      <staff n="1">
-                        <layer>
+                        <layer n="1">
                            <note dur="4" oct="3" pname="b" />
                            <note dur="4" oct="3" pname="f" />
                            <note dur="4" oct="3" pname="g" />
                            <note dur="4" oct="3" pname="d" />
                         </layer>
                      </staff>
-                     <pedal form="line" staff="1" tstamp="1" dir="down" />
-                     <pedal form="line" staff="1" tstamp="2.5" dir="up" />
-                     <pedal form="line" staff="1" tstamp="3" dir="down" />
-                     <pedal form="line" staff="1" tstamp="4.5" dir="up" />
+                     <pedal staff="1" tstamp="1.000000" dir="down" form="line" />
+                     <pedal staff="1" tstamp="2.500000" dir="up" form="line" />
+                     <pedal staff="1" tstamp="3.000000" dir="down" form="line" />
+                     <pedal staff="1" tstamp="4.500000" dir="up" form="line" />
                   </measure>
                </section>
             </score>

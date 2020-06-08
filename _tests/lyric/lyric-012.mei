@@ -7,9 +7,9 @@
          <titleStmt>
             <title>Lyric abbrevatations</title>
          </titleStmt>
-         <pubStmt >
+         <pubStmt>
             <distributor>
-               <ptr target="https://kern.humdrum.org/cgi-bin/ksdata?l=users/craig/classical/landini&amp;file=echo.krn&amp;f=kern"/>
+               <ptr target="https://kern.humdrum.org/cgi-bin/ksdata?l=users/craig/classical/landini&amp;file=echo.krn&amp;f=kern" />
             </distributor>
          </pubStmt>
          <notesStmt>
@@ -50,7 +50,7 @@
                      <measure n="1">
                         <staff n="1">
                            <layer n="1">
-                              <note dots="1" dur="4" oct="4" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001691622520" dots="1" dur="4" oct="4" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <label>V 1.</label>
                                     <labelAbbr>1.</labelAbbr>
@@ -62,7 +62,7 @@
                                     <syl con="d" wordpos="i">L'er</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001920097135" dur="8" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">cho</syl>
                                  </verse>
@@ -70,7 +70,7 @@
                                     <syl wordpos="t">be</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="f" accid="s">
+                              <note xml:id="note-0000001957314071" dur="4" oct="4" pname="f" accid="s">
                                  <verse n="1">
                                     <syl>la</syl>
                                  </verse>
@@ -82,7 +82,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dots="1" dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000620022960" dots="1" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <label>V 1.</label>
                                     <labelAbbr>1.</labelAbbr>
@@ -94,7 +94,7 @@
                                     <syl con="d" wordpos="i">L'er</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001684142073" dur="8" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">cho</syl>
                                  </verse>
@@ -102,7 +102,7 @@
                                     <syl wordpos="t">be</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001187920837" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>la</syl>
                                  </verse>
@@ -116,7 +116,7 @@
                      <measure n="2">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001639935400" dur="4" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">pri</syl>
                                  </verse>
@@ -125,7 +125,7 @@
                                  </verse>
                               </note>
                               <beam>
-                                 <note dur="8" oct="4" pname="f" accid.ges="n">
+                                 <note xml:id="note-0000000052026919" dur="8" oct="4" pname="f" accid.ges="n">
                                     <verse n="1">
                                        <syl>ma</syl>
                                     </verse>
@@ -143,7 +143,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="2" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000001379299915" dur="2" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">pri</syl>
                                  </verse>
@@ -151,7 +151,7 @@
                                     <syl>gran</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000586201608" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>ma</syl>
                                  </verse>
@@ -165,7 +165,7 @@
                      <measure n="3">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000000010492183" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl>ve</syl>
                                  </verse>
@@ -173,7 +173,7 @@
                                     <syl>che</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000001807377190" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">ra,</syl>
                                  </verse>
@@ -182,7 +182,7 @@
                                  </verse>
                               </note>
                               <beam>
-                                 <note dur="8" oct="4" pname="f" accid.ges="n">
+                                 <note xml:id="note-0000000339465007" dur="8" oct="4" pname="f" accid.ges="n">
                                     <verse n="1">
                                        <syl>che'l</syl>
                                     </verse>
@@ -196,7 +196,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000000815963901" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl>ve</syl>
                                  </verse>
@@ -204,7 +204,7 @@
                                     <syl>che</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001346760084" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">ra,</syl>
                                  </verse>
@@ -212,7 +212,7 @@
                                     <syl wordpos="t">ça</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="f" accid.ges="n">
+                              <note xml:id="note-0000000245271511" dur="4" oct="3" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl>che'l</syl>
                                  </verse>
@@ -226,7 +226,7 @@
                      <measure n="4">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000003653648" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>cor</syl>
                                  </verse>
@@ -234,7 +234,7 @@
                                     <syl>fior'</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000001535572140" dur="8" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl>fa</syl>
                                  </verse>
@@ -242,7 +242,7 @@
                                     <syl con="d" wordpos="i">co</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000000111623258" dur="4" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">ral</syl>
                                  </verse>
@@ -250,7 +250,7 @@
                                     <syl>pro</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="3" pname="b" accid.ges="n">
+                              <note xml:id="note-0000000940789647" dur="8" oct="3" pname="b" accid.ges="n">
                                  <verse n="1">
                                     <syl>le</syl>
                                  </verse>
@@ -262,7 +262,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001343420570" dur="4" oct="3" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl>cor</syl>
                                  </verse>
@@ -270,7 +270,7 @@
                                     <syl>fior'</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001907235332" dur="8" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl>fa</syl>
                                  </verse>
@@ -278,7 +278,7 @@
                                     <syl con="d" wordpos="i">co</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="f" accid.ges="n">
+                              <note xml:id="note-0000001416124365" dur="4" oct="3" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">ral</syl>
                                  </verse>
@@ -286,7 +286,7 @@
                                     <syl>pro</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="3" pname="g" accid.ges="n">
+                              <note xml:id="note-0000000206272168" dur="8" oct="3" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl>le</syl>
                                  </verse>
@@ -300,7 +300,7 @@
                      <measure n="5">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001130313001" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl>gra</syl>
                                  </verse>
@@ -308,7 +308,7 @@
                                     <syl con="d" wordpos="i">pra</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000000851358973" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">re,</syl>
                                  </verse>
@@ -321,7 +321,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001793434822" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl>gra</syl>
                                  </verse>
@@ -329,7 +329,7 @@
                                     <syl con="d" wordpos="i">pra</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001414792282" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">re,</syl>
                                  </verse>
@@ -344,7 +344,7 @@
                      <measure n="6">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001616778577" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">Tem</syl>
                                  </verse>
@@ -364,7 +364,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001414666365" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">Tem</syl>
                                  </verse>
@@ -380,7 +380,7 @@
                      <measure n="7">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000000902316223" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">p'è</syl>
                                  </verse>
@@ -388,7 +388,7 @@
                                     <syl con="d" wordpos="i">al</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000000542424185" dur="8" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">d'an</syl>
                                  </verse>
@@ -396,7 +396,7 @@
                                     <syl>bo</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001659046350" dur="4" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl>na</syl>
                                  </verse>
@@ -404,7 +404,7 @@
                                     <syl con="d" wordpos="i"> a</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000001426289890" dur="8" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl>mo</syl>
                                  </verse>
@@ -416,7 +416,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001578882541" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">p'è</syl>
                                  </verse>
@@ -424,7 +424,7 @@
                                     <syl con="d" wordpos="i">al</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000000352825095" dur="8" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">d'an</syl>
                                  </verse>
@@ -432,7 +432,7 @@
                                     <syl>bo</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000000475050734" dur="4" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl>na</syl>
                                  </verse>
@@ -440,7 +440,7 @@
                                     <syl con="d" wordpos="i"> a</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000075155698" dur="8" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>mo</syl>
                                  </verse>
@@ -454,7 +454,7 @@
                      <measure n="8">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000001839552430" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl>ra</syl>
                                  </verse>
@@ -462,7 +462,7 @@
                                     <syl>na</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000001194812907" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">re</syl>
                                  </verse>
@@ -475,7 +475,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000000099209976" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl>ra</syl>
                                  </verse>
@@ -483,7 +483,7 @@
                                     <syl>na</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000000574994584" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">re</syl>
                                  </verse>
@@ -498,7 +498,7 @@
                      <measure n="9">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="2" oct="4" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001193172580" dur="2" oct="4" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl> E</syl>
                                  </verse>
@@ -506,7 +506,7 @@
                                     <syl con="d" wordpos="i">so</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000001496241285" dur="4" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl>star</syl>
                                  </verse>
@@ -518,7 +518,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="2" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001509413012" dur="2" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl> E</syl>
                                  </verse>
@@ -526,7 +526,7 @@
                                     <syl con="d" wordpos="i">so</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000061711197" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>star</syl>
                                  </verse>
@@ -540,7 +540,7 @@
                      <measure n="10">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001624825894" dur="4" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl>con</syl>
                                  </verse>
@@ -550,7 +550,7 @@
                               </note>
                               <tuplet num="3" numbase="2" bracket.place="above" bracket.visible="false" num.format="count">
                                  <beam>
-                                    <note dur="8" oct="4" pname="f" accid.ges="n">
+                                    <note xml:id="note-0000000563723506" dur="8" oct="4" pname="f" accid.ges="n">
                                        <verse n="1">
                                           <syl con="d" wordpos="i">lie</syl>
                                        </verse>
@@ -562,7 +562,7 @@
                                     <note dur="8" oct="4" pname="d" accid.ges="n" />
                                  </beam>
                               </tuplet>
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000000721442444" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">ta</syl>
                                  </verse>
@@ -574,7 +574,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000000508928627" dur="4" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl>con</syl>
                                  </verse>
@@ -583,7 +583,7 @@
                                  </verse>
                               </note>
                               <beam>
-                                 <note dur="8" oct="3" pname="a" accid.ges="n">
+                                 <note xml:id="note-0000000318819332" dur="8" oct="3" pname="a" accid.ges="n">
                                     <verse n="1">
                                        <syl con="d" wordpos="i">lie</syl>
                                     </verse>
@@ -593,7 +593,7 @@
                                  </note>
                                  <note dur="8" oct="3" pname="b" accid.ges="n" />
                               </beam>
-                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000001522566280" dur="4" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">ta</syl>
                                  </verse>
@@ -607,7 +607,7 @@
                      <measure n="11">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000136707773" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">ce</syl>
                                  </verse>
@@ -615,7 +615,7 @@
                                     <syl>ne</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001312849993" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">ra.</syl>
                                  </verse>
@@ -628,7 +628,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001606419667" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">ce</syl>
                                  </verse>
@@ -636,7 +636,7 @@
                                     <syl>ne</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000879725722" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">ra.</syl>
                                  </verse>
@@ -653,7 +653,7 @@
                      <measure left="rptstart" n="12">
                         <staff n="1">
                            <layer n="1">
-                              <note dots="1" dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000654483716" dots="1" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>Noi</syl>
                                  </verse>
@@ -661,7 +661,7 @@
                                     <syl>In</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000001196718054" dur="8" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">ve</syl>
                                  </verse>
@@ -669,7 +669,7 @@
                                     <syl con="d" wordpos="i">que</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000001932554098" dur="4" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">giam</syl>
                                  </verse>
@@ -681,7 +681,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dots="1" dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000906096340" dots="1" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>Noi</syl>
                                  </verse>
@@ -689,7 +689,7 @@
                                     <syl>In</syl>
                                  </verse>
                               </note>
-                              <note dur="8" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000000664689275" dur="8" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">ve</syl>
                                  </verse>
@@ -697,7 +697,7 @@
                                     <syl con="d" wordpos="i">que</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001027105338" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">giam</syl>
                                  </verse>
@@ -711,7 +711,7 @@
                      <measure n="13">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001209240053" dur="4" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">l'a</syl>
                                  </verse>
@@ -720,7 +720,7 @@
                                  </verse>
                               </note>
                               <note dur="8" oct="4" pname="a" accid.ges="n" />
-                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000000056285288" dur="4" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl>e'l</syl>
                                  </verse>
@@ -733,7 +733,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="g" accid.ges="n">
+                              <note xml:id="note-0000000201348020" dur="4" oct="3" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">l'a</syl>
                                  </verse>
@@ -741,12 +741,12 @@
                                     <syl con="d" wordpos="i">va</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000001265504858" dur="4" oct="4" pname="c" accid.ges="n">
                                  <verse n="2">
                                     <syl wordpos="t">go</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="b" accid.ges="n">
+                              <note xml:id="note-0000000275606971" dur="4" oct="3" pname="b" accid.ges="n">
                                  <verse n="1">
                                     <syl>e'l</syl>
                                  </verse>
@@ -757,7 +757,7 @@
                      <measure n="14">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001767848358" dur="4" oct="4" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">tem</syl>
                                  </verse>
@@ -772,7 +772,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000042626875" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">tem</syl>
                                  </verse>
@@ -788,7 +788,7 @@
                      <measure n="15">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="2" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000001574057624" dur="2" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">po</syl>
                                  </verse>
@@ -801,7 +801,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="2" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000001917170464" dur="2" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">po</syl>
                                  </verse>
@@ -816,7 +816,7 @@
                      <measure n="16">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="a" accid.ges="n">
+                              <note xml:id="note-0000001112950907" dur="4" oct="4" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl>che</syl>
                                  </verse>
@@ -824,7 +824,7 @@
                                     <syl con="d" wordpos="i"> o</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="f" accid.ges="n">
+                              <note xml:id="note-0000000792193352" dur="4" oct="4" pname="f" accid.ges="n">
                                  <verse n="1">
                                     <syl>pur</syl>
                                  </verse>
@@ -832,7 +832,7 @@
                                     <syl wordpos="t">gni</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="g" accid.ges="n">
+                              <note xml:id="note-0000001310919651" dur="4" oct="4" pname="g" accid.ges="n">
                                  <verse n="1">
                                     <syl>chiam'</syl>
                                  </verse>
@@ -844,7 +844,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000002016334811" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>che</syl>
                                  </verse>
@@ -852,7 +852,7 @@
                                     <syl con="d" wordpos="i"> o</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001248225738" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>pur</syl>
                                  </verse>
@@ -860,7 +860,7 @@
                                     <syl wordpos="t">gni</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="c" accid.ges="n">
+                              <note xml:id="note-0000000461963400" dur="4" oct="4" pname="c" accid.ges="n">
                                  <verse n="1">
                                     <syl>chiam'</syl>
                                  </verse>
@@ -875,7 +875,7 @@
                         <staff n="1">
                            <layer n="1">
                               <beam>
-                                 <note dur="8" oct="4" pname="a" accid.ges="n">
+                                 <note xml:id="note-0000000660742251" dur="8" oct="4" pname="a" accid.ges="n">
                                     <verse n="1">
                                        <syl con="d" wordpos="i">al</syl>
                                     </verse>
@@ -892,7 +892,7 @@
                                     <note dur="8" oct="4" pname="d" accid.ges="n" />
                                  </beam>
                               </tuplet>
-                              <note dur="4" oct="4" pname="e" accid.ges="n">
+                              <note xml:id="note-0000001902178127" dur="4" oct="4" pname="e" accid.ges="n">
                                  <verse n="1">
                                     <syl>le</syl>
                                  </verse>
@@ -904,7 +904,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="3" pname="a" accid.ges="n">
+                              <note xml:id="note-0000000259693889" dur="4" oct="3" pname="a" accid.ges="n">
                                  <verse n="1">
                                     <syl con="d" wordpos="i">al</syl>
                                  </verse>
@@ -912,7 +912,7 @@
                                     <syl>à</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="3" pname="b" accid.ges="n">
+                              <note xml:id="note-0000000920019896" dur="4" oct="3" pname="b" accid.ges="n">
                                  <verse n="1">
                                     <syl>le</syl>
                                  </verse>
@@ -927,7 +927,7 @@
                      <measure right="rptend" n="18">
                         <staff n="1">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001722561394" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>gri</syl>
                                  </verse>
@@ -935,7 +935,7 @@
                                     <syl>ghe</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000056063941" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">a.</syl>
                                  </verse>
@@ -948,7 +948,7 @@
                         </staff>
                         <staff n="2">
                            <layer n="1">
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000001816274901" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl>gri</syl>
                                  </verse>
@@ -956,7 +956,7 @@
                                     <syl>ghe</syl>
                                  </verse>
                               </note>
-                              <note dur="4" oct="4" pname="d" accid.ges="n">
+                              <note xml:id="note-0000000907095016" dur="4" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
                                     <syl wordpos="t">a.</syl>
                                  </verse>

@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="http://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-    <meiHead>
-        <fileDesc>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title />
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application isodate="2018-03-29T21:38:14" version="2.7.1-1d517b8" label="1">
+               <name>Verovio</name>
+               <p>Transcoded from Humdrum</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <workDesc>
+         <work>
             <titleStmt>
-                <title />
+               <title />
             </titleStmt>
-            <pubStmt />
-        </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application isodate="2018-03-29T21:38:14" version="2.7.1-1d517b8" label="1">
-                    <name>Verovio</name>
-                    <p>Transcoded from Humdrum</p>
-                </application>
-            </appInfo>
-        </encodingDesc>
-        <workDesc>
-            <work>
-                <titleStmt>
-                    <title />
-                </titleStmt>
-            </work>
-        </workDesc>
-    </meiHead>
-    <music>
-        <body>
-            <mdiv xml:id="mdiv-0000001417630964">
-                <score xml:id="score-0000001662423606">
-                    <scoreDef xml:id="scoredef-0000001066206510">
-                        <staffGrp xml:id="staffgrp-0000000911249273">
-                            <staffDef xml:id="staffdef-0000000734088513" clef.shape="G" clef.line="2" n="1" lines="5">
-                                <label xml:id="label-0000001098607615" />
-                            </staffDef>
-                        </staffGrp>
-                    </scoreDef>
-                    <section xml:id="section-0000001144226722">
-                        <measure xml:id="measure-L2" n="1">
-                            <staff xml:id="staff-L2F1N1" n="1">
-                                <layer xml:id="layer-L2F1N1" n="1">
-                                    <tuplet xml:id="tuplet-L3F1-L5F1" num="3" numbase="2" num.format="count">
-                                        <beam xml:id="beam-L3F1-L5F1">
-                                            <note xml:id="note-L3F1" dur="8" oct="4" pname="e" accid.ges="n" />
-                                            <note xml:id="note-L4F1" dur="8" oct="4" pname="f" accid.ges="n" />
-                                            <note xml:id="note-L5F1" dur="8" oct="4" pname="g" accid.ges="n" />
-                                        </beam>
-                                    </tuplet>
-                                    <tuplet xml:id="tuplet-L7F1-L9F1" num="3" numbase="2" num.format="count">
-                                        <beam xml:id="beam-L7F1-L9F1">
-                                            <note xml:id="note-L7F1" dur="8" oct="4" pname="a" cue="true" accid.ges="n" />
-                                            <note xml:id="note-L8F1" dur="8" oct="4" pname="b" cue="true" accid.ges="n" />
-                                            <note xml:id="note-L9F1" dur="8" oct="5" pname="c" cue="true" accid.ges="n" />
-                                        </beam>
-                                    </tuplet>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
-                </score>
-            </mdiv>
-        </body>
-    </music>
+         </work>
+      </workDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" num.format="count">
+                              <beam>
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="f" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" num.format="count">
+                              <beam>
+                                 <note dur="8" oct="4" pname="a" cue="true" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="b" cue="true" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="c" cue="true" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

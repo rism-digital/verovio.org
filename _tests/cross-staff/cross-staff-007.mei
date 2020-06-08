@@ -2,87 +2,87 @@
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-	<meiHead>
-		<fileDesc>
-			<titleStmt>
-				<title>Spacing of staves in cross-staff</title>
-				<respStmt>
-					<persName role="editor">Klaus Rettinghaus</persName>
-				</respStmt>
-			</titleStmt>
-			<pubStmt>
-				<date>2020-04-30</date>
-			</pubStmt>
-			<notesStmt>
-				<annot>Spacing of staves should not be affected by cross-staff notes within beams</annot>
-			</notesStmt>
-		</fileDesc>
-		<encodingDesc>
-			<appInfo>
-				<application version="unknown" label="1">
-					<name>Verovio</name>
-				</application>
-			</appInfo>
-		</encodingDesc>
-	</meiHead>
-	<music>
-		<body>
-			<mdiv>
-				<score>
-					<scoreDef>
-						<staffGrp symbol="brace" bar.thru="true">
-							<staffDef n="1" lines="5">
-								<clef shape="G" line="2"/>
-								<meterSig count="6" unit="8"/>
-							</staffDef>
-							<staffDef n="2" lines="5">
-								<clef shape="F" line="4"/>
-								<meterSig count="6" unit="8"/>
-							</staffDef>
-						</staffGrp>
-					</scoreDef>
-					<section>
-						<measure>
-							<staff n="1">
-								<layer>
-									<mRest/>
-								</layer>
-							</staff>
-							<staff n="2">
-								<layer>
-									<beam>
-										<note dur="8" oct="3" pname="a" accid.ges="n"/>
-										<note dur="8" oct="3" pname="b" accid.ges="n"/>
-										<note dur="8" oct="4" pname="c" accid.ges="n"/>
-										<note dur="8" staff="1" oct="4" pname="d" accid.ges="n"/>
-										<note dur="8" oct="4" pname="c" accid.ges="n"/>
-										<note dur="8" oct="3" pname="b" accid.ges="n"/>
-									</beam>
-								</layer>
-							</staff>
-						</measure>
-						<measure>
-							<staff n="1">
-								<layer>
-									<mRest/>
-								</layer>
-							</staff>
-							<staff n="2">
-								<layer>
-									<beam>
-										<note dur="8" oct="2" pname="a" accid.ges="n"/>
-										<note dur="8" oct="2" pname="b" accid.ges="n"/>
-										<note dur="8" oct="3" pname="c" accid.ges="n"/>
-										<note dur="8" staff="1" oct="5" pname="d" accid.ges="n"/>
-										<note dur="8" oct="3" pname="c" accid.ges="n"/>
-										<note dur="8" oct="2" pname="b" accid.ges="n"/>
-									</beam>
-								</layer>
-							</staff>
-						</measure>
-					</section>
-				</score>
-			</mdiv>
-		</body>
-	</music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Spacing of staves in cross-staff</title>
+            <respStmt>
+               <persName role="editor">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-04-30</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Spacing of staves should not be affected by cross-staff notes within beams</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="6" unit="8" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <meterSig count="6" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                              <note dur="8" staff="1" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="2" pname="a" accid.ges="n" />
+                              <note dur="8" oct="2" pname="b" accid.ges="n" />
+                              <note dur="8" oct="3" pname="c" accid.ges="n" />
+                              <note dur="8" staff="1" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="3" pname="c" accid.ges="n" />
+                              <note dur="8" oct="2" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>
