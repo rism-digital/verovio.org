@@ -2,57 +2,75 @@
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-   <meiHead>
-      <fileDesc>
-         <titleStmt>
-            <title>Brace glyph</title>
-         </titleStmt>
-         <pubStmt>
-            <date>2020-06-15</date>
-         </pubStmt>
-         <notesStmt>
-            <annot>Brace can be rendered with the SMuFL glyph with the --use-brace-glyph option</annot>
-         </notesStmt>
-      </fileDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="3.0.0" label="2">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-      <extMeta><![CDATA[ { "useBraceGlyph": true }]]></extMeta>
-   </meiHead>
-   <music>
-      <body>
-         <mdiv>
-            <score>
-               <scoreDef>
-                  <staffGrp symbol="brace" bar.thru="true">
-                     <staffDef n="1" lines="5">
-                        <clef shape="G" line="2" />
-                     </staffDef>
-                     <staffDef n="2" lines="5">
-                        <clef shape="F" line="4" />
-                     </staffDef>
-                  </staffGrp>
-               </scoreDef>
-               <section>
-                  <measure n="1">
-                     <staff n="1">
-                        <layer n="1">
-                           <note dur="1" oct="4" pname="c" accid.ges="n" />
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <note dur="1" oct="3" pname="c" accid.ges="n" />
-                        </layer>
-                     </staff>
-                  </measure>
-               </section>
-            </score>
-         </mdiv>
-      </body>
-   </music>
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Complex groupings with labels</title>
+                <contributor>Klaus Rettinghaus</contributor>
+            </titleStmt>
+            <pubStmt>
+                <date>2020-06-09</date>
+            </pubStmt>
+            <notesStmt>
+                <annot>Labels of staves and staff groups are appropriately spaced with mutliple grouping symbols.</annot>
+            </notesStmt>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application version="3.0.0" label="2">
+                    <name>Verovio</name>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef>
+                        <meterSig unit="4" count="4"/>
+                        <staffGrp symbol="bracket">
+                            <staffGrp symbol="bracketsq">
+                                <staffGrp symbol="bracketsq">
+                                    <staffGrp symbol="brace">
+                                        <staffDef n="1" clef.line="2" clef.shape="G" lines="5">
+                                            <label>First most elaborated Instrument</label>
+                                        </staffDef>
+                                        <staffGrp symbol="brace">
+                                            <label>Other instruments</label>
+                                            <staffDef n="2" clef.line="2" clef.shape="G" lines="5">
+                                                <label>Instrument No. 2</label>
+                                            </staffDef>
+                                            <staffDef n="3" clef.line="2" clef.shape="G" lines="5">
+                                                <label>Instrument No. 3</label>
+                                            </staffDef>
+                                        </staffGrp>
+                                    </staffGrp>
+                                </staffGrp>
+                            </staffGrp>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure>
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="2">
+                                <layer n="1">
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                            <staff n="3">
+                                <layer n="1">
+                                    <mRest/>
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
 </mei>
