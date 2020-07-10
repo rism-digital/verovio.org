@@ -5,7 +5,7 @@
    <meiHead meiversion="4.0.0">
       <fileDesc>
          <titleStmt>
-            <title>Beams with repeated patterns with different durations</title>
+            <title>Beam angle with two notes</title>
          </titleStmt>
          <pubStmt />
       </fileDesc>
@@ -31,36 +31,68 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dur="8" oct="4" pname="c" />
                               <note dur="8" oct="4" pname="d" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="d" />
+                              <note dur="8" oct="4" pname="c" />
+                           </beam>
+                           <beam>
                               <note dur="8" oct="4" pname="e" />
                               <note dur="8" oct="4" pname="c" />
-                              <note dur="8" oct="4" pname="d" />
+                           </beam>
+                           <beam>
                               <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="d" />
                            </beam>
                            <beam>
-                              <note dur="16" oct="4" pname="c" />
                               <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="3" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="c" />
+                           </beam>
+                           <beam>
                               <note dur="16" oct="4" pname="e" />
                               <note dur="16" oct="4" pname="c" />
-                              <note dur="16" oct="4" pname="d" />
+                           </beam>
+                           <beam>
                               <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="d" />
                            </beam>
                            <beam>
-                              <note dur="32" oct="4" pname="c" />
                               <note dur="32" oct="4" pname="d" />
-                              <note dur="32" oct="4" pname="e" />
-                              <note dur="32" oct="4" pname="c" />
-                              <note dur="32" oct="4" pname="d" />
-                              <note dur="32" oct="4" pname="e" />
+                              <note dur="32" oct="3" pname="b" />
                            </beam>
                            <beam>
-                              <note dur="64" oct="4" pname="c" />
+                              <note dur="32" oct="4" pname="d" />
+                              <note dur="32" oct="4" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="32" oct="4" pname="e" />
+                              <note dur="32" oct="4" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="32" oct="4" pname="e" />
+                              <note dur="32" oct="4" pname="d" />
+                           </beam>
+                           <beam>
                               <note dur="64" oct="4" pname="d" />
+                              <note dur="64" oct="3" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="64" oct="4" pname="d" />
+                              <note dur="64" oct="4" pname="c" />
+                           </beam>
+                           <beam>
                               <note dur="64" oct="4" pname="e" />
                               <note dur="64" oct="4" pname="c" />
-                              <note dur="64" oct="4" pname="d" />
+                           </beam>
+                           <beam>
                               <note dur="64" oct="4" pname="e" />
+                              <note dur="64" oct="4" pname="d" />
                            </beam>
                         </layer>
                      </staff>
