@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Many slashes in tremolos</title>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <persName role="encoder">Klaus Rettinghaus</persName>
+        </respStmt>
+        <date isodate="2017">2017</date>
+      </pubStmt>
+      <notesStmt>
+        <annot>bTrem slashes should make stems longer to avoid collision of glyphs.</annot>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application label="0">
+          <name>Verovio</name>
+        </application>
+      </appInfo>
+    </encodingDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef meter.count="3" meter.unit="4" key.sig="3f">
+            <staffGrp>
+              <staffDef n="1" lines="5" clef.line="2" clef.shape="G"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure>
+              <staff n="1">
+                <layer n="1">
+                  <bTrem unitdur="256">
+                    <chord dur="4" stem.dir="down" stem.mod="6slash">
+                      <note oct="4" pname="f" accid="s"/>
+                      <note oct="5" pname="c"/>
+                    </chord>
+                  </bTrem>
+                  <bTrem unitdur="256">
+                    <chord dur="4" stem.dir="up" stem.mod="6slash">
+                      <note oct="5" pname="e"/>
+                      <note oct="4" pname="e"/>
+                    </chord>
+                  </bTrem>
+                  <bTrem unitdur="256">
+                    <note oct="5" pname="e" dur="4" stem.dir="up" stem.mod="6slash"/>
+                  </bTrem>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
