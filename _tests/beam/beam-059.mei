@@ -5,23 +5,21 @@
   <meiHead>
     <fileDesc>
       <titleStmt>
-        <title>Direction of the beam angle with group with two pitches</title>
+        <title>Short stems with fractional beams</title>
       </titleStmt>
       <pubStmt>
+        <respStmt>
+          <persName role="encoder">Klaus Rettinghaus</persName>
+        </respStmt>
         <date isodate="2020">2020</date>
       </pubStmt>
       <notesStmt>
-        <annot>Beams with one different note at the beginning or end are horizontal when this note is furthest away from the beam</annot>
+        <annot>Beams should never contradict the direction of the spanned interval.</annot>
       </notesStmt>
-      <sourceDesc>
-        <source>
-          <bibl>Behind Bars, p. 23, example 3</bibl>
-        </source>
-      </sourceDesc>
     </fileDesc>
     <encodingDesc>
       <appInfo>
-        <application version="unknown">
+        <application version="3.0.0" label="0">
           <name>Verovio</name>
         </application>
       </appInfo>
@@ -33,35 +31,28 @@
         <score>
           <scoreDef>
             <staffGrp>
-              <staffDef n="1" lines="5" clef.shape="G" clef.line="2"/>
+              <staffDef n="1" lines="5" clef.line="2" clef.shape="G" />
             </staffGrp>
           </scoreDef>
           <section>
-            <measure n="1">
+            <measure>
               <staff n="1">
                 <layer n="1">
                   <beam>
-                    <note dur="8" oct="5" pname="f"/>
-                    <note dur="8" oct="4" pname="a"/>
-                    <note dur="8" oct="4" pname="a"/>
+                    <note dots="1" dur="8" oct="4" pname="f" stem.dir="up" />
+                    <note dur="16" oct="4" pname="e" stem.dir="up" />
                   </beam>
                   <beam>
-                    <note dur="8" oct="3" pname="g"/>
-                    <note dur="8" oct="4" pname="g"/>
-                    <note dur="8" oct="4" pname="g"/>
-                    <note dur="8" oct="4" pname="g"/>
+                    <note dots="1" dur="8" oct="5" pname="f" stem.dir="up" />
+                    <note dur="16" oct="5" pname="e" stem.dir="up" />
                   </beam>
                   <beam>
-                    <note dur="16" oct="5" pname="c"/>
-                    <note dur="16" oct="5" pname="c"/>
-                    <note dur="16" oct="5" pname="c"/>
-                    <note dur="16" oct="6" pname="c"/>
+                    <note dots="1" dur="8" oct="4" pname="e" stem.dir="down" />
+                    <note dur="16" oct="4" pname="f" stem.dir="down" />
                   </beam>
                   <beam>
-                    <note dur="16" oct="4" pname="g"/>
-                    <note dur="16" oct="4" pname="g"/>
-                    <note dur="16" oct="4" pname="g"/>
-                    <note dur="16" oct="3" pname="g"/>
+                    <note dots="1" dur="8" oct="5" pname="e" stem.dir="down" />
+                    <note dur="16" oct="5" pname="f" stem.dir="down" />
                   </beam>
                 </layer>
               </staff>
