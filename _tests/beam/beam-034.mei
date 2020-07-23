@@ -5,17 +5,9 @@
    <meiHead meiversion="4.0.0">
       <fileDesc>
          <titleStmt>
-            <title>Direction of the beam angle with group with two pitches</title>
+            <title>Beams with repeated patterns with different durations</title>
          </titleStmt>
          <pubStmt />
-         <notesStmt>
-            <annot>When there is an equal number of pitches the beam may slope</annot>
-         </notesStmt>
-         <sourceDesc>
-            <source>
-               <bibl>Behind Bars, p. 23, example 5</bibl>
-            </source>
-         </sourceDesc>
       </fileDesc>
       <encodingDesc>
          <appInfo>
@@ -39,24 +31,36 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dur="8" oct="5" pname="f" />
-                              <note dur="8" oct="5" pname="f" />
-                              <note dur="8" oct="4" pname="a" />
-                              <note dur="8" oct="4" pname="a" />
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="4" pname="d" />
+                              <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="4" pname="d" />
+                              <note dur="8" oct="4" pname="e" />
                            </beam>
                            <beam>
-                              <note dur="8" oct="3" pname="g" />
-                              <note dur="8" oct="3" pname="g" />
-                              <note dur="8" oct="4" pname="g" />
-                              <note dur="8" oct="4" pname="g" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="e" />
                            </beam>
                            <beam>
-                              <note dur="16" oct="5" pname="c" />
-                              <note dur="16" oct="5" pname="c" />
-                              <note breaksec="1" dur="16" oct="5" pname="c" />
-                              <note dur="16" oct="6" pname="c" />
-                              <note dur="16" oct="6" pname="c" />
-                              <note dur="16" oct="6" pname="c" />
+                              <note dur="32" oct="4" pname="c" />
+                              <note dur="32" oct="4" pname="d" />
+                              <note dur="32" oct="4" pname="e" />
+                              <note dur="32" oct="4" pname="c" />
+                              <note dur="32" oct="4" pname="d" />
+                              <note dur="32" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dur="64" oct="4" pname="c" />
+                              <note dur="64" oct="4" pname="d" />
+                              <note dur="64" oct="4" pname="e" />
+                              <note dur="64" oct="4" pname="c" />
+                              <note dur="64" oct="4" pname="d" />
+                              <note dur="64" oct="4" pname="e" />
                            </beam>
                         </layer>
                      </staff>
