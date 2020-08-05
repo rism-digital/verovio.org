@@ -1,4 +1,4 @@
-Verovio 3.0.0-dev-298ab95
+Verovio 3.0.0-dev-1a73b26
 
 Example usage:
 
@@ -50,6 +50,7 @@ Input and page layout options
  --page-margin-top <i>             The page top margin (default: 50; min: 0; max: 500)
  --page-width <i>                  The page width (default: 2100; min: 100; max: 60000)
  --expand <s>                      Expand all referenced elements in the expansion <xml:id> (default: "")
+ --shrink-to-fit                   Scale down page content to fit the page height if needed
  --svg-bounding-boxes              Include bounding boxes in SVG output
  --svg-view-box                    Use viewBox on svg root element for easy scaling of document
  --svg-html5                       Write data-id and data-class attributes for JS usage and id clash avoidance.
