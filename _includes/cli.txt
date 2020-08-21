@@ -1,4 +1,4 @@
-Verovio 3.0.0-dev-802ed8c
+Verovio 3.0.0-dev-aaaea02
 
 Example usage:
 
@@ -30,7 +30,6 @@ Input and page layout options
  --even-note-spacing               Specify the linear spacing factor
  --hum-type                        Include type attributes when importing from Humdrum
  --justify-include-last-page       Justify including the last page
- --justify-systems-only            Justify systems only and not staves
  --justify-vertically              Justify spacing vertically to fill the page
  --landscape                       The landscape paper orientation flag
  --mensural-to-measure             Convert mensural sections to measure-based MEI
@@ -70,6 +69,10 @@ General layout options
  --grace-rhythm-align              Align grace notes rhythmically with all staves
  --grace-right-align               Align the right position of a grace group with all staves
  --hairpin-size <f>                The haripin size in MEI units (default: 3.00; min: 1.00; max: 8.00)
+ --justification-staff <f>         The staff justification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-system <f>        The system spacing justification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-bracket-group <f> Space between staves inside a bracketed group justification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-brace-group <f>   Space between staves inside a braced group ijustification (default: 1.00; min: 0.00; max: 10.00)
  --lyric-hyphen-length <f>         The lyric hyphen and dash length (default: 1.20; min: 0.50; max: 3.00)
  --lyric-line-thickness <f>        The lyric extender line thickness (default: 0.25; min: 0.10; max: 0.50)
  --lyric-no-start-hyphen           Do not show hyphens at the beginning of a system
@@ -85,11 +88,13 @@ General layout options
  --slur-max-height <f>             The maximum slur height in MEI units (default: 3.00; min: 2.00; max: 6.00)
  --slur-max-slope <i>              The maximum slur slope in degrees (default: 20; min: 0; max: 45)
  --slur-thickness <f>              The slur thickness in MEI units (default: 0.60; min: 0.20; max: 1.20)
+ --spacing-brace-group <i>         Minimum space between staves inside a braced group in MEI units (default: 12; min: 0; max: 36)
+ --spacing-bracket-group <i>       Minimum space between staves inside a bracketed group in MEI units (default: 12; min: 0; max: 36)
  --spacing-dur-detection           Detect long duration for adjusting spacing
  --spacing-linear <f>              Specify the linear spacing factor (default: 0.25; min: 0.00; max: 1.00)
  --spacing-non-linear <f>          Specify the non-linear spacing factor (default: 0.60; min: 0.00; max: 1.00)
- --spacing-staff <i>               The staff minimal spacing in MEI units (default: 8; min: 0; max: 24)
- --spacing-system <i>              The system minimal spacing in MEI units (default: 3; min: 0; max: 12)
+ --spacing-staff <i>               The staff minimal spacing in MEI units (default: 12; min: 0; max: 36)
+ --spacing-system <i>              The system minimal spacing in MEI units (default: 12; min: 0; max: 48)
  --staff-line-width <f>            The staff line width in unit (default: 0.15; min: 0.10; max: 0.30)
  --stem-width <f>                  The stem width (default: 0.20; min: 0.10; max: 0.50)
  --system-divider <s>              The display of system dividers (default: "left"; other values: "none", "left-right")
