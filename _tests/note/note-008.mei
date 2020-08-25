@@ -21,6 +21,7 @@
             </application>
          </appInfo>
       </encodingDesc>
+      <extMeta />
    </meiHead>
    <music>
       <body>
@@ -29,6 +30,7 @@
                <scoreDef>
                   <staffGrp symbol="bracket">
                      <staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef label="Violino I" n="2" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
                   </staffGrp>
                </scoreDef>
                <section>
@@ -38,18 +40,39 @@
                            <note dur="4" oct="4" pname="a" />
                            <note dur="2" oct="4" pname="a" />
                            <note dur="1" oct="4" pname="a" />
-                           <note dur="4" oct="4" pname="a" head.shape="+"/>
-                           <note dur="4" oct="4" pname="a" head.shape="diamond"/>
-                           <note dur="4" oct="4" pname="a" head.shape="diamond" head.fill="void"/>
-                           <note dur="1" oct="4" pname="a" head.shape="diamond"/>
-                           <note dur="4" oct="4" pname="a" head.shape="slash"/>
-                           <note dur="4" oct="4" pname="a" head.shape="x"/>
-                           <note dur="2" oct="4" pname="a" head.shape="x"/>
-                           <note dur="1" oct="4" pname="a" head.shape="x"/>
-                           <note dur="4" oct="4" pname="a" head.mod="paren"/>
-                           <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondBlackWide"/>
-                           <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondWhiteWide"/>
-                           <note dur="4" oct="4" pname="a" glyph.name="noteheadNull"/>
+                           <note dur="4" oct="4" pname="a" head.shape="+" />
+                           <note dur="4" oct="4" pname="a" head.shape="diamond" />
+                           <note dur="4" oct="4" pname="a" head.fill="void" head.shape="diamond" />
+                           <note dur="1" oct="4" pname="a" head.shape="diamond" />
+                           <note dur="4" oct="4" pname="a" head.shape="slash" />
+                           <note dur="4" oct="4" pname="a" head.shape="x" />
+                           <note dur="2" oct="4" pname="a" head.shape="x" />
+                           <note dur="1" oct="4" pname="a" head.shape="x" />
+                           <note dur="128" oct="4" pname="a" head.mod="paren" />
+                           <note dur="64" oct="4" pname="a" head.mod="paren" />
+                           <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondBlackWide" />
+                           <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondWhiteWide" />
+                           <note dur="4" oct="4" pname="a" glyph.name="noteheadNull" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="2" oct="5" pname="c" />
+                           <note dur="1" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" head.shape="+" />
+                           <note dur="4" oct="5" pname="c" head.shape="diamond" />
+                           <note dur="4" oct="5" pname="c" head.fill="void" head.shape="diamond" />
+                           <note dur="1" oct="5" pname="c" head.shape="diamond" />
+                           <note dur="4" oct="5" pname="c" head.shape="slash" />
+                           <note dur="4" oct="5" pname="c" head.shape="x" />
+                           <note dur="2" oct="5" pname="c" head.shape="x" />
+                           <note dur="1" oct="5" pname="c" head.shape="x" />
+                           <note dur="128" oct="5" pname="c" head.mod="paren" />
+                           <note dur="64" oct="5" pname="c" head.mod="paren" />
+                           <note dur="4" oct="5" pname="c" glyph.name="noteheadDiamondBlackWide" />
+                           <note dur="4" oct="5" pname="c" glyph.name="noteheadDiamondWhiteWide" />
+                           <note dur="4" oct="5" pname="c" glyph.name="noteheadNull" />
                         </layer>
                      </staff>
                   </measure>
