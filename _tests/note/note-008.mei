@@ -2,60 +2,60 @@
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-	<meiHead>
-		<fileDesc>
-			<titleStmt>
-				<title>Notehead example</title>
-			</titleStmt>
-			<pubStmt>
-				<date>2020-08-25</date>
-			</pubStmt>
-			<notesStmt>
-				<annot>Verovio supports different head shapes and head modifiers.</annot>
-			</notesStmt>
-		</fileDesc>
-		<encodingDesc>
-			<appInfo>
-				<application version="unknown">
-					<name>Verovio</name>
-				</application>
-			</appInfo>
-		</encodingDesc>
-	</meiHead>
-	<music>
-		<body>
-			<mdiv>
-				<score>
-					<scoreDef>
-						<staffGrp symbol="bracket">
-							<staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
-						</staffGrp>
-					</scoreDef>
-					<section>
-						<measure n="1">
-							<staff n="1">
-								<layer n="1">
-									<note dur="4" oct="4" pname="a" />
-									<note dur="2" oct="4" pname="a" />
-									<note dur="1" oct="4" pname="a" />
-									<note dur="4" oct="4" pname="a" head.shape="+"/>
-									<note dur="4" oct="4" pname="a" head.shape="diamond"/>
-									<note dur="4" oct="4" pname="a" head.shape="diamond" head.fill="void"/>
-									<note dur="1" oct="4" pname="a" head.shape="diamond"/>
-									<note dur="4" oct="4" pname="a" head.shape="slash"/>
-									<note dur="4" oct="4" pname="a" head.shape="x"/>
-									<note dur="2" oct="4" pname="a" head.shape="x"/>
-									<note dur="1" oct="4" pname="a" head.shape="x"/>
-									<note dur="4" oct="4" pname="a" head.mod="paren"/>
-									<note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondBlackWide"/>
-									<note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondWhiteWide"/>
-									<note dur="4" oct="4" pname="a" glyph.name="noteheadNull"/>
-								</layer>
-							</staff>
-						</measure>
-					</section>
-				</score>
-			</mdiv>
-		</body>
-	</music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Notehead example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-08-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports different head shapes and head modifiers.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="a" />
+                           <note dur="2" oct="4" pname="a" />
+                           <note dur="1" oct="4" pname="a" />
+                           <note dur="4" oct="4" pname="a" head.shape="+"/>
+                           <note dur="4" oct="4" pname="a" head.shape="diamond"/>
+                           <note dur="4" oct="4" pname="a" head.shape="diamond" head.fill="void"/>
+                           <note dur="1" oct="4" pname="a" head.shape="diamond"/>
+                           <note dur="4" oct="4" pname="a" head.shape="slash"/>
+                           <note dur="4" oct="4" pname="a" head.shape="x"/>
+                           <note dur="2" oct="4" pname="a" head.shape="x"/>
+                           <note dur="1" oct="4" pname="a" head.shape="x"/>
+                           <note dur="4" oct="4" pname="a" head.mod="paren"/>
+                           <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondBlackWide"/>
+                           <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondWhiteWide"/>
+                           <note dur="4" oct="4" pname="a" glyph.name="noteheadNull"/>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>
