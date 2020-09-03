@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Display of with unissons</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-09-03</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Natural accidental with unisson should always be the last one.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="g" accid="f" />
+                              <note oct="4" pname="g" accid="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="g" accid="n" />
+                              <note oct="4" pname="g" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="4" pname="g" accid="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="g" accid="n" />
+                              <note oct="4" pname="g" accid="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
