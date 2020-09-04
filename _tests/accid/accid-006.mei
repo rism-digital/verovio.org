@@ -1,62 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-   <meiHead>
-      <fileDesc>
-         <titleStmt>
-            <title>Display of with unissons</title>
-         </titleStmt>
-         <pubStmt>
-            <date>2020-09-03</date>
-         </pubStmt>
-         <notesStmt>
-            <annot>Natural accidental with unisson should always be the last one.</annot>
-         </notesStmt>
-      </fileDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="unknown">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-   </meiHead>
-   <music>
-      <body>
-         <mdiv>
-            <score>
-               <scoreDef>
-                  <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
-                  </staffGrp>
-               </scoreDef>
-               <section>
-                  <measure>
-                     <staff n="1">
-                        <layer n="1">
-                           <chord dur="4">
-                              <note oct="4" pname="g" accid="f" />
-                              <note oct="4" pname="g" accid="n" />
-                           </chord>
-                           <chord dur="4">
-                              <note oct="4" pname="g" accid="n" />
-                              <note oct="4" pname="g" accid="f" />
-                           </chord>
-                           <chord dur="4">
-                              <note oct="4" pname="g" accid="s" />
-                              <note oct="4" pname="g" accid="n" />
-                           </chord>
-                           <chord dur="4">
-                              <note oct="4" pname="g" accid="n" />
-                              <note oct="4" pname="g" accid="s" />
-                           </chord>
-                        </layer>
-                     </staff>
-                  </measure>
-               </section>
-            </score>
-         </mdiv>
-      </body>
-   </music>
+    <meiHead meiversion="4.0.0">
+        <fileDesc>
+            <titleStmt>
+                <title>Altered unisons</title>
+            </titleStmt>
+            <pubStmt>
+                <respStmt>
+                    <persName role="encoder">Klaus Rettinghaus</persName>
+                    <corpName role="funder">eNote GmbH</corpName>
+                </respStmt>
+                <date isodate="2020">2020</date>
+            </pubStmt>
+            <notesStmt>
+                <annot>The order of accidentals for a chord containing a sharp and a natural sign is ♯♮, since ♮♯ might appear to be a sharp cancelling a double-sharp sign.</annot>
+            </notesStmt>
+            <sourceDesc>
+                <source>
+                    <bibl>Behind Bars, p. 51, example 2</bibl>
+                </source>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application version="3.0.0" label="2">
+                    <name>Verovio</name>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef>
+                        <staffGrp>
+                            <staffDef n="1" lines="5" />
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure n="1">
+                            <staff n="1">
+                                <layer n="1">
+                                    <chord dur="2">
+                                        <note oct="4" pname="a">
+                                            <accid accid="n" />
+                                        </note>
+                                        <note oct="4" pname="a">
+                                            <accid accid="s" />
+                                        </note>
+                                    </chord>
+                                    <pad width="5" />
+                                    <chord dur="32">
+                                        <note oct="6" pname="c">
+                                            <accid accid="f" />
+                                        </note>
+                                        <note oct="6" pname="c">
+                                            <accid accid="n" />
+                                        </note>
+                                    </chord>
+                                    <pad width="5" />
+                                    <beam>
+                                        <chord dur="8">
+                                            <note oct="5" pname="e">
+                                                <accid accid="f" />
+                                            </note>
+                                            <note oct="5" pname="e">
+                                                <accid accid="n" />
+                                            </note>
+                                        </chord>
+                                        <chord dur="8">
+                                            <note oct="5" pname="d" />
+                                            <note oct="5" pname="f" />
+                                        </chord>
+                                        <chord dur="8">
+                                            <note oct="5" pname="e">
+                                                <accid accid="f" />
+                                            </note>
+                                            <note oct="5" pname="e">
+                                                <accid accid="n" />
+                                            </note>
+                                        </chord>
+                                        <chord dur="8">
+                                            <note oct="5" pname="d" />
+                                            <note oct="5" pname="f" />
+                                        </chord>
+                                    </beam>
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
 </mei>
