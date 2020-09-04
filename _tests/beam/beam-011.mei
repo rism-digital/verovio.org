@@ -10,6 +10,9 @@
       <pubStmt>
         <date isodate="2020">2020</date>
       </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
       <notesStmt>
         <annot>The outer notes of the group determine hte beam direction</annot>
       </notesStmt>

@@ -10,6 +10,9 @@
       <pubStmt>
         <date isodate="2020">2020</date>
       </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
       <notesStmt>
         <annot>When there is an equal number of pitches the beam may slope</annot>
       </notesStmt>

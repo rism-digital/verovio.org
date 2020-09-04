@@ -8,6 +8,9 @@
             <title>Beam with notes with legerlines should at least show one staff space</title>
          </titleStmt>
          <pubStmt />
+         <seriesStmt>
+            <title>Verovio test suite</title>
+          </seriesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>

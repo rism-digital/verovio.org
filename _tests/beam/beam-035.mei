@@ -8,6 +8,9 @@
             <title>Direction of the beam angle with group with four notes</title>
          </titleStmt>
          <pubStmt />
+         <seriesStmt>
+            <title>Verovio test suite</title>
+          </seriesStmt>
          <sourceDesc>
             <source>
                <bibl>Dorico, Making Notes, Development diary, part 10</bibl>

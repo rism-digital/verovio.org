@@ -10,6 +10,9 @@
       <pubStmt>
         <date isodate="2020">2020</date>
       </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
       <notesStmt>
         <annot>There must be one clear stave-line between the innermost beam and the first ledger line</annot>
       </notesStmt>

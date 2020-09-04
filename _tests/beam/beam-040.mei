@@ -8,6 +8,9 @@
             <title>Stem direction on beam groups</title>
          </titleStmt>
          <pubStmt />
+         <seriesStmt>
+            <title>Verovio test suite</title>
+          </seriesStmt>
          <notesStmt>
             <annot>With a minority of notes further away, the majority of notes has the wrong direction</annot>
          </notesStmt>

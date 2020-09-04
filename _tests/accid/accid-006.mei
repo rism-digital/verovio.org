@@ -14,6 +14,9 @@
                 </respStmt>
                 <date isodate="2020">2020</date>
             </pubStmt>
+            <seriesStmt>
+                <title>Verovio test suite</title>
+            </seriesStmt>
             <notesStmt>
                 <annot>The order of accidentals for a chord containing a sharp and a natural sign is ♯♮, since ♮♯ might appear to be a sharp cancelling a double-sharp sign.</annot>
             </notesStmt>

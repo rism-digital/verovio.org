@@ -10,6 +10,9 @@
       <pubStmt>
         <date isodate="2020">2020</date>
       </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
       <notesStmt>
         <annot>Place beams further appart so that each is attached to a stave-line</annot>
       </notesStmt>
