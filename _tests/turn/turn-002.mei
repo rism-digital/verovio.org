@@ -10,6 +10,9 @@
          <pubStmt>
             <date>2017-05-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>For delayed turns you have to use and adjust the "tstamp" attribute.</annot>
          </notesStmt>
