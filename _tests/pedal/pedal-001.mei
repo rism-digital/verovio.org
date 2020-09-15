@@ -10,6 +10,9 @@
          <pubStmt>
             <date>2017-05-09</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the "pedal" element for piano pedals.</annot>
          </notesStmt>
@@ -27,7 +30,7 @@
          <mdiv>
             <score>
                <scoreDef key.mode="minor" key.sig="4f" meter.count="6" meter.unit="8">
-                  <staffGrp label="Piano" symbol="brace" barthru="true">
+                  <staffGrp label="Piano" symbol="brace" bar.thru="true">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                      <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
                   </staffGrp>
