@@ -1,4 +1,4 @@
-Verovio 3.0.0-dev-e3adc20
+Verovio 3.0.0-dev-d98ef19
 
 Example usage:
 
@@ -29,7 +29,6 @@ Input and page layout options
  --condense-tempo-pages            When condensing a score also condense pages with a tempo change
  --even-note-spacing               Specify the linear spacing factor
  --hum-type                        Include type attributes when importing from Humdrum
- --justify-include-last-page       Justify including the last page
  --justify-vertically              Justify spacing vertically to fill the page
  --landscape                       The landscape paper orientation flag
  --mensural-to-measure             Convert mensural sections to measure-based MEI
