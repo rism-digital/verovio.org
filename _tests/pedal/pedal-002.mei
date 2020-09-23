@@ -10,6 +10,9 @@
          <pubStmt>
             <date>2017-05-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Pedal markings interact with measure spacing and take into account measure rests.</annot>
          </notesStmt>

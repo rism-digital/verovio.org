@@ -8,6 +8,9 @@
             <title>Beam slope regularity</title>
          </titleStmt>
          <pubStmt />
+         <seriesStmt>
+            <title>Verovio test suite</title>
+          </seriesStmt>
          <notesStmt>
             <annot>Beam should have a regular slope on identical motifs with different pitches</annot>
          </notesStmt>

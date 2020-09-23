@@ -10,6 +10,9 @@
          <pubStmt>
             <date>2020-05-12</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Pedal markings may be rendered as lines.</annot>
          </notesStmt>

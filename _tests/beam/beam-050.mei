@@ -15,6 +15,9 @@
                <persName role="encoder" auth.uri="http://d-nb.info/gnd" auth="GND" codedval="1138881465">Werner Goebl</persName>
             </respStmt>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+          </seriesStmt>
          <notesStmt>
             <annot>Cross-staff beams can have mixed stem direction defined in MEI.</annot>
          </notesStmt>

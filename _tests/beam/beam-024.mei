@@ -15,10 +15,10 @@
         <date isodate="2020">2020</date>
       </pubStmt>
       <seriesStmt>
-        <title>MEILER test files</title>
+        <title>Verovio test suite</title>
       </seriesStmt>
       <notesStmt>
-        <annot>Position a beam so that the shortest stems in bot directions are of equal length.</annot>
+        <annot>Position a beam so that the shortest stems in both directions are of equal length.</annot>
         <annot>For clarity, keep beams clear of the staves where possible.</annot>
         <annot>Slope the beam if the intervals of a group go in one direction (a); otherwise, reflect the interval of the outside notes (b).</annot>
         <annot>A beam should remain horizontal, where a slope in the direction of the outside pitches contradicts the direction of the majority of notes (c), and where there is no overall change in contour (d).</annot>

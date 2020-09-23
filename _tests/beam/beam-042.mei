@@ -10,6 +10,9 @@
          <pubStmt>
             <date>2017-04-20</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+          </seriesStmt>
          <notesStmt>
             <annot>Verovio adjusts beam length, stem length and direction to avoid collisions between grace note beams and regular beams.</annot>
          </notesStmt>

@@ -13,6 +13,9 @@
         </respStmt>
         <date isodate="2020">2020</date>
       </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
       <notesStmt>
         <annot>Beams should never contradict the direction of the spanned interval.</annot>
       </notesStmt>
