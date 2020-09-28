@@ -1,4 +1,4 @@
-Verovio 3.0.0-dev-9a06f48
+Verovio 3.0.0-dev-fb04c6a
 
 Example usage:
 
@@ -75,8 +75,8 @@ General layout options
  --justification-system <f>        The system spacing justification (default: 1.00; min: 0.00; max: 10.00)
  --justification-bracket-group <f> Space between staves inside a bracketed group justification (default: 1.00; min: 0.00; max: 10.00)
  --justification-brace-group <f>   Space between staves inside a braced group ijustification (default: 1.00; min: 0.00; max: 10.00)
- --ledger-line-thickness <f>       The thickness of the ledger lines (default: 0.15; min: 0.10; max: 0.30)
- --ledger-line-extension <f>       The amount by which a ledger line should extend either side of a notehead (default: 0.20; min: 0.10; max: 0.50)
+ --ledger-line-thickness <f>       The thickness of the ledger lines (default: 0.25; min: 0.10; max: 0.50)
+ --ledger-line-extension <f>       The amount by which a ledger line should extend either side of a notehead (default: 0.54; min: 0.20; max: 1.00)
  --lyric-hyphen-length <f>         The lyric hyphen and dash length (default: 1.20; min: 0.50; max: 3.00)
  --lyric-line-thickness <f>        The lyric extender line thickness (default: 0.25; min: 0.10; max: 0.50)
  --lyric-no-start-hyphen           Do not show hyphens at the beginning of a system
@@ -102,7 +102,7 @@ General layout options
  --spacing-system <i>              The system minimal spacing in MEI units (default: 12; min: 0; max: 48)
  --staff-line-width <f>            The staff line width in unit (default: 0.15; min: 0.10; max: 0.30)
  --stem-width <f>                  The stem width (default: 0.20; min: 0.10; max: 0.50)
- --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 1.00; min: 0.50; max: 2.00)
+ --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 1.00; min: 0.20; max: 2.00)
  --system-divider <s>              The display of system dividers (default: "left"; other values: "none", "left-right")
  --system-max-per-page <i>         Maximun number of systems per page (default: 0; min: 0; max: 24)
  --text-font <s>                   Set the text font (default: "Times")
