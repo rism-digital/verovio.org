@@ -87,7 +87,7 @@
                   <rest dur="4" />
                 </layer>
                 <layer>
-                  <note dur="2" oct="4" pname="f">
+                  <note dur="2" oct="4" pname="f" tie="t">
                     <accid accid.ges="s" />
                   </note>
                 </layer>
