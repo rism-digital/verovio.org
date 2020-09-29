@@ -1,3 +1,7 @@
 [submodule "gh-tutorial"]
 	path = gh-tutorial
 	url = https://github.com/rism-ch/verovio-tutorial
+[submodule "musicxmlTestSuite"]
+	path = musicxmlTestSuite
+	url = https://github.com/cuthbertLab/musicxmlTestSuite
+	branch = master

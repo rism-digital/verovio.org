@@ -19,21 +19,24 @@ show_all_tests: false
     var swipe_pages = false;
     var log = false;
     var border = 10;
-    var spacingSystem = 0;
-    var spacingStaff = 5;
+    var spacingSystem = 8;
+    var spacingStaff = 4;
     var format = 'musicxml';
 
     function set_options( ) {
         options = {
-                    inputFormat: format,
+                    from: format,
                     pageHeight: pageHeight,
                     pageWidth: pageWidth,
-                    border: border,
+                    pageMarginBottom: border,
+                    pageMarginLeft: border,
+                    pageMarginRight: border,
+                    pageMarginTop: border,
                     scale: zoom,
                     adjustPageHeight: 1,
                     spacingSystem: spacingSystem,
                     spacingStaff: spacingStaff,
-                    ignoreLayout: 1
+                    breaks: "auto"
                 };
         //console.log( options );
         vrvToolkit.setOptions( options );
@@ -57,7 +60,7 @@ show_all_tests: false
         }
         console.timeEnd("loading");
 
-        svg = vrvToolkit.renderPage(page, {});
+        svg = vrvToolkit.renderToSVG(page, {});
         $(div).html(svg);
     }
 
@@ -83,14 +86,6 @@ show_all_tests: false
     </div>
 
     <div class="col-md-9">
-        <div class="panel panel-default">
-
-            <div class="panel-body">
-                <p>
-                    This feature is highly experimental at this stage, and only the features supported by Verovio will be converted. Everything else will be lost. For a more complete conversion from MusicXML to MEI we strongly recommend to use the <a href="https://github.com/music-encoding/music-encoding/tree/develop/tools" target="_blank">MEI XSL stylesheets</a>.
-                </p>
-            </div>
-        </div>
 
         {% for t in site.data.musicxml-tests.tests %}
             {% if page.show_all_tests == false and t.version-check == null %}{% continue %}{% endif %}
@@ -109,10 +104,7 @@ show_all_tests: false
                 {% for f in t.files %}
                     {% assign id = f.name | remove:'.xml' %}
                     <h4 class="test-xmlfile">{{ f.name }}</h4>
-                    <p>
-                        Original LilyPond comment: {{ f.description }}
-                    </p>
-
+                    <p><strong>Original description:</strong> {{ f.description }}</p>
 
                     {% if f.comment %}
                     <p><strong>Additional comment:</strong> {{ f.comment }}</p>
@@ -164,7 +156,7 @@ show_all_tests: false
 <script type="text/javascript">
 //<![CDATA[
     $.ajax({
-        url: "examples/lilypond-test-suite/{{ f.name }}"
+        url: "musicxmlTestSuite/xmlFiles/{{ f.name }}"
         , dataType: "text"
         , success: function(data) {
             load_data( data, "#{{ id }}" );
