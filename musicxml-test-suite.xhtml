@@ -164,7 +164,7 @@ show_all_tests: false
 <script type="text/javascript">
 //<![CDATA[
     $.ajax({
-        url: "examples/lilypond-test-suite/{{ f.name }}"
+        url: "musicxmlTestSuite/xmlFiles/{{ f.name }}"
         , dataType: "text"
         , success: function(data) {
             load_data( data, "#{{ id }}" );
