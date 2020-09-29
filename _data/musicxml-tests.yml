@@ -1,7 +1,7 @@
 show_all_tests: false
 tests:
     - id: "01"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Pitches"
       files:
           - name: "01a-Pitches-Pitches.xml"
@@ -20,8 +20,9 @@ tests:
             description: "Some microtones: c flat-and-a-half, d half-flat, e half-sharp, f sharp-and-a half. Once in the lower and once in the upper region of the staff."
             mei: 2
             verovio: 2
-          - name: "01e-Pitches-ParenthesizedAccidentals.xml"
-            description: "Accidentals can be cautionary or editorial. Each measure has a normal accidental, an editorial, a cautionary and an editioal and cautionary accidental."
+          - name: "01ea-Pitches-Parenthesis-Changed-Accidentals.xml"
+            description: "Accidentals have styling attributes.  The first measure's accidentals should be normal, parenthesized, bracketed, and praenthesized-and-bracketed.
+              Measure 2 has the sharp shifted to the right of the note, while Measure 3 has the sharp shifted above the note.  Measure 4 should have a red accidental.  Measure 5 and 6 should have a large accidental, created using the size and font-size attributes respectively."
             comment: "In MEI an accidental is either editorial or cautionary."
             mei: 1
             verovio: 2
@@ -31,7 +32,7 @@ tests:
             verovio: 2
 
     - id: "02"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Rests"
       files:
           - name: "02a-Rests-Durations.xml"
@@ -57,12 +58,15 @@ tests:
             verovio: 2
 
     - id: "03"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Rhythm"
       files:
-          - name: "03a-Rhythm-Durations.xml"
-            description: "All note durations, from long, brevis, whole until 128th; First with their plain values, then dotted and finally doubly-dotted."
-            comment: "Time signatures are ignored."
+          - name: "03aa-Rhythm-Durations.xml"
+            description: "All common note durations, from brevis, whole until 64th; First with their plain values, then dotted and finally doubly-dotted (to 32nd)."
+            mei: 2
+            verovio: 2
+          - name: "03ab-Rhythm-Durations.xml"
+            description: "Extreme note durations (pre 3.0): long and 128th; First with their plain values, then dotted and finally doubly-dotted."
             mei: 2
             verovio: 2
           - name: "03b-Rhythm-Backup.xml"
@@ -79,8 +83,12 @@ tests:
             comment: "Will need to be updated for handling @dur.ges."
             mei: 1
             verovio: 2
+          - name: "03e-Rhythm-SecondaryBeamBreaks.musicxml"
+            description: "A piece with four beamed scales, showing different secondary beam breaks."
+            mei: 2
+            verovio: 2
     - id: "11"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Time signatures"
       files:
           - name: "11a-TimeSignatures.xml"
@@ -117,13 +125,29 @@ tests:
             mei: 2
             verovio: 2
     - id: "12"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Clefs"
       files:
-          - name: "12a-Clefs.xml"
-            description: "Various clefs: G, C, F, percussion, TAB and none; some are also possible with transposition and on other staff lines than their default (e.g. soprano/alto/tenor/baritone C clefs); Each measure shows a different clef (measure 17 has the 'none' clef), only measure 18 has the same treble clef as measure 1."
-            comment: "'TAB' and 'percussion' missing."
+          - name: "12aa-Clefs_Pitch_Traditional.xml"
+            description: "Four traditional clefs: G-treble, C-alto, C-tenor, F-bass."
+            mei: 2
+            verovio: 2
+          - name: "12ab-Clefs-Percussion-NonTrad.xml"
+            description: "Clefs with octave shifts, clefs on staff lines other than default, and percussion."
+            mei: 2
+            verovio: 2
+          - name: "12ac-Clefs-TAB-Switch.xml"
+            description: "none clef, TAB clef, Treble"
             mei: 1
+            verovio: 1
+          - name: "12ad-Clefs-Extreme-Octave.xml"
+            description: "Clefs with |octave shifts| > 1
+          Order: treble 15vb (C2), bass 15vb (C2),
+          treble 15va (C6), bass 15va (C6), 
+          treble 22va (C7), bass 22vb (C1).  Should all display as middle C
+          if clef octavation is ignored "
+            comment: "Three-octave-shift is not rendered."
+            mei: 2
             verovio: 1
           - name: "12b-Clefs-NoKeyOrClef.xml"
             description: "A score without any key or clef defined. The default (4/4 in treble clef) should be used."
@@ -131,26 +155,27 @@ tests:
             mei: 2
             verovio: 2
     - id: "13"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Key signatures"
       files:
           - name: "13a-KeySignatures.xml"
-            description: "Various key signature: from 11 flats to 11 sharps (each one first one measure in major, then one measure in minor)"
-            comment: "Key changes are not supported, yet."
-            mei: 1
+            description: "Various standard key signatures: from 7
+            flats to 7 sharps (each one first one measure in major, then one
+            measure in minor)"
+            mei: 2
             verovio: 2
           - name: "13b-KeySignatures-ChurchModes.xml"
             description: "All different modes: major, minor, ionian, dorian, phrygian, lydian, mixolydian, aeolian, and locrian; All modes are given with 2 sharps."
-            mei: 1
+            mei: 2
             verovio: 2
           - name: "13c-KeySignatures-NonTraditional.xml"
             description: "Non-traditional key signatures, where each alteration is separately given. Here we have (f sharp, a flat, b flat) and (c flatflat, g sharp sharp, d flat, b sharp, f natural), where in the second case an explicit octave is given for each alteration."
-            mei: 1
-            verovio: 1
+            mei: 2
+            verovio: 2
           - name: "13d-KeySignatures-Microtones.xml"
             description: "Non-traditional key signatures with microtone alterations: (g flat-and-a-half, a flat, b half-flat, c natural, d half-sharp, e sharp, f sharp-and-a-half)."
-            mei: 1
-            verovio: 1
+            mei: 2
+            verovio: 2
     - id: "14"
       name: "Staff attributes"
       files:
@@ -159,7 +184,7 @@ tests:
             mei: -1
             verovio: -1
     - id: "21"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Chorded notes"
       files:
           - name: "21a-Chord-Basic.xml"
@@ -191,22 +216,22 @@ tests:
       files:
           - name: "22a-Noteheads.xml"
             description: "Different note styles, using the <notehead> element. First, each note head style is printed with four quarter notes, two with filled heads, two with unfilled heads, where first the stem is up and then the stem is down. After that, each note head style is printed with a half note (should have an unfilled head by default). Finally, the Aiken note head styles are tested, once with stem up and once with stem down."
-            mei: -1
-            verovio: -1
+            mei: 1
+            verovio: 1
           - name: "22b-Staff-Notestyles.xml"
             description: "Staff-connected note styles: slash notation, hidden notes (with and without hidden staff lines)"
-            mei: -1
-            verovio: -1
+            mei: 1
+            verovio: 1
           - name: "22c-Noteheads-Chords.xml"
             description: "Different note styles for individual notes inside a chord, using the notehead element."
-            mei: -1
-            verovio: -1
+            mei: 1
+            verovio: 1
           - name: "22d-Parenthesized-Noteheads.xml"
             description: "Parenthesized note heads. First, a single parenthesized note is tested, once with a normal and then with a non-standard notehead, then two chords with some/all parenthesized noteheads and finally a parenthesized rest."
-            mei: -1
-            verovio: -1
+            mei: 1
+            verovio: 1
     - id: "23"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Triplets, Tuplets"
       files:
           - name: "23a-Tuplets.xml"
@@ -215,7 +240,7 @@ tests:
             verovio: 2
           - name: "23b-Tuplets-Styles.xml"
             description: "Different tuplet styles: default, none, x:y, x:y-note; Each with bracket, slur and none. Finally, non-standard 4:3 and 17:2 tuplets are given."
-            comment: "Some style information is missing."
+            comment: "MEI doesn't support noteheads as tuplet style."
             mei: 1
             verovio: 1
           - name: "23c-Tuplet-Display-NonStandard.xml"
@@ -236,7 +261,7 @@ tests:
             mei: 0
             verovio: 0
     - id: "24"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Grace notes"
       files:
           - name: "24a-GraceNotes.xml"
@@ -245,8 +270,8 @@ tests:
             verovio: 2
           - name: "24b-ChordAsGraceNote.xml"
             description: "Chords as grace notes."
-            mei: 1
-            verovio: 1
+            mei: 2
+            verovio: 2
           - name: "24c-GraceNote-MeasureEnd.xml"
             description: "A grace note that appears at the measure end (without any steal-from-* attribute set). Some applications need to convert this into an after-grace."
             mei: 1
@@ -264,7 +289,7 @@ tests:
             mei: 2
             verovio: 2
     - id: "31"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Dynamics and other single symbols"
       files:
           - name: "31a-Directions.xml"
@@ -276,7 +301,7 @@ tests:
             mei: 1
             verovio: 1
     - id: "32"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Notations and Articulations"
       files:
           - name: "32a-Notations.xml"
@@ -297,7 +322,7 @@ tests:
             mei: -1
             verovio: -1
     - id: "33"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Spanners"
       files:
           - name: "33a-Spanners.xml"
@@ -324,22 +349,22 @@ tests:
             verovio: 2
           - name: "33f-Trill-EndingOnGraceNote.xml"
             description: "A trill spanner that spans a grace note and ends on an after-grace note at the end of the measure."
-            mei: 1
-            verovio: 1
+            mei: 2
+            verovio: 2
           - name: "33g-Slur-ChordedNotes.xml"
             description: "Slurs on chorded notes: Only the first note of the chord should get the slur notation. Some applications print out the slur for all notes – these should be ignored."
             mei: 2
             verovio: 2
           - name: "33h-Spanners-Glissando.xml"
             description: "All different types of glissando defined in MusicXML"
-            mei: 1
+            mei: 2
             verovio: 1
           - name: "33i-Ties-NotEnded.xml"
             description: "Several ties that have their end tag missing."
             mei: 2
             verovio: 2
     - id: "41"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Multiple parts (staves)"
       files:
           - name: "41a-MultiParts-Partorder.xml"
@@ -381,7 +406,7 @@ tests:
             mei: 0
             verovio: 0
     - id: "42"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Multiple voices per staff"
       files:
           - name: "42a-MultiVoice-TwoVoicesOnStaff-Lyrics.xml"
@@ -393,7 +418,7 @@ tests:
             mei: 0
             verovio: 0
     - id: "43"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "One part on multiple staves"
       files:
           - name: "43a-PianoStaff.xml"
@@ -410,13 +435,13 @@ tests:
             verovio: 0
           - name: "43d-MultiStaff-StaffChange.xml"
             description: "Staff changes in a piano staff. The voice from the second staff has some notes/chords on the first staff. The final two chords have some notes on the first, some on the second staff."
-            mei: 0
-            verovio: 0
+            mei: 2
+            verovio: 2
           - name: "43e-Multistaff-ClefDynamics.xml"
             description: "A piano staff with dynamics and clef changes, where each element (ffff, wedge and clef changes) applies only to one voice or one staff, respectively."
             comment: "the placement of the clef is problematic."
-            mei: 0
-            verovio: 0
+            mei: 2
+            verovio: 2
     - id: "45"
       name: "Repeats"
       files:
@@ -449,7 +474,7 @@ tests:
             mei: -1
             verovio: -1
     - id: "46"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Barlines, Measures"
       files:
           - name: "46a-Barlines.xml"
@@ -479,23 +504,24 @@ tests:
             verovio: 2
           - name: "46g-PickupMeasure-Chordnames-FiguredBass.xml"
             description: "Pickup measure with chord names and figured bass."
-            mei: 0
-            verovio: 0
+            mei: 2
+            verovio: 2
     - id: "51"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Header information"
       files:
           - name: "51b-Header-Quotes.xml"
             description: "Several header fields and part names can contain quotes. This test checks whether they are converted/imported without problems (i.e. whether they are correctly escaped when converting)."
-            mei: -1
-            verovio: -1
+            mei: 2
+            verovio: 2
           - name: "51c-MultipleRights.xml"
-            description: "There can be multiple <rights> tags in the identification element of the score. The conversion shall still work, ideally using both of them."
+            description: "There can be multiple rights tags in the identification element of the score. The conversion shall still work, ideally using both of them."
             mei: -1
             verovio: -1
           - name: "51d-EmptyTitle.xml"
             description: "A piece with an empty (but existing) work-title, but a non-empty movement-title. In this case the movement-title should be chosen, even though the work-title exists."
-            mei: -1
-            verovio: -1
+            mei: 2
+            verovio: 2
     - id: "52"
       name: "Page layout"
       files:
@@ -508,7 +534,7 @@ tests:
             mei: -1
             verovio: -1
     - id: "61"
-      version-check: "0.9.14-dev-ccb4fb5"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Lyrics"
       files:
           - name: "61a-Lyrics.xml"
@@ -551,7 +577,7 @@ tests:
           - name: "61j-Lyrics-Elisions.xml"
             description: "Multiple lyrics syllables assigned to a single note are implemented either using a space in the lyrics or by using the elision lyrics element. This testcase checks both of them. First, a note with on syllable is given, then a note with two syllables separated by a spcae and finally a note with two and one with three syllables implemented using elision is given."
             mei: 2
-            verovio: 0
+            verovio: 2
           - name: "61k-Lyrics-SpannersExtenders.xml"
             description: "Lyrics spanners: continued syllables and extenders, possibly spanning multiple notes. The intermediate notes do not have any lyric element."
             mei: 2
@@ -584,34 +610,37 @@ tests:
             mei: -1
             verovio: -1
     - id: "72"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Transposing intruments"
       files:
           - name: "72a-TransposingInstruments.xml"
             description: "Transposing instruments: Trumpet in Bb, Horn in Eb, Piano; All of them show the C major scale (the trumpet with 2 sharp, the horn with 3 sharp)."
-            mei: -1
-            verovio: -1
+            mei: 2
+            verovio: 2
           - name: "72b-TransposingInstruments-Full.xml"
             description: "Various transposition. Each part plays a c”, just displayed in different display pitches. The second-to-last staff uses a transposition where the displayed c’ is an actual f”’ concert pitch. The final staff is an untransposed instrument."
-            mei: -1
-            verovio: -1
+            mei: 2
+            verovio: 2
           - name: "72c-TransposingInstruments-Change.xml"
             description: "An instrument change from one transposition (Clarinet in Eb) to another transposing instrument (Clarinet in Bb). The displayed instrument name should also be updated. The whole piece is in Bb major (sounding), so first the key signature should be one flat, after the change it should have no accidentals."
             mei: -1
             verovio: -1
     - id: "73"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Percussion"
       files:
           - name: "73a-Percussion.xml"
             description: "Three types of percussion staves: A five-line staff with bass clef for Timpani, a five-line staff with percussion clef, and a one-line percussion staff with only unpitched notes."
-            mei: -1
-            verovio: -1
+            mei: 2
+            verovio: 2
     - id: "74"
+      version-check: "3.0.0-dev-fb04c6a"
       name: "Figured bass"
       files:
           - name: "74a-FiguredBass.xml"
             description: "Some figured bass containing alterated figures, bracketed figures and slashed figures. The last note contains an empty figured-bass element, which is invalid MusicXML, to check how well applications cope with malformed files. Note that this file does not contain any extenders!"
-            mei: -1
-            verovio: -1
+            mei: 2
+            verovio: 2
     - id: "75"
       name: "Other instrumental notation"
       files:
