@@ -83,14 +83,6 @@ show_all_tests: false
     </div>
 
     <div class="col-md-9">
-        <div class="panel panel-default">
-
-            <div class="panel-body">
-                <p>
-                    This feature is highly experimental at this stage, and only the features supported by Verovio will be converted. Everything else will be lost. For a more complete conversion from MusicXML to MEI we strongly recommend to use the <a href="https://github.com/music-encoding/music-encoding/tree/develop/tools" target="_blank">MEI XSL stylesheets</a>.
-                </p>
-            </div>
-        </div>
 
         {% for t in site.data.musicxml-tests.tests %}
             {% if page.show_all_tests == false and t.version-check == null %}{% continue %}{% endif %}
