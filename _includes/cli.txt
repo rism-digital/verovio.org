@@ -1,4 +1,4 @@
-Verovio 3.0.0-dev-fb04c6a
+Verovio 3.0.0-dev-20fe795
 
 Example usage:
 
@@ -105,7 +105,6 @@ General layout options
  --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 1.00; min: 0.20; max: 2.00)
  --system-divider <s>              The display of system dividers (default: "left"; other values: "none", "left-right")
  --system-max-per-page <i>         Maximun number of systems per page (default: 0; min: 0; max: 24)
- --text-font <s>                   Set the text font (default: "Times")
  --thick-barline-thickness <f>     The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
  --tie-thickness <f>               The tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
  --tuplet-bracket-thickness <f>    The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
