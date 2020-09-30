@@ -1,4 +1,4 @@
-Verovio 3.0.0-dev-20fe795
+Verovio 3.0.0-dev-01c3bd7
 
 Example usage:
 
@@ -102,7 +102,7 @@ General layout options
  --spacing-system <i>              The system minimal spacing in MEI units (default: 12; min: 0; max: 48)
  --staff-line-width <f>            The staff line width in unit (default: 0.15; min: 0.10; max: 0.30)
  --stem-width <f>                  The stem width (default: 0.20; min: 0.10; max: 0.50)
- --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 1.00; min: 0.20; max: 2.00)
+ --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 0.20; min: 0.10; max: 2.00)
  --system-divider <s>              The display of system dividers (default: "left"; other values: "none", "left-right")
  --system-max-per-page <i>         Maximun number of systems per page (default: 0; min: 0; max: 24)
  --thick-barline-thickness <f>     The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
