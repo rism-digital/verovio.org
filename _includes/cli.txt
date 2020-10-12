@@ -1,4 +1,4 @@
-Verovio 3.1.0-dev-1d736d6
+Verovio 3.1.0-dev-7928bc6
 
 Example usage:
 
@@ -95,12 +95,12 @@ General layout options
  --slur-max-height <f>             The maximum slur height in MEI units (default: 3.00; min: 2.00; max: 6.00)
  --slur-max-slope <i>              The maximum slur slope in degrees (default: 20; min: 0; max: 60)
  --slur-thickness <f>              The slur thickness in MEI units (default: 0.60; min: 0.20; max: 1.20)
- --spacing-brace-group <i>         Minimum space between staves inside a braced group in MEI units (default: 12; min: 0; max: 36)
- --spacing-bracket-group <i>       Minimum space between staves inside a bracketed group in MEI units (default: 12; min: 0; max: 36)
+ --spacing-brace-group <i>         Minimum space between staves inside a braced group in MEI units (default: 12; min: 0; max: 48)
+ --spacing-bracket-group <i>       Minimum space between staves inside a bracketed group in MEI units (default: 12; min: 0; max: 48)
  --spacing-dur-detection           Detect long duration for adjusting spacing
  --spacing-linear <f>              Specify the linear spacing factor (default: 0.25; min: 0.00; max: 1.00)
  --spacing-non-linear <f>          Specify the non-linear spacing factor (default: 0.60; min: 0.00; max: 1.00)
- --spacing-staff <i>               The staff minimal spacing in MEI units (default: 12; min: 0; max: 36)
+ --spacing-staff <i>               The staff minimal spacing in MEI units (default: 12; min: 0; max: 48)
  --spacing-system <i>              The system minimal spacing in MEI units (default: 12; min: 0; max: 48)
  --staff-line-width <f>            The staff line width in unit (default: 0.15; min: 0.10; max: 0.30)
  --stem-width <f>                  The stem width (default: 0.20; min: 0.10; max: 0.50)
