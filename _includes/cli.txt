@@ -1,4 +1,4 @@
-Verovio 3.1.0-dev-5bc3415
+Verovio 3.1.0-dev-3cbcfc8
 
 Example usage:
 
@@ -107,6 +107,7 @@ General layout options
  --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 0.20; min: 0.10; max: 2.00)
  --system-divider <s>              The display of system dividers (default: "left"; other values: "none", "left-right")
  --system-max-per-page <i>         Maximun number of systems per page (default: 0; min: 0; max: 24)
+ --text-enclosure-thickness <f>    The thickness of the line text enclosing box (default: 0.20; min: 0.10; max: 0.80)
  --thick-barline-thickness <f>     The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
  --tie-thickness <f>               The tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
  --tuplet-bracket-thickness <f>    The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
