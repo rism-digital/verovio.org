@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+  <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slur and ties with different end- and midpoint thickness</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+	<extMeta><![CDATA[ { "tieMidpointThickness": 0.25, "tieEndpointThickness": 0.25, "slurMidpointThickness": 1, "slurEndpointThickness": 0.2 }]]></extMeta>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef>
+            <staffGrp symbol="bracket">
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <pb/>
+            <measure n="0">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="e" oct="4" dur="4" xml:id="m0-s1-note4"/>
+                  <note pname="d" oct="4" dur="8"/>
+                  <note pname="e" oct="4" dur="8" xml:id="m0-s1-note6"/>
+                </layer>
+              </staff>
+              <slur startid="#m0-s1-note4" endid="#m0-s1-note6" curvedir="above" color="#ff0000"/>
+            </measure>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <note pname="g" oct="4" dur="4" xml:id="m1-s1-note1"/>
+                  <note pname="g" oct="4" dur="16" xml:id="m1-s1-note2"/>
+                </layer>
+              </staff>
+              <tie startid="#m1-s1-note1" endid="#m1-s1-note2" color="#ff0000"/>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
