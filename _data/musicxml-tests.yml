@@ -309,6 +309,24 @@ tests:
             description: "All notation elements defined in MusicXML. The lyrics show the notation assigned to each note."
             mei: 1
             verovio: 1
+          - name: "32aa-Notations2_Ornaments.xml"
+            description: "All &lt;ornament&gt; elements 
+          defined in MusicXML. The lyrics show the ornament assigned to each 
+          note."
+            mei: 1
+            verovio: 1
+          - name: "32ab-Notations3.xml"
+            description: "All &lt;technical&gt; elements 
+          defined in MusicXML. The lyrics show the technical assigned to each 
+          note."
+            mei: 1
+            verovio: 1
+          - name: "32ac-Notations4.xml"
+            description: "Some miscellanious &lt;notation&gt; elements 
+          defined in MusicXML including dynamics in notations. The lyrics show the notation assigned to each 
+          note."
+            mei: 1
+            verovio: 1
           - name: "32b-Articulations-Texts.xml"
             description: "Text markup: different font sizes, weights and colors."
             comment: "Text rendition gets converted, but some directions are missing @tstamp/@startid"
