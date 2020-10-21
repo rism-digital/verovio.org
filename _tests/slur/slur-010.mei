@@ -16,7 +16,7 @@
             </application>
          </appInfo>
       </encodingDesc>
-	<extMeta><![CDATA[ { "tieMidpointThickness": 0.25, "tieEndpointThickness": 0.25, "slurMidpointThickness": 0.2, "slurEndpointThickness": 1 }]]></extMeta>
+	<extMeta><![CDATA[ { "tieMidpointThickness": 0.25, "tieEndpointThickness": 0.25, "slurMidpointThickness": 1, "slurEndpointThickness": 0.2 }]]></extMeta>
   </meiHead>
   <music>
     <body>
