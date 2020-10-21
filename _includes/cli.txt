@@ -1,4 +1,4 @@
-Verovio 3.1.0-dev-2e8da05
+Verovio 3.1.0-dev-b8fbf7e
 
 Example usage:
 
@@ -94,7 +94,8 @@ General layout options
  --slur-min-height <f>             The minimum slur height in MEI units (default: 1.20; min: 0.30; max: 2.00)
  --slur-max-height <f>             The maximum slur height in MEI units (default: 3.00; min: 2.00; max: 6.00)
  --slur-max-slope <i>              The maximum slur slope in degrees (default: 20; min: 0; max: 60)
- --slur-thickness <f>              The slur thickness in MEI units (default: 0.60; min: 0.20; max: 1.20)
+ --slur-endpoint-thickness <f>     The Endpoint slur thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
+ --slur-midpoint-thickness <f>     The midpoint slur thickness in MEI units (default: 0.60; min: 0.20; max: 1.20)
  --spacing-brace-group <i>         Minimum space between staves inside a braced group in MEI units (default: 12; min: 0; max: 48)
  --spacing-bracket-group <i>       Minimum space between staves inside a bracketed group in MEI units (default: 12; min: 0; max: 48)
  --spacing-dur-detection           Detect long duration for adjusting spacing
@@ -109,7 +110,8 @@ General layout options
  --system-max-per-page <i>         Maximun number of systems per page (default: 0; min: 0; max: 24)
  --text-enclosure-thickness <f>    The thickness of the line text enclosing box (default: 0.20; min: 0.10; max: 0.80)
  --thick-barline-thickness <f>     The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
- --tie-thickness <f>               The tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
+ --tie-endpoint-thickness <f>      The Endpoint tie thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
+ --tie-midpoint-thickness <f>      The midpoint tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
  --tuplet-bracket-thickness <f>    The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
 
 Element selectors and processing
@@ -160,3 +162,7 @@ Element margins
  --right-margin-rest <f>           The right margin for rest in MEI units (default: 0.00; min: 0.00; max: 2.00)
  --right-margin-right-bar-line <f> The right margin for right barLine in MEI units (default: 0.00; min: 0.00; max: 2.00)
  --top-margin-harm <f>             The margin for harm in MEI units (default: 1.00; min: 0.00; max: 10.00)
+
+Deprecated options
+ --slur-thickness <f>              The slur thickness in MEI units (default: 0.60; min: 0.20; max: 2.00)
+ --tie-thickness <f>               The tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
