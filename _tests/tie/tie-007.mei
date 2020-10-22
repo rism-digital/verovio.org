@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Styling Ties</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Ties can be styled with midpoint and endpoint thickness values through SMuFL's engravingDefaults.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[ { "tieEndpointThickness": 0.25, "tieMidpointThickness": 0.25 }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <meterSig count="1" unit="2" form="invis" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section label="feature-example">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="s2n6" oct="4" pname="c" />
+                              <note xml:id="s2n7" oct="4" pname="e" />
+                              <note xml:id="s2n8" oct="4" pname="g" />
+                              <note xml:id="s2n9" oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <tie startid="#s2n6" endid="#s2n11" />
+                     <tie startid="#s2n7" endid="#s2n12" />
+                     <tie startid="#s2n8" endid="#s2n13" />
+                     <tie startid="#s2n9" endid="#s2n14" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="s2n11" oct="4" pname="c" />
+                              <note xml:id="s2n12" oct="4" pname="e" />
+                              <note xml:id="s2n13" oct="4" pname="g" />
+                              <note xml:id="s2n14" oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <tie startid="#s2n11" tstamp2="0m+2" curvedir="below" />
+                     <tie startid="#s2n14" tstamp2="0m+2" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
