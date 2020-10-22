@@ -2,90 +2,90 @@
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-   <meiHead>
-      <fileDesc>
-         <titleStmt>
-            <title>Ties on chords example (2)</title>
-         </titleStmt>
-         <pubStmt>
-            <date isodate="2017">2017</date>
-         </pubStmt>
-         <seriesStmt>
-            <title>Verovio test suite</title>
-         </seriesStmt>
-         <notesStmt>
-            <annot>With chords, the "tie" attribute can be set in the chord or in the notes. It can also be overwritten in the note if necessary.</annot>
-         </notesStmt>
-      </fileDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="0.9.13">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-   </meiHead>
-   <music>
-      <body>
-         <mdiv>
-            <score>
-               <scoreDef>
-                  <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
-                  </staffGrp>
-               </scoreDef>
-               <section>
-                  <measure n="1">
-                     <staff n="1">
-                        <layer n="1">
-                           <rest dur="16" />
-                           <beam>
-                              <note xml:id="n1" dur="16" oct="4" pname="c" tie="i" />
-                              <note xml:id="n2" dur="16" oct="4" pname="e" tie="i" />
-                              <note xml:id="n3" dur="16" oct="4" pname="g" tie="i" />
-                           </beam>
-                        </layer>
-                     </staff>
-                  </measure>
-                  <measure n="2" label="feature-example">
-                     <staff n="1">
-                        <layer n="1">
-                           <chord dur="2" tie="m">
-                              <note xml:id="n6" dur="8" oct="4" pname="c" />
-                              <note xml:id="n7" dur="8" oct="4" pname="e" />
-                              <note xml:id="n8" dur="8" oct="4" pname="g" />
-                              <note xml:id="n9" dur="8" oct="5" pname="c" tie="i" />
-                           </chord>
-                        </layer>
-                     </staff>
-                  </measure>
-                  <measure n="3">
-                     <staff n="1">
-                        <layer n="1">
-                           <chord dur="2" tie="m">
-                              <note xml:id="n11" dur="8" oct="4" pname="c" />
-                              <note xml:id="n12" dur="8" oct="4" pname="e" />
-                              <note xml:id="n13" dur="8" oct="4" pname="g" />
-                              <note xml:id="n14" dur="8" oct="5" pname="c" tie="t" />
-                           </chord>
-                        </layer>
-                     </staff>
-                  </measure>
-                  <measure right="invis" n="4">
-                     <staff n="1">
-                        <layer n="1">
-                           <beam>
-                              <note xml:id="n17" dur="16" oct="4" pname="g" tie="t" />
-                              <note xml:id="n18" dur="16" oct="4" pname="e" tie="t" />
-                              <note xml:id="n19" dur="16" oct="4" pname="c" tie="t" />
-                           </beam>
-                           <rest dur="16" />
-                        </layer>
-                     </staff>
-                  </measure>
-               </section>
-            </score>
-         </mdiv>
-      </body>
-   </music>
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Ties on chords example (2)</title>
+      </titleStmt>
+      <pubStmt>
+        <date isodate="2017">2017</date>
+      </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
+      <notesStmt>
+        <annot>With chords, the "tie" attribute can be set in the chord or in the notes. It can also be overwritten in the note if necessary.</annot>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="0.9.13">
+          <name>Verovio</name>
+        </application>
+      </appInfo>
+    </encodingDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <rest dur="16" />
+                  <beam>
+                    <note xml:id="n1" dur="16" oct="4" pname="c" tie="i" />
+                    <note xml:id="n2" dur="16" oct="4" pname="e" tie="i" />
+                    <note xml:id="n3" dur="16" oct="4" pname="g" tie="i" />
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="2" label="feature-example">
+              <staff n="1">
+                <layer n="1">
+                  <chord dur="2" tie="m">
+                    <note xml:id="n6" dur="8" oct="4" pname="c" />
+                    <note xml:id="n7" dur="8" oct="4" pname="e" />
+                    <note xml:id="n8" dur="8" oct="4" pname="g" />
+                    <note xml:id="n9" dur="8" oct="5" pname="c" tie="i" />
+                  </chord>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="3">
+              <staff n="1">
+                <layer n="1">
+                  <chord dur="2" tie="m">
+                    <note xml:id="n11" dur="8" oct="4" pname="c" />
+                    <note xml:id="n12" dur="8" oct="4" pname="e" />
+                    <note xml:id="n13" dur="8" oct="4" pname="g" />
+                    <note xml:id="n14" dur="8" oct="5" pname="c" tie="t" />
+                  </chord>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="invis" n="4">
+              <staff n="1">
+                <layer n="1">
+                  <beam>
+                    <note xml:id="n17" dur="16" oct="4" pname="g" tie="t" />
+                    <note xml:id="n18" dur="16" oct="4" pname="e" tie="t" />
+                    <note xml:id="n19" dur="16" oct="4" pname="c" tie="t" />
+                  </beam>
+                  <rest dur="16" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>
