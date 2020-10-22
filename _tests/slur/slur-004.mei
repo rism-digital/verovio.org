@@ -1,84 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-   <meiHead>
-      <fileDesc>
-         <titleStmt>
-            <title>Portato rendering</title>
-         </titleStmt>
-         <pubStmt>
-            <date>2017-05-02</date>
-         </pubStmt>
-         <notesStmt>
-            <annot>In the portato articulation, i.e., the combination of a slur and a staccato dot, the slur is always placed further away from
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Portato rendering</title>
+      </titleStmt>
+      <pubStmt>
+        <date isodate="2017">2017</date>
+      </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
+      <notesStmt>
+        <annot>In the portato articulation, i.e., the combination of a slur and a staccato dot, the slur is always placed further away from
 					the note than the staccato.</annot>
-         </notesStmt>
-      </fileDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="2.0.0" label="1">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-   </meiHead>
-   <music>
-      <body>
-         <mdiv>
-            <score>
-               <scoreDef>
-                  <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
-                  </staffGrp>
-               </scoreDef>
-               <section>
-                  <measure n="1">
-                     <staff n="1">
-                        <layer n="1">
-                           <note dur="1" oct="5" pname="c" accid.ges="n" />
-                        </layer>
-                        <layer n="2">
-                           <note xml:id="note-L5F2" dur="4" oct="4" pname="c" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                           <note xml:id="note-L6F2" dur="4" oct="4" pname="c" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                           <note xml:id="note-L7F2" dur="4" oct="4" pname="d" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                           <note xml:id="note-L8F2" dur="4" oct="4" pname="d" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                        </layer>
-                     </staff>
-                     <slur staff="1" startid="#note-L5F2" endid="#note-L6F2" />
-                     <slur staff="1" startid="#note-L7F2" endid="#note-L8F2" />
-                  </measure>
-                  <measure right="end" n="2">
-                     <staff n="1">
-                        <layer n="1">
-                           <note xml:id="note-L11F1" dur="4" oct="4" pname="a" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                           <note xml:id="note-L12F1" dur="4" oct="4" pname="a" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                           <note xml:id="note-L13F1" dur="4" oct="4" pname="b" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                           <note xml:id="note-L14F1" dur="4" oct="4" pname="b" accid.ges="n">
-                              <artic artic="stacc" />
-                           </note>
-                        </layer>
-                     </staff>
-                     <slur staff="1" startid="#note-L11F1" endid="#note-L12F1" />
-                     <slur staff="1" startid="#note-L13F1" endid="#note-L14F1" />
-                  </measure>
-               </section>
-            </score>
-         </mdiv>
-      </body>
-   </music>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="2.0.0" label="1">
+          <name>Verovio</name>
+        </application>
+      </appInfo>
+    </encodingDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <note dur="1" oct="5" pname="c" accid.ges="n" />
+                </layer>
+                <layer n="2">
+                  <note xml:id="note-L5F2" dur="4" oct="4" pname="c" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                  <note xml:id="note-L6F2" dur="4" oct="4" pname="c" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                  <note xml:id="note-L7F2" dur="4" oct="4" pname="d" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                  <note xml:id="note-L8F2" dur="4" oct="4" pname="d" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#note-L5F2" endid="#note-L6F2" />
+              <slur staff="1" startid="#note-L7F2" endid="#note-L8F2" />
+            </measure>
+            <measure right="end" n="2">
+              <staff n="1">
+                <layer n="1">
+                  <note xml:id="note-L11F1" dur="4" oct="4" pname="a" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                  <note xml:id="note-L12F1" dur="4" oct="4" pname="a" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                  <note xml:id="note-L13F1" dur="4" oct="4" pname="b" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                  <note xml:id="note-L14F1" dur="4" oct="4" pname="b" accid.ges="n">
+                    <artic artic="stacc" />
+                  </note>
+                </layer>
+              </staff>
+              <slur staff="1" startid="#note-L11F1" endid="#note-L12F1" />
+              <slur staff="1" startid="#note-L13F1" endid="#note-L14F1" />
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>
