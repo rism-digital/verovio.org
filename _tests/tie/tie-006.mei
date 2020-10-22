@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
    <meiHead>
       <fileDesc>
@@ -8,22 +8,18 @@
             <title>Ties on chords example (3)</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2017">2017</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>With "tie" elements, it is possible to specify the direction of the tie and its shape with the "curvedir" and "bulge" attributes.</annot>
+            <annot>With "tie" elements, it is possible to specify the direction of the tie and its shape with the "curvedir" attribute.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
             <application version="0.9.13">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="unknown">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -50,9 +46,9 @@
                            </beam>
                         </layer>
                      </staff>
-                     <tie startid="#s2n3" endid="#s2n7" bulge="1.0" curvedir="below" />
-                     <tie startid="#s2n2" endid="#s2n8" bulge="1.0" curvedir="above" />
-                     <tie startid="#s2n1" endid="#s2n9" bulge="1.0" curvedir="above" />
+                     <tie startid="#s2n3" endid="#s2n7" bulge="1.0 50%" curvedir="below" />
+                     <tie startid="#s2n2" endid="#s2n8" bulge="1.0 50%" curvedir="above" />
+                     <tie startid="#s2n1" endid="#s2n9" bulge="1.0 50%" curvedir="above" />
                   </measure>
                   <measure n="2">
                      <staff n="1">
@@ -81,9 +77,9 @@
                            </chord>
                         </layer>
                      </staff>
-                     <tie startid="#s2n12" endid="#s2n17" bulge="1.0" curvedir="below" />
-                     <tie startid="#s2n13" endid="#s2n18" bulge="1.0" curvedir="above" />
-                     <tie startid="#s2n14" endid="#s2n19" bulge="1.0" curvedir="above" />
+                     <tie startid="#s2n12" endid="#s2n17" bulge="1.0 50%" curvedir="below" />
+                     <tie startid="#s2n13" endid="#s2n18" bulge="1.0 50%" curvedir="above" />
+                     <tie startid="#s2n14" endid="#s2n19" bulge="1.0 50%" curvedir="above" />
                   </measure>
                   <measure right="invis" n="4">
                      <staff n="1">
