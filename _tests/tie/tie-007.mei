@@ -5,7 +5,7 @@
   <meiHead>
     <fileDesc>
       <titleStmt>
-        <title>Repeated barLine elements</title>
+        <title>Styling Ties</title>
       </titleStmt>
       <pubStmt>
         <respStmt>
@@ -18,16 +18,17 @@
         <title>Verovio test suite</title>
       </seriesStmt>
       <notesStmt>
-        <annot>Verovio renders all barLine elements even on single line staves.</annot>
+        <annot>Ties can be styled with midpoint and endpoint thickness values through SMuFL's engravingDefaults.</annot>
       </notesStmt>
     </fileDesc>
     <encodingDesc>
       <appInfo>
-        <application version="3.0.0" label="1">
+        <application version="unknown">
           <name>Verovio</name>
         </application>
       </appInfo>
     </encodingDesc>
+    <extMeta><![CDATA[ { "tieEndpointThickness": 0.25, "tieMidpointThickness": 0.25 }]]></extMeta>
   </meiHead>
   <music>
     <body>
@@ -35,48 +36,41 @@
         <score>
           <scoreDef>
             <staffGrp>
-              <staffDef n="1" lines="1" clef.shape="perc" meter.count="3" meter.unit="4" />
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                <meterSig count="1" unit="2" form="invis" />
+              </staffDef>
             </staffGrp>
           </scoreDef>
-          <section>
+          <section label="feature-example">
             <measure>
               <staff n="1">
                 <layer n="1">
-                  <rest dur="4" />
-                  <barLine form="rptstart" />
-                  <tuplet num="3" numbase="2">
-                    <note loc="0" stem.dir="up" dur="4" />
-                    <note loc="0" stem.dir="up" dur="4" />
-                    <note loc="0" stem.dir="up" dur="4" />
-                  </tuplet>
+                  <chord dur="2">
+                    <note xml:id="s2n6" oct="4" pname="c" />
+                    <note xml:id="s2n7" oct="4" pname="e" />
+                    <note xml:id="s2n8" oct="4" pname="g" />
+                    <note xml:id="s2n9" oct="5" pname="c" />
+                  </chord>
                 </layer>
               </staff>
+              <tie startid="#s2n6" endid="#s2n11" />
+              <tie startid="#s2n7" endid="#s2n12" />
+              <tie startid="#s2n8" endid="#s2n13" />
+              <tie startid="#s2n9" endid="#s2n14" />
             </measure>
             <measure>
               <staff n="1">
                 <layer n="1">
-                  <tuplet num="3" numbase="2">
-                    <note loc="0" stem.dir="up" dur="4" />
-                    <note loc="0" stem.dir="up" dur="4" />
-                    <note loc="0" stem.dir="up" dur="4" />
-                  </tuplet>
-                  <barLine form="rptboth" />
-                  <rest dur="4" />
+                  <chord dur="2">
+                    <note xml:id="s2n11" oct="4" pname="c" />
+                    <note xml:id="s2n12" oct="4" pname="e" />
+                    <note xml:id="s2n13" oct="4" pname="g" />
+                    <note xml:id="s2n14" oct="5" pname="c" />
+                  </chord>
                 </layer>
               </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer n="1">
-                  <tuplet num="3" numbase="2">
-                    <note loc="0" stem.dir="up" dur="4" />
-                    <note loc="0" stem.dir="up" dur="4" />
-                    <note loc="0" stem.dir="up" dur="4" />
-                  </tuplet>
-                  <barLine form="rptend" />
-                  <rest dur="4" />
-                </layer>
-              </staff>
+              <tie startid="#s2n11" tstamp2="0m+2" curvedir="below" />
+              <tie startid="#s2n14" tstamp2="0m+2" curvedir="above" />
             </measure>
           </section>
         </score>

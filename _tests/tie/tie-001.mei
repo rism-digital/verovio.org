@@ -1,147 +1,143 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-   <meiHead>
-      <fileDesc>
-         <titleStmt>
-            <title>Tie example</title>
-         </titleStmt>
-         <pubStmt>
-            <date>2017-05-09</date>
-         </pubStmt>
-         <notesStmt>
-            <annot>Verovio supports both ties encoded with "tie" attributes or with "tie" elements. Ties overlapping two measures and interrupted by a system break or a page break are displayed appropriately.</annot>
-         </notesStmt>
-      </fileDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="0.9.13">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="unknown">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-   </meiHead>
-   <music>
-      <body>
-         <mdiv>
-            <score>
-               <scoreDef meter.count="4" meter.unit="4">
-                  <staffGrp label="Piano" symbol="brace" n="1">
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="1s" />
-                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="1s" />
-                  </staffGrp>
-               </scoreDef>
-               <section>
-                  <measure n="1" label="feature-example">
-                     <staff n="1">
-                        <layer n="1">
-                           <beam>
-                              <note dur="8" oct="4" pname="e" />
-                              <note dur="8" oct="4" pname="d" />
-                              <note dur="8" oct="4" pname="e" />
-                              <note xml:id="dd4n384v1b1s1" dur="8" oct="4" pname="d" tie="i" />
-                           </beam>
-                           <beam>
-                              <note xml:id="dd4n512v1b1s1" dur="8" oct="4" pname="d" tie="t" />
-                              <note dur="8" oct="4" pname="c" />
-                              <note dur="8" oct="4" pname="d" />
-                              <note xml:id="cd4n896v1b1s1" dur="8" oct="4" pname="c" tie="i" />
-                           </beam>
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <note dur="4" oct="3" pname="c" />
-                           <note dur="4" oct="3" pname="c" />
-                           <note dur="4" oct="2" pname="b" />
-                           <note dur="4" oct="2" pname="b" />
-                        </layer>
-                     </staff>
-                  </measure>
-                  <measure n="2">
-                     <staff n="1">
-                        <layer n="1">
-                           <beam>
-                              <note xml:id="cd4n0v1b2s1" dur="8" oct="4" pname="c" tie="t" />
-                              <note dur="8" oct="3" pname="b" />
-                              <note dur="8" oct="4" pname="c" />
-                              <note xml:id="bd3n384v1b2s1" dur="8" oct="3" pname="b" tie="i" />
-                           </beam>
-                           <beam>
-                              <note xml:id="bd3n512v1b2s1" dur="8" oct="3" pname="b" tie="t" />
-                              <note dur="8" oct="4" pname="c" />
-                              <note dur="8" oct="4" pname="d" />
-                              <note xml:id="ed4n896v1b2s1" dur="8" oct="4" pname="e" tie="i" />
-                           </beam>
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <note dur="4" oct="2" pname="a" />
-                           <note dur="4" oct="2" pname="a" />
-                           <note dur="2" oct="2" pname="g" />
-                        </layer>
-                     </staff>
-                  </measure>
-                  <sb />
-                  <measure n="3">
-                     <staff n="1">
-                        <layer n="1">
-                           <beam>
-                              <note xml:id="ed4n0v1b3s1" dur="8" oct="4" pname="e" tie="t" />
-                              <note dur="8" oct="4" pname="d" />
-                              <note dur="8" oct="4" pname="e" />
-                              <note xml:id="dd4n384v1b3s1" dur="8" oct="4" pname="d" tie="i" />
-                           </beam>
-                           <beam>
-                              <note xml:id="dd4n512v1b3s1" dur="8" oct="4" pname="d" tie="t" />
-                              <note dur="8" oct="4" pname="c" />
-                              <note dur="8" oct="4" pname="d" />
-                              <note xml:id="cd4n896v1b3s1" dur="8" oct="4" pname="c" tie="i" />
-                           </beam>
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <note dur="4" oct="3" pname="c" />
-                           <note dur="4" oct="3" pname="c" />
-                           <note dur="4" oct="2" pname="b" />
-                           <note dur="4" oct="2" pname="b" />
-                        </layer>
-                     </staff>
-                  </measure>
-                  <measure n="4">
-                     <staff n="1">
-                        <layer n="1">
-                           <beam>
-                              <note xml:id="cd4n0v1b4s1" dur="8" oct="4" pname="c" tie="t" />
-                              <note dur="8" oct="3" pname="b" />
-                              <note dur="8" oct="4" pname="c" />
-                              <note xml:id="bd3n384v1b4s1" dur="8" oct="3" pname="b" tie="i" />
-                           </beam>
-                           <note xml:id="bd3n512v1b4s1" dur="2" oct="3" pname="b" tie="t" />
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <note dur="4" oct="2" pname="a" />
-                           <note dur="4" oct="2" pname="a" />
-                           <note dur="4" oct="2" pname="g" />
-                           <note dur="4" oct="2" pname="g" />
-                        </layer>
-                     </staff>
-                  </measure>
-               </section>
-            </score>
-         </mdiv>
-      </body>
-   </music>
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Tie example</title>
+      </titleStmt>
+      <pubStmt>
+        <date isodate="2017">2017</date>
+      </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
+      <notesStmt>
+        <annot>Verovio supports both ties encoded with "tie" attributes or with "tie" elements. Ties overlapping two measures and interrupted by a system break or a page break are displayed appropriately.</annot>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="0.9.13">
+          <name>Verovio</name>
+        </application>
+      </appInfo>
+    </encodingDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef meter.count="4" meter.unit="4">
+            <staffGrp label="Piano" symbol="brace" n="1">
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="1s" />
+              <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="1s" />
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1" label="feature-example">
+              <staff n="1">
+                <layer n="1">
+                  <beam>
+                    <note dur="8" oct="4" pname="e" />
+                    <note dur="8" oct="4" pname="d" />
+                    <note dur="8" oct="4" pname="e" />
+                    <note xml:id="dd4n384v1b1s1" dur="8" oct="4" pname="d" tie="i" />
+                  </beam>
+                  <beam>
+                    <note xml:id="dd4n512v1b1s1" dur="8" oct="4" pname="d" tie="t" />
+                    <note dur="8" oct="4" pname="c" />
+                    <note dur="8" oct="4" pname="d" />
+                    <note xml:id="cd4n896v1b1s1" dur="8" oct="4" pname="c" tie="i" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note dur="4" oct="3" pname="c" />
+                  <note dur="4" oct="3" pname="c" />
+                  <note dur="4" oct="2" pname="b" />
+                  <note dur="4" oct="2" pname="b" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="2">
+              <staff n="1">
+                <layer n="1">
+                  <beam>
+                    <note xml:id="cd4n0v1b2s1" dur="8" oct="4" pname="c" tie="t" />
+                    <note dur="8" oct="3" pname="b" />
+                    <note dur="8" oct="4" pname="c" />
+                    <note xml:id="bd3n384v1b2s1" dur="8" oct="3" pname="b" tie="i" />
+                  </beam>
+                  <beam>
+                    <note xml:id="bd3n512v1b2s1" dur="8" oct="3" pname="b" tie="t" />
+                    <note dur="8" oct="4" pname="c" />
+                    <note dur="8" oct="4" pname="d" />
+                    <note xml:id="ed4n896v1b2s1" dur="8" oct="4" pname="e" tie="i" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note dur="4" oct="2" pname="a" />
+                  <note dur="4" oct="2" pname="a" />
+                  <note dur="2" oct="2" pname="g" />
+                </layer>
+              </staff>
+            </measure>
+            <sb />
+            <measure n="3">
+              <staff n="1">
+                <layer n="1">
+                  <beam>
+                    <note xml:id="ed4n0v1b3s1" dur="8" oct="4" pname="e" tie="t" />
+                    <note dur="8" oct="4" pname="d" />
+                    <note dur="8" oct="4" pname="e" />
+                    <note xml:id="dd4n384v1b3s1" dur="8" oct="4" pname="d" tie="i" />
+                  </beam>
+                  <beam>
+                    <note xml:id="dd4n512v1b3s1" dur="8" oct="4" pname="d" tie="t" />
+                    <note dur="8" oct="4" pname="c" />
+                    <note dur="8" oct="4" pname="d" />
+                    <note xml:id="cd4n896v1b3s1" dur="8" oct="4" pname="c" tie="i" />
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note dur="4" oct="3" pname="c" />
+                  <note dur="4" oct="3" pname="c" />
+                  <note dur="4" oct="2" pname="b" />
+                  <note dur="4" oct="2" pname="b" />
+                </layer>
+              </staff>
+            </measure>
+            <measure n="4">
+              <staff n="1">
+                <layer n="1">
+                  <beam>
+                    <note xml:id="cd4n0v1b4s1" dur="8" oct="4" pname="c" tie="t" />
+                    <note dur="8" oct="3" pname="b" />
+                    <note dur="8" oct="4" pname="c" />
+                    <note xml:id="bd3n384v1b4s1" dur="8" oct="3" pname="b" tie="i" />
+                  </beam>
+                  <note xml:id="bd3n512v1b4s1" dur="2" oct="3" pname="b" tie="t" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <note dur="4" oct="2" pname="a" />
+                  <note dur="4" oct="2" pname="a" />
+                  <note dur="4" oct="2" pname="g" />
+                  <note dur="4" oct="2" pname="g" />
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
 </mei>
