@@ -17,7 +17,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="3.1.0">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -98,19 +98,20 @@
                      <staff n="1">
                         <layer n="1">
                            <space dur="2" />
-                           <chord xml:id="chord-0000000683148902" dur="4" fermata="above">
+                           <chord xml:id="chord-0000000683148902" dur="4">
                               <note staff="2" oct="2" pname="e" />
                               <note staff="2" oct="3" pname="c" />
                               <note staff="2" oct="3" pname="f" />
-                              <note oct="2" pname="c" />
+                              <note oct="3" pname="c" />
                               <note oct="4" pname="c" />
                               <note oct="4" pname="d" />
                            </chord>
-                           <chord xml:id="chord-0000001958371069" dur="4" fermata="above">
-                              <note staff="2" oct="4" pname="c" />
-                              <note staff="2" oct="4" pname="a" />
-                              <note staff="2" oct="5" pname="d" />
-                              <note oct="2" pname="c" />
+                           <clef shape="G" line="2" />
+                           <chord xml:id="chord-0000001958371069" dur="4">
+                              <note staff="2" oct="2" pname="e" />
+                              <note staff="2" oct="3" pname="c" />
+                              <note staff="2" oct="3" pname="f" />
+                              <note oct="3" pname="c" />
                               <note oct="4" pname="c" />
                               <note oct="4" pname="d" />
                            </chord>
@@ -118,19 +119,21 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <chord xml:id="chord-0000001000950771" dur="2" fermata="above">
+                           <chord xml:id="chord-0000001000950771" dur="2">
                               <note oct="2" pname="e" />
                               <note oct="3" pname="c" />
                               <note oct="3" pname="f" />
-                              <note staff="1" oct="2" pname="c" />
+                              <note staff="1" oct="3" pname="c" />
                               <note staff="1" oct="4" pname="c" accid="s" />
                               <note staff="1" oct="4" pname="d" />
                            </chord>
                            <space dur="4" />
-                           <clef shape="G" line="2" />
                            <space dur="4" />
                         </layer>
                      </staff>
+                     <fermata place="above" staff="1" startid="#chord-0000001000950771"/>
+                     <fermata place="above" staff="1" startid="#chord-0000000683148902"/>
+                     <fermata place="above" staff="1" startid="#chord-0000001958371069"/>
                   </measure>
                </section>
             </score>
