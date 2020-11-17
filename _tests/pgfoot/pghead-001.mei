@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Footer example with adjust page height</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio option 'footer' can take the value 'always' to show the footer with 'adjustPageHeight' set</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta>{"footer": "always"}</extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f">
+                        <label>Violino I</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="e" />
+                              <note dots="1" dur="8" oct="4" pname="e" />
+                           </beam>
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dots="1" dur="4" oct="4" pname="e" />
+                           <note dots="1" dur="4" oct="4" pname="e" />
+                           <note dur="2" oct="4" pname="e" />
+                           <note dur="2" oct="4" pname="e" />
+                           <note dots="1" dur="2" oct="4" pname="e" />
+                           <note dots="1" dur="2" oct="4" pname="e" />
+                           <note dur="1" oct="4" pname="e" />
+                           <note dur="1" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
+
