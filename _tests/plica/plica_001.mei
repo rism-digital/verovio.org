@@ -5,13 +5,13 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Mensural rests</title>
+            <title>Plicae</title>
          </titleStmt>
          <pubStmt>
             <date>2017-05-17</date>
          </pubStmt>
          <notesStmt>
-            <annot>Verovio renders mensural rests from longa to semifusa.</annot>
+            <annot>Simple plicae examples for longa and brevis (ascending and descending)</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -28,20 +28,24 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" notationtype="mensural.black"/>
                   </staffGrp>
                </scoreDef>
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <rest dur="maxima" />
-                        <rest dur="longa" />
-                        <rest dur="brevis" />
-                        <rest dur="semibrevis" />
-                        <rest dur="minima" />
-                        <rest dur="semiminima" />
-                        <rest dur="fusa" />
-                        <rest dur="semifusa" />
+                        <note dur="longa" oct="5" pname="c">
+                           <plica dir="up"/>
+                        </note>
+                        <note dur="longa" oct="5" pname="c">
+                           <plica dir="down"/>
+                        </note>
+                        <note dur="brevis" oct="5" pname="c">
+                           <plica dir="up"/>
+                        </note>
+                        <note dur="brevis" oct="5" pname="c">
+                           <plica dir="down"/>
+                        </note>
                      </layer>
                   </staff>
                </section>
