@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff and control events (dynam)</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Iacopo Cividini</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-29</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/1799" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Cross-staff content and dynam control event placement</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="2" meter.unit="4">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note_2928" dur="16" oct="4" pname="a" stem.dir="up" />
+                              <note dur="32" oct="5" pname="c" stem.dir="up" />
+                              <note dur="32" oct="4" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur="32" oct="5" pname="f" stem.dir="up" />
+                              <note dur="32" oct="5" pname="c" stem.dir="up" />
+                              <note dur="32" oct="5" pname="a" stem.dir="up" />
+                              <note dur="32" oct="5" pname="f" stem.dir="up" />
+                           </beam>
+                           <note xml:id="note_2976" dur="8" oct="6" pname="c" stem.dir="up" />
+                           <rest dur="8" ploc="b" oloc="5" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam beam.with="above">
+                              <note dur="16" staff="1" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" staff="1" oct="4" pname="c" stem.dir="down" />
+                              <note dur="16" staff="1" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" staff="1" oct="4" pname="c" stem.dir="down" />
+                           </beam>
+                           <beam beam.with="above">
+                              <note dur="16" staff="1" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" staff="1" oct="4" pname="c" stem.dir="down" />
+                              <note dur="16" staff="1" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" staff="1" oct="4" pname="c" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" startid="#note_2928">p</dynam>
+                     <slur staff="1" startid="#note_2928" endid="#note_2976" curvedir="above" />
+                  </measure>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note_2928_2" dur="16" oct="4" pname="a" stem.dir="up" />
+                              <note dur="32" oct="5" pname="c" stem.dir="up" />
+                              <note dur="32" oct="4" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur="32" oct="5" pname="f" stem.dir="up" />
+                              <note dur="32" oct="5" pname="c" stem.dir="up" />
+                              <note dur="32" oct="5" pname="a" stem.dir="up" />
+                              <note dur="32" oct="5" pname="f" stem.dir="up" />
+                           </beam>
+                           <note xml:id="note_2976_2" dur="8" oct="6" pname="c" stem.dir="up" />
+                           <rest dur="8" ploc="b" oloc="5" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dur="16" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" oct="4" pname="c" stem.dir="down" />
+                              <note dur="16" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" oct="4" pname="c" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" oct="4" pname="c" stem.dir="down" />
+                              <note dur="16" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" oct="4" pname="c" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2" />
+                     <dynam place="between" staff="1 2" startid="#note_2928_2">p</dynam>
+                     <slur staff="1" startid="#note_2928_2" endid="#note_2976_2" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
