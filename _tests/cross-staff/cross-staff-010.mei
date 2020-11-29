@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff and control events</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-29</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Cross-staff content and conrol event placement</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="54">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig accid="s" pname="c" mode="minor" sig="4s" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig accid="s" pname="c" mode="minor" sig="4s" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                              <rest dur="8" staff="2" />
+                              <beam beam.with="below">
+                                 <note dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                              <beam beam.with="below">
+                                 <note dur="8" staff="2" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                                 <note dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                              <beam beam.with="below">
+                                 <note dur="8" staff="2" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                              <beam beam.with="below">
+                                 <note dur="8" staff="2" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                                 <note dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="4" />
+                           <note xml:id="note-L13F1" dur="4" oct="4" pname="c" stem.dir="down" accid.ges="s" />
+                           <note dur="4" oct="4" pname="e" stem.dir="down" accid.ges="n" />
+                           <note xml:id="note-L19F1" dur="4" oct="4" pname="c" stem.dir="down" accid.ges="s" />
+                        </layer>
+                        <layer n="2">
+                           <chord dur="1">
+                              <note oct="1" pname="g" accid.ges="s" />
+                              <note oct="2" pname="g" accid.ges="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <hairpin type="endbar03" staff="1" tstamp="2.000000" tstamp2="0m+2.9700" form="cres" vgrp="100" />
+                     <dynam staff="1" tstamp="3.333333" vgrp="100">f</dynam>
+                     <hairpin type="endbar03" staff="1" tstamp="4.000000" tstamp2="0m+4.8033" form="dim" vgrp="100" />
+                     <slur staff="2" startid="#note-L13F1" endid="#note-L19F1" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
