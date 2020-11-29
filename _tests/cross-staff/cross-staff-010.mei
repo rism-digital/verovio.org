@@ -8,13 +8,17 @@
             <title>Cross-staff and control events</title>
             <respStmt>
                <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
             <date>2020-11-29</date>
+            <pubPlace>
+                <ref target="https://github.com/rism-ch/verovio/issues/1607"/>
+            </pubPlace>        
          </pubStmt>
          <notesStmt>
-            <annot>Cross-staff content and conrol event placement</annot>
+            <annot>Cross-staff content and control event placement</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
