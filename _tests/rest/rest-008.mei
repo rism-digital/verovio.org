@@ -2,80 +2,80 @@
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
 <?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Block in multiRest</title>
-      </titleStmt>
-      <pubStmt>
-        <respStmt>
-          <persName role="encoder">Klaus Rettinghaus</persName>
-        </respStmt>
-        <date isodate="2017-05-29">29 May 2017</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot>When the block attribute is used, Verovio renders combinations of the 1, 2, and 4 measure rest forms.</annot>
-      </notesStmt>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="1.1.0" label="2">
-          <name>Verovio</name>
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef>
-            <staffGrp>
-              <staffDef n="1" lines="5" clef.shape="C" clef.line="1" meter.count="4" meter.unit="4" />
-            </staffGrp>
-          </scoreDef>
-          <section>
-            <measure right="dbl">
-              <staff n="1">
-                <layer n="1">
-                  <multiRest num="2" />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl">
-              <staff n="1">
-                <layer n="1">
-                  <multiRest block="false" num="1" />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl">
-              <staff n="1">
-                <layer n="1">
-                  <multiRest block="false" num="2" />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl">
-              <staff n="1">
-                <layer n="1">
-                  <multiRest block="true" num="1" />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl">
-              <staff n="1">
-                <layer n="1">
-                  <multiRest block="true" num="2" />
-                </layer>
-              </staff>
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Block in multiRest</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-05-29">29 May 2017</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When the block attribute is used, Verovio renders combinations of the 1, 2, and 4 measure rest forms.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="C" clef.line="1" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest block="false" num="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest block="false" num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest block="true" num="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest block="true" num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>
