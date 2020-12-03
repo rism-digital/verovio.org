@@ -5,11 +5,14 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Rests example</title>
+            <title>Rests within beams</title>
          </titleStmt>
          <pubStmt>
             <date>2018-05-29</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports automatic placement of rests within beams. Rests should be placed at the correct height.</annot>
          </notesStmt>
@@ -26,39 +29,38 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef lyric.name="Plantin MT Std" music.name="Opus Std" page.botmar="15mm" page.height="279.4mm" page.leftmar="15mm" page.rightmar="15mm" page.topmar="15mm" page.width="215.9mm" ppq="256" text.name="Plantin MT Std" meter.count="4" meter.unit="4">
+               <scoreDef meter.count="4" meter.unit="4">
                   <staffGrp>
                      <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="0" />
                   </staffGrp>
                </scoreDef>
                <section>
-                  <sb />
                   <measure n="1" label="1">
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dots="1" dur="16" pnum="45" oct="2" pname="a" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="a" stem.dir="up" />
                               <rest dur="32" />
-                              <note dur="16" pnum="41" oct="2" pname="f" stem.dir="up" />
-                              <note dur="16" pnum="35" oct="1" pname="b" stem.dir="up" />
+                              <note dur="16" oct="2" pname="f" stem.dir="up" />
+                              <note dur="16" oct="1" pname="b" stem.dir="up" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="45" oct="2" pname="a" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="a" stem.dir="up" />
                               <rest dur="32" />
                               <rest dur="16" />
-                              <note dur="16" pnum="53" oct="3" pname="f" stem.dir="up" />
+                              <note dur="16" oct="3" pname="f" stem.dir="up" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="45" oct="2" pname="a" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="a" stem.dir="up" />
                               <rest dur="32" />
                               <rest dur="16" />
-                              <note dur="16" pnum="38" oct="2" pname="d" stem.dir="up" />
+                              <note dur="16" oct="2" pname="d" stem.dir="up" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="45" oct="2" pname="a" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="a" stem.dir="up" />
                               <rest dur="32" />
-                              <note dur="16" pnum="53" oct="3" pname="f" stem.dir="up" />
-                              <note dur="16" pnum="48" oct="3" pname="c" stem.dir="up" />
+                              <note dur="16" oct="3" pname="f" stem.dir="up" />
+                              <note dur="16" oct="3" pname="c" stem.dir="up" />
                            </beam>
                         </layer>
                      </staff>
@@ -67,59 +69,58 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dots="1" dur="16" pnum="62" oct="4" pname="d" stem.dir="down" />
+                              <note dots="1" dur="16" oct="4" pname="d" stem.dir="down" />
                               <rest dur="32" />
-                              <note dur="16" pnum="59" oct="3" pname="b" stem.dir="down" />
-                              <note dur="16" pnum="52" oct="3" pname="e" stem.dir="down" />
+                              <note dur="16" oct="3" pname="b" stem.dir="down" />
+                              <note dur="16" oct="3" pname="e" stem.dir="down" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="62" oct="4" pname="d" stem.dir="down" />
+                              <note dots="1" dur="16" oct="4" pname="d" stem.dir="down" />
                               <rest dur="32" />
                               <rest dur="16" />
-                              <note dur="16" pnum="71" oct="4" pname="b" stem.dir="down" />
+                              <note dur="16" oct="4" pname="b" stem.dir="down" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="62" oct="4" pname="d" stem.dir="down" />
+                              <note dots="1" dur="16" oct="4" pname="d" stem.dir="down" />
                               <rest dur="32" />
                               <rest dur="16" />
-                              <note dur="16" pnum="55" oct="3" pname="g" stem.dir="down" />
+                              <note dur="16" oct="3" pname="g" stem.dir="down" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="62" oct="4" pname="d" stem.dir="down" />
+                              <note dots="1" dur="16" oct="4" pname="d" stem.dir="down" />
                               <rest dur="32" />
-                              <note dur="16" pnum="71" oct="4" pname="b" stem.dir="down" />
-                              <note dur="16" pnum="65" oct="4" pname="f" stem.dir="down" />
+                              <note dur="16" oct="4" pname="b" stem.dir="down" />
+                              <note dur="16" oct="4" pname="f" stem.dir="down" />
                            </beam>
                         </layer>
                      </staff>
                   </measure>
-                  <sb />
                   <measure n="3">
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dots="1" dur="16" pnum="38" oct="2" pname="d" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="d" stem.dir="up" />
                               <rest dur="32" />
-                              <note dur="16" pnum="35" oct="1" pname="b" stem.dir="up" />
-                              <note dur="16" pnum="28" oct="1" pname="e" stem.dir="up" />
+                              <note dur="16" oct="1" pname="b" stem.dir="up" />
+                              <note dur="16" oct="1" pname="e" stem.dir="up" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="38" oct="2" pname="d" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="d" stem.dir="up" />
                               <rest dur="32" />
                               <rest dur="16" />
-                              <note dur="16" pnum="47" oct="2" pname="b" stem.dir="up" />
+                              <note dur="16" oct="2" pname="b" stem.dir="up" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="38" oct="2" pname="d" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="d" stem.dir="up" />
                               <rest dur="32" />
                               <rest dur="16" />
-                              <note dur="16" pnum="31" oct="1" pname="g" stem.dir="up" />
+                              <note dur="16" oct="1" pname="g" stem.dir="up" />
                            </beam>
                            <beam>
-                              <note dots="1" dur="16" pnum="38" oct="2" pname="d" stem.dir="up" />
+                              <note dots="1" dur="16" oct="2" pname="d" stem.dir="up" />
                               <rest dur="32" />
-                              <note dur="16" pnum="47" oct="2" pname="b" stem.dir="up" />
-                              <note dur="16" pnum="41" oct="2" pname="f" stem.dir="up" />
+                              <note dur="16" oct="2" pname="b" stem.dir="up" />
+                              <note dur="16" oct="2" pname="f" stem.dir="up" />
                            </beam>
                         </layer>
                      </staff>
@@ -127,32 +128,32 @@
                   <measure right="end" n="4">
                      <staff n="1">
                         <layer n="1">
-                           <tuplet num="3" numbase="2" num.format="count" endid="#m-97" startid="#m-93">
+                           <tuplet num="3" numbase="2" num.format="count">
                               <beam>
-                                 <note dur="8" pnum="45" oct="2" pname="a" stem.dir="up" />
+                                 <note dur="8" oct="2" pname="a" stem.dir="up" />
                                  <rest dur="8" />
-                                 <note dur="8" pnum="53" oct="3" pname="f" stem.dir="up" />
+                                 <note dur="8" oct="3" pname="f" stem.dir="up" />
                               </beam>
                            </tuplet>
-                           <tuplet num="3" numbase="2" num.format="count" endid="#m-102" startid="#m-98">
+                           <tuplet num="3" numbase="2" num.format="count">
                               <beam>
-                                 <note dur="8" pnum="35" oct="1" pname="b" stem.dir="up" />
+                                 <note dur="8" oct="1" pname="b" stem.dir="up" />
                                  <rest dur="8" />
-                                 <note dur="8" pnum="48" oct="3" pname="c" stem.dir="up" />
+                                 <note dur="8" oct="3" pname="c" stem.dir="up" />
                               </beam>
                            </tuplet>
-                           <tuplet num="3" numbase="2" num.format="count" endid="#m-107" startid="#m-103">
+                           <tuplet num="3" numbase="2" num.format="count">
                               <beam>
-                                 <note dur="8" pnum="65" oct="4" pname="f" stem.dir="down" />
+                                 <note dur="8" oct="4" pname="f" stem.dir="down" />
                                  <rest dur="8" />
-                                 <note dur="8" pnum="62" oct="4" pname="d" stem.dir="down" />
+                                 <note dur="8" oct="4" pname="d" stem.dir="down" />
                               </beam>
                            </tuplet>
-                           <tuplet num="3" numbase="2" num.format="count" endid="#m-112" startid="#m-108">
+                           <tuplet num="3" numbase="2" num.format="count">
                               <beam>
-                                 <note dur="8" pnum="57" oct="3" pname="a" stem.dir="down" />
+                                 <note dur="8" oct="3" pname="a" stem.dir="down" />
                                  <rest dur="8" />
-                                 <note dur="8" pnum="43" oct="2" pname="g" stem.dir="down" />
+                                 <note dur="8" oct="2" pname="g" stem.dir="down" />
                               </beam>
                            </tuplet>
                         </layer>

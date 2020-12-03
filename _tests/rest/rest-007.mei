@@ -5,18 +5,24 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Vertical placement of rests (3)</title>
+            <title>Rests with location attributes</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-05-24">24 May 2017</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio correctly renders the placement of rests in presence of the "loc", "ploc" and "oloc" attributes.</annot>
+            <annot>Verovio correctly renders the placement of rests in presence of the "loc" and the "ploc" and "oloc" attributes.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

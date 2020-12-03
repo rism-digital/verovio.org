@@ -10,6 +10,9 @@
          <pubStmt>
             <date>2020-09-03</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports automatic placement of rests in two voices. Rests will be positioned based on location of elements in other layer and neighboring elements from current layer</annot>
          </notesStmt>
@@ -27,8 +30,8 @@
          <mdiv>
             <score>
                <scoreDef meter.count="4" meter.unit="4">
-                  <staffGrp xml:id="staffgrp-0000000717442108">
-                     <staffDef xml:id="staffdef-0000000183094320" n="1" lines="5" ppq="6" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4"/>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="6" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4" />
                   </staffGrp>
                </scoreDef>
                <section>
@@ -44,158 +47,158 @@
                            </fTrem>
                            <rest dur.ppq="6" dur="4" />
                            <beam>
-                              <tuplet num="3" numbase="2" bracket.visible="false" >
+                              <tuplet num="3" numbase="2" bracket.visible="false">
                                  <bTrem unitdur="16">
-                                    <note pname="b" oct="5" dur="8"/>
+                                    <note pname="b" oct="5" dur="8" />
                                  </bTrem>
                                  <bTrem unitdur="16">
-                                    <note pname="a" oct="5" dur="8"/>
+                                    <note pname="a" oct="5" dur="8" />
                                  </bTrem>
                                  <bTrem unitdur="16">
-                                    <note pname="g" oct="5" dur="8"/>
+                                    <note pname="g" oct="5" dur="8" />
                                  </bTrem>
                               </tuplet>
                            </beam>
                            <note dur.ppq="6" dur="4" oct="6" pname="f" stem.dir="up" />
                         </layer>
                         <layer n="2">
-                           <rest dur="1"/>
+                           <rest dur="1" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure  n="0">
-                     <staff  n="1">
-                        <layer  n="1">
-                           <note  dur="4" oct="4" pname="c" accid.ges="n" />
-                           <note  dur="4" oct="4" pname="d" accid.ges="n" />
-                           <note  dur="4" oct="4" pname="e" accid.ges="n" />
-                           <note  dur="4" oct="4" pname="f" accid.ges="n" />
-                           <note  dur="4" oct="4" pname="g" accid.ges="n" />
-                           <note  dur="4" oct="4" pname="a" accid.ges="n" />
-                           <note  dur="4" oct="4" pname="b" accid.ges="n" />
-                           <note  dur="4" oct="5" pname="c" accid.ges="n" />
-                           <note  dur="4" oct="5" pname="d" accid.ges="n" />
-                           <note  dur="4" oct="5" pname="e" accid.ges="n" />
-                           <note  dur="4" oct="5" pname="f" accid.ges="n" />
-                           <note  dur="4" oct="5" pname="g" accid.ges="n" />
-                           <note  dur="4" oct="5" pname="a" accid.ges="n" />
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid.ges="n" />
+                           <note dur="4" oct="4" pname="d" accid.ges="n" />
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                           <note dur="4" oct="4" pname="f" accid.ges="n" />
+                           <note dur="4" oct="4" pname="g" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" accid.ges="n" />
+                           <note dur="4" oct="5" pname="d" accid.ges="n" />
+                           <note dur="4" oct="5" pname="e" accid.ges="n" />
+                           <note dur="4" oct="5" pname="f" accid.ges="n" />
+                           <note dur="4" oct="5" pname="g" accid.ges="n" />
+                           <note dur="4" oct="5" pname="a" accid.ges="n" />
                         </layer>
-                        <layer  n="2">
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                           <rest  dur="4" />
-                        </layer>
-                     </staff>
-                  </measure>
-                  <measure  n="0">
-                     <staff  n="1">
-                        <layer  n="1">
-                           <note  dur="8" oct="4" pname="c" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="d" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="e" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="f" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="g" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="a" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="b" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="c" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="d" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="e" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="f" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="g" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="a" accid.ges="n" />
-                        </layer>
-                        <layer  n="2">
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
+                        <layer n="2">
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure  n="0">
-                     <staff  n="1">
-                        <layer  n="1">
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
-                           <rest  dur="8" />
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           <note dur="8" oct="4" pname="g" accid.ges="n" />
+                           <note dur="8" oct="4" pname="a" accid.ges="n" />
+                           <note dur="8" oct="4" pname="b" accid.ges="n" />
+                           <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           <note dur="8" oct="5" pname="d" accid.ges="n" />
+                           <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note dur="8" oct="5" pname="f" accid.ges="n" />
+                           <note dur="8" oct="5" pname="g" accid.ges="n" />
+                           <note dur="8" oct="5" pname="a" accid.ges="n" />
                         </layer>
-                        <layer  n="2">
-                           <note  dur="8" oct="4" pname="c" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="d" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="e" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="f" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="g" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="a" accid.ges="n" />
-                           <note  dur="8" oct="4" pname="b" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="c" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="d" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="e" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="f" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="g" accid.ges="n" />
-                           <note  dur="8" oct="5" pname="a" accid.ges="n" />
+                        <layer n="2">
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure  n="0">
-                     <staff  n="1">
-                        <layer  n="1">
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
-                           <rest  dur="16" />
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <rest dur="8" />
                         </layer>
-                        <layer  n="2">
-                           <note  dur="16" oct="4" pname="c" accid.ges="n" />
-                           <note  dur="16" oct="4" pname="d" accid.ges="n" />
-                           <note  dur="16" oct="4" pname="e" accid.ges="n" />
-                           <note  dur="16" oct="4" pname="f" accid.ges="n" />
-                           <note  dur="16" oct="4" pname="g" accid.ges="n" />
-                           <note  dur="16" oct="4" pname="a" accid.ges="n" />
-                           <note  dur="16" oct="4" pname="b" accid.ges="n" />
-                           <note  dur="16" oct="5" pname="c" accid.ges="n" />
-                           <note  dur="16" oct="5" pname="d" accid.ges="n" />
-                           <note  dur="16" oct="5" pname="e" accid.ges="n" />
-                           <note  dur="16" oct="5" pname="f" accid.ges="n" />
-                           <note  dur="16" oct="5" pname="g" accid.ges="n" />
-                           <note  dur="16" oct="5" pname="a" accid.ges="n" />
+                        <layer n="2">
+                           <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           <note dur="8" oct="4" pname="g" accid.ges="n" />
+                           <note dur="8" oct="4" pname="a" accid.ges="n" />
+                           <note dur="8" oct="4" pname="b" accid.ges="n" />
+                           <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           <note dur="8" oct="5" pname="d" accid.ges="n" />
+                           <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note dur="8" oct="5" pname="f" accid.ges="n" />
+                           <note dur="8" oct="5" pname="g" accid.ges="n" />
+                           <note dur="8" oct="5" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                           <rest dur="16" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="16" oct="4" pname="c" accid.ges="n" />
+                           <note dur="16" oct="4" pname="d" accid.ges="n" />
+                           <note dur="16" oct="4" pname="e" accid.ges="n" />
+                           <note dur="16" oct="4" pname="f" accid.ges="n" />
+                           <note dur="16" oct="4" pname="g" accid.ges="n" />
+                           <note dur="16" oct="4" pname="a" accid.ges="n" />
+                           <note dur="16" oct="4" pname="b" accid.ges="n" />
+                           <note dur="16" oct="5" pname="c" accid.ges="n" />
+                           <note dur="16" oct="5" pname="d" accid.ges="n" />
+                           <note dur="16" oct="5" pname="e" accid.ges="n" />
+                           <note dur="16" oct="5" pname="f" accid.ges="n" />
+                           <note dur="16" oct="5" pname="g" accid.ges="n" />
+                           <note dur="16" oct="5" pname="a" accid.ges="n" />
                         </layer>
                      </staff>
                   </measure>

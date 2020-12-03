@@ -5,18 +5,24 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Vertical placement of rests (4)</title>
+            <title>Default vertical placement of multiple rests in different staves</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-05-29">29 May 2017</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>By default, Verovio places rests in the middle of the staff, indepentently of the number of lines.</annot>
+            <annot>By default, Verovio places block rests in the middle of the staff, indepentently of the number of lines.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="1.1.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -28,16 +34,16 @@
             <score>
                <scoreDef meter.count="4" meter.unit="4" meter.sym="cut">
                   <staffGrp>
-                     <staffDef n="1" lines="1" clef.shape="C" clef.line="1" />
-                     <staffDef n="2" lines="2" clef.shape="C" clef.line="1" />
-                     <staffDef n="3" lines="3" clef.shape="C" clef.line="1" />
-                     <staffDef n="4" lines="4" clef.shape="C" clef.line="1" />
-                     <staffDef n="5" lines="5" clef.shape="C" clef.line="1" />
-                     <staffDef n="6" lines="6" clef.shape="C" clef.line="1" />
+                     <staffDef n="1" lines="1" clef.shape="perc" />
+                     <staffDef n="2" lines="2" clef.shape="perc" />
+                     <staffDef n="3" lines="3" clef.shape="perc" />
+                     <staffDef n="4" lines="4" clef.shape="perc" />
+                     <staffDef n="5" lines="5" clef.shape="perc" />
+                     <staffDef n="6" lines="6" clef.shape="perc" />
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="0">
+                  <measure metcon="false">
                      <staff n="1">
                         <layer n="1">
                            <rest dur="4" />

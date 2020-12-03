@@ -10,13 +10,16 @@
          <pubStmt>
             <date>2017-04-27</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio renders the vertical placement of rests starting from a default position in the middle of the staff.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

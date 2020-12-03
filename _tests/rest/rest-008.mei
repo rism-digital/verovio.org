@@ -5,18 +5,24 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Block in MultiRest</title>
+            <title>Block in multiRest</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-05-29">29 May 2017</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>When the block attribute is used, Verovio renders combinations of the 1, 2, and 4 measure rest forms.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="1.1.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -32,35 +38,35 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="1">
+                  <measure right="dbl">
                      <staff n="1">
                         <layer n="1">
                            <multiRest num="2" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure n="2">
+                  <measure right="dbl">
                      <staff n="1">
                         <layer n="1">
                            <multiRest block="false" num="1" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure n="3">
+                  <measure right="dbl">
                      <staff n="1">
                         <layer n="1">
                            <multiRest block="false" num="2" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure n="4">
+                  <measure right="dbl">
                      <staff n="1">
                         <layer n="1">
                            <multiRest block="true" num="1" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure n="5">
+                  <measure right="dbl">
                      <staff n="1">
                         <layer n="1">
                            <multiRest block="true" num="2" />
