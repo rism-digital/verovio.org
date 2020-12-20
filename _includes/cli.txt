@@ -1,4 +1,4 @@
-Verovio 3.1.0-dev-8a0c256
+Verovio 3.1.0-dev-16fd017
 
 Example usage:
 
@@ -24,7 +24,7 @@ Input and page layout options
  --adjust-page-height              Adjust the page height to the height of the content
  --adjust-page-width               Adjust the page width to the width of the content
  --breaks <s>                      Define page and system breaks layout (default: "auto"; other values: "none", "line", "encoded")
- --condense-encoded                Condense encoded layout rendering
+ --condense <s>                    Control condensed score layout (default: "auto"; other values: "none", "encoded")
  --condense-first-page             When condensing a score also condense the first page
  --condense-tempo-pages            When condensing a score also condense pages with a tempo change
  --even-note-spacing               Specify the linear spacing factor
@@ -106,7 +106,7 @@ General layout options
  --staff-line-width <f>            The staff line width in unit (default: 0.15; min: 0.10; max: 0.30)
  --stem-width <f>                  The stem width (default: 0.20; min: 0.10; max: 0.50)
  --sub-bracket-thickness <f>       The thickness of system sub-bracket (default: 0.20; min: 0.10; max: 2.00)
- --system-divider <s>              The display of system dividers (default: "left"; other values: "none", "left-right")
+ --system-divider <s>              The display of system dividers (default: "auto"; other values: "none", "left", "left-right")
  --system-max-per-page <i>         Maximun number of systems per page (default: 0; min: 0; max: 24)
  --text-enclosure-thickness <f>    The thickness of the line text enclosing box (default: 0.20; min: 0.10; max: 0.80)
  --thick-barline-thickness <f>     The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
@@ -164,5 +164,6 @@ Element margins
  --top-margin-harm <f>             The margin for harm in MEI units (default: 1.00; min: 0.00; max: 10.00)
 
 Deprecated options
+ --condense-encoded                Condense encoded layout rendering
  --slur-thickness <f>              The slur thickness in MEI units (default: 0.60; min: 0.20; max: 2.00)
  --tie-thickness <f>               The tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
