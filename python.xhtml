@@ -71,6 +71,21 @@ True
 >>> tk.renderToSVGFile( "page-scaled.svg", 1 )
 {% endhighlight %}
 
+            <p>
+                It is also possbile to collect options in a Python Dictionary and opass them as Json dump to the toolkit:  
+            </p>
+{% highlight python %}
+>>> import json
+>>> testOptions = {
+    ...     'pageHeight': '1000',
+    ...     'pageWidth': '1000',
+    ... }
+>>> tk.setOptions(json.dumps(options))    
+True
+>>> tk.redoLayout()
+>>> tk.renderToSVGFile( "page-square.svg", 1 )
+{% endhighlight %}
+
             <h4>Methods</h4>
             <p>
                 See the <code>./include/vrv/toolkit.h</code> file for the toolkit methods (to be further documented).
