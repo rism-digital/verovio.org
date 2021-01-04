@@ -44,7 +44,7 @@ True
             </p>
 
 {% highlight python %}
->>> svg_string = tk.renderToSvg(1)
+>>> svg_string = tk.renderToSVG(1)
 {% endhighlight %}
 
             <p>
@@ -52,7 +52,7 @@ True
             </p>
 
 {% highlight python %}
->>> tk.renderToSvgFile( "page.svg", 1 )
+>>> tk.renderToSVGFile( "page.svg", 1 )
 True
 {% endhighlight %}
 
@@ -61,14 +61,29 @@ True
                 The options are set on the toolkit instance. For example, the following code will change to a landscape format and redo the layout for the previously loaded data:
             </p>
 {% highlight javascript %}
->>> tk.setPageHeight(2100)
+>>> tk.setOption( "pageHeight", "2100" )
 True
->>> tk.setPageWidth(2900)
+>>> tk.setOption( "pageWidth", "2900" )
 True
 >>> tk.setScale(25)
 True
 >>> tk.redoLayout()
->>> tk.renderToSvgFile( "page-scaled.svg", 1 )
+>>> tk.renderToSVGFile( "page-scaled.svg", 1 )
+{% endhighlight %}
+
+            <p>
+                It is also possbile to collect options in a Python Dictionary and opass them as Json dump to the toolkit:  
+            </p>
+{% highlight python %}
+>>> import json
+>>> testOptions = {
+    ...     'pageHeight': '1000',
+    ...     'pageWidth': '1000',
+    ... }
+>>> tk.setOptions(json.dumps(options))    
+True
+>>> tk.redoLayout()
+>>> tk.renderToSVGFile( "page-square.svg", 1 )
 {% endhighlight %}
 
             <h4>Methods</h4>
