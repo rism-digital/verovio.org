@@ -114,7 +114,7 @@
                                  <artic artic="stacc" />
                               </note>
                               <note dur="8" staff="1" oct="4" pname="c" accid.ges="n">
-                                 <artic artic="stacc" place="above" />
+                                 <artic artic="stacc" />
                               </note>
                            </beam>
                         </layer>
