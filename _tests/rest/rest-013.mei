@@ -11,8 +11,8 @@
             <respStmt>
                <persName role="encoder">Klaus Rettinghaus</persName>
                <corpName role="funder">Enote GmbH</corpName>
-             </respStmt>
-                 <date isodate="2020-12-18">2020-12-18</date>
+            </respStmt>
+            <date isodate="2020-12-18">2020-12-18</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
