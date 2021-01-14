@@ -8,16 +8,18 @@
             <title>Single-note (bowed) temolo example within beam</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports bowed tremolos encoded with "btrem" elements within beams, permitting to specify the number of slashes to be
-					displayed.</annot>
+            <annot>Verovio supports bowed tremolos encoded with "btrem" elements within beams, permitting to specify the number of slashes to be displayed.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="3.1.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
