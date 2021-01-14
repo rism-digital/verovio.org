@@ -1,4 +1,4 @@
-Verovio 3.2.0-dev-6d2e6fc
+Verovio 3.2.0-dev-fa1ba8d
 
 Example usage:
 
@@ -23,7 +23,8 @@ Additional long options
 Input and page layout options
  --adjust-page-height              Adjust the page height to the height of the content
  --adjust-page-width               Adjust the page width to the width of the content
- --breaks <s>                      Define page and system breaks layout (default: "auto"; other values: "none", "line", "encoded")
+ --breaks <s>                      Define page and system breaks layout (default: "auto"; other values: "none", "line", "smart", "encoded")
+ --breaks-smart-sb <f>             In smart breaks mode, the portion of system width usage at which an encoded sb will be used (default: 0.66; min: 0.00; max: 1.00)
  --condense <s>                    Control condensed score layout (default: "auto"; other values: "none", "encoded")
  --condense-first-page             When condensing a score also condense the first page
  --condense-tempo-pages            When condensing a score also condense pages with a tempo change
