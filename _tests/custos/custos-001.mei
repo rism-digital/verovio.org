@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Custos placement</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-21</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/1776" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Custos given at the end of the measure with the same pitch as the note given previously in the measure</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400">
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="F" line="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="c" accid.ges="n" />
+                           <custos oct="3" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="C" line="1" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <custos oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="C" line="2" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <custos oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="C" line="3" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <custos oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="C" line="4" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <custos oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="C" line="5" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <custos oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="G" line="2" />
+                           <note dur="1" oct="5" pname="c" accid.ges="n" />
+                           <custos oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="G" line="2" dis="8" dis.place="below" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <custos oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
