@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Rest and measure rest positionning</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-27</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/1740" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Rests and measure rests should be at the same vertical position.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="1">
+                        <label>1</label>
+                        <clef shape="perc" line="1" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="2" lines="2">
+                        <label>2</label>
+                        <clef shape="perc" line="1" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="3" lines="3">
+                        <label>3</label>
+                        <clef shape="perc" line="2" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="4" lines="4">
+                        <label>4</label>
+                        <clef shape="perc" line="2" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="5" lines="5">
+                        <label>5</label>
+                        <clef shape="perc" line="3" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="6" lines="6">
+                        <label>6</label>
+                        <clef shape="perc" line="3" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="5">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="6">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSig count="31" unit="16" />
+                  </scoreDef>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                     <staff n="5">
+                        <layer n="1">
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                     <staff n="6">
+                        <layer n="1">
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
