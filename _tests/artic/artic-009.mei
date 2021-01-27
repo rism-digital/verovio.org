@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Articulation placement and cross-staff chords</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Susanne Cox</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-27</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/957" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot></annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv label="Allegro" n="1">
+            <score>
+               <scoreDef key.mode="major" key.sig="4s" meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp bar.thru="false" symbol="brace">
+                     <label>Pianoforte</label>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="15">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2" stem.dir="up">
+                              <artic artic="stacc" color="green" />
+                              <note staff="2" oct="3" pname="g" accid.ges="s" />
+                              <note staff="1" oct="4" pname="g" accid.ges="s" />
+                           </chord>
+                           <chord dur="2" stem.dir="up">
+                              <artic artic="stacc" place="above" color="green" />
+                              <note staff="2" oct="3" pname="a" />
+                              <note staff="1" oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="8" ploc="g" oloc="2" />
+                           <beam>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="2" pname="e" />
+                                 <note oct="2" pname="b" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="2" pname="e" />
+                                 <note oct="2" pname="b" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="2" pname="e" />
+                                 <note oct="2" pname="b" />
+                              </chord>
+                           </beam>
+                           <rest dur="8" ploc="g" oloc="2" />
+                           <beam>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="2" pname="e" />
+                                 <note oct="3" pname="c" accid="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="2" pname="e" />
+                                 <note oct="3" pname="c" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="2" pname="e" />
+                                 <note oct="3" pname="c" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
