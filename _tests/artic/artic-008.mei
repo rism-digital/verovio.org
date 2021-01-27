@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title></title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-27</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/572" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The staccato and the accent on notes have to be aware of each other. Accent marks should move out of the way of the staccato mark by moving further from the notehead.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2" />
+                        <staffDef n="3" lines="5" clef.shape="G" clef.line="2" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="4" pname="d">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="4" pname="e">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="4" pname="f">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="4" pname="g">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="4" pname="a">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="4" pname="b">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="5" pname="g">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                           <note dur="4" oct="5" pname="a">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="acc" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="d">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="e">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="f">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="g">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="a">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="b">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="g">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="a">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="ten" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="4" pname="d">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="4" pname="e">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="4" pname="f">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="4" pname="g">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="4" pname="a">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="4" pname="b">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="5" pname="g">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                           <note dur="4" oct="5" pname="a">
+                              <accid accid.ges="n" />
+                              <artic artic="stacc" />
+                              <artic artic="marc" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
