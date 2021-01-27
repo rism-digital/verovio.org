@@ -48,7 +48,7 @@
                   <note pname="e" oct="4" dur="8" xml:id="m0-s1-note6" />
                 </layer>
               </staff>
-              <slur startid="#m0-s1-note4" endid="#m0-s1-note6" curvedir="above" color="#ff0000" />
+              <slur startid="#m0-s1-note4" endid="#m0-s1-note6" curvedir="above" color="orange" />
             </measure>
             <measure n="1">
               <staff n="1">
@@ -57,7 +57,7 @@
                   <note pname="g" oct="4" dur="16" xml:id="m1-s1-note2" />
                 </layer>
               </staff>
-              <tie startid="#m1-s1-note1" endid="#m1-s1-note2" color="#ff0000" />
+              <tie startid="#m1-s1-note1" endid="#m1-s1-note2" color="orange" />
             </measure>
           </section>
         </score>
