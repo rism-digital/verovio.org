@@ -78,32 +78,32 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <multiRest num="4" />
+                           <multiRest block="true" num="4" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <multiRest num="4" />
+                           <multiRest block="true" num="4" />
                         </layer>
                      </staff>
                      <staff n="3">
                         <layer n="1">
-                           <multiRest num="4" />
+                           <multiRest block="true" num="4" />
                         </layer>
                      </staff>
                      <staff n="4">
                         <layer n="1">
-                           <multiRest num="4" />
+                           <multiRest block="true" num="4" />
                         </layer>
                      </staff>
                      <staff n="5">
                         <layer n="1">
-                           <multiRest num="4" />
+                           <multiRest block="true" num="4" />
                         </layer>
                      </staff>
                      <staff n="6">
                         <layer n="1">
-                           <multiRest num="4" />
+                           <multiRest block="true" num="4" />
                         </layer>
                      </staff>
                   </measure>
