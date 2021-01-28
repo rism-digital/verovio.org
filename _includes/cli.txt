@@ -1,4 +1,4 @@
-Verovio 3.2.0-dev-2f911fb
+Verovio 3.2.0-dev-ad1ac50
 
 Example usage:
 
@@ -8,7 +8,7 @@ Options (marked as * are repeatable)
  -                     Use "-" as input file for reading from the standard input
  -h, --help            Display this message
  -a, --all-pages       Output all pages
- -f, --format <s>      Select input format: abc, darms, mei, pae, xml (default is mei)
+ -f, --format <s>      Select input format: abc, darms, humdrum, mei, pae, xml (MusicXML) (default is mei)
  -o, --outfile <s>     Output file name (use "-" for standard output)
  -p, --page <i>        Select the page to engrave (default is 1)
  -r, --resources <s>   Path to SVG resources (default is /usr/local/share/verovio)
