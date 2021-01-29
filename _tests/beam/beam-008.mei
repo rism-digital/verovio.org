@@ -14,7 +14,7 @@
         <title>Verovio test suite</title>
       </seriesStmt>
       <notesStmt>
-        <annot>Beam should not cross more than 1/2 a space</annot>
+        <annot>Beam should not cross more than 1/2 a space.</annot>
       </notesStmt>
       <sourceDesc>
         <source>
@@ -24,7 +24,7 @@
     </fileDesc>
     <encodingDesc>
       <appInfo>
-        <application version="unknown">
+        <application version="1.0.0" label="2">
           <name>Verovio</name>
         </application>
       </appInfo>
