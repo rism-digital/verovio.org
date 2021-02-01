@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Placement of tuplet numbers on notehead</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-02-01</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/1961" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Tuplet numbers can be placed on the side of the noteheads with the --tuplet-num-head option.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[ { "tupletNumHead": true }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig sig="4s" />
+                        <meterSig count="2" unit="4" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig sig="4s" />
+                        <meterSig count="2" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <beam>
+                                 <note dur="16" oct="4" pname="g" accid.ges="s" />
+                                 <note dur="16" oct="4" pname="a" accid.ges="n" />
+                                 <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <beam>
+                                 <note dur="16" oct="4" pname="e" accid.ges="n" />
+                                 <note dur="16" oct="4" pname="a" accid.ges="n" />
+                                 <note dur="16" oct="4" pname="f" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="e" accid.ges="n" />
+                           <beam>
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                              <note dur="8" oct="2" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <beam>
+                                 <note dur="16" oct="5" pname="g" accid.ges="s" />
+                                 <note dur="16" oct="5" pname="f" accid.ges="s" />
+                                 <note dur="16" oct="5" pname="e" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <beam>
+                                 <note dur="16" oct="5" pname="d" accid.ges="s" />
+                                 <note dur="16" oct="5" pname="c" accid.ges="s" />
+                                 <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <note dur="4" oct="5" pname="f" accid.ges="s" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="3" pname="e" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="3" pname="a" accid.ges="n" />
+                                 <note oct="4" pname="e" accid.ges="n" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="3" pname="b" accid.ges="n" />
+                                 <note oct="4" pname="d" accid.ges="s" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
