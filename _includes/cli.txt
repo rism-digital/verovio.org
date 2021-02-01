@@ -1,4 +1,4 @@
-Verovio 3.2.0-dev-cb08714
+Verovio 3.2.0-dev-8b76019
 
 Example usage:
 
@@ -114,6 +114,7 @@ General layout options
  --tie-endpoint-thickness <f>      The Endpoint tie thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
  --tie-midpoint-thickness <f>      The midpoint tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
  --tuplet-bracket-thickness <f>    The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
+ --tuplet-num-head                 Placement of tuplet number on the side of the note head
 
 Element selectors and processing
  --app-x-path-query* <s>           Set the xPath query for selecting <app> child elements, for example: "./rdg[contains(@source, 'source-id')]"; by default the <lem> or the first <rdg> is selected
