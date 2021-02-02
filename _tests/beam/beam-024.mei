@@ -48,6 +48,7 @@
             </staffGrp>
           </scoreDef>
           <section>
+             <!--
             <measure right="dbl" label="a">
               <staff n="1">
                 <layer n="1">
@@ -189,6 +190,7 @@
                 </layer>
               </staff>
             </measure>
+			-->
           </section>
         </score>
       </mdiv>
