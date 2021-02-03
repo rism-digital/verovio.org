@@ -50,7 +50,6 @@
               <staff n="1">
                 <layer n="1">
                   <beam beam.with="below">
-                    <space dur="8"/>
                     <tuplet num="3" numbase="2">
                       <note dur="16" oct="5" pname="c"/>
                       <note dur="16" oct="4" pname="b"/>
@@ -65,7 +64,6 @@
                       <note dur="32" oct="5" pname="c"/>
                       <note dur="32" oct="4" pname="b"/>
                     </tuplet>
-                    <space dur="8"/>
                   </beam>
                 </layer>
               </staff>
@@ -77,10 +75,8 @@
                       <note dur="16" oct="4" pname="a"/>
                       <note breaksec="1" dur="16" oct="4" pname="b"/>
                     </tuplet>
-                    <space dur="8"/>
                   </beam>
                   <beam beam.with="above">
-                    <space dur="8"/>
                     <tuplet num="3" numbase="2">
                       <note dur="8" oct="4" pname="a"/>
                       <note dur="16" oct="4" pname="d"/>
