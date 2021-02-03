@@ -26,8 +26,8 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef>
-                  <staffGrp symbol="brace" bar.thru="true">
+               <scoreDef meter.count="6" meter.unit="8">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                      <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
                   </staffGrp>
