@@ -41,7 +41,7 @@
                <section>
                   <measure n="1">
                      <staff n="1">
-                        <layer>
+                        <layer n="1">
                            <note xml:id="ex_0338578795" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_1731899420" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_2132950534" dur.ppq="1" dur="4" oct="5" pname="c" />
@@ -55,7 +55,7 @@
                   </measure>
                   <measure n="2">
                      <staff n="1">
-                        <layer>
+                        <layer n="1">
                            <note xml:id="ex_0035934177" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_0346442879" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_0046408361" dur.ppq="1" dur="4" oct="5" pname="c" />
@@ -69,7 +69,7 @@
                   </measure>
                   <measure n="3">
                      <staff n="1">
-                        <layer>
+                        <layer n="1">
                            <note xml:id="ex_1844251605" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_1935278573" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_2004210163" dur.ppq="1" dur="4" oct="5" pname="c" />
@@ -83,7 +83,7 @@
                   </measure>
                   <measure n="4">
                      <staff n="1">
-                        <layer>
+                        <layer n="1">
                            <note xml:id="ex_0615972137" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_0985264149" dur.ppq="1" dur="4" oct="5" pname="c" />
                            <note xml:id="ex_1924615599" dur.ppq="1" dur="4" oct="5" pname="c" />

@@ -39,7 +39,7 @@
                            <note dur="8" oct="4" pname="f" grace="acc" stem.dir="up" accid="f" />
                            <note xml:id="note-L9F2" dur="4" oct="4" pname="f" accid.ges="f" />
                            <beam>
-                              <note dur="8" oct="4" pname="e" accid.ges="f">
+                              <note dur="8" oct="4" pname="e">
                                  <accid accid="f" func="caution" />
                               </note>
                               <note dur="8" oct="4" pname="f" accid.ges="f" />
@@ -50,11 +50,11 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note dur="4" oct="2" pname="g" accid.ges="f">
+                           <note dur="4" oct="2" pname="g">
                               <accid accid="f" func="caution" />
                            </note>
                            <chord dur="4">
-                              <note oct="3" pname="e" accid.ges="f">
+                              <note oct="3" pname="e">
                                  <accid accid="f" func="caution" />
                               </note>
                               <note oct="3" pname="b" accid="ff" />

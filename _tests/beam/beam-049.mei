@@ -17,7 +17,7 @@
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>Beams can have mixed stem direction defined in MEI (treble staff, each first tuplet beam)</annot>
          </notesStmt>
@@ -35,7 +35,7 @@
          <mdiv>
             <score>
                <scoreDef midi.bpm="108">
-                  <staffGrp symbol="brace" bar.thru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4">
                         <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
                      </staffDef>

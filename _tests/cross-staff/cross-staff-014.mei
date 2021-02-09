@@ -50,7 +50,7 @@
                            <note xml:id="note-000000110649015" dots="1" dur="4" oct="5" pname="f" stem.dir="up" accid.ges="n" />
                         </layer>
                         <layer n="2">
-                           <note dur="2" oct="4" pname="a" stem.dir="up" accid.ges="f">
+                           <note dur="2" oct="4" pname="a" stem.dir="up">
                               <accid accid="f" func="caution" />
                            </note>
                         </layer>
@@ -58,7 +58,7 @@
                      <staff n="2">
                         <layer n="1">
                            <beam>
-                              <note dur="8" staff="1" oct="4" pname="a" accid.ges="f">
+                              <note dur="8" staff="1" oct="4" pname="a">
                                  <accid accid="f" func="caution" />
                               </note>
                               <note dur="8" oct="3" pname="b" accid="n" />

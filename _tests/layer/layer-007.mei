@@ -1,305 +1,249 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Layers with chords sharing noteheads</title>
-      </titleStmt>
-      <pubStmt>
-        <respStmt>
-          <persName role="encoder">Klaus Rettinghaus</persName>
-          <corpName role="funder">Enote GmbH</corpName>
-        </respStmt>
-        <date isodate="2020">2020</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot></annot>
-      </notesStmt>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="3.1.0" label="0">
-          <name>Verovio</name>
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef>
-            <staffGrp>
-              <staffDef n="1" lines="5" meter.count="2" meter.unit="4" meter.form="num" />
-            </staffGrp>
-          </scoreDef>
-          <section label="same durations">
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="4" pname="a">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="4" pname="a">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl">
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="4" pname="a">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-          </section>
-          <section label="different durations">
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="4">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="4">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="4">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="4">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="4" pname="a">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure>
-              <staff n="1">
-                <layer>
-                  <chord dur="4">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="2">
-                    <note oct="4" pname="a">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl">
-              <staff n="1">
-                <layer>
-                  <chord dur="2">
-                    <note oct="4" pname="a">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                  </chord>
-                </layer>
-                <layer>
-                  <chord dur="4">
-                    <note oct="5" pname="f">
-                    </note>
-                    <note oct="4" pname="d">
-                    </note>
-                    <note oct="4" pname="a">
-                    </note>
-                  </chord>
-                </layer>
-              </staff>
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Layers with chords sharing noteheads</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot />
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" meter.count="2" meter.unit="4" meter.form="num" />
+                  </staffGrp>
+               </scoreDef>
+               <section label="same durations">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section label="different durations">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="4">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="4">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="4">
+                              <note oct="5" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

@@ -37,7 +37,7 @@
                      <staff n="1">
                         <layer n="1">
                            <note dur="2" oct="5" pname="e" stem.dir="down" accid.ges="f" />
-                           <note xml:id="note-L9F2" dur="4" oct="5" pname="e" stem.dir="down" accid.ges="f">
+                           <note xml:id="note-L9F2" dur="4" oct="5" pname="e" stem.dir="down">
                               <accid accid="f" func="caution" />
                               <verse n="1">
                                  <syl>For</syl>

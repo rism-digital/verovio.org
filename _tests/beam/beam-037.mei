@@ -10,7 +10,7 @@
          <pubStmt />
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>The note closest to the beam determine the beam angle</annot>
          </notesStmt>

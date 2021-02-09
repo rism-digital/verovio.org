@@ -55,7 +55,6 @@
                                             <accid accid="s" />
                                         </note>
                                     </chord>
-                                    <pad width="5" />
                                     <chord dur="32">
                                         <note oct="6" pname="c">
                                             <accid accid="f" />
@@ -64,7 +63,6 @@
                                             <accid accid="n" />
                                         </note>
                                     </chord>
-                                    <pad width="5" />
                                     <beam>
                                         <chord dur="8">
                                             <note oct="5" pname="e">

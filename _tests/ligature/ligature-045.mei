@@ -50,6 +50,7 @@
                            <note dur="brevis" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="a" />
                         </ligature>
+                        <barLine form="invis"/>
                         <ligature>
                            <note dur="longa" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="d" />
@@ -84,6 +85,7 @@
                            <note dur="brevis" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="a" />
                         </ligature>
+                        <barLine form="invis"/>
                         <ligature>
                            <note dur="longa" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="d" />

@@ -12,7 +12,7 @@
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the attribute "breaksec" in the element "beam" for breaking secondary beams.</annot>
          </notesStmt>

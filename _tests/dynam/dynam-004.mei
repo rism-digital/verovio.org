@@ -73,7 +73,7 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dur="8" oct="4" pname="g" accid.ges="n">
+                              <note dur="8" oct="4" pname="g">
                                  <accid accid="n" func="caution" />
                               </note>
                               <note dur="8" oct="4" pname="f" accid.ges="s" />

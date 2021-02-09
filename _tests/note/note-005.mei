@@ -80,7 +80,7 @@
                      <staff n="1">
                         <layer n="1">
                            <note dots="1" dur="2" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
-                           <note dur="4" oct="4" pname="b" stem.len="0.000000" accid.ges="n">
+                           <note dur="4" oct="4" pname="b" stem.len="0.000000">
                               <accid accid="n" func="caution" />
                            </note>
                         </layer>
@@ -163,7 +163,7 @@
                            </beam>
                            <beam>
                               <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
-                                 <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="n">
+                                 <note dur="8" oct="5" pname="d" stem.len="0.000000">
                                     <accid accid="n" func="caution" />
                                  </note>
                                  <note dur="8" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
@@ -236,7 +236,7 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="n">
+                              <note dur="8" oct="5" pname="d" stem.len="0.000000">
                                  <accid accid="n" func="caution" />
                               </note>
                               <note dur="8" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />

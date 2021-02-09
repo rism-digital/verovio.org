@@ -1,75 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Beams with opposite stem directions</title>
-      </titleStmt>
-      <pubStmt>
-        <respStmt>
-          <persName role="encoder">Klaus Rettinghaus</persName>
-          <corpName role="funder">Enote GmbH</corpName>
-        </respStmt>
-        <date isodate="2020">2020</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot>No stem should be shorter than 5vu and the beams have to avoid top and bottom stave-lines.</annot>
-      </notesStmt>
-      <sourceDesc>
-        <source>
-          <bibl>Behind Bars, p. 26, example 1</bibl>
-        </source>
-      </sourceDesc>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="3.0.0" label="0">
-          <name>Verovio</name>
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef>
-            <staffGrp>
-              <staffDef n="1" lines="5"/>
-            </staffGrp>
-          </scoreDef>
-          <section>
-            <measure>
-              <staff n="1">
-                <layer n="1">
-                  <beam>
-                    <note pname="f" oct="5" dur="8" stem.dir="down"/>
-                    <note pname="f" oct="3" dur="8" stem.dir="up"/>
-                    <note pname="f" oct="5" dur="8" stem.dir="down"/>
-                  </beam>
-                  <beam>
-                    <note pname="a" oct="5" dur="16" stem.dir="down"/>
-                    <note pname="c" oct="6" dur="16" stem.dir="down"/>
-                    <note pname="a" oct="3" dur="16" stem.dir="up"/>
-                    <note pname="a" oct="5" dur="16" stem.dir="down"/>
-                  </beam>
-                  <beam>
-                    <note pname="b" oct="5" dur="32" stem.dir="down"/>
-                    <note pname="g" oct="3" dur="32" stem.dir="up"/>
-                    <note pname="g" oct="3" dur="32" stem.dir="up"/>
-                    <note pname="b" oct="5" dur="32" stem.dir="down"/>
-                  </beam>
-                </layer>
-              </staff>
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beams with opposite stem directions</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>No stem should be shorter than 5vu and the beams have to avoid top and bottom stave-lines.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 26, example 1</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="f" stem.dir="down" />
+                              <note dur="8" oct="3" pname="f" stem.dir="up" />
+                              <note dur="8" oct="5" pname="f" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="5" pname="a" stem.dir="down" />
+                              <note dur="16" oct="6" pname="c" stem.dir="down" />
+                              <note dur="16" oct="3" pname="a" stem.dir="up" />
+                              <note dur="16" oct="5" pname="a" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="32" oct="5" pname="b" stem.dir="down" />
+                              <note dur="32" oct="3" pname="g" stem.dir="up" />
+                              <note dur="32" oct="3" pname="g" stem.dir="up" />
+                              <note dur="32" oct="5" pname="b" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

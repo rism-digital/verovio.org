@@ -17,7 +17,7 @@
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>Cross-staff beams can have mixed stem direction defined in MEI.</annot>
          </notesStmt>
@@ -35,7 +35,7 @@
          <mdiv>
             <score>
                <scoreDef midi.bpm="120" key.mode="major" key.sig="2f" meter.count="4" meter.unit="4" meter.sym="common">
-                  <staffGrp symbol="brace" bar.thru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
                         <instrDef midi.channel="0" midi.instrnum="0" />
                      </staffDef>

@@ -313,6 +313,9 @@
                         <note dur="semiminima" oct="4" pname="d" />
                         <note dur="semibrevis" oct="4" pname="g" />
                         <note dur="minima" oct="4" pname="f" />
+                        <barLine form="invis"/>
+                        <!-- bug in 3.2.0 - we need to repeat it after the barLine in case of a system break -->
+                        <mensur prolatio="2" tempus="3" />
                         <note dur="semibrevis" oct="4" pname="g" />
                         <rest dur="minima" />
                         <note dur="minima" oct="3" pname="g" />

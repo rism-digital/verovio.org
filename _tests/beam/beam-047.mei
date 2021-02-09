@@ -12,7 +12,7 @@
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>If there is a "stem.dir" attribute in a note within a beam, this sets the direction of all the notes in the beam, wherever the note is in the beam.</annot>
          </notesStmt>

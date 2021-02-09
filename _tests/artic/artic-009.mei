@@ -50,12 +50,12 @@
                            <chord dur="2" stem.dir="up">
                               <artic artic="stacc" color="green" />
                               <note staff="2" oct="3" pname="g" accid.ges="s" />
-                              <note staff="1" oct="4" pname="g" accid.ges="s" />
+                              <note oct="4" pname="g" accid.ges="s" />
                            </chord>
                            <chord dur="2" stem.dir="up">
                               <artic artic="stacc" place="above" color="green" />
                               <note staff="2" oct="3" pname="a" />
-                              <note staff="1" oct="4" pname="a" />
+                              <note oct="4" pname="a" />
                            </chord>
                         </layer>
                      </staff>

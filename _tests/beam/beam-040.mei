@@ -10,7 +10,7 @@
          <pubStmt />
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>With a minority of notes further away, the majority of notes has the wrong direction</annot>
          </notesStmt>

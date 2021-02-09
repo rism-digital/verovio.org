@@ -41,10 +41,10 @@
                               <note dur="8" oct="4" pname="f" accid="s" />
                               <note dur="8" oct="4" pname="a" accid="s" />
                            </chord>
-                           <note dur="4" oct="4" pname="g" accid.ges="s">
+                           <note dur="4" oct="4" pname="g">
                               <accid accid="s" func="caution" />
                            </note>
-                           <note dur="4" oct="4" pname="a" accid.ges="s">
+                           <note dur="4" oct="4" pname="a">
                               <accid accid="s" func="caution" />
                            </note>
                            <note dur="4" oct="4" pname="b" accid.ges="n" />

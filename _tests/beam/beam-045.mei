@@ -12,7 +12,7 @@
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
-          </seriesStmt>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio renders correctly horizontal beams within staves, so that they always touch a staff line.</annot>
          </notesStmt>
@@ -30,7 +30,7 @@
          <mdiv>
             <score>
                <scoreDef midi.bpm="132">
-                  <staffGrp symbol="brace" bar.thru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" meter.count="3" meter.unit="4" />
                      <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="1f" meter.count="3" meter.unit="4" />
                   </staffGrp>
