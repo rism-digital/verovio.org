@@ -5,7 +5,7 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Uninterpreted articulation stroke with @glyph.num</title>
+            <title>Uninterpreted articulation stroke with @glyph.num or @glyph.name</title>
             <respStmt>
                <persName role="encoder">Laurent Pugin</persName>
             </respStmt>
@@ -20,7 +20,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Specific SMuFL articulation glyphs can be given in @glyph.num and are prioritized over @artic.</annot>
+            <annot>Specific SMuFL articulation glyphs can be given in @glyph.name or glyph.num. They are both prioritized over @artic. When both @glyph.num and @glyph.name are encoded, priority is given to @glyph.num.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -59,13 +59,13 @@
                                  <artic artic="stroke" glyph.num="#xE583" />
                               </note>
                               <note dur="8" oct="4" pname="a">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
                               </note>
                               <note dur="8" oct="4" pname="b">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
                               </note>
                               <note dur="8" oct="5" pname="c">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
                               </note>
                            </beam>
                         </layer>
@@ -94,13 +94,13 @@
                                  <artic artic="stroke" glyph.num="#xE583" />
                               </note>
                               <note dur="8" oct="4" pname="a">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
                               </note>
                               <note dur="8" oct="4" pname="b">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
                               </note>
                               <note dur="8" oct="5" pname="c">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
                               </note>
                            </beam>
                         </layer>
