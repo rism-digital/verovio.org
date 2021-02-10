@@ -38,7 +38,7 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <rest dur="long" label="Longa" />
+                           <rest dur="long" label="Longa rest" />
                            <rest dur="breve" label="Double whole rest" />
                            <rest dur="1" label="Whole rest" />
                            <rest dur="2" label="Half rest" />
@@ -47,8 +47,8 @@
                            <rest dur="16" label="Sixteenth rest" />
                            <rest dur="32" label="Thirty-second rest" />
                            <rest dur="64" label="Sixty-fourth rest" />
-                           <rest dur="128" label="Hundred twenty-eighth notes" />
-                           <rest dur="256" label="Two hundred fifty-sixth notes" />
+                           <rest dur="128" label="Hundred twenty-eighth rest" />
+                           <rest dur="256" label="Two hundred fifty-sixth rest" />
                         </layer>
                      </staff>
                   </measure>
@@ -61,8 +61,8 @@
                            <rest dots="1" dur="16" label="Dotted sixteenth rest" />
                            <rest dots="1" dur="32" label="Dotted thirty-second rest" />
                            <rest dots="1" dur="64" label="Dotted sixty-fourth rest" />
-                           <rest dots="1" dur="128" label="Dotted hundred twenty-eighth notes" />
-                           <rest dots="1" dur="256" label="Dotted two hundred fifty-sixth notes" />
+                           <rest dots="1" dur="128" label="Dotted hundred twenty-eighth rest" />
+                           <rest dots="1" dur="256" label="Dotted two hundred fifty-sixth rest" />
                         </layer>
                      </staff>
                   </measure>
