@@ -8,8 +8,11 @@
             <title>Figured bass example (1)</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2017-05-09">2017-05-09</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio renders bass figures as part of the "harm" element.</annot>
          </notesStmt>
