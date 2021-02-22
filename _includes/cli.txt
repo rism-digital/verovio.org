@@ -1,4 +1,4 @@
-Verovio 3.3.0-dev-8f0e335
+Verovio 3.3.0-dev-9d89851
 
 Example usage:
 
@@ -53,6 +53,7 @@ Input and page layout options
  --svg-bounding-boxes              Include bounding boxes in SVG output
  --svg-view-box                    Use viewBox on svg root element for easy scaling of document
  --svg-html5                       Write data-id and data-class attributes for JS usage and id clash avoidance.
+ --svg-format-raw                  Writes SVG out with no line indenting or non-content newlines.
  --unit <i>                        The MEI unit (1⁄2 of the distance between the staff lines) (default: 9; min: 6; max: 20)
  --use-brace-glyph                 Use brace glyph from current font
  --use-facsimile                   Use information in the <facsimile> element to control the layout
