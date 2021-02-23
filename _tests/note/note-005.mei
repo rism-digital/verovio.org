@@ -8,8 +8,11 @@
             <title>Notes without stem</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-02</date>
+            <date isodate="2017-05-02">2017-05-02</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Stemless notes are used in CMN for various reasons: for analytical purposes, to represent harmonics, etc. Verovio supports the
 					rendering of notes without stem.</annot>
