@@ -8,8 +8,11 @@
             <title>Unpitched notes</title>
          </titleStmt>
          <pubStmt>
-            <date>2020-03-30</date>
+            <date isodate="2020-03-30">2020-03-30</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Notes can be placed on specific lines/spaces on a staff without pitch information.</annot>
          </notesStmt>

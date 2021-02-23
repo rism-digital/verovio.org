@@ -8,8 +8,11 @@
             <title>Pickup note spacing</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-07-28</date>
+            <date isodate="2017-07-28">2017-07-28</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio appropriately spaces pickup notes.</annot>
          </notesStmt>

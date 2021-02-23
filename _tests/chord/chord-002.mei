@@ -8,15 +8,18 @@
             <title>Chords: Alignment and justification</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-18</date>
+            <date isodate="2017-04-18">2017-04-18</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio offers options to align the element "harm" representing a chord symbol in relation to the "tstamp" attribute.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

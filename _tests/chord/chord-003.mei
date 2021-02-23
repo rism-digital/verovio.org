@@ -8,8 +8,11 @@
             <title>Chords with notational features on individual notes</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-27</date>
+            <date isodate="2017-04-27">2017-04-27</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Lyrics, accents, dynamics, and other notational features are rendered also if they are attached on individual notes in a
 					chord.</annot>
@@ -17,7 +20,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

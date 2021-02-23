@@ -8,16 +8,15 @@
             <title>Accidental adjustment on chords</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
          <notesStmt>
-            <annot>Verovio appropriately adjusts the spacing between accidentals and chords to ensure readability while avoiding
-					collisions.</annot>
+            <annot>Verovio appropriately adjusts the spacing between accidentals and chords to ensure readability while avoiding collisions.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
