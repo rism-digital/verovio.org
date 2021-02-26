@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Figured bass example (3)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Figure bass support extension with @startid/@tstamp and @endid/@tstamp2</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unkown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="3" pname="b" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" />
+                              <note dur="8" oct="3" pname="a" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="3" pname="b" />
+                              <note dur="16" oct="3" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm place="below" tstamp="1.000000">
+                        <fb>
+                           <f>6</f>
+                           <f tstamp="1.000000" tstamp2="0m+2.0000">4</f>
+                           <f tstamp="1.000000" tstamp2="0m+2.0000">3</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="2.000000">
+                        <fb>
+                           <f>♯6</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="3.000000">
+                        <fb>
+                           <f>6</f>
+                           <f tstamp="3.000000" tstamp2="0m+4.5000">4</f>
+                           <f tstamp="3.000000" tstamp2="0m+4.0000">3</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="4.000000">
+                        <fb>
+                           <f>6</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="4.500000">
+                        <fb>
+                           <f>♯3</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="3" pname="b" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" />
+                              <note dur="8" oct="3" pname="a" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="3" pname="b" />
+                              <note dur="16" oct="3" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm place="below" tstamp="1.000000">
+                        <fb>
+                           <f>6</f>
+                           <f tstamp="1.000000" tstamp2="0m+2.0000">4</f>
+                           <f tstamp="1.000000" tstamp2="0m+2.0000">3</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="2.000000">
+                        <fb>
+                           <f>♯6</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="3.000000">
+                        <fb>
+                           <f>♯6</f>
+                           <f tstamp="3.000000" tstamp2="0m+4.5000">4</f>
+                           <f tstamp="3.000000" tstamp2="0m+4.0000">3</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="4.000000">
+                        <fb>
+                           <f>6</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="4.500000">
+                        <fb>
+                           <f>♯3</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="3" pname="b" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" />
+                              <note dur="8" oct="3" pname="a" />
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" oct="4" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm place="below" tstamp="1.000000">
+                        <fb>
+                           <f>6</f>
+                           <f tstamp="1.000000" tstamp2="0m+2.0000">4</f>
+                           <f tstamp="1.000000" tstamp2="0m+2.0000">3</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="2.000000">
+                        <fb>
+                           <f>♯6</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="3.000000">
+                        <fb>
+                           <f>♯6</f>
+                           <f tstamp="3.000000" tstamp2="0m+4.5000">4</f>
+                           <f tstamp="3.000000" tstamp2="0m+4.0000">3</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="4.000000">
+                        <fb>
+                           <f>6</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" tstamp="4.500000">
+                        <fb>
+                           <f>♯3</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure right="invis" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="b" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

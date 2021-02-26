@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Hyphen justification</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Regardless of the length of syllables or of their spacing, hyphens always remain centred and do not overlap syllables.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" meter.count="3" meter.unit="8" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="1f" meter.count="3" meter.unit="8" />
+                     <staffDef n="3" lines="5" clef.shape="F" clef.line="4" key.sig="1f" meter.count="3" meter.unit="8" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <!-- kern: =1-  8f/  8e/  8f/  =2 -->
+                        <layer n="1">
+                           <note xml:id="note-000000161091626" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>A</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>E</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>I</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>M</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>Q</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>U</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl con="d" wordpos="i">Yp</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000015727102" dur="8" oct="4" pname="e" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>B</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>F</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>K</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>N</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>R</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>V</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl con="d" wordpos="m">si</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000089113136" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>C</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>G</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>und</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>O</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>S</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>W</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl wordpos="t">lon</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =1-  *^  8f/L  8e/  8f/J  *v  =2 -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n" />
+                           </beam>
+                        </layer>
+                        <!-- kern: 4c\  8c\  *v -->
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" stem.dir="down" accid.ges="n" />
+                           <note dur="8" oct="4" pname="c" stem.dir="down" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =1-  *^  8A/L  8G/  8A/J  *v  =2 -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" stem.dir="up" accid.ges="n" />
+                              <note dur="8" oct="3" pname="g" stem.dir="up" accid.ges="n" />
+                              <note dur="8" oct="3" pname="a" stem.dir="up" accid.ges="n" />
+                           </beam>
+                        </layer>
+                        <!-- kern: 4F\  8F\  *v -->
+                        <layer n="2">
+                           <note dur="4" oct="3" pname="f" stem.dir="down" accid.ges="n" />
+                           <note dur="8" oct="3" pname="f" stem.dir="down" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <tempo staff="1" tstamp="1.000000">Allegretto</tempo>
+                     <dynam staff="2" tstamp="1.000000">p</dynam>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <!-- kern: =2  4g/  8r  =3 -->
+                        <layer n="1">
+                           <note xml:id="note-000000004834490" dur="4" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>D,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>H,</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>L,</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>P,</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>T,</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>X,</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>Z,</syl>
+                              </verse>
+                           </note>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =2  4e/ 4g/  8r  =3 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =2  4C\ 4c\  8r  =3 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <!-- kern: =3  8g/  8f/  8g/  =4 -->
+                        <layer n="1">
+                           <note xml:id="note-000000056305803" dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>wenn</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>wärst</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">Aeug</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>gleich</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="i">Schei</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>mach'</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>nun</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000196134214" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>ich</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>du</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">lein</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">ei</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl wordpos="t">den</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="i">ei</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>geh'</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000021867952" dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>dich</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>doch</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>so</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl wordpos="t">ner</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>thut</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl wordpos="t">nen</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>zu</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =3  8e/ 8g/L  8d/ 8f/  8e/ 8g/J  =4 -->
+                        <layer n="1">
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="4" pname="e" accid.ges="n" />
+                                 <note oct="4" pname="g" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="f" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="4" pname="e" accid.ges="n" />
+                                 <note oct="4" pname="g" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =3  4C\ 4c\  8C\ 8c\  =4 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="8" stem.dir="down">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <!-- kern: =4  4a/  8r  =5 -->
+                        <layer n="1">
+                           <note xml:id="note-000000174566279" dur="4" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>seh',</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>da!</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>hell</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>Fee</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>weh.</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>Knix,</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>Bett!</syl>
+                              </verse>
+                           </note>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =4  4f/ 4a/  8r  =5 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="4" pname="f" accid.ges="n" />
+                              <note oct="4" pname="a" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =4  4F\ 4c\  8r  =5 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="f" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <!-- kern: =5  8a/  8a/  8dd\  =6 -->
+                        <layer n="1">
+                           <note xml:id="note-000000203548284" dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>dich,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">Drück</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">glänz</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">fes</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="i">Hal</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>drückt</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>Bricht</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000214034140" dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">mei</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl wordpos="t">te</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">ten</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl wordpos="t">selst</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl wordpos="t">te</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>dir</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>doch</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000153712481" dur="8" oct="5" pname="d" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">ne</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>mein</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>in</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>du</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>mit</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>ein</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>die</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =5  8r  8c/ 8d/ 8f#/L  8c/ 8d/ 8f#/J  =6 -->
+                        <layer n="1">
+                           <rest dur="8" />
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="f" accid="s" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="f" accid.ges="s" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =5  4DD/ 4D/  8r  =6 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="2" pname="d" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+3.0000" form="cres" />
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <!-- kern: =6  8.cc\  16b-\  8b-\  =7 -->
+                        <layer n="1">
+                           <note xml:id="note-000000101427747" dots="1" dur="8" oct="5" pname="c" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">sü</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">treu</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">Lie</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>Herz</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>Herz</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="i">jun</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>Nacht</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000158866141" dur="16" oct="4" pname="b" stem.dir="down" accid.ges="f">
+                              <verse n="1">
+                                 <syl wordpos="t">sse</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl wordpos="t">er</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="m">bes</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>und</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>und</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl wordpos="t">ger</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>schon</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000122009295" dur="8" oct="4" pname="b" stem.dir="down" accid.ges="f">
+                              <verse n="1">
+                                 <syl>Lust,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>Arm,</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">pracht</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>Sinn,</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>Mund</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>Fant</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>ein,</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =6  8r  8B-/ 8d/ 8g/L  8B-/ 8d/ 8g/J  =7 -->
+                        <layer n="1">
+                           <rest dur="8" />
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="g" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="g" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =6  4GG/  8r  =7 -->
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="g" stem.dir="up" accid.ges="n" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+3.0000" form="dim" />
+                  </measure>
+                  <measure n="7">
+                     <staff n="1">
+                        <!-- kern: =7  8g/  8g/  8cc\  =8 -->
+                        <layer n="1">
+                           <note xml:id="note-000000023289389" dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>klopft</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">Hol</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>mir</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">Grüb</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>treu</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="i">zärt</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>kann</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000178235608" dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>die</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl wordpos="t">de,</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>aus</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl wordpos="t">chen</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>an</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl wordpos="t">lich</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>ja</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000190628863" dur="8" oct="5" pname="c" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">em</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>dich</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>der</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>in</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>dem</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>die</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>nicht</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =7  8r  8B-/ 8c/ 8e/L  8B-/ 8c/ 8e/J  =8 -->
+                        <layer n="1">
+                           <rest dur="8" />
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="e" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="e" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =7  4CC/ 4C/  8r  =8 -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="2" pname="c" accid.ges="n" />
+                              <note oct="3" pname="c" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+3.0000" form="cres" />
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <!-- kern: =8  8.b-\  16a/  8a/  =9 -->
+                        <layer n="1">
+                           <note xml:id="note-000000013185781" dots="1" dur="8" oct="4" pname="b" stem.dir="down" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="m">pör</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">lie</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">Wim</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>Wang'</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="i">Lie</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="i">Schwwa</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>bei</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000134037384" dur="16" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">te</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="m">be</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">pern</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>und</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="m">bes</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="m">nen</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>dir</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000010178848" dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>Brust,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>warm!</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>Nacht,</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>Kinn,</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl wordpos="t">bund,</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl wordpos="t">hand,</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>sein,</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =8  8r  8A/ 8c/ 8f/L  8A/ 8c/ 8f/J  =9 -->
+                        <layer n="1">
+                           <rest dur="8" />
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="a" accid.ges="n" />
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="f" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="a" accid.ges="n" />
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="f" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =8  4FF/  8r  =9 -->
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="f" stem.dir="up" accid.ges="n" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+2.5000" form="dim" />
+                  </measure>
+                  <measure n="9">
+                     <staff n="1">
+                        <!-- kern: =9  8f/  8e/  8f/  =10 -->
+                        <layer n="1">
+                           <note xml:id="note-000000144638028" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>wird</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">Schätz</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">tra</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">Ro</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="i">sa</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="i">a</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>wenn</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000038931328" dur="8" oct="4" pname="e" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>mir</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl wordpos="t">chen,</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">fen</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="m">sen</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl wordpos="t">ge</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl wordpos="t">ber</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>ich</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000069552569" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>so</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>ach</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>wie</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl wordpos="t">glut,</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>mir</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>nur</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>auch</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =9  8A/ 8f/L  8B-/ 8e/  8c/ 8f/J  =10 -->
+                        <layer n="1">
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="a" accid.ges="n" />
+                                 <note oct="4" pname="f" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="e" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="f" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =9  8FF/L  8GG/  8AA/J  =10 -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="2" pname="f" stem.dir="up" accid.ges="n" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="n" />
+                              <note dur="8" oct="2" pname="a" stem.dir="up" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="10">
+                     <staff n="1">
+                        <!-- kern: =10  8.ee\  16dd\  8dd\  =11 -->
+                        <layer n="1">
+                           <note xml:id="note-000000142142400" dots="1" dur="8" oct="5" pname="e" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl>wohl</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>wärst</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">bli</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">Li</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>nie</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl con="d" wordpos="i">ern</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl con="d" wordpos="i">Flü</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000150692084" dur="16" oct="5" pname="d" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl>und</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>du</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="m">tzes</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="m">lien</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="i">A</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl wordpos="t">sten</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl wordpos="t">gel</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000141664170" dur="8" oct="5" pname="d" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl>weh,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>da!</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">schnell,</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>schnee,</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>de!</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>Blicks</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>hätt'!</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =10  8r  8B-/ 8d/ 8g/L  8B-/ 8d/ 8g/J  =11 -->
+                        <layer n="1">
+                           <rest dur="8" />
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="g" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="d" accid.ges="n" />
+                                 <note oct="4" pname="g" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =10  4BB-/  8r  =11 -->
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="b" stem.dir="up" accid.ges="f" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="11">
+                     <staff n="1">
+                        <!-- kern: =11  8cc\  8g/  8a/  =12 -->
+                        <layer n="1">
+                           <note xml:id="note-000000039538647" dur="8" oct="5" pname="c" stem.dir="down" accid.ges="n">
+                              <verse n="1">
+                                 <syl>wenn</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>wärst</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">Aeug</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">rei</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl con="d" wordpos="i">Schei</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>mach'</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>Geh'</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000118794107" dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>ich</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>du</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">lein</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="m">zen</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl wordpos="t">den</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>ihm</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>nur</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-000000164997586" dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>dich</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>mir</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>so</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl wordpos="t">de</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>thut</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>den</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>zu</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =11  8r  8B-/ 8c/ 8e/L  8B-/ 8c/ 8e/J  =12 -->
+                        <layer n="1">
+                           <rest dur="8" />
+                           <beam>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="e" accid.ges="n" />
+                              </chord>
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="c" accid.ges="n" />
+                                 <note oct="4" pname="e" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =11  4C/  8r  =12 -->
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="c" stem.dir="up" accid.ges="n" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="12">
+                     <staff n="1">
+                        <!-- kern: =12  4f/  8r  == -->
+                        <layer n="1">
+                           <note xml:id="note-000000147095386" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <verse n="1">
+                                 <syl>seh'!</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>nah'!</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>hell.</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl>Fee!</syl>
+                              </verse>
+                              <verse n="5">
+                                 <syl>weh.</syl>
+                              </verse>
+                              <verse n="6">
+                                 <syl>Knix!</syl>
+                              </verse>
+                              <verse n="7">
+                                 <syl>Bett!</syl>
+                              </verse>
+                           </note>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =12  4A/ 4c/ 4f/  8r  == -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="f" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <!-- kern: =12  4FF/ 4F/  8r  == -->
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="2" pname="f" accid.ges="n" />
+                              <note oct="3" pname="f" accid.ges="n" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

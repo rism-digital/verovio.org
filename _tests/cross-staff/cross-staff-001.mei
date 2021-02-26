@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff notation example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-04</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports basic cross-staff notation with displacement encoding. This means that the cross-staff elements (i.e., notes)
+					have to be encoded in the logical staff with an additional "staff" attribute indicating the cross-staff position.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4">
+                  <staffGrp>
+                     <staffGrp symbol="brace" n="1">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" />
+                        <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1" label="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam label="feature-example">
+                              <chord dur="16">
+                                 <note dur="16" oct="4" pname="f" />
+                                 <note dur="16" oct="5" pname="c" />
+                              </chord>
+                              <note dur="16" staff="2" oct="3" pname="c" />
+                              <note dur="16" staff="2" oct="3" pname="a" />
+                              <chord dur="16">
+                                 <note dur="16" oct="4" pname="e" />
+                                 <note dur="16" oct="5" pname="c" />
+                              </chord>
+                           </beam>
+                           <beam>
+                              <chord dur="16">
+                                 <note dur="16" oct="4" pname="e" />
+                                 <note dur="16" oct="4" pname="a" />
+                              </chord>
+                              <note dur="16" staff="2" oct="3" pname="c" />
+                              <chord dur="16">
+                                 <note dur="16" oct="4" pname="d" />
+                                 <note dur="16" oct="4" pname="g" />
+                              </chord>
+                              <note dur="16" staff="2" oct="3" pname="a" />
+                           </beam>
+                           <beam>
+                              <chord dur="16">
+                                 <note dur="16" oct="3" pname="f" />
+                                 <note dur="16" oct="4" pname="d" />
+                              </chord>
+                              <note dur="16" staff="2" oct="4" pname="a" />
+                              <note dur="16" staff="2" oct="5" pname="f" />
+                              <chord dur="16">
+                                 <note dur="16" oct="3" pname="g" />
+                                 <note dur="16" oct="3" pname="b" />
+                              </chord>
+                           </beam>
+                           <clef shape="F" line="4" />
+                           <beam>
+                              <note dur="16" staff="2" oct="3" pname="c" />
+                              <note dur="16" oct="3" pname="g" />
+                              <note dur="16" staff="2" oct="3" pname="a" />
+                           </beam>
+                           <rest dur="16" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="2" />
+                           <clef shape="G" line="2" />
+                           <space dur="4" />
+                           <clef shape="F" line="4" />
+                           <space dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="1" label="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                           <chord xml:id="chord-0000000683148902" dur="4">
+                              <note staff="2" oct="2" pname="e" />
+                              <note staff="2" oct="3" pname="c" />
+                              <note staff="2" oct="3" pname="f" />
+                              <note oct="3" pname="c" />
+                              <note oct="4" pname="c" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                           <clef shape="G" line="2" />
+                           <chord xml:id="chord-0000001958371069" dur="4">
+                              <note staff="2" oct="2" pname="e" />
+                              <note staff="2" oct="3" pname="c" />
+                              <note staff="2" oct="3" pname="f" />
+                              <note oct="3" pname="c" />
+                              <note oct="4" pname="c" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord xml:id="chord-0000001000950771" dur="2">
+                              <note oct="2" pname="e" />
+                              <note oct="3" pname="c" />
+                              <note oct="3" pname="f" />
+                              <note staff="1" oct="3" pname="c" />
+                              <note staff="1" oct="4" pname="c" accid="s" />
+                              <note staff="1" oct="4" pname="d" />
+                           </chord>
+                           <space dur="4" />
+                           <space dur="4" />
+                        </layer>
+                     </staff>
+                     <fermata place="above" staff="1" startid="#chord-0000001000950771"/>
+                     <fermata place="above" staff="1" startid="#chord-0000000683148902"/>
+                     <fermata place="above" staff="1" startid="#chord-0000001958371069"/>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

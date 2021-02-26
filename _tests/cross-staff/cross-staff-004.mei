@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff beams</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio implements the attribute "beam.with" when a layer shifts temporarily but entirely to another staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="180">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="3f" meter.count="4" meter.unit="4" meter.sym="common" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="3f" meter.count="4" meter.unit="4" meter.sym="common" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="51">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note xml:id="note-L11F2" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="f" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="4" pname="a" accid.ges="f" />
+                                 <note dur="8" oct="5" pname="c" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" accid="n" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="4" pname="f" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="a" accid.ges="f" />
+                                 <note dur="8" staff="2" oct="3" pname="b" accid="n" />
+                              </tuplet>
+                           </beam>
+                           <beam beam.with="below">
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                                 <note dur="8" staff="2" oct="4" pname="c" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="4" pname="f" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="g" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="1">
+                              <note oct="2" pname="a" accid.ges="f" />
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="f" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L11F2" endid="#note-L36F2" curvedir="above" />
+                  </measure>
+                  <measure n="52">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam beam.with="below">
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                                 <note dur="8" staff="2" oct="3" pname="a" accid.ges="f" />
+                                 <note dur="8" staff="2" oct="4" pname="c" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="e" accid="n" />
+                              </tuplet>
+                           </beam>
+                           <beam beam.with="below">
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                                 <note dur="8" staff="2" oct="3" pname="f" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="a" accid.ges="f" />
+                                 <note dur="8" staff="2" oct="2" pname="b" accid="n" />
+                              </tuplet>
+                           </beam>
+                           <beam beam.with="below">
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                                 <note dur="8" staff="2" oct="3" pname="c" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="f" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="2" pname="g" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <beam beam.with="below">
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false" num.format="count">
+                                 <note dur="8" staff="2" oct="2" pname="a" accid.ges="f" />
+                                 <note dur="8" staff="2" oct="3" pname="c" accid.ges="n" />
+                                 <note xml:id="note-L36F2" dur="8" staff="2" oct="2" pname="e" accid="n" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="1">
+                              <note oct="1" pname="f" accid.ges="n" />
+                              <note oct="2" pname="f" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="53">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L40F2" dots="1" dur="4" staff="2" oct="2" pname="f" accid.ges="n" />
+                           <note dur="8" staff="2" oct="2" pname="c" accid.ges="n" />
+                           <beam beam.with="below">
+                              <note dur="8" staff="2" oct="2" pname="a" accid.ges="f" />
+                              <note dur="8" staff="2" oct="2" pname="f" accid.ges="n" />
+                              <note dur="8" staff="2" oct="3" pname="c" accid.ges="n" />
+                              <note dur="8" staff="2" oct="2" pname="a" accid.ges="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mSpace />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L40F2" endid="#note-L65F2" curvedir="above" />
+                  </measure>
+                  <measure n="54">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam beam.with="below">
+                              <note dur="8" staff="2" oct="3" pname="f" accid.ges="n" />
+                              <note dur="8" staff="2" oct="3" pname="c" accid.ges="n" />
+                              <note dur="8" staff="2" oct="3" pname="a" accid.ges="f" />
+                              <note dur="8" staff="2" oct="3" pname="f" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" staff="2" oct="4" pname="c" accid.ges="n" />
+                              <note dur="8" staff="2" oct="3" pname="a" accid.ges="f" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mSpace />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="55">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="a" accid.ges="f" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="f" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="f" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="8" oct="5" pname="a" accid.ges="f" />
+                              <note dur="8" oct="5" pname="f" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="56">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L65F2" dur="4" oct="6" pname="c" accid.ges="n" />
+                           <rest dur="4" />
+                           <note dur="4" oct="6" pname="e" accid.ges="f" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <chord dur="4">
+                              <note oct="3" pname="a" accid.ges="f" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="f" accid.ges="n" />
+                           </chord>
+                           <rest dur="4" />
+                           <chord dur="4">
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="g" accid="f" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

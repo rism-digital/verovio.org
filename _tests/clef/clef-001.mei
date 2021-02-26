@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Clef change example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-04</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio renders intermediate clef changes encoded with "clef" elements.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="6" pname="d" />
+                              <note oct="5" pname="b" />
+                              <note oct="5" pname="g">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="5" pname="e" />
+                           </chord>
+                           <rest dur="8" />
+                           <note dur="8" oct="6" pname="c" stem.dir="down" accid.ges="s" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up">
+                              <note oct="4" pname="g">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="3" pname="b" />
+                           </chord>
+                           <rest dur="8" />
+                           <chord dur="8" stem.dir="up">
+                              <note oct="4" pname="a" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dynam place="below" staff="1" tstamp="1.000000">fz</dynam>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="b" stem.dir="down" />
+                              <note dur="8" oct="6" pname="d" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="e" stem.dir="down" />
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="5" pname="g">
+                                    <accid accid="s" />
+                                 </note>
+                                 <note oct="5" pname="d">
+                                    <accid accid="n" />
+                                 </note>
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" label="feature-example">
+                           <chord dur="8" stem.dir="up">
+                              <note oct="4" pname="f" accid.ges="s" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                           <rest dur="8" />
+                           <clef shape="F" line="4" />
+                           <chord dur="8" stem.dir="down">
+                              <note oct="4" pname="e" />
+                              <note oct="3" pname="e" />
+                           </chord>
+                           <rest dur="8" />
+                           <clef shape="G" line="2" />
+                        </layer>
+                     </staff>
+                     <!--slur startid="n1" endid="n2" /-->
+                  </measure>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="5" pname="a" />
+                              <note oct="5" pname="c" accid.ges="s" />
+                           </chord>
+                           <rest dur="8" />
+                           <note dur="8" oct="5" pname="e" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="3" pname="a" stem.dir="up" />
+                              <note dur="16" oct="4" pname="a" stem.dir="up" />
+                              <note dur="16" oct="4" pname="g" stem.dir="up">
+                                 <accid accid="s" />
+                              </note>
+                              <note dur="16" oct="4" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="a" stem.dir="up" />
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="a" stem.dir="up" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <!--slur startid="n3" endid="n4"/-->
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

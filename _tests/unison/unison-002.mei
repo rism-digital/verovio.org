@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Note-head placement in unison (2)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-27</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio correctly spaces ledger lines when notes are in unison.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="3" pname="g">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="3" pname="g">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="3" pname="a">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="3" pname="a">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="3" pname="b">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="3" pname="b">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="4" pname="c">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="4" pname="c">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                           </beam>
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="4" pname="d">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="4" pname="d">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="4" pname="e">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="4" pname="e">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="4" pname="f">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="4" pname="f">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="4" pname="g">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="4" pname="g">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="3" pname="g">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="3" pname="g">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <rest dur="8" />
+                              <chord dur="8">
+                                 <note oct="3" pname="a">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="3" pname="a">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <rest dur="8" />
+                              <chord dur="8">
+                                 <note oct="3" pname="b">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="3" pname="b">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                              <rest dur="8" />
+                              <chord dur="8">
+                                 <note oct="4" pname="c">
+                                    <accid accid.ges="n" />
+                                 </note>
+                                 <note oct="4" pname="c">
+                                    <accid accid.ges="n" />
+                                 </note>
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

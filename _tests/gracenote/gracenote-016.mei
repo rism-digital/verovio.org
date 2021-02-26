@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff grace note horizontal offsets</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Iacopo Cividini</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-30</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/924" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Grace notes placement with cross-staff notation</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.pname="a" key.sig="3s" meter.count="3" meter.unit="4">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="2s" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord xml:id="chord_12960" dur="8" stem.dir="down">
+                                 <note oct="4" pname="g">
+                                    <accid accid="s" />
+                                 </note>
+                                 <note oct="3" pname="b" />
+                              </chord>
+                              <note dur="8" oct="4" pname="e" stem.dir="down" />
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="a" />
+                                 <note oct="4" pname="c">
+                                    <accid accid.ges="s" />
+                                 </note>
+                              </chord>
+                              <note dur="8" oct="4" pname="e" stem.dir="down" />
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="5" pname="c">
+                                    <accid accid.ges="s" />
+                                 </note>
+                                 <note oct="4" pname="a" />
+                              </chord>
+                              <note xml:id="note_13044" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="note_13062" dur="16" staff="1" oct="6" pname="d" color="green" grace="unknown" stem.dir="up">
+                              <accid accid="s" />
+                           </note>
+                           <note xml:id="note_13074" dur="4" staff="1" oct="6" pname="e" stem.dir="up" />
+                           <note xml:id="note_13080" dur="16" staff="1" oct="6" pname="d" color="green" grace="unknown" stem.dir="up">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="note_13092" dur="4" staff="1" oct="6" pname="e" stem.dir="up" />
+                           <note xml:id="note_13098" dur="16" staff="1" oct="6" pname="d" color="green" grace="unknown" stem.dir="up">
+                              <accid accid.ges="s" />
+                           </note>
+                           <note xml:id="note_13110" dur="4" staff="1" oct="6" pname="e" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#chord_12960" endid="#note_13044" curvedir="below" />
+                     <slur staff="1" startid="#note_13062" endid="#note_13074" curvedir="above" />
+                     <slur staff="1" startid="#note_13080" endid="#note_13092" curvedir="above" />
+                     <slur staff="1" startid="#note_13098" endid="#note_13110" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.1">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Placing tuplet indications with double-stemmed beams</title>
+      </titleStmt>
+      <pubStmt>
+        <respStmt>
+          <persName role="encoder">Klaus Rettinghaus</persName>
+          <corpName role="funder">Enote GmbH</corpName>
+        </respStmt>
+        <date isodate="2020">2020</date>
+      </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
+      <notesStmt>
+        <annot>Position a beam so that the shortest stems in both directions are of equal length.</annot>
+        <annot>For clarity, keep beams clear of the staves where possible.</annot>
+        <annot>Slope the beam if the intervals of a group go in one direction (a); otherwise, reflect the interval of the outside notes (b).</annot>
+        <annot>A beam should remain horizontal, where a slope in the direction of the outside pitches contradicts the direction of the majority of notes (c), and where there is no overall change in contour (d).</annot>
+      </notesStmt>
+      <sourceDesc>
+        <source>
+          <bibl>Behind Bars, p. 315, example 2</bibl>
+        </source>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="3.0.0" label="0">
+          <name>Verovio</name>
+        </application>
+      </appInfo>
+    </encodingDesc>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef>
+            <staffGrp symbol="brace" bar.thru="true">
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2"/>
+              <staffDef n="2" lines="5" clef.shape="F" clef.line="4"/>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure right="dbl" label="a">
+              <staff n="1">
+                <layer n="1">
+                  <beam beam.with="below">
+                    <space dur="4"/>
+                    <note dur="8" oct="4" pname="g"/>
+                    <note dur="8" oct="5" pname="c"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <beam beam.with="above">
+                    <note dur="8" oct="3" pname="c"/>
+                    <note dur="8" oct="3" pname="g"/>
+                    <space dur="4"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="dbl" label="b">
+              <staff n="1">
+                <layer n="1">
+                  <beam beam.with="below">
+                    <note dur="16" oct="4" pname="g"/>
+                    <note dur="16" oct="5" pname="d"/>
+                    <note dur="16" oct="5" pname="c"/>
+                    <space dur="16"/>
+                    <space dur="16"/>
+                    <space dur="16"/>
+                  </beam>
+                  <beam beam.with="below">
+                    <space dur="16"/>
+                    <note dur="16" oct="5" pname="g"/>
+                    <space dur="16"/>
+                    <note dur="16" oct="5" pname="e"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <beam beam.with="above">
+                    <space dur="16"/>
+                    <space dur="16"/>
+                    <space dur="16"/>
+                    <note dur="16" oct="2" pname="a"/>
+                    <note dur="16" oct="2" pname="b"/>
+                    <note dur="16" oct="3" pname="c"/>
+                  </beam>
+                  <beam beam.with="above">
+                    <note dur="16" oct="3" pname="e"/>
+                    <space dur="16"/>
+                    <note dur="16" oct="4" pname="c"/>
+                    <space dur="16"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="dbl" label="c">
+              <staff n="1">
+                <layer n="1">
+                  <beam beam.with="below">
+                    <note dur="16" oct="5" pname="f"/>
+                    <space dur="16"/>
+                    <note dur="16" oct="5" pname="c"/>
+                    <space dur="16"/>
+                    <note dur="8" oct="5" pname="a"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <beam beam.with="above">
+                    <space dur="16"/>
+                    <chord dur="16">
+                      <note oct="3" pname="f"/>
+                      <note oct="3" pname="d"/>
+                    </chord>
+                    <space dur="16"/>
+                    <chord dur="16">
+                      <note oct="3" pname="d"/>
+                      <note oct="2" pname="f"/>
+                    </chord>
+                    <space dur="8"/>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+            <measure right="dbl" label="d">
+              <staff n="1">
+                <layer n="1">
+                  <beam beam.with="below">
+                    <note dur="8" oct="4" pname="a"/>
+                    <space dur="8"/>
+                    <note dur="8" oct="5" pname="e"/>
+                    <space dur="8"/>
+                  </beam>
+                  <clef shape="F" line="4"/>
+                  <beam beam.with="below">
+                    <chord dur="16">
+                      <note oct="3" pname="f"/>
+                      <note oct="3" pname="g"/>
+                    </chord>
+                    <space dur="16"/>
+                    <chord dur="16">
+                      <note oct="3" pname="f"/>
+                      <note oct="3" pname="g"/>
+                    </chord>
+                    <space dur="16"/>
+                  </beam>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <beam beam.with="above">
+                    <space dur="8"/>
+                    <chord dur="8">
+                      <note oct="3" pname="c"/>
+                      <note oct="2" pname="e"/>
+                    </chord>
+                    <space dur="8"/>
+                    <chord dur="8">
+                      <note oct="3" pname="c"/>
+                      <note oct="2" pname="e"/>
+                    </chord>
+                  </beam>
+                  <beam beam.with="above">
+                    <space dur="16"/>
+                    <chord dur="16">
+                      <note oct="3" pname="f"/>
+                      <note oct="3" pname="g"/>
+                    </chord>
+                    <space dur="16"/>
+                    <chord dur="16">
+                      <note oct="3" pname="f"/>
+                      <note oct="3" pname="g"/>
+                    </chord>
+                  </beam>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>

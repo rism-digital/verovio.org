@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Scope and placement of dynamics</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-02</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports the appropriate placement of dynamics affecting only a single note, or a single layer in a staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="0.9.13">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="240">
+                  <staffGrp symbol="brace" barthru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="2s" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="227">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <note dur="2" oct="2" pname="a" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="note-L9F2" dur="1" oct="1" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <dynam staff="2" tstamp="3.000000">sf</dynam>
+                     <tie startid="#note-L9F2" endid="#note-L19F1S1" />
+                  </measure>
+                  <measure n="228">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n">
+                                 <accid accid="n" func="caution" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="s" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord xml:id="chord-L19F1" dur="2">
+                              <note xml:id="note-L19F1S1" oct="1" pname="a" accid.ges="n" />
+                              <note oct="2" pname="a" accid.ges="n" />
+                           </chord>
+                           <chord xml:id="chord-L23F1" dur="2">
+                              <note oct="1" pname="g" accid.ges="n" />
+                              <note oct="2" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="2" startid="#chord-L19F1" endid="#chord-L23F1" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Dot placement with multiple layers</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>The augmentation dot placement is adjusted to avoid ambiguity when dotted notes belong to different layers.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="88">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="1f" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="58">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dots="1" dur="4" />
+                           <beam>
+                              <note xml:id="note-L12F2" dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note xml:id="note-L16F2" dur="8" oct="4" pname="b" accid.ges="f" />
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note xml:id="note-L9F3" dots="1" dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="16" oct="4" pname="b" accid="n" />
+                           </beam>
+                           <note xml:id="note-L11F3" dur="8" oct="4" pname="b" accid="f" />
+                           <beam>
+                              <note dots="1" dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="32" oct="4" pname="c" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dots="1" dur="16" oct="4" pname="f" accid.ges="n" />
+                              <note dur="32" oct="4" pname="c" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dots="1" dur="16" oct="4" pname="g" accid.ges="n" />
+                              <note dur="32" oct="4" pname="c" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dots="1" dur="4">
+                              <note oct="3" pname="e" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="2" pname="b" accid.ges="f" />
+                                 <note oct="3" pname="b" accid.ges="f" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="2" pname="a" accid.ges="n" />
+                                 <note oct="3" pname="a" accid.ges="n" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="2" pname="g" accid.ges="n" />
+                                 <note oct="3" pname="g" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L12F2" endid="#note-L16F2" />
+                     <dynam staff="1" tstamp="1.000000">f</dynam>
+                     <slur staff="1" startid="#note-L9F3" endid="#note-L11F3" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

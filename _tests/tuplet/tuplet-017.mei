@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tuplets with brackets on beams with chords</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2019-02-12</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>The length of tuplet brackets ecompass notes in chords.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" bracket.place="above" bracket.visible="true">
+                              <beam>
+                                 <note dur="8" oct="4" pname="b" stem.dir="down" accid="f" />
+                                 <note dur="8" oct="5" pname="e" stem.dir="down" accid="f" />
+                                 <note dur="8" oct="5" pname="c" stem.dir="down" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="true">
+                              <beam>
+                                 <chord dur="8">
+                                    <note oct="4" pname="a" stem.dir="down" accid="f" />
+                                    <note oct="4" pname="b" stem.dir="down" accid="f" />
+                                    <artic artic="acc" place="below" />
+                                 </chord>
+                                 <note dur="8" oct="4" pname="f" stem.dir="down">
+                                    <artic artic="acc" place="below" />
+                                 </note>
+                                 <chord dur="8">
+                                    <note oct="4" pname="a" stem.dir="down" />
+                                    <note oct="4" pname="b" stem.dir="down" />
+                                    <artic artic="acc" place="below" />
+                                 </chord>
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="true">
+                              <beam>
+                                 <note dur="8" oct="4" pname="b" stem.dir="up" accid="f">
+                                    <artic artic="stacc" place="above" />
+                                 </note>
+                                 <note dur="8" oct="5" pname="e" stem.dir="up" accid="f">
+                                    <artic artic="stacc" place="above" />
+                                 </note>
+                                 <note dur="8" oct="5" pname="c" stem.dir="up">
+                                    <artic artic="stacc" place="above" />
+                                 </note>
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="true">
+                              <beam>
+                                 <chord dur="8">
+                                    <note oct="4" pname="a" stem.dir="up" accid="f" />
+                                    <note oct="4" pname="b" stem.dir="up" accid="f" />
+                                 </chord>
+                                 <note dur="8" oct="4" pname="f" stem.dir="up" />
+                                 <chord dur="8">
+                                    <note oct="4" pname="a" stem.dir="up" accid="f" />
+                                    <note oct="4" pname="b" stem.dir="up" accid="f" />
+                                 </chord>
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="true">
+                              <beam>
+                                 <rest dur="8" />
+                                 <note dur="8" oct="5" pname="e" stem.dir="down" accid="f" />
+                                 <rest dots="2" dur="8" />
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

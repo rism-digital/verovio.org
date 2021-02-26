@@ -1,0 +1,474 @@
+---
+layout: verovio
+verovio-hum: true
+title: Humdrum Input
+active: other-formats
+other-active: humdrum
+version-footer: true
+vim: ts=3
+repertoires:
+    - name: "J.S. Bach chorales"
+      description: "When viewing a chorale, type the \"o\" letter key to toggle view of the original historic clefs."
+      link: "http://verovio.humdrum.org/?file=chorales"
+    - name: "Mozart piano sonatas"
+      link: "http://verovio.humdrum.org/?file=mozart/sonatas"
+    - name: "Beethoven piano sontats"
+      link: "http://verovio.humdrum.org/?file=beethoven/sonatas"
+    - name: "Beethoven string quartets"
+      link: "http://verovio.humdrum.org/?file=beethoven/quartets"
+    - name: "Chopin mazurkas"
+      link: "http://verovio.humdrum.org/?file=cc/chopin/mazurka"
+    - name: "Works of Scott Joplin"
+      link: "http://verovio.humdrum.org/?file=joplin"
+    - name: "Works of Josquin des Prez"
+      link: "http://verovio.humdrum.org/?file=jrp/Jos"
+    - name: "Works of Johannes Ockeghem"
+      link: "http://verovio.humdrum.org/?file=jrp/Ock"
+    - name: "Works of Pierre de la Rue"
+      link: "http://verovio.humdrum.org/?file=jrp/Rue"
+    - name: "Works of Mabrianus de Orto"
+      link: "http://verovio.humdrum.org/?file=jrp/Ort"
+    - name: "Deutscher Liederschatz, Band I"
+      description: "Edited by Ludwig Erk."
+      link: "http://verovio.humdrum.org/?file=liederschatz1"
+---
+
+<style>
+
+[id$="-code"] {
+	tab-size: 18;
+}
+
+#repdiv ul {
+	margin: 0;
+	padding: 0;
+}
+
+#xxx {
+	overflow: scroll;
+	max-height:400px;
+}
+
+#xxx pre {
+	overflow: scroll;
+	white-space: nowrap;
+}
+
+#xxx pre code {
+	overflow: scroll;
+	white-space: pre;
+	tab-size: 12 !important;
+}
+
+</style>
+
+<div class="row">
+	<div class="col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+		<div class="panel panel-default">
+			{% include other-sidebar.html %}
+		</div>
+	</div>
+
+	<div class="col-md-9">
+		<div class="panel-body">
+			<h3>Humdrum Input</h3>
+			<p>
+				Humdrum data is an analytic music code for transcribing fully
+				polyphonic textures.  Humdrum syntax presents notes of the score
+				in strict time sequence.  Each data row represents all notes
+				sounding or events occurring at the same time, and each column
+				traces the melodic line of the individual parts. More information
+				about the syntax is available on the
+				<a target="_blank" href="http://www.humdrum.org">Humdrum</a>
+				website.
+			</p>
+
+			<h4> Sample data and Verovio rendering </h4>
+
+			<p>
+				The following example from Mozart's
+				piano sonata in F major, K<sup>1</sup>&#160;280
+				(K<sup>6</sup>&#160;189e), mvmt.&#160;1, is generated dynamically
+				within this page using the JavaScript form of Verovio, inputting
+				the Humdrum data that follows.
+
+			</p>
+
+			<div id="humdrum1-svg" style="overflow:auto;"/>
+
+			<p>
+			The data consists of three separate streams of information, called
+			<i>spines</i> that usually consist of one column, but sometime more
+			due to spine splits into subspines.
+			The first column represents music on the bottom staff,
+			the second column represents the top staff, and the third column
+			contains the dynamics, which in this case apply to both staves.
+			</p>
+
+			<p>
+				<div class="highlight"><pre><code id="humdrum1-code"></code></pre></div>
+			</p>
+
+
+			<h4> Verovio Humdrum Viewer </h4>
+
+			<p>
+			The <a target="_blank" href="http://verovio.humdrum.org">Verovio Humdrum Viewer</a> (VHV) is a special-purpose interactive website for
+			viewing and editing Humdrum files with the Verovio notation egraving
+			library.  You can view the full score for the above Mozart example in VHV from
+			this link: <a target="_blank" href="http://verovio.humdrum.org/?file=mozart/sonatas/sonata02-1.krn">verovio.humdrum.org/?file=mozart/sonatas/sonata02-1.krn</a>.
+			</p>
+
+			<p>
+			When on a VHV notation page, try pressing the key "<b>p</b>" to view the scan
+			of the original print from which the musical data was encoded.  Also
+			try pressing "<b>m</b>" to view the internal conversion to MEI data.  Vi users
+			can try pressing "<b>v</b>" to toggle between the basic and vim modes for the
+			text editor.  Use the left/right arrow keys or PageUp/PageDown to navigate
+			to different pages.  Press shift-left/right arrows to go to the
+			next/previous work/movement in the repertory.
+			</p>
+
+			<p>
+			Sample repertories of Humdrum data displayed in the Verovio Humdrum Viewer:
+			</p>
+
+            <ul>
+            {% for r in page.repertoires %}
+            <li> <a target="_blank" href="{{ r.link }}">{{ r.name }}</a> {% if r.description %}({{ r.description }}){% endif %}</li>
+            {% endfor %}
+            </ul>
+
+
+			<h4> Command-line interface usage</h4>
+
+			<p>
+			To typeset music in the Humdrum format on the command-line:
+			</p>
+			{% highlight bash %}$ verovio -f humdrum input.krn -o output.svg{% endhighlight %}
+
+			<p>
+			You can usually use the auto-detection feature of verovio by omitting
+			the <tt>-f</tt> option.
+			</p>
+			{% highlight bash %}$ verovio input.krn -o output.svg{% endhighlight %}
+
+			<p>
+			The output filename will have the same basename as the input if the
+			<tt>-o</tt> option is not given, so in this case the output will be
+			called <tt>file.svg</tt>.
+			</p>
+			{% highlight bash %}$ verovio file.krn{% endhighlight %}
+
+			<p>
+			Standard input/output can be used with the verovio command by giving a
+			dash for standard input and <tt>-o -</tt> to send the output to
+			standard output.
+			</p>
+			{% highlight bash %}$ cat input.krn | verovio - -o - > output.svg{% endhighlight %}
+
+
+			<p>
+			To convert to MEI data:
+			</p>{% highlight bash %}$ verovio file.krn --no-layout --all-pages -t mei{% endhighlight %}
+
+
+			<h4> JavaScript usage </h4>
+
+			<p>
+			See the
+			<a target="_blank" href="http://www.humdrum.org/vhv-demos">VHV demos</a>
+			website for demonstrations for how to use the JavaScript toolkit
+			version of Verovio specifically when using Humdrum data as input.
+			</p>
+
+			<h4> A more complicated example </h4>
+
+			Below is a song for voice and piano accompaniment.  Each verse
+			is listed in a separate spine of <tt>**text</tt> in addition to
+			the three staves of music in <tt>**kern</tt> spines and one
+			dynamics (<tt>**dynam</tt>) spine.
+
+			<p>
+				<div id="humdrum3-svg" style="overflow:auto;"/>
+				<div id="xxx" class="highlight"><pre><code id="humdrum3-code"></code></pre></div>
+			</p>
+
+<!--
+			In this example the first measure of the piano accompaniment contains
+			multiple layers (in MEI terminology) for two independent melodic
+			sequences on a single staff.  These are handled as <i>subspines</i> in
+			Humdrum data, with <tt>*^</tt> in a spine splitting the music into
+			two subspines, and <tt>*v</tt> in adjacent spines merging two or
+			more subspines.
+
+			The following example was prepared by the Humdrum Extras commands:
+
+			{% highlight bash %}
+			$ extractx -i **kern
+			{% endhighlight %}
+-->
+
+			<h4> Humdrum data in CSV form </h4>
+
+			<p>
+			In the first example on this page, the Humdrum data is given in
+			the standard tab-separated-value (TSV) format for Humdrum
+			data.  For situations where tabs may be munged, Verovio can also
+			import Humdrum data in the comma-separated-value (CSV)
+			format:
+			</p>
+
+			<p>
+				<div id="humdrum2-svg" style="overflow:auto;"/>
+				<div class="highlight"><pre><code id="humdrum2-code"></code></pre></div>
+			</p>
+
+			<p>
+			In the <a target="_blank" href="http://verovio.humdrum.org/?file=mozart/sonatas/sonata02-1.krn">Verovio Humdrum Viewer</a>,
+			try pressing the comma key "," to toggle between TSV and CSV versions
+			of the Humdrum data.
+			</p>
+
+			<div style="height:100px;"></div>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+var zoom = 33.5;
+var pageHeight = 2000;
+var pageWidth = 2000;
+var spacingStaff = 0;
+var border = 20;
+var adjustPageHeight = 1;
+var vrvToolkit = new verovio.toolkit();
+
+function load_data(data, output_div) {
+	options = {
+		inputFormat: 'humdrum',
+		pageHeight: pageHeight,
+		pageWidth: pageWidth,
+		adjustPageHeight: adjustPageHeight,
+		spacingStaff: spacingStaff,
+		border: border,
+		scale: zoom
+	};
+
+	var svg = vrvToolkit.renderData(data, options);
+	output_div.html(svg);
+}
+
+
+$(document).ready(function() {
+	renderAllExamples();
+});
+
+
+$(window).resize(function() {
+	renderAllExamples();
+});
+
+
+function renderAllExamples() {
+	var examples = getExampleNumbers();
+	for (var i=0; i<examples.length; i++) {
+		console.log("Preparing example", examples[i]);
+		var selector = "#humdrum" + examples[i];
+		var kern = $(selector + "-data").text();
+		var targetWidth = $(selector + "-code").parent().width();
+		if ((targetWidth > 0)) {
+			zoom = (targetWidth + border)/ pageWidth * 100;
+		}
+		$(selector + '-code').html(kern);
+		load_data($(selector + "-data").text(), $(selector + "-svg"));
+	}
+}
+
+
+function getExampleNumbers() {
+   var nums = {};
+   var list = document.querySelectorAll("[id^='humdrum']");
+   var matches;
+   for (var i=0; i<list.length; i++) {
+	  if (matches = list[i].id.match(/humdrum(\d+)/)) {
+		 nums[matches[1]] = 1;
+	  }
+   }
+   return Object.keys(nums);
+}
+
+//]]>
+</script>
+
+
+<script id="humdrum1-data" type="text/x-humdrum">!!!COM: Mozart, Wolfgang Amadeus
+!!!OTL: Piano Sonata No. 2 in F major
+!!!OMV: 1
+!!!SCT1: K<sup>1</sup> 280
+!!!SCT2: K<sup>6</sup> 189e
+!!!OMD: Allegro assai
+**kern	**kern	**dynam
+*staff2	*staff1	*staff1/2
+*clefF4	*clefG2	*
+*k[b-]	*k[b-]	*
+*F:	*F:	*
+*M3/4	*M3/4	*
+*MM152	*MM152	*
+=1-	=1-	=1-
+4FF 4F	4c: 4f: 4a: 4cc:	f
+4C	4a/ 4cc/	.
+4AA	4a/ 4cc/	.
+=2	=2	=2
+4FF	4.a/ 4.cc/	.
+4FFF	.	.
+.	(16ddLL	.
+.	16ccJJ	.
+4r	16b-LL	.
+.	16a	.
+.	16g	.
+.	16fJJ	.
+=3	=3	=3
+8F 8AL	4ff	.
+8F 8A	.	.
+8F 8G 8B-	4ee	.
+8F 8G 8B-	.	.
+8F 8A 8c	4ee-)	.
+8F 8A 8cJ	.	.
+=4	=4	=4
+8F 8B- 8dL	4dd	.
+8F 8B- 8d	.	.
+8F 8B- 8d	4r	.
+8F 8B- 8d	.	.
+8F 8B- 8d	4r	.
+8F 8B- 8dJ	.	.
+=5	=5	=5
+8F 8G 8eL	(8ccL	p
+8F 8G 8e	8b-J)	.
+8F 8G 8e	4b-'	.
+8F 8G 8e	.	.
+8F 8G 8e	4r	.
+8F 8G 8eJ	.	.
+=6	=6	=6
+*-	*-	*-
+</script>
+
+<script id="humdrum2-data" type="text/x-humdrum">!!!COM: Mozart, Wolfgang Amadeus
+!!!OTL: Piano Sonata No. 2 in F major
+!!!OMV: 1
+!!!SCT1: K1 280
+!!!SCT2: K6 189e
+!!!OMD: Allegro assai
+**kern,**kern,**dynam
+*staff2,*staff1,*
+*clefF4,*clefG2,*
+*k[b-],*k[b-],*k
+*F:,*F:,*
+*M3/4,*M3/4,*
+*MM152,*MM152,*
+=1-,=1-,=1-
+4FF 4F,4c: 4f: 4a: 4cc:,f
+4C,4a/ 4cc/,.
+4AA,4a/ 4cc/,.
+=2,=2,=2
+4FF,4.a/ 4.cc/,.
+4FFF,.,.
+.,(16ddLL,.
+.,16ccJJ,.
+4r,16b-LL,.
+.,16a,.
+.,16g,.
+.,16fJJ,.
+=3,=3,=3
+8F 8AL,4ff,.
+8F 8A,.,.
+8F 8G 8B-,4ee,.
+8F 8G 8B-,.,.
+8F 8A 8c,4ee-),.
+8F 8A 8cJ,.,.
+=4,=4,=4
+*-,*-,*-
+</script>
+
+
+<script id="humdrum3-data" type="text/x-humdrum">!!!OTL@@DE: Liebes-A-B-C
+!!!COM: Pohlenz, August
+!!!CDT: 1790/07/03/-1843/03/09/
+!!!ODT: 1827
+!!!OMD: Allegretto
+!!!LYR: Gerhard, Wilhelm
+!!!LDT: 1826
+!!!OCL: Erk, Ludwig
+!!!GCO: Deutscher Liederschatz, Band 1
+**kern	**kern	**kern	**text	**text	**text	**text	**text	**text	**text
+*staff3	*staff2	*staff1	*staff1	*staff1	*staff1	*staff1	*staff1	*staff1	*staff1
+*Ipiano	*Ipiano	*Ivox	*	*	*	*	*	*	*
+*clefF4	*clefG2	*clefG2	*	*	*	*	*	*	*
+*k[b-]	*k[b-]	*k[b-]	*	*	*	*	*	*	*
+*F:	*F:	*F:	*	*	*	*	*	*	*
+*M3/8	*M3/8	*M3/8	*	*	*	*	*	*	*
+*MM100	*MM100	*MM100	*	*	*	*	*	*	*
+=1-	=1-	=1-	=1-	=1-	=1-	=1-	=1-	=1-	=1-
+*^	*^	*	*	*	*	*	*	*	*
+8AL	4F	8fL	4c	8f	A	E	I	M	Q	U	Yp-
+8G	.	8e	.	8e	B	F	K	N	R	V	-si-
+8AJ	8F	8fJ	8c	8f	C	G	und	O	S	W	-lon
+*v	*v	*	*	*	*	*	*	*	*	*	*
+*	*v	*v	*	*	*	*	*	*	*	*
+=2	=2	=2	=2	=2	=2	=2	=2	=2	=2
+4C 4c	4e 4g	4g	D,	H,	L,	P,	T,	X,	Z,
+8r	8r	8r	.	.	.	.	.	.	.
+=3	=3	=3	=3	=3	=3	=3	=3	=3	=3
+4C 4c	8e 8gL	8g	wenn	wärst	Aeug-	gleich	Schei-	mach'	nun
+.	8d 8f	8f	ich	du	-lein	ei-	-den	ei-	geh'
+8C 8c	8e 8gJ	8g	dich	doch	so	-ner	thut	-nen	zu
+=4	=4	=4	=4	=4	=4	=4	=4	=4	=4
+4F 4c	4f 4a	4a	seh',	da!	hell	Fee	weh.	Knix,	Bett!
+8r	8r	8r	.	.	.	.	.	.	.
+=5	=5	=5	=5	=5	=5	=5	=5	=5	=5
+4DD 4D	8r	8a	dich,	Drück-	glänz-	fes-	Hal-	drückt	Bricht
+.	8c 8d 8f#L	8a	mei-	-te	-ten	-selst	-te	dir	doch
+8r	8c 8d 8f#J	8dd	-ne	mein	in	du	mit	ein	die
+=6	=6	=6	=6	=6	=6	=6	=6	=6	=6
+4GG	8r	8.cc	sü-	treu-	Lie-	Herz	Herz	jun-	Nacht
+.	8B- 8d 8gL	.	.	.	.	.	.	.	.
+.	.	16b-	-sse	-er	-bes-	und	und	-ger	schon
+8r	8B- 8d 8gJ	8b-	Lust,	Arm,	-pracht	Sinn,	Mund	Fant	ein,
+=7	=7	=7	=7	=7	=7	=7	=7	=7	=7
+4CC 4C	8r	8g	klopft	Hol-	mir	Grüb-	treu	zärt-	kann
+.	8B- 8c 8eL	8g	die	-de,	aus	-chen	an	-lich	ja
+8r	8B- 8c 8eJ	8cc	em-	dich	der	in	dem	die	nicht
+=8	=8	=8	=8	=8	=8	=8	=8	=8	=8
+4FF	8r	8.b-	-pör-	lie-	Wim-	Wang'	Lie-	Schwa-	bei
+.	8A 8c 8fL	.	.	.	.	.	.	.	.
+.	.	16a	-te	-be-	-pern	und	-bes-	-nen-	dir
+8r	8A 8c 8fJ	8a	Brust,	warm!	Nacht,	Kinn,	-bund,	-hand,	sein,
+=9	=9	=9	=9	=9	=9	=9	=9	=9	=9
+8FFL	8A 8fL	8f	wird	Schätz-	tra-	Ro-	sa-	a-	wenn
+8GG	8B- 8e	8e	mir	-chen,	-fen	-sen-	-ge	-ber	ich
+8AAJ	8c 8fJ	8f	so	ach	wie	-glut,	mir	nur	auch
+=10	=10	=10	=10	=10	=10	=10	=10	=10	=10
+4BB-	8r	8.ee	wohl	wärst	bli-	Li-	nie	ern-	Flü-
+.	8B- 8d 8gL	.	.	.	.	.	.	.	.
+.	.	16dd	und	du	-tzes-	-lien-	A-	-sten	-gel
+8r	8B- 8d 8gJ	8dd	weh,	da!	-schnell,	schnee,	de!	Blicks	hätt'!
+=11	=11	=11	=11	=11	=11	=11	=11	=11	=11
+4C	8r	8cc	wenn	wärst	Aeug-	rei-	Schei-	mach'	Geh'
+.	8B- 8c 8eL	8g	ich	du	-lein	-zen-	-den	ihm	nur
+8r	8B- 8c 8eJ	8a	dich	mir	so	-de	thut	den	zu
+=12	=12	=12	=12	=12	=12	=12	=12	=12	=12
+4FF 4F	4A 4c 4f	4f	seh'!	nah'!	hell.	Fee!	weh.	Knix!	Bett!
+8r	8r	8r	.	.	.	.	.	.	.
+==	==	==	==	==	==	==	==	==	==
+*-	*-	*-	*-	*-	*-	*-	*-	*-	*-
+!!!SMS: Deutscher Liederschatz, Band 1, Ludwig Erk, ed.
+!!!ENC: Craig Stuart Sapp
+!!!END: 2004/05/16/
+!!!EED: 2011/02/05/
+!!!EFL: 001/651
+!!muse2ps: s^(.){(..)}^z21jv200,114,144
+!!CharacterEncoding: UTF-8
+</script>

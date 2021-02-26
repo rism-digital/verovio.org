@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Display of editorial accidentals (2)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-07-28</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Alternatively, editorial accidentals can be rendered in brackets or parentheses.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure left="invis" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid="ff" func="edit" />
+                           </note>
+                           <note dur="4" oct="4" pname="d">
+                              <accid accid="f" func="edit" />
+                           </note>
+                           <note dur="4" oct="4" pname="e">
+                              <accid accid="n" func="edit" />
+                           </note>
+                           <note dur="4" oct="4" pname="f">
+                              <accid accid="s" func="edit" />
+                           </note>
+                           <note dur="4" oct="4" pname="g">
+                              <accid accid="ss" func="edit" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid="ff" />
+                           <note dur="4" oct="4" pname="d" accid="f" />
+                           <note dur="4" oct="4" pname="e" accid="n" />
+                           <note dur="4" oct="4" pname="f" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="ss" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid="ff" />
+                           <note dur="4" oct="4" pname="d" accid="f" />
+                           <note dur="4" oct="4" pname="e" accid="n" />
+                           <note dur="4" oct="4" pname="f" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="ss" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="ff" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="f" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="n" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="s" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="ss" func="edit" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Glissandi in voices</title>
+            <respStmt>
+               <persName role="editor">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-04-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Glissandi in multiple layers.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000000840200043" dur="4" oct="4" pname="f" stem.dir="up" />
+                           <note xml:id="note-0000001196216068" dur="4" oct="2" pname="b" stem.dir="up">
+                              <accid accid="f" />
+                           </note>
+                           <note xml:id="note-0000001594159458" dur="4" oct="2" pname="e" stem.dir="up" />
+                           <note xml:id="note-0000000490566421" dur="4" oct="4" pname="d" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="note-0000000014608145" dur="4" oct="2" pname="f" stem.dir="down" />
+                           <note xml:id="note-0000000284185992" dur="4" oct="3" pname="c" stem.dir="down" />
+                           <note xml:id="note-0000000498208593" dur="4" oct="4" pname="c" stem.dir="down" />
+                           <note xml:id="note-0000001283191169" dur="4" oct="3" pname="g" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <gliss startid="#note-0000000840200043" endid="#note-0000001196216068" />
+                     <gliss startid="#note-0000001196216068" endid="#note-0000001594159458" />
+                     <gliss startid="#note-0000001594159458" endid="#note-0000000490566421" />
+                     <gliss startid="#note-0000000490566421" endid="#note-0000002065639033" />
+                     <gliss startid="#note-0000000014608145" endid="#note-0000000284185992" />
+                     <gliss startid="#note-0000000284185992" endid="#note-0000000498208593" />
+                     <gliss startid="#note-0000000498208593" endid="#note-0000001283191169" />
+                     <gliss startid="#note-0000001283191169" endid="#note-0000001146492651" />
+                  </measure>
+                  <measure right="end" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000002065639033" dur="4" oct="3" pname="e" stem.dir="up" />
+                           <note xml:id="note-0000000413906289" dur="4" oct="2" pname="b" stem.dir="up">
+                              <accid accid="f" />
+                           </note>
+                           <note xml:id="note-0000000948129980" dur="4" oct="4" pname="g" stem.dir="up" />
+                           <note xml:id="note-0000001452544686" dur="4" oct="3" pname="e" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="note-0000001146492651" dur="4" oct="2" pname="d" stem.dir="down" />
+                           <note xml:id="note-0000001032476696" dur="4" oct="4" pname="f" stem.dir="down" />
+                           <note xml:id="note-0000001790100433" dur="4" oct="4" pname="c" stem.dir="down" />
+                           <note xml:id="note-0000001863984677" dur="4" oct="3" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <gliss startid="#note-0000002065639033" endid="#note-0000000413906289" />
+                     <gliss startid="#note-0000000413906289" endid="#note-0000000948129980" />
+                     <gliss startid="#note-0000000948129980" endid="#note-0000001452544686" />
+                     <gliss startid="#note-0000001146492651" endid="#note-0000001032476696" />
+                     <gliss startid="#note-0000001032476696" endid="#note-0000001790100433" />
+                     <gliss startid="#note-0000001790100433" endid="#note-0000001863984677" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

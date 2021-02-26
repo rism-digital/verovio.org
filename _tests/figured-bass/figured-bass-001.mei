@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Figured bass example (1)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio renders bass figures as part of the "harm" element.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="0" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="0" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="c">
+                              <accid accid="s" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid.ges="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="2" pname="a">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="1.000000">
+                        <fb>
+                           <f>♯</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note xml:id="note-L14F3" dots="1" dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <beam>
+                              <note dur="16" oct="5" pname="c">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note xml:id="note-L17F3" dur="16" oct="5" pname="d">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L14F3" endid="#note-L17F3" />
+                     <harm place="below" staff="2" tstamp="1.000000">
+                        <fb>
+                           <f>5</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.750000">
+                        <fb>
+                           <f>6♮</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="c">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="g">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="2" oct="3" pname="c">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="4" oct="3" pname="c">
+                              <accid accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="3.000000">
+                        <fb>
+                           <f>6</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L29F3" dur="8" oct="5" pname="d">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note xml:id="note-L30F3" dur="8" oct="5" pname="c">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                           <note dots="1" dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="2" oct="2" pname="b">
+                              <accid accid="f" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L29F3" endid="#note-L30F3" />
+                     <harm place="below" staff="2" tstamp="2.000000">
+                        <fb>
+                           <f>7</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="3.500000">
+                        <fb>
+                           <f>6</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="c">
+                              <accid accid="s" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid.ges="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="2" pname="a">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="1.000000">
+                        <fb>
+                           <f>♯</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="10">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="c">
+                              <accid accid="s" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid.ges="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="2" pname="a">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="1.000000">
+                        <fb>
+                           <f>♯</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note xml:id="note-L45F3" dots="1" dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <beam>
+                              <note dur="16" oct="5" pname="c">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note xml:id="note-L48F3" dur="16" oct="5" pname="d">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L45F3" endid="#note-L48F3" />
+                     <harm place="below" staff="2" tstamp="1.000000">
+                        <fb>
+                           <f>5</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.750000">
+                        <fb>
+                           <f>6♮</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="12">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="c">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="13">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="g">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="14">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="3" pname="c">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="3" pname="c">
+                              <accid accid="s" />
+                           </note>
+                           <note dur="4" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="2.500000">
+                        <fb>
+                           <f>6</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure n="15">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="8" oct="5" pname="c">
+                              <accid accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="g">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dur="2" oct="2" pname="a">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="1.000000">
+                        <fb>
+                           <f>7</f>
+                           <f>5</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.000000">
+                        <fb>
+                           <f>5</f>
+                           <f>4</f>
+                        </fb>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.750000">
+                        <fb>
+                           <f>3♯</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure right="dbl" n="16">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="5" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="3" pname="d">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

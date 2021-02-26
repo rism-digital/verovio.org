@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Formatting tempo elements</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-04</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>By default, tempi indications are rendered in bold. This can be modified by including a "rend" element in the text. It is also
+					possible to have nested "rend" elements.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4">
+                  <staffGrp symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="16" />
+                           <beam>
+                              <note xml:id="d1e116" dur="16" oct="3" pname="g" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="d" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="3" pname="g" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="3" pname="f" />
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="4" pname="d" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="f" />
+                              <note dur="16" oct="3" pname="a" />
+                              <note dur="16" oct="3" pname="b" />
+                              <note dur="16" oct="4" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="8" oct="2" pname="c" grace="acc" />
+                           <note dur="1" oct="3" pname="c" />
+                        </layer>
+                     </staff>
+                     <dynam place="below" staff="1" tstamp="1.100000">p</dynam>
+                     <tempo label="feature-example" staff="1" tstamp="1.000000">
+                        <rend fontweight="normal">Modérément animé</rend>
+                     </tempo>
+                     <slur staff="1" startid="#d1e116" tstamp2="0m+5.0000" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

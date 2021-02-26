@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beat repetition example (1)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-04</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports beat repetition. The alignment of the beat repetition will not work with compound meters when the repeated
+					beat duration does not correspond to the meter signature unit.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section label="feature-example">
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="a" />
+                              <note oct="5" pname="c" />
+                           </chord>
+                           <beatRpt slash="1" />
+                           <beatRpt slash="1" />
+                           <beatRpt slash="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="4" pname="f" />
+                                 <note oct="4" pname="a" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="5" pname="c" />
+                                 <note oct="4" pname="a" />
+                              </chord>
+                           </beam>
+                           <beatRpt slash="1" />
+                           <beatRpt slash="1" />
+                           <beatRpt slash="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="2" oct="4" pname="f" />
+                              <note dur="2" oct="4" pname="a" />
+                              <note dur="2" oct="5" pname="c" />
+                              <note dur="2" oct="4" pname="a" />
+                           </beam>
+                           <beatRpt slash="2" />
+                           <beatRpt slash="2" />
+                           <beatRpt slash="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

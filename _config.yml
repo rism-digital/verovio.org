@@ -1,0 +1,17 @@
+name: Verovio music engraving library
+markdown: kramdown
+baseurl: "https://www.verovio.org"
+exclude: []
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+
+tests-edit-path: "https://github.com/rism-ch/verovio.org/edit/gh-pages"
+tests-verovio-edit-path: "https://editor.verovio.org/?file=https://raw.githubusercontent.com/rism-ch/verovio.org/gh-pages"
+
+collections:
+    tests:
+        output: true
+    faqs:
+        output: false

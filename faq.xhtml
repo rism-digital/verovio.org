@@ -1,0 +1,40 @@
+---
+layout: verovio
+verovio-light: false
+title: Verovio - FAQ
+active: how
+how-active: faq
+---
+
+<div class="row">
+    <div class="col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="panel panel-default">
+            {% include how-sidebar.html %}
+        </div>
+
+        <div class="panel panel-default">
+            <div class="list-group sublist-group">
+                {% assign categories = "" | split: ',' %}
+                {% for collection in site.collections %}
+                    {% if collection.label == "faqs" %}
+                        {% for doc in collection.docs %}
+                            {% assign path = doc.path | split: '/' %}
+                            {% assign categories = categories | push: path[1] %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+    
+                {% assign categories = categories | uniq | sort %}
+                {% for category in categories %}
+                    <a class="list-group-item" href="{{ site.baseurl }}/faq.xhtml?cat={{category}}">{{ category | slice: 3,category.size | replace: "_", " " | capitalize }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-9">
+
+        {%include faq-list.html %}
+
+    </div>
+</div>

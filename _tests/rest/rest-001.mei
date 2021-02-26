@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Rests and dotted rests</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-19</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio support rests from long to 256th.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.sig="0">
+                  <staffGrp n="1">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="long" label="Longa" />
+                           <rest dur="breve" label="Double whole rest" />
+                           <rest dur="1" label="Whole rest" />
+                           <rest dur="2" label="Half rest" />
+                           <rest dur="4" label="Quarter rest" />
+                           <rest dur="8" label="Eighth rest" />
+                           <rest dur="16" label="Sixteenth rest" />
+                           <rest dur="32" label="Thirty-second rest" />
+                           <rest dur="64" label="Sixty-fourth rest" />
+                           <rest dur="128" label="Hundred twenty-eighth notes" />
+                           <rest dur="256" label="Two hundred fifty-sixth notes" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dots="1" dur="2" label="Dotted half rest" />
+                           <rest dots="1" dur="4" label="Dotted quarter rest" />
+                           <rest dots="1" dur="8" label="Dotted eighth rest" />
+                           <rest dots="1" dur="16" label="Dotted sixteenth rest" />
+                           <rest dots="1" dur="32" label="Dotted thirty-second rest" />
+                           <rest dots="1" dur="64" label="Dotted sixty-fourth rest" />
+                           <rest dots="1" dur="128" label="Dotted hundred twenty-eighth notes" />
+                           <rest dots="1" dur="256" label="Dotted two hundred fifty-sixth notes" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Partial layer treatment for rests</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-29</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/870" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Rests should be aware of partial layer configurations.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <note dur="2" oct="5" pname="e" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <space dur="4" />
+                           <note dur="2" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="4" />
+                           <note dur="2" oct="5" pname="e" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="4" />
+                           <note dur="2" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

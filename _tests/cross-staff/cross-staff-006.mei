@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Non-adjacent seconds in cross staff chords</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Seconds separated by cross-staff notation of the chord are vertically aligned, since they do not collide.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <!-- kern: =1-  2Ej 2Bj/ 2dj 2e  2Gj 2cj 2B 2e 2f  == -->
+                        <layer n="1">
+                           <chord dur="2" stem.dir="up">
+                              <note staff="2" oct="3" pname="e" accid.ges="n" />
+                              <note staff="2" oct="3" pname="b" accid.ges="n" />
+                              <note staff="2" oct="4" pname="d" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                           <chord dur="2">
+                              <note staff="2" oct="3" pname="g" accid.ges="n" />
+                              <note staff="2" oct="4" pname="c" accid.ges="n" />
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="f" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =1-  1AA  == -->
+                        <layer n="1">
+                           <note dur="1" oct="2" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

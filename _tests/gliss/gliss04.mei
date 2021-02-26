@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Glissandi line styles</title>
+            <respStmt>
+               <persName role="editor">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-04-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Different line style for glissandi are possible.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.7.0" label="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001070186258" dur="2" oct="5" pname="a" stem.dir="down" />
+                           <note xml:id="note-0000000887061700" dur="2" oct="4" pname="c" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000001070186258" endid="#note-0000000887061700" lform="dashed" n="1" />
+                     <gliss staff="1" startid="#note-0000000887061700" endid="#note-0000000480557520" lform="dashed" n="2" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000000480557520" dur="2" oct="5" pname="a" stem.dir="down" />
+                           <note xml:id="note-0000001334208131" dur="2" oct="4" pname="c" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000000480557520" endid="#note-0000001334208131" lform="dotted" n="1" />
+                     <gliss staff="1" startid="#note-0000001334208131" endid="#note-0000002083738696" lform="dotted" n="2" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000002083738696" dur="2" oct="5" pname="a" stem.dir="down" />
+                           <note xml:id="note-0000001485447996" dur="2" oct="4" pname="c" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000002083738696" endid="#note-0000001485447996" lform="solid" n="1" />
+                     <gliss staff="1" startid="#note-0000001485447996" endid="#note-0000001001507756" lform="solid" n="2" />
+                  </measure>
+                  <measure right="end" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001001507756" dur="2" oct="5" pname="a" stem.dir="down" />
+                           <note xml:id="note-0000000128231812" dur="2" oct="3" pname="a" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000001001507756" endid="#note-0000000128231812" lform="wavy" n="1" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

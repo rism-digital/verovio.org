@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Octave shift example (below and with @tstamp)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>For ottava bassa displacements the "place" attribute has to have the value "below". The quindicesima displacement is also
+					supported. The scope of the octave shift can be specified either with "startid / endid" or with "tstamp / tstamp2"
+					attributes.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section label="feature-example">
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1" dur="2" oct.ges="2" oct="3" pname="e" />
+                           <beam>
+                              <note dur="8" oct.ges="2" oct="3" pname="f" />
+                              <note dur="8" oct.ges="2" oct="3" pname="a" />
+                              <note dur="8" oct.ges="2" oct="3" pname="g" />
+                              <note dur="8" oct.ges="2" oct="3" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <octave startid="#n1" endid="#n2" dis="8" dis.place="below" />
+                  </measure>
+                  <measure right="dbl" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n2" dur="1" oct.ges="3" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n3" dur="2" oct.ges="2" oct="4" pname="e" />
+                           <beam>
+                              <note dur="8" oct.ges="2" oct="4" pname="f" />
+                              <note dur="8" oct.ges="2" oct="4" pname="a" />
+                              <note dur="8" oct.ges="2" oct="4" pname="g" />
+                              <note dur="8" oct.ges="2" oct="4" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <octave startid="#n3" tstamp2="1m+4.0000" dis="15" dis.place="below" />
+                  </measure>
+                  <measure right="dbl" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct.ges="3" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

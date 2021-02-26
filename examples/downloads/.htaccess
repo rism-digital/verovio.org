@@ -1,0 +1,8 @@
+<Files *.xml>
+ForceType text/xml
+Header set Content-Disposition attachment
+</Files>
+<Files *.mei>
+ForceType text/xml
+Header set Content-Disposition attachment
+</Files>

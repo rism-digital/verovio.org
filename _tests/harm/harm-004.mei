@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Horizontal offset of harm indications</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Sufficient horizontal space is allotted to harmony indications.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="0" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="c" stem.dir="down" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" stem.dir="down" accid="f" />
+                           <note dur="8" oct="4" pname="a" stem.dir="up" accid="f" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">F minor-seventh</harm>
+                     <harm staff="1" tstamp="2.500000">B♭ dominant</harm>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" stem.dir="up" accid="f" />
+                           <note dur="8" oct="4" pname="b" stem.dir="down" accid="f" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">E♭ maj</harm>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="c" stem.dir="down" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" stem.dir="down" accid="f" />
+                           <note dur="8" oct="4" pname="a" stem.dir="up" accid="f" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">B♭ minor-seventh</harm>
+                     <harm staff="1" tstamp="3.500000">E♭ dominant</harm>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">A♭ minor-major</harm>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="c" stem.dir="down" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" stem.dir="down" accid="f" />
+                           <note dur="8" oct="4" pname="a" stem.dir="up" accid="f" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">F minor-seventh</harm>
+                     <harm staff="1" tstamp="2.500000">B♭ dominant</harm>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" stem.dir="up" accid="f" />
+                           <note dur="8" oct="4" pname="b" stem.dir="down" accid="f" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">E♭ maj</harm>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Complex ornaments with predefined glyphs</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020-09-09">2020-09-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Alternative turn glyphs can be accessed through the glyph.num attribute.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" key.sig="0" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer>
+                           <note xml:id="ex_0338578795" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_1731899420" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_2132950534" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_0990302001" dur.ppq="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <mordent startid="#ex_0338578795" glyph.auth="smufl" glyph.num="U+E5B0" />
+                     <mordent startid="#ex_1731899420" glyph.auth="smufl" glyph.num="U+E5B1" />
+                     <mordent startid="#ex_2132950534" glyph.auth="smufl" glyph.num="U+E5B2" />
+                     <mordent startid="#ex_0990302001" glyph.auth="smufl" glyph.num="U+E5B3" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer>
+                           <note xml:id="ex_0035934177" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_0346442879" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_0046408361" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_0337776798" dur.ppq="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <mordent startid="#ex_0035934177" glyph.auth="smufl" glyph.num="U+E5B4" />
+                     <mordent startid="#ex_0346442879" glyph.auth="smufl" glyph.num="U+E5B5" />
+                     <mordent startid="#ex_0046408361" glyph.auth="smufl" glyph.num="U+E5B6" />
+                     <mordent startid="#ex_0337776798" glyph.auth="smufl" glyph.num="U+E5B7" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer>
+                           <note xml:id="ex_1844251605" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_1935278573" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_2004210163" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_1750359550" dur.ppq="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <mordent startid="#ex_1844251605" glyph.auth="smufl" glyph.num="U+E5B8" />
+                     <mordent startid="#ex_1935278573" glyph.auth="smufl" glyph.num="U+E5B9" />
+                     <mordent startid="#ex_2004210163" glyph.auth="smufl" glyph.num="U+E5BA" />
+                     <mordent startid="#ex_1750359550" glyph.auth="smufl" glyph.num="U+E5BB" />
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer>
+                           <note xml:id="ex_0615972137" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_0985264149" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_1924615599" dur.ppq="1" dur="4" oct="5" pname="c" />
+                           <note xml:id="ex_1972023485" dur.ppq="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <mordent startid="#ex_0615972137" glyph.auth="smufl" glyph.num="U+E5BC" />
+                     <mordent startid="#ex_0985264149" glyph.auth="smufl" glyph.num="U+E5BD" />
+                     <mordent startid="#ex_1924615599" glyph.auth="smufl" glyph.num="U+E5BE" />
+                     <mordent startid="#ex_1972023485" glyph.auth="smufl" glyph.num="U+E5BF" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

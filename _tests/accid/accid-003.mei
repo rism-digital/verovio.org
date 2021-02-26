@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Alignment of editorial accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-17</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Editorial accidentals are aligned on the centre of the notehead.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="s" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="f" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="n" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="x" func="edit" />
+                           </note>
+                           <note dur="1" oct="5" pname="f">
+                              <accid accid="ff" func="edit" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Notes without stem</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-02</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Stemless notes are used in CMN for various reasons: for analytical purposes, to represent harmonics, etc. Verovio supports the
+					rendering of notes without stem.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="72">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1s" meter.count="2" meter.unit="2" meter.sym="cut" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dots="1" dur="8" oct="3" pname="b" stem.len="0.000000" accid.ges="n" />
+                              <note dur="16" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tempo staff="1" tstamp="1.000000">Largo</tempo>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" stem.len="0.000000" accid="f" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" stem.len="0.000000" accid.ges="n">
+                              <accid accid="n" func="caution" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                              <note dur="16" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                           <note xml:id="note-L49F1" dur="4" oct="4" pname="g" stem.len="0.000000" accid="s" />
+                        </layer>
+                     </staff>
+                     <tie startid="#note-L49F1" endid="#note-L51F1" />
+                  </measure>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L51F1" dur="4" oct="4" pname="g" stem.len="0.000000" accid.ges="s" />
+                           <beam>
+                              <note dur="8" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="10">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                           <note dur="4" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                           <note dur="8" oct="4" pname="b" grace="acc" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="12">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                              <note dur="8" oct="4" pname="c" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="3" pname="b" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="d" stem.len="0.000000" accid="s" />
+                              <note dur="8" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="n">
+                                    <accid accid="n" func="caution" />
+                                 </note>
+                                 <note dur="8" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="13">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="14">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="15">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="16">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                              <note dur="16" oct="4" pname="a" stem.len="0.000000" accid="s" />
+                           </beam>
+                           <note dur="4" oct="4" pname="a" stem.len="0.000000" accid.ges="s" />
+                           <note dur="4" oct="5" pname="g" stem.len="0.000000" accid.ges="n" />
+                           <beam>
+                              <note dots="1" dur="8" oct="5" pname="f" stem.len="0.000000" accid.ges="s" />
+                              <note dur="16" oct="5" pname="e" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.500000">*</dir>
+                  </measure>
+                  <measure n="17">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="e" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="5" pname="d" stem.len="0.000000" accid="s" />
+                              <note dur="8" oct="6" pname="c" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="s" />
+                              <note dur="8" oct="5" pname="e" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="5" pname="g" stem.len="0.000000" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="18">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="d" stem.len="0.000000" accid.ges="n">
+                                 <accid accid="n" func="caution" />
+                              </note>
+                              <note dur="8" oct="5" pname="c" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="5" pname="e" stem.len="0.000000" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <note dots="1" dur="4" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                           <note dur="8" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="19">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                           <note dur="8" oct="4" pname="b" grace="acc" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" stem.len="0.000000" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="20">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L113F1" dots="1" dur="2" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                           <beam>
+                              <note xml:id="note-L114F1" dots="1" dur="8" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                              <note dur="16" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tie startid="#note-L113F1" endid="#note-L114F1" />
+                  </measure>
+                  <measure n="21">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="22">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                           <note dur="4" oct="4" pname="f" stem.len="0.000000" accid.ges="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="23">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                           <rest xml:id="rest-L124F1" dur="2" fermata="above" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="24">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="e" stem.len="0.000000" accid.ges="n" />
+                           <note dur="2" oct="4" pname="d" stem.len="0.000000" accid="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="25">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="4" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

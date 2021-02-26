@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Note and rest collision between different layers</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When a rest occurs at the same time as a note in two different layers, Verovio moves the rest vertically to avoid the note.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="6" meter.unit="8" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dots="1" dur="4" />
+                           <note dots="1" dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="4" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="4" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <note dots="1" dur="4" oct="5" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="5" pname="f">
+                              <accid accid.ges="n" />
+                           </note>
+                           <note dots="1" dur="4" oct="4" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

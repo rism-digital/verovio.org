@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Rendering accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Accidentals are usually rendered using the "accid" attribute; the "accid" element is reserved for special cases, such as cautionary or editorial accidentals.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid.ges="n" />
+                           <note dur="4" oct="4" pname="d" accid.ges="n" />
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                           <note dur="4" oct="4" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="b" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="f" accid.ges="n" />
+                              <note dur="8" oct="5" pname="g" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid="s" />
+                           <note dur="4" oct="4" pname="d" accid="f" />
+                           <note dur="4" oct="4" pname="e" accid="ff" />
+                           <note dur="4" oct="4" pname="f" accid="x" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g">
+                                 <accid accid="n" func="caution" />
+                              </note>
+                              <note dur="8" oct="4" pname="a" accid="f" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="b" accid="ff" />
+                              <note dur="8" oct="5" pname="c" accid="x" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="d" accid="s" />
+                              <note dur="8" oct="5" pname="e">
+                                 <accid accid="n" func="caution" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="f" accid="s" />
+                              <note dur="8" oct="5" pname="g" accid="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid="s" />
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid="s" func="caution" />
+                           </note>
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid="s" func="edit" />
+                           </note>
+                           <note dur="4" oct="4" pname="c" accid="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

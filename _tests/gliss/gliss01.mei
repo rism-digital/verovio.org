@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Glissandi</title>
+            <respStmt>
+               <persName role="editor">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-04-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports glissandi.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="2" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4">
+                        <label>Guitar</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001664638115" dur="2" oct="5" pname="f" />
+                           <note xml:id="note-0000001076743506" dur="2" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000001664638115" endid="#note-0000001076743506" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001999368153" dur="2" oct="4" pname="f">
+                              <accid accid="s" accid.ges="s" />
+                           </note>
+                           <note xml:id="note-0000001881924406" dur="2" oct="5" pname="e">
+                              <accid accid="f" accid.ges="f" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000001999368153" endid="#note-0000001881924406" />
+                  </measure>
+                  <measure right="end" n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001815811722" dots="1" dur="4" oct="4" pname="g" />
+                           <note xml:id="note-0000001676543830" dots="1" dur="4" oct="5" pname="d" />
+                           <note xml:id="note-0000001990135686" dur="4" oct="4" pname="b" />
+                        </layer>
+                     </staff>
+                     <gliss staff="1" startid="#note-0000001815811722" endid="#note-0000001676543830" />
+                     <gliss staff="1" startid="#note-0000001676543830" endid="#note-0000001990135686" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

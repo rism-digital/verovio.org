@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Hidden notes</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-19</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio can hide single notes in the score.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="5f" meter.count="2" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure left="invis" right="end" n="1">
+                     <staff n="1">
+                        <!-- kern: =1-  4r  4g  4r  == -->
+                        <layer n="1">
+                           <rest dur="4" />
+                           <note dur="4" oct="4" pname="g" visible="false" accid="n" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

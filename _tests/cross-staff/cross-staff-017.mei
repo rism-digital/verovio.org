@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Articulation position with cross-staff</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-06</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/1898" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Articulations with cross-staff should be place identically as in normal situations.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="a" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="5" pname="c" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="c" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="e" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="d" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="c" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" oct="5" pname="c" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" staff="1" oct="4" pname="c" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" staff="1" oct="4" pname="e" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" staff="1" oct="4" pname="d" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                              <note dur="8" staff="1" oct="4" pname="c" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dir place="below" staff="2" tstamp="1.000000">
+                        <rend color="dodgerblue" fontstyle="normal">automatic</rend>
+                     </dir>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note dur="8" oct="5" pname="c" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam beam.with="above">
+                              <note dur="8" staff="1" oct="4" pname="c" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                              <note dur="8" staff="1" oct="4" pname="e" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                              <note dur="8" staff="1" oct="4" pname="d" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                              <note dur="8" staff="1" oct="4" pname="c" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dir place="below" staff="2" tstamp="1.000000">
+                        <rend color="dodgerblue" fontstyle="normal">expected</rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

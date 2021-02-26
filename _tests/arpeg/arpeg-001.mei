@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Arpeggios up and down</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-08-29</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp symbol="brace" bar.thru="true">
+                        <label>Piano</label>
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="3" meter.unit="4" />
+                        <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="3f" meter.count="3" meter.unit="4" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001986960701" dur="8" oct="5" pname="b" accid.ges="f" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <note xml:id="note-0000001986960702" dur="8" oct="3" pname="b" accid.ges="f" />
+                        </layer>
+                     </staff>
+                     <tempo place="above" staff="1" startid="#note-0000001986960701" midi.bpm="76">Allegretto</tempo>
+                     <dynam place="below" staff="1" startid="#note-0000001986960701">f</dynam>
+                     <slur startid="#note-0000001986960701" endid="#chord-0000001015527891" />
+                     <arpeg plist="#note-0000001986960701 #note-0000001986960702" />
+                  </measure>
+                  <measure left="rptstart" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord xml:id="chord-0000001015527891" dur="8" stem.dir="down">
+                                 <artic artic="stacc" />
+                                 <note oct="4" pname="b" accid.ges="f" />
+                                 <note oct="5" pname="g" />
+                                 <note oct="6" pname="e" accid.ges="f" />
+                              </chord>
+                              <chord xml:id="chord-0000001709663567" dur="8" stem.dir="down">
+                                 <note oct="4" pname="b" accid.ges="f" />
+                                 <note oct="5" pname="g" />
+                                 <note oct="5" pname="b" accid.ges="f" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="b" accid.ges="f" />
+                                 <note oct="5" pname="g" />
+                                 <note oct="5" pname="a">
+                                    <accid accid="n" />
+                                 </note>
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="b" accid.ges="f" />
+                                 <note oct="5" pname="g" />
+                                 <note oct="5" pname="b" accid.ges="f" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="b" accid.ges="f" />
+                                 <note oct="5" pname="g" />
+                                 <note oct="6" pname="c" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="b" accid.ges="f" />
+                                 <note oct="5" pname="g" />
+                                 <note oct="5" pname="b" accid.ges="f" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <note dur="8" oct="2" pname="e" stem.dir="up" accid.ges="f">
+                              <artic artic="stacc" />
+                           </note>
+                           <beam>
+                              <chord xml:id="chord-0000000306499350" dur="8" stem.dir="down">
+                                 <note oct="3" pname="e" accid.ges="f" />
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="g" />
+                              </chord>
+                              <chord xml:id="chord-0000000977687251" dur="8" stem.dir="down">
+                                 <note oct="3" pname="e" accid.ges="f" />
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="g" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="3" pname="e" accid.ges="f" />
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="g" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="3" pname="e" accid.ges="f" />
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="g" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="3" pname="e" accid.ges="f" />
+                                 <note oct="3" pname="b" accid.ges="f" />
+                                 <note oct="4" pname="g" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord-0000001015527891" />
+                     <arpeg plist="#chord-0000001709663567 #chord-0000000306499350" />
+                     <arpeg startid="#chord-0000000977687251" order="down" arrow="true" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
