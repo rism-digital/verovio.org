@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Pedal alignment</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-02-26</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-ch/verovio/issues/774" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Pedal indications can be aligned using the @vgrp attribute</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.3.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label>Piano</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="c" accid.ges="n" />
+                           <note dur="2" oct="4" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <pedal staff="1" tstamp="1.000000" dir="down" vgrp="2" />
+                     <dynam staff="1" tstamp="1.000000" vgrp="1">p</dynam>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+3.0000" form="cres" vgrp="1" />
+                     <dynam staff="1" tstamp="3.000000" vgrp="1">f</dynam>
+                     <hairpin staff="1" tstamp="3.500000" tstamp2="0m+4.5000" form="dim" vgrp="1" />
+                     <pedal staff="1" tstamp="5.000000" dir="up" vgrp="2" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
