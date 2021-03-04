@@ -53,9 +53,9 @@ projects:
 </div>
 
 <div class="row home-row">
-    <div class="col-md-8 col-sm-12">
+    <div class="col-md-7 col-sm-12">
         <h4>News</h4>
-        {% for p in site.posts limit:3 %}
+        {% for p in site.posts limit:2 %}
         <hr class="news-row"/>
         <h5>{{ p.date | date: '%B %d, %Y' }} – {{ p.title }}</h5>
         <div class="content">
@@ -67,7 +67,7 @@ projects:
             <a href="news.xhtml">See all news ...</a>
         </p>
     </div>
-    <div class="col-md-4 col-sm-12">
+    <div class="col-md-5 col-sm-12">
         <hr class="hidden-lg hidden-md"/>
 
         <p>
