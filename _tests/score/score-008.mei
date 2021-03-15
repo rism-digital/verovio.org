@@ -6,10 +6,13 @@
         <fileDesc>
             <titleStmt>
                 <title>Complex groupings with labels</title>
-                <contributor>Klaus Rettinghaus</contributor>
             </titleStmt>
             <pubStmt>
-                <date>2020-06-09</date>
+                <respStmt>
+                    <persName role="encoder">Klaus Rettinghaus</persName>
+                    <corpName role="funder">Enote GmbH</corpName>
+                 </respStmt>
+                 <date isodate="2020-06-09">2020-06-09</date>
             </pubStmt>
             <notesStmt>
                 <annot>Labels of staves and staff groups are appropriately spaced with mutliple grouping symbols.</annot>

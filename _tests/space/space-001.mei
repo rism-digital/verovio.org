@@ -10,13 +10,16 @@
          <pubStmt>
             <date>2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the addition of space between notational elements.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
