@@ -12,7 +12,7 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-02-24</date>
+            <date isodate="2021-02-24">2021-02-24</date>
             <pubPlace>
                <ref target="https://github.com/rism-digtial/verovio/issues/2053" />
             </pubPlace>

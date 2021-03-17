@@ -8,8 +8,11 @@
             <title>Clef change example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio renders intermediate clef changes encoded with "clef" elements.</annot>
          </notesStmt>

@@ -8,8 +8,11 @@
             <title>Symbols centred con non-5-line staff</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-15</date>
+            <date isodate="2017-05-15">2017-05-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Notational symbols are centred on staves with other than five lines.</annot>
          </notesStmt>
