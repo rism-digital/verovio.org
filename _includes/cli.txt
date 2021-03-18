@@ -1,4 +1,4 @@
-Verovio 3.4.0-dev-dd31f4d
+Verovio 3.4.0-dev-ff5e066
 
 Example usage:
 
@@ -12,6 +12,7 @@ Options (marked as * are repeatable)
  -o, --outfile <s>              Output file name (use "-" as file name for standard output) (default: "svg")
  -p, --page <i>                 Select the page to engrave (default is 1)
  -r, --resource-path <s>        Path to the directory with Verovio resources (default: "/usr/local/share/verovio")
+ -s, --scale <i>                Scale of the output in percent (default: 100; min: 1; max: 1000)
  -t, --output-to <s>            Select output format to: "mei", "pb-mei", "svg", or "midi" (default: "svg")
  -v, --version                  Display the version number
  -x, --xml-id-seed <i>          Seed the random number generator for XML IDs (default is random)
@@ -86,7 +87,7 @@ General layout options
  --lyric-top-min-margin <f>     The minmal margin above the lyrics in MEI units (default: 2.00; min: 0.00; max: 8.00)
  --lyric-word-space <f>         The lyric word space length (default: 1.20; min: 0.50; max: 3.00)
  --min-measure-width <i>        The minimal measure width in MEI units (default: 15; min: 1; max: 30)
- --measure-number <s>           The measure numbering rule (unused) (default: "system"; other values: "interval")
+ --mnum-interval <i>            How frequently to place measure numbers (default: 0; min: 0; max: 64)
  --repeat-bar-line-dot-separation <f>	The default horizontal distance between the dots and the inner barline of a repeat barline
  --repeat-ending-line-thickness <f>	Repeat and ending line thickness (default: 0.15; min: 0.10; max: 2.00)
  --slur-control-points <i>      Slur control points - higher value means more curved at the end (default: 5; min: 1; max: 10)
