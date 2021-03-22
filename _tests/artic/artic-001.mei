@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
    <meiHead>
       <fileDesc>
@@ -15,7 +15,7 @@
          </seriesStmt>
          <notesStmt>
             <annot>Verovio supports both "artic" attribute on notes and "artic" element for encoding articulations. Currently, the articulation
-					values supported are: acc, stacc, ten, stacciss, marc, spicc, ten, dnbow, upbow, harm.</annot>
+					values supported are: acc, stacc, ten, stacciss, marc, spicc, ten, dnbow, upbow, harm, snap.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -35,7 +35,7 @@
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure n="1" label="1">
                      <staff n="1">
                         <layer n="1">
@@ -62,6 +62,7 @@
                            <note dur="4" oct="4" pname="g" artic="dnbow" />
                            <note dur="4" oct="4" pname="g" artic="upbow" />
                            <note dur="4" oct="4" pname="g" artic="harm" />
+                           <note dur="4" oct="4" pname="g" artic="snap" />
                         </layer>
                      </staff>
                   </measure>
