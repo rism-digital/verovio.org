@@ -1,4 +1,4 @@
-Verovio 3.4.0-dev-207f6d1
+Verovio 3.4.0-dev-87d12a5
 
 Example usage:
 
@@ -46,6 +46,7 @@ Input and page layout options
  --page-margin-right <i>        The page right margin (default: 50; min: 0; max: 500)
  --page-margin-top <i>          The page top margin (default: 50; min: 0; max: 500)
  --page-width <i>               The page width (default: 2100; min: 100; max: 60000)
+ --preserve-analytical-markup   Preserves the analytical markup in MEI
  --remove-ids                   Remove XML IDs in the MEI output that are not referenced
  --shrink-to-fit                Scale down page content to fit the page height if needed
  --svg-bounding-boxes           Include bounding boxes in SVG output
