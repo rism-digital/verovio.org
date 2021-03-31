@@ -1,4 +1,4 @@
-Verovio 3.4.0-dev-85628d2
+Verovio 3.4.0-dev-c2ccb93
 
 Example usage:
 
@@ -68,6 +68,7 @@ General layout options
  --beam-max-slope <i>           The maximum beam slope (default: 10; min: 1; max: 20)
  --beam-min-slope <i>           The minimum beam slope
  --bracket-thickness <f>        The thickness of the system bracket (default: 1.00; min: 0.50; max: 2.00)
+ --dynam-dist <f>               The default distance from the staff for dynamic marks (default: 1.00; min: 0.50; max: 8.00)
  --engraving-defaults <s>       Path to json file describing defaults for engraving SMuFL elements
  --font <s>                     Set the music font (default: "Leipzig")
  --grace-factor <f>             The grace size ratio numerator (default: 0.75; min: 0.50; max: 1.00)
