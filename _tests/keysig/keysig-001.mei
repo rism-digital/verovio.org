@@ -5,19 +5,24 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Key changes example</title>
+            <title>Non-standard key signatures</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2019-09-09">9 Sep 2019</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio takes into account the "key.sig.showchange" and "key.sig.show" attributes which are assumed to be respectively false
-					and true if not specified. It also shows cautionary key and time signatures at the end of a system when necessary.</annot>
+            <annot>Verovio renders non-standard key signatures encoded with keyAccid.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unkdown">
+            <application version="2.2.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

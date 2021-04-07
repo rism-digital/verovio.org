@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Placing and order of accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-04-07">7 Apr 2021</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The order of accidentals follows the ’cycle of fifths’. The arrangement is identical in each clef except for the tenor—clef layout of sharps.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 91, example 4</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="7s" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="3" key.sig="7s" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="4" key.sig="7s" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="7s" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="7f" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="3" key.sig="7f" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="4" key.sig="7f" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="7f" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff visible="false">
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

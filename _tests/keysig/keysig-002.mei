@@ -8,10 +8,13 @@
             <title>Key changes example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2017-05-09">2017-05-09</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio takes into account the "key.sig.showchange" and "key.sig.show" attributes which are assumed to be respectively false
+            <annot>Verovio takes into account the "keysig.showchange" and "keysig.show" attributes which are assumed to be respectively false
 					and true if not specified. It also shows cautionary key and time signatures at the end of a system when necessary.</annot>
          </notesStmt>
       </fileDesc>
@@ -26,7 +29,7 @@
    <music>
       <body>
          <mdiv>
-            <score label="feature-example">
+            <score>
                <scoreDef key.sig="4f" meter.sym="common">
                   <staffGrp>
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
@@ -44,7 +47,7 @@
                         </layer>
                      </staff>
                   </measure>
-                  <scoreDef key.sig.show="true" key.sig="0" />
+                  <scoreDef keysig.show="true" key.sig="0" />
                   <measure right="dbl" n="4">
                      <staff n="1">
                         <layer n="1">
@@ -75,7 +78,7 @@
                         </layer>
                      </staff>
                   </measure>
-                  <scoreDef key.sig.showchange="true" key.sig="5f" meter.count="4" meter.unit="4" />
+                  <scoreDef keysig.showchange="true" key.sig="5f" meter.count="4" meter.unit="4" />
                   <measure right="dbl" n="5">
                      <staff n="1">
                         <layer n="1">
