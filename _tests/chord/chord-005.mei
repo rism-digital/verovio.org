@@ -28,7 +28,7 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.sym="common" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.sym="common" key.sig="0" />
                   </staffGrp>
                </scoreDef>
                <section>
