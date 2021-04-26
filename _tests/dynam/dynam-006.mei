@@ -35,7 +35,7 @@
                            <note dur="4" oct="4" pname="f" />
                         </layer>
                      </staff>
-                     <dynam staff="1" tstamp="1.000000">ff e senza sordini mon non sfz</dynam>
+                     <dynam staff="1" tstamp="1.000000">ff e senza sordini ma non sfz</dynam>
                      <dynam staff="1" tstamp="2.000000">
                         <rend fontfam="Times">sempre pp e senza sordini</rend>
                      </dynam>
