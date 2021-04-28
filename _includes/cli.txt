@@ -1,4 +1,4 @@
-Verovio 3.4.0-dev-ad7b2e4
+Verovio 3.4.0-dev-b3a1b98
 
 Example usage:
 
@@ -38,6 +38,7 @@ Input and page layout options
  --no-justification             Do not justify the system
  --open-control-events          Render open control events
  --output-indent <i>            Output indentation value for MEI and SVG (default: 3; min: 1; max: 10)
+ --output-format-raw            Writes MEI out with no line indenting or non-content newlines.
  --output-indent-tab            Output indentation with tabulation for MEI and SVG
  --output-smufl-xml-entities    Output SMuFL charachters as XML entities instead of byte codes
  --page-height <i>              The page height (default: 2970; min: 100; max: 60000)
