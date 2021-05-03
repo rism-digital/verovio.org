@@ -10,8 +10,8 @@ webrick:
 tests-edit-path: "https://github.com/rism-digital/verovio.org/edit/gh-pages"
 tests-verovio-edit-path: "https://editor.verovio.org/?file=https://raw.githubusercontent.com/rism-digital/verovio.org/gh-pages"
 
+theme: verovio-theme
+
 collections:
     tests:
         output: true
-    faqs:
-        output: false

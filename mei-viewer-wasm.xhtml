@@ -92,6 +92,7 @@ downloads:
 
         console.time("loading");
         try {
+            //vrvToolkit.loadZipDataBuffer(data);
             var base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(data)));
             vrvToolkit.loadZipDataBase64(base64String);
 
@@ -608,7 +609,7 @@ downloads:
           var file = getParameterByName("file");
 
           if (!file || (file.length == 0)) {
-              file = "examples/musicxml/test.mxl";
+              file = "examples/musicxml/Schubert_Staendchen_D.923.mxl";
           }
 
           vrvToolkit = new verovio.toolkit();
