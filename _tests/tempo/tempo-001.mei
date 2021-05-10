@@ -42,7 +42,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <tempo staff="1" tstamp="1.000000">Andante con moto <rend fontname="VerovioText"></rend> = 70</tempo>
+                     <tempo midi.bpm="70" staff="1" tstamp="1.000000">Andante con moto <rend fontname="VerovioText"></rend> = 70</tempo>
                      <slur startid="#m0_s2_e1" endid="#m0_s2_e2" />
                   </measure>
                   <measure n="1">
