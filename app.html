@@ -2,11 +2,19 @@
 layout: verovio
 verovio: false
 title: Verovio App
-active: app
+active: tools
+tools-active: app
+version-footer: false
 ---
-<div class="row home-row home-row-flex">
+<div class="row">
     
-    <div class="col-xs-12">
+    <div class="col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="panel panel-default">
+            {% include other-sidebar.html %}
+        </div>
+    </div>
+
+    <div class="col-xs-9">
         
         <div class="panel-body">
             <h3>Description</h3>
