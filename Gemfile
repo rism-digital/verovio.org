@@ -14,3 +14,7 @@ gem "verovio-theme", git: 'https://github.com/rism-digital/verovio-theme'
 
 gem "webrick", "~> 1.7"
 gem "nokogiri", "~> 1.11"
+
+group :jekyll_plugins do
+    gem "jekyll-seo-tag"
+end

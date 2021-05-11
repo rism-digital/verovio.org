@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/rism-digital/verovio-theme
-  revision: 0981f083998035175a8f1002bc33dab221fd5b52
+  revision: e691861a50d6ff8e71208960af5f98bd43ce785f
   specs:
-    verovio-theme (0.1.16)
+    verovio-theme (0.1.17)
       jekyll (~> 4.1)
 
 GEM
@@ -38,6 +38,8 @@ GEM
       terminal-table (~> 2.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
+    jekyll-seo-tag (2.7.1)
+      jekyll (>= 3.8, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     kramdown (2.3.1)
@@ -55,7 +57,7 @@ GEM
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
     racc (1.5.2)
-    rb-fsevent (0.10.4)
+    rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
@@ -73,6 +75,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (> 4.1.1)
+  jekyll-seo-tag
   nokogiri (~> 1.11)
   verovio-theme!
   webrick (~> 1.7)
