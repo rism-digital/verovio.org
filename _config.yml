@@ -11,7 +11,7 @@ webrick:
 tests-edit-path: "https://github.com/rism-digital/verovio.org/edit/gh-pages"
 tests-verovio-edit-path: "https://editor.verovio.org/?file=https://raw.githubusercontent.com/rism-digital/verovio.org/gh-pages"
 
-theme: verovio-theme
+remote_theme: rism-digital/verovio-theme
 
 twitter: card
 
