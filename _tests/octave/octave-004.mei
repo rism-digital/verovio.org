@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Octave brackets ending on dotted notes</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-05-10">2021-05-10</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2182" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the addition of space between notational elements.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.5.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1a" dur="2" oct.ges="6" oct="5" pname="e" />
+                           <beam>
+                              <note dur="8" oct.ges="6" oct="5" pname="f" />
+                              <note dur="8" oct.ges="6" oct="5" pname="a" />
+                              <note dur="8" oct.ges="6" oct="5" pname="g" />
+                              <note dur="8" oct.ges="6" oct="5" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <octave startid="#n1a" endid="#n2a" dis="8" dis.place="above" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n2a" dur="2" oct.ges="7" oct="6" pname="c" />
+                           <rest dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1b" dur="2" oct.ges="6" oct="5" pname="e" />
+                           <beam>
+                              <note dur="8" oct.ges="6" oct="5" pname="f" />
+                              <note dur="8" oct.ges="6" oct="5" pname="a" />
+                              <note dur="8" oct.ges="6" oct="5" pname="g" />
+                              <note dur="8" oct.ges="6" oct="5" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <octave startid="#n1b" endid="#n2b" dis="8" dis.place="above" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n2b" dots="1" dur="2" oct.ges="7" oct="6" pname="c" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1c" dur="2" oct.ges="6" oct="5" pname="e" />
+                           <beam>
+                              <note dur="8" oct.ges="6" oct="5" pname="f" />
+                              <note dur="8" oct.ges="6" oct="5" pname="a" />
+                              <note dur="8" oct.ges="6" oct="5" pname="g" />
+                              <note dur="8" oct.ges="6" oct="5" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <octave startid="#n1c" endid="#n2c" dis="8" dis.place="above" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n2c" dots="2" dur="2" oct.ges="7" oct="6" pname="c" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
