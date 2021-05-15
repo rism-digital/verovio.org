@@ -8,8 +8,11 @@
             <title>Accidental placement on unison</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio correctly renders unison notes with different accidentals.</annot>
          </notesStmt>
