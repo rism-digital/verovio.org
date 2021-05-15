@@ -8,8 +8,11 @@
             <title>Octave shift example (style)</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2017-05-09">2017-05-09</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Basic styling options for the "octave" element are provided via the "lform" and "lwidth" attributes.</annot>
          </notesStmt>
@@ -31,7 +34,7 @@
                      <staffDef n="1" lines="5" clef.shape="F" clef.line="4" />
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
