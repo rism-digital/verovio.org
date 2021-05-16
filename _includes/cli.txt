@@ -1,4 +1,4 @@
-Verovio 3.5.0-dev-71f4f0e
+Verovio 3.5.0-dev-557ec63
 
 Example usage:
 
@@ -40,7 +40,7 @@ Input and page layout options
  --output-indent <i>            Output indentation value for MEI and SVG (default: 3; min: 1; max: 10)
  --output-format-raw            Writes MEI out with no line indenting or non-content newlines.
  --output-indent-tab            Output indentation with tabulation for MEI and SVG
- --output-smufl-xml-entities    Output SMuFL charachters as XML entities instead of byte codes
+ --output-smufl-xml-entities    Output SMuFL characters as XML entities instead of hex byte codes 
  --page-height <i>              The page height (default: 2970; min: 100; max: 60000)
  --page-margin-bottom <i>       The page bottom margin (default: 50; min: 0; max: 500)
  --page-margin-left <i>         The page left margin (default: 50; min: 0; max: 500)
@@ -82,7 +82,7 @@ General layout options
  --justification-staff <f>      The staff justification (default: 1.00; min: 0.00; max: 10.00)
  --justification-system <f>     The system spacing justification (default: 1.00; min: 0.00; max: 10.00)
  --justification-bracket-group <f>	Space between staves inside a bracketed group justification (default: 1.00; min: 0.00; max: 10.00)
- --justification-brace-group <f>	Space between staves inside a braced group ijustification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-brace-group <f>	Space between staves inside a braced group justification (default: 1.00; min: 0.00; max: 10.00)
  --ledger-line-thickness <f>    The thickness of the ledger lines (default: 0.25; min: 0.10; max: 0.50)
  --ledger-line-extension <f>    The amount by which a ledger line should extend either side of a notehead (default: 0.54; min: 0.20; max: 1.00)
  --lyric-hyphen-length <f>      The lyric hyphen and dash length (default: 1.20; min: 0.50; max: 3.00)
