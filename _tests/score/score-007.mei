@@ -8,8 +8,11 @@
             <title>Invisible staves</title>
          </titleStmt>
          <pubStmt>
-            <date>2020-04-09</date>
+            <date isodate="2020-04-09">2020-04-09</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Staff element can be hidden with @visible="false"</annot>
          </notesStmt>
@@ -27,7 +30,7 @@
          <mdiv>
             <score>
                <scoreDef midi.bpm="400">
-                  <staffGrp symbol="brace" bar.thru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5">
                         <clef shape="G" line="2" />
                      </staffDef>

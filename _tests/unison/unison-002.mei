@@ -8,8 +8,11 @@
             <title>Note-head placement in unison (2)</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-27</date>
+            <date isodate="2017-04-27">2017-04-27</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio correctly spaces ledger lines when notes are in unison.</annot>
          </notesStmt>

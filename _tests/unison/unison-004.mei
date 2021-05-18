@@ -8,8 +8,17 @@
             <title>Dots merge when note-heads merge on unisons</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-07-28</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-07-11">11 Jul 2017</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/655" />
+            </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>When note-heads of unison notes are merged, dots are merged too.</annot>
          </notesStmt>

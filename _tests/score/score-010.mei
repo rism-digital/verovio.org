@@ -6,14 +6,14 @@
       <fileDesc>
          <titleStmt>
             <title>Score optimization (condensed) on first page</title>
+         </titleStmt>
+         <pubStmt>
             <respStmt>
                <persName role="encoder">Laurent Pugin</persName>
             </respStmt>
-         </titleStmt>
-         <pubStmt>
-            <date>2021-02-08</date>
+            <date isodate="2021-02-08">2021-02-08</date>
             <pubPlace>
-               <ref target="https://github.com/rism-digtial/verovio/issues/2035" />
+               <ref target="https://github.com/rism-digital/verovio/issues/2035" />
             </pubPlace>
          </pubStmt>
          <seriesStmt>
