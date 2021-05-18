@@ -8,8 +8,11 @@
             <title>Clef changes at system break</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-25</date>
+            <date isodate="2017-04-25">2017-04-25</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio renders clef changes at system break with a cautionary clef at the end of the first system, and a standard one at the
 					beginning of the next system.</annot>

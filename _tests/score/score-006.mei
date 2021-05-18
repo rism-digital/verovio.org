@@ -8,8 +8,11 @@
             <title>Single line staves and staffGrp</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-15</date>
+            <date isodate="2017-05-15">2017-05-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Grouping symbols respect single line staves.</annot>
          </notesStmt>
@@ -27,7 +30,7 @@
          <mdiv>
             <score>
                <scoreDef system.leftline="true">
-                  <staffGrp symbol="bracket" bar.thru="false">
+                  <staffGrp bar.thru="false" symbol="bracket">
                      <staffDef n="1" lines="1" clef.shape="perc" clef.line="1">
                         <meterSig count="4" unit="4" />
                      </staffDef>

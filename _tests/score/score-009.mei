@@ -8,8 +8,11 @@
             <title>Brace glyph with Bravura</title>
          </titleStmt>
          <pubStmt>
-            <date>2020-06-15</date>
+            <date isodate="2020-06-15">2020-06-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Brace can be rendered with the SMuFL glyph with the --use-brace-glyph option</annot>
          </notesStmt>
@@ -28,7 +31,7 @@
          <mdiv>
             <score>
                <scoreDef>
-                  <staffGrp symbol="brace" bar.thru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5">
                         <clef shape="G" line="2" />
                      </staffDef>

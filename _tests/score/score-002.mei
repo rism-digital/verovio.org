@@ -8,8 +8,11 @@
             <title>Spacing in pickup measures and first measures in system</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-19</date>
+            <date isodate="2017-04-19">2017-04-19</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>If a measure is a pickup measure or if it begins a new system, Verovio adjusts the width accordingly.</annot>
          </notesStmt>
