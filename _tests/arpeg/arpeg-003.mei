@@ -32,7 +32,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef midi.bpm="400">
+               <scoreDef>
                   <staffGrp symbol="brace" bar.thru="true">
                      <labelAbbr />
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
