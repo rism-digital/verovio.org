@@ -11,8 +11,11 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2020-04-25</date>
+            <date isodate="2020-04-25">2020-04-25</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Different line style for glissandi are possible.</annot>
          </notesStmt>
