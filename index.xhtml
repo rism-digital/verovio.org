@@ -25,7 +25,7 @@ projects:
             <p>
                 Verovio follows the <strong>Standard Music Font Layout</strong> specification, which makes it easy to change the music font for <a href="{{ site.baseurl }}/smufl.xhtml">personalizing the appearance</a>.
             </p>
-            <table align="center">
+            <table style="margin: auto;">
                 <tr>
                     <td>
                         <a href="http://music-encoding.org" target="_blank">
@@ -84,7 +84,7 @@ projects:
             The source code is available on <a href="https://github.com/rism-digital/verovio">GitHub</a> under the <a href="http://www.gnu.org/copyleft/lgpl.html" target="_blank">LGPLv3 license</a>.
         </p>
 
-        <table align="center">
+        <table style="margin: auto;">
             <tr>
                 <td>
                     <a href="https://rism.digital" target="_blank">
@@ -163,7 +163,7 @@ projects:
             <p>
                 The SVG output of Verovio is designed as an <strong>intermediate reflowable layer</strong> that facilitates the development of <strong>interactive applications</strong>, such as music notation editors or interactive digital editions.
             </p>
-            <table align="center">
+            <table style="margin: auto;">
                 <tr>
                     <td>
                         <img alt="Verovio interaction" src="{{ site.baseurl }}/images/interaction.png" style="padding: 10px;" class="img-responsive"/>
@@ -195,11 +195,11 @@ projects:
         <p>
             Verovio is designed to be used in a wide range of applications and has been adopted by several projects or institutions. It is currently used by:
         </p>
-        <table align="center">
+        <table style="margin: auto;">
             {% for line in page.projects %}
             <tr>
                 {% for p in line %}
-                    <td align="center">
+                    <td style="margin: auto;">
                     {%- if p != empty -%}
                            <a href="{{ p[0] }}" target="_blank">
                                <img alt="project logo" src="{{ site.baseurl }}/images/projects/{{ p[1] }}.png" style="padding: 10px" class="img-responsive"/>
@@ -224,7 +224,7 @@ projects:
         </p>
     </div>
     <div class="col-sm-4 hidden-xs">
-        <table align="center">
+        <table style="margin: auto;">
             <tr>
                 <td>
                     <img alt="Verovio canon" src="{{ site.baseurl }}/images/verovio-canon.png" class="img-responsive"/>
