@@ -1,4 +1,4 @@
-Verovio 3.5.0-dev-56adb1a
+Verovio 3.5.0-dev-7a5b62a
 
 Example usage:
 
@@ -60,7 +60,6 @@ Input and page layout options
  --use-facsimile                Use information in the <facsimile> element to control the layout
  --use-pg-footer-for-all        Use the pgFooter for all pages
  --use-pg-header-for-all        Use the pgHeader for all pages
- --clef-change-factor <f>       Set the ratio of normal clefs to changing clefs (default: 0.66; min: 0.25; max: 1.00)
 
 General layout options
  --midi-tempo-adjustment <f>    The MIDI tempo adjustment factor (default: 1.00; min: 0.20; max: 4.00)
@@ -73,6 +72,7 @@ General layout options
  --engraving-defaults <s>       Json describing defaults for engraving SMuFL elements
  --engraving-defaults-file <s>  Path to json file describing defaults for engraving SMuFL elements
  --font <s>                     Set the music font (default: "Leipzig")
+ --clef-change-factor <f>       Set the ratio of normal clefs to changing clefs (default: 0.66; min: 0.25; max: 1.00)
  --grace-factor <f>             The grace size ratio numerator (default: 0.75; min: 0.50; max: 1.00)
  --grace-rhythm-align           Align grace notes rhythmically with all staves
  --grace-right-align            Align the right position of a grace group with all staves
