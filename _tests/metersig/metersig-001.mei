@@ -8,14 +8,19 @@
             <title>Support for invisible or one-number meter</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-27</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-04-28">28 Apr 2017</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/563" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports the display of single-number time signatures, and also offers the possibility of rendering the time signature
-					invisible.</annot>
+            <annot>Verovio supports the display of single-number time signatures, and also offers the possibility of rendering the time signature invisible.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
