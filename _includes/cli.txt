@@ -1,4 +1,4 @@
-Verovio 3.5.0-dev-0aa0cda
+Verovio 3.5.0-dev-5912336
 
 Example usage:
 
@@ -71,6 +71,7 @@ General layout options
  --dynam-dist <f>               The default distance from the staff for dynamic marks (default: 1.00; min: 0.50; max: 16.00)
  --engraving-defaults <s>       Json describing defaults for engraving SMuFL elements
  --engraving-defaults-file <s>  Path to json file describing defaults for engraving SMuFL elements
+ --breaks-no-widow              Prevent single measures on the last page by fitting it into previous system
  --font <s>                     Set the music font (default: "Leipzig")
  --clef-change-factor <f>       Set the ratio of normal clefs to changing clefs (default: 0.66; min: 0.25; max: 1.00)
  --grace-factor <f>             The grace size ratio numerator (default: 0.75; min: 0.50; max: 1.00)
