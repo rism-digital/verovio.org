@@ -2,3 +2,4 @@ _site
 verovio.wasm.map
 .jekyll-cache
 .DS_Store
+.ruby-version
