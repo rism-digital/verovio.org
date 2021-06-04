@@ -8,8 +8,11 @@
             <title>Cue-sized notes</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-15</date>
+            <date isodate="2017-05-15">2017-05-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio appropriately scales single notation elements in rendering cue-sized notes together with full-sized notes.</annot>
          </notesStmt>

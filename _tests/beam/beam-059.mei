@@ -63,7 +63,7 @@
                   <measure>
                      <staff n="1" visible="false" />
                   </measure>
-                  <measure right="invis">
+                  <measure left="invis" right="invis">
                      <staff n="1">
                         <layer n="1">
                            <beam>
@@ -88,7 +88,7 @@
                   <measure>
                      <staff n="1" visible="false" />
                   </measure>
-                  <measure right="invis">
+                  <measure left="invis" right="invis">
                      <staff n="1">
                         <layer n="1">
                            <beam>

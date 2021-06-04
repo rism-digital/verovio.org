@@ -5,10 +5,16 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Turns example (2)</title>
+            <title>Delayed turns</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-15</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-05-16">16 May 2017</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/593" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>

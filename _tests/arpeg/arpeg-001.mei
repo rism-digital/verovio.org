@@ -8,7 +8,7 @@
             <title>Arpeggios up and down</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-08-29</date>
+            <date isodate="2017-08-29">2017-08-29</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -16,7 +16,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="1">
+            <application version="2.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

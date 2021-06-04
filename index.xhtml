@@ -26,7 +26,7 @@ projects:
             <p>
                 Verovio follows the <strong>Standard Music Font Layout</strong> specification, which makes it easy to change the music font for <a href="{{ site.baseurl }}/smufl.xhtml">personalizing the appearance</a>.
             </p>
-            <table align="center">
+            <table style="margin: auto;">
                 <tr>
                     <td>
                         <a href="http://music-encoding.org" target="_blank">
@@ -76,7 +76,6 @@ projects:
         </p>
 
         <div style="float: right;">
-            <!-- Place this tag where you want the button to render. -->
             <a class="github-button" href="https://github.com/rism-digital/verovio/subscription" data-icon="octicon-eye" data-size="large" data-show-count="false" aria-label="Watch rism-digital/verovio on GitHub">Watch</a>
             <a class="github-button" href="https://github.com/rism-digital/verovio" data-icon="octicon-star" data-size="large" data-show-count="false" aria-label="Star rism-digital/verovio on GitHub">Star</a>
         </div>
@@ -85,7 +84,7 @@ projects:
             The source code is available on <a href="https://github.com/rism-digital/verovio">GitHub</a> under the <a href="http://www.gnu.org/copyleft/lgpl.html" target="_blank">LGPLv3 license</a>.
         </p>
 
-        <table align="center">
+        <table style="margin: auto;">
             <tr>
                 <td>
                     <a href="https://rism.digital" target="_blank">
@@ -102,7 +101,7 @@ projects:
                         <img alt="Mozarteum logo" src="{{ site.baseurl }}/images/mozarteum.png" class="support-logo img-responsive"/>
                     </a>
                 </td>
-                <!--><td>
+                <!--<td>
                     <a href="http://www.mozarteum.at" target="_blank">
                         <img alt="SNF logo" src="{{ site.baseurl }}/images/saw.png" class="support-logo img-responsive"/>
                     </a>
@@ -113,7 +112,7 @@ projects:
         <p>
             Many thanks to all the contributors
         </p>
-        <img class="img-responsive" src="https://contrib.rocks/image?repo=rism-digital/verovio" />
+        <img alt="contributors" class="img-responsive" src="https://contrib.rocks/image?repo=rism-digital/verovio" />
 
 
     </div>
@@ -133,25 +132,25 @@ projects:
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item">
-                    <video autoplay="false" loop="true" class="img-responsive">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
                         <source src="/movies/editor.webm" type="video/webm"/>
                         <source src="/movies/editor.mp4" type="video/mp4"/>
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay="false" loop="true" class="img-responsive">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
                         <source src="/movies/reflow.webm" type="video/webm"/>
                         <source src="/movies/reflow.mp4" type="video/mp4"/>
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay="false" loop="true" class="img-responsive">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
                         <source src="/movies/layout.webm" type="video/webm"/>
                         <source src="/movies/layout.mp4" type="video/mp4"/>
                     </video>
                 </div>
                 <div class="item">
-                    <video autoplay="false" loop="true" class="img-responsive">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
                         <source src="/movies/choice.webm" type="video/webm"/>
                         <source src="/movies/choice.mp4" type="video/mp4"/>
                     </video>
@@ -164,10 +163,10 @@ projects:
             <p>
                 The SVG output of Verovio is designed as an <strong>intermediate reflowable layer</strong> that facilitates the development of <strong>interactive applications</strong>, such as music notation editors or interactive digital editions.
             </p>
-            <table align="center">
+            <table style="margin: auto;">
                 <tr>
                     <td>
-                        <img src="{{ site.baseurl }}/images/interaction.png" style="padding: 10px;" class="img-responsive"/>
+                        <img alt="Verovio interaction" src="{{ site.baseurl }}/images/interaction.png" style="padding: 10px;" class="img-responsive"/>
                     </td>
                 </tr>
             </table>
@@ -187,7 +186,7 @@ projects:
         </div>
     </div>
     <div class="col-sm-3 hidden-xs">
-        <img src="{{ site.baseurl }}/images/mobiles.png" class="img-responsive"/>
+        <img alt="mobile devices" src="{{ site.baseurl }}/images/mobiles.png" class="img-responsive"/>
     </div>
 </div>
 
@@ -196,14 +195,14 @@ projects:
         <p>
             Verovio is designed to be used in a wide range of applications and has been adopted by several projects or institutions. It is currently used by:
         </p>
-        <table align="center">
+        <table style="margin: auto;">
             {% for line in page.projects %}
             <tr>
                 {% for p in line %}
-                    <td align="center">
+                    <td style="margin: auto;">
                     {%- if p != empty -%}
                            <a href="{{ p[0] }}" target="_blank">
-                               <img src="{{ site.baseurl }}/images/projects/{{ p[1] }}.png" style="padding: 10px" class="img-responsive"/>
+                               <img alt="project logo" src="{{ site.baseurl }}/images/projects/{{ p[1] }}.png" style="padding: 10px" class="img-responsive"/>
                            </a>
                     {%- endif -%}
                     </td>
@@ -225,7 +224,7 @@ projects:
         </p>
     </div>
     <div class="col-sm-4 hidden-xs">
-        <table align="center">
+        <table style="margin: auto;">
             <tr>
                 <td>
                     <img alt="Verovio canon" src="{{ site.baseurl }}/images/verovio-canon.png" class="img-responsive"/>
@@ -235,8 +234,8 @@ projects:
     </div>
 </div>
 
-<script async="true" defer="true" src="https://buttons.github.io/buttons.js"></script>
-<script type="text/javascript">
+<script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+<script>
 //<![CDATA[
     $( document ).ready(function() {
         rand = Math.floor( Math.random() * 4);
