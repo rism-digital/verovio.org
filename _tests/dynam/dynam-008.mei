@@ -10,8 +10,11 @@
          <pubStmt>
             <date>2020-08-11</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports between placement of dynamics, dir, hairpin and tempo</annot>
+            <annot>Verovio supports between placement of dynamics, dir, hairpin and tempo.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -27,7 +30,7 @@
          <mdiv>
             <score>
                <scoreDef midi.bpm="240">
-                  <staffGrp symbol="brace" bar.thru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
                      <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="2s" meter.count="4" meter.unit="4" />
                   </staffGrp>
@@ -36,58 +39,59 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c"/>
-                           <note dur="4" oct="4" pname="g"/>
-                           <note dur="4" oct="3" pname="g"/>
-                           <note dur="4" oct="4" pname="g"/>
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="3" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note dur="2" oct="2" pname="g"/>
-                           <note dur="2" oct="2" pname="g"/>
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
                         </layer>
                      </staff>
-                     <dynam staff="1 2" tstamp="1.0" place="between">p</dynam>
-                     <dynam staff="1 2" tstamp="2.0" place="between">mp</dynam>
-                     <dynam staff="1 2" tstamp="3.0" place="between">f</dynam>
-                     <dynam staff="1 2" tstamp="4.0" place="between">mf</dynam>
+                     <dynam place="between" staff="1 2" tstamp="1.000000">p</dynam>
+                     <dynam place="between" staff="1 2" tstamp="2.000000">mp</dynam>
+                     <dynam place="between" staff="1 2" tstamp="3.000000">f</dynam>
+                     <dynam place="between" staff="1 2" tstamp="4.000000">mf</dynam>
                   </measure>
                   <measure n="2">
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c"/>
-                           <note dur="4" oct="4" pname="g"/>
-                           <note dur="4" oct="4" pname="c"/>
-                           <note dur="4" oct="4" pname="g"/>
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note dur="2" oct="2" pname="g"/>
-                           <note dur="2" oct="2" pname="g"/>
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
                         </layer>
                      </staff>
-                     <dir staff="1 2" tstamp="1.0" place="between">legato</dir>
-                     <hairpin staff="1 2" tstamp="3.0" tstamp2="4.0" place="between" form="dim"/>
+                     <dir place="between" staff="1 2" tstamp="1.000000">legato</dir>
+                     <hairpin staff="1 2" tstamp="3.000000" tstamp2="0m+4.0000" form="dim" place="between" />
                   </measure>
                   <measure n="3">
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c"/>
-                           <note dur="4" oct="4" pname="g"/>
-                           <note dur="4" oct="4" pname="g"/>
-                           <note dur="4" oct="3" pname="g"/>
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="3" pname="g" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note dur="2" oct="2" pname="g"/>
-                           <note dur="2" oct="2" pname="g"/>
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
                         </layer>
                      </staff>
-                     <tempo staff="1 2" tstamp="1.0" place="between">All<rend rend="sup">o</rend></tempo>
-                     <dir staff="1 2" tstamp="3.0" place="between">cantabile</dir>
+                     <tempo place="between" staff="1 2" tstamp="1.000000">All<rend rend="sup">o</rend>
+                     </tempo>
+                     <dir place="between" staff="1 2" tstamp="3.000000">cantabile</dir>
                   </measure>
                </section>
             </score>
