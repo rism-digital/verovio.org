@@ -18,7 +18,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Styling of multi-measure rests can be adjusted with th "loc" and "width" attributes.</annot>
+            <annot>Styling of multi-measure rests can be adjusted with the "loc" and "width" attributes.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>

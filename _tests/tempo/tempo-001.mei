@@ -8,11 +8,16 @@
             <title>Hairpin example on multiple lines</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports "tempo" elements. Horizontal positioning can be specified. By default, tempi indications are placed above the
-					staff. The "rend" element can used within the text, for example for specifying metronome values.</annot>
+            <annot>
+               <p>Verovio supports "tempo" elements. Horizontal positioning can be specified. By default, tempi indications are placed above the
+					staff. The "rend" element can used within the text, for example for specifying metronome values.</p>
+            </annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -33,7 +38,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="0" type="upbeat" label="feature-example">
+                  <measure type="upbeat">
                      <staff n="1">
                         <layer n="1">
                            <beam>

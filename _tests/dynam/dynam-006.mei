@@ -5,16 +5,24 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title />
+            <title>Dynamic symbols mixed with text</title>
          </titleStmt>
          <pubStmt>
-            <date>2016-07-31 11:16:50</date>
+            <date isodate="2016-07-31">2016-07-31</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio can render dynamic glyphs mixed with text.</annot>
+         </notesStmt>
       </fileDesc>
       <encodingDesc>
-         <projectDesc>
-            <p>Transcoded from Humdrum with Verovio version 0.9.12-dev-a018b75-dirty</p>
-         </projectDesc>
+         <appInfo>
+            <application version="2.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
       </encodingDesc>
    </meiHead>
    <music>

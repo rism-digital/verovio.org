@@ -8,7 +8,7 @@
             <title>Scope and placement of dynamics</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-02</date>
+            <date isodate="2017-05-02">2017-05-02</date>
          </pubStmt>
          <notesStmt>
             <annot>Verovio supports the appropriate placement of dynamics affecting only a single note, or a single layer in a staff.</annot>
@@ -16,14 +16,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="0.9.13">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-      <encodingDesc>
-         <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="0.9.13" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -34,7 +27,7 @@
          <mdiv>
             <score>
                <scoreDef midi.bpm="240">
-                  <staffGrp symbol="brace" barthru="true">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
                      <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="2s" meter.count="4" meter.unit="4" />
                   </staffGrp>

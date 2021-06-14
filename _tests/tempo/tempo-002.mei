@@ -8,11 +8,15 @@
             <title>Formatting tempo elements</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>By default, tempi indications are rendered in bold. This can be modified by including a "rend" element in the text. It is also
-					possible to have nested "rend" elements.</annot>
+            <annot>
+               <p>By default, tempi indications are rendered in bold. This can be modified by including a "rend" element in the text. It is also possible to have nested "rend" elements.</p>
+            </annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>

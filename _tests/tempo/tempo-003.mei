@@ -8,10 +8,15 @@
             <title>Tempo and beam interaction</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-15</date>
+            <date isodate="2017-05-15">2017-05-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Vertical adjustment of tempo indications avoids collisions with other notational elements.</annot>
+            <annot>
+               <p>Vertical adjustment of tempo indications avoids collisions with other notational elements.</p>
+            </annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
