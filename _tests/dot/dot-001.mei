@@ -8,8 +8,11 @@
             <title>Dot placement with various note durations</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio adjusts the dot position according to the note duration and to double stemmed situations.</annot>
          </notesStmt>
