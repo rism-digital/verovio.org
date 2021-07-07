@@ -6,11 +6,11 @@
       <fileDesc>
          <titleStmt>
             <title>Arabic accidentals</title>
+         </titleStmt>
+         <pubStmt>
             <respStmt>
                <persName role="encoder">Laurent Pugin</persName>
             </respStmt>
-         </titleStmt>
-         <pubStmt>
             <date isodate="2021-01-29">29 Jan 2021</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/910" />
@@ -20,7 +20,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot />
+            <annot>Verovio renders Arel-Ezgi-Uzdilek (AEU) accidentals.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
