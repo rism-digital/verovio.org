@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+  <meiHead>
+    <fileDesc>
+      <titleStmt>
+        <title>Handling of empty verse lines</title>
+        <respStmt>
+          <persName role="editor">Laurent Pugin</persName>
+          <persName role="encoder">Samuel Bradshaw</persName>
+        </respStmt>
+      </titleStmt>
+      <pubStmt>
+        <date isodate="2021-07-14">2021-07-14</date>
+        <pubPlace>
+          <ref target="https://github.com/rism-digital/verovio/issues/2241" />
+        </pubPlace>
+      </pubStmt>
+      <seriesStmt>
+        <title>Verovio test suite</title>
+      </seriesStmt>
+      <notesStmt>
+        <annot>Empty verse lines can be collapsed with the --lyric-verse-collapse option</annot>
+      </notesStmt>
+    </fileDesc>
+    <encodingDesc>
+      <appInfo>
+        <application version="3.5.0" label="0">
+          <name>Verovio</name>
+        </application>
+      </appInfo>
+    </encodingDesc>
+    <extMeta><![CDATA[ { "lyricVerseCollapse": true } ]]></extMeta>
+  </meiHead>
+  <music>
+    <body>
+      <mdiv>
+        <score>
+          <scoreDef>
+            <staffGrp>
+              <staffDef n="1" lines="5" ppq="8">
+                <instrDef midi.channel="0" midi.instrnum="0" midi.volume="80.00%" />
+                <clef shape="G" line="2" />
+                <keySig mode="major" sig="0" />
+                <meterSig count="3" unit="4" />
+              </staffDef>
+              <staffDef n="2" lines="5" ppq="2">
+                <instrDef midi.channel="0" midi.instrnum="0" midi.volume="80.00%" />
+                <clef shape="F" line="4" />
+                <keySig mode="major" sig="0" />
+                <meterSig count="3" unit="4" />
+              </staffDef>
+            </staffGrp>
+          </scoreDef>
+          <section>
+            <measure n="1">
+              <staff n="1">
+                <layer n="1">
+                  <chord dur="4" stem.dir="up">
+                    <verse n="2">
+                      <label>2.</label>
+                      <syl con="s">“Come,</syl>
+                    </verse>
+                    <verse n="4">
+                      <label>4.</label>
+                      <syl con="s">Not</syl>
+                    </verse>
+                    <note oct="4" pname="c" />
+                    <note oct="4" pname="e" />
+                  </chord>
+                  <note dur="4" oct="4" pname="c" stem.dir="up">
+                    <verse n="2">
+                      <syl con="d" wordpos="i">fol</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="d" wordpos="i">on</syl>
+                    </verse>
+                  </note>
+                  <chord dur="4" stem.dir="up">
+                    <verse n="2">
+                      <syl con="s" wordpos="t">low</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="s" wordpos="t">ly</syl>
+                    </verse>
+                    <note oct="4" pname="c" />
+                    <note oct="4" pname="f" />
+                  </chord>
+                </layer>
+                <layer n="2">
+                  <space dur="4" />
+                  <note dur="4" oct="4" pname="c" stem.dir="down" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <chord dur="4" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="3" pname="g" />
+                  </chord>
+                  <chord dur="4" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="3" pname="e" />
+                  </chord>
+                  <chord dur="4" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="3" pname="a" />
+                  </chord>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="2">
+              <mNum />
+              <staff n="1">
+                <layer n="1">
+                  <chord dur="2" stem.dir="up">
+                    <verse n="2">
+                      <syl con="s">me,”</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="s">shall</syl>
+                    </verse>
+                    <note oct="4" pname="c" />
+                    <note oct="4" pname="e" />
+                  </chord>
+                  <chord dur="4" stem.dir="up">
+                    <verse n="2">
+                      <syl con="s">a</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="s">we</syl>
+                    </verse>
+                    <note oct="4" pname="e" />
+                    <note oct="4" pname="g" />
+                  </chord>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <chord dur="2" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="3" pname="g" />
+                  </chord>
+                  <chord dur="4" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="4" pname="c" />
+                  </chord>
+                </layer>
+              </staff>
+            </measure>
+            <measure n="3">
+              <mNum />
+              <staff n="1">
+                <layer n="1">
+                  <note dur="4" oct="5" pname="c" stem.dir="up" xml:id="n1">
+                    <verse n="2">
+                      <syl con="d" wordpos="i">sim</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="d" wordpos="i">em</syl>
+                    </verse>
+                  </note>
+                  <note dur="4" oct="4" pname="b" stem.dir="up" xml:id="n2" />
+                  <chord dur="4" stem.dir="up">
+                    <verse n="2">
+                      <syl con="s" wordpos="t">ple</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="d" wordpos="m">u</syl>
+                    </verse>
+                    <note oct="4" pname="f" />
+                    <note oct="4" pname="a" />
+                  </chord>
+                </layer>
+                <layer n="2">
+                  <note dur="2" oct="4" pname="f" stem.dir="down" />
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <chord dur="2" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="3" pname="a" />
+                  </chord>
+                  <chord dur="4" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="3" pname="b" />
+                  </chord>
+                </layer>
+              </staff>
+              <slur startid="#n1" endid="#n2" curvedir="above" />
+            </measure>
+            <measure n="4">
+              <mNum />
+              <staff n="1">
+                <layer n="1">
+                  <chord dots="1" dur="2" stem.dir="up">
+                    <verse n="2">
+                      <syl con="s">phrase,</syl>
+                    </verse>
+                    <verse n="4">
+                      <syl con="s" wordpos="t">late</syl>
+                    </verse>
+                    <note oct="4" pname="e" />
+                    <note oct="4" pname="g" />
+                  </chord>
+                </layer>
+              </staff>
+              <staff n="2">
+                <layer n="1">
+                  <chord dots="1" dur="2" stem.dir="down">
+                    <note oct="3" pname="c" />
+                    <note oct="4" pname="c" />
+                  </chord>
+                </layer>
+              </staff>
+            </measure>
+          </section>
+        </score>
+      </mdiv>
+    </body>
+  </music>
+</mei>
