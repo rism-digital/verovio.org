@@ -13,6 +13,8 @@ tests-verovio-edit-path: "https://editor.verovio.org/?file=https://raw.githubuse
 
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+
 remote_theme: rism-digital/verovio-theme
 
 twitter: card
