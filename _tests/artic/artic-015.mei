@@ -1,0 +1,84 @@
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Harmonics example</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-08-01">2021-08-01</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2317"/>
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+             <annot>Harmonics encoded with /artic should be properly placed outside the staff</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.6.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1" label="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g">
+                              <artic artic="harm" place="below" />
+                           </note>
+                           <note dur="4" oct="4" pname="f">
+                              <artic artic="harm" place="below" />
+                           </note>
+                           <note dur="4" oct="4" pname="e">
+                              <artic artic="harm" place="below" />
+                           </note>
+                           <note dur="4" oct="4" pname="d">
+                              <artic artic="harm" place="below" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c">
+                              <artic artic="harm" place="below" />
+                           </note>
+                           <note dur="4" oct="3" pname="b">
+                              <artic artic="harm" place="below" />
+                           </note>
+                           <note dur="4" oct="3" pname="a">
+                              <artic artic="harm" place="below" />
+                           </note>
+                           <note dur="4" oct="3" pname="g">
+                              <artic artic="harm" place="below" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
