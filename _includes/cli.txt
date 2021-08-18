@@ -1,4 +1,4 @@
-Verovio 3.6.0-dev-f6b74ce
+Verovio 3.6.0-dev-29f033e
 
 Example usage:
 
@@ -133,6 +133,7 @@ General layout options
 Element selectors and processing
  --app-x-path-query* <s>        Set the xPath query for selecting <app> child elements, for example: "./rdg[contains(@source, 'source-id')]"; by default the <lem> or the first <rdg> is selected
  --choice-x-path-query* <s>     Set the xPath query for selecting <choice> child elements, for example: "./orig"; by default the first child is selected
+ --mdiv-all                     Load and render all <mdiv> elements in the MEI files
  --mdiv-x-path-query <s>        Set the xPath query for selecting the <mdiv> to be rendered; only one <mdiv> can be rendered (default: "")
  --subst-x-path-query* <s>      Set the xPath query for selecting <subst> child elements, for example: "./del"; by default the first child is selected
  --transpose <s>                SUMMARY (default: "")
