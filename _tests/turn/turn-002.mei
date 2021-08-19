@@ -20,7 +20,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>For delayed turns you have to use and adjust the "tstamp" attribute.</annot>
+            <annot>For delayed turns, one possibility is to use @tstamp with the appropriate position.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
