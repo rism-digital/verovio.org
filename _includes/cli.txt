@@ -1,4 +1,4 @@
-Verovio 3.6.0-dev-fc0c00c
+Verovio 3.6.0-dev-8b6dcc0
 
 Example usage:
 
@@ -62,6 +62,7 @@ Input and page layout options
  --use-facsimile                Use information in the <facsimile> element to control the layout
  --use-pg-footer-for-all        Use the pgFooter for all pages
  --use-pg-header-for-all        Use the pgHeader for all pages
+ --xml-id-checksum              Seed the generator for XML IDs using the checksum of the input data
 
 General layout options
  --midi-tempo-adjustment <f>    The MIDI tempo adjustment factor (default: 1.00; min: 0.20; max: 4.00)
