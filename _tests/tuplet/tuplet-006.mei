@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tuplet number format</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-24</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio optionally displays tuplet numbers as a ratio (according to the MEI attribute "num.format").</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <!-- kern: =1-  8c  40%3dLL  40%3e  40%3g  40%3a  40%3b  40%3a  40%3g  40%3e  40%3f  40%3dJJ  8c  == -->
+                        <layer n="1">
+                           <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           <beam>
+                              <tuplet num="10" numbase="6" bracket.visible="false" num.format="ratio">
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="g" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="a" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="b" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="a" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="g" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="f" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <note dur="8" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

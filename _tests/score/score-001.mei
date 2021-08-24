@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Score and barlines example</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-09">2017-05-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the score parameters defined in the "scoreDef", "staffGrp" and "staffDef" elements with some of their
+					attributes. Verovio also supports various types of barline for the "measure" elements. It also supports the "scale" attribute on
+					the "staffDef" element.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <grpSym symbol="bracket" />
+                        <staffDef n="1" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
+                        <staffGrp>
+                           <grpSym symbol="brace" />
+                           <staffDef n="2" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
+                           <staffDef n="3" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
+                        </staffGrp>
+                     </staffGrp>
+                     <staffDef n="4" lines="5" clef.shape="G" clef.line="2" />
+                     <staffGrp bar.thru="false">
+                        <grpSym symbol="brace" />
+                        <staffDef n="5" lines="5" clef.shape="G" clef.line="2" />
+                        <staffDef n="6" lines="5" clef.shape="F" clef.line="4" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="5">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="6">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="5">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="6">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="3">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="5">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="6">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="rptstart" n="4">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="5">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="6">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="rptboth" n="5">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="5">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="6">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="rptend" n="6">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="5">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="6">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

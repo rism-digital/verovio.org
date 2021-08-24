@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tuplet brackets on beamed tremolos</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-07-01">2021-07-01</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2268" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio will not draw tuplet brackets on single bowed tremolos.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.5.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2">
+                              <note dur="8" oct="5" pname="e" />
+                              <bTrem>
+                                 <note dur="8" oct="5" pname="d" stem.mod="1slash" />
+                              </bTrem>
+                              <note dur="8" oct="5" pname="c" />
+                           </tuplet>
+                           <tuplet num="3" numbase="2">
+                              <bTrem>
+                                 <note dur="8" oct="5" pname="d" stem.mod="1slash" />
+                              </bTrem>
+                              <beam>
+                                 <note dur="8" oct="5" pname="c" />
+                                 <note dur="8" oct="4" pname="b" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2">
+                              <bTrem>
+                                 <note dots="1" dur="4" oct="4" pname="a" stem.mod="1slash" />
+                              </bTrem>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

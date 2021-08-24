@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Layers with altered unisons</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Place accidentals before both parts, except for altered unisons.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 91, example 1</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="5" pname="f">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </chord>
+                           <chord dur="4">
+                              <note oct="5" pname="f">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="4" pname="d">
+                                 <accid accid="f" />
+                              </note>
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <chord dur="2">
+                              <note oct="4" pname="b">
+                                 <accid accid="n" />
+                              </note>
+                              <note oct="4" pname="g">
+                                 <accid accid="s" />
+                              </note>
+                           </chord>
+                           <chord dur="4">
+                              <note oct="5" pname="d">
+                                 <accid accid="f" />
+                              </note>
+                              <note oct="4" pname="g">
+                                 <accid accid="n" />
+                              </note>
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1" visible="false">
+                        <layer n="1">
+                           <mSpace />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d">
+                              <accid accid="n" />
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="5" pname="b">
+                              <accid accid="f" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

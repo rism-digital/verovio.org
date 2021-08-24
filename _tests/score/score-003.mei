@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>ScoreDef change example</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-09">2017-05-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports "scoreDef" element redefinitions between measures. Any attribute supported by Verovio can be
+					redefined.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.sym="cut" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" clef.shape="C" clef.line="3" key.sig="3f" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure right="dbl" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" meter.count="3" meter.unit="4" />
+                     </staffGrp>
+                  </scoreDef>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Positions with cross-staff</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Iacopo Cividini</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-06</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/1898" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Positions (artic, slur) with cross-staff should be place identically as in normal situations.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.pname="f" key.sig="1f" meter.count="3" meter.unit="4">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note xml:id="note_4002" oct="4" pname="a" />
+                              <note oct="4" pname="f" />
+                           </chord>
+                           <beam>
+                              <chord dur="8">
+                                 <note xml:id="note_4026" oct="4" pname="g" />
+                                 <note oct="4" pname="e" />
+                              </chord>
+                              <note xml:id="note_4038" dur="8" oct="4" pname="g" color="blue" artic="stacc" />
+                              <note dur="8" oct="4" pname="g" color="blue" artic="stacc" />
+                              <note xml:id="note_4050" dur="8" oct="4" pname="g" color="blue" artic="stacc" />
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <note dur="2" oct="4" pname="c" color="blue" />
+                           <space dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="2" oct="3" pname="c" />
+                           <chord dur="4" staff="1" stem.dir="down">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" startid="#note_4038">f</dynam>
+                     <slur staff="1" startid="#note_4002" endid="#note_4026" />
+                     <slur staff="1" startid="#note_4038" endid="#note_4050" color="blue" />
+                     <dir place="below" staff="2" tstamp="1.000000">
+                        <rend color="blue" fontstyle="normal">automatic<lb />(layers)</rend>
+                     </dir>
+                  </measure>
+                  <measure n="5a">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note_4152a" dur="16" oct="4" pname="g" grace="unknown" stem.dir="up" />
+                           <beam>
+                              <note xml:id="note_4164a" dots="1" dur="8" oct="5" pname="g" stem.dir="up" />
+                              <note dur="32" oct="5" pname="d" stem.dir="up" />
+                              <note xml:id="note_4176a" dur="32" oct="4" pname="b" stem.dir="up" accid="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note xml:id="note_4194a" dur="8" oct="4" pname="g" color="green" artic="stacc" />
+                              <note dur="8" oct="4" pname="g" color="green" artic="stacc" />
+                              <note xml:id="note_4206a" dur="8" oct="4" pname="g" color="green" artic="stacc" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="2" staff="1" color="green" stem.dir="down">
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" accid="n" />
+                           </chord>
+                           <chord dur="4" staff="1" stem.dir="down">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" startid="#note_4194a">f</dynam>
+                     <slur staff="1" startid="#note_4152a" endid="#note_4164a" curvedir="above" />
+                     <slur staff="1" startid="#note_4164a" endid="#note_4176a" curvedir="above" />
+                     <slur staff="1" startid="#note_4194a" endid="#note_4206a" color="green" />
+                     <dir place="below" staff="2" tstamp="1.000000">
+                        <rend color="green" fontstyle="normal">automatic<lb />(cross-staff)</rend>
+                     </dir>
+                  </measure>
+                  <measure n="5b">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note_4152b" dur="16" oct="4" pname="g" grace="unknown" stem.dir="up" />
+                           <beam>
+                              <note xml:id="note_4164b" dots="1" dur="8" oct="5" pname="g" stem.dir="up" />
+                              <note dur="32" oct="5" pname="d" stem.dir="up" />
+                              <note xml:id="note_4176b" dur="32" oct="4" pname="b" stem.dir="up" accid="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note xml:id="note_4194b" dur="8" oct="4" pname="g" color="green">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note dur="8" oct="4" pname="g" color="green">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note xml:id="note_4206b" dur="8" oct="4" pname="g" color="green">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="2" staff="1" color="green" stem.dir="down">
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" accid="n" />
+                           </chord>
+                           <chord dur="4" staff="1" stem.dir="down">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" startid="#note_4194b">f</dynam>
+                     <slur staff="1" startid="#note_4152b" endid="#note_4164b" curvedir="above" />
+                     <slur staff="1" startid="#note_4164b" endid="#note_4176b" curvedir="above" />
+                     <slur staff="1" startid="#note_4194b" endid="#note_4206b" color="green" curvedir="above" />
+                     <dir place="below" staff="2" tstamp="1.000000">
+                        <rend color="green" fontstyle="normal">expected<lb />(cross-staff)</rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

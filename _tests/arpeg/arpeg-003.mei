@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Arpeggio with accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Arpeggio signs shoould precede any accidentals.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <labelAbbr />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L6F2" dur="1">
+                              <note oct="4" pname="d" accid.ges="n" />
+                              <note oct="4" pname="f" accid.ges="n" />
+                              <note oct="4" pname="a" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord-L6F2" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L8F2" dur="1">
+                              <note oct="4" pname="d" accid="f" />
+                              <note oct="4" pname="f" accid="f" />
+                              <note oct="4" pname="a" accid="f" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord-L8F2" />
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L10F2" dur="1" staff="2" stem.dir="up">
+                              <note type="marked" oct="3" pname="d" color="chartreuse" accid="f" />
+                              <note type="marked" oct="3" pname="f" color="chartreuse" accid="f" />
+                              <note type="marked" oct="3" pname="a" color="chartreuse" accid="f" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest ploc="g" oloc="2" />
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord-L10F2" />
+                  </measure>
+                  <measure right="end" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L12F2" dur="1" stem.dir="up">
+                              <note staff="2" oct="3" pname="d" accid="f" />
+                              <note staff="2" oct="3" pname="f" accid="f" />
+                              <note staff="2" oct="3" pname="a" accid="f" />
+                              <note oct="4" pname="d" accid="f" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest ploc="g" oloc="2" />
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord-L12F2" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Ftrem and slurs</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-20</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/1914" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Slurs on FTrems should be place as with beams</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="F" line="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <fTrem beams="1" unitdur="8">
+                              <note xml:id="note-L6F1" dur="2" oct="3" pname="f" accid.ges="n" />
+                              <note xml:id="note-L9F1" dur="2" oct="3" pname="a" accid.ges="n" />
+                           </fTrem>
+                           <fTrem beams="1" unitdur="8">
+                              <note xml:id="note-L10F1" dur="2" oct="3" pname="f" accid.ges="n" />
+                              <note xml:id="note-L13F1" dur="2" oct="3" pname="a" accid.ges="n" />
+                           </fTrem>
+                        </layer>
+                     </staff>
+                     <slur type="ftrem" staff="1" startid="#note-L10F1" endid="#note-L13F1" color="coral" curvedir="below" />
+                     <slur type="ftrem" staff="1" startid="#note-L6F1" endid="#note-L9F1" color="coral" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L15F1" dur="8" oct="3" pname="f" accid.ges="n" />
+                              <note xml:id="note-L16F1" dur="8" oct="3" pname="a" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note-L17F1" dur="8" oct="3" pname="f" accid.ges="n" />
+                              <note xml:id="note-L18F1" dur="8" oct="3" pname="a" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L15F1" endid="#note-L16F1" />
+                     <slur staff="1" startid="#note-L17F1" endid="#note-L18F1" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

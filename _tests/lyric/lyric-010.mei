@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Lyrics placement related to rhythmic values</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-10-03</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio adjusts the relative position of syllables to notes in order to maintain as far as possible the rhythmic spacing of the
+					notes.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef n="3" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef n="4" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef n="5" lines="5" clef.shape="F" clef.line="4" key.sig="1f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L4F9" dur="4" oct="5" pname="d" accid.ges="n">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">mon</syl>
+                              </verse>
+                           </note>
+                           <beam>
+                              <note xml:id="note-L6F9" dur="8" oct="5" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ti_e</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note-L7F9" dur="8" oct="5" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">cam</syl>
+                                 </verse>
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="note-L8F9" dur="8" oct="5" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="m">pa</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="5" pname="e" accid.ges="n" />
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="b" accid.ges="f" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           </beam>
+                           <note dots="1" dur="4" oct="5" pname="d" accid.ges="n" />
+                           <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           <note xml:id="note-L18F9" dur="4" oct="4" pname="b" accid.ges="f" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L4F7" dur="8" oct="5" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ti_e</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note-L5F7" dur="8" oct="5" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">cam</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note-L6F7" dur="8" oct="5" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="m">pa</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" accid.ges="f" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           </beam>
+                           <note dots="1" dur="4" oct="5" pname="d" accid.ges="n" />
+                           <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L16F7" dur="2" oct="5" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note xml:id="note-L4F5" dur="4" oct="4" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl wordpos="t">ti_e</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L6F5" dur="4" oct="3" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">cam</syl>
+                              </verse>
+                           </note>
+                           <beam>
+                              <note xml:id="note-L8F5" dur="8" oct="3" pname="b" accid.ges="f">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="m">pa</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <note dur="2" oct="4" pname="f" accid.ges="n" />
+                           <note xml:id="note-L16F5" dur="2" oct="4" pname="f" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">gne</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="b" accid.ges="f" />
+                              <note xml:id="note-L5F3" dur="8" oct="4" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">sa</syl>
+                                 </verse>
+                              </note>
+                           </beam>
+                           <note xml:id="note-L6F3" dur="4" oct="4" pname="d" accid.ges="n">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">mon</syl>
+                              </verse>
+                           </note>
+                           <beam>
+                              <note xml:id="note-L8F3" dur="8" oct="4" pname="d" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ti_e</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note-L9F3" dur="8" oct="4" pname="e" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">cam</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note-L10F3" dur="8" oct="4" pname="f" accid.ges="n">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="m">pa</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                              <note dur="8" oct="3" pname="b" accid.ges="f" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           </beam>
+                           <note dur="2" oct="4" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="5">
+                        <layer n="1">
+                           <note xml:id="note-L4F1" dur="2" oct="3" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">mon</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L8F1" dots="1" dur="2" oct="2" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl wordpos="t">ti_e</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L14F1" dur="4" oct="2" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">cam</syl>
+                              </verse>
+                           </note>
+                           <beam>
+                              <note xml:id="note-L16F1" dur="8" oct="2" pname="b" accid.ges="f">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="m">pa</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="3" pname="c" accid.ges="n" />
+                              <note dur="8" oct="3" pname="d" accid.ges="n" />
+                              <note dur="8" oct="3" pname="e" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tie startid="#note-L18F9" endid="#note-L21F9" />
+                     <tie startid="#note-L16F7" endid="#note-L21F7" />
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L21F9" dur="4" oct="4" pname="b" accid.ges="f" />
+                           <note xml:id="note-L22F9" dur="4" oct="4" pname="a" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">gne_e</syl>
+                              </verse>
+                           </note>
+                           <beam>
+                              <note xml:id="note-L23F9" dur="8" oct="4" pname="b" accid.ges="f">
+                                 <verse n="1">
+                                    <syl con="d" wordpos="i">ma</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note-L24F9" dur="8" oct="5" pname="c" accid.ges="n">
+                                 <verse n="1">
+                                    <syl wordpos="t">ri_e</syl>
+                                 </verse>
+                              </note>
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           </beam>
+                           <note dur="4" oct="5" pname="f" accid.ges="n" />
+                           <note xml:id="note-L29F9" dots="1" dur="4" oct="4" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">fiu</syl>
+                              </verse>
+                           </note>
+                           <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           <note xml:id="note-L33F9" dur="4" oct="5" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="note-L21F7" dur="2" oct="5" pname="f" accid.ges="n" />
+                           <note xml:id="note-L23F7" dur="4" oct="5" pname="d" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">gne_e</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L25F7" dots="1" dur="4" oct="5" pname="d" accid.ges="n">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">ma</syl>
+                              </verse>
+                           </note>
+                           <note dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note dur="4" oct="5" pname="f" accid.ges="n" />
+                           <note xml:id="note-L31F7" dur="2" oct="5" pname="g" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">ri_e</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <note xml:id="note-L25F5" dur="4" oct="4" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl>e</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L27F5" dots="1" dur="4" oct="4" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">ma</syl>
+                              </verse>
+                           </note>
+                           <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           <beam>
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" accid.ges="f" />
+                              <note xml:id="note-L34F5" dur="8" oct="4" pname="a" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <note xml:id="note-L21F3" dur="2" oct="4" pname="c" accid.ges="n">
+                              <verse n="1">
+                                 <syl wordpos="t">gne_e</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L23F3" dots="1" dur="4" oct="3" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">ma</syl>
+                              </verse>
+                           </note>
+                           <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           <note dots="1" dur="4" oct="4" pname="d" accid.ges="n" />
+                           <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           <beam>
+                              <note dur="8" oct="3" pname="b" accid.ges="f" />
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="3" pname="g" accid.ges="n" />
+                              <note xml:id="note-L34F3" dur="8" oct="3" pname="a" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="5">
+                        <layer n="1">
+                           <note dur="2" oct="3" pname="f" accid.ges="n" />
+                           <note xml:id="note-L23F1" dur="2" oct="2" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl wordpos="t">gne_e</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note-L27F1" dots="1" dur="4" oct="3" pname="b" accid.ges="f">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">ma</syl>
+                              </verse>
+                           </note>
+                           <note dur="8" oct="3" pname="a" accid.ges="n" />
+                           <note dots="1" dur="4" oct="3" pname="g" accid.ges="n" />
+                           <note xml:id="note-L34F1" dur="8" oct="3" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

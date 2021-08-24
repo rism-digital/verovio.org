@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Clef changes at system break</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-04-25">2017-04-25</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders clef changes at system break with a cautionary clef at the end of the first system, and a standard one at the
+					beginning of the next system.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="4s" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="4s" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="rptstart" n="1">
+                     <staff n="1">
+                        <!-- kern: =1-  16r  16GG#/LL  16C#/  16E/JJ  16G#/LL  16C#/  16E/  16G#/JJ  16c#/LL  16E/  16G#/  16c#/JJ  *clefG2  16e/LL  16G#/  16c#/  16e/JJ  =2!|: -->
+                        <layer n="1">
+                           <rest dur="16" />
+                           <beam>
+                              <note dur="16" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <clef shape="G" line="2" />
+                           <beam>
+                              <note dur="16" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =1-  8CC#''\L  8GG#''\  8CC#''\  8GG#''\J  8CC#''\L  8GG#''\  8CC#''\  8GG#''\J  =2!|: -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="2" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="2" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tempo staff="1" tstamp="1.000000">Presto agitato</tempo>
+                     <dynam staff="1" tstamp="1.250000">p</dynam>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <!-- kern: =2!|:  *>A  16g#/LL  16c#/  16e/  16g#/JJ  16cc#/LL  16e/  16g#/  16cc#/JJ  16ee\LL  16g#\  16cc#\  16ee\JJ  8g#''\ 8cc#''\ 8ee''\ 8gg#''\L  8g#''\ 8cc#''\ 8ee''\ 8gg#''\J  =3 -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="5" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="5" pname="c" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="5" pname="e" stem.dir="down" accid.ges="n" />
+                              <note dur="16" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="5" pname="e" stem.dir="down" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="g" accid.ges="s" />
+                                 <note oct="5" pname="c" accid.ges="s" />
+                                 <note oct="5" pname="e" accid.ges="n" />
+                                 <note oct="5" pname="g" accid.ges="s" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="g" accid.ges="s" />
+                                 <note oct="5" pname="c" accid.ges="s" />
+                                 <note oct="5" pname="e" accid.ges="n" />
+                                 <note oct="5" pname="g" accid.ges="s" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =2!|:  *>A  8CC#''/L  8GG#''/  8CC#''/  8GG#''/J  8CC#''/L  8GG#''/  8CC#''/ 8C#''/  8GG#''/J  =3 -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="2" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="2" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="2" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="2" pname="c" accid.ges="s" />
+                                 <note oct="3" pname="c" accid.ges="s" />
+                              </chord>
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <!-- kern: =3  *clefF4  16r  16GG#/LL  16BB#/  16D#/JJ  16G#/LL  16BB#/  16D#/  16G#/JJ  16B#/LL  16D#/  16G#/  16B#/JJ  16d#/LL  16G#/  16B#/  16d#/JJ  =4 -->
+                        <layer n="1">
+                           <clef shape="F" line="4" />
+                           <rest dur="16" />
+                           <beam>
+                              <note dur="16" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="2" pname="b" stem.dir="up" accid="s" />
+                              <note dur="16" oct="3" pname="d" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="2" pname="b" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="d" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="3" pname="b" stem.dir="up" accid="s" />
+                              <note dur="16" oct="3" pname="d" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="b" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="d" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="b" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="d" stem.dir="up" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =3  8BBB#''\L  8GG#''\  8BBB#''\  8GG#''\J  8BBB#''\L  8GG#''\  8BBB#''\  8GG#''\J  =4 -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="1" pname="b" stem.dir="down" accid="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="1" pname="b" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="1" pname="b" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="1" pname="b" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <!-- kern: =4  *clefG2  16g#/LL  16B#/  16d#/  16g#/JJ  16b#/LL  16d#/  16g#/  16b#/JJ  16dd#\LL  16g#\  16b#\  16dd#\JJ  8g#''\ 8b#''\ 8dd#''\ 8gg#''\L  8g#''\ 8b#''\ 8dd#''\ 8gg#''\J  = -->
+                        <layer n="1">
+                           <clef shape="G" line="2" />
+                           <beam>
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="3" pname="b" stem.dir="up" accid="s" />
+                              <note dur="16" oct="4" pname="d" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="b" stem.dir="up" accid="s" />
+                              <note dur="16" oct="4" pname="d" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="16" oct="4" pname="b" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="5" pname="d" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="4" pname="g" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="4" pname="b" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="5" pname="d" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="g" accid.ges="s" />
+                                 <note oct="4" pname="b" accid.ges="s" />
+                                 <note oct="5" pname="d" accid.ges="s" />
+                                 <note oct="5" pname="g" accid.ges="s" />
+                              </chord>
+                              <chord dur="8" stem.dir="down">
+                                 <note oct="4" pname="g" accid.ges="s" />
+                                 <note oct="4" pname="b" accid.ges="s" />
+                                 <note oct="5" pname="d" accid.ges="s" />
+                                 <note oct="5" pname="g" accid.ges="s" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <!-- kern: =4  8BBB#''/L  8GG#''/  8BBB#''/  8GG#''/J  8BBB#''/L  8GG#''/  8BBB#''/ 8BB#''/  8GG#''/J  = -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="1" pname="b" stem.dir="up" accid="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="1" pname="b" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="1" pname="b" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                              <chord dur="8" stem.dir="up">
+                                 <note oct="1" pname="b" accid.ges="s" />
+                                 <note oct="2" pname="b" accid="s" />
+                              </chord>
+                              <note dur="8" oct="2" pname="g" stem.dir="up" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

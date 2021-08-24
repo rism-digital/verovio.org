@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beams on staff lines</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-02</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders correctly horizontal beams within staves, so that they always touch a staff line.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="132">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="1f" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord dots="1" dur="8">
+                                 <note oct="5" pname="a" accid.ges="n" />
+                                 <note oct="6" pname="c" accid.ges="n" />
+                              </chord>
+                              <chord dur="16">
+                                 <note oct="5" pname="a" accid.ges="n" />
+                                 <note oct="6" pname="c" accid.ges="n" />
+                              </chord>
+                           </beam>
+                           <chord dur="4">
+                              <note oct="5" pname="a" accid.ges="n" />
+                              <note oct="6" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="5" pname="a" accid.ges="n" />
+                              <note oct="6" pname="f" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <chord dots="1" dur="8">
+                                 <note oct="4" pname="f" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                              <chord dur="16">
+                                 <note oct="4" pname="f" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                           </beam>
+                           <chord dur="4">
+                              <note oct="4" pname="f" accid.ges="n" />
+                              <note oct="5" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="f" accid.ges="n" />
+                              <note oct="5" pname="c" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <tempo staff="1" tstamp="1.000000">Allegro, ma non troppo</tempo>
+                     <dynam staff="1" tstamp="1.000000">f</dynam>
+                     <pedal staff="2" tstamp="1.000000" dir="down" />
+                     <pedal staff="2" tstamp="3.500000" dir="up" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <chord xml:id="chord-L20F3" dots="1" dur="8">
+                                 <note oct="5" pname="g" accid.ges="n" />
+                                 <note oct="6" pname="e" accid.ges="n" />
+                              </chord>
+                              <chord dur="16">
+                                 <note oct="5" pname="f" accid.ges="n" />
+                                 <note oct="6" pname="d" accid.ges="n" />
+                              </chord>
+                           </beam>
+                           <chord xml:id="chord-L22F3" dur="2">
+                              <note oct="5" pname="e" accid.ges="n" />
+                              <note oct="6" pname="c" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <chord dots="1" dur="8">
+                                 <note oct="4" pname="g" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                              <note dur="16" oct="4" pname="b" accid="n" />
+                           </beam>
+                           <note dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="2" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#chord-L20F3" endid="#chord-L22F3" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

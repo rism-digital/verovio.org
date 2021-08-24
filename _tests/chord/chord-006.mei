@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Single cue notes in chords</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-02-20">20 Feb 2017</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/479" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Single small notes in chords are positioned correctly.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.4.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="81">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ex_1072048886" dur="2" oct="5" pname="c" accid="s" />
+                           <note xml:id="ex_0527820081" dur="8" oct="5" pname="c" accid.ges="s" />
+                           <chord dur="8" stem.dir="up">
+                              <note oct="3" pname="a" />
+                              <note oct="4" pname="a" cue="true" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <tie startid="#ex_1072048886" endid="#ex_0527820081" />
+                  </measure>
+                  <measure n="82">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2" stem.dir="up">
+                              <note oct="3" pname="a" />
+                              <note oct="4" pname="a" cue="true" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

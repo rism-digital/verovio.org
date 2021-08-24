@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Shared accidentals between notes in separate layers</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-17</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio overstikes shared accidentals between notes in different layers.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid="s" />
+                           <note dur="4" oct="4" pname="d" accid="s" />
+                           <note dur="4" oct="4" pname="e" accid="s" />
+                           <note dur="4" oct="4" pname="f" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                           <note dur="4" oct="4" pname="a" accid="s" />
+                           <note dur="4" oct="4" pname="b" accid="s" />
+                           <note dur="4" oct="5" pname="c" accid="s" />
+                           <note dur="4" oct="5" pname="d" accid="s" />
+                           <note dur="4" oct="5" pname="e" accid="s" />
+                           <note dur="4" oct="5" pname="f" accid="s" />
+                           <note dur="4" oct="5" pname="g" accid="s" />
+                           <note dur="4" oct="5" pname="a" accid="s" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" accid="s" />
+                           <note dur="4" oct="4" pname="d" accid="s" />
+                           <note dur="4" oct="4" pname="e" accid="s" />
+                           <note dur="4" oct="4" pname="f" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                           <note dur="4" oct="4" pname="a" accid="s" />
+                           <note dur="4" oct="4" pname="b" accid="s" />
+                           <note dur="4" oct="5" pname="c" accid="s" />
+                           <note dur="4" oct="5" pname="d" accid="s" />
+                           <note dur="4" oct="5" pname="e" accid="s" />
+                           <note dur="4" oct="5" pname="f" accid="s" />
+                           <note dur="4" oct="5" pname="g" accid="s" />
+                           <note dur="4" oct="5" pname="a" accid="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid="s" />
+                           <note dur="4" oct="4" pname="d" accid="s" />
+                           <note dur="4" oct="4" pname="e" accid="s" />
+                           <note dur="4" oct="4" pname="f" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                           <note dur="4" oct="4" pname="a" accid="s" />
+                           <note dur="4" oct="4" pname="b" accid="s" />
+                           <note dur="4" oct="5" pname="c" accid="s" />
+                           <note dur="4" oct="5" pname="d" accid="s" />
+                           <note dur="4" oct="5" pname="e" accid="s" />
+                           <note dur="4" oct="5" pname="f" accid="s" />
+                           <note dur="4" oct="5" pname="g" accid="s" />
+                           <note dur="4" oct="5" pname="a" accid="s" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" accid.ges="s" />
+                           <note dur="4" oct="4" pname="d" accid.ges="s" />
+                           <note dur="4" oct="4" pname="e" accid.ges="s" />
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                           <note dur="4" oct="4" pname="g" accid.ges="s" />
+                           <note dur="4" oct="4" pname="a" accid.ges="s" />
+                           <note dur="4" oct="4" pname="b" accid.ges="s" />
+                           <note dur="4" oct="5" pname="c" accid.ges="s" />
+                           <note dur="4" oct="5" pname="d" accid.ges="s" />
+                           <note dur="4" oct="5" pname="e" accid.ges="s" />
+                           <note dur="4" oct="5" pname="f" accid.ges="s" />
+                           <note dur="4" oct="5" pname="g" accid.ges="s" />
+                           <note dur="4" oct="5" pname="a" accid.ges="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid.ges="s" />
+                           <note dur="4" oct="4" pname="d" accid.ges="s" />
+                           <note dur="4" oct="4" pname="e" accid.ges="s" />
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                           <note dur="4" oct="4" pname="g" accid.ges="s" />
+                           <note dur="4" oct="4" pname="a" accid.ges="s" />
+                           <note dur="4" oct="4" pname="b" accid.ges="s" />
+                           <note dur="4" oct="5" pname="c" accid.ges="s" />
+                           <note dur="4" oct="5" pname="d" accid.ges="s" />
+                           <note dur="4" oct="5" pname="e" accid.ges="s" />
+                           <note dur="4" oct="5" pname="f" accid.ges="s" />
+                           <note dur="4" oct="5" pname="g" accid.ges="s" />
+                           <note dur="4" oct="5" pname="a" accid.ges="s" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" accid="s" />
+                           <note dur="4" oct="4" pname="d" accid="s" />
+                           <note dur="4" oct="4" pname="e" accid="s" />
+                           <note dur="4" oct="4" pname="f" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                           <note dur="4" oct="4" pname="a" accid="s" />
+                           <note dur="4" oct="4" pname="b" accid="s" />
+                           <note dur="4" oct="5" pname="c" accid="s" />
+                           <note dur="4" oct="5" pname="d" accid="s" />
+                           <note dur="4" oct="5" pname="e" accid="s" />
+                           <note dur="4" oct="5" pname="f" accid="s" />
+                           <note dur="4" oct="5" pname="g" accid="s" />
+                           <note dur="4" oct="5" pname="a" accid="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

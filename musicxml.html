@@ -1,0 +1,146 @@
+---
+layout: verovio
+verovio: false
+title: MusicXML Converter
+active: tools
+tools-active: musicxml
+version-footer: false
+examples:
+    - name: "Bach, &bdquo;Nun komm der Heiden Heiland&rdquo; (arr.) BWV 659"
+      size: "419Kb"
+      link: "Bach_Nun_komm_der_Heiden_Heiland_BWV.659.xml"
+    - name: "Bach, Brandburg Concerto no. 5 BWV 1050, 1st mvt"
+      size: "3.1Mb"
+      link: "Bach_Brandburg_Concerto_BWV.1050_M1.xml"
+    - name: "Bach, Invention no. 1 BWV 772"
+      size: "197Kb"
+      link: "Bach_Invention_No_1_BVW.772.xml"
+    - name: "Chopin, Etude op. 10 no. 12"
+      size: "1.3Mb"
+      link: "Chopin_Etude_Op.10_No.12.xml"
+    - name: "Costeley, &bdquo;Je_vois_de_glissantes_eaux&rdquo;"
+      size: "182Kb"
+      link: "Costeley_Je_vois_de_glissantes_eaux.xml"
+    - name: "Haydn, String Quartet in C major op. 74 no. 1, 2nd mvt"
+      size: "908Kb"
+      link: "Haydn_String_Quartet_in_C_Major_Op.74_No.1_M2.xml"
+    - name: "Schubert, &bdquo;An die Sonne&rdquo; D.439"
+      size: "1.2Mb"
+      link: "Schubert_An_die_Sonne_D.439.xml"
+    - name: "Schubert, &bdquo;Sta&#x308;ndchen&rdquo; D.923"
+      size: "583Kb"
+      link: "Schubert_Staendchen_D.923.xml"
+    - name: "Vivaldi, Concerto no. 4 in F minor &bdquo;Winter&rdquo;"
+      size: "3.9Mb"
+      link: "Vivaldi_Concerto_No.4_in_F_Minor_Winter.xml"
+    - name: "Waldteufel, Valse &bdquo;Les Patineurs&rdquo; op.138"
+      size: "1.2Mb"
+      link: "Waldteufel_Op.138_Les_Patineurs.xml"
+---
+<div class="row">
+
+    <div class="col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="panel panel-default">
+            {% include other-sidebar.html %}
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <div class="panel-body">
+            <h3>MusicXML Converter</h3>
+
+            <p>
+                Verovio supports conversion from MusicXML to MEI. When converting from this web interface, the resulting MEI data will be displayed directly in the MEI-Viewer. The MEI file can be saved through the
+                <button type="button" class="btn btn-default btn-xs">
+                  <span class="glyphicon glyphicon-download" aria-hidden="true"></span> MEI
+                </button>
+                button that will be displayed on the top right.
+            </p>
+            <p>
+                This feature is still under development, and it's capabilities are limited. For a more complete conversion from MusicXML to MEI you should try the <a href="https://github.com/music-encoding/encoding-tools" target="_blank">MEI XSL stylesheets</a>.
+            </p>
+
+            <h4>Try it!</h4>
+            <p>
+                The files below are converted to MEI in your browser and directly displayed with Verovio.
+            </p>
+
+            <div class="conainer">
+                {% for d in page.examples %}
+                 <div class="row">
+                    <div class="col-xs-7">
+                        <p>
+                        <a href="{{ site.baseurl }}/examples/musicxml/{{ d.link }}">{{ d.name }}</a> ({{ d.size }})
+                        </p>
+                    </div>
+                    <div class="col-xs-5">
+                        <a href="{{ site.baseurl }}/mei-viewer.xhtml?file=examples/musicxml/{{ d.link }}&amp;musicxml=true">
+                            <button type="button" class="btn btn-default btn-xs">
+                                <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Convert to MEI
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <h4>Try it with your file</h4>
+            <p>
+                You can also try to convert your own MusicXML file. If it works, the file will be displayed with Verovio and you will then be able to save the resulting MEI file.
+            </p>
+            <form id="upload_form" onsubmit="convert_file( $('#upload_form') ); return false" class="form-inline" role="form">
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="file" id="mei_files" name="file"></input>
+                    </div>
+                </div>
+            </form>
+            <p>
+                Terms of use: the conversion to MEI is performed locally in your browser. This means that the MusicXML data is not uploaded to our server.
+            </p>
+            <p>
+                Important known limitation:
+            </p>
+            <ul>
+                 <li>The file size with this web interface is limited to the size of the local storage of your browser, which is typically 5Mb.</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+    function convert_file() {
+
+        $('#submit-btn').popover('hide');
+        var f = $("#mei_files").prop('files')[0];
+        var reader = new FileReader();
+
+        // Closure to capture the file information.
+        reader.onload = (function(theFile) {
+            localStorage.setItem("musicxml_filename", theFile.name);
+            return function(e) {
+                $('.row-offcanvas').toggleClass('active');
+                localStorage.setItem("musicxml_file", e.target.result);
+                window.location.href = "{{ site.baseurl }}/mei-viewer.xhtml?musicxml=true&local=true";
+            };
+        })(f);
+
+        // Read in the image file as a data URL.
+        reader.readAsText(f);
+    };
+
+    $( document ).ready(function() {
+        $("#mei_files").fileinput({
+            'initialCaption': 'Select a MusicXML file ...',
+            'showPreview': true,
+            'previewFileType': 'xml'
+        });
+        $(".fileinput-upload-button span").html('Convert to MEI');
+        $(".fileinput-upload-button i").removeClass( "glyphicon-download" ).addClass( "glyphicon-circle-arrow-right" );
+    });
+
+//]]>
+</script>

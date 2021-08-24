@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Rests with multiple layers</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-30</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/617" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Automatic rest collision avoidance when two layers</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                           <note dur="4" oct="4" pname="f" accid.ges="n" />
+                           <note dur="4" oct="4" pname="g" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="4" ploc="f" oloc="3" />
+                           <rest dur="4" ploc="a" oloc="3" />
+                           <rest dur="4" ploc="a" oloc="3" />
+                           <rest dur="4" ploc="c" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="b" accid.ges="n" />
+                           <note dur="4" oct="5" pname="c" accid.ges="n" />
+                           <note dur="4" oct="5" pname="d" accid.ges="n" />
+                           <note dur="4" oct="5" pname="e" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="4" ploc="c" oloc="4" />
+                           <rest dur="4" ploc="e" oloc="4" />
+                           <rest dur="4" ploc="e" oloc="4" />
+                           <rest dur="4" ploc="g" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
