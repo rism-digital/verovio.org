@@ -92,9 +92,10 @@ downloads:
 
         console.time("loading");
         try {
+            vrvToolkit.loadData(data);
             //vrvToolkit.loadZipDataBuffer(data);
-            var base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(data)));
-            vrvToolkit.loadZipDataBase64(base64String);
+            //var base64String = btoa(String.fromCharCode.apply(null, new Uint8Array(data)));
+            //vrvToolkit.loadZipDataBase64(base64String);
 
             if (vrvToolkit.getPageCount() == 0) {
                 $("#overlay").hide().css("cursor", "auto");
@@ -608,6 +609,7 @@ downloads:
           
           var file = getParameterByName("file");
 
+          /*
           if (!file || (file.length == 0)) {
               file = "examples/musicxml/Schubert_Staendchen_D.923.mxl";
           }
@@ -626,6 +628,24 @@ downloads:
             };
 
           oReq.send();
+          */
+
+          if (!file || (file.length == 0)) {
+              file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
+          }
+
+          vrvToolkit = new verovio.toolkit();
+          console.log("Loaded!");
+          console.log(vrvToolkit.getVersion());
+
+          $.ajax({
+              url: file
+              , dataType: "text"
+              , success: function(data) {
+                  outputFilename = file.replace(/^.*[\\\/]/, '')
+                  load_data( data );
+              }
+          });
 
       }
     };
