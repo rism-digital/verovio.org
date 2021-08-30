@@ -1,4 +1,4 @@
-Verovio 3.7.0-dev-1565df2
+Verovio 3.7.0-dev-22b2501
 
 Example usage:
 
@@ -128,6 +128,7 @@ General layout options
  --thick-barline-thickness <f>  The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
  --tie-endpoint-thickness <f>   The Endpoint tie thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
  --tie-midpoint-thickness <f>   The midpoint tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
+ --tie-min-length <f>           The minimum length of tie in MEI units (default: 2.00; min: 0.00; max: 10.00)
  --tuplet-bracket-thickness <f> The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
  --tuplet-num-head              Placement of tuplet number on the side of the note head
 
