@@ -1,4 +1,4 @@
-Verovio 3.7.0-dev-24e05e9
+Verovio 3.7.0-dev-e79a95a
 
 Example usage:
 
@@ -54,9 +54,10 @@ Input and page layout options
  --staccato-center              Align staccato and staccatissimo articulations with center of the note
  --svg-bounding-boxes           Include bounding boxes in SVG output
  --svg-view-box                 Use viewBox on svg root element for easy scaling of document
- --svg-html5                    Write data-id and data-class attributes for JS usage and id clash avoidance.
- --svg-format-raw               Writes SVG out with no line indenting or non-content newlines.
- --svg-remove-xlink             Removes the xlink: prefix on href attributes for compatibility with some newer browsers.
+ --svg-html5                    Write data-id and data-class attributes for JS usage and id clash avoidance
+ --svg-format-raw               Writes SVG out with no line indenting or non-content newlines
+ --svg-remove-xlink             Removes the xlink: prefix on href attributes for compatibility with some newer browsers
+ --svg-additional-attribute* <s>	Add additional attribute for graphical elements in SVG as "data-*", for example, "note@pname" would add a "data-pname" to all note elements
  --unit <i>                     The MEI unit (1⁄2 of the distance between the staff lines) (default: 9; min: 6; max: 20)
  --use-brace-glyph              Use brace glyph from current font
  --use-facsimile                Use information in the <facsimile> element to control the layout
@@ -128,6 +129,7 @@ General layout options
  --thick-barline-thickness <f>  The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
  --tie-endpoint-thickness <f>   The Endpoint tie thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
  --tie-midpoint-thickness <f>   The midpoint tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
+ --tie-min-length <f>           The minimum length of tie in MEI units (default: 2.00; min: 0.00; max: 10.00)
  --tuplet-bracket-thickness <f> The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
  --tuplet-num-head              Placement of tuplet number on the side of the note head
 
