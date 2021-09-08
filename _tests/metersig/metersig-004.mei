@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Support for invisible or one-number meter</title>
+            <title>Support for enclose meter signatures</title>
          </titleStmt>
          <pubStmt>
             <respStmt>
                <persName role="encoder">Klaus Rettinghaus</persName>
+               <persName role="editor">Laurent Pugin</persName>
             </respStmt>
-            <date isodate="2017-04-28">28 Apr 2017</date>
-            <pubPlace>
-               <ref target="https://github.com/rism-digital/verovio/pull/563" />
-            </pubPlace>
+            <date isodate="2021-09-08">2021-09-08</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports the display of single-number time signatures, and also offers the possibility of rendering the time signature invisible.</annot>
+            <annot>Verovio supports the display of enclose time signatures</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="3.7.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -39,7 +37,7 @@
                   <staffGrp>
                      <staffDef n="1" lines="5" key.mode="major" key.sig="0">
                         <clef shape="G" line="2" />
-                        <meterSig count="3" unit="8" />
+                        <meterSig count="3" enclose="paren" unit="8" />
                      </staffDef>
                   </staffGrp>
                </scoreDef>
@@ -56,7 +54,7 @@
                      </staff>
                   </measure>
                   <scoreDef n="1">
-                     <meterSig count="3" unit="8" form="num"/>
+                     <meterSig count="3" enclose="paren" unit="8" form="num"/>
                   </scoreDef>
                   <measure n="1">
                      <staff n="1">
@@ -70,7 +68,7 @@
                      </staff>
                   </measure>
                   <scoreDef n="1">
-                     <meterSig sym="cut" />
+                     <meterSig sym="cut" enclose="paren"/>
                   </scoreDef>
                   <measure right="end" n="1">
                      <staff n="1">
