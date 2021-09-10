@@ -1,4 +1,4 @@
-Verovio 3.7.0-dev-cb7b93c
+Verovio 3.7.0-dev-81ec897
 
 Example usage:
 
