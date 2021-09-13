@@ -8,6 +8,10 @@ version-footer: true
 ---
 <div class="row">
 
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/jquery.highlight-within-textarea.css" type="text/css" />
+    <script src="{{ site.baseurl }}/javascript/highlight/jquery.highlight-within-textarea.js"></script>
+
+
     <div class="col-md-3 sidebar-offcanvas" id="sidebar" role="navigation">
         <div class="panel panel-default">
             {% include other-sidebar.html %}
@@ -19,7 +23,7 @@ version-footer: true
             <div style="overflow-x: scroll; overflow-y: hidden;">
             <table class="keyboard">
                 <tr>
-                    <td class="keyboard">
+                    <td class="keyboard keyboard-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-default btn-sm" onclick="javascript:onduration(9)">
                               <span class="glyphicon keyboard-00"></span>
@@ -64,7 +68,7 @@ version-footer: true
                     </td>
                 </tr>
                 <tr>
-                    <td class="keyboard">
+                    <td class="keyboard keyboard-center">
                           <map id="piano_map" name="piano_map">
                             <area shape="rect" coords="17,3,32,52" href="javascript:onpitch('C', 1, 1, 61)" />
                             <area shape="rect" coords="42,3,57,52" href="javascript:onpitch('D', 1, 1, 63)" />
@@ -147,7 +151,7 @@ version-footer: true
                 </tr>
                 <tr>
                     <td class="keyboard">
-                        <select id="key_01" name="key_01" class="form-control">
+                        <select id="keysig_01" name="keysig_01" class="form-control">
                             <option value="">Key signature ...</option>
                             <option value="xF">1 ♯</option>
                             <option value="xFC">2 ♯</option>
@@ -173,7 +177,8 @@ version-footer: true
                 </tr>
                 <tr>
                     <td class="keyboard">
-                        <input type="input" id="incipit_01" name="incipit_01" class="form-control" placeholder="Plaine &amp; Easie code …" />
+                        <textarea type="input" id="incipit_01" name="incipit_01" class="form-control" placeholder="Plaine &amp; Easie code …" ></textarea>
+                        <div class="alert alert-warning" id="warnings_01" style="display: none;" role="alert"></div>
                     </td>
                 </tr>
                 <tr>
@@ -183,6 +188,8 @@ version-footer: true
                 </tr>
             </table>
             </div>
+
+            
 
             <div class="panel-body">
                  <pre class="prettyprint" id="mei_output"  style="overflow: auto; width: auto; word-wrap: normal; display: none;">
@@ -232,6 +239,7 @@ version-footer: true
     // reset the incipit
     function clear_incipit() {
         $('#incipit_01').val('');
+        $("#incipit_01").trigger("input");
         current_oct = -1;
         reset_undos();
         update_incipit();
@@ -280,6 +288,7 @@ version-footer: true
         pitch_str += pitch;
         undos.push( $('#incipit_01').val() );
         $('#incipit_01').val($('#incipit_01').val() + pitch_str );
+        $("#incipit_01").trigger("input");
         update_incipit();
         activate_buttons();
 
@@ -315,6 +324,7 @@ version-footer: true
         rest_str += '-';
         undos.push( $('#incipit_01').val() );
         $('#incipit_01').val($('#incipit_01').val() + rest_str );
+        $("#incipit_01").trigger("input");
         update_incipit();
         activate_buttons();
     }
@@ -323,6 +333,7 @@ version-footer: true
     {
         undos.push( $('#incipit_01').val() );
         $('#incipit_01').val($('#incipit_01').val() + '/' );
+        $("#incipit_01").trigger("input");
         update_incipit();
         activate_buttons();
     }
@@ -331,6 +342,7 @@ version-footer: true
     {
         undo_str = undos.pop()
         $('#incipit_01').val( undo_str );
+        $("#incipit_01").trigger("input");
         update_incipit();
         activate_buttons();
 
@@ -356,7 +368,7 @@ version-footer: true
     {
         pe_incipit('',
                         "clef_01",
-                        "key_01",
+                        "keysig_01",
                         "timesig_01",
                         "incipit_01",
                         "render_01");
@@ -387,7 +399,7 @@ version-footer: true
         update_incipit();
     });
 
-    $('#key_01').change(function(event){
+    $('#keysig_01').change(function(event){
         update_incipit();
     });
 
@@ -466,7 +478,6 @@ version-footer: true
         pae_timesig = $('#' + jquery_timesig).val();
         pae_incipit = $('#' + jquery_incipit).val();
 
-
         pae = "@clef:" + pae_clef + "\n";
         pae = pae + "@keysig:" + pae_keysig + "\n";
         pae = pae + "@key:\n";
@@ -481,6 +492,42 @@ version-footer: true
         return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
     }
 
+    function onValidatePAE(input) {
+
+        if (input == '') {
+            $('#warnings_01').hide();
+            return;
+        }
+
+        pae = "@clef:" + $('#clef_01').val() + "\n";
+        pae = pae + "@keysig:" + $('#keysig_01').val() + "\n";
+        pae = pae + "@timesig:" + $('#timesig_01').val() + "\n";
+        pae = pae + "@data: " + $('#incipit_01').val() + "\n";
+
+        highlights = [];
+        messages = []
+        validation = vrvToolkit.validatePAE(pae);
+        //console.log("Validate", validation);
+        if (validation.hasOwnProperty("data")) {
+            data = validation["data"];
+            //console.log(data);
+            for (i = 0; i < data.length; i++) {
+                messages.push(data[i]["text"]);
+                j = data[i]["column"];
+                if (j > 0) highlights.push([j - 1, j]);
+            }
+        }
+        if (messages.length > 0) {
+            $('#warnings_01').html(messages.join("<br/>"));
+            $('#warnings_01').show();
+        }
+        else {
+            $('#warnings_01').hide();
+        }
+        //console.log(highlights);
+        return [highlights];
+    }
+
     $( document ).ready(function() {
 
         // Load the default file or the file passed in the URL
@@ -491,6 +538,8 @@ version-footer: true
             $("#incipit_01").val(pae);
             update_incipit();
         }
+
+        $("#incipit_01").highlightWithinTextarea({ highlight: onValidatePAE });
     });
 
 
