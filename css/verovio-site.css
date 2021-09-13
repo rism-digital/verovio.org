@@ -1,0 +1,43 @@
+
+// images come from the verovio-theme
+span.keyboard-00 { background-image: url(/assets/css/icons/00.png) !important; }
+span.keyboard-01 { background-image: url(/assets/css/icons/01.png) !important; }
+span.keyboard-02 { background-image: url(/assets/css/icons/02.png) !important; }
+span.keyboard-04 { background-image: url(/assets/css/icons/04.png) !important; }
+span.keyboard-08 { background-image: url(/assets/css/icons/08.png) !important; }
+span.keyboard-16 { background-image: url(/assets/css/icons/16.png) !important; }
+span.keyboard-32 { background-image: url(/assets/css/icons/32.png) !important; }
+span.keyboard-64 { background-image: url(/assets/css/icons/64.png) !important; }
+span.keyboard-rest { background-image: url(/assets/css/icons/rest.png) !important; }
+span.keyboard-dot { background-image: url(/assets/css/icons/dot.png) !important; }
+span.keyboard-barline { background-image: url(/assets/css/icons/barline.png) !important; }
+
+span.keyboard-00,
+span.keyboard-01,
+span.keyboard-02,
+span.keyboard-04,
+span.keyboard-08,
+span.keyboard-16,
+span.keyboard-32,
+span.keyboard-64,
+span.keyboard-rest,
+span.keyboard-dot,
+span.keyboard-barline
+{
+    top: 3px;
+    height: 18px;
+    margin: 0px !important;
+    left: -4px;
+    width: 14px !important;
+}
+
+table.keyboard {
+    width: 100%;
+}
+td.keyboard {
+    padding: 10px;
+}
+
+td.keyboard-center {
+    text-align: center;
+}
