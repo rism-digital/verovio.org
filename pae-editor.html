@@ -508,6 +508,15 @@ version-footer: true
         messages = []
         validation = vrvToolkit.validatePAE(pae);
         //console.log("Validate", validation);
+        if (validation.hasOwnProperty("clef")) {
+            messages.push(data["clef"]["text"]);
+        }
+        if (validation.hasOwnProperty("keysig")) {
+            messages.push(data["keysig"]["text"]);
+        }
+        if (validation.hasOwnProperty("timesig")) {
+            messages.push(data["timesig"]["text"]);
+        }
         if (validation.hasOwnProperty("data")) {
             data = validation["data"];
             //console.log(data);
