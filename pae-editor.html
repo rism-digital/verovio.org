@@ -396,14 +396,17 @@ version-footer: true
     });
 
     $('#clef_01').change(function(event){
+        $("#incipit_01").trigger("input");
         update_incipit();
     });
 
     $('#keysig_01').change(function(event){
+        $("#incipit_01").trigger("input");
         update_incipit();
     });
 
     $('#timesig_01').keyup(function(event){
+        $("#incipit_01").trigger("input");
         update_incipit();
     });
 
