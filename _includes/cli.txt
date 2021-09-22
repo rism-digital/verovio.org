@@ -1,4 +1,4 @@
-Verovio 3.7.0-dev-4b0bca7
+Verovio 3.7.0-dev-308f84e
 
 Example usage:
 
@@ -48,6 +48,7 @@ Input and page layout options
  --page-margin-right <i>        The page right margin (default: 50; min: 0; max: 500)
  --page-margin-top <i>          The page top margin (default: 50; min: 0; max: 500)
  --page-width <i>               The page width (default: 2100; min: 100; max: 60000)
+ --pedal-style <s>              The global pedal style (default: "auto"; other values: "line", "pedstar", "altpedstar")
  --preserve-analytical-markup   Preserves the analytical markup in MEI
  --remove-ids                   Remove XML IDs in the MEI output that are not referenced
  --shrink-to-fit                Scale down page content to fit the page height if needed
@@ -83,6 +84,7 @@ General layout options
  --grace-right-align            Align the right position of a grace group with all staves
  --hairpin-size <f>             The haripin size in MEI units (default: 3.00; min: 1.00; max: 8.00)
  --hairpin-thickness <f>        The thickness of the hairpin (default: 0.20; min: 0.10; max: 0.80)
+ --handwritten-font* <s>        Fonts that emulate hand writing and require special handling
  --harm-dist <f>                The default distance from the staff of harmonic indications (default: 1.00; min: 0.50; max: 16.00)
  --justification-staff <f>      The staff justification (default: 1.00; min: 0.00; max: 10.00)
  --justification-system <f>     The system spacing justification (default: 1.00; min: 0.00; max: 10.00)
