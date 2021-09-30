@@ -1,4 +1,4 @@
-Verovio 3.7.0-dev-7b9dc78
+Verovio 3.7.0-dev-d23b6a5
 
 Example usage:
 
@@ -51,6 +51,7 @@ Input and page layout options
  --pedal-style <s>              The global pedal style (default: "auto"; other values: "line", "pedstar", "altpedstar")
  --preserve-analytical-markup   Preserves the analytical markup in MEI
  --remove-ids                   Remove XML IDs in the MEI output that are not referenced
+ --show-runtime                 Display the total runtime on command-line
  --shrink-to-fit                Scale down page content to fit the page height if needed
  --staccato-center              Align staccato and staccatissimo articulations with center of the note
  --svg-bounding-boxes           Include bounding boxes in SVG output
