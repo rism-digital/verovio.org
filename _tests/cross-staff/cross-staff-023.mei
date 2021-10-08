@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs with cross-staff content</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-10-08">2021-10-08</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slurs must take into account cross-staff content.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <label>Piano</label>
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                        <staffDef n="1" lines="5" ppq="4">
+                           <clef shape="F" line="4" />
+                           <keySig sig="0" />
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" ppq="4">
+                           <clef shape="F" line="4" />
+                           <keySig sig="0" />
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                        <grpSym symbol="brace" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="21">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nknqyq" dur="16" staff="2" oct="3" pname="e" stem.dir="up" />
+                              <note dur="16" oct="3" pname="b" stem.dir="down" />
+                              <note dur="16" oct="3" pname="a" stem.dir="down">
+                                 <accid accid="f" accid.ges="f" />
+                              </note>
+                              <note dur="16" oct="3" pname="d" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="16" staff="2" oct="3" pname="e" stem.dir="up" />
+                              <note dur="16" oct="3" pname="b" stem.dir="down" />
+                              <note dur="16" oct="3" pname="a" stem.dir="down" accid.ges="f" />
+                              <note dur="16" oct="3" pname="d" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="16" staff="2" oct="3" pname="e" stem.dir="up" />
+                              <note dur="16" oct="3" pname="b" stem.dir="down" />
+                              <note dur="16" oct="3" pname="a" stem.dir="down" accid.ges="f" />
+                              <note dur="16" oct="3" pname="d" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur="16" staff="2" oct="3" pname="e" stem.dir="up" />
+                              <note dur="16" oct="3" pname="b" stem.dir="down" />
+                              <note dur="16" oct="3" pname="a" stem.dir="down" accid.ges="f" />
+                              <note xml:id="n67uxo" dur="16" oct="3" pname="d" stem.dir="down" />
+                           </beam>
+                           <clef shape="G" line="2" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <note dur="8" oct="3" pname="e" stem.dir="down">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="8" />
+                           <note dur="8" oct="3" pname="e" stem.dir="down">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="8" />
+                           <note dur="8" oct="3" pname="e" stem.dir="down">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="8" />
+                           <note dur="8" oct="3" pname="e" stem.dir="down">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <tempo place="above" staff="1" tstamp="1.000000" xml:lang="it" midi.bpm="96">
+                        <rend fontfam="Times New Roman" fontweight="bold">Un peu retenu</rend>
+                     </tempo>
+                     <slur startid="#nknqyq" endid="#n67uxo" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
