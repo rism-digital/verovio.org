@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Fingering size</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-10-11">2021-10-11</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Fingering size can be adjusted with the --fingering-scale option. By default it is 0.75 of the lyric font size. It can range from 0.25 to 1.0. The font weight for fingering is bold.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[ { "fingeringScale": 0.6 }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <clef shape="G" line="2" />
+                        <keySig sig="1s" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="a" stem.dir="down" />
+                              <note xml:id="nkly" dur="8" oct="5" pname="a" stem.dir="down" />
+                              <note xml:id="n5fs" dur="8" oct="5" pname="g" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <fing staff="1" startid="#nkly">2</fing>
+                     <fing staff="1" startid="#n5fs">5</fing>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ngfh" dots="1" dur="4" oct="5" pname="g" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <fing staff="1" startid="#ngfh">1</fing>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="noco" dur="8" oct="5" pname="f" stem.dir="down" accid.ges="s" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <fing staff="1" startid="#noco">3</fing>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="n4jr" dur="16" oct="5" pname="d" stem.dir="down" />
+                              <note dur="16" oct="5" pname="c" stem.dir="down">
+                                 <accid accid="s" accid.ges="s" />
+                              </note>
+                              <note dur="16" oct="5" pname="d" stem.dir="down" />
+                              <note dur="16" oct="5" pname="e" stem.dir="down" />
+                              <note dur="16" oct="5" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="n736" dur="16" oct="5" pname="g" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <fing staff="1" startid="#n4jr">5</fing>
+                     <fing staff="1" startid="#n736">4</fing>
+                  </measure>
+                  <measure right="end" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="njja" dur="8" oct="5" pname="a" stem.dir="down" />
+                           <rest dur="8" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <fing staff="1" startid="#njja">2</fing>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
