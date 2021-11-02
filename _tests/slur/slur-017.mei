@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slur collision detection with content from other staves</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-02">2021-11-02</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2446" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>The slur starts and ends on the upper staff, but the content to avoid is partially defined on the lower staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="172">
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <grpSym symbol="brace" />
+                        <label>Piano</label>
+                        <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.mode="major" key.sig="4s" meter.count="4" meter.unit="4" meter.sym="common" />
+                        <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.mode="major" key.sig="4s" meter.count="4" meter.unit="4" meter.sym="common" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="179">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="true">
+                                 <note xml:id="note-0000002081589455" dur.ppq="4" dur="8" oct="5" pname="a" stem.dir="down" />
+                                 <note dur.ppq="4" dur="8" oct="5" pname="f" stem.dir="down" accid.ges="s" />
+                                 <note dur.ppq="4" dur="8" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="true">
+                                 <note dur.ppq="4" dur="8" oct="4" pname="a" stem.dir="up" />
+                                 <note dur.ppq="4" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="s" />
+                                 <note dur.ppq="4" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="true">
+                                 <note dur.ppq="4" dur="8" oct="4" pname="a" stem.dir="up" />
+                                 <note dur.ppq="4" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="s" />
+                                 <note dur.ppq="4" dur="8" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="true">
+                                 <note dur.ppq="4" dur="8" staff="2" oct="3" pname="a" stem.dir="up" />
+                                 <note dur.ppq="4" dur="8" staff="2" oct="3" pname="f" stem.dir="up" accid.ges="s" />
+                                 <note dur.ppq="4" dur="8" staff="2" oct="3" pname="c" stem.dir="up" accid.ges="s" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="3">
+                           <chord dur.ppq="48" dur="1" stem.dir="up">
+                              <note xml:id="note-0000000742682538" oct="2" pname="f" accid.ges="s" />
+                              <note xml:id="note-0000000066447736" oct="2" pname="c" accid.ges="s" />
+                              <note xml:id="note-0000002081793214" oct="1" pname="f" accid.ges="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dynam place="below" staff="1" tstamp="1.000000">f</dynam>
+                     <slur startid="#note-0000002081589455" endid="#note-0000002140675496" />
+                     <tie startid="#note-0000000742682538" endid="#note-0000001881443311" />
+                     <tie startid="#note-0000000066447736" endid="#note-0000000429164090" />
+                     <tie startid="#note-0000002081793214" endid="#note-0000000320135545" />
+                  </measure>
+                  <measure n="180">
+                     <staff n="1">
+                        <layer n="1">
+                           <mSpace />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur.ppq="1" dur="16" oct="3" pname="a" stem.dir="up" />
+                              <note dur.ppq="1" dur="16" oct="3" pname="f" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" oct="3" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" oct="2" pname="a" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="1" dur="16" oct="3" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" oct="3" pname="f" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" oct="3" pname="a" stem.dir="up" />
+                              <note dur.ppq="1" dur="16" oct="4" pname="c" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="a" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="f" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="a" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note xml:id="note-0000002140675496" dur.ppq="1" dur="16" staff="1" oct="4" pname="a" stem.dir="down" />
+                           </beam>
+                        </layer>
+                        <layer n="3">
+                           <chord dur.ppq="16" dur="1" stem.dir="up">
+                              <note xml:id="note-0000001881443311" oct="2" pname="f" accid.ges="s" />
+                              <note xml:id="note-0000000429164090" oct="2" pname="c" accid.ges="s" />
+                              <note xml:id="note-0000000320135545" oct="1" pname="f" accid.ges="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
