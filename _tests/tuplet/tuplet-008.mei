@@ -8,8 +8,11 @@
             <title>Tuplets with stemless notes</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-24</date>
+            <date isodate="2017-04-24">2017-04-24</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>When tuplets contain a stemless note, Verovio correctly renders the brackets.</annot>
          </notesStmt>
