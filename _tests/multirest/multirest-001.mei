@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Multi measure rest width and scaling</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Andriy Makarchuk</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-03">2021-11-03</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2455" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Multi measure rest width is scaled based on number attribute. The minimum width will have logarithmic scaling based on its @num attribute (if it's more than 10). The @width attribute will increase minimum measure width.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" ppq="1">
+                        <label>Tuba</label>
+                        <labelAbbr>Tba.</labelAbbr>
+                        <instrDef midi.channel="1" midi.instrnum="58" midi.volume="78.00%" />
+                        <clef shape="F" line="4" />
+                        <keySig sig="0" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="1" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="1" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="2" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="3" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="3" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="5" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="5" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="16">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="6" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="6" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="22">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="7" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="7" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="29">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="8" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="37">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="9" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="9" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="46">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="10" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="10" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="56">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="11" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="11" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="67">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="12" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="12" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="79">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="13" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="13" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="92">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="14" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="14" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="106">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="15" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="15" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="121">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="16" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="16" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="137">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="17" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="17" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="154">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="18" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="18" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="172">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="19" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="19" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="191">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="20" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="20" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="211">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="21" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="21" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <pb />
+                  <measure right="dbl" n="232">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="22" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="22" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="254">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="23" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="23" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="277">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="24" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="24" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="301">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="25" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="25" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="326">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="26" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="26" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="352">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="27" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="27" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="379">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="28" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="28" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="407">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="29" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="29" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="436">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="30" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="30" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="466">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="31" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="31" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="497">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="32" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="32" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="529">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="33" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="33" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="562">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="34" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="34" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="596">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="35" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="35" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="631">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="36" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="36" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="667">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="37" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="37" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="704">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="38" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="38" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="742">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="39" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="39" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="781">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="40" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="40" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="821">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="41" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="41" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="862">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="42" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="42" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <pb />
+                  <measure right="dbl" n="904">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="43" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="43" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="947">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="44" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="44" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="991">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="45" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="45" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="1036">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="46" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="46" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1082">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="47" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="47" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1129">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="48" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="48" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="1177">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="49" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="49" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1226">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="50" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="50" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1276">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="51" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="51" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="1327">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="52" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="52" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1379">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="53" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="53" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1432">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="54" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="54" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="1486">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="55" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="55" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1541">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="56" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="56" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1597">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="57" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="57" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure right="dbl" n="1654">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="58" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="58" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="1712">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="59" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="59" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="1771">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="60" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest num="60" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure n="1831">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
