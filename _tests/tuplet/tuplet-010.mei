@@ -8,8 +8,11 @@
             <title>Nested tuplets</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-24</date>
+            <date isodate="2017-04-24">2017-04-24</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio appropriately separates numbers and brackets belonging to different, nested tuplets.</annot>
          </notesStmt>

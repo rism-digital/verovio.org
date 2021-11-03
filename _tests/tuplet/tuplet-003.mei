@@ -8,8 +8,11 @@
             <title>Collision between tuplet bracket and staff</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-20</date>
+            <date isodate="2017-04-20">2017-04-20</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio avoids collisions between a horizontal tuplet bracket and the staff lines.</annot>
          </notesStmt>

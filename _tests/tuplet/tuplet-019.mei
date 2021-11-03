@@ -7,13 +7,17 @@
          <titleStmt>
             <title />
          </titleStmt>
-         <pubStmt />
+         <pubStmt>
+            <date isodate="2018-03-29">2018-03-29</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application isodate="2018-03-29T21:38:14" version="2.7.1-1d517b8" label="1">
+            <application version="2.7.1" label="1">
                <name>Verovio</name>
-               <p>Transcoded from Humdrum</p>
             </application>
          </appInfo>
       </encodingDesc>

@@ -8,8 +8,11 @@
             <title>Tuplets with brackets on beams with chords</title>
          </titleStmt>
          <pubStmt>
-            <date>2019-02-12</date>
+            <date isodate="2019-02-12">2019-02-12</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>The length of tuplet brackets ecompass notes in chords.</annot>
          </notesStmt>
