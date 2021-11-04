@@ -12,11 +12,14 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-20</date>
+            <date isodate="2021-01-20">2021-01-20</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/1127" />
             </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>The relation of the notes to the tuplet numbers/brackets in each measure should be the same.</annot>
          </notesStmt>

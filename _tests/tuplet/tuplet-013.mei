@@ -8,8 +8,11 @@
             <title>Tuplets on rests (1)</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-02</date>
+            <date isodate="2017-04-25">2017-05-02</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Tuplet numbers and brackets are diplayed correctly also when a tuplet only contains rests.</annot>
          </notesStmt>

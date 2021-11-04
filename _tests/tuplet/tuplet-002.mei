@@ -8,8 +8,11 @@
             <title>Placement of tuplet brackets</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-20</date>
+            <date isodate="2017-04-20">2017-04-20</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio allows to choose whether tuplet brackets should be shown above or below the staff.</annot>
          </notesStmt>
