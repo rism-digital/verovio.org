@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Portato slurs</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-09">2021-11-09</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2475" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Portato slurs work with stem side or centered staccato as well as with other articulations.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <staffDef n="1" lines="5" ppq="4">
+                           <clef shape="G" line="2" />
+                           <keySig sig="2f" />
+                           <meterSig count="4" sym="common" unit="4" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" ppq="4">
+                           <clef shape="F" line="4" />
+                           <keySig sig="2f" />
+                           <meterSig count="4" sym="common" unit="4" />
+                        </staffDef>
+                        <grpSym symbol="brace" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="13">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur.ppq="12" dur="2" oct="4" pname="g" stem.dir="up" />
+                           <note xml:id="note-0006-11260-10990-1" dots="1" dur.ppq="12" dur="2" oct="5" pname="g" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur.ppq="4" dur="4" />
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <artic artic="stacc" place="below" />
+                              <note xml:id="note-0006-11130-11080-2" oct="4" pname="d" />
+                              <note oct="3" pname="b" accid.ges="f" />
+                           </chord>
+                           <note xml:id="note-0006-11200-11080-2" dur.ppq="4" dur="4" oct="4" pname="c" stem.dir="down">
+                              <artic artic="stacc" place="below" />
+                           </note>
+                           <rest dur.ppq="4" dur="4" />
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <artic artic="stacc" place="below" />
+                              <note oct="5" pname="d">
+                                 <accid accid="f" accid.ges="f" />
+                              </note>
+                              <note xml:id="note-0006-11330-11030-2" oct="4" pname="b" accid.ges="f" />
+                              <note oct="4" pname="g" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <artic artic="stacc" place="below" />
+                              <note oct="5" pname="d" accid.ges="f" />
+                              <note oct="4" pname="b" accid.ges="f" />
+                              <note xml:id="note-0006-11400-11050-2" oct="4" pname="g" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <rest dur.ppq="4" dur="4" />
+                           <note xml:id="note-0006-11130-11270-1" dur.ppq="4" dur="4" oct="2" pname="g" stem.dir="up">
+                              <artic artic="stacc" place="below" />
+                           </note>
+                           <note xml:id="note-0006-11200-11270-1" dur.ppq="4" dur="4" oct="2" pname="g" stem.dir="up">
+                              <artic artic="stacc" place="below" />
+                           </note>
+                           <rest dur.ppq="4" dur="4" />
+                           <note xml:id="note-0006-11330-11170-2" dur.ppq="4" dur="4" oct="4" pname="e" stem.dir="down">
+                              <accid accid="n" accid.ges="n" />
+                              <artic artic="stacc" place="above" />
+                           </note>
+                           <note xml:id="note-0006-11400-11170-2" dur.ppq="4" dur="4" oct="4" pname="e" stem.dir="down" accid.ges="n">
+                              <artic artic="stacc" place="above" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <slur startid="#note-0006-11260-10990-1" endid="#note-0006-9540-11480-1" curvedir="above" />
+                     <slur startid="#note-0006-11130-11080-2" endid="#note-0006-11200-11080-2" curvedir="below" />
+                     <slur startid="#note-0006-11330-11030-2" endid="#note-0006-11400-11050-2" curvedir="below" />
+                     <slur startid="#note-0006-11130-11270-1" endid="#note-0006-11200-11270-1" />
+                     <slur startid="#note-0006-11330-11170-2" endid="#note-0006-11400-11170-2" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
