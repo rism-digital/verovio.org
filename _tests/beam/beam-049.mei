@@ -22,10 +22,10 @@
             <annot>Beams can have mixed stem direction defined in MEI (treble staff, each first tuplet beam)</annot>
          </notesStmt>
       </fileDesc>
-      <encodingDesc xml:id="encoding-0000000462012660">
-         <appInfo xml:id="app-0000000296046912">
-            <application xml:id="application-0000000479841714" version="3.0.0" label="0">
-               <name xml:id="name-0000000283256295">Verovio</name>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
             </application>
          </appInfo>
       </encodingDesc>
