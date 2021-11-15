@@ -28,23 +28,23 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" notationtype="mensural.black"/>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" notationtype="mensural.black" />
                   </staffGrp>
                </scoreDef>
                <section>
                   <staff n="1">
                      <layer n="1">
                         <note dur="longa" oct="5" pname="c">
-                           <plica dir="up"/>
+                           <plica dir="up" />
                         </note>
                         <note dur="longa" oct="5" pname="c">
-                           <plica dir="down"/>
+                           <plica dir="down" />
                         </note>
                         <note dur="brevis" oct="5" pname="c">
-                           <plica dir="up"/>
+                           <plica dir="up" />
                         </note>
                         <note dur="brevis" oct="5" pname="c">
-                           <plica dir="down"/>
+                           <plica dir="down" />
                         </note>
                      </layer>
                   </staff>
