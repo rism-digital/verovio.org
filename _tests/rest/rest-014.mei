@@ -31,20 +31,20 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef clef.shape="G" clef.line="2" n="1" lines="5" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
                </scoreDef>
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <rest dur="maxima" />
-                        <rest dur="longa" />
-                        <rest dur="brevis" />
-                        <rest dur="semibrevis" />
-                        <rest dur="minima" />
-                        <rest dur="semiminima" />
-                        <rest dur="fusa" />
-                        <rest dur="semifusa" />
+                        <rest label="Mensural maxima rest" dur.ges="semibrevis" dur="maxima" />
+                        <rest label="Mensural longa rest" dur.ges="semibrevis" dur="longa" />
+                        <rest label="Mensural brevis rest" dur.ges="semibrevis" dur="brevis" />
+                        <rest label="Mensural semibrevis rest" dur.ges="semibrevis" dur="semibrevis" />
+                        <rest label="Mensural minima rest" dur.ges="semibrevis" dur="minima" />
+                        <rest label="Mensural semiminima rest" dur.ges="semibrevis" dur="semiminima" />
+                        <rest label="Mensural fusa rest" dur.ges="semibrevis" dur="fusa" />
+                        <rest label="Mensural semifusa rest" dur.ges="semibrevis" dur="semifusa" />
                      </layer>
                   </staff>
                </section>

@@ -8,7 +8,7 @@
             <title>Rests example</title>
          </titleStmt>
          <pubStmt>
-            <date>2020-09-03</date>
+            <date isodate="2020-09-03">2020-09-03</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -19,7 +19,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="3.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
