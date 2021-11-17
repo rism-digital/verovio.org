@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs at system break</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-17">2021-11-17</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2482" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>The vertical location of slur start and end points at system breaks is influenced by the start and end pitch of the slur.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "breaks": "encoded" }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <note xml:id="np1ao4t" dur="4" oct="6" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#np1ao4t" endid="#ns5hu7w" />
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="f" accid.ges="n" />
+                              <note xml:id="ns5hu7w" dur="8" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <rest dur="4" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <note xml:id="npc2nab" dur="4" oct="6" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#npc2nab" endid="#n386fvk" />
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="f" accid.ges="n" />
+                              <note xml:id="n386fvk" dur="8" oct="6" pname="e" accid.ges="n" />
+                           </beam>
+                           <rest dur="4" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                           <note xml:id="niqdqep" dur="4" oct="4" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#niqdqep" endid="#notL10F1" />
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="f" accid.ges="n" />
+                              <note xml:id="notL10F1" dur="8" oct="6" pname="e" accid.ges="n" />
+                           </beam>
+                           <rest dur="4" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
