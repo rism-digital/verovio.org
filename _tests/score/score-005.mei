@@ -56,17 +56,17 @@
                   <measure n="2">
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c" size="cue" accid.ges="n" />
+                           <note dur="4" oct="4" pname="c" cue="true" accid.ges="n" />
                            <chord dur="4">
                               <note oct="4" pname="c" accid.ges="n" />
-                              <note oct="4" pname="e" size="cue" accid.ges="n" />
-                              <note oct="4" pname="g" size="cue" accid.ges="n" />
+                              <note oct="4" pname="e" cue="true" accid.ges="n" />
+                              <note oct="4" pname="g" cue="true" accid.ges="n" />
                               <note oct="5" pname="c" accid.ges="n" />
                            </chord>
-                           <chord dur="4" size="cue">
-                              <note oct="4" pname="d" size="cue" accid.ges="n" />
-                              <note oct="4" pname="f" size="cue" accid.ges="n" />
-                              <note oct="4" pname="a" size="cue" accid.ges="n" />
+                           <chord dur="4" cue="true">
+                              <note oct="4" pname="d" cue="true" accid.ges="n" />
+                              <note oct="4" pname="f" cue="true" accid.ges="n" />
+                              <note oct="4" pname="a" cue="true" accid.ges="n" />
                            </chord>
                         </layer>
                      </staff>
