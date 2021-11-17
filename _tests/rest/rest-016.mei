@@ -46,7 +46,7 @@
                      </staffDef>
                   </staffGrp>
                </scoreDef>
-               <section>
+               <section n="1">
                   <measure metcon="false">
                      <staff n="1">
                         <layer n="1">
@@ -70,9 +70,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false"></staff>
-                  </measure>
+               </section>
+               <section n="2" restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5">
