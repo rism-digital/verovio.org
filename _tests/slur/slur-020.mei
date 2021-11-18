@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slur positioning</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-18">2021-11-18</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2476" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Which layers to avoid for slurs is automatically detected.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <staffDef n="1" lines="5" ppq="4">
+                           <clef shape="G" line="2" />
+                           <keySig sig="2f" />
+                           <meterSig count="4" sym="common" unit="4" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" ppq="4">
+                           <clef shape="F" line="4" />
+                           <keySig sig="2f" />
+                           <meterSig count="4" sym="common" unit="4" />
+                        </staffDef>
+                        <grpSym symbol="brace" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="54">
+                     <staff n="1">
+                        <layer n="5">
+                           <beam>
+                              <chord dur.ppq="2" dur="8" staff="2" stem.dir="up">
+                                 <note oct="3" pname="g" />
+                                 <note oct="4" pname="c" />
+                              </chord>
+                              <note dur.ppq="2" dur="8" staff="2" oct="3" pname="b" stem.dir="up" accid.ges="f" />
+                              <note dur.ppq="2" dur="8" staff="2" oct="3" pname="d" stem.dir="up" />
+                              <chord dur.ppq="2" dur="8" staff="2" stem.dir="up">
+                                 <note oct="3" pname="g" />
+                                 <note oct="4" pname="d" />
+                              </chord>
+                              <note dur.ppq="2" dur="8" staff="2" oct="4" pname="c" stem.dir="up" />
+                              <note dur.ppq="2" dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="f" />
+                           </beam>
+                           <beam>
+                              <chord dur.ppq="2" dur="8" staff="2" stem.dir="up">
+                                 <note oct="3" pname="g" />
+                                 <note oct="4" pname="c" />
+                              </chord>
+                              <note dur.ppq="2" dur="8" staff="2" oct="3" pname="b" stem.dir="up" accid.ges="f" />
+                              <note dur.ppq="2" dur="8" staff="2" oct="3" pname="d" stem.dir="up" />
+                              <chord dur.ppq="2" dur="8" staff="2" stem.dir="up">
+                                 <note oct="3" pname="g" />
+                                 <note oct="4" pname="d" />
+                              </chord>
+                              <note dur.ppq="2" dur="8" staff="2" oct="4" pname="c" stem.dir="up" />
+                              <note dur.ppq="2" dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="6">
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="2" pname="g" />
+                              <note oct="1" pname="g" />
+                           </chord>
+                           <rest dur.ppq="4" dur="4" />
+                           <note xml:id="note-0008-10250-12600-2" dur.ppq="4" dur="4" oct="2" pname="c" stem.dir="down">
+                              <accid accid="n" accid.ges="n" />
+                           </note>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note xml:id="note-0008-10350-12560-2" oct="2" pname="g" />
+                              <note oct="1" pname="g" />
+                           </chord>
+                           <rest dur.ppq="4" dur="4" />
+                           <note dur.ppq="4" dur="4" oct="2" pname="c" stem.dir="down" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur startid="#note-0008-10250-12600-2" endid="#note-0008-10350-12560-2" curvedir="above" />
+                     <pedal staff="2" tstamp="1.000000" dir="down" place="below" vgrp="80" />
+                     <pedal staff="2" tstamp="2.900000" dir="up" place="below" vgrp="80" />
+                     <pedal staff="2" tstamp="4.000000" dir="down" place="below" vgrp="80" />
+                     <pedal staff="2" tstamp="5.900000" dir="up" place="below" vgrp="80" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
