@@ -1,4 +1,4 @@
-Verovio 3.7.0-dev-d328057
+Verovio 3.8.0-dev-74b249c
 
 Example usage:
 
@@ -107,7 +107,7 @@ General layout options
  --octave-alternative-symbols   Use alternative symbols for displaying octaves
  --octave-line-thickness <f>    The thickness of the line used for an octave line (default: 0.20; min: 0.10; max: 1.00)
  --pedal-line-thickness <f>     The thickness of the line used for piano pedaling (default: 0.20; min: 0.10; max: 1.00)
- --repeat-bar-line-dot-separation <f>	The default horizontal distance between the dots and the inner barline of a repeat barline (default: 0.30; min: 0.10; max: 1.00)
+ --repeat-bar-line-dot-separation <f>	The default horizontal distance between the dots and the inner barline of a repeat barline (default: 0.36; min: 0.10; max: 1.00)
  --repeat-ending-line-thickness <f>	Repeat and ending line thickness (default: 0.15; min: 0.10; max: 2.00)
  --slur-curve-factor <f>        Slur curve factor - high value means rounder slurs (default: 1.00; min: 0.20; max: 5.00)
  --slur-margin <f>              Slur safety distance in MEI units to obstacles (default: 1.00; min: 0.10; max: 4.00)
