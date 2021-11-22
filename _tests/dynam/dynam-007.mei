@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Between placement of control events</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2020-08-11">2020-08-11</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports between placement of dynamics, dir, hairpin and tempo.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="240">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="2s" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" tstamp="1.000000">p</dynam>
+                     <dynam place="between" staff="1 2" tstamp="3.000000">f</dynam>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
+                        </layer>
+                     </staff>
+                     <dir place="between" staff="1 2" tstamp="1.000000">sempre<lb />molto<lb />legato</dir>
+                     <hairpin staff="1 2" tstamp="3.000000" tstamp2="0m+4.0000" form="dim" place="between" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
+                        </layer>
+                     </staff>
+                     <tempo place="between" staff="1 2" tstamp="1.000000">All<rend rend="sup">o</rend>
+                     </tempo>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

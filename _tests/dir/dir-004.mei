@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tempi/directives vertical alignment</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Tempo indications are always placed above performing directives.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="192">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="0" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="0" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L11F2" dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord xml:id="chord-L11F1" dur="4">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="2" pname="g" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <tempo staff="1" tstamp="1.000000">Allegro non troppo</tempo>
+                     <dir place="above" staff="1" tstamp="1.000000">legato</dir>
+                     <dir place="above" staff="2" tstamp="1.000000">sotto voce</dir>
+                     <slur staff="1" startid="#chord-L11F2" endid="#chord-L25F2" />
+                     <slur staff="2" startid="#chord-L11F1" endid="#chord-L25F1" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="2" pname="g" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="2" pname="g" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="2" pname="g" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                           </chord>
+                           <chord xml:id="chord-L25F2" dur="4">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="2" pname="g" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="c" accid.ges="n" />
+                              <note oct="3" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord xml:id="chord-L25F1" dur="4">
+                              <note oct="2" pname="g" accid.ges="n" />
+                              <note oct="3" pname="d" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Two-note (fingered) temolo example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports fingered tremolos encoded with "trem" elements. The "slash" attribute specifies the number of slashes to be
+					displayed.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="1f" meter.count="4" meter.unit="4">
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="C" clef.line="3" />
+                  </staffGrp>
+               </scoreDef>
+               <section label="feature-example">
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <fTrem beams="3">
+                              <note dur="2" oct="4" pname="f" />
+                              <note dur="2" oct="4" pname="a" />
+                           </fTrem>
+                           <fTrem beams="3">
+                              <note dur="4" oct="4" pname="a" stem.dir="up" />
+                              <note dur="4" oct="5" pname="d" stem.dir="up" />
+                           </fTrem>
+                           <fTrem beams="3">
+                              <note dur="8" oct="5" pname="d" stem.dir="up" />
+                              <note dur="8" oct="4" pname="a" stem.dir="up" />
+                           </fTrem>
+                           <fTrem beams="3">
+                              <note dur="8" oct="4" pname="a" />
+                              <note dur="8" oct="4" pname="f" />
+                           </fTrem>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <fTrem beams="3">
+                              <note dur="2" oct="4" pname="d" />
+                              <note dur="2" oct="4" pname="f" />
+                           </fTrem>
+                           <fTrem beams="3">
+                              <note dur="2" oct="4" pname="d" />
+                              <note dur="2" oct="4" pname="f" />
+                           </fTrem>
+                        </layer>
+                        <layer n="2">
+                           <note dur="1" oct="3" pname="d" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <fTrem beams="2">
+                              <note dur="2" oct="5" pname="f" />
+                              <note dur="2" oct="5" pname="d" />
+                           </fTrem>
+                           <fTrem beams="2">
+                              <note dur="4" oct="5" pname="d" stem.dir="down" />
+                              <note dur="4" oct="4" pname="a" stem.dir="down" />
+                           </fTrem>
+                           <fTrem beams="2">
+                              <note dur="8" oct="4" pname="a" stem.dir="down" />
+                              <note dur="8" oct="5" pname="d" stem.dir="down" />
+                           </fTrem>
+                           <fTrem beams="2">
+                              <note dur="8" oct="5" pname="d" />
+                              <note dur="8" oct="5" pname="f" />
+                           </fTrem>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="d" />
+                           <note dur="4" oct="4" pname="d" />
+                        </layer>
+                        <layer n="2">
+                           <fTrem beams="2">
+                              <note dur="1" oct="3" pname="d" />
+                              <note dur="1" oct="3" pname="f" />
+                           </fTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

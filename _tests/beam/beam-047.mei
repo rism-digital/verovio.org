@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beams and stem directions</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>If there is a "stem.dir" attribute in a note within a beam, this sets the direction of all the notes in the beam, wherever the note is in the beam.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unkown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="e" stem.dir="down" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" stem.dir="down" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" stem.dir="down" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" stem.dir="down" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

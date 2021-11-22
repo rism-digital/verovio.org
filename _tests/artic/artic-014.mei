@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Uninterpreted articulation stroke with @glyph.num or @glyph.name</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-28</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/1934" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Specific SMuFL articulation glyphs can be given in @glyph.name or glyph.num. They are both prioritized over @artic. When both @glyph.num and @glyph.name are encoded, priority is given to @glyph.num.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="64">
+                        <clef shape="G" line="2" />
+                        <keySig mode="major" sig="0" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g">
+                                 <artic artic="stroke" glyph.num="#xE583" />
+                              </note>
+                              <note dur="8" oct="4" pname="f">
+                                 <artic artic="stroke" glyph.num="#xE583" />
+                              </note>
+                              <note dur="8" oct="4" pname="g">
+                                 <artic artic="stroke" glyph.num="#xE583" />
+                              </note>
+                              <note dur="8" oct="4" pname="a">
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
+                              </note>
+                              <note dur="8" oct="4" pname="b">
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
+                              </note>
+                              <note dur="8" oct="5" pname="c">
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam place="below">
+                              <note dur="8" oct="4" pname="g">
+                                 <artic artic="stroke" glyph.num="#xE583" />
+                              </note>
+                              <note dur="8" oct="4" pname="f">
+                                 <artic artic="stroke" glyph.num="#xE583" />
+                              </note>
+                              <note dur="8" oct="4" pname="g">
+                                 <artic artic="stroke" glyph.num="#xE583" />
+                              </note>
+                              <note dur="8" oct="4" pname="a">
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
+                              </note>
+                              <note dur="8" oct="4" pname="b">
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
+                              </note>
+                              <note dur="8" oct="5" pname="c">
+                                 <artic artic="stroke" glyph.name="ornamentVerticalLine" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d" />
+                           <note dur="4" oct="4" pname="d" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

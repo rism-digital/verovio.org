@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Dotted notes in lower voice</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-03-03">2021-03-03</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Drop the dot into the space below the lower part. When the voices are close together, this avoids ambiguity as to which part the dot belongs.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 56, examples 3–6</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.4.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.line="2" clef.shape="G" clef.visible="false" />
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="example_03">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="d" />
+                           <note dots="1" dur="4" oct="4" pname="b" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="4" pname="e" />
+                           <note dots="1" dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section xml:id="example_04">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="b" />
+                              <note dur="16" oct="4" pname="a" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section xml:id="example_05">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="5" pname="c" />
+                           <note dots="1" dur="2" oct="4" pname="b" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="2" oct="4" pname="b" />
+                           <note dots="1" dur="2" oct="4" pname="a" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="c" />
+                           <note dots="1" dur="4" oct="4" pname="b" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="4" pname="b" />
+                           <note dots="1" dur="4" oct="4" pname="a" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section xml:id="example_06">
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="2" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="a" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="b" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="2" oct="4" pname="a" />
+                           <note dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

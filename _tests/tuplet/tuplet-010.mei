@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Nested tuplets</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-24</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio appropriately separates numbers and brackets belonging to different, nested tuplets.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="C" clef.line="1" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="7" numbase="8">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="4" pname="c" />
+                              <beam>
+                                 <tuplet num="5" numbase="4" num.format="ratio">
+                                    <tuplet num="3" numbase="2">
+                                       <note dur="8" oct="4" pname="e" />
+                                       <note dur="8" oct="4" pname="f" />
+                                       <note dur="8" oct="4" pname="g" />
+                                    </tuplet>
+                                    <beam>
+                                       <tuplet num="3" numbase="2">
+                                          <note dur="8" oct="4" pname="b" />
+                                          <note dur="8" oct="4" pname="e" />
+                                          <note dur="8" oct="3" pname="b" />
+                                       </tuplet>
+                                    </beam>
+                                    <note dur="8" oct="4" pname="c" />
+                                 </tuplet>
+                              </beam>
+                              <note dur="8" oct="4" pname="a" />
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

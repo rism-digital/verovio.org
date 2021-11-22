@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Multiple verse example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio also supports multiple lines of lyrics. The layout algorithm takes into account the multiple lines and spaces the
+					staves appropriately.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" meter.count="4" meter.unit="4">
+                  <staffGrp symbol="bracket" n="1" barthru="false">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb n="1" />
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="a" stem.dir="up" />
+                           <note dur="4" oct="4" pname="b" stem.dir="up" />
+                           <note dur="4" oct="5" pname="c" stem.dir="up" />
+                           <beam>
+                              <note dur="8" oct="4" pname="b" stem.dir="up" />
+                              <note dur="8" oct="4" pname="a" stem.dir="up" />
+                           </beam>
+                        </layer>
+                        <layer n="2" label="feature-example">
+                           <note xml:id="d23378e177" dur="4" oct="4" pname="e" stem.dir="down">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">1. Je</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">2. Tau</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">3. Wei</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="d23378e206" dur="4" oct="4" pname="e" stem.dir="down">
+                              <verse n="1">
+                                 <syl wordpos="t">su,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="m">send</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl wordpos="t">de</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="d23378e235" dur="4" oct="4" pname="e" stem.dir="down">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">mei</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>mal</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>mich</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="d23378e265" dur="4" oct="4" pname="f" stem.dir="down">
+                              <verse n="1">
+                                 <syl wordpos="t">nes</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">ge</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>und</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" stem.dir="up" />
+                           <note dur="4" oct="3" pname="b" stem.dir="up" />
+                           <note dur="4" oct="3" pname="a" stem.dir="up" />
+                           <note dur="4" oct="4" pname="d" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="3" pname="a" stem.dir="down" />
+                           <note dur="4" oct="3" pname="g" stem.dir="down" accid="s" />
+                           <note dur="4" oct="3" pname="a" stem.dir="down" />
+                           <note dur="4" oct="3" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="4" pname="g" stem.dir="up" accid="s" />
+                           <note dur="8" oct="4" pname="a" stem.dir="up" />
+                           <note dur="2" oct="4" pname="b" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="d23378e504" dots="1" dur="4" oct="4" pname="e" stem.dir="down">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">Her</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl wordpos="t">denk</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>mach</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="d23378e534" dur="8" oct="4" pname="f" stem.dir="down" accid="s">
+                              <verse n="1">
+                                 <syl wordpos="t">zens</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>ich</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>mich</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="d23378e567" dur="2" oct="4" pname="g" stem.dir="down" accid="s">
+                              <verse n="1">
+                                 <syl>Freud</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>dein,</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl>satt,</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="b" stem.dir="up" />
+                           <note dur="4" oct="4" pname="c" stem.dir="up" />
+                           <note dur="2" oct="3" pname="b" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="3" pname="e" stem.dir="down" />
+                           <note dur="4" oct="2" pname="a" stem.dir="down" />
+                           <note dur="2" oct="3" pname="e" stem.dir="down" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

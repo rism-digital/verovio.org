@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cue-sized notes</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-15">2017-05-15</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio appropriately scales single notation elements in rendering cue-sized notes together with full-sized notes.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid.ges="n" />
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                              <note oct="5" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="d" accid.ges="n" />
+                              <note oct="4" pname="f" accid.ges="n" />
+                              <note oct="4" pname="a" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" size="cue" accid.ges="n" />
+                           <chord dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" size="cue" accid.ges="n" />
+                              <note oct="4" pname="g" size="cue" accid.ges="n" />
+                              <note oct="5" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="4" size="cue">
+                              <note oct="4" pname="d" size="cue" accid.ges="n" />
+                              <note oct="4" pname="f" size="cue" accid.ges="n" />
+                              <note oct="4" pname="a" size="cue" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

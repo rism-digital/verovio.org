@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Note versus chord attachment of slurs</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-20</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/955" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Connecting the slurs to notes or to the chord should be equivalent.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L5F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                           <chord xml:id="chord-L6F1" dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">slur attached to chord</rend>
+                     </dir>
+                     <slur staff="1" startid="#note-L5F1" endid="#chord-L6F1" curvedir="above" />
+                  </measure>
+                  <measure right="dbl" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L8F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                           <chord xml:id="chord-L9F1" dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L8F1" endid="#chord-L9F1" curvedir="below" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L12F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                           <chord dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note xml:id="note-L14F1S2" oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">slur attached to G note</rend>
+                     </dir>
+                     <slur staff="1" startid="#note-L12F1" endid="#note-L14F1S2" curvedir="above" />
+                  </measure>
+                  <measure right="dbl" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L16F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                           <chord dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note xml:id="note-L18F1S2" oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L16F1" endid="#note-L18F1S2" curvedir="below" />
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L21F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                           <chord dur="2">
+                              <note xml:id="note-L23F1S1" oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">slur attached to A note</rend>
+                     </dir>
+                     <slur staff="1" startid="#note-L21F1" endid="#note-L23F1S1" curvedir="above" />
+                  </measure>
+                  <measure right="dbl" n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L25F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                           <chord dur="2">
+                              <note xml:id="note-L27F1S1" oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L25F1" endid="#note-L27F1S1" curvedir="below" />
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L30F1" dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <note xml:id="note-L31F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">slur attached from chord</rend>
+                     </dir>
+                     <slur staff="1" startid="#chord-L30F1" endid="#note-L31F1" curvedir="above" />
+                  </measure>
+                  <measure right="dbl" n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L33F1" dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <note xml:id="note-L34F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#chord-L33F1" endid="#note-L34F1" curvedir="below" />
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note xml:id="note-L38F1S2" oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <note xml:id="note-L39F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">slur attached from G note</rend>
+                     </dir>
+                     <slur staff="1" startid="#note-L38F1S2" endid="#note-L39F1" curvedir="above" />
+                  </measure>
+                  <measure right="dbl" n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="3" pname="a" accid.ges="n" />
+                              <note xml:id="note-L42F1S2" oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <note xml:id="note-L43F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L42F1S2" endid="#note-L43F1" curvedir="below" />
+                  </measure>
+                  <measure n="10">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="note-L47F1S1" oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <note xml:id="note-L48F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">slur attached from A note</rend>
+                     </dir>
+                     <slur staff="1" startid="#note-L47F1S1" endid="#note-L48F1" curvedir="above" />
+                  </measure>
+                  <measure right="end" n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="note-L51F1S1" oct="3" pname="a" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <note xml:id="note-L52F1" dur="2" oct="5" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L51F1S1" endid="#note-L52F1" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

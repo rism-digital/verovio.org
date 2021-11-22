@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Accidentals in cross-staff chords</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-27</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio manages the placement of complex accidentals in combination with cross-staff notation.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="1f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="4" pname="d">
+                                 <accid accid="f" />
+                              </note>
+                              <note staff="2" oct="3" pname="b">
+                                 <accid accid.ges="f" />
+                              </note>
+                              <note staff="2" oct="3" pname="f">
+                                 <accid accid="s" />
+                              </note>
+                           </chord>
+                           <chord dur="2">
+                              <note oct="4" pname="c">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="4" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                              <note staff="2" oct="3" pname="g">
+                                 <accid accid="s" />
+                              </note>
+                              <note staff="2" oct="3" pname="e">
+                                 <accid accid="n" func="caution" />
+                              </note>
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="f">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="3" pname="e">
+                                 <accid accid="f" />
+                              </note>
+                           </chord>
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="g">
+                                 <accid accid="x" />
+                              </note>
+                              <note oct="3" pname="d">
+                                 <accid accid="ff" />
+                              </note>
+                           </chord>
+                           <chord dur="2" stem.dir="down">
+                              <note oct="3" pname="c">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="3" pname="b">
+                                 <accid accid="n" />
+                              </note>
+                              <note oct="3" pname="a">
+                                 <accid accid="f" />
+                              </note>
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <note dur="1" oct="2" pname="c">
+                              <accid accid.ges="n" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

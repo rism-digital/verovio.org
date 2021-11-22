@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Dotted rests</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Norbert Dubowy</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-05-31">2021-05-31</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2212" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot />
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.5.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.pname="c" meter.count="3" meter.unit="4">
+                  <staffGrp bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dots="1" dur="4" ploc="f" oloc="4" />
+                           <rest dots="1" dur="8" ploc="c" oloc="3" />
+                           <rest dots="1" dur="16" ploc="f" oloc="5" />
+                           <beam>
+                              <note dur="8" oct="5" pname="b" accid="f" />
+                              <rest dots="1" dur="16" ploc="c" oloc="5" />
+                              <note dur="32" oct="5" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <beam>
+                              <note dur="8" oct="5" pname="b" accid="f" />
+                              <rest dots="1" dur="8" ploc="c" oloc="5" />
+                              <note dur="32" oct="5" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <beam>
+                              <note dur="8" oct="5" pname="b" accid="f" />
+                              <rest dots="1" dur="8" ploc="a" oloc="4" />
+                              <note dur="32" oct="5" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <beam>
+                              <note dur="8" oct="5" pname="b" accid="f" />
+                              <rest dots="1" dur="8" ploc="f" oloc="4" />
+                              <note dur="32" oct="5" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <beam>
+                              <note dur="8" oct="5" pname="b" accid="f" />
+                              <rest dots="1" dur="8" ploc="b" oloc="3" />
+                              <note dur="32" oct="5" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <beam>
+                              <note dur="8" oct="5" pname="b" accid="f" />
+                              <rest dots="1" dur="8" ploc="g" oloc="3" />
+                              <note dur="8" oct="5" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

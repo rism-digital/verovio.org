@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Display of original and editorial clefs</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio renders an editorial clef, while the original clef is documented with an alternative encoding ("app" element).</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" meter.count="2" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <app>
+                     <lem />
+                     <rdg label="original-clef">
+                        <scoreDef>
+                           <staffGrp>
+                              <staffDef n="1" clef.shape="C" clef.line="4" />
+                           </staffGrp>
+                        </scoreDef>
+                     </rdg>
+                  </app>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <!-- kern: =1-  16ELL  16F  16G  16AJJ  16BLL  16c  16d  16eJJ  == -->
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="3" pname="e" accid.ges="n" />
+                              <note dur="16" oct="3" pname="f" accid.ges="n" />
+                              <note dur="16" oct="3" pname="g" accid.ges="n" />
+                              <note dur="16" oct="3" pname="a" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="3" pname="b" accid.ges="n" />
+                              <note dur="16" oct="4" pname="c" accid.ges="n" />
+                              <note dur="16" oct="4" pname="d" accid.ges="n" />
+                              <note dur="16" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tuplet example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-09</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio supports tuplets, with no particular constraint on the content (e.g, notes, beams, etc.). The bracket and the number of
+					the tuplets can be hidden.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef clef.shape="G" clef.line="2" key.sig="0" meter.count="3" meter.unit="4">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="5s" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="5s" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="1" label="feature-example">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="7" numbase="6">
+                                 <note xml:id="n1" dur="16" oct="6" pname="f" />
+                                 <note dur="16" oct="6" pname="e" accid="s" />
+                                 <note dur="16" oct="6" pname="d" />
+                                 <note dur="16" oct="6" pname="c" />
+                                 <note dur="16" oct="5" pname="b" />
+                                 <note dur="16" oct="6" pname="d" />
+                                 <note dur="16" oct="5" pname="a" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="14" numbase="12">
+                                 <note dur="32" oct="5" pname="g" accid="x" />
+                                 <note dur="32" oct="5" pname="f" />
+                                 <note dur="32" oct="5" pname="e" accid="s" />
+                                 <note dur="32" oct="5" pname="d" />
+                                 <note dur="32" oct="5" pname="c" accid="x" />
+                                 <note dur="32" oct="5" pname="e" />
+                                 <note dur="32" oct="5" pname="d" />
+                                 <note dur="32" oct="5" pname="c" accid="s" />
+                                 <note dur="32" oct="4" pname="b" />
+                                 <note dur="32" oct="4" pname="a" />
+                                 <note dur="32" oct="4" pname="g" accid="x" />
+                                 <note dur="32" oct="4" pname="f" />
+                                 <note dur="32" oct="4" pname="e" accid="s" />
+                                 <note xml:id="n21" dur="32" oct="4" pname="d" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="2" pname="a" />
+                              <note dur="8" oct="3" pname="f" />
+                              <note dur="8" oct="4" pname="f" />
+                              <note dur="8" oct="3" pname="g" accid="s" />
+                              <note dur="8" oct="3" pname="b" />
+                              <note dur="8" oct="3" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#n1" endid="#n21" />
+                  </measure>
+                  <measure n="2" label="feature-example">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n28" dur="8" oct="4" pname="c" accid="x" />
+                           <note xml:id="n29" dots="1" dur="4" oct="4" pname="a" />
+                           <beam>
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="4" pname="b" accid="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="5" numbase="3">
+                                 <note dur="8" oct="2" pname="a" />
+                                 <note dur="8" oct="3" pname="e" accid="s" />
+                                 <note dur="8" oct="3" pname="a" />
+                                 <note dur="8" oct="4" pname="c" accid="x" />
+                                 <note dur="8" oct="3" pname="e" />
+                              </tuplet>
+                           </beam>
+                           <note dots="1" dur="4" oct="4" pname="e" accid="s" />
+                        </layer>
+                     </staff>
+                     <slur startid="#n28" endid="#n29" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

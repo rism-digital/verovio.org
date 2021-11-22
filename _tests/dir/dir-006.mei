@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Fermatas/directives vertical alignment</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-07-28</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Fermatas are placed nearer to the note than directives.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="a" accid.ges="n" />
+                           <note dur="2" oct="5" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">some long text</rend>
+                     </dir>
+                     <fermata staff="1" tstamp="3.000000" place="above" />
+                  </measure>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <fermata staff="1" tstamp="1.000000" place="below" />
+                     <dir place="below" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">text</rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
