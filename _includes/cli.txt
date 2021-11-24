@@ -1,4 +1,4 @@
-Verovio 3.8.0-dev-a79eeb6
+Verovio 3.8.0-dev-e1ce1ad
 
 Example usage:
 
@@ -104,6 +104,7 @@ General layout options
  --min-measure-width <i>        The minimal measure width in MEI units (default: 15; min: 1; max: 30)
  --mnum-interval <i>            How frequently to place measure numbers
  --multi-rest-style <s>         Rendering style of multiple measure rests (default: "auto"; other values: "default", "block", "symbols")
+ --multi-rest-thickness <f>     The thickness of the multi rest in unit (default: 2.00; min: 0.50; max: 6.00)
  --octave-alternative-symbols   Use alternative symbols for displaying octaves
  --octave-line-thickness <f>    The thickness of the line used for an octave line (default: 0.20; min: 0.10; max: 1.00)
  --pedal-line-thickness <f>     The thickness of the line used for piano pedaling (default: 0.20; min: 0.10; max: 1.00)
