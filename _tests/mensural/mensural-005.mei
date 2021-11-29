@@ -13,13 +13,16 @@
             </respStmt>
             <date isodate="2021-11-15">2021-11-15</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio uses appropriate glyphs for accidentals in mensural notation.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="3.7.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
