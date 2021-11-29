@@ -8,7 +8,13 @@
             <title>Support for annotations</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-06-30">30 Jun 2017</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/645" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -19,7 +25,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="2.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
