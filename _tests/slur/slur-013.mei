@@ -17,6 +17,9 @@
                <ref target="https://github.com/rism-digital/verovio/issues/955" />
             </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Connecting the slurs to notes or to the chord should be equivalent.</annot>
          </notesStmt>

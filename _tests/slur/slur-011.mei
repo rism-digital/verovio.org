@@ -57,29 +57,29 @@
                            <note xml:id="note-L4F2" dur="1" oct="4" pname="d" />
                         </layer>
                      </staff>
-                     <slur staff="1" startid="#note-L3F2" endid="#note-L4F2" curvedir="above"/>
-                     <dir place="above" tstamp="1" staff="1">curvedir="above"</dir>
+                     <slur staff="1" startid="#note-L3F2" endid="#note-L4F2" curvedir="above" />
+                     <dir place="above" staff="1" tstamp="1.000000">curvedir="above"</dir>
                   </measure>
                   <measure n="3">
                      <staff n="1">
                         <layer n="1">
-                           <note xml:id="note-L3F3" dur="1" oct="4" pname="c" stem.dir="down"/>
+                           <note xml:id="note-L3F3" dur="1" oct="4" pname="c" stem.dir="down" />
                            <note xml:id="note-L4F3" dur="1" oct="4" pname="d" stem.dir="down" />
                         </layer>
                      </staff>
                      <slur staff="1" startid="#note-L3F3" endid="#note-L4F3" />
-                     <dir place="above" tstamp="1" staff="1">stem.dir="down"</dir>
+                     <dir place="above" staff="1" tstamp="1.000000">stem.dir="down"</dir>
                   </measure>
                   <measure n="4">
                      <staff n="1">
                         <layer n="1">
-                           <chord xml:id="chord-L3F4" dur="1" >
+                           <chord xml:id="chord-L3F4" dur="1">
                               <note oct="4" pname="c" />
                               <note oct="3" pname="a" />
                            </chord>
                            <chord xml:id="chord-L4F4" dur="1">
-                              <note  oct="4" pname="d" />
-                              <note  oct="3" pname="b" />
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" />
                            </chord>
                         </layer>
                      </staff>
@@ -88,34 +88,34 @@
                   <measure n="5">
                      <staff n="1">
                         <layer n="1">
-                           <chord xml:id="chord-L3F5" dur="1" >
+                           <chord xml:id="chord-L3F5" dur="1">
                               <note oct="4" pname="c" />
                               <note oct="3" pname="a" />
                            </chord>
                            <chord xml:id="chord-L4F5" dur="1">
-                              <note  oct="4" pname="d" />
-                              <note  oct="3" pname="b" />
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" />
                            </chord>
                         </layer>
                      </staff>
-                     <slur staff="1" startid="#chord-L3F5" endid="#chord-L4F5" curvedir="above"/>
-                     <dir place="above" tstamp="1" staff="1">curvedir="above"</dir>
+                     <slur staff="1" startid="#chord-L3F5" endid="#chord-L4F5" curvedir="above" />
+                     <dir place="above" staff="1" tstamp="1.000000">curvedir="above"</dir>
                   </measure>
                   <measure n="6">
                      <staff n="1">
                         <layer n="1">
-                           <chord xml:id="chord-L3F6" dur="1" stem.dir="down" >
+                           <chord xml:id="chord-L3F6" dur="1" stem.dir="down">
                               <note oct="4" pname="c" />
                               <note oct="3" pname="a" />
                            </chord>
-                           <chord xml:id="chord-L4F6" dur="1" stem.dir="down" >
-                              <note  oct="4" pname="d" />
-                              <note  oct="3" pname="b" />
+                           <chord xml:id="chord-L4F6" dur="1" stem.dir="down">
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" />
                            </chord>
                         </layer>
                      </staff>
                      <slur staff="1" startid="#chord-L3F6" endid="#chord-L4F6" />
-                     <dir place="above" tstamp="1" staff="1">stem.dir="down"</dir>
+                     <dir place="above" staff="1" tstamp="1.000000">stem.dir="down"</dir>
                   </measure>
                </section>
             </score>

@@ -17,6 +17,9 @@
                <ref target="https://github.com/rism-digital/verovio/pull/2475" />
             </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Portato slurs work with stem side or centered staccato as well as with other articulations.</annot>
          </notesStmt>

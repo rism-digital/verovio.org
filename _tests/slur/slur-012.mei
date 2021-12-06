@@ -12,11 +12,14 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-20</date>
+            <date isodate="2021-01-20">2021-01-20</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/952" />
             </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>When placing the slur on the tail side of the chord, the note closest to the tail (opposite of the head note) should be used to place the slur.</annot>
          </notesStmt>
