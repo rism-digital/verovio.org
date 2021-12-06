@@ -11,7 +11,7 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-27</date>
+            <date isodate="2021-01-27">2021-01-27</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -34,7 +34,7 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffGrp bar.thru="true">                     
+                     <staffGrp bar.thru="true">
                         <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4" />
                      </staffGrp>
                   </staffGrp>
@@ -51,7 +51,7 @@
                                  <artic artic="stacc" place="above" />
                               </note>
                            </beam>
-                                                      <beam>
+                           <beam>
                               <note xml:id="n3" dur="8" oct="4" pname="f" stem.dir="up">
                                  <artic artic="stacc" place="below" />
                               </note>
@@ -59,7 +59,7 @@
                                  <artic artic="stacc" place="below" />
                               </note>
                            </beam>
-                                                      <beam>
+                           <beam>
                               <note xml:id="n5" dur="8" oct="4" pname="f" stem.dir="up">
                                  <artic artic="stacc" place="above" />
                               </note>
@@ -67,7 +67,7 @@
                                  <artic artic="stacc" place="above" />
                               </note>
                            </beam>
-                                                      <beam>
+                           <beam>
                               <note xml:id="n7" dur="8" oct="4" pname="f" stem.dir="up">
                                  <artic artic="stacc" place="below" />
                               </note>
