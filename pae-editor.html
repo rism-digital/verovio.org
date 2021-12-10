@@ -511,9 +511,6 @@ version-footer: true
         messages = []
         validation = vrvToolkit.validatePAE(pae);
         //console.log("Validate", validation);
-        if (validation.hasOwnProperty("text")) {
-            messages.push(validation["text"]);
-        }
         if (validation.hasOwnProperty("clef")) {
             messages.push(validation["clef"]["text"]);
         }
