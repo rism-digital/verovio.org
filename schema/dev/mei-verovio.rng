@@ -5,7 +5,7 @@
          xmlns="http://relaxng.org/ns/structure/1.0"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.music-encoding.org/ns/mei"><!--
-Schema generated from ODD source 2021-12-07T20:14:56Z. .
+Schema generated from ODD source 2021-12-14T13:49:41Z. .
 TEI Edition: Version 4.0.0
 TEI Edition Location: https://www.tei-c.org/Vault/P5//
   
@@ -16964,31 +16964,31 @@ Suggested values include: 1] smufl</a:documentation>
    <define name="model.annotLike">
       <choice>
          <ref name="annot"/>
-         <ref name="ms"/>
-         <ref name="msEnd"/>
+         <ref name="milestone"/>
+         <ref name="milestoneEnd"/>
       </choice>
    </define>
    <define name="model.annotLike_alternation">
       <choice>
          <ref name="annot"/>
-         <ref name="ms"/>
-         <ref name="msEnd"/>
+         <ref name="milestone"/>
+         <ref name="milestoneEnd"/>
       </choice>
    </define>
    <define name="model.annotLike_sequence">
       <ref name="annot"/>
-      <ref name="ms"/>
-      <ref name="msEnd"/>
+      <ref name="milestone"/>
+      <ref name="milestoneEnd"/>
    </define>
    <define name="model.annotLike_sequenceOptional">
       <optional>
          <ref name="annot"/>
       </optional>
       <optional>
-         <ref name="ms"/>
+         <ref name="milestone"/>
       </optional>
       <optional>
-         <ref name="msEnd"/>
+         <ref name="milestoneEnd"/>
       </optional>
    </define>
    <define name="model.annotLike_sequenceOptionalRepeatable">
@@ -16996,10 +16996,10 @@ Suggested values include: 1] smufl</a:documentation>
          <ref name="annot"/>
       </zeroOrMore>
       <zeroOrMore>
-         <ref name="ms"/>
+         <ref name="milestone"/>
       </zeroOrMore>
       <zeroOrMore>
-         <ref name="msEnd"/>
+         <ref name="milestoneEnd"/>
       </zeroOrMore>
    </define>
    <define name="model.annotLike_sequenceRepeatable">
@@ -17007,10 +17007,10 @@ Suggested values include: 1] smufl</a:documentation>
          <ref name="annot"/>
       </oneOrMore>
       <oneOrMore>
-         <ref name="ms"/>
+         <ref name="milestone"/>
       </oneOrMore>
       <oneOrMore>
-         <ref name="msEnd"/>
+         <ref name="milestoneEnd"/>
       </oneOrMore>
    </define>
    <define name="model.biblLike">
@@ -17419,8 +17419,8 @@ Suggested values include: 1] smufl</a:documentation>
          <ref name="pad"/>
          <ref name="rest"/>
          <ref name="space"/>
-         <ref name="ms"/>
-         <ref name="msEnd"/>
+         <ref name="milestone"/>
+         <ref name="milestoneEnd"/>
       </choice>
    </define>
    <define name="model.headLike">
@@ -24290,7 +24290,7 @@ Suggested values include: 1] coloration; 2] ligature; 3] unknown</a:documentatio
          <zeroOrMore>
             <choice>
                <ref name="model.systemLike"/>
-               <ref name="model.msLike"/>
+               <ref name="model.milestoneLike"/>
                <ref name="model.secbLike"/>
                <ref name="model.mdivbLike"/>
                <ref name="model.scoreLike"/>
@@ -24317,7 +24317,7 @@ Suggested values include: 1] coloration; 2] ligature; 3] unknown</a:documentatio
                <ref name="model.measureLike"/>
                <ref name="model.staffLike"/>
                <ref name="model.scoreDefLike"/>
-               <ref name="model.msLike"/>
+               <ref name="model.milestoneLike"/>
             </choice>
          </zeroOrMore>
          <ref name="att.systems.attributes"/>
@@ -24352,31 +24352,31 @@ Suggested values include: 1] coloration; 2] ligature; 3] unknown</a:documentatio
          <empty/>
       </element>
    </define>
-   <define name="model.msLike">
+   <define name="model.milestoneLike">
       <choice>
-         <ref name="ms"/>
-         <ref name="msEnd"/>
+         <ref name="milestone"/>
+         <ref name="milestoneEnd"/>
       </choice>
    </define>
-   <define name="ms">
-      <element name="ms">
+   <define name="milestone">
+      <element name="milestone">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(milestone) – A generic milestone element that can be used as anchor in an MEI file.</a:documentation>
          <empty/>
          <ref name="att.common.attributes"/>
          <empty/>
       </element>
    </define>
-   <define name="msEnd">
-      <element name="msEnd">
+   <define name="milestoneEnd">
+      <element name="milestoneEnd">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(milestone end) – A milestone element that can be used to indicate the end of an arbitrary feature in MEI.</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-                  id="mei-msEnd-check_msEnd-constraint-rule-183">
+                  id="mei-milestoneEnd-check_milestoneEnd-constraint-rule-183">
             <sch:rule xmlns:rng="http://relaxng.org/ns/structure/1.0"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       xmlns="http://www.tei-c.org/ns/1.0"
-                      context="mei:msEnd">
-               <sch:assert role="error" test="exists(@startid)">msEnd needs a @startid attribute.</sch:assert>
+                      context="mei:milestoneEnd">
+               <sch:assert role="error" test="exists(@startid)">milestoneEnd needs a @startid attribute.</sch:assert>
             </sch:rule>
          </pattern>
          <ref name="att.common.attributes"/>
