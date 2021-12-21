@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Accidental placement on same pitch notes</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-07-28">28 Jul 2017</date>
+            <pubPlace>
+               <ref/>
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When the accidental is not the same it should be place in front of each note separately</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.8.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" accid="f" />
+                           <note dur="4" oct="4" pname="g" accid="n" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                           <note dur="4" oct="4" pname="g" accid="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="g" accid="n" />
+                           <note dur="4" oct="4" pname="g" accid="f" />
+                           <note dur="4" oct="4" pname="g" accid="n" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
