@@ -7,7 +7,12 @@
          <titleStmt>
             <title>Connector of dynam</title>
          </titleStmt>
-         <pubStmt />
+         <pubStmt>
+            <date isodate="2018-06-11">11 Jun 2018</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio can draw dashed extender lines in dynamics.</annot>
          </notesStmt>

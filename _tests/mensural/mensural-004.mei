@@ -10,6 +10,9 @@
          <pubStmt>
             <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Simple plicae examples for longa and brevis (ascending and descending)</annot>
          </notesStmt>

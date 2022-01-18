@@ -12,7 +12,7 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-27</date>
+            <date isodate="2021-01-27">2021-01-27</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/957" />
             </pubPlace>
@@ -21,7 +21,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot></annot>
+            <annot />
          </notesStmt>
       </fileDesc>
       <encodingDesc>

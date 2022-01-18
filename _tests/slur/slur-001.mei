@@ -1,61 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Slur starting on staff line</title>
-      </titleStmt>
-      <pubStmt>
-        <date isodate="2017">2017</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot>Slurs avoid staff lines at their starting point.</annot>
-      </notesStmt>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="unknown">
-          <name>Verovio</name>
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef>
-            <staffGrp symbol="brace">
-              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
-              <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
-            </staffGrp>
-          </scoreDef>
-          <section>
-            <measure n="1">
-              <staff n="1">
-                <layer n="1">
-                  <note xml:id="note-000000178263981" dur="2" oct="4" pname="b" stem.dir="up" accid="f" />
-                  <note xml:id="note-000000011507891" dur="4" oct="4" pname="a" stem.dir="up" accid.ges="n" />
-                </layer>
-                <layer n="2">
-                  <note dots="1" dur="2" oct="4" pname="g" stem.dir="down" accid="f" />
-                </layer>
-              </staff>
-              <staff n="2">
-                <layer n="1">
-                  <note dots="1" dur="2" oct="4" pname="e" stem.dir="down" accid="f" />
-                </layer>
-              </staff>
-              <slur staff="1" startid="#note-000000178263981" endid="#note-000000011507891" />
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slur starting on staff line</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017">2017</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slurs avoid staff lines at their starting point.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-000000178263981" dur="2" oct="4" pname="b" stem.dir="up" accid="f" />
+                           <note xml:id="note-000000011507891" dur="4" oct="4" pname="a" stem.dir="up" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="2" oct="4" pname="g" stem.dir="down" accid="f" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="e" stem.dir="down" accid="f" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-000000178263981" endid="#note-000000011507891" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

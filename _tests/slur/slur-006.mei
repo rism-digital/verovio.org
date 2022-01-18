@@ -1,130 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Alignment of stem-side slurs</title>
-      </titleStmt>
-      <pubStmt>
-        <date isodate="2017">2017</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot>Verovio aligns stem-side slurs to the note stem, and note-side slurs to the centre of the notehead.</annot>
-      </notesStmt>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="unknown">
-          <name>Verovio</name>
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef>
-            <staffGrp symbol="brace">
-              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" />
-              <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="3" meter.unit="4" />
-            </staffGrp>
-          </scoreDef>
-          <section>
-            <measure n="0">
-              <staff n="1">
-                <!-- kern: **kern  *clefG2  *M3/4  *^  !LO:TX:a:t=ten.  4r  8r  (8f# 8aL  8g 8bn  8a 8ccJ)  = -->
-                <layer n="1">
-                  <rest dur="4" />
-                  <rest dur="8" />
-                  <beam>
-                    <chord xml:id="chord-000000206849720" dur="8">
-                      <note oct="4" pname="f" accid="s" />
-                      <note oct="4" pname="a" accid.ges="n" />
-                    </chord>
-                    <chord dur="8">
-                      <note oct="4" pname="g" accid.ges="n" />
-                      <note oct="4" pname="b" accid="n" />
-                    </chord>
-                    <chord xml:id="chord-000000028066101" dur="8">
-                      <note oct="4" pname="a" accid.ges="n" />
-                      <note oct="5" pname="c" accid.ges="n" />
-                    </chord>
-                  </beam>
-                </layer>
-                <!-- kern: 2.dz  = -->
-                <layer n="2">
-                  <note dots="1" dur="2" oct="4" pname="d" accid.ges="n" />
-                </layer>
-              </staff>
-              <dir place="above" staff="1" tstamp="1.000000">ten.</dir>
-              <dynam staff="1" tstamp="2.500000">pp</dynam>
-              <slur staff="1" startid="#chord-000000206849720" endid="#chord-000000028066101" />
-              <dynam staff="1" tstamp="1.000000">sf</dynam>
-              <staff n="2">
-                <!-- kern: **kern  *clefF4  *M3/4  *^  4r  8r  (8cnL  8B  8AJ)  *v  = -->
-                <layer n="1">
-                  <rest dur="4" />
-                  <rest dur="8" />
-                  <beam>
-                    <note xml:id="note-000000206720824" dur="8" oct="4" pname="c" accid="n" />
-                    <note dur="8" oct="3" pname="b" accid.ges="n" />
-                    <note xml:id="note-000000196610915" dur="8" oct="3" pname="a" accid.ges="n" />
-                  </beam>
-                </layer>
-                <!-- kern: DDq/  2.Dzy  *v -->
-                <layer n="2">
-                  <note dur="8" oct="2" pname="d" grace="acc" stem.dir="up" accid.ges="n" />
-                  <note dots="1" dur="2" oct="3" pname="d" accid.ges="n" />
-                </layer>
-              </staff>
-              <slur staff="2" startid="#note-000000206720824" endid="#note-000000196610915" />
-            </measure>
-            <measure>
-              <staff n="1">
-                <!-- kern: =  (8bL  8ccJ  4dd)  4g  8gq  *v  = -->
-                <layer n="1">
-                  <beam>
-                    <note xml:id="note-000000139221403" dur="8" oct="4" pname="b" accid.ges="n" />
-                    <note dur="8" oct="5" pname="c" accid.ges="n" />
-                  </beam>
-                  <note xml:id="note-000000010490072" dur="4" oct="5" pname="d" accid.ges="n" />
-                  <note dur="4" oct="4" pname="g" accid.ges="n" />
-                  <note dur="8" oct="4" pname="g" grace="acc" accid.ges="n" />
-                </layer>
-                <!-- kern: =  2fn  4ryy  *v -->
-                <layer n="2">
-                  <note dur="2" oct="4" pname="f" accid="n" />
-                  <space dur="4" />
-                </layer>
-              </staff>
-              <slur staff="1" startid="#note-000000139221403" endid="#note-000000010490072" />
-              <staff n="2">
-                <!-- kern: =  !LO:TX:a:t=riten.  (8dL  8AJ  4B)  (8AL  8GJ)  = -->
-                <layer n="1">
-                  <beam>
-                    <note xml:id="note-000000051672979" dur="8" oct="4" pname="d" accid.ges="n" />
-                    <note dur="8" oct="3" pname="a" accid.ges="n" />
-                  </beam>
-                  <note xml:id="note-000000120866214" dur="4" oct="3" pname="b" accid.ges="n" />
-                  <beam>
-                    <note xml:id="note-000000211839453" dur="8" oct="3" pname="a" accid.ges="n" />
-                    <note xml:id="note-000000072548209" dur="8" oct="3" pname="g" accid.ges="n" />
-                  </beam>
-                </layer>
-              </staff>
-              <dir place="above" staff="2" tstamp="1.000000">riten.</dir>
-              <slur staff="2" startid="#note-000000051672979" endid="#note-000000120866214" />
-              <slur staff="2" startid="#note-000000211839453" endid="#note-000000072548209" />
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Alignment of stem-side slurs</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017">2017</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio aligns stem-side slurs to the note stem, and note-side slurs to the centre of the notehead.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="3" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <!-- kern: **kern  *clefG2  *M3/4  *^  !LO:TX:a:t=ten.  4r  8r  (8f# 8aL  8g 8bn  8a 8ccJ)  = -->
+                        <layer n="1">
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <beam>
+                              <chord xml:id="chord-000000206849720" dur="8">
+                                 <note oct="4" pname="f" accid="s" />
+                                 <note oct="4" pname="a" accid.ges="n" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="4" pname="g" accid.ges="n" />
+                                 <note oct="4" pname="b" accid="n" />
+                              </chord>
+                              <chord xml:id="chord-000000028066101" dur="8">
+                                 <note oct="4" pname="a" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                           </beam>
+                        </layer>
+                        <!-- kern: 2.dz  = -->
+                        <layer n="2">
+                           <note dots="1" dur="2" oct="4" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">ten.</dir>
+                     <dynam staff="1" tstamp="2.500000">pp</dynam>
+                     <slur staff="1" startid="#chord-000000206849720" endid="#chord-000000028066101" />
+                     <dynam staff="1" tstamp="1.000000">sf</dynam>
+                     <staff n="2">
+                        <!-- kern: **kern  *clefF4  *M3/4  *^  4r  8r  (8cnL  8B  8AJ)  *v  = -->
+                        <layer n="1">
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <beam>
+                              <note xml:id="note-000000206720824" dur="8" oct="4" pname="c" accid="n" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                              <note xml:id="note-000000196610915" dur="8" oct="3" pname="a" accid.ges="n" />
+                           </beam>
+                        </layer>
+                        <!-- kern: DDq/  2.Dzy  *v -->
+                        <layer n="2">
+                           <note dur="8" oct="2" pname="d" grace="acc" stem.dir="up" accid.ges="n" />
+                           <note dots="1" dur="2" oct="3" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="2" startid="#note-000000206720824" endid="#note-000000196610915" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <!-- kern: =  (8bL  8ccJ  4dd)  4g  8gq  *v  = -->
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-000000139221403" dur="8" oct="4" pname="b" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           </beam>
+                           <note xml:id="note-000000010490072" dur="4" oct="5" pname="d" accid.ges="n" />
+                           <note dur="4" oct="4" pname="g" accid.ges="n" />
+                           <note dur="8" oct="4" pname="g" grace="acc" accid.ges="n" />
+                        </layer>
+                        <!-- kern: =  2fn  4ryy  *v -->
+                        <layer n="2">
+                           <note dur="2" oct="4" pname="f" accid="n" />
+                           <space dur="4" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-000000139221403" endid="#note-000000010490072" />
+                     <staff n="2">
+                        <!-- kern: =  !LO:TX:a:t=riten.  (8dL  8AJ  4B)  (8AL  8GJ)  = -->
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-000000051672979" dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                           </beam>
+                           <note xml:id="note-000000120866214" dur="4" oct="3" pname="b" accid.ges="n" />
+                           <beam>
+                              <note xml:id="note-000000211839453" dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note xml:id="note-000000072548209" dur="8" oct="3" pname="g" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="2" tstamp="1.000000">riten.</dir>
+                     <slur staff="2" startid="#note-000000051672979" endid="#note-000000120866214" />
+                     <slur staff="2" startid="#note-000000211839453" endid="#note-000000072548209" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

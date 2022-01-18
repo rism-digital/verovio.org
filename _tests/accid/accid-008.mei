@@ -21,12 +21,12 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Verovio keeps ledger lines free of accidentls.</annot>
+            <annot>Verovio keeps ledger lines free of accidentals.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown" label="1">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -45,7 +45,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure right="end" n="1">
+                  <measure>
                      <staff n="1">
                         <layer n="1">
                            <beam>
@@ -53,7 +53,7 @@
                               <note dur="16" oct="6" pname="e" />
                               <note dur="16" oct="6" pname="f" />
                               <note dur="16" oct="5" pname="g">
-                                 <accid accid="s" accid.ges="s" />
+                                 <accid accid="s" />
                               </note>
                            </beam>
                            <note dur="4" oct="5" pname="a" />

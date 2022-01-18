@@ -60,11 +60,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff n="1" visible="false">
-                        <layer n="1" />
-                     </staff>
-                  </measure>
+               </section>
+               <section restart="true">
                   <measure left="invis" right="invis">
                      <staff n="1">
                         <layer n="1">

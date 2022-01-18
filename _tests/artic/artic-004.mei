@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
    <meiHead>
       <fileDesc>
@@ -8,7 +8,7 @@
             <title>Articulation and stave spacing interaction</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-02</date>
+            <date isodate="2017-05-02">2017-05-02</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -30,8 +30,8 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef midi.bpm="240">
-                  <staffGrp symbol="brace" bar.thru="true">
+               <scoreDef midi.bpm="240.000000">
+                  <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
                      <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
                   </staffGrp>
