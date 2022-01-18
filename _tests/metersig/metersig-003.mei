@@ -21,7 +21,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Verovio renders .</annot>
+            <annot>Verovio renders the meterSigGrp element.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
