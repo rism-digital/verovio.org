@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Note collision</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Benjamin Bloomfield</persName>
+            </respStmt>
+            <date isodate="2022-01-23">2022-01-23</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2580" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>A note in one layer should not collide with a note at the same time and on the same pitch in a different layer on the same staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="120.000000">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="1f" meter.count="4" meter.unit="4" meter.sym="common" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="2">
+                           <note dur="1" oct="3" pname="f" />
+                        </layer>
+                        <layer n="1">
+                           <note xml:id="note-3" dur="2" oct="3" pname="f" />
+                           <note xml:id="note-4" dur="2" oct="3" pname="a" />
+                        </layer>
+                     </staff>
+                     <slur startid="#note-3" endid="#note-4" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-6" dur="2" oct="3" pname="f" />
+                           <note xml:id="note-7" dur="2" oct="3" pname="a" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="1" oct="3" pname="f" />
+                        </layer>
+                     </staff>
+                     <slur startid="#note-6" endid="#note-7" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
