@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Dots merge when note-heads merge on unisons</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-07-11">11 Jul 2017</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/655" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When note-heads of unison notes are merged, dots are merged too.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4">
+                        <keySig sig="0" />
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" ppq="1" clef.shape="F" clef.line="4" meter.count="3" meter.unit="4">
+                        <keySig sig="0" />
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="127">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4" stem.dir="down">
+                              <note oct="5" pname="g" />
+                              <note oct="5" pname="b" />
+                           </chord>
+                           <chord dur="4" stem.dir="down">
+                              <note oct="5" pname="c" />
+                              <note oct="6" pname="c" />
+                           </chord>
+                           <chord xml:id="chord-0000002084266010" dur="4" stem.dir="down">
+                              <note oct="5" pname="f" />
+                              <note xml:id="note-0000001841214710" oct="6" pname="f" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <note dur="2" oct="2" pname="g" stem.dir="up" />
+                           <note dur="4" oct="3" pname="d" stem.dir="down" />
+                        </layer>
+                        <layer n="6">
+                           <note dur="4" oct="2" pname="f" stem.dir="down">
+                              <accid accid="n" />
+                           </note>
+                           <note dur="4" oct="2" pname="e" stem.dir="down" />
+                           <note xml:id="note-0000000727462467" dur="4" oct="4" pname="d" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+2.0000" form="dim" place="below" vgrp="80" />
+                     <dynam place="below" staff="1" tstamp="3.000000" vgrp="40">p</dynam>
+                     <slur startid="#chord-0000002084266010" endid="#chord-0000000396353015" curvedir="above" />
+                     <tie startid="#note-0000001841214710" endid="#note-0000001430999767" />
+                     <tie startid="#note-0000000727462467" endid="#note-0000001423965029" curvedir="above" />
+                     <slur startid="#note-0000000727462467" endid="#note-0000001327159656" curvedir="above" />
+                  </measure>
+                  <ending lendsym="angledown" n="1.">
+                     <measure right="rptend" metcon="false" n="128">
+                        <staff n="1">
+                           <layer n="1">
+                              <chord dur="4" stem.dir="down">
+                                 <note oct="5" pname="b" />
+                                 <note xml:id="note-0000001430999767" oct="6" pname="f" />
+                              </chord>
+                              <chord xml:id="chord-0000000396353015" dur="8" stem.dir="down">
+                                 <note oct="6" pname="c" />
+                                 <note oct="6" pname="e" />
+                              </chord>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="5">
+                              <note dur="4" oct="3" pname="g" stem.dir="down" />
+                              <note xml:id="note-0000001327159656" dur="8" oct="4" pname="c" stem.dir="up" />
+                           </layer>
+                           <layer n="6">
+                              <note xml:id="note-0000001423965029" dur="4" oct="4" pname="d" stem.dir="up" />
+                              <note dur="8" oct="3" pname="c" stem.dir="down" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </ending>
+                  <ending lendsym="angledown" n="2.">
+                     <measure right="end" metcon="false" n="128">
+                        <staff n="1">
+                           <layer n="1">
+                              <chord dur="4" stem.dir="down">
+                                 <note oct="5" pname="b" />
+                                 <note xml:id="note-0000000345492439" oct="6" pname="f" />
+                              </chord>
+                              <chord xml:id="chord-0000000528813094" dur="8" stem.dir="down">
+                                 <note oct="6" pname="c" />
+                                 <note oct="6" pname="e" />
+                              </chord>
+                              <rest dur="8" />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="5">
+                              <chord dur="4" stem.dir="down">
+                                 <note oct="3" pname="g" />
+                                 <note xml:id="note-0000000121171713" oct="4" pname="d" />
+                              </chord>
+                              <chord xml:id="chord-0000000243822164" dur="8" stem.dir="down">
+                                 <note oct="3" pname="c" />
+                                 <note oct="4" pname="c" />
+                              </chord>
+                              <rest dur="8" />
+                           </layer>
+                        </staff>
+                        <slur staff="1" tstamp="0.000000" endid="#chord-0000000528813094" curvedir="above" />
+                        <tie staff="1" tstamp="0.000000" endid="#note-0000000345492439" />
+                        <slur staff="2" tstamp="0.000000" endid="#chord-0000000243822164" curvedir="above" />
+                        <tie staff="2" tstamp="0.000000" endid="#note-0000000121171713" />
+                     </measure>
+                  </ending>
+                  <pb />
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
