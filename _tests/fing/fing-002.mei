@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Intersection of fingering and beams</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+            <date isodate="2022-01-23">2022-01-23</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2578" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Fingering should be positioned properly close to the beams</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.sig="3f" meter.sym="common" />
+                     <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.sig="3f" meter.sym="common" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="17">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="2" />
+                           <space dur="4" />
+                           <note xml:id="note-m17-l1-1" dur="4" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <chord dots="1" dur="2" stem.dir="down" artic="acc">
+                              <note xml:id="note-m17-l2-1" oct="4" pname="e" accid="n" />
+                              <note xml:id="note-m17-l2-2" oct="5" pname="c" />
+                              <note xml:id="note-m17-l2-3" oct="5" pname="e" accid="n" />
+                           </chord>
+                           <beam>
+                              <chord dots="1" dur="8">
+                                 <note xml:id="note-m17-l2-4" oct="4" pname="e" />
+                                 <note xml:id="note-m17-l2-5" oct="5" pname="e" />
+                              </chord>
+                              <chord dur="16">
+                                 <note oct="4" pname="e" accid="f" />
+                                 <note oct="5" pname="e" accid="f" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="3">
+                           <beam>
+                              <note xml:id="note-m17-l3-1" dur="16" oct="1" pname="g" />
+                              <note xml:id="note-m17-l3-2" dur="16" oct="2" pname="g" />
+                              <note xml:id="note-m17-l3-3" dur="16" oct="3" pname="c" />
+                              <note xml:id="note-m17-l3-4" dur="16" oct="2" pname="b" accid="n" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note-m17-l3-5" dur="16" oct="3" pname="d" stem.dir="down" accid="f" />
+                              <note xml:id="note-m17-l3-6" dur="16" oct="3" pname="c" />
+                              <note xml:id="note-m17-l3-7" dur="16" oct="3" pname="d" accid="n" />
+                              <note xml:id="note-m17-l3-8" dur="16" oct="3" pname="c" accid="s" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note-m17-l3-9" dur="16" oct="3" pname="e" accid="f" />
+                              <note xml:id="note-m17-l3-10" dur="16" oct="3" pname="d" />
+                              <note xml:id="note-m17-l3-11" dur="16" oct="3" pname="e" accid="n" />
+                              <note xml:id="note-m17-l3-12" dur="16" oct="3" pname="d" accid="s" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note-m17-l3-13" dur="16" oct="3" pname="f" />
+                              <note xml:id="note-m17-l3-14" dur="16" oct="3" pname="e" />
+                              <note xml:id="note-m17-l3-15" dur="16" oct="3" pname="g" accid="f" />
+                              <note dur="16" oct="3" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#note-m17-l3-1" endid="#note-m19-l3-1" curvedir="above" />
+                     <tie startid="#note-m17-l2-1" endid="#note-m17-l2-4" curvedir="below" />
+                     <tie startid="#note-m17-l2-2" endid="#note-m17-l1-1" curvedir="above" />
+                     <tie startid="#note-m17-l2-3" endid="#note-m17-l2-5" curvedir="above" />
+                     <hairpin staff="2" tstamp="2.000000" tstamp2="0m+5.0000" form="cres" />
+                     <fing place="below" staff="2" startid="#note-m17-l3-1">5</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-2">1</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-3">3</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-4">4</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-5">2</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-6">4</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-7">1</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-8">3</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-9">2</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-10">4</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-11">1</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-12">3</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-13">1</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-14">4</fing>
+                     <fing place="below" staff="2" startid="#note-m17-l3-15">2</fing>
+                  </measure>
+                  <measure n="18">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="b" accid="n" />
+                        </layer>
+                        <layer n="2">
+                           <chord xml:id="chord-m18-l2-1" dur="4">
+                              <note oct="4" pname="e" accid.ges="f" />
+                              <note oct="5" pname="e" accid.ges="f" />
+                              <artic artic="acc" place="above" />
+                           </chord>
+                           <chord xml:id="chord-m18-l2-2" dur="4">
+                              <note oct="4" pname="d" />
+                              <note oct="5" pname="d" />
+                           </chord>
+                           <rest dur="2" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="3">
+                           <beam>
+                              <note xml:id="note-m18-l3-1" dur="16" oct="3" pname="g" accid="n" />
+                              <note xml:id="note-m18-l3-2" dur="16" oct="3" pname="f" accid="s" />
+                              <note dur="16" oct="3" pname="a" accid.ges="f" />
+                              <note dur="16" oct="3" pname="g" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note-m18-l3-3" dur="16" oct="3" pname="b" accid="f" />
+                              <note dur="16" oct="3" pname="a" accid.ges="f" />
+                              <note xml:id="note-m18-l3-4" dur="16" oct="3" pname="g" />
+                              <note dur="16" oct="3" pname="f" accid="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="3" pname="e" stem.dir="down" accid.ges="f" />
+                              <note dur="16" oct="3" pname="d" />
+                              <note xml:id="note-m18-l3-5" dur="16" oct="3" pname="c" />
+                              <note dur="16" oct="2" pname="b" accid="n" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="2" pname="a" accid.ges="f" />
+                              <note xml:id="note-m18-l3-6" dur="16" oct="2" pname="g" />
+                              <note dur="16" oct="2" pname="f" />
+                              <note dur="16" oct="2" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#chord-m18-l2-1" endid="#chord-m18-l2-2" curvedir="above" />
+                     <slur startid="#chord-m18-l2-1" endid="#chord-m18-l2-2" curvedir="below" />
+                     <hairpin staff="2" tstamp="1.000000" tstamp2="0m+5.0000" form="dim" />
+                     <fing place="below" staff="2" startid="#note-m18-l3-1">1</fing>
+                     <fing place="below" staff="2" startid="#note-m18-l3-2">4</fing>
+                     <fing place="below" staff="2" startid="#note-m18-l3-3">1</fing>
+                     <fing place="below" staff="2" startid="#note-m18-l3-4">1</fing>
+                     <fing place="below" staff="2" startid="#note-m18-l3-5">1</fing>
+                     <fing place="below" staff="2" startid="#note-m18-l3-6">1</fing>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
