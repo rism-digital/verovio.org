@@ -12,7 +12,7 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-27</date>
+            <date isodate="2021-01-27">2021-01-27</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/957" />
             </pubPlace>
@@ -21,7 +21,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot></annot>
+            <annot />
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -53,7 +53,7 @@
                               <note oct="4" pname="g" accid.ges="s" />
                            </chord>
                            <chord dur="2" stem.dir="up">
-                              <artic artic="stacc" place="above" color="green" />
+                              <artic artic="stacc" color="green" place="above" />
                               <note staff="2" oct="3" pname="a" />
                               <note oct="4" pname="a" />
                            </chord>

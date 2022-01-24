@@ -5,14 +5,14 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title></title>
+            <title>Combined articulations with staccatos</title>
             <respStmt>
                <persName role="editor">Laurent Pugin</persName>
                <persName role="encoder">Craig Sapp</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-27</date>
+            <date isodate="2021-01-27">2021-01-27</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/572" />
             </pubPlace>

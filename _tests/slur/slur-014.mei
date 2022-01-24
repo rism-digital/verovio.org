@@ -17,6 +17,9 @@
                <ref target="https://github.com/rism-digital/verovio/issues/1498" />
             </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Slurs should not be affected by additional space added between the staves by other control events.</annot>
          </notesStmt>

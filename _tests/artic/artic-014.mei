@@ -11,7 +11,7 @@
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-28</date>
+            <date isodate="2021-01-28">2021-01-28</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/1934" />
             </pubPlace>
@@ -50,13 +50,13 @@
                         <layer n="1">
                            <beam>
                               <note dur="8" oct="4" pname="g">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.num="U+E583" />
                               </note>
                               <note dur="8" oct="4" pname="f">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.num="U+E583" />
                               </note>
                               <note dur="8" oct="4" pname="g">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.num="U+E583" />
                               </note>
                               <note dur="8" oct="4" pname="a">
                                  <artic artic="stroke" glyph.name="ornamentVerticalLine" />
@@ -85,13 +85,13 @@
                         <layer n="1">
                            <beam place="below">
                               <note dur="8" oct="4" pname="g">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.num="U+E583" />
                               </note>
                               <note dur="8" oct="4" pname="f">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.num="U+E583" />
                               </note>
                               <note dur="8" oct="4" pname="g">
-                                 <artic artic="stroke" glyph.num="#xE583" />
+                                 <artic artic="stroke" glyph.num="U+E583" />
                               </note>
                               <note dur="8" oct="4" pname="a">
                                  <artic artic="stroke" glyph.name="ornamentVerticalLine" />

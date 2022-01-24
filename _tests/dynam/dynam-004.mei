@@ -10,6 +10,9 @@
          <pubStmt>
             <date isodate="2017-05-02">2017-05-02</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the appropriate placement of dynamics affecting only a single note, or a single layer in a staff.</annot>
          </notesStmt>
