@@ -5,27 +5,28 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Dots merge when note-heads merge on unisons</title>
+            <title>Tie (or slur) with tstamp</title>
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <persName role="encoder">Klaus Rettinghaus</persName>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Werner Goebl</persName>
             </respStmt>
-            <date isodate="2017-07-11">11 Jul 2017</date>
+            <date isodate="2022-01-23">2022-01-23</date>
             <pubPlace>
-               <ref target="https://github.com/rism-digital/verovio/issues/655" />
+               <ref target="https://github.com/rism-digital/verovio/issues/2557" />
             </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>When note-heads of unison notes are merged, dots are merged too.</annot>
+            <annot>A tie (or slur) with @tstamp="0.0000" is expected to start at the barline and end the given end note.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="1">
+            <application version="3.9.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
