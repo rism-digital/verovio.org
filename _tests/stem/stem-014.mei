@@ -57,7 +57,7 @@
                   <measure n="1">
                      <staff n="2">
                         <layer n="1">
-                           <note xml:id="note_234" dur="4" oct="5" pname="g" stem.dir="down" accid="f" />
+                           <note xml:id="note_234" dur="4" oct="5" pname="g" stem.dir="down" />
                            <beam>
                               <note xml:id="note_246" dots="1" dur="8" oct="5" pname="g" stem.dir="down" />
                               <note xml:id="note_252" dur="16" oct="5" pname="g" stem.dir="down" />
@@ -66,7 +66,7 @@
                            <note xml:id="note_264" dur="4" oct="5" pname="g" stem.dir="down" />
                         </layer>
                         <layer n="2">
-                           <note dur="4" oct="5" pname="e" stem.sameas="#note_234" accid="f" />
+                           <note dur="4" oct="5" pname="e" stem.sameas="#note_234" />
                            <beam>
                               <note dots="1" dur="8" oct="5" pname="e" stem.sameas="#note_246" />
                               <note dur="16" oct="5" pname="e" stem.sameas="#note_252" />
