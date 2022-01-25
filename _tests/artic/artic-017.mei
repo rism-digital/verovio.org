@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Notes stemmed together and articulations</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Oleksii Sapov</persName>
+            </respStmt>
+            <date isodate="2022-01-25">2022-01-25</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2554" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Articulations on notes with @stem.sameas can be encoded as such (displayed) or with @sameas (not displayed).</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+    <music>
+        <body>
+            <mdiv n="1">
+                <score>
+                    <scoreDef key.mode="major" key.pname="e" key.sig="3f">
+                        <staffGrp bar.thru="true" symbol="none">
+                            <staffDef n="5" lines="5" trans.diat="2.000000" trans.semi="3.000000" clef.shape="G" clef.line="2" key.sig="0">
+                                <label>Clarini<lb /> in Mi♭/Es</label>
+                            </staffDef>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure n="1">
+                            <staff n="5">
+                                <layer n="1">
+                                    <rest xml:id="rest_162" dur="4" />
+                                    <note xml:id="note_168" dur="4" oct="4" pname="g">
+                                        <artic artic="spicc" />
+                                    </note>
+                                    <note xml:id="note_180" dur="4" oct="4" pname="g">
+                                        <artic xml:id="artic_192" artic="spicc" />
+                                    </note>
+                                </layer>
+                                <layer n="2">
+                                    <rest sameas="#rest_162" />
+                                    <note dur="4" oct="3" pname="g" stem.sameas="#note_168">
+                                        <artic artic="spicc" />
+                                    </note>
+                                    <note dur="4" oct="3" pname="g" stem.sameas="#note_180">
+                                        <artic sameas="#artic_192" />
+                                    </note>
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>
