@@ -51,8 +51,8 @@
                                     <note xml:id="note_168" dur="4" oct="4" pname="g">
                                         <artic artic="spicc" />
                                     </note>
-                                    <note xml:id="note_180" dur="4" oct="4" pname="g">
-                                        <artic xml:id="artic_192" artic="spicc" />
+                                    <note xml:id="note_181" dur="4" oct="5" pname="g" stem.dir="down">
+                                        <artic artic="spicc" />
                                     </note>
                                 </layer>
                                 <layer n="2">
@@ -60,8 +60,30 @@
                                     <note dur="4" oct="3" pname="g" stem.sameas="#note_168">
                                         <artic artic="spicc" />
                                     </note>
+                                    <note dur="4" oct="4" pname="g" stem.sameas="#note_181">
+                                        <artic artic="spicc" />
+                                    </note>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="2">
+                            <staff n="5">
+                                <layer n="1">
+                                    <rest xml:id="rest_163" dur="4" />
+                                    <note xml:id="note_180" dur="4" oct="4" pname="g">
+                                        <artic xml:id="artic_192" artic="spicc" />
+                                    </note>
+                                    <note xml:id="note_182" dur="4" oct="5" pname="g" stem.dir="down">
+                                        <artic xml:id="artic_193" artic="spicc" />
+                                    </note>
+                                </layer>
+                                <layer n="2">
+                                    <rest sameas="#rest_163" />
                                     <note dur="4" oct="3" pname="g" stem.sameas="#note_180">
                                         <artic sameas="#artic_192" />
+                                    </note>
+                                    <note dur="4" oct="4" pname="g" stem.sameas="#note_182">
+                                        <artic sameas="#artic_193" />
                                     </note>
                                 </layer>
                             </staff>
