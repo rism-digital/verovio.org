@@ -51,7 +51,7 @@
                                     <note xml:id="note_168" dur="4" oct="4" pname="g">
                                         <artic artic="spicc" />
                                     </note>
-                                    <note xml:id="note_181" dur="4" oct="5" pname="g" stem.dir="down">
+                                    <note xml:id="note_181" dur="4" oct="5" pname="g">
                                         <artic artic="spicc" />
                                     </note>
                                 </layer>
@@ -73,7 +73,7 @@
                                     <note xml:id="note_180" dur="4" oct="4" pname="g">
                                         <artic xml:id="artic_192" artic="spicc" />
                                     </note>
-                                    <note xml:id="note_182" dur="4" oct="5" pname="g" stem.dir="down">
+                                    <note xml:id="note_182" dur="4" oct="5" pname="g">
                                         <artic xml:id="artic_193" artic="spicc" />
                                     </note>
                                 </layer>
