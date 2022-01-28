@@ -2,6 +2,7 @@
 layout: viewer
 title: Verovio MEI Viewer
 active: mei-viewer
+verovio-wasm: true
 midiplayer: true
 pdfkit: true
 downloads:
@@ -41,7 +42,8 @@ downloads:
 
 <script>
 //<![CDATA[
-    var vrvToolkit = new verovio.toolkit();
+    var vrvToolkit = null;
+
     var page = 1;
     var zoom = 40;
     var pageHeight = 2970;
@@ -213,7 +215,7 @@ downloads:
             measure = $("#svg_output .measure").attr("id");
         }
 
-        vrvToolkit.redoLayout();
+        vrvToolkit.redoLayout({ "resetCache": false });
 
         $("#total_text").html(vrvToolkit.getPageCount());
         page = 1;
@@ -435,7 +437,7 @@ downloads:
         }
         
         vrvToolkit.setOptions(pdfOptions);
-        vrvToolkit.redoLayout();
+        vrvToolkit.redoLayout({ "resetCache": false });
         for (i = 0; i < vrvToolkit.getPageCount(); i++) {
             doc.addPage({size: pdfFormat, layout: pdfOrientation});
             SVGtoPDF(doc, vrvToolkit.renderToSVG(i + 1, {}), 0, 0, options);
@@ -443,7 +445,7 @@ downloads:
         
         // Reset the options
         set_options();
-        vrvToolkit.redoLayout();
+        vrvToolkit.redoLayout({ "resetCache": false });
         
         doc.end();
     }
@@ -709,12 +711,6 @@ downloads:
 //<![CDATA[
     $( document ).ready(function() {
 
-        var version = vrvToolkit.getVersion();
-        var n = version.lastIndexOf('-');
-        var commit = version.substring(n + 1);
-        $('#version').text( version );
-        $("#version").attr( "href", "http://github.com/rism-digital/verovio/commit/" + commit ) ;
-
         $(window).keyup(function(event){
             // We need to make sure not to capture event on text fields
             if ( $(event.target).hasClass('form-control') ) {
@@ -767,38 +763,6 @@ downloads:
         // Init the swipe
         enable_swipe( true );
 
-        // Load the default file or the file passed in the URL
-        var file = getParameterByName("file");
-        var musicxml = getParameterByName("musicxml");
-        var local = getParameterByName("local");
-
-        if (musicxml == "true") {
-            format = 'musicxml';
-            $("#mei_download").show();
-        }
-
-        if (local == "true") {
-            data = localStorage.getItem("musicxml_file");
-            outputFilename = localStorage.getItem("musicxml_filename");
-            load_data( data );
-        }
-        else {
-            if (!file || (file.length == 0)) {
-                file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
-            }
-            else {
-                target = window.location.hash;
-            }
-            $("#overlay").show();
-            $.ajax({
-                url: file
-                , dataType: "text"
-                , success: function(data) {
-                    outputFilename = file.replace(/^.*[\\\/]/, '');
-                    load_data( data );
-                }
-            });
-        }
         $(".row-offcanvas").on('transitionend webkitTransitionEnd oTransitionEnd mozTransitionend MSTransitionEnd', function() { 
             if (pageWidth != calc_page_width()) {
                 apply_zoom();   
@@ -883,5 +847,90 @@ downloads:
             $('#optionDialog').modal('hide');
         });
     });
+
+    // Preload the WASM module - 
+    var Module = {
+        noInitialRun: false,
+        onRuntimeInitialized: function() {
+            // Load the default file or the file passed in the URL
+            
+            var file = getParameterByName("file");
+
+            /*
+            if (!file || (file.length == 0)) {
+                file = "examples/musicxml/Schubert_Staendchen_D.923.mxl";
+            }
+
+            vrvToolkit = new verovio.toolkit();
+            console.log("Loaded!");
+            console.log(vrvToolkit.getVersion());
+
+            var oReq = new XMLHttpRequest();
+            oReq.open("GET", file, true);
+            oReq.responseType = "arraybuffer";
+
+            oReq.onload = function(oEvent) {
+                var arrayBuffer = oReq.response;
+                load_data(arrayBuffer);
+                };
+
+            oReq.send();
+            */
+
+            if (!file || (file.length == 0)) {
+                file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
+            }
+
+            vrvToolkit = new verovio.toolkit();
+            console.log("Loaded!");
+            console.log(vrvToolkit.getVersion());
+
+            load_form_options();
+
+            var version = vrvToolkit.getVersion();
+            var n = version.lastIndexOf('-');
+            var commit = version.substring(n + 1);
+            $('#version').text( version );
+            $("#version").attr( "href", "http://github.com/rism-digital/verovio/commit/" + commit ) ;
+
+            // Load the default file or the file passed in the URL
+            var file = getParameterByName("file");
+            var musicxml = getParameterByName("musicxml");
+            var local = getParameterByName("local");
+
+            if (musicxml == "true") {
+                format = 'musicxml';
+                $("#mei_download").show();
+            }
+
+            if (local == "true") {
+                data = localStorage.getItem("musicxml_file");
+                outputFilename = localStorage.getItem("musicxml_filename");
+                load_data( data );
+            }
+            else {
+                if (!file || (file.length == 0)) {
+                    file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
+                }
+                else {
+                    target = window.location.hash;
+                }
+                $("#overlay").show();
+                $.ajax({
+                url: file
+                , dataType: "text"
+                , success: function(data) {
+                    outputFilename = file.replace(/^.*[\\\/]/, '')
+                    load_data( data );
+                }
+            });
+            }
+        }
+    };
+    
+    var script=document.createElement( 'script' );
+    script.src="{{ site.baseurl }}/javascript/develop/verovio-toolkit-wasm.js";
+    document.body.appendChild(script);
+
 //]]>
 </script>
