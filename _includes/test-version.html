@@ -342,6 +342,7 @@
         }).each(function(){
             var elem = $(this);
             elem.remove();
+            console.log(this.id);
             $(elem).appendTo("#examples");
         })
         
