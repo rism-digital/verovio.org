@@ -51,12 +51,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="C" clef.line="3" key.sig="7s" />
@@ -69,12 +65,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="C" clef.line="4" key.sig="7s" />
@@ -87,12 +79,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="7s" />
@@ -105,12 +93,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="7f" />
@@ -123,12 +107,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="C" clef.line="3" key.sig="7f" />
@@ -141,12 +121,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="C" clef.line="4" key.sig="7f" />
@@ -159,12 +135,8 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure>
-                     <staff visible="false">
-                     </staff>
-                  </measure>
                </section>
-               <section>
+               <section restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="7f" />
@@ -175,10 +147,6 @@
                         <layer n="1">
                            <space dur="2" />
                         </layer>
-                     </staff>
-                  </measure>
-                  <measure>
-                     <staff visible="false">
                      </staff>
                   </measure>
                </section>
