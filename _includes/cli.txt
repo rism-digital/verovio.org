@@ -1,4 +1,4 @@
-Verovio 3.9.0-dev-46d53c6
+Verovio 3.9.0-dev-68c35d4
 
 Example usage:
 
@@ -151,7 +151,7 @@ Element margins
  --default-top-margin <f>       The default top margin (default: 0.50; min: 0.00; max: 6.00)
  --bottom-margin-artic <f>      The margin for artic in MEI units (default: 0.75; min: 0.00; max: 10.00)
  --bottom-margin-harm <f>       The margin for harm in MEI units (default: 1.00; min: 0.00; max: 10.00)
- --bottom-margin-header <f>     The margin for header in MEI units (default: 8.00; min: 0.00; max: 24.00)
+ --bottom-margin-header <f>     The margin for header in MEI units (default: 2.00; min: 0.00; max: 24.00)
  --left-margin-accid <f>        The margin for accid in MEI units (default: 1.00; min: 0.00; max: 2.00)
  --left-margin-bar-line <f>     The margin for barLine in MEI units
  --left-margin-beat-rpt <f>     The margin for beatRpt in MEI units
@@ -188,3 +188,4 @@ Element margins
  --right-margin-tab-dur-sym <f> The right margin for tabDurSym in MEI units
  --top-margin-artic <f>         The margin for artic in MEI units (default: 0.75; min: 0.00; max: 10.00)
  --top-margin-harm <f>          The margin for harm in MEI units (default: 1.00; min: 0.00; max: 10.00)
+ --top-margin-pg-footer <f>     The margin for footer in MEI units (default: 2.00; min: 0.00; max: 24.00)
