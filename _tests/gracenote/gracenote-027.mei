@@ -68,10 +68,10 @@
                            </beam>
                         </layer>
                      </staff>
-                     <slur staff="1" startid="#note_6564a" endid="#note_6576a" color="red" curvedir="below" />
-                     <slur staff="1" startid="#note_6564" endid="#note_6576" color="red" curvedir="below" />
-                     <slur staff="1" startid="#note_6006" endid="#note_6018" color="red" curvedir="below" />
-                     <slur staff="1" startid="#note_6006a" endid="#note_6018a" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6564a" endid="#note_6576a" color="orange" curvedir="below" />
+                     <slur staff="1" startid="#note_6564" endid="#note_6576" color="orange" curvedir="below" />
+                     <slur staff="1" startid="#note_6006" endid="#note_6018" color="orange" curvedir="below" />
+                     <slur staff="1" startid="#note_6006a" endid="#note_6018a" color="orange" curvedir="below" />
                   </measure>
                   <measure>
                      <staff n="1">
@@ -102,10 +102,10 @@
                            </beam>
                         </layer>
                      </staff>
-                     <slur staff="1" startid="#note_6564b" endid="#note_6576b" color="red" curvedir="below" />
-                     <slur staff="1" startid="#note_6564ab" endid="#note_6576ab" color="red" curvedir="below" />
-                     <slur staff="1" startid="#note_6006ab" endid="#note_6018ab" color="red" curvedir="below" />
-                     <slur staff="1" startid="#note_6006b" endid="#note_6018b" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6564b" endid="#note_6576b" color="orange" curvedir="below" />
+                     <slur staff="1" startid="#note_6564ab" endid="#note_6576ab" color="orange" curvedir="below" />
+                     <slur staff="1" startid="#note_6006ab" endid="#note_6018ab" color="orange" curvedir="below" />
+                     <slur staff="1" startid="#note_6006b" endid="#note_6018b" color="orange" curvedir="below" />
                   </measure>
                </section>
             </score>
