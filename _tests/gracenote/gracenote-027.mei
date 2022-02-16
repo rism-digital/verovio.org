@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Grace notes and slurs</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Franz Kelnreiter</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-02-16">2022-02-16</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2622" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Grace notes with slurs should render properly when connected to beam notes.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note_6564a" dur="16" oct="6" pname="c" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6576a" dur="8" oct="5" pname="b" />
+                              <note dur="16" oct="5" pname="a" />
+                              <note dur="16" oct="5" pname="g" />
+                           </beam>
+                           <note xml:id="note_6564" dur="16" oct="5" pname="b" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6576" dur="8" oct="5" pname="a" />
+                              <note dur="16" oct="5" pname="g" />
+                              <note dur="16" oct="5" pname="f" />
+                           </beam>
+                           <note xml:id="note_6006" dur="16" oct="5" pname="g" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6018" dur="8" oct="5" pname="f" />
+                              <note dur="16" oct="5" pname="e" />
+                              <note dur="16" oct="5" pname="d" />
+                           </beam>
+                           <note xml:id="note_6006a" dur="16" oct="5" pname="f" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6018a" dur="8" oct="5" pname="e" />
+                              <note dur="16" oct="5" pname="d" />
+                              <note dur="16" oct="5" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note_6564a" endid="#note_6576a" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6564" endid="#note_6576" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6006" endid="#note_6018" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6006a" endid="#note_6018a" color="red" curvedir="below" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note_6564b" dur="16" oct="5" pname="c" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6576b" dur="8" oct="4" pname="b" />
+                              <note dur="16" oct="4" pname="a" />
+                              <note dur="16" oct="4" pname="g" />
+                           </beam>
+                           <note xml:id="note_6564ab" dur="16" oct="4" pname="b" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6576ab" dur="8" oct="4" pname="a" />
+                              <note dur="16" oct="4" pname="g" />
+                              <note dur="16" oct="4" pname="f" />
+                           </beam>
+                           <note xml:id="note_6006ab" dur="16" oct="4" pname="g" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6018ab" dur="8" oct="4" pname="f" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="d" />
+                           </beam>
+                           <note xml:id="note_6006b" dur="16" oct="4" pname="f" grace="unknown" />
+                           <beam>
+                              <note xml:id="note_6018b" dur="8" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note_6564b" endid="#note_6576b" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6564ab" endid="#note_6576ab" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6006ab" endid="#note_6018ab" color="red" curvedir="below" />
+                     <slur staff="1" startid="#note_6006b" endid="#note_6018b" color="red" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
