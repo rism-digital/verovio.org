@@ -7,9 +7,17 @@
          <titleStmt>
             <title>Cascading colors</title>
          </titleStmt>
-         <pubStmt />
+         <pubStmt>
+            <date isodate="2017-03-12">2017-03-12</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rettinghaus/MEILER/commit/3598101daf957f012a68f7a422a29b0e43d3e6f6" />
+            </pubPlace>
+         </pubStmt>
          <seriesStmt>
-            <title>MEILER test files</title>
+            <title>Verovio test suite</title>
          </seriesStmt>
       </fileDesc>
       <encodingDesc>
@@ -33,7 +41,7 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <chord label="feature-example" dur="8" color="blue">
+                           <chord dur="8" color="blue">
                               <note oct="4" pname="d" accid="f" />
                               <note oct="4" pname="f" color="green" />
                               <note oct="4" pname="g" color="red">

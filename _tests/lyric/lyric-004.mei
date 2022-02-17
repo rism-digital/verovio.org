@@ -8,8 +8,17 @@
             <title>Lyrics styling example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2016-10-14">14 Oct 2016</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/334" />
+            </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio offers lyric styling (choice of font, style, and weight) on a per staff basis.</annot>
          </notesStmt>
@@ -26,7 +35,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef label="feature-example" meter.count="2" meter.unit="4">
+               <scoreDef meter.count="2" meter.unit="4">
                   <staffGrp symbol="bracket">
                      <staffDef lyric.name="Helvetica" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" />
                      <staffDef lyric.style="italic" n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" />

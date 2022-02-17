@@ -8,8 +8,11 @@
             <title>Line-break hyphenation</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-27</date>
+            <date isodate="2017-04-27">2017-04-27</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports different styles of hyphenation over a line break. When a word is hyphened at the end of the first line, a
 					second hyphen at the beginning of the new line is rendered optionally.</annot>

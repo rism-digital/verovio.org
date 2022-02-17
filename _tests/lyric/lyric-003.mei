@@ -8,11 +8,14 @@
             <title>Lyric connector example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2017-05-09">2017-05-09</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports the lyric connector attributes "con" and "wordpos" in the "syl" elements. The connectors will be appropriately
-					continued in case of system break occurring between the starting and ending node.</annot>
+            <annot>Verovio supports the lyric connector attributes "con" and "wordpos" in the "syl" elements. 
+               The connectors will be appropriately continued in case of system break occurring between the starting and ending node.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -48,7 +51,7 @@
                   </measure>
                   <measure>
                      <staff n="1">
-                        <layer n="1" label="feature-example">
+                        <layer n="1">
                            <note xml:id="note-0000001188575810" dur="4" oct="5" pname="f">
                               <verse n="1">
                                  <syl wordpos="t">fra</syl>

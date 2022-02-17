@@ -8,8 +8,11 @@
             <title>Hyphen justification</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-25</date>
+            <date isodate="2017-04-25">2017-04-25</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Regardless of the length of syllables or of their spacing, hyphens always remain centred and do not overlap syllables.</annot>
          </notesStmt>

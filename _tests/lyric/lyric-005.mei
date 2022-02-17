@@ -8,11 +8,14 @@
             <title>Hyphen removal</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-04-25</date>
+            <date isodate="2017-04-25">2017-04-25</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Verovio removes hyphens between syllables if there is not enough space. The words are displayed as if they were not
-					divided.</annot>
+            <annot>Verovio removes hyphens between syllables if there is not enough space. 
+               The words are displayed as if they were not divided.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>

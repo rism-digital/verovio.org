@@ -8,8 +8,11 @@
             <title>Lyrics placement related to rhythmic values</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-10-03</date>
+            <date isodate="2017-10-03">2017-10-03</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio adjusts the relative position of syllables to notes in order to maintain as far as possible the rhythmic spacing of the
 					notes.</annot>
