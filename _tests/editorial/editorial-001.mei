@@ -8,8 +8,11 @@
             <title>Editorial markup example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports several editorial markup elements. They all remain invisible in the output. However, they are preserved in the
 					SVG structure for further interaction. Nested editorial markup is also supported.</annot>
@@ -33,7 +36,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="1" label="feature-example">
+                  <measure n="1">
                      <staff n="1">
                         <layer n="1">
                            <sic>
