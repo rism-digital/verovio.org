@@ -8,8 +8,17 @@
             <title>Trills example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-09</date>
+            <date isodate="2017-01-17">17 Jan 2017</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/435" />
+            </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio brings simple support for "trill" elements. By default, trills are placed above the staff.</annot>
          </notesStmt>
@@ -32,7 +41,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure right="dbl" n="1" label="feature-example">
+                  <measure right="dbl" n="1">
                      <staff n="1">
                         <layer n="1">
                            <note dur="4" oct="4" pname="g" stem.dir="down" />

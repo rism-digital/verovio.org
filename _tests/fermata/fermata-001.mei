@@ -8,8 +8,17 @@
             <title>Fermata attribute example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-01-17">17 Jan 2017</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/435" />
+            </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the fermata attribute on chord, note, and rest elements.</annot>
          </notesStmt>
@@ -31,7 +40,7 @@
                      <staffDef n="1" lines="5" clef.shape="F" clef.line="4" />
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
