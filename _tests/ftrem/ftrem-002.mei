@@ -5,20 +5,23 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Ftrem and slurs</title>
+            <title>Fingered tremolos and slurs</title>
             <respStmt>
                <persName role="editor">Laurent Pugin</persName>
                <persName role="encoder">Craig Sapp</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date>2021-01-20</date>
+            <date isodate="2021-01-20">2021-01-20</date>
             <pubPlace>
                <ref target="https://github.com/rism-digital/verovio/issues/1914" />
             </pubPlace>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
-            <annot>Slurs on FTrems should be place as with beams</annot>
+            <annot>Slurs on fTrems should be place as with beams</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
