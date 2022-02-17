@@ -12,6 +12,9 @@
                <ptr target="https://kern.humdrum.org/cgi-bin/ksdata?l=users/craig/classical/landini&amp;file=echo.krn&amp;f=kern" />
             </distributor>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Support for 'label' and 'labelAbbr' within 'verse'</annot>
          </notesStmt>

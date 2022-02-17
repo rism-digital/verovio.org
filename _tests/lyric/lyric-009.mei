@@ -8,8 +8,11 @@
             <title>Minimal space between words</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>When rendering lyrics, Verovio retains a minimal space between words. Personal preferences may be specified in styling.</annot>
          </notesStmt>
