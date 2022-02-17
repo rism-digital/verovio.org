@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Stems and notes on difference layers</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-02-17">2022-02-17</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2650" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Stem collisions between notes on different layers should be avoided.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <grpSym symbol="brace" />
+                        <staffGrp bar.thru="true">
+                           <staffDef n="1" lines="5" ppq="16">
+                              <clef shape="G" line="2" />
+                              <keySig sig="3f" />
+                              <meterSig count="4" sym="common" unit="4" />
+                           </staffDef>
+                           <staffDef n="2" lines="5" ppq="16">
+                              <clef shape="F" line="4" />
+                              <keySig sig="3f" />
+                              <meterSig count="4" sym="common" unit="4" />
+                           </staffDef>
+                        </staffGrp>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="34">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="1" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="2">
+                           <note dur="4" oct="2" pname="b" stem.dir="up" accid.ges="n" />
+                           <note dur="4" oct="2" pname="b" stem.dir="up" accid.ges="n" />
+                           <note dur="2" oct="3" pname="f" stem.dir="down" />
+                        </layer>
+                        <layer n="3">
+                           <note dur="2" oct="3" pname="f" stem.dir="up" />
+                           <note dur="4" oct="2" pname="b" stem.dir="down" accid.ges="n" />
+                           <note dur="4" oct="2" pname="b" stem.dir="down" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="35">
+                     <staff n="1">
+                        <layer n="2">
+                           <note dots="1" dur="2" staff="2" oct="2" pname="b" stem.dir="up" accid.ges="n" />
+                           <rest dur="4" staff="2" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="3" pname="f" stem.dir="up" />
+                              <note dur="16" oct="3" pname="a" stem.dir="up" accid.ges="f" />
+                              <note dur="16" oct="3" pname="g" stem.dir="up" />
+                              <note dur="16" oct="3" pname="f" stem.dir="up" />
+                           </beam>
+                           <rest dots="1" dur="2" />
+                        </layer>
+                        <layer n="3">
+                           <note dots="1" dur="2" oct="2" pname="c" stem.dir="down" />
+                           <note dur="4" oct="2" pname="c" stem.dir="down" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
