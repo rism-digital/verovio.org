@@ -8,8 +8,11 @@
             <title>Color example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the "color" attributes on many elements.</annot>
          </notesStmt>
@@ -32,7 +35,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="1" label="feature-example">
+                  <measure n="1">
                      <staff n="1">
                         <layer n="1">
                            <rest dur="8" color="#EF0B12" />

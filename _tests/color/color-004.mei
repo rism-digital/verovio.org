@@ -8,8 +8,11 @@
             <title>Colouring noteheads</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
          <notesStmt>
             <annot>Verovio supports the "head.color" and "head.fillcolor" attributes in colouring only the noteheads.</annot>
          </notesStmt>
