@@ -8,7 +8,13 @@
             <title>Octave shift example (below and with @tstamp)</title>
          </titleStmt>
          <pubStmt>
-            <date isodate="2017-05-09">2017-05-09</date>
+            <date isodate="2016-10-14">14 Oct 2016</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/334" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
