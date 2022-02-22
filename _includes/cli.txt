@@ -1,4 +1,4 @@
-Verovio 3.9.0-dev-5d09510
+Verovio 3.9.0-dev-40bb1a6
 
 Example usage:
 
@@ -102,7 +102,7 @@ General layout options
  --lyric-top-min-margin <f>     The minmal margin above the lyrics in MEI units (default: 2.00; min: 0.00; max: 8.00)
  --lyric-word-space <f>         The lyric word space length (default: 1.20; min: 0.50; max: 3.00)
  --lyric-verse-collapse         Collapse empty verse lines in lyrics
- --min-measure-width <i>        The minimal measure width in MEI units (default: 15; min: 1; max: 30)
+ --measure-min-width <i>        The minimal measure width in MEI units (default: 15; min: 1; max: 30)
  --mnum-interval <i>            How frequently to place measure numbers
  --multi-rest-style <s>         Rendering style of multiple measure rests (default: "auto"; other values: "default", "block", "symbols")
  --multi-rest-thickness <f>     The thickness of the multi rest in unit (default: 2.00; min: 0.50; max: 6.00)
