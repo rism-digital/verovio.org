@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Use of @ploc and @oloc</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+            <date isodate="2022-02-24">2022-02-24</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issue/2641" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>For the bottom two staves, the chord should visually look the same as on the top staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="2" unit="8" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="perc" />
+                        <meterSig count="2" unit="8" />
+                     </staffDef>
+                     <staffDef n="3" lines="2">
+                        <clef shape="perc" />
+                        <meterSig count="2" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord type="placed" dur="4" stem.dir="down">
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                           <chord type="placed" dur="4" stem.dir="down">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <chord type="placed" dur="4" stem.dir="up">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                           <chord type="placed" dur="4" stem.dir="down">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord type="placed" dur="8" stem.dir="up">
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                           <chord type="placed" dur="8" stem.dir="down">
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord type="placed" dur="8" stem.dir="up">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                           <chord type="placed" dur="8" stem.dir="down">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <chord type="placed" dur="8" stem.dir="up">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                           <chord type="placed" dur="8" stem.dir="down">
+                              <note loc="0" />
+                              <note loc="2" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
