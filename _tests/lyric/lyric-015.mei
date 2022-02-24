@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cue with lyrics</title>
+            <respStmt>
+               <persName role="composer">Johannes Brahms</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-02-08" type="encoding-date">2022-02-08</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issue/2625" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When a note is marked as cue note, lyrics are expected to have reduced size too.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <label>Flute</label>
+                        <clef shape="G" line="2" />
+                        <keySig sig="1f" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest num="22" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="23">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" cue="true" />
+                           <note xml:id="n9vyh2j" dur="2" oct="5" pname="c" cue="true">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">denn</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nqlif06" dur="4" oct="5" pname="c" cue="true">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">sie</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="24">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="nykt4hm" dur="4" oct="5" pname="f" cue="true">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">sol</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="niwzbya" dur="4" oct="5" pname="e" cue="true" />
+                           <note xml:id="noxjmdh" dur="4" oct="5" pname="d" cue="true">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">len</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nz789s3" dur="4" oct="5" pname="e" cue="true">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">ge</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <slur startid="#nykt4hm" endid="#niwzbya" curvedir="above" />
+                  </measure>
+                  <measure n="25">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ndl5g0w" dur="4" oct="5" pname="c" cue="true">
+                              <verse n="1">
+                                 <syl con="d" wordpos="m">trös</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="n1e8nzg" dur="4" oct="4" pname="a" cue="true">
+                              <verse n="1">
+                                 <syl con="s" wordpos="t">tet</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nwtm2q3" dur="2" oct="4" pname="f" cue="true">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">wer</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <slur startid="#nwtm2q3" endid="#nqmeeg0" curvedir="above" />
+                     <tie startid="#nwtm2q3" endid="#n2897jx" />
+                  </measure>
+                  <measure n="26">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n2897jx" dur="2" oct="4" pname="f" cue="true" />
+                           <beam>
+                              <note dur="8" oct="4" pname="f" cue="true" />
+                              <note dur="8" oct="4" pname="d" cue="true" />
+                           </beam>
+                           <note xml:id="nqmeeg0" dur="4" oct="4" pname="e" cue="true" />
+                        </layer>
+                        <layer n="2">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="invis" n="27">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <note dur="4" oct="4" pname="a" />
+                        </layer>
+                        <layer n="1">
+                           <note xml:id="n241t59" dur="4" oct="4" pname="f" cue="true" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="t">den,</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
