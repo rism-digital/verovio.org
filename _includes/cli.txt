@@ -1,4 +1,4 @@
-Verovio 3.10.0-dev-632d707
+Verovio 3.10.0-dev-dd4e9ef
 
 Example usage:
 
@@ -67,6 +67,7 @@ Input and page layout options
  --use-pg-footer-for-all        Use the pgFooter for all pages
  --use-pg-header-for-all        Use the pgHeader for all pages
  --xml-id-checksum              Seed the generator for XML IDs using the checksum of the input data
+ --justification-max-vertical <f>	Maximum ratio of justifiable height to page height that can be used for the vertical justification (default: 0.30; min: 0.00; max: 1.00)
 
 General layout options
  --midi-tempo-adjustment <f>    The MIDI tempo adjustment factor (default: 1.00; min: 0.20; max: 4.00)
