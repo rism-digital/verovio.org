@@ -1,4 +1,4 @@
-Verovio 3.10.0-dev-00432c1
+Verovio 3.10.0-dev-c7f7915
 
 Example usage:
 
@@ -171,7 +171,7 @@ Element margins
  --left-margin-rest <f>         The margin for rest in MEI units (default: 1.00; min: 0.00; max: 2.00)
  --left-margin-right-bar-line <f>	The margin for right barLine in MEI units (default: 1.00; min: 0.00; max: 2.00)
  --left-margin-tab-dur-sym <f>  The margin for tabDurSym in MEI units (default: 1.00; min: 0.00; max: 2.00)
- --right-margin-accid <f>       The right margin for accid in MEI units
+ --right-margin-accid <f>       The right margin for accid in MEI units (default: 0.50; min: 0.00; max: 2.00)
  --right-margin-bar-line <f>    The right margin for barLine in MEI units
  --right-margin-beat-rpt <f>    The right margin for beatRpt in MEI units
  --right-margin-chord <f>       The right margin for chord in MEI units
