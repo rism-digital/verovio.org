@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Figured bass on multiple staves</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-03-21">2022-03-21</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2675" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Figured bass on multiple staves should be grouped and aligned individually.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.10.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig sig="1f" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig sig="1f" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                     <staffDef n="3" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig sig="1f" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <harm staff="3" tstamp="2.000000">
+                        <fb>
+                           <f></f>
+                        </fb>
+                     </harm>
+                     <harm staff="2" tstamp="2.000000">
+                        <fb>
+                           <f></f>
+                        </fb>
+                     </harm>
+                     <harm staff="3" tstamp="3.000000">
+                        <fb>
+                           <f></f>
+                        </fb>
+                     </harm>
+                     <harm staff="2" tstamp="3.000000">
+                        <fb>
+                           <f></f>
+                        </fb>
+                     </harm>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L6F7" dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" accid.ges="f" />
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note xml:id="note-L11F7" dur="8" oct="5" pname="e" accid="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="f" accid.ges="n" />
+                           <note dur="4" oct="3" pname="g" accid.ges="n" />
+                           <note dur="4" oct="3" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="f" accid.ges="n" />
+                           <note dur="4" oct="3" pname="g" accid.ges="n" />
+                           <note dur="4" oct="3" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L6F7" endid="#note-L11F7" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
