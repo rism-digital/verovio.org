@@ -1,4 +1,4 @@
-Verovio 3.10.0-dev-d0fb00f
+Verovio 3.10.0-dev-745e5e2
 
 Example usage:
 
@@ -144,7 +144,8 @@ Element selectors and processing
  --mdiv-all                     Load and render all <mdiv> elements in the MEI files
  --mdiv-x-path-query <s>        Set the xPath query for selecting the <mdiv> to be rendered; only one <mdiv> can be rendered (default: "")
  --subst-x-path-query* <s>      Set the xPath query for selecting <subst> child elements, for example: "./del"; by default the first child is selected
- --transpose <s>                SUMMARY (default: "")
+ --transpose <s>                Transpose the entire content (default: "")
+ --transpose-mdiv <s>           Json mapping the mdiv uuids to the corresponding transposition
  --transpose-selected-only      Transpose only the selected content and ignore unselected editorial content
 
 Element margins
