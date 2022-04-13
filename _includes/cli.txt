@@ -1,4 +1,4 @@
-Verovio 3.10.0-dev-f7ff909
+Verovio 3.10.0-dev-485acb5
 
 Example usage:
 
@@ -74,7 +74,7 @@ General layout options
  --midi-tempo-adjustment <f>    The MIDI tempo adjustment factor (default: 1.00; min: 0.20; max: 4.00)
  --bar-line-separation <f>      The default distance between multiple barlines when locked together (default: 0.80; min: 0.50; max: 2.00)
  --bar-line-width <f>           The barLine width (default: 0.30; min: 0.10; max: 0.80)
- --beam-max-slope <i>           The maximum beam slope (default: 10; min: 1; max: 20)
+ --beam-max-slope <i>           The maximum beam slope (default: 10; min: 0; max: 20)
  --beam-min-slope <i>           The minimum beam slope
  --beam-french-style            For notes in beams, stems will stop at first outermost sub-beam without crossing it
  --bracket-thickness <f>        The thickness of the system bracket (default: 1.00; min: 0.50; max: 2.00)
