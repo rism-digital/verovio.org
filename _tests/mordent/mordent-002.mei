@@ -8,7 +8,7 @@
             <title>Mordents example (2)</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
