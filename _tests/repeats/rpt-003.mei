@@ -28,7 +28,7 @@
   <music>
     <body>
       <mdiv>
-        <score label="feature-example">
+        <score>
           <scoreDef meter.count="6" meter.unit="8">
             <staffGrp symbol="bracket">
               <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
