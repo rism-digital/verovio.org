@@ -5,22 +5,21 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Beat repetition example (1)</title>
+            <title>Beat repetition example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Verovio supports beat repetition. The alignment of the beat repetition will not work with compound meters when the repeated
-					beat duration does not correspond to the meter signature unit.</annot>
+            <annot>Verovio supports beat repetitions with different number of slashes.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="2.6.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -35,7 +34,7 @@
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">

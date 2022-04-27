@@ -5,10 +5,10 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Mordents example (3)</title>
+            <title>Placement of mordents with beams</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-17</date>
+            <date isodate="2017-05-17">2017-05-17</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>

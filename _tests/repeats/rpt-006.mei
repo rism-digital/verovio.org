@@ -5,21 +5,21 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Beat repetition example (2)</title>
+            <title>Beat repetition with different renditions</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot />
+            <annot>Verovio supports the 'mixed' rendering of beatRpt.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="2.0.0">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -34,7 +34,7 @@
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
