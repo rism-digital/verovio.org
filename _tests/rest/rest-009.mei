@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Default vertical placement of multiple rests in different staves</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2017-05-29">29 May 2017</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>By default, Verovio places block rests in the middle of the staff, indepentently of the number of lines.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4" meter.sym="cut">
+                  <staffGrp>
+                     <staffDef n="1" lines="1" clef.shape="perc" />
+                     <staffDef n="2" lines="2" clef.shape="perc" />
+                     <staffDef n="3" lines="3" clef.shape="perc" />
+                     <staffDef n="4" lines="4" clef.shape="perc" />
+                     <staffDef n="5" lines="5" clef.shape="perc" />
+                     <staffDef n="6" lines="6" clef.shape="perc" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure metcon="false">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="5">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="6">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <multiRest block="true" num="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <multiRest block="true" num="4" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <multiRest block="true" num="4" />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <multiRest block="true" num="4" />
+                        </layer>
+                     </staff>
+                     <staff n="5">
+                        <layer n="1">
+                           <multiRest block="true" num="4" />
+                        </layer>
+                     </staff>
+                     <staff n="6">
+                        <layer n="1">
+                           <multiRest block="true" num="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

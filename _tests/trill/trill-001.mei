@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Trills example</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-01-17">17 Jan 2017</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/435" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio brings simple support for "trill" elements. By default, trills are placed above the staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="C" clef.line="1" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" tstamp="1.000000" tstamp2="0m+1.9000" />
+                  </measure>
+                  <measure right="dbl" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                              <note dur="32" oct="4" pname="g" stem.dir="down" />
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                              <note dur="32" oct="4" pname="g" stem.dir="down" />
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                              <note dur="32" oct="4" pname="g" stem.dir="down" />
+                              <note dur="32" oct="4" pname="a" stem.dir="down" />
+                              <note dur="32" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef key.sig="2s" />
+                  <measure right="dbl" n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="b" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" tstamp="1.000000" place="above" />
+                  </measure>
+                  <measure right="dbl" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="32" oct="5" pname="c" stem.dir="down">
+                                 <accid accid="s" />
+                              </note>
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="32" oct="4" pname="b" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef key.sig="2s" />
+                  <measure right="dbl" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" tstamp="1.000000" color="fuchsia" place="below" />
+                  </measure>
+                  <measure right="dbl" n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="32" oct="5" pname="d" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid="s" />
+                              <note dur="32" oct="5" pname="d" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="32" oct="5" pname="d" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="32" oct="5" pname="d" stem.dir="down" />
+                              <note dur="32" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

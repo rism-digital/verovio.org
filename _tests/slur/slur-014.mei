@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Staff spacing and slur positioning</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-21</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/1498" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slurs should not be affected by additional space added between the staves by other control events.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" meter.sym="common" />
+                        <staffDef n="3" lines="5" clef.shape="F" clef.line="4" key.sig="2s" meter.count="4" meter.unit="4" meter.sym="common" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="8" />
+                           <space dur="8" />
+                           <space dur="4" />
+                           <beam>
+                              <note dur="8" oct="4" pname="e" stem.dir="up" />
+                              <note dur="8" oct="4" pname="g" stem.dir="up" />
+                           </beam>
+                           <note xml:id="ex_1525030897" dur="8" oct="5" pname="c" stem.dir="down">
+                              <accid accid="n" />
+                           </note>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="5">
+                           <rest dur="8" />
+                           <beam>
+                              <note xml:id="ex_0713646956" dur="8" oct="3" pname="e" stem.dir="up" />
+                              <note dur="8" oct="3" pname="g" stem.dir="up" />
+                              <note dur="8" oct="4" pname="c" stem.dir="up">
+                                 <accid accid="n" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="g" stem.dir="down" />
+                              <note dur="8" oct="4" pname="c" stem.dir="down">
+                                 <accid accid="n" />
+                              </note>
+                           </beam>
+                           <note xml:id="ex_2110968671" dur="8" oct="4" pname="e" stem.dir="down" />
+                           <rest dur="8" ploc="g" oloc="2" />
+                        </layer>
+                        <layer n="6">
+                           <beam>
+                              <note xml:id="ex_0945791345" dur="8" oct="2" pname="e" stem.dir="down" />
+                              <note dur="8" oct="2" pname="g" stem.dir="down" />
+                              <note dur="8" oct="3" pname="c" stem.dir="down">
+                                 <accid accid="n" />
+                              </note>
+                              <note dur="8" oct="3" pname="e" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#ex_0713646956" endid="#ex_1525030897" curvedir="above" />
+                     <hairpin staff="3" tstamp="2.000000" tstamp2="0m+4.5000" form="cres" place="above" vgrp="254" />
+                     <slur startid="#ex_0945791345" endid="#ex_2110968671" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

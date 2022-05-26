@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs placement and whole notes</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-20</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/841" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>The slurs on the whole notes should be positioned in a similar fashion to the third group in each measure (as if the slurs were placed on the opposite side of the notes from the stems).</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L3F1" dur="1" oct="4" pname="c" />
+                           <note xml:id="note-L4F1" dur="1" oct="4" pname="d" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L3F1" endid="#note-L4F1" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L3F2" dur="1" oct="4" pname="c" />
+                           <note xml:id="note-L4F2" dur="1" oct="4" pname="d" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L3F2" endid="#note-L4F2" curvedir="above" />
+                     <dir place="above" staff="1" tstamp="1.000000">curvedir="above"</dir>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L3F3" dur="1" oct="4" pname="c" stem.dir="down" />
+                           <note xml:id="note-L4F3" dur="1" oct="4" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L3F3" endid="#note-L4F3" />
+                     <dir place="above" staff="1" tstamp="1.000000">stem.dir="down"</dir>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L3F4" dur="1">
+                              <note oct="4" pname="c" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <chord xml:id="chord-L4F4" dur="1">
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#chord-L3F4" endid="#chord-L4F4" />
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L3F5" dur="1">
+                              <note oct="4" pname="c" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <chord xml:id="chord-L4F5" dur="1">
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#chord-L3F5" endid="#chord-L4F5" curvedir="above" />
+                     <dir place="above" staff="1" tstamp="1.000000">curvedir="above"</dir>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-L3F6" dur="1" stem.dir="down">
+                              <note oct="4" pname="c" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <chord xml:id="chord-L4F6" dur="1" stem.dir="down">
+                              <note oct="4" pname="d" />
+                              <note oct="3" pname="b" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#chord-L3F6" endid="#chord-L4F6" />
+                     <dir place="above" staff="1" tstamp="1.000000">stem.dir="down"</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

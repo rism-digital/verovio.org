@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Fermatas and slur interaction</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Fermatas are placed below exceptionally high slurs.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L2F1" dur="8" oct="4" pname="b">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="8" oct="4" pname="a">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="8" oct="9" pname="b">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="8" oct="5" pname="c">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                           <note xml:id="note-L6F1" dur="2" oct="5" pname="e">
+                              <accid accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <fermata staff="1" tstamp="1.000000" place="above" />
+                     <slur staff="1" startid="#note-L2F1" endid="#note-L6F1" />
+                     <fermata staff="1" tstamp="3.000000" place="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

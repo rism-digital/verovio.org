@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Example use of @sameas on beam and layer</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Validation failing because of empty beam elements</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef n="1" key.mode="major" key.pname="f" key.sig="1f" meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp symbol="bracket" bar.thru="true">
+                     <staffDef n="4" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="86">
+                     <staff n="4">
+                        <layer n="1">
+                           <note dur="8" oct="3" pname="b" tstamp="1" accid.ges="f" />
+                           <beam>
+                              <note xml:id="note_45411a" dur="8" oct="4" pname="c" tstamp="1.5" accid="s" />
+                              <note dur="8" oct="4" pname="d" tstamp="2" />
+                           </beam>
+                           <beam xml:id="beam_45426a">
+                              <note dur="8" oct="3" pname="a" tstamp="2.5" />
+                              <note dur="8" oct="3" pname="b" tstamp="3" accid.ges="f" />
+                           </beam>
+                           <beam xml:id="beam_45447a">
+                              <note dur="8" oct="3" pname="e" tstamp="3.5" accid="n" />
+                              <note dur="8" oct="3" pname="f" tstamp="4" />
+                           </beam>
+                           <note dur="8" oct="3" pname="d" tstamp="4.5" artic="spicc" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="8" oct="3" pname="b" tstamp="1" accid.ges="f" />
+                           <!-- A space should not affect stem direction in layer 1 -->
+                           <space dur="4" />
+                           <!-- A beam with @sames not affect stem direction in layer 1 -->
+                           <beam sameas="#beam_45426a" />
+                           <beam sameas="#beam_45447a" />
+                           <!-- A note should affect stem direction in layer 1 -->
+                           <note dur="8" oct="2" pname="d" tstamp="4.5" artic="spicc" />
+                           <!-- <note xml:id="note_45468b" sameas="#note_45468a"/>-->
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="4" startid="#note_45411a">
+                        <rend fontstyle="normal">a 2</rend>
+                     </dir>
+                  </measure>
+                  <measure n="88">
+                     <staff n="4">
+                        <layer n="1">
+                           <rest dur="8" tstamp="1" />
+                           <beam>
+                              <note dur="8" oct="4" pname="c" tstamp="1.5" accid="s" />
+                              <note dur="8" oct="4" pname="d" tstamp="2" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" tstamp="2.5" />
+                              <note dur="8" oct="3" pname="b" tstamp="3" accid.ges="f" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="f" tstamp="3.5" accid="s" />
+                              <note dur="8" oct="3" pname="g" tstamp="4" />
+                           </beam>
+                           <note dur="8" oct="3" pname="d" tstamp="4.5" artic="spicc" />
+                        </layer>
+                        <!-- a complete layer with @sameas should not affect stem direction in layer 1 -->
+                        <layer n="2" sameas="#layer_46854" />
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

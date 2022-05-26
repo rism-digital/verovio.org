@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tremolo stem length</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-03">2021-11-03</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2450" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Stem length should be properly adjusted according to @unitdir</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <bTrem unitdur="16">
+                              <chord dur="2">
+                                 <note oct="4" pname="f" accid.ges="n" />
+                                 <note oct="5" pname="d" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                           <bTrem unitdur="32">
+                              <chord dur="2">
+                                 <note oct="4" pname="f" accid.ges="n" />
+                                 <note oct="5" pname="d" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                           <bTrem unitdur="16">
+                              <chord dur="4">
+                                 <note oct="4" pname="f" accid.ges="n" />
+                                 <note oct="5" pname="d" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                           <bTrem unitdur="32">
+                              <chord dur="4">
+                                 <note oct="4" pname="f" accid.ges="n" />
+                                 <note oct="5" pname="d" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <bTrem unitdur="16">
+                              <note type="placed" dur="2" oct="5" pname="d" stem.dir="up" accid.ges="n" />
+                           </bTrem>
+                           <bTrem unitdur="32">
+                              <note type="placed" dur="2" oct="5" pname="d" stem.dir="up" accid.ges="n" />
+                           </bTrem>
+                           <bTrem unitdur="16">
+                              <note type="placed" dur="4" oct="5" pname="d" stem.dir="up" accid.ges="n" />
+                           </bTrem>
+                           <bTrem unitdur="32">
+                              <note type="placed" dur="4" oct="5" pname="d" stem.dir="up" accid.ges="n" />
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <bTrem unitdur="16">
+                              <chord dur="2">
+                                 <note oct="4" pname="e" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                           <bTrem unitdur="32">
+                              <chord dur="2">
+                                 <note oct="4" pname="e" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                           <bTrem unitdur="16">
+                              <chord dur="4">
+                                 <note oct="4" pname="e" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                           <bTrem unitdur="32">
+                              <chord dur="4">
+                                 <note oct="4" pname="e" accid.ges="n" />
+                                 <note oct="5" pname="c" accid.ges="n" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs with grace notes</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Mirijam Beier</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-20</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/1185" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Slurs connecting grace notes and "normal" notes should connect properly to both</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef optimize="false" key.mode="major" key.pname="e" key.sig="3f" meter.count="6" meter.unit="8">
+                  <staffGrp symbol="brace">
+                     <staffDef label="Vl. I" n="6" lines="5" clef.shape="G" clef.line="2">
+                        <label>Violino I</label>
+                     </staffDef>
+                     <staffDef label="Vl. II" n="7" lines="5" clef.shape="G" clef.line="2">
+                        <label>Violino II</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <section>
+                     <pb n="147" />
+                     <measure n="13">
+                        <staff n="6">
+                           <layer n="1">
+                              <rest dur="8" tstamp="1" />
+                              <beam>
+                                 <note xml:id="note_9372" dur="8" oct="5" pname="g" tstamp="2" />
+                                 <note xml:id="note_9378" dur="8" oct="5" pname="a" tstamp="3" accid.ges="f" />
+                              </beam>
+                              <beam>
+                                 <note xml:id="note_9390" dur="32" oct="5" pname="a" grace="unknown" stem.dir="up" accid.ges="f" />
+                                 <note dur="32" oct="5" pname="b" grace="unknown" stem.dir="up" accid.ges="f" />
+                              </beam>
+                              <beam>
+                                 <note xml:id="note_9408" dots="1" dur="8" oct="6" pname="c" tstamp="4" />
+                                 <note dur="16" oct="5" pname="b" tstamp="5.5" accid.ges="f" />
+                                 <note dur="8" oct="5" pname="a" tstamp="6" accid.ges="f" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff n="7">
+                           <layer n="1">
+                              <rest dur="8" tstamp="1" />
+                              <beam>
+                                 <note xml:id="note_9450" dur="8" oct="4" pname="g" tstamp="2" />
+                                 <note xml:id="note_9456" dur="8" oct="4" pname="a" tstamp="3" accid.ges="f" />
+                              </beam>
+                              <beam>
+                                 <note xml:id="note_9468" dur="32" oct="4" pname="a" grace="unknown" stem.dir="up" accid.ges="f" />
+                                 <note dur="32" oct="4" pname="b" grace="unknown" stem.dir="up" accid.ges="f" />
+                              </beam>
+                              <beam>
+                                 <note xml:id="note_9486" dots="1" dur="8" oct="5" pname="c" stem.dir="up" tstamp="4" />
+                                 <note dur="16" oct="4" pname="b" stem.dir="up" tstamp="5.5" accid.ges="f" />
+                                 <note dur="8" oct="4" pname="a" stem.dir="up" tstamp="6" accid.ges="f" />
+                              </beam>
+                           </layer>
+                        </staff>
+                        <slur staff="6" startid="#note_9372" endid="#note_9378" />
+                        <slur staff="6" startid="#note_9390" endid="#note_9408" curvedir="below" />
+                        <slur staff="7" startid="#note_9450" endid="#note_9456" />
+                        <slur staff="7" startid="#note_9468" endid="#note_9486" curvedir="below" />
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

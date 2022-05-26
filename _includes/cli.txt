@@ -1,0 +1,192 @@
+Verovio 3.9.0-dev-40bb1a6
+
+Example usage:
+
+ verovio [-s scale] [-r resource-path] [-o outfile] infile
+
+Options (marked as * are repeatable)
+ - , --stdin                    Use "-" as input file or set the "--stdin" option for reading from the standard input
+ -h, --help                     Display this message
+ -a, --all-pages                Output all pages
+ -f, --input-from <s>           Select input format from: "abc", "darms", "humdrum", "mei", "pae", "xml" (musicxml) (default: "mei")
+ -o, --outfile <s>              Output file name (use "-" as file name for standard output) (default: "svg")
+ -p, --page <i>                 Select the page to engrave (default is 1)
+ -r, --resource-path <s>        Path to the directory with Verovio resources (default: "/usr/local/share/verovio")
+ -s, --scale <i>                Scale of the output in percent (default: 100; min: 1; max: 1000)
+ -t, --output-to <s>            Select output format to: "mei", "pb-mei", "svg", or "midi" (default: "svg")
+ -v, --version                  Display the version number
+ -x, --xml-id-seed <i>          Seed the random number generator for XML IDs (default is random)
+
+Input and page layout options
+ --adjust-page-height           Adjust the page height to the height of the content
+ --adjust-page-width            Adjust the page width to the width of the content
+ --breaks <s>                   Define page and system breaks layout (default: "auto"; other values: "none", "line", "smart", "encoded")
+ --breaks-smart-sb <f>          In smart breaks mode, the portion of system width usage at which an encoded sb will be used (default: 0.66; min: 0.00; max: 1.00)
+ --condense <s>                 Control condensed score layout (default: "auto"; other values: "none", "encoded")
+ --condense-first-page          When condensing a score also condense the first page
+ --condense-tempo-pages         When condensing a score also condense pages with a tempo change
+ --even-note-spacing            Specify the linear spacing factor
+ --expand <s>                   Expand all referenced elements in the expansion <xml:id> (default: "")
+ --hum-type                     Include type attributes when importing from Humdrum
+ --justify-vertically           Justify spacing vertically to fill the page
+ --landscape                    The landscape paper orientation flag
+ --ligature-as-bracket          Render ligatures as bracket instead of original notation
+ --mensural-to-measure          Convert mensural sections to measure-based MEI
+ --min-last-justification <f>   The last system is only justified if the unjustified width is greater than this percent (default: 0.80; min: 0.00; max: 1.00)
+ --mm-output                    Specify that the output in the SVG is given in mm (default is px)
+ --footer <s>                   Control footer layout (default: "auto"; other values: "none", "encoded", "always")
+ --header <s>                   Control header layout (default: "auto"; other values: "none", "encoded")
+ --no-justification             Do not justify the system
+ --open-control-events          Render open control events
+ --output-indent <i>            Output indentation value for MEI and SVG (default: 3; min: 1; max: 10)
+ --output-format-raw            Writes MEI out with no line indenting or non-content newlines.
+ --output-indent-tab            Output indentation with tabulation for MEI and SVG
+ --output-smufl-xml-entities    Output SMuFL characters as XML entities instead of hex byte codes 
+ --page-height <i>              The page height (default: 2970; min: 100; max: 60000)
+ --page-margin-bottom <i>       The page bottom margin (default: 50; min: 0; max: 500)
+ --page-margin-left <i>         The page left margin (default: 50; min: 0; max: 500)
+ --page-margin-right <i>        The page right margin (default: 50; min: 0; max: 500)
+ --page-margin-top <i>          The page top margin (default: 50; min: 0; max: 500)
+ --page-width <i>               The page width (default: 2100; min: 100; max: 60000)
+ --pedal-style <s>              The global pedal style (default: "auto"; other values: "line", "pedstar", "altpedstar")
+ --preserve-analytical-markup   Preserves the analytical markup in MEI
+ --remove-ids                   Remove XML IDs in the MEI output that are not referenced
+ --show-runtime                 Display the total runtime on command-line
+ --shrink-to-fit                Scale down page content to fit the page height if needed
+ --staccato-center              Align staccato and staccatissimo articulations with center of the note
+ --svg-bounding-boxes           Include bounding boxes in SVG output
+ --svg-css <s>                  CSS (as a string) to be added to the SVG output (default: "")
+ --svg-view-box                 Use viewBox on svg root element for easy scaling of document
+ --svg-html5                    Write data-id and data-class attributes for JS usage and id clash avoidance
+ --svg-format-raw               Writes SVG out with no line indenting or non-content newlines
+ --svg-remove-xlink             Removes the xlink: prefix on href attributes for compatibility with some newer browsers
+ --svg-additional-attribute* <s>	Add additional attribute for graphical elements in SVG as "data-*", for example, "note@pname" would add a "data-pname" to all note elements
+ --unit <i>                     The MEI unit (1⁄2 of the distance between the staff lines) (default: 9; min: 6; max: 20)
+ --use-brace-glyph              Use brace glyph from current font
+ --use-facsimile                Use information in the <facsimile> element to control the layout
+ --use-pg-footer-for-all        Use the pgFooter for all pages
+ --use-pg-header-for-all        Use the pgHeader for all pages
+ --xml-id-checksum              Seed the generator for XML IDs using the checksum of the input data
+
+General layout options
+ --midi-tempo-adjustment <f>    The MIDI tempo adjustment factor (default: 1.00; min: 0.20; max: 4.00)
+ --bar-line-separation <f>      The default distance between multiple barlines when locked together (default: 0.80; min: 0.50; max: 2.00)
+ --bar-line-width <f>           The barLine width (default: 0.30; min: 0.10; max: 0.80)
+ --beam-max-slope <i>           The maximum beam slope (default: 10; min: 1; max: 20)
+ --beam-min-slope <i>           The minimum beam slope
+ --bracket-thickness <f>        The thickness of the system bracket (default: 1.00; min: 0.50; max: 2.00)
+ --dynam-dist <f>               The default distance from the staff for dynamic marks (default: 1.00; min: 0.50; max: 16.00)
+ --engraving-defaults <s>       Json describing defaults for engraving SMuFL elements
+ --engraving-defaults-file <s>  Path to json file describing defaults for engraving SMuFL elements
+ --breaks-no-widow              Prevent single measures on the last page by fitting it into previous system
+ --fingering-scale <f>          The scale of fingering font compared to default font size (default: 0.75; min: 0.25; max: 1.00)
+ --font <s>                     Set the music font (default: "Leipzig")
+ --clef-change-factor <f>       Set the ratio of normal clefs to changing clefs (default: 0.66; min: 0.25; max: 1.00)
+ --grace-factor <f>             The grace size ratio numerator (default: 0.75; min: 0.50; max: 1.00)
+ --grace-rhythm-align           Align grace notes rhythmically with all staves
+ --grace-right-align            Align the right position of a grace group with all staves
+ --hairpin-size <f>             The haripin size in MEI units (default: 3.00; min: 1.00; max: 8.00)
+ --hairpin-thickness <f>        The thickness of the hairpin (default: 0.20; min: 0.10; max: 0.80)
+ --handwritten-font* <s>        Fonts that emulate hand writing and require special handling
+ --harm-dist <f>                The default distance from the staff of harmonic indications (default: 1.00; min: 0.50; max: 16.00)
+ --justification-staff <f>      The staff justification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-system <f>     The system spacing justification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-bracket-group <f>	Space between staves inside a bracketed group justification (default: 1.00; min: 0.00; max: 10.00)
+ --justification-brace-group <f>	Space between staves inside a braced group justification (default: 1.00; min: 0.00; max: 10.00)
+ --ledger-line-thickness <f>    The thickness of the ledger lines (default: 0.25; min: 0.10; max: 0.50)
+ --ledger-line-extension <f>    The amount by which a ledger line should extend either side of a notehead (default: 0.54; min: 0.20; max: 1.00)
+ --lyric-hyphen-length <f>      The lyric hyphen and dash length (default: 1.20; min: 0.50; max: 3.00)
+ --lyric-line-thickness <f>     The lyric extender line thickness (default: 0.25; min: 0.10; max: 0.50)
+ --lyric-no-start-hyphen        Do not show hyphens at the beginning of a system
+ --lyric-size <f>               The lyrics size in MEI units (default: 4.50; min: 2.00; max: 8.00)
+ --lyric-top-min-margin <f>     The minmal margin above the lyrics in MEI units (default: 2.00; min: 0.00; max: 8.00)
+ --lyric-word-space <f>         The lyric word space length (default: 1.20; min: 0.50; max: 3.00)
+ --lyric-verse-collapse         Collapse empty verse lines in lyrics
+ --measure-min-width <i>        The minimal measure width in MEI units (default: 15; min: 1; max: 30)
+ --mnum-interval <i>            How frequently to place measure numbers
+ --multi-rest-style <s>         Rendering style of multiple measure rests (default: "auto"; other values: "default", "block", "symbols")
+ --multi-rest-thickness <f>     The thickness of the multi rest in unit (default: 2.00; min: 0.50; max: 6.00)
+ --octave-alternative-symbols   Use alternative symbols for displaying octaves
+ --octave-line-thickness <f>    The thickness of the line used for an octave line (default: 0.20; min: 0.10; max: 1.00)
+ --pedal-line-thickness <f>     The thickness of the line used for piano pedaling (default: 0.20; min: 0.10; max: 1.00)
+ --repeat-bar-line-dot-separation <f>	The default horizontal distance between the dots and the inner barline of a repeat barline (default: 0.36; min: 0.10; max: 1.00)
+ --repeat-ending-line-thickness <f>	Repeat and ending line thickness (default: 0.15; min: 0.10; max: 2.00)
+ --slur-curve-factor <f>        Slur curve factor - high value means rounder slurs (default: 1.00; min: 0.20; max: 5.00)
+ --slur-margin <f>              Slur safety distance in MEI units to obstacles (default: 1.00; min: 0.10; max: 4.00)
+ --slur-max-slope <i>           The maximum slur slope in degrees (default: 40; min: 0; max: 80)
+ --slur-endpoint-thickness <f>  The Endpoint slur thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
+ --slur-midpoint-thickness <f>  The midpoint slur thickness in MEI units (default: 0.60; min: 0.20; max: 1.20)
+ --spacing-brace-group <i>      Minimum space between staves inside a braced group in MEI units (default: 12; min: 0; max: 48)
+ --spacing-bracket-group <i>    Minimum space between staves inside a bracketed group in MEI units (default: 12; min: 0; max: 48)
+ --spacing-dur-detection        Detect long duration for adjusting spacing
+ --spacing-linear <f>           Specify the linear spacing factor (default: 0.25; min: 0.00; max: 1.00)
+ --spacing-non-linear <f>       Specify the non-linear spacing factor (default: 0.60; min: 0.00; max: 1.00)
+ --spacing-staff <i>            The staff minimal spacing in MEI units (default: 12; min: 0; max: 48)
+ --spacing-system <i>           The system minimal spacing in MEI units (default: 12; min: 0; max: 48)
+ --staff-line-width <f>         The staff line width in unit (default: 0.15; min: 0.10; max: 0.30)
+ --stem-width <f>               The stem width (default: 0.20; min: 0.10; max: 0.50)
+ --sub-bracket-thickness <f>    The thickness of system sub-bracket (default: 0.20; min: 0.10; max: 2.00)
+ --system-divider <s>           The display of system dividers (default: "auto"; other values: "none", "left", "left-right")
+ --system-max-per-page <i>      Maximun number of systems per page
+ --text-enclosure-thickness <f> The thickness of the line text enclosing box (default: 0.20; min: 0.10; max: 0.80)
+ --thick-barline-thickness <f>  The thickness of the thick barline (default: 1.00; min: 0.50; max: 2.00)
+ --tie-endpoint-thickness <f>   The Endpoint tie thickness in MEI units (default: 0.10; min: 0.05; max: 0.25)
+ --tie-midpoint-thickness <f>   The midpoint tie thickness in MEI units (default: 0.50; min: 0.20; max: 1.00)
+ --tie-min-length <f>           The minimum length of tie in MEI units (default: 2.00; min: 0.00; max: 10.00)
+ --tuplet-bracket-thickness <f> The thickness of the tuplet bracket (default: 0.20; min: 0.10; max: 0.80)
+ --tuplet-num-head              Placement of tuplet number on the side of the note head
+
+Element selectors and processing
+ --app-x-path-query* <s>        Set the xPath query for selecting <app> child elements, for example: "./rdg[contains(@source, 'source-id')]"; by default the <lem> or the first <rdg> is selected
+ --choice-x-path-query* <s>     Set the xPath query for selecting <choice> child elements, for example: "./orig"; by default the first child is selected
+ --mdiv-all                     Load and render all <mdiv> elements in the MEI files
+ --mdiv-x-path-query <s>        Set the xPath query for selecting the <mdiv> to be rendered; only one <mdiv> can be rendered (default: "")
+ --subst-x-path-query* <s>      Set the xPath query for selecting <subst> child elements, for example: "./del"; by default the first child is selected
+ --transpose <s>                SUMMARY (default: "")
+ --transpose-selected-only      Transpose only the selected content and ignore unselected editorial content
+
+Element margins
+ --default-bottom-margin <f>    The default bottom margin (default: 0.50; min: 0.00; max: 5.00)
+ --default-left-margin <f>      The default left margin
+ --default-right-margin <f>     The default right margin
+ --default-top-margin <f>       The default top margin (default: 0.50; min: 0.00; max: 6.00)
+ --bottom-margin-artic <f>      The margin for artic in MEI units (default: 0.75; min: 0.00; max: 10.00)
+ --bottom-margin-harm <f>       The margin for harm in MEI units (default: 1.00; min: 0.00; max: 10.00)
+ --bottom-margin-header <f>     The margin for header in MEI units (default: 2.00; min: 0.00; max: 24.00)
+ --left-margin-accid <f>        The margin for accid in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-bar-line <f>     The margin for barLine in MEI units
+ --left-margin-beat-rpt <f>     The margin for beatRpt in MEI units
+ --left-margin-chord <f>        The margin for chord in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-clef <f>         The margin for clef in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-key-sig <f>      The margin for keySig in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-left-bar-line <f>	The margin for left barLine in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-mensur <f>       The margin for mensur in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-meter-sig <f>    The margin for meterSig in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-m-rest <f>       The margin for mRest in MEI units
+ --left-margin-m-rpt2 <f>       The margin for mRpt2 in MEI units
+ --left-margin-multi-rest <f>   The margin for multiRest in MEI units
+ --left-margin-multi-rpt <f>    The margin for multiRpt in MEI units
+ --left-margin-note <f>         The margin for note in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-rest <f>         The margin for rest in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-right-bar-line <f>	The margin for right barLine in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --left-margin-tab-dur-sym <f>  The margin for tabDurSym in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --right-margin-accid <f>       The right margin for accid in MEI units
+ --right-margin-bar-line <f>    The right margin for barLine in MEI units
+ --right-margin-beat-rpt <f>    The right margin for beatRpt in MEI units
+ --right-margin-chord <f>       The right margin for chord in MEI units
+ --right-margin-clef <f>        The right margin for clef in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --right-margin-key-sig <f>     The right margin for keySig in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --right-margin-left-bar-line <f>	The right margin for left barLine in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --right-margin-mensur <f>      The right margin for mensur in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --right-margin-meter-sig <f>   The right margin for meterSig in MEI units (default: 1.00; min: 0.00; max: 2.00)
+ --right-margin-m-rest <f>      The right margin for mRest in MEI units
+ --right-margin-m-rpt2 <f>      The right margin for mRpt2 in MEI units
+ --right-margin-multi-rest <f>  The right margin for multiRest in MEI units
+ --right-margin-multi-rpt <f>   The right margin for multiRpt in MEI units
+ --right-margin-note <f>        The right margin for note in MEI units
+ --right-margin-rest <f>        The right margin for rest in MEI units
+ --right-margin-right-bar-line <f>	The right margin for right barLine in MEI units
+ --right-margin-tab-dur-sym <f> The right margin for tabDurSym in MEI units
+ --top-margin-artic <f>         The margin for artic in MEI units (default: 0.75; min: 0.00; max: 10.00)
+ --top-margin-harm <f>          The margin for harm in MEI units (default: 1.00; min: 0.00; max: 10.00)
+ --top-margin-pg-footer <f>     The margin for footer in MEI units (default: 2.00; min: 0.00; max: 24.00)

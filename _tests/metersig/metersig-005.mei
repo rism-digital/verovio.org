@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Complex meter signature examples</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2021-06-14">2021-06-14</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders enclose complex time signatures.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <label>Flute</label>
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig enclose="paren" count="2+3" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSig enclose="paren" count="2+3+4" unit="8" />
+                  </scoreDef>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSig enclose="paren" count="2+3+4+5" unit="8" />
+                  </scoreDef>
+                  <measure right="dbl" n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                              <note dur="8" oct="5" pname="e" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSigGrp func="mixed">
+                        <meterSig enclose="paren" count="1" unit="4" />
+                        <meterSig enclose="paren" count="3" unit="8" />
+                     </meterSigGrp>
+                  </scoreDef>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSigGrp func="mixed">
+                        <meterSig enclose="paren" count="1" unit="4" />
+                        <meterSig enclose="paren" count="3" unit="8" />
+                        <meterSig enclose="paren" count="2" unit="4" />
+                     </meterSigGrp>
+                  </scoreDef>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSigGrp func="mixed">
+                        <meterSig enclose="paren" count="1" unit="4" />
+                        <meterSig enclose="paren" count="3" unit="8" />
+                        <meterSig enclose="paren" count="2" unit="4" />
+                        <meterSig enclose="paren" count="5" unit="8" />
+                     </meterSigGrp>
+                  </scoreDef>
+                  <measure right="dbl" n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                              <note dur="8" oct="5" pname="e" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef>
+                     <meterSigGrp func="interchanging">
+                        <meterSig enclose="paren" count="2" unit="4" />
+                        <meterSig enclose="paren" count="3" unit="4" />
+                     </meterSigGrp>
+                  </scoreDef>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="4" pname="g" />
+                              <note dur="8" oct="4" pname="b" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

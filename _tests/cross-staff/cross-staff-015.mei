@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cross-staff content and note head position</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Iacopo Cividini</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2020-11-30</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/98" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot />
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.1.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="1">
+            <score>
+               <scoreDef key.mode="major" key.pname="c" key.sig="0" meter.count="2" meter.unit="4">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="128">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note_24882" dots="1" dur="16" oct="5" pname="a" stem.dir="up" tstamp="1" />
+                              <note xml:id="note_24888" dur="32" oct="4" pname="a" stem.dir="up" tstamp="1.375" />
+                              <note xml:id="note_24894" dots="1" dur="16" oct="5" pname="f" stem.dir="up" tstamp="1.5" />
+                              <note xml:id="note_24900" dur="32" oct="5" pname="d" stem.dir="up" tstamp="1.875" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="5" pname="c" tstamp="2" />
+                              <note xml:id="note_24918" dur="16" oct="5" pname="e" grace="unknown" stem.dir="up" />
+                              <chord xml:id="chord_24924" dur="8" tstamp="2.5">
+                                 <note oct="5" pname="d" />
+                                 <note oct="4" pname="b" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam place="mixed">
+                              <note dur="8" staff="1" oct="4" pname="a" stem.dir="down" tstamp="1" />
+                              <note dur="8" oct="4" pname="d" tstamp="1.5" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note_25002" dur="8" oct="4" pname="e" tstamp="2" />
+                              <note xml:id="note_25008" dur="8" oct="4" pname="f" tstamp="2.5" />
+                           </beam>
+                           <clef shape="G" line="2" tstamp="2.9" />
+                        </layer>
+                        <layer n="2">
+                           <space dur="8" tstamp="1" />
+                           <note dur="8" oct="3" pname="f" tstamp="1.5" />
+                           <note dur="4" oct="3" pname="g" tstamp="2" />
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" startid="#note_24882">f</dynam>
+                     <slur staff="1" startid="#note_24882" endid="#note_24888" curvedir="above" />
+                     <slur staff="1" startid="#note_24894" endid="#note_24900" curvedir="above" />
+                     <slur staff="1" startid="#note_24918" endid="#chord_24924" curvedir="above" />
+                     <slur staff="2" startid="#note_25002" endid="#note_25008" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

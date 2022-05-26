@@ -1,0 +1,2119 @@
+<svg width="665px" height="450px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" overflow="visible">
+	<defs>
+		<symbol id="E050" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M441 -245c-23 -4 -48 -6 -76 -6c-59 0 -102 7 -130 20c-88 42 -150 93 -187 154c-26 44 -43 103 -48 176c-4 60 11 123 44 189c29 57 65 106 110 148s96 85 153 127c-3 16 -8 46 -13 92c-4 43 -5 73 -5 89c0 117 16 172 69 257c34 54 64 82 89 82c21 0 43 -30 69 -92 s39 -115 41 -159c2 -120 -19 -173 -67 -256c-13 -20 -63 -90 -98 -118c-13 -9 -25 -19 -37 -29l31 -181c8 1 18 2 28 2c58 0 102 -12 133 -35c59 -43 92 -104 98 -184c11 -135 -80 -229 -180 -270c8 -57 17 -110 25 -162c5 -31 6 -58 6 -80c0 -30 -5 -53 -14 -70 c-35 -64 -88 -99 -158 -103c-42 -3 -83 6 -124 26c-50 24 -77 59 -80 105c-2 34 5 63 20 87c18 28 45 42 79 44c51 4 99 -40 103 -87c4 -56 -30 -94 -105 -115c17 -24 51 -36 102 -36c62 0 116 43 140 85c9 16 13 41 13 74c0 20 -1 42 -5 67c-8 53 -18 106 -26 159zM461 939 c-95 0 -135 -175 -135 -286c0 -24 2 -48 5 -71c50 39 92 82 127 128c43 57 63 106 60 148c-4 54 -23 82 -57 81zM406 119l54 -326c80 27 116 88 109 184c-7 99 -62 146 -163 142zM382 117c-74 -2 -132 -50 -128 -127c2 -46 43 -99 75 -115c-3 -2 -7 -5 -10 -10 c-70 33 -116 88 -123 172c-5 73 42 135 88 170c23 17 49 29 78 36l-29 170c-21 -13 -52 -37 -92 -73c-50 -44 -86 -84 -109 -119c-49 -75 -71 -140 -67 -195c5 -68 35 -127 93 -176s125 -73 203 -73c25 0 50 3 75 9c-19 111 -36 221 -54 331z" />
+			</g>
+		</symbol>
+		<symbol id="E260" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M20 110c32 16 54 27 93 27c26 0 35 -3 54 -13c13 -7 24 -20 27 -38l4 -25c0 -28 -16 -57 -45 -89c-23 -25 -39 -44 -65 -68l-88 -79v644h20v-359zM90 106c-32 0 -48 -10 -70 -29v-194c31 31 54 59 71 84c21 32 32 59 32 84c0 9 1 16 1 20c0 14 -3 21 -11 30l-8 3z" />
+			</g>
+		</symbol>
+		<symbol id="E083" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M188 250c97 0 177 -52 177 -116c0 -69 -40 -111 -118 -125c56 -5 125 -44 125 -116c0 -31 -10 -57 -31 -78c-19 -21 -45 -38 -78 -49l-50 -11c-15 -3 -36 -7 -55 -7c-50 0 -86 16 -113 38c-16 10 -23 18 -34 34c-7 13 -11 25 -11 38c0 43 27 83 68 83l3 -2 c61 0 75 -42 75 -70c0 -19 -24 -42 -26 -57c7 -17 20 -25 37 -25c44 0 94 29 94 78c0 75 -34 125 -138 125v36c84 0 131 22 131 98c0 54 -37 88 -87 88c-26 0 -43 -7 -51 -22c15 -22 44 -16 44 -70c0 -37 -37 -62 -71 -62c-22 0 -69 15 -69 76c0 79 101 116 178 116z" />
+			</g>
+		</symbol>
+		<symbol id="E084" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M0 -78c84 97 114 180 134 329h170c-13 -32 -82 -132 -99 -151l-84 -97c-33 -36 -59 -63 -80 -81h162v102l127 123v-225h57v-39h-57v-34c0 -43 19 -65 57 -65v-34h-244v36c48 0 60 26 60 70v27h-203v39z" />
+			</g>
+		</symbol>
+		<symbol id="E0A4" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M0 -39c0 68 73 172 200 172c66 0 114 -37 114 -95c0 -84 -106 -171 -218 -171c-64 0 -96 30 -96 94z" />
+			</g>
+		</symbol>
+		<symbol id="E241" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M253 493c16 -37 23 -74 23 -111c0 -45 -12 -89 -35 -132c-20 -37 -49 -74 -87 -109c-48 -46 -104 -100 -154 -139v176c40 7 69 13 87 18c88 27 168 95 168 200c0 58 -24 118 -49 152c-5 7 -12 16 -15 26c0 3 2 5 5 5s7 -2 13 -7c19 -23 28 -43 44 -79z" />
+			</g>
+		</symbol>
+		<symbol id="E240" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M206 -548c24 34 49 94 49 152c0 105 -80 173 -168 200c-18 5 -47 11 -87 18v176c16 -13 34 -28 53 -45c4 -3 38 -35 101 -94c62 -58 122 -137 122 -241c0 -37 -8 -74 -23 -111c-14 -35 -22 -53 -44 -79c-6 -5 -10 -7 -13 -7s-5 2 -5 5l4 10c1 3 5 9 11 16z" />
+			</g>
+		</symbol>
+		<symbol id="E062" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M158 96c51 0 73 -14 88 -49l16 -39c0 -17 -2 -30 -7 -40c-3 -11 -10 -21 -19 -31c-17 -18 -49 -43 -84 -43c-55 0 -77 13 -112 44c-24 21 -35 55 -35 100c0 46 14 81 32 112c30 52 71 79 137 93l36 6l26 2c154 0 235 -68 274 -182c11 -32 18 -68 18 -107 c0 -103 -26 -182 -68 -250c-89 -145 -234 -230 -412 -288l-30 -5c-9 0 -14 3 -14 8c3 10 5 11 10 16c35 15 70 30 96 44l78 43c96 57 162 136 197 258c9 33 17 60 22 100c3 22 5 35 6 39c-7 69 -16 115 -23 140s-4 22 -16 40c-8 12 -19 23 -31 34c-24 21 -62 44 -118 44 c-48 0 -84 -8 -113 -28c-28 -19 -42 -44 -42 -73v-16c2 -5 3 -9 4 -11c24 22 52 39 84 39zM585 -118c0 32 23 58 57 58c18 0 33 -6 40 -18c9 -15 16 -18 16 -40c0 -9 -2 -16 -5 -21c-6 -19 -27 -37 -51 -37c-34 0 -57 26 -57 58zM642 177c31 0 56 -27 56 -58 c0 -30 -25 -58 -56 -58l-23 3c-19 7 -34 32 -34 55l3 23c9 20 28 35 54 35z" />
+			</g>
+		</symbol>
+		<symbol id="E520" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M23 124h-23c22 42.667 42.667 76.333 62 101s44.667 37.333 76 38c6 0 12 -4.33301 18 -13c6.66701 -6.66701 10 -15.667 10 -27l24 14l25 13c12 4.66701 24.333 7 37 7c24 0 43.333 -9.33299 58 -28s22.333 -44.333 23 -77c0 -14 -1 -26.667 -3 -38 s-5.33301 -21 -10 -29s-11 -17 -19 -27c-14 -18 -29.667 -32 -47 -42c-17.333 -10 -35.333 -15 -54 -15c-8.66701 0 -19.667 3.33301 -33 10c-5.33299 3.333 -10.333 6.667 -15 10s-9 8 -13 14l-56 -158l-3 -4c2.667 -6.66701 6.667 -10.333 12 -11h32v-29h-173v29h21 c4 0 8.667 1.66701 14 5c4 4 7 8.667 9 14l119 331v6l-3 10l-6 3c-8.667 0 -17 -4 -25 -12s-15.667 -18.333 -23 -31l-11 -17l-10 -20zM197 201c-12 -20.667 -21.667 -44.667 -29 -72c-6.66701 -30 -10 -50.667 -10 -62c0 -24 7.33299 -36 22 -36c12.667 0 23 2.333 31 7 s15 11.333 21 20c10 16.667 15.333 26 16 28c4.66701 11.333 8 26 10 44s3.33301 31 4 39c0 7.33299 -0.666992 13.333 -2 18s-3.33301 9.334 -6 14c-5.33299 9.33299 -14.667 14 -28 14c-14 0 -23.667 -4.66701 -29 -14z" />
+			</g>
+		</symbol>
+		<symbol id="E4E6" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M0 123c7 34 33 56 69 60c29 -3 43 -9 53 -29c4 -8 7 -15 10 -22c0 -21 -1 -25 -11 -35c-5 -8 -18 -14 -40 -20l12 -3l15 -1c44 0 97 26 122 56c10 11 18 26 24 42c7 1 15 2 22 3l-140 -424h-36l111 330c-10 -6 -27 -12 -53 -16l-52 -8h-10l-20 1c-1 0 -8 3 -21 6 c-37 9 -55 28 -55 60z" />
+			</g>
+		</symbol>
+		<symbol id="E0A3" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M96 -132zM200 138l41 -5c-2 0 -41 5 -41 5zM278 64c0 22 -17 39 -43 39c-12 0 -26 -3 -41 -10c-85 -43 -165 -94 -165 -156c5 -25 15 -32 49 -32c67 11 200 95 200 159zM0 -36c0 68 73 174 200 174c66 0 114 -39 114 -97c0 -84 -106 -173 -218 -173c-64 0 -96 32 -96 96z " />
+			</g>
+		</symbol>
+		<symbol id="E883" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M161 326c52 0 94 -17 94 -68c0 -50 -40 -76 -82 -94c26 -21 39 -42 39 -64c0 -52 -56 -100 -118 -100h-12c-40 0 -82 23 -82 56c0 30 12 49 37 49c17 0 31 -16 34 -31c0 -5 -4 -12 -11 -21c-7 -5 -13 -10 -13 -21l11 -9l17 -4c21 0 40 12 56 37c13 21 19 45 19 70 c-9 30 -28 35 -66 35l6 23c34 0 60 4 77 13c20 11 30 35 30 70c0 28 -12 38 -39 40l-20 -3c-8 -3 -12 -9 -12 -16c2 -7 4 -11 5 -14l4 -11l3 -10l-3 -12c-5 -6 -11 -11 -20 -13c-18 -4 -36 10 -36 27c0 39 43 71 82 71z" />
+			</g>
+		</symbol>
+		<symbol id="E886" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M154 326c35 0 57 -16 60 -49c0 -7 -1 -13 -2 -16l-8 -14c-4 -7 -13 -12 -28 -15l-13 1l-12 7c-4 4 -7 11 -6 20l1 11l8 10l17 16c-2 7 -9 10 -20 10c-30 0 -53 -25 -69 -74l-9 -31l-6 -36c25 21 42 34 83 34c28 0 56 -29 56 -61c0 -65 -45 -139 -118 -139 c-69 0 -88 38 -88 108v18c0 6 1 13 3 20c0 21 2 20 9 39c17 50 45 95 83 120c20 13 39 21 59 21zM58 58c0 -24 5 -39 27 -39c18 0 35 15 48 47c10 25 16 42 16 72l-3 10l-6 12c-6 7 -14 12 -26 12c-11 0 -24 -11 -37 -33l-14 -40c-3 -15 -5 -28 -5 -41z" />
+			</g>
+		</symbol>
+		<symbol id="E261" viewBox="0 0 1000 1000" overflow="inherit">
+			<g transform="scale(1,-1)">
+				<path d="M0 -188v539h18v-191l139 22v-533h-17v186zM18 -100l122 17v176l-122 -19v-174z" />
+			</g>
+		</symbol>
+	</defs>
+	<svg id="definition-scale" viewBox="0 0 19000 12860">
+		<g class="page-margin" transform="translate(500, 500)" style="stroke: #000; stroke-opacity: 1.0; fill: #000; fill-opacity: 1.0">
+			<g class="system" id="system-000000017464848">
+				<path d="M2030 1082 L2030 6016" style="stroke-width: 30;" />
+				<text x="1685" y="4825" dx="0" dy="0" text-anchor="end" font-size="0px" font-family="Times">
+					<tspan font-family="Times" font-size="405px" class="text" xml:space="preserve">Pianoforte</tspan>
+				</text>
+				<path d="M2000,5996 C1640,5456 2090,4915 1820,4735 C2155,4915 1705,5456 2000,5996" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 20" />
+				<path d="M2000,3473 C1705,4013 2155,4555 1820,4735 C2090,4555 1640,4013 2000,3473" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 20" />
+				<text x="1745" y="1464" dx="0" dy="0" text-anchor="end" font-size="0px" font-family="Times">
+					<tspan font-family="Times" font-size="405px" class="text" xml:space="preserve">Singstimme</tspan>
+				</text>
+				<g class="measure" id="d1e15">
+					<g class="staff" id="staff-000000123035584">
+						<path d="M2015 1082 L4631 1082" style="stroke-width: 17;" />
+						<path d="M2015 1235 L4631 1235" style="stroke-width: 17;" />
+						<path d="M2015 1388 L4631 1388" style="stroke-width: 17;" />
+						<path d="M2015 1541 L4631 1541" style="stroke-width: 17;" />
+						<path d="M2015 1694 L4631 1694" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000047056591">
+							<g class="clef" id="clef-000000193320678">
+								<use xlink:href="#E050" x="2132" y="1541" height="612px" width="612px" />
+							</g>
+							<g class="keySig" id="ksig-000000212628961">
+								<use xlink:href="#E260" x="2813" y="1386" height="612px" width="612px" />
+							</g>
+							<g class="meterSig" id="msig-000000080738590">
+								<use xlink:href="#E083" x="3161" y="1234" height="612px" width="612px" />
+								<use xlink:href="#E084" x="3156" y="1540" height="612px" width="612px" />
+							</g>
+							<g class="note" id="d1e37">
+								<use xlink:href="#E0A4" x="3800" y="1310" height="612px" width="612px" />
+								<rect x="3800" y="1329" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E241" x="3800" y="1842" height="612px" width="612px" />
+								<g class="verse" id="verse-000000192788358">
+									<g class="syl" id="syl-000000070606312">
+										<text x="3744" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Am</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000133232916">
+									<g class="syl" id="syl-000000064435611">
+										<text x="3744" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Ich</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000002595422">
+									<g class="syl" id="syl-000000027339519">
+										<text x="3744" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Die</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000164372859">
+						<path d="M2015 3453 L4631 3453" style="stroke-width: 20;" />
+						<path d="M2015 3633 L4631 3633" style="stroke-width: 20;" />
+						<path d="M2015 3813 L4631 3813" style="stroke-width: 20;" />
+						<path d="M2015 3993 L4631 3993" style="stroke-width: 20;" />
+						<path d="M2015 4173 L4631 4173" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000091691157">
+							<g class="clef" id="clef-000000027412235">
+								<use xlink:href="#E050" x="2132" y="3993" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-000000082191363">
+								<use xlink:href="#E260" x="2813" y="3813" height="720px" width="720px" />
+							</g>
+							<g class="meterSig" id="msig-000000080738590">
+								<use xlink:href="#E083" x="3141" y="3633" height="720px" width="720px" />
+								<use xlink:href="#E084" x="3135" y="3993" height="720px" width="720px" />
+							</g>
+							<g class="chord" id="d13e1">
+								<rect x="3989" y="3183" width="20" height="1148" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="3989" y="3093" height="720px" width="720px" />
+								<path d="M3734 4353 L4058 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e101">
+									<use xlink:href="#E0A4" x="3783" y="3723" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e118">
+									<use xlink:href="#E0A4" x="3783" y="3903" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e136">
+									<use xlink:href="#E0A4" x="3783" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000077801768">
+						<path d="M2015 5296 L4631 5296" style="stroke-width: 20;" />
+						<path d="M2015 5476 L4631 5476" style="stroke-width: 20;" />
+						<path d="M2015 5656 L4631 5656" style="stroke-width: 20;" />
+						<path d="M2015 5836 L4631 5836" style="stroke-width: 20;" />
+						<path d="M2015 6016 L4631 6016" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000011528840">
+							<g class="clef" id="clef-000000128764594">
+								<use xlink:href="#E062" x="2132" y="5476" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-000000127261956">
+								<use xlink:href="#E260" x="2813" y="5836" height="720px" width="720px" />
+							</g>
+							<g class="meterSig" id="msig-000000080738590">
+								<use xlink:href="#E083" x="3141" y="5476" height="720px" width="720px" />
+								<use xlink:href="#E084" x="3135" y="5836" height="720px" width="720px" />
+							</g>
+							<g class="chord" id="d17e1">
+								<rect x="3989" y="4936" width="20" height="1148" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="3989" y="4846" height="720px" width="720px" />
+								<g class="note" id="d1e157">
+									<use xlink:href="#E0A4" x="3783" y="5476" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e174">
+									<use xlink:href="#E0A4" x="3783" y="6106" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="dynam" id="dynam-000000034895331">
+						<use xlink:href="#E520" x="3759" y="4682" height="720px" width="720px" />
+					</g>
+					<g class="tempo" id="tempo-000000075562077">
+						<text x="3274" y="970" dx="0" dy="0" font-size="0px" font-family="Times" font-weight="bold">
+							<tspan font-family="Times" font-size="344px" font-weight="bold" class="text" xml:space="preserve">Mässig.</tspan>
+						</text>
+					</g>
+					<g class="barLineAttr" id="bline-000000209836418">
+						<path d="M4616 1082 L4616 1694" style="stroke-width: 30;" />
+						<path d="M4616 3453 L4616 4173" style="stroke-width: 30;" />
+						<path d="M4616 5296 L4616 6016" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e192">
+					<g class="staff" id="staff-000000078075541">
+						<path d="M4632 1082 L8140 1082" style="stroke-width: 17;" />
+						<path d="M4632 1235 L8140 1235" style="stroke-width: 17;" />
+						<path d="M4632 1388 L8140 1388" style="stroke-width: 17;" />
+						<path d="M4632 1541 L8140 1541" style="stroke-width: 17;" />
+						<path d="M4632 1694 L8140 1694" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000103121034">
+							<g class="note" id="d1e194">
+								<use xlink:href="#E0A4" x="4950" y="1310" height="612px" width="612px" />
+								<rect x="4950" y="1329" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="5236" cy="1310" rx="30" ry="30" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="verse" id="verse-000000089722408">
+									<g class="syl" id="syl-000000001502736">
+										<text x="4894" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Brun</tspan>
+										</text>
+										<rect x="5591" y="2131" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000177719063">
+									<g class="syl" id="syl-000000204042316">
+										<text x="4894" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">musst'</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000130044173">
+									<g class="syl" id="syl-000000158316462">
+										<text x="4894" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">kal</tspan>
+										</text>
+										<rect x="5471" y="2809" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e225">
+								<use xlink:href="#E0A4" x="5912" y="1462" height="612px" width="612px" />
+								<rect x="6087" y="1006" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="6087" y="930" height="612px" width="612px" />
+								<g class="verse" id="verse-000000067969849">
+									<g class="syl" id="syl-000000122715430">
+										<text x="5856" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">nen</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000071377088">
+									<g class="syl" id="syl-000000050362886">
+										<text x="5856" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">auch</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000062161991">
+									<g class="syl" id="syl-000000005801917">
+										<text x="5856" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ten</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e255">
+								<use xlink:href="#E0A4" x="6662" y="1462" height="612px" width="612px" />
+								<rect x="6837" y="1006" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="6837" y="930" height="612px" width="612px" />
+								<g class="verse" id="verse-000000085243016">
+									<g class="syl" id="syl-000000093037401">
+										<text x="6606" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">vor</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000101702750">
+									<g class="syl" id="syl-000000135887964">
+										<text x="6606" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">heu</tspan>
+										</text>
+										<rect x="7092" y="2470" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000070849737">
+									<g class="syl" id="syl-000000206604265">
+										<text x="6606" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Win</tspan>
+										</text>
+										<rect x="7141" y="2809" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e285">
+								<use xlink:href="#E0A4" x="7372" y="1462" height="612px" width="612px" />
+								<rect x="7547" y="1006" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="7547" y="930" height="612px" width="612px" />
+								<g class="verse" id="verse-000000109772389">
+									<g class="syl" id="syl-000000041344146">
+										<text x="7316" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">dem</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000020582741">
+									<g class="syl" id="syl-000000189262500">
+										<text x="7316" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">te</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000044071631">
+									<g class="syl" id="syl-000000044799089">
+										<text x="7316" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">de</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000093754289">
+						<path d="M4632 3453 L8140 3453" style="stroke-width: 20;" />
+						<path d="M4632 3633 L8140 3633" style="stroke-width: 20;" />
+						<path d="M4632 3813 L8140 3813" style="stroke-width: 20;" />
+						<path d="M4632 3993 L8140 3993" style="stroke-width: 20;" />
+						<path d="M4632 4173 L8140 4173" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000119596864">
+							<g class="chord" id="d35e1">
+								<rect x="5139" y="3093" width="20" height="1238" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="5271" cy="3723" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<ellipse cx="5271" cy="3903" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<ellipse cx="5271" cy="4263" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<path d="M4884 4353 L5208 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e316">
+									<use xlink:href="#E0A4" x="4933" y="3723" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e334">
+									<use xlink:href="#E0A4" x="4933" y="3903" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e353">
+									<use xlink:href="#E0A4" x="4933" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000020134764">
+								<path d="M6111 4331 L6111 3293" style="stroke-width: 20;" />
+								<path d="M6861 4331 L6861 3293" style="stroke-width: 20;" />
+								<path d="M7571 4331 L7571 3293" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="6101,3273 7581,3273 7581,3363 6101,3363 " />
+								<g class="chord" id="d39e1">
+									<path d="M5846 4353 L6170 4353" style="stroke-width: 20;" />
+									<g class="note" id="d1e372">
+										<use xlink:href="#E0A4" x="5895" y="3903" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e391">
+										<use xlink:href="#E0A4" x="5895" y="4083" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e409">
+										<use xlink:href="#E0A4" x="5895" y="4353" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d43e1">
+									<path d="M6596 4353 L6920 4353" style="stroke-width: 20;" />
+									<g class="note" id="d1e428">
+										<use xlink:href="#E0A4" x="6645" y="3903" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e449">
+										<use xlink:href="#E0A4" x="6645" y="4083" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e467">
+										<use xlink:href="#E0A4" x="6645" y="4353" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d47e1">
+									<path d="M7306 4353 L7630 4353" style="stroke-width: 20;" />
+									<g class="note" id="d1e485">
+										<use xlink:href="#E0A4" x="7355" y="3903" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e506">
+										<use xlink:href="#E0A4" x="7355" y="4083" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e525">
+										<use xlink:href="#E0A4" x="7355" y="4353" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000074582118">
+						<path d="M4632 5296 L8140 5296" style="stroke-width: 20;" />
+						<path d="M4632 5476 L8140 5476" style="stroke-width: 20;" />
+						<path d="M4632 5656 L8140 5656" style="stroke-width: 20;" />
+						<path d="M4632 5836 L8140 5836" style="stroke-width: 20;" />
+						<path d="M4632 6016 L8140 6016" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000015452472">
+							<g class="chord" id="d51e1">
+								<rect x="5139" y="4846" width="20" height="1238" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="5271" cy="5386" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<ellipse cx="5271" cy="6106" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="note" id="d1e547">
+									<use xlink:href="#E0A4" x="4933" y="5476" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e565">
+									<use xlink:href="#E0A4" x="4933" y="6106" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000144328981">
+								<path d="M6111 6084 L6111 5283" style="stroke-width: 20;" />
+								<path d="M6861 5904 L6861 5208" style="stroke-width: 20;" />
+								<path d="M7571 5724 L7571 5136" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="6101,5263 7581,5116 7581,5206 6101,5353 " />
+								<g class="note" id="d1e584">
+									<use xlink:href="#E0A4" x="5895" y="6106" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e604">
+									<use xlink:href="#E0A4" x="6645" y="5926" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e623">
+									<use xlink:href="#E0A4" x="7355" y="5746" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000208482217">
+						<path d="M6008,4511 C6300,4726 7176,4726 7468,4511 C7176,4780 6300,4780 6008,4511" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="slur" id="slur-000000126316119">
+						<path d="M6008,6264 C6350,6402 7226,6185 7467,5905 C7239,6238 6363,6455 6008,6264" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000014302463">
+						<path d="M8125 1082 L8125 1694" style="stroke-width: 30;" />
+						<path d="M8125 3453 L8125 4173" style="stroke-width: 30;" />
+						<path d="M8125 5296 L8125 6016" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e643">
+					<g class="staff" id="staff-000000051423445">
+						<path d="M8141 1082 L11114 1082" style="stroke-width: 17;" />
+						<path d="M8141 1235 L11114 1235" style="stroke-width: 17;" />
+						<path d="M8141 1388 L11114 1388" style="stroke-width: 17;" />
+						<path d="M8141 1541 L11114 1541" style="stroke-width: 17;" />
+						<path d="M8141 1694 L11114 1694" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000126435688">
+							<g class="note" id="d1e645">
+								<use xlink:href="#E0A4" x="8459" y="1462" height="612px" width="612px" />
+								<rect x="8634" y="930" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<g class="verse" id="verse-000000016424728">
+									<g class="syl" id="syl-000000098769982">
+										<text x="8403" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Tho</tspan>
+										</text>
+										<rect x="8937" y="2131" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000155586422">
+									<g class="syl" id="syl-000000164909328">
+										<text x="8403" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">wan</tspan>
+										</text>
+										<rect x="8945" y="2470" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000162357216">
+									<g class="syl" id="syl-000000145014156">
+										<text x="8403" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">blie</tspan>
+										</text>
+										<rect x="8910" y="2809" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e675">
+								<use xlink:href="#E0A4" x="9213" y="1614" height="612px" width="612px" />
+								<rect x="9388" y="1082" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<g class="verse" id="verse-000000044203812">
+									<g class="syl" id="syl-000000118879828">
+										<text x="9157" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">re,</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000075570535">
+									<g class="syl" id="syl-000000092157951">
+										<text x="9157" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">dern</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000158500682">
+									<g class="syl" id="syl-000000182258400">
+										<text x="9157" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">sen</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="rest" id="d1e705">
+								<use xlink:href="#E4E6" x="9967" y="1385" height="612px" width="612px" />
+							</g>
+							<g class="note" id="d1e714">
+								<use xlink:href="#E0A4" x="10458" y="1614" height="612px" width="612px" />
+								<rect x="10633" y="1158" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="10633" y="1082" height="612px" width="612px" />
+								<g class="verse" id="verse-000000107421003">
+									<g class="syl" id="syl-000000035302110">
+										<text x="10402" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">da</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000181614323">
+									<g class="syl" id="syl-000000173429264">
+										<text x="10402" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">vor</tspan>
+										</text>
+										<rect x="11001" y="2470" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000212624561">
+									<g class="syl" id="syl-000000168208119">
+										<text x="10402" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">mir</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000045059567">
+						<path d="M8141 3453 L11114 3453" style="stroke-width: 20;" />
+						<path d="M8141 3633 L11114 3633" style="stroke-width: 20;" />
+						<path d="M8141 3813 L11114 3813" style="stroke-width: 20;" />
+						<path d="M8141 3993 L11114 3993" style="stroke-width: 20;" />
+						<path d="M8141 4173 L11114 4173" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000113420401">
+							<g class="chord" id="d69e1">
+								<rect x="8648" y="3273" width="20" height="1058" rx="0" style="stroke-width: 0;" />
+								<path d="M8393 4353 L8717 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e745">
+									<use xlink:href="#E0A4" x="8442" y="3903" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e762">
+									<use xlink:href="#E0A4" x="8442" y="4083" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e780">
+									<use xlink:href="#E0A4" x="8442" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="chord" id="d73e1">
+								<rect x="9402" y="3453" width="20" height="1058" rx="0" style="stroke-width: 0;" />
+								<path d="M9147 4353 L9471 4353" style="stroke-width: 20;" />
+								<path d="M9147 4533 L9471 4533" style="stroke-width: 20;" />
+								<g class="note" id="d1e799">
+									<use xlink:href="#E0A4" x="9196" y="4083" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e816">
+									<use xlink:href="#E0A4" x="9196" y="4353" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e834">
+									<use xlink:href="#E0A4" x="9196" y="4533" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="rest" id="d1e853">
+								<use xlink:href="#E4E6" x="9950" y="3813" height="720px" width="720px" />
+							</g>
+							<g class="chord" id="d78e1">
+								<rect x="10647" y="3543" width="20" height="788" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="10647" y="3453" height="720px" width="720px" />
+								<path d="M10392 4353 L10716 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e864">
+									<use xlink:href="#E0A4" x="10441" y="4083" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e881">
+									<use xlink:href="#E0A4" x="10441" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000117776661">
+						<path d="M8141 5296 L11114 5296" style="stroke-width: 20;" />
+						<path d="M8141 5476 L11114 5476" style="stroke-width: 20;" />
+						<path d="M8141 5656 L11114 5656" style="stroke-width: 20;" />
+						<path d="M8141 5836 L11114 5836" style="stroke-width: 20;" />
+						<path d="M8141 6016 L11114 6016" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000136669029">
+							<g class="note" id="d1e902">
+								<use xlink:href="#E0A3" x="8442" y="5476" height="720px" width="720px" />
+								<rect x="8442" y="5498" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+							<g class="rest" id="d1e920">
+								<use xlink:href="#E4E6" x="9950" y="5656" height="720px" width="720px" />
+							</g>
+							<g class="note" id="d1e931">
+								<use xlink:href="#E0A4" x="10441" y="5926" height="720px" width="720px" />
+								<rect x="10647" y="5386" width="20" height="518" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="10647" y="5296" height="720px" width="720px" />
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000155541688">
+						<path d="M8555,4533 C8678,4684 9130,4792 9308,4713 C9117,4845 8665,4737 8555,4533" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="slur" id="slur-000000057310084">
+						<path d="M10554,6106 C10772,6203 11358,6095 11528,5927 C11367,6148 10781,6256 10554,6106" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000157547376">
+						<path d="M11099 1082 L11099 1694" style="stroke-width: 30;" />
+						<path d="M11099 3453 L11099 4173" style="stroke-width: 30;" />
+						<path d="M11099 5296 L11099 6016" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e949">
+					<g class="staff" id="staff-000000057385627">
+						<path d="M11115 1082 L14502 1082" style="stroke-width: 17;" />
+						<path d="M11115 1235 L14502 1235" style="stroke-width: 17;" />
+						<path d="M11115 1388 L14502 1388" style="stroke-width: 17;" />
+						<path d="M11115 1541 L14502 1541" style="stroke-width: 17;" />
+						<path d="M11115 1694 L14502 1694" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000045340566">
+							<g class="note" id="d1e951">
+								<use xlink:href="#E0A4" x="11433" y="1538" height="612px" width="612px" />
+								<rect x="11608" y="1006" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="11719" cy="1462" rx="30" ry="30" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="verse" id="verse-000000178634681">
+									<g class="syl" id="syl-000000130953464">
+										<text x="11377" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">steht</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000150355297">
+									<g class="syl" id="syl-000000077477657">
+										<text x="11377" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">bei</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000024089556">
+									<g class="syl" id="syl-000000072508636">
+										<text x="11377" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">grad</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e982">
+								<use xlink:href="#E0A4" x="12395" y="1462" height="612px" width="612px" />
+								<rect x="12570" y="1006" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="12570" y="930" height="612px" width="612px" />
+								<g class="verse" id="verse-000000143242281">
+									<g class="syl" id="syl-000000143858564">
+										<text x="12339" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ein</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000086585852">
+									<g class="syl" id="syl-000000113507121">
+										<text x="12339" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">in</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000057799925">
+									<g class="syl" id="syl-000000136492659">
+										<text x="12339" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">in's</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="tuplet" id="tuplet-000000117501467">
+								<use xlink:href="#E883" x="13527" y="737" height="612px" width="612px" />
+								<path d="M12929 549 L13487 611" style="stroke-width: 17;" />
+								<path d="M13703 634 L14186 687" style="stroke-width: 17;" />
+								<path d="M12929 549 L12929 639" style="stroke-width: 17;" />
+								<path d="M14186 687 L14186 777" style="stroke-width: 17;" />
+								<g class="beam" id="beam-000000021207533">
+									<path d="M13113 1367 L13113 868" style="stroke-width: 17;" />
+									<path d="M13634 1443 L13634 921" style="stroke-width: 17;" />
+									<polygon style="fill-rule:nonzero;" stroke-width="0" points="13105,851 13642,904 13642,980 13105,927 " />
+									<g class="note" id="d1e1012">
+										<use xlink:href="#E0A4" x="12929" y="1386" height="612px" width="612px" />
+										<g class="verse" id="verse-000000076038792">
+											<g class="syl" id="syl-000000016468898">
+												<text x="12873" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+													<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Lin</tspan>
+												</text>
+												<rect x="13451" y="2131" width="100" height="25" rx="0" style="stroke-width: 0;" />
+											</g>
+										</g>
+										<g class="verse" id="verse-000000175759313">
+											<g class="syl" id="syl-000000123028907">
+												<text x="12873" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+													<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">tie</tspan>
+												</text>
+												<rect x="13385" y="2470" width="100" height="25" rx="0" style="stroke-width: 0;" />
+											</g>
+										</g>
+										<g class="verse" id="verse-000000122549198">
+											<g class="syl" id="syl-000000032813351">
+												<text x="12873" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+													<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">An</tspan>
+												</text>
+												<rect x="13429" y="2809" width="100" height="25" rx="0" style="stroke-width: 0;" />
+											</g>
+										</g>
+									</g>
+									<g class="note" id="d1e1053">
+										<use xlink:href="#E0A4" x="13450" y="1462" height="612px" width="612px" />
+									</g>
+								</g>
+								<g class="note" id="d1e1012-2">
+									<use xlink:href="#E0A4" x="13843" y="1538" height="612px" width="612px" />
+									<rect x="14018" y="1082" width="17" height="437" rx="0" style="stroke-width: 0;" />
+									<use xlink:href="#E240" x="14018" y="1006" height="612px" width="612px" />
+									<g class="verse" id="verse-000000068548863">
+										<g class="syl" id="syl-000000190523955">
+											<text x="13787" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+												<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">den</tspan>
+											</text>
+											<rect x="14405" y="2131" width="100" height="25" rx="0" style="stroke-width: 0;" />
+										</g>
+									</g>
+									<g class="verse" id="verse-000000090499078">
+										<g class="syl" id="syl-000000170096905">
+											<text x="13787" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+												<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">fer</tspan>
+											</text>
+										</g>
+									</g>
+									<g class="verse" id="verse-000000041805426">
+										<g class="syl" id="syl-000000181903932">
+											<text x="13787" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+												<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ge</tspan>
+											</text>
+											<rect x="14321" y="2809" width="100" height="25" rx="0" style="stroke-width: 0;" />
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000076437130">
+						<path d="M11115 3453 L14502 3453" style="stroke-width: 20;" />
+						<path d="M11115 3633 L14502 3633" style="stroke-width: 20;" />
+						<path d="M11115 3813 L14502 3813" style="stroke-width: 20;" />
+						<path d="M11115 3993 L14502 3993" style="stroke-width: 20;" />
+						<path d="M11115 4173 L14502 4173" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000054129636">
+							<g class="chord" id="d96e1">
+								<rect x="11622" y="3363" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<path d="M11367 4353 L11691 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e1113">
+									<use xlink:href="#E0A3" x="11622" y="3993" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1130">
+									<use xlink:href="#E0A3" x="11416" y="4083" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1148">
+									<use xlink:href="#E0A3" x="11416" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="chord" id="d100e1">
+								<rect x="13118" y="3363" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<path d="M12863 4353 L13187 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e1166">
+									<use xlink:href="#E0A4" x="12912" y="3993" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1183">
+									<use xlink:href="#E0A4" x="12912" y="4173" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1201">
+									<use xlink:href="#E0A4" x="12912" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000180483314">
+						<path d="M11115 5296 L14502 5296" style="stroke-width: 20;" />
+						<path d="M11115 5476 L14502 5476" style="stroke-width: 20;" />
+						<path d="M11115 5656 L14502 5656" style="stroke-width: 20;" />
+						<path d="M11115 5836 L14502 5836" style="stroke-width: 20;" />
+						<path d="M11115 6016 L14502 6016" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000062412052">
+							<g class="note" id="d1e1222">
+								<use xlink:href="#E0A3" x="11416" y="5746" height="720px" width="720px" />
+								<rect x="11622" y="5116" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+							<g class="note" id="d1e1240">
+								<use xlink:href="#E0A4" x="12912" y="5746" height="720px" width="720px" />
+								<rect x="13118" y="5116" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000029369762">
+						<path d="M13025,1519 C13114,1633 13427,1679 13545,1595 C13420,1722 13107,1676 13025,1519" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 8" />
+					</g>
+					<g class="barLineAttr" id="bline-000000189772124">
+						<path d="M14487 1082 L14487 1694" style="stroke-width: 30;" />
+						<path d="M14487 3453 L14487 4173" style="stroke-width: 30;" />
+						<path d="M14487 5296 L14487 6016" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e1257">
+					<g class="staff" id="staff-000000025910648">
+						<path d="M14503 1082 L17999 1082" style="stroke-width: 17;" />
+						<path d="M14503 1235 L17999 1235" style="stroke-width: 17;" />
+						<path d="M14503 1388 L17999 1388" style="stroke-width: 17;" />
+						<path d="M14503 1541 L17999 1541" style="stroke-width: 17;" />
+						<path d="M14503 1694 L17999 1694" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000185339134">
+							<g class="note" id="d1e1259">
+								<use xlink:href="#E0A3" x="14821" y="1462" height="612px" width="612px" />
+								<rect x="14996" y="930" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<g class="verse" id="verse-000000074746069">
+									<g class="syl" id="syl-000000194008317">
+										<text x="14765" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">baum;</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000168536472">
+									<g class="syl" id="syl-000000061556191">
+										<text x="14765" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Nacht,</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000005872784">
+									<g class="syl" id="syl-000000134384652">
+										<text x="14765" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">sicht,</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="rest" id="d1e1289">
+								<use xlink:href="#E4E6" x="16900" y="1385" height="612px" width="612px" />
+							</g>
+							<g class="note" id="d1e1298">
+								<use xlink:href="#E0A4" x="17391" y="1310" height="612px" width="612px" />
+								<rect x="17391" y="1329" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E241" x="17391" y="1842" height="612px" width="612px" />
+								<g class="verse" id="verse-000000030390837">
+									<g class="syl" id="syl-000000107186202">
+										<text x="17335" y="2206" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ich</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000178588470">
+									<g class="syl" id="syl-000000213275284">
+										<text x="17335" y="2545" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">da</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000088797637">
+									<g class="syl" id="syl-000000135510523">
+										<text x="17335" y="2884" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">der</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000095490714">
+						<path d="M14503 3453 L17999 3453" style="stroke-width: 20;" />
+						<path d="M14503 3633 L17999 3633" style="stroke-width: 20;" />
+						<path d="M14503 3813 L17999 3813" style="stroke-width: 20;" />
+						<path d="M14503 3993 L17999 3993" style="stroke-width: 20;" />
+						<path d="M14503 4173 L17999 4173" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000097915921">
+							<g class="chord" id="d118e1">
+								<rect x="15010" y="3363" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="15010" y="3273" height="720px" width="720px" />
+								<path d="M14755 4353 L15079 4353" style="stroke-width: 20;" />
+								<g class="note" id="d1e1329">
+									<use xlink:href="#E0A4" x="14804" y="3903" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1346">
+									<use xlink:href="#E0A4" x="14804" y="4083" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1364">
+									<use xlink:href="#E0A4" x="14804" y="4353" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000078150480">
+								<path d="M15624 3881 L15624 3023" style="stroke-width: 20;" />
+								<path d="M16116 4061 L16116 3069" style="stroke-width: 20;" />
+								<path d="M16607 3881 L16607 3113" style="stroke-width: 20;" />
+								<path d="M17099 3971 L17099 3159" style="stroke-width: 20;" />
+								<path d="M17590 4331 L17590 3204" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="15614,3003 17600,3184 17600,3274 15614,3093 " />
+								<g class="chord" id="d122e1">
+									<g class="note" id="d1e1382">
+										<use xlink:href="#E0A4" x="15408" y="3723" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1401">
+										<use xlink:href="#E0A4" x="15408" y="3903" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d126e1">
+									<g class="note" id="d1e1420">
+										<use xlink:href="#E0A4" x="15900" y="3903" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1439">
+										<use xlink:href="#E0A4" x="15900" y="4083" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d130e1">
+									<g class="note" id="d1e1457">
+										<use xlink:href="#E0A4" x="16391" y="3723" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1476">
+										<use xlink:href="#E0A4" x="16391" y="3903" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d134e1">
+									<g class="note" id="d1e1494">
+										<use xlink:href="#E0A4" x="16883" y="3813" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1515">
+										<use xlink:href="#E0A4" x="16883" y="3993" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d138e1">
+									<path d="M17325 4353 L17649 4353" style="stroke-width: 20;" />
+									<g class="note" id="d1e1534">
+										<use xlink:href="#E0A4" x="17374" y="3993" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1553">
+										<use xlink:href="#E0A4" x="17374" y="4353" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000165604989">
+						<path d="M14503 5296 L17999 5296" style="stroke-width: 20;" />
+						<path d="M14503 5476 L17999 5476" style="stroke-width: 20;" />
+						<path d="M14503 5656 L17999 5656" style="stroke-width: 20;" />
+						<path d="M14503 5836 L17999 5836" style="stroke-width: 20;" />
+						<path d="M14503 6016 L17999 6016" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000184255375">
+							<g class="note" id="d1e1575">
+								<use xlink:href="#E0A4" x="14804" y="6106" height="720px" width="720px" />
+								<rect x="15010" y="5566" width="20" height="518" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="15010" y="5476" height="720px" width="720px" />
+							</g>
+							<g class="beam" id="beam-000000213403307">
+								<path d="M15418 5138 L15418 6160" style="stroke-width: 20;" />
+								<path d="M15910 5318 L15910 6209" style="stroke-width: 20;" />
+								<path d="M16401 5138 L16401 6258" style="stroke-width: 20;" />
+								<path d="M16893 5228 L16893 6307" style="stroke-width: 20;" />
+								<path d="M17384 5408 L17384 6356" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="15408,6180 17394,6376 17394,6286 15408,6090 " />
+								<g class="chord" id="d142e1">
+									<path d="M15359 5116 L15683 5116" style="stroke-width: 20;" />
+									<g class="note" id="d1e1592">
+										<use xlink:href="#E0A4" x="15408" y="5116" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1612">
+										<use xlink:href="#E0A4" x="15408" y="5296" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d146e1">
+									<g class="note" id="d1e1630">
+										<use xlink:href="#E0A4" x="15900" y="5296" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1649">
+										<use xlink:href="#E0A4" x="15900" y="5476" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d150e1">
+									<path d="M16342 5116 L16666 5116" style="stroke-width: 20;" />
+									<g class="note" id="d1e1667">
+										<use xlink:href="#E0A4" x="16391" y="5116" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1686">
+										<use xlink:href="#E0A4" x="16391" y="5296" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d154e1">
+									<g class="note" id="d1e1704">
+										<use xlink:href="#E0A4" x="16883" y="5206" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1726">
+										<use xlink:href="#E0A4" x="16883" y="5386" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d158e1">
+									<g class="note" id="d1e1744">
+										<use xlink:href="#E0A4" x="17374" y="5386" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e1764">
+										<use xlink:href="#E0A4" x="17374" y="5746" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000202042062">
+						<path d="M15521,4061 C15847,4443 17026,4713 17486,4511 C17013,4766 15834,4496 15521,4061" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="slur" id="slur-000000119800120">
+						<path d="M15521,4948 C15959,4646 17139,4802 17485,5208 C17132,4855 15952,4699 15521,4948" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000037515744">
+						<path d="M17984 1082 L17984 1694" style="stroke-width: 30;" />
+						<path d="M17984 3453 L17984 4173" style="stroke-width: 30;" />
+						<path d="M17984 5296 L17984 6016" style="stroke-width: 30;" />
+					</g>
+				</g>
+			</g>
+			<g class="system" id="system-000000005088270">
+				<path d="M15 7003 L15 11727" style="stroke-width: 30;" />
+				<path d="M-15,11707 C-375,11167 75,10713 -195,10533 C140,10713 -310,11167 -15,11707" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 20" />
+				<path d="M-15,9358 C-310,9898 140,10353 -195,10533 C75,10353 -375,9898 -15,9358" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 20" />
+				<use xlink:href="#E886" x="0" y="6544" height="720px" width="720px" />
+				<g class="measure" id="d1e1782">
+					<g class="staff" id="staff-000000182087839">
+						<path d="M0 7003 L4677 7003" style="stroke-width: 17;" />
+						<path d="M0 7156 L4677 7156" style="stroke-width: 17;" />
+						<path d="M0 7309 L4677 7309" style="stroke-width: 17;" />
+						<path d="M0 7462 L4677 7462" style="stroke-width: 17;" />
+						<path d="M0 7615 L4677 7615" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000186116459">
+							<g class="clef" id="clef-000000193320678">
+								<use xlink:href="#E050" x="117" y="7462" height="612px" width="612px" />
+							</g>
+							<g class="keySig" id="ksig-000000212628961">
+								<use xlink:href="#E260" x="798" y="7307" height="612px" width="612px" />
+							</g>
+							<g class="note" id="d1e1785">
+								<use xlink:href="#E0A4" x="1295" y="7231" height="612px" width="612px" />
+								<rect x="1295" y="7250" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="1581" cy="7231" rx="30" ry="30" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="verse" id="verse-000000013987422">
+									<g class="syl" id="syl-000000151904017">
+										<text x="1239" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">träumt'</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000024636262">
+									<g class="syl" id="syl-000000026820057">
+										<text x="1239" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">hab'</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000032459170">
+									<g class="syl" id="syl-000000080435616">
+										<text x="1239" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Hut</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e1816">
+								<use xlink:href="#E0A4" x="2581" y="7383" height="612px" width="612px" />
+								<rect x="2756" y="6927" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="2756" y="6851" height="612px" width="612px" />
+								<g class="verse" id="verse-000000050854044">
+									<g class="syl" id="syl-000000005431044">
+										<text x="2525" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">in</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000060606268">
+									<g class="syl" id="syl-000000058059226">
+										<text x="2525" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ich</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000131899864">
+									<g class="syl" id="syl-000000208408940">
+										<text x="2525" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">flog</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e1846">
+								<use xlink:href="#E0A4" x="3201" y="7383" height="612px" width="612px" />
+								<rect x="3376" y="6927" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="3376" y="6851" height="612px" width="612px" />
+								<g class="verse" id="verse-000000079607515">
+									<g class="syl" id="syl-000000081199246">
+										<text x="3145" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">sei</tspan>
+										</text>
+										<rect x="3567" y="8052" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000049312816">
+									<g class="syl" id="syl-000000086560815">
+										<text x="3145" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">noch</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000209562023">
+									<g class="syl" id="syl-000000021006242">
+										<text x="3145" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">mir</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e1876">
+								<use xlink:href="#E0A4" x="3925" y="7383" height="612px" width="612px" />
+								<rect x="4100" y="6927" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="4100" y="6851" height="612px" width="612px" />
+								<g class="verse" id="verse-000000016922240">
+									<g class="syl" id="syl-000000085267943">
+										<text x="3869" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">nem</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000187918711">
+									<g class="syl" id="syl-000000045581176">
+										<text x="3869" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">im</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000211123264">
+									<g class="syl" id="syl-000000061481555">
+										<text x="3869" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">vom</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000047397792">
+						<path d="M0 9338 L4677 9338" style="stroke-width: 20;" />
+						<path d="M0 9518 L4677 9518" style="stroke-width: 20;" />
+						<path d="M0 9698 L4677 9698" style="stroke-width: 20;" />
+						<path d="M0 9878 L4677 9878" style="stroke-width: 20;" />
+						<path d="M0 10058 L4677 10058" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000113020598">
+							<g class="clef" id="clef-000000027412235">
+								<use xlink:href="#E050" x="117" y="9878" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-000000082191363">
+								<use xlink:href="#E260" x="798" y="9698" height="720px" width="720px" />
+							</g>
+							<g class="chord" id="d175e1">
+								<rect x="1484" y="9428" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="1484" y="9338" height="720px" width="720px" />
+								<path d="M1229 10238 L1553 10238" style="stroke-width: 20;" />
+								<path d="M1229 10418 L1553 10418" style="stroke-width: 20;" />
+								<g class="note" id="d1e1908">
+									<use xlink:href="#E0A4" x="1278" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1925">
+									<use xlink:href="#E0A4" x="1278" y="10418" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="chord" id="d179e1">
+								<rect x="2056" y="8978" width="20" height="1238" rx="0" style="stroke-width: 0;" />
+								<path d="M1801 10238 L2125 10238" style="stroke-width: 20;" />
+								<g class="note" id="d1e1943">
+									<use xlink:href="#E0A4" x="1850" y="9608" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1960">
+									<use xlink:href="#E0A4" x="1850" y="9788" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e1978">
+									<use xlink:href="#E0A4" x="1850" y="10238" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000132195002">
+								<path d="M2780 10216 L2780 9178" style="stroke-width: 20;" />
+								<path d="M3400 10216 L3400 9178" style="stroke-width: 20;" />
+								<path d="M4124 10216 L4124 9178" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="2770,9158 4134,9158 4134,9248 2770,9248 " />
+								<g class="chord" id="d183e1">
+									<path d="M2515 10238 L2839 10238" style="stroke-width: 20;" />
+									<g class="note" id="d1e1996">
+										<use xlink:href="#E0A4" x="2564" y="9788" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e2017">
+										<use xlink:href="#E0A4" x="2564" y="9968" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e2035">
+										<use xlink:href="#E0A4" x="2564" y="10238" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d187e1">
+									<path d="M3135 10238 L3459 10238" style="stroke-width: 20;" />
+									<g class="note" id="d1e2054">
+										<use xlink:href="#E0A4" x="3184" y="9788" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e2075">
+										<use xlink:href="#E0A4" x="3184" y="9968" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e2094">
+										<use xlink:href="#E0A4" x="3184" y="10238" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d191e1">
+									<path d="M3859 10238 L4183 10238" style="stroke-width: 20;" />
+									<g class="note" id="d1e2112">
+										<use xlink:href="#E0A4" x="3908" y="9788" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e2133">
+										<use xlink:href="#E0A4" x="3908" y="9968" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e2151">
+										<use xlink:href="#E0A4" x="3908" y="10238" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000192917177">
+						<path d="M0 11007 L4677 11007" style="stroke-width: 20;" />
+						<path d="M0 11187 L4677 11187" style="stroke-width: 20;" />
+						<path d="M0 11367 L4677 11367" style="stroke-width: 20;" />
+						<path d="M0 11547 L4677 11547" style="stroke-width: 20;" />
+						<path d="M0 11727 L4677 11727" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000088186959">
+							<g class="clef" id="clef-000000128764594">
+								<use xlink:href="#E062" x="117" y="11187" height="720px" width="720px" />
+							</g>
+							<g class="keySig" id="ksig-000000127261956">
+								<use xlink:href="#E260" x="798" y="11547" height="720px" width="720px" />
+							</g>
+							<g class="chord" id="d195e1">
+								<rect x="1484" y="10647" width="20" height="1148" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="1484" y="10557" height="720px" width="720px" />
+								<g class="note" id="d1e2173">
+									<use xlink:href="#E0A4" x="1278" y="11187" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2190">
+									<use xlink:href="#E0A4" x="1278" y="11817" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="note" id="d1e2208">
+								<use xlink:href="#E0A4" x="1850" y="11187" height="720px" width="720px" />
+								<rect x="1850" y="11209" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+							<g class="beam" id="beam-000000103989797">
+								<path d="M2780 11795 L2780 10965" style="stroke-width: 20;" />
+								<path d="M3400 11615 L3400 11027" style="stroke-width: 20;" />
+								<path d="M4124 12065 L4124 11100" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="2770,10945 4134,11080 4134,11170 2770,11035 " />
+								<g class="note" id="d1e2225">
+									<use xlink:href="#E0A4" x="2564" y="11817" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2245">
+									<use xlink:href="#E0A4" x="3184" y="11637" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2245x">
+									<path d="M3859 11907 L4183 11907" style="stroke-width: 20;" />
+									<path d="M3859 12087 L4183 12087" style="stroke-width: 20;" />
+									<use xlink:href="#E0A4" x="3908" y="12087" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000072580229">
+						<path d="M2677,10396 C2945,10593 3753,10593 4021,10396 C3753,10647 2945,10647 2677,10396" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="slur" id="slur-000000085210752">
+						<path d="M2677,11975 C2906,12223 3712,12385 4020,12245 C3701,12438 2895,12276 2677,11975" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000187160194">
+						<path d="M4662 7003 L4662 7615" style="stroke-width: 30;" />
+						<path d="M4662 9338 L4662 10058" style="stroke-width: 30;" />
+						<path d="M4662 11007 L4662 11727" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e2262">
+					<g class="staff" id="staff-000000119615288">
+						<path d="M4677 7003 L7630 7003" style="stroke-width: 17;" />
+						<path d="M4677 7156 L7630 7156" style="stroke-width: 17;" />
+						<path d="M4677 7309 L7630 7309" style="stroke-width: 17;" />
+						<path d="M4677 7462 L7630 7462" style="stroke-width: 17;" />
+						<path d="M4677 7615 L7630 7615" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000114706820">
+							<g class="note" id="d1e2264">
+								<use xlink:href="#E0A4" x="4971" y="7383" height="612px" width="612px" />
+								<rect x="5146" y="6851" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<g class="verse" id="verse-000000171396588">
+									<g class="syl" id="syl-000000027898833">
+										<text x="4915" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Schat-</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000164651923">
+									<g class="syl" id="syl-000000057454101">
+										<text x="4915" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Dun</tspan>
+										</text>
+										<rect x="5530" y="8391" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000123202269">
+									<g class="syl" id="syl-000000056811049">
+										<text x="4915" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Ko</tspan>
+										</text>
+										<rect x="5448" y="8730" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e2294">
+								<use xlink:href="#E0A4" x="5849" y="7535" height="612px" width="612px" />
+								<rect x="6024" y="7003" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<g class="verse" id="verse-000000127653627">
+									<g class="syl" id="syl-000000138350678">
+										<text x="5793" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ten</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000183354708">
+									<g class="syl" id="syl-000000003547272">
+										<text x="5793" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">kel</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000140525533">
+									<g class="syl" id="syl-000000010126563">
+										<text x="5793" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">pfe,</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="rest" id="d1e2319">
+								<use xlink:href="#E4E6" x="6558" y="7306" height="612px" width="612px" />
+							</g>
+							<g class="note" id="d1e2328">
+								<use xlink:href="#E0A4" x="7020" y="7535" height="612px" width="612px" />
+								<rect x="7195" y="7079" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="7195" y="7003" height="612px" width="612px" />
+								<g class="verse" id="verse-000000147459625">
+									<g class="syl" id="syl-000000157798821">
+										<text x="6964" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">so</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000026300167">
+									<g class="syl" id="syl-000000074780619">
+										<text x="6964" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">die</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000080790142">
+									<g class="syl" id="syl-000000200754960">
+										<text x="6964" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ich</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000163407369">
+						<path d="M4677 9338 L7630 9338" style="stroke-width: 20;" />
+						<path d="M4677 9518 L7630 9518" style="stroke-width: 20;" />
+						<path d="M4677 9698 L7630 9698" style="stroke-width: 20;" />
+						<path d="M4677 9878 L7630 9878" style="stroke-width: 20;" />
+						<path d="M4677 10058 L7630 10058" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000185573083">
+							<g class="chord" id="d213e1">
+								<rect x="5160" y="9158" width="20" height="1058" rx="0" style="stroke-width: 0;" />
+								<path d="M4905 10238 L5229 10238" style="stroke-width: 20;" />
+								<g class="note" id="d1e2359">
+									<use xlink:href="#E0A4" x="4954" y="9788" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2376">
+									<use xlink:href="#E0A4" x="4954" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2394">
+									<use xlink:href="#E0A4" x="4954" y="10238" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="chord" id="d217e1">
+								<rect x="6038" y="9338" width="20" height="1058" rx="0" style="stroke-width: 0;" />
+								<path d="M5783 10238 L6107 10238" style="stroke-width: 20;" />
+								<path d="M5783 10418 L6107 10418" style="stroke-width: 20;" />
+								<g class="note" id="d1e2413">
+									<use xlink:href="#E0A4" x="5832" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2430">
+									<use xlink:href="#E0A4" x="5832" y="10238" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2448">
+									<use xlink:href="#E0A4" x="5832" y="10418" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="rest" id="d1e2467">
+								<use xlink:href="#E4E6" x="6541" y="9698" height="720px" width="720px" />
+							</g>
+							<g class="chord" id="d222e1">
+								<rect x="7209" y="9428" width="20" height="788" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="7209" y="9338" height="720px" width="720px" />
+								<path d="M6954 10238 L7278 10238" style="stroke-width: 20;" />
+								<g class="note" id="d1e2478">
+									<use xlink:href="#E0A4" x="7003" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2495">
+									<use xlink:href="#E0A4" x="7003" y="10238" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000091940096">
+						<path d="M4677 11007 L7630 11007" style="stroke-width: 20;" />
+						<path d="M4677 11187 L7630 11187" style="stroke-width: 20;" />
+						<path d="M4677 11367 L7630 11367" style="stroke-width: 20;" />
+						<path d="M4677 11547 L7630 11547" style="stroke-width: 20;" />
+						<path d="M4677 11727 L7630 11727" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000122709455">
+							<g class="note" id="d1e2516">
+								<use xlink:href="#E0A3" x="4954" y="11187" height="720px" width="720px" />
+								<rect x="4954" y="11209" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+							<g class="rest" id="d1e2534">
+								<use xlink:href="#E4E6" x="6541" y="11367" height="720px" width="720px" />
+							</g>
+							<g class="note" id="d1e2545">
+								<use xlink:href="#E0A4" x="7003" y="11637" height="720px" width="720px" />
+								<rect x="7209" y="11097" width="20" height="518" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="7209" y="11007" height="720px" width="720px" />
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000114524507">
+						<path d="M5067,10418 C5218,10570 5745,10679 5944,10598 C5734,10732 5207,10623 5067,10418" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="slur" id="slur-000000023808107">
+						<path d="M7116,11817 C7319,11903 7863,11795 8020,11638 C7874,11848 7330,11956 7116,11817" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000129952429">
+						<path d="M7615 7003 L7615 7615" style="stroke-width: 30;" />
+						<path d="M7615 9338 L7615 10058" style="stroke-width: 30;" />
+						<path d="M7615 11007 L7615 11727" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e2563">
+					<g class="staff" id="staff-000000025553898">
+						<path d="M7631 7003 L11085 7003" style="stroke-width: 17;" />
+						<path d="M7631 7156 L11085 7156" style="stroke-width: 17;" />
+						<path d="M7631 7309 L11085 7309" style="stroke-width: 17;" />
+						<path d="M7631 7462 L11085 7462" style="stroke-width: 17;" />
+						<path d="M7631 7615 L11085 7615" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000202387692">
+							<g class="note" id="d1e2565">
+								<use xlink:href="#E0A4" x="7925" y="7459" height="612px" width="612px" />
+								<rect x="8100" y="6927" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="8211" cy="7383" rx="30" ry="30" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="verse" id="verse-000000125221085">
+									<g class="syl" id="syl-000000056808257">
+										<text x="7869" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">man</tspan>
+										</text>
+										<rect x="8501" y="8052" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000170249864">
+									<g class="syl" id="syl-000000082264750">
+										<text x="7869" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Au</tspan>
+										</text>
+										<rect x="8420" y="8391" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000150977364">
+									<g class="syl" id="syl-000000009887856">
+										<text x="7869" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">wen</tspan>
+										</text>
+										<rect x="8486" y="8730" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e2596">
+								<use xlink:href="#E0A4" x="8829" y="7383" height="612px" width="612px" />
+								<rect x="9004" y="6927" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="9004" y="6851" height="612px" width="612px" />
+								<g class="verse" id="verse-000000097452140">
+									<g class="syl" id="syl-000000207092819">
+										<text x="8773" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">chen</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000150274639">
+									<g class="syl" id="syl-000000010345478">
+										<text x="8773" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">gen</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000098824840">
+									<g class="syl" id="syl-000000085241693">
+										<text x="8773" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">de</tspan>
+										</text>
+										<rect x="9174" y="8730" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="tuplet" id="tuplet-000000100663872">
+								<use xlink:href="#E883" x="10044" y="6658" height="612px" width="612px" />
+								<path d="M9533 6470 L10004 6531" style="stroke-width: 17;" />
+								<path d="M10220 6558 L10616 6608" style="stroke-width: 17;" />
+								<path d="M9533 6470 L9533 6560" style="stroke-width: 17;" />
+								<path d="M10616 6608 L10616 6698" style="stroke-width: 17;" />
+								<g class="beam" id="beam-000000070091362">
+									<path d="M9717 7288 L9717 6789" style="stroke-width: 17;" />
+									<path d="M10087 7364 L10087 6827" style="stroke-width: 17;" />
+									<polygon style="fill-rule:nonzero;" stroke-width="0" points="9709,6772 10095,6810 10095,6886 9709,6848 " />
+									<g class="note" id="d1e2626">
+										<use xlink:href="#E0A4" x="9533" y="7307" height="612px" width="612px" />
+										<g class="verse" id="verse-000000139335845">
+											<g class="syl" id="syl-000000201391671">
+												<text x="9477" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+													<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">sü</tspan>
+												</text>
+												<rect x="9874" y="8052" width="100" height="25" rx="0" style="stroke-width: 0;" />
+											</g>
+										</g>
+										<g class="verse" id="verse-000000126758373">
+											<g class="syl" id="syl-000000124200548">
+												<text x="9477" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+													<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">zu</tspan>
+												</text>
+												<rect x="9894" y="8391" width="100" height="25" rx="0" style="stroke-width: 0;" />
+											</g>
+										</g>
+										<g class="verse" id="verse-000000048757037">
+											<g class="syl" id="syl-000000194522974">
+												<text x="9477" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+													<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">te</tspan>
+												</text>
+											</g>
+										</g>
+									</g>
+									<g class="note" id="d1e2626x">
+										<use xlink:href="#E0A4" x="9903" y="7383" height="612px" width="612px" />
+									</g>
+								</g>
+								<g class="note" id="d1e2666">
+									<use xlink:href="#E0A4" x="10273" y="7459" height="612px" width="612px" />
+									<rect x="10448" y="7003" width="17" height="437" rx="0" style="stroke-width: 0;" />
+									<use xlink:href="#E240" x="10448" y="6927" height="612px" width="612px" />
+									<g class="verse" id="verse-000000071096115">
+										<g class="syl" id="syl-000000052518740">
+											<text x="10217" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+												<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ssen</tspan>
+											</text>
+										</g>
+									</g>
+									<g class="verse" id="verse-000000131930496">
+										<g class="syl" id="syl-000000078984105">
+											<text x="10217" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+												<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ge</tspan>
+											</text>
+										</g>
+									</g>
+									<g class="verse" id="verse-000000190163127">
+										<g class="syl" id="syl-000000186522107">
+											<text x="10217" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+												<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">mich</tspan>
+											</text>
+										</g>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000214347248">
+						<path d="M7631 9338 L11085 9338" style="stroke-width: 20;" />
+						<path d="M7631 9518 L11085 9518" style="stroke-width: 20;" />
+						<path d="M7631 9698 L11085 9698" style="stroke-width: 20;" />
+						<path d="M7631 9878 L11085 9878" style="stroke-width: 20;" />
+						<path d="M7631 10058 L11085 10058" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000130386016">
+							<g class="chord" id="d240e1">
+								<rect x="8114" y="9248" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<path d="M7859 10238 L8183 10238" style="stroke-width: 20;" />
+								<g class="note" id="d1e2725">
+									<use xlink:href="#E0A3" x="8114" y="9878" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2742">
+									<use xlink:href="#E0A3" x="7908" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2760">
+									<use xlink:href="#E0A3" x="7908" y="10238" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="chord" id="d244e1">
+								<rect x="9722" y="9248" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<path d="M9467 10238 L9791 10238" style="stroke-width: 20;" />
+								<g class="note" id="d1e2778">
+									<use xlink:href="#E0A4" x="9516" y="9878" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2795">
+									<use xlink:href="#E0A4" x="9516" y="10058" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2813">
+									<use xlink:href="#E0A4" x="9516" y="10238" height="720px" width="720px" />
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000094368871">
+						<path d="M7631 11007 L11085 11007" style="stroke-width: 20;" />
+						<path d="M7631 11187 L11085 11187" style="stroke-width: 20;" />
+						<path d="M7631 11367 L11085 11367" style="stroke-width: 20;" />
+						<path d="M7631 11547 L11085 11547" style="stroke-width: 20;" />
+						<path d="M7631 11727 L11085 11727" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000140949991">
+							<g class="note" id="d1e2834">
+								<use xlink:href="#E0A3" x="7908" y="11457" height="720px" width="720px" />
+								<rect x="8114" y="10827" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+							<g class="note" id="d1e2852">
+								<use xlink:href="#E0A4" x="9516" y="11457" height="720px" width="720px" />
+								<rect x="9722" y="10827" width="20" height="608" rx="0" style="stroke-width: 0;" />
+							</g>
+						</g>
+					</g>
+					<g class="barLineAttr" id="bline-000000044274923">
+						<path d="M11070 7003 L11070 7615" style="stroke-width: 30;" />
+						<path d="M11070 9338 L11070 10058" style="stroke-width: 30;" />
+						<path d="M11070 11007 L11070 11727" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e2869">
+					<g class="staff" id="staff-000000070452720">
+						<path d="M11084 7003 L14526 7003" style="stroke-width: 17;" />
+						<path d="M11084 7156 L14526 7156" style="stroke-width: 17;" />
+						<path d="M11084 7309 L14526 7309" style="stroke-width: 17;" />
+						<path d="M11084 7462 L14526 7462" style="stroke-width: 17;" />
+						<path d="M11084 7615 L14526 7615" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000191132129">
+							<g class="note" id="d1e2871">
+								<use xlink:href="#E0A3" x="11378" y="7535" height="612px" width="612px" />
+								<rect x="11553" y="7003" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<g class="verse" id="verse-000000151777687">
+									<g class="syl" id="syl-000000146524628">
+										<text x="11322" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Traum.</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000145377547">
+									<g class="syl" id="syl-000000168300682">
+										<text x="11322" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">macht;</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000097373015">
+									<g class="syl" id="syl-000000165737536">
+										<text x="11322" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">nicht.</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="rest" id="d1e2901">
+								<use xlink:href="#E4E6" x="13333" y="7306" height="612px" width="612px" />
+							</g>
+							<g class="note" id="d1e2910">
+								<use xlink:href="#E0A4" x="13795" y="7535" height="612px" width="612px" />
+								<rect x="13970" y="7079" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="13970" y="7003" height="612px" width="612px" />
+								<g class="verse" id="verse-000000056387561">
+									<g class="syl" id="syl-000000021217751">
+										<text x="13739" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Ich</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000003610666">
+									<g class="syl" id="syl-000000125438062">
+										<text x="13739" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Und</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000108991043">
+									<g class="syl" id="syl-000000008915532">
+										<text x="13739" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Nun</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000138791545">
+						<path d="M11084 9338 L14526 9338" style="stroke-width: 20;" />
+						<path d="M11084 9518 L14526 9518" style="stroke-width: 20;" />
+						<path d="M11084 9698 L14526 9698" style="stroke-width: 20;" />
+						<path d="M11084 9878 L14526 9878" style="stroke-width: 20;" />
+						<path d="M11084 10058 L14526 10058" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000072766166">
+							<g class="chord" id="d262e1">
+								<rect x="11567" y="9428" width="20" height="968" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="11567" y="9338" height="720px" width="720px" />
+								<path d="M11312 10238 L11636 10238" style="stroke-width: 20;" />
+								<path d="M11312 10418 L11636 10418" style="stroke-width: 20;" />
+								<g class="note" id="d1e2941">
+									<use xlink:href="#E0A4" x="11361" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2958">
+									<use xlink:href="#E0A4" x="11361" y="10238" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e2976">
+									<use xlink:href="#E0A4" x="11361" y="10418" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000107378930">
+								<path d="M12145 9766 L12145 8945" style="stroke-width: 20;" />
+								<path d="M12607 9946 L12607 8972" style="stroke-width: 20;" />
+								<path d="M13069 9766 L13069 8998" style="stroke-width: 20;" />
+								<path d="M13532 9856 L13532 9026" style="stroke-width: 20;" />
+								<path d="M13994 9946 L13994 9053" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="12135,8925 14004,9033 14004,9123 12135,9015 " />
+								<g class="chord" id="d266e1">
+									<g class="note" id="d1e2994">
+										<use xlink:href="#E0A4" x="11929" y="9608" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3013">
+										<use xlink:href="#E0A4" x="11929" y="9788" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d270e1">
+									<g class="note" id="d1e3032">
+										<use xlink:href="#E0A4" x="12391" y="9788" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3051">
+										<use xlink:href="#E0A4" x="12391" y="9968" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d274e1">
+									<g class="note" id="d1e3069">
+										<use xlink:href="#E0A4" x="12853" y="9608" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3088">
+										<use xlink:href="#E0A4" x="12853" y="9788" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d278e1">
+									<g class="note" id="d1e3106">
+										<use xlink:href="#E0A4" x="13316" y="9698" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3127">
+										<use xlink:href="#E0A4" x="13316" y="9878" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d282e1">
+									<g class="note" id="d1e3146">
+										<use xlink:href="#E0A4" x="13778" y="9788" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3165">
+										<use xlink:href="#E0A4" x="13778" y="9968" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000186966210">
+						<path d="M11084 11007 L14526 11007" style="stroke-width: 20;" />
+						<path d="M11084 11187 L14526 11187" style="stroke-width: 20;" />
+						<path d="M11084 11367 L14526 11367" style="stroke-width: 20;" />
+						<path d="M11084 11547 L14526 11547" style="stroke-width: 20;" />
+						<path d="M11084 11727 L14526 11727" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000143029263">
+							<g class="note" id="d1e3187">
+								<use xlink:href="#E0A4" x="11361" y="11817" height="720px" width="720px" />
+								<rect x="11567" y="11277" width="20" height="518" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="11567" y="11187" height="720px" width="720px" />
+							</g>
+							<g class="beam" id="beam-000000214742859">
+								<path d="M11939 10849 L11939 11771" style="stroke-width: 20;" />
+								<path d="M12401 11029 L12401 11797" style="stroke-width: 20;" />
+								<path d="M12863 10849 L12863 11824" style="stroke-width: 20;" />
+								<path d="M13326 10939 L13326 11852" style="stroke-width: 20;" />
+								<path d="M13788 11029 L13788 11879" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="11929,11791 13798,11899 13798,11809 11929,11701 " />
+								<g class="chord" id="d286e1">
+									<path d="M11880 10827 L12204 10827" style="stroke-width: 20;" />
+									<g class="note" id="d1e3204">
+										<use xlink:href="#E0A4" x="11929" y="10827" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3224">
+										<use xlink:href="#E0A4" x="11929" y="11007" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d290e1">
+									<g class="note" id="d1e3242">
+										<use xlink:href="#E0A4" x="12391" y="11007" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3261">
+										<use xlink:href="#E0A4" x="12391" y="11187" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d294e1">
+									<path d="M12804 10827 L13128 10827" style="stroke-width: 20;" />
+									<g class="note" id="d1e3279">
+										<use xlink:href="#E0A4" x="12853" y="10827" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3298">
+										<use xlink:href="#E0A4" x="12853" y="11007" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d298e1">
+									<g class="note" id="d1e3316">
+										<use xlink:href="#E0A4" x="13316" y="10917" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3338">
+										<use xlink:href="#E0A4" x="13316" y="11097" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d302e1">
+									<g class="note" id="d1e3356">
+										<use xlink:href="#E0A4" x="13778" y="11007" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3376">
+										<use xlink:href="#E0A4" x="13778" y="11187" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="slur" id="slur-000000013691772">
+						<path d="M12042,9996 C12385,10323 13495,10416 13889,10151 C13490,10469 12380,10376 12042,9996" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="slur" id="slur-000000122128536">
+						<path d="M12042,10669 C12443,10373 13552,10481 13890,10849 C13547,10534 12438,10426 12042,10669" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000068784488">
+						<path d="M14511 7003 L14511 7615" style="stroke-width: 30;" />
+						<path d="M14511 9338 L14511 10058" style="stroke-width: 30;" />
+						<path d="M14511 11007 L14511 11727" style="stroke-width: 30;" />
+					</g>
+				</g>
+				<g class="measure" id="d1e3395">
+					<g class="staff" id="staff-000000002955800">
+						<path d="M14526 7003 L18000 7003" style="stroke-width: 17;" />
+						<path d="M14526 7156 L18000 7156" style="stroke-width: 17;" />
+						<path d="M14526 7309 L18000 7309" style="stroke-width: 17;" />
+						<path d="M14526 7462 L18000 7462" style="stroke-width: 17;" />
+						<path d="M14526 7615 L18000 7615" style="stroke-width: 17;" />
+						<g class="layer" id="layer-000000071261715">
+							<g class="note" id="d1e3397">
+								<use xlink:href="#E0A4" x="15014" y="7459" height="612px" width="612px" />
+								<rect x="15189" y="6927" width="17" height="513" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="15300" cy="7383" rx="30" ry="30" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="verse" id="verse-000000134142874">
+									<g class="syl" id="syl-000000110959100">
+										<text x="14958" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">schnitt</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000014474913">
+									<g class="syl" id="syl-000000184717312">
+										<text x="14958" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">sei</tspan>
+										</text>
+										<rect x="15487" y="8391" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000112165517">
+									<g class="syl" id="syl-000000104712328">
+										<text x="14958" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">bin</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e3428">
+								<use xlink:href="#E0A4" x="15952" y="7459" height="612px" width="612px" />
+								<rect x="16127" y="7003" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="16127" y="6927" height="612px" width="612px" />
+								<g class="verse" id="verse-000000077807625">
+									<g class="syl" id="syl-000000109975843">
+										<text x="15896" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">in</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000080316129">
+									<g class="syl" id="syl-000000179713005">
+										<text x="15896" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ne</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000122802668">
+									<g class="syl" id="syl-000000212656309">
+										<text x="15896" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ich</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e3458">
+								<use xlink:href="#E0A4" x="16549" y="7459" height="612px" width="612px" />
+								<rect x="16724" y="7003" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="16724" y="6927" height="612px" width="612px" />
+								<g class="verse" id="verse-000000169117653">
+									<g class="syl" id="syl-000000165793889">
+										<text x="16493" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">sei</tspan>
+										</text>
+										<rect x="16978" y="8052" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+								<g class="verse" id="verse-000000185059309">
+									<g class="syl" id="syl-000000091255539">
+										<text x="16493" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">Zwei-</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000176480210">
+									<g class="syl" id="syl-000000213239724">
+										<text x="16493" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">man</tspan>
+										</text>
+										<rect x="17098" y="8730" width="100" height="25" rx="0" style="stroke-width: 0;" />
+									</g>
+								</g>
+							</g>
+							<g class="note" id="d1e3488">
+								<use xlink:href="#E0A4" x="17398" y="7459" height="612px" width="612px" />
+								<rect x="17573" y="7003" width="17" height="437" rx="0" style="stroke-width: 0;" />
+								<use xlink:href="#E240" x="17573" y="6927" height="612px" width="612px" />
+								<g class="verse" id="verse-000000023972688">
+									<g class="syl" id="syl-000000041038400">
+										<text x="17342" y="8127" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ne</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000195940855">
+									<g class="syl" id="syl-000000011789075">
+										<text x="17342" y="8466" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">ge</tspan>
+										</text>
+									</g>
+								</g>
+								<g class="verse" id="verse-000000005087416">
+									<g class="syl" id="syl-000000034356603">
+										<text x="17342" y="8805" dx="0" dy="0" font-size="0px" font-family="Times">
+											<tspan font-family="Times" font-size="344px" class="text" xml:space="preserve">che</tspan>
+										</text>
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000069797006">
+						<path d="M14526 9338 L18000 9338" style="stroke-width: 20;" />
+						<path d="M14526 9518 L18000 9518" style="stroke-width: 20;" />
+						<path d="M14526 9698 L18000 9698" style="stroke-width: 20;" />
+						<path d="M14526 9878 L18000 9878" style="stroke-width: 20;" />
+						<path d="M14526 10058 L18000 10058" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000122716892">
+							<g class="chord" id="d319e1">
+								<rect x="15203" y="9248" width="20" height="878" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="15561" cy="9788" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<ellipse cx="15561" cy="9968" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<ellipse cx="15561" cy="10148" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="note" id="d1e3514">
+									<use xlink:href="#E0A4" x="15203" y="9878" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e3532">
+									<use xlink:href="#E0A4" x="14997" y="9968" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e3551">
+									<use xlink:href="#E0A4" x="14997" y="10148" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000016287795">
+								<path d="M16151 10126 L16151 9268" style="stroke-width: 20;" />
+								<path d="M16748 10216 L16748 9268" style="stroke-width: 20;" />
+								<path d="M17597 10216 L17597 9268" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="16141,9248 17607,9248 17607,9338 16141,9338 " />
+								<g class="chord" id="d323e1">
+									<g class="note" id="d1e3575">
+										<use xlink:href="#E0A4" x="16141" y="9878" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3596">
+										<use xlink:href="#E0A4" x="15935" y="9968" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3614">
+										<use xlink:href="#E0A4" x="15935" y="10148" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d327e1">
+									<path d="M16483 10238 L16807 10238" style="stroke-width: 20;" />
+									<g class="note" id="d1e3633">
+										<use xlink:href="#E0A4" x="16532" y="9878" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3654">
+										<use xlink:href="#E0A4" x="16532" y="10058" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3672">
+										<use xlink:href="#E0A4" x="16532" y="10238" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d331e1">
+									<path d="M17332 10238 L17656 10238" style="stroke-width: 20;" />
+									<g class="note" id="d1e3690">
+										<use xlink:href="#E0A4" x="17381" y="9878" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3710">
+										<use xlink:href="#E0A4" x="17381" y="10058" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3728">
+										<use xlink:href="#E0A4" x="17381" y="10238" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="staff" id="staff-000000195975060">
+						<path d="M14526 11007 L18000 11007" style="stroke-width: 20;" />
+						<path d="M14526 11187 L18000 11187" style="stroke-width: 20;" />
+						<path d="M14526 11367 L18000 11367" style="stroke-width: 20;" />
+						<path d="M14526 11547 L18000 11547" style="stroke-width: 20;" />
+						<path d="M14526 11727 L18000 11727" style="stroke-width: 20;" />
+						<g class="layer" id="layer-000000157172419">
+							<g class="chord" id="d335e1">
+								<rect x="14997" y="11119" width="20" height="1058" rx="0" style="stroke-width: 0;" />
+								<ellipse cx="15335" cy="11097" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<ellipse cx="15335" cy="11457" rx="36" ry="36" style="stroke-opacity: 1.000000; stroke-width: 1; fill-opacity: 1.000000;" />
+								<g class="note" id="d1e3755">
+									<use xlink:href="#E0A4" x="14997" y="11097" height="720px" width="720px" />
+								</g>
+								<g class="note" id="d1e3773">
+									<use xlink:href="#E0A4" x="14997" y="11547" height="720px" width="720px" />
+								</g>
+								<g class="accid" id="accid-000000180963564">
+									<use xlink:href="#E261" x="14749" y="11547" height="720px" width="720px" />
+								</g>
+							</g>
+							<g class="beam" id="beam-000000188287670">
+								<path d="M15945 11119 L15945 12157" style="stroke-width: 20;" />
+								<path d="M16542 11119 L16542 12157" style="stroke-width: 20;" />
+								<path d="M17391 11119 L17391 12157" style="stroke-width: 20;" />
+								<polygon style="fill-rule:nonzero;" stroke-width="0" points="15935,12177 17401,12177 17401,12087 15935,12087 " />
+								<g class="chord" id="d339e1">
+									<g class="note" id="d1e3794">
+										<use xlink:href="#E0A4" x="15935" y="11097" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3813">
+										<use xlink:href="#E0A4" x="15935" y="11547" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d343e1">
+									<g class="note" id="d1e3831">
+										<use xlink:href="#E0A4" x="16532" y="11097" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3850">
+										<use xlink:href="#E0A4" x="16532" y="11547" height="720px" width="720px" />
+									</g>
+									<g class="accid" id="accid-000000167018982">
+										<use xlink:href="#E260" x="16284" y="11547" height="720px" width="720px" />
+									</g>
+								</g>
+								<g class="chord" id="d347e1">
+									<g class="note" id="d1e3872">
+										<use xlink:href="#E0A4" x="17381" y="11097" height="720px" width="720px" />
+									</g>
+									<g class="note" id="d1e3892">
+										<use xlink:href="#E0A4" x="17381" y="11547" height="720px" width="720px" />
+									</g>
+								</g>
+							</g>
+						</g>
+					</g>
+					<g class="hairpin" id="hairpin-000000105388391">
+						<polygon style="fill-rule:nonzero;" stroke-width="0" points="16048,10748 17494,10883 17494,10863 16048,10728 " />
+						<polygon style="fill-rule:nonzero;" stroke-width="0" points="16048,10748 17494,10613 17494,10593 16048,10728 " />
+					</g>
+					<g class="slur" id="slur-000000018188937">
+						<path d="M16048,10306 C16322,10538 17190,10592 17493,10396 C17187,10645 16319,10591 16048,10306" style="fill-opacity:1.0; stroke-linecap:round; stroke-linejoin:round; stroke-opacity:1.0; stroke-width: 10" />
+					</g>
+					<g class="barLineAttr" id="bline-000000115047137">
+						<path d="M17985 7003 L17985 7615" style="stroke-width: 30;" />
+						<path d="M17985 9338 L17985 10058" style="stroke-width: 30;" />
+						<path d="M17985 11007 L17985 11727" style="stroke-width: 30;" />
+					</g>
+				</g>
+			</g>
+		</g>
+	</svg>
+</svg>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Collision between tuplet bracket and staff</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-04-20">2017-04-20</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio avoids collisions between a horizontal tuplet bracket and the staff lines.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.4.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="0" meter.count="2" meter.unit="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" bracket.visible="true">
+                              <note dur="2" oct="4" pname="c" accid.ges="n" />
+                              <note dur="2" oct="4" pname="c" accid.ges="n" />
+                              <note dur="2" oct="4" pname="c" accid.ges="n" />
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

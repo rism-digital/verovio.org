@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beams with mixed stem direction</title>
+            <respStmt>
+               <persName role="composer">Ludwig van Beethoven</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder" auth.uri="http://d-nb.info/gnd" auth="GND" codedval="1138881465">Werner Goebl</persName>
+            </respStmt>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Beams can have mixed stem direction defined in MEI (treble staff, each first tuplet beam)</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="108">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4">
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4">
+                        <instrDef midi.channel="1" midi.instrnum="0" midi.volume="78.00%" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section label="Var. XIII">
+                  <scoreDef meter.count="2" meter.unit="4" />
+                  <measure metcon="false" n="326">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000000396278772" dur="8" oct="5" pname="a" grace="unacc" stem.dir="up" accid="n" />
+                           <note xml:id="note-0000001704964791" dur="8" oct="5" pname="b" stem.dir="down" accid.ges="f">
+                              <artic artic="stacc" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="0.500000">
+                        <rend halign="center" fontsize="125.00%" fontstyle="normal" fontweight="normal">VAR. XIII</rend>
+                     </dir>
+                     <dynam place="below" staff="1" tstamp="0.750000" vgrp="1300">sempre f</dynam>
+                     <slur startid="#note-0000000396278772" endid="#note-0000001704964791" />
+                  </measure>
+                  <measure left="rptstart" n="327">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000000998924810" dur="8" oct="5" pname="a" grace="unacc" stem.dir="up" accid="n" />
+                           <tuplet num="3" numbase="2" bracket.visible="false">
+                              <beam>
+                                 <note xml:id="note-0000000248244833" dur="8" oct="5" pname="b" stem.dir="down" accid.ges="f">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="up">
+                                    <artic artic="stacc" />
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <artic artic="stacc" />
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false">
+                              <beam>
+                                 <chord dur="8" stem.dir="up">
+                                    <artic artic="stacc" />
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <artic artic="stacc" />
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <artic artic="stacc" />
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" num.place="above" bracket.visible="false">
+                              <beam>
+                                 <note dur="8" oct="2" pname="e" stem.dir="down" accid.ges="f">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="down">
+                                    <artic artic="stacc" enclose="paren" />
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <artic artic="stacc" enclose="paren" />
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" num.place="above" bracket.visible="false">
+                              <beam>
+                                 <chord dur="8" stem.dir="down">
+                                    <artic artic="stacc" enclose="paren" />
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <artic artic="stacc" enclose="paren" />
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <artic artic="stacc" enclose="paren" />
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                     <slur startid="#note-0000000998924810" endid="#note-0000000248244833" />
+                  </measure>
+                  <measure n="328">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001516849473" dur="8" oct="5" pname="a" grace="unacc" stem.dir="up" accid="n" />
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <note xml:id="note-0000001299618521" dur="8" oct="5" pname="b" stem.dir="down" accid.ges="f">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="a" accid.ges="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="a" accid.ges="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="a" accid.ges="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="a" accid.ges="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="a" accid.ges="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <note dur="8" oct="2" pname="d" stem.dir="down">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="a" accid.ges="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="a" accid.ges="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="a" accid.ges="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="a" accid.ges="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="a" accid.ges="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#note-0000001516849473" endid="#note-0000001299618521" />
+                  </measure>
+                  <measure n="329">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000001182033963" dur="8" oct="5" pname="a" grace="unacc" stem.dir="up" accid="n" />
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <note xml:id="note-0000002106852836" dur="8" oct="5" pname="b" stem.dir="down" accid.ges="f">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="d" />
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="d" />
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="d" />
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="d" />
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="d" />
+                                    <note oct="4" pname="f" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <note dur="8" oct="2" pname="a" stem.dir="down" accid.ges="f">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="d" />
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="d" />
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="d" />
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="d" />
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="d" />
+                                    <note oct="3" pname="f" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#note-0000001182033963" endid="#note-0000002106852836" />
+                  </measure>
+                  <measure n="330">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-0000000454836788" dur="8" oct="5" pname="a" grace="unacc" stem.dir="up" accid="n" />
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <note xml:id="note-0000000301782466" dur="8" oct="5" pname="b" stem.dir="down" accid.ges="f">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="up">
+                                    <note oct="4" pname="e" accid.ges="f" />
+                                    <note oct="4" pname="g" />
+                                    <note oct="4" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <note dur="8" oct="2" pname="g" stem.dir="down">
+                                    <artic artic="stacc" />
+                                 </note>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.visible="false" bracket.visible="false">
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                                 <chord dur="8" stem.dir="down">
+                                    <note oct="3" pname="e" accid.ges="f" />
+                                    <note oct="3" pname="g" />
+                                    <note oct="3" pname="b" accid.ges="f" />
+                                 </chord>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#note-0000000454836788" endid="#note-0000000301782466" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

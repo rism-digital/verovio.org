@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beam fractions</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Franz Kelnreiter</persName>
+               <corpName role="funder">Digital Mozart Edition</corpName>
+            </respStmt>
+            <date isodate="2021-10-08">2021-10-08</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Fractional beams be made pointing in the direction of the beat using @breaksec.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.6.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="6" meter.unit="8">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="f" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="f" />
+                           </beam>
+                           <beam>
+                              <note breaksec="1" dur="8" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="e" color="blue" />
+                              <note dots="1" dur="8" oct="4" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <scoreDef meter.count="12" meter.unit="16" />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note breaksec="1" dur="8" oct="4" pname="f" />
+                              <note dur="16" oct="4" pname="e" color="blue" />
+                              <note dur="8" oct="4" pname="f" />
+                           </beam>
+                           <beam>
+                              <note dots="1" breaksec="1" dur="8" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="e" color="blue" />
+                              <note dur="8" oct="4" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="f" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="f" />
+                           </beam>
+                           <beam>
+                              <note dots="1" breaksec="1" dur="8" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="e" color="blue" />
+                              <note dur="8" oct="4" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

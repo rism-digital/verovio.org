@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Automatic mordent and trill placement</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-21</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/1909" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Mordent, trill and turn applying to notes on a second layer (in green) should be placed below when the first layer is given.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L3F1" dur="2" oct="4" pname="c" accid.ges="n" />
+                           <note dur="2" oct="4" pname="g" accid.ges="n" />
+                           <note xml:id="note-L6F1" dur="2" oct="4" pname="g" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <space dur="2" />
+                           <note xml:id="note-L5F2" type="marked" dur="2" oct="4" pname="c" color="limegreen" accid.ges="n" />
+                           <note xml:id="note-L6F2" type="marked" dur="2" oct="4" pname="c" color="limegreen" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <mordent staff="1" startid="#note-L3F1" form="upper" />
+                     <mordent staff="1" startid="#note-L6F1" form="upper" />
+                     <mordent staff="1" startid="#note-L5F2" color="limegreen" form="upper" />
+                     <mordent staff="1" startid="#note-L6F2" color="limegreen" form="upper" />
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L12F1" dur="2" oct="4" pname="c" accid.ges="n" />
+                           <note dur="2" oct="4" pname="g" accid.ges="n" />
+                           <space dur="2" />
+                        </layer>
+                        <layer n="2">
+                           <space dur="2" />
+                           <note xml:id="note-L14F2" type="marked" dur="2" oct="4" pname="c" color="limegreen" accid.ges="n" />
+                           <note xml:id="note-L15F2" type="marked" dur="2" oct="4" pname="c" color="limegreen" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" startid="#note-L12F1" />
+                     <trill staff="1" startid="#note-L14F2" color="limegreen" />
+                     <trill staff="1" startid="#note-L15F2" color="limegreen" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

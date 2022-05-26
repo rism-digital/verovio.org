@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Directives with repeat symbols</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2022-02-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>The following SMuFL symbols can be used within directives.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1"><rend fontname="VerovioText" fontstyle="normal">&#xe045;</rend></dir>
+                     <dir place="above" staff="1" tstamp="2"><rend fontname="VerovioText" fontstyle="normal">&#xe046;</rend></dir>
+                     <dir place="above" staff="1" tstamp="4"><rend fontname="VerovioText" fontstyle="normal">&#xe047;</rend></dir>
+                  </measure>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1"><rend fontname="VerovioText" fontstyle="normal">&#xe048;</rend></dir>
+                     <dir place="above" staff="1" tstamp="3"><rend fontname="VerovioText" fontstyle="normal">&#xe049;</rend></dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

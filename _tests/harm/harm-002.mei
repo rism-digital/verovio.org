@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Multiple harmonic analyses</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-25</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio renders alternative harmonic analyses on different lines above the staff system.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef label="Superius" n="1" lines="5" label.abbr="S" clef.shape="G" clef.line="2" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
+                     <staffDef label="Tenor" n="2" lines="5" label.abbr="T" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
+                     <staffDef label="Contra" n="3" lines="5" label.abbr="C" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="c" accid.ges="n" />
+                           <note dur="4" oct="3" pname="d" accid.ges="n" />
+                           <note dur="4" oct="3" pname="e" accid.ges="n" />
+                           <note dur="4" oct="3" pname="f" accid.ges="n" />
+                           <note dur="2" oct="3" pname="g" accid.ges="n" />
+                           <note xml:id="note-L19F1" dur="2" oct="3" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" tstamp="1.000000">0</harm>
+                     <harm staff="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" tstamp="1.250000">2</harm>
+                     <harm staff="1" tstamp="1.500000">4</harm>
+                     <harm staff="1" tstamp="1.500000">1</harm>
+                     <harm staff="1" tstamp="1.750000">4</harm>
+                     <harm staff="1" tstamp="1.750000">2</harm>
+                     <harm staff="1" tstamp="2.000000">2</harm>
+                     <harm staff="1" tstamp="2.000000">0</harm>
+                     <harm staff="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" tstamp="2.500000">1</harm>
+                     <tie startid="#note-L19F1" endid="#note-L21F1" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note xml:id="note-L21F1" dur="4" oct="3" pname="a" accid.ges="n" />
+                           <note dur="4" oct="3" pname="g" accid.ges="n" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <note dur="2" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" tstamp="1.250000">2</harm>
+                     <harm staff="1" tstamp="1.500000">1</harm>
+                     <harm staff="1" tstamp="1.500000">1</harm>
+                     <harm staff="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" tstamp="2.500000">1</harm>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="c" accid.ges="n" />
+                           <note dur="4" oct="3" pname="d" accid.ges="n" />
+                           <note dur="4" oct="3" pname="e" accid.ges="n" />
+                           <note dur="4" oct="3" pname="f" accid.ges="n" />
+                           <note dur="2" oct="3" pname="g" accid.ges="n" />
+                           <note xml:id="note-L31F2" dur="2" oct="3" pname="a" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <rest dur="2" />
+                           <note xml:id="note-L31F1" dur="2" oct="3" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" tstamp="1.000000">0</harm>
+                     <harm staff="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" tstamp="1.250000">2</harm>
+                     <harm staff="1" tstamp="1.500000">4</harm>
+                     <harm staff="1" tstamp="1.500000">1</harm>
+                     <harm staff="1" tstamp="1.750000">4</harm>
+                     <harm staff="1" tstamp="1.750000">2</harm>
+                     <harm staff="1" tstamp="2.000000">2</harm>
+                     <harm staff="1" tstamp="2.000000">0</harm>
+                     <harm staff="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" tstamp="2.500000">1</harm>
+                     <tie startid="#note-L31F2" endid="#note-L33F2" />
+                     <tie startid="#note-L31F1" endid="#note-L33F1" />
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="note-L33F2" dur="4" oct="3" pname="a" accid.ges="n" />
+                           <note dur="4" oct="3" pname="g" accid.ges="n" />
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                           <note dur="2" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note xml:id="note-L33F1" dur="2" oct="3" pname="f" accid.ges="n" />
+                           <note dur="2" oct="3" pname="e" accid.ges="n" />
+                           <note dur="1" oct="3" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" tstamp="1.250000">2</harm>
+                     <harm staff="1" tstamp="1.500000">2</harm>
+                     <harm staff="1" tstamp="1.500000">1</harm>
+                     <harm staff="1" tstamp="2.000000">2</harm>
+                     <harm staff="1" tstamp="2.000000">0</harm>
+                     <harm staff="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" tstamp="2.500000">1</harm>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

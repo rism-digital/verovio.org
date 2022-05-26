@@ -1,0 +1,247 @@
+---
+layout: verovio
+verovio: false
+title: Verovio
+active: home
+projects:
+    - [["http://www.marenzio.org", "mode"], ["http://beethovens-werkstatt.de/prototyp-2-0/", "bw"], ["http://mith.us/ema/omas", "omas"]]
+    - [["http://freischuetz-digital.de", "freischuetz"],["http://simssa.ca/", "simssa"], ["http://oerc.ox.ac.uk/", "oerc"]]
+    - [["http://www.kb.dk/en/nb/dcm/projekter/mermeid.html", "mermeid"],["http://scorelib.huma-num.fr/", "neuma"], [ "http://ncodamusic.org/", "ncoda"]]
+    - [["http://www.rism.info", "rism"], ["http://kern.ccarh.org", "ccarh"], ["http://en.chopin.nifc.pl/institute/library/archives", "nifc"]]
+    - [["http://dme.mozarteum.at/DME/main/index.php", "dme"], ["http://www.oeaw.ac.at/ikm/forschung/digital-musicology/digitale-musikanalyse-mit-mei/", "oeaw"], ["http://www.gluck-gesamtausgabe.de/impressum.html", "gga"]]
+    - [["http://opac.sbn.it/opacsbn/opac/iccu/musica.jsp", "iccu"],["http://www.tassomusic.org/", "tasso"], ["https://www.bach-digital.de", "bach"]]
+    - [["http://folksong.eu", "folk-song-index"], ["http://mac.kaist.ac.kr/research.html", "kaist-maclab"], ["http://www.motetcycles.com/", "mcb"]]
+    - [["http://ricercar.cesr.univ-tours.fr/", "cesr"], ["http://measuringpolyphony.org/", "measuringpolyphony"], ["https://www.audiolabs-erlangen.de/resources/MIR/2018-ISMIR-LBD-Carus", "audiolabs"]]
+    - [["https://nomadplay-app.com/", "nomadplay"], ["https://trompamusic.eu/", "trompa"], ["https://koha-community.org/", "koha"]]
+    - [["https://vitry.org/", "vitry"], ["https://www.cantico.me", "cantico"], ["https://www.europeanarsnova.eu/", "eu-ars-nova"]]
+    - [["https://trala.com", "trala"], ["https://enote.com", "enote"], ["https://contrapunto.ch", "contrapunto"]]
+    - [["https://my.hymnary.org", "myhymnary"], ["https://catalogue.bnf.fr", "bnf"], ["https://note-store.com", "notestore"]]
+    - [["https://cantamus.app/", "cantamus"], ["https://brentner.katalog-skladeb.cz", "brentner"], []]
+---
+<div class="row home-row home-row-flex">
+    <div class="col-md-5 col-sm-12">
+        <div class="panel-body home-panel">
+            <p>
+                Verovio is a fast, portable and lightweight <strong>open-source</strong> library for engraving <strong>Music Encoding Initiative</strong> (MEI) music scores into SVG.
+            </p>
+            <p>
+                Verovio follows the <strong>Standard Music Font Layout</strong> specification, which makes it easy to change the music font for <a href="{{ site.baseurl }}/smufl.xhtml">personalizing the appearance</a>.
+            </p>
+            <table style="margin: auto;">
+                <tr>
+                    <td>
+                        <a href="http://music-encoding.org" target="_blank">
+                            <img alt="MEI logo" src="{{ site.baseurl }}/images/meilogo.png" style="padding: 10px;" class="img-responsive"/>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://www.smufl.org" target="_blank">
+                            <img alt="SMuFL logo" src="{{ site.baseurl }}/images/smufl.png" style="padding: 10px" class="img-responsive"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-7 visible-lg">
+        {% include svg/example-lg.svg %}
+    </div>
+    <div class="col-md-7 visible-md">
+        {% include svg/example-md.svg %}
+    </div>
+    <div class="col-sm-12 visible-sm text-center">
+        {% include svg/example-sm.svg %}
+    </div>
+</div>
+
+<div class="row home-row">
+    <div class="col-md-7 col-sm-12">
+        <h4>News</h4>
+        {% for p in site.posts limit:1 %}
+        <hr class="news-row"/>
+        <h5>{{ p.date | date: '%B %d, %Y' }} – {{ p.title }}</h5>
+        <div class="content">
+            {{ p.content }}
+        </div>
+        {% endfor %}
+        <hr class="news-row"/>
+        <p class="news-link">
+            <a href="news.xhtml">See all news ...</a>
+        </p>
+    </div>
+    <div class="col-md-5 col-sm-12">
+        <hr class="hidden-lg hidden-md"/>
+
+        <p>
+            Verovio is developed by the <a href="https://rism.digital/" target="_blank">RISM Digital Center</a> with the support of the Swiss National Science Foundation. The project receives dedicated financial support from the Digital Mozart Edition, a joint project of the Salzburg Mozarteum Foundation and the Packard Humanities Institute, Los Altos/CA. It also received in-kind support from the Saxon Academy of Sciences in Leipzig from 2017 to 2019.
+        </p>
+
+        <div style="float: right;">
+            <a class="github-button" href="https://github.com/rism-digital/verovio/subscription" data-icon="octicon-eye" data-size="large" data-show-count="false" aria-label="Watch rism-digital/verovio on GitHub">Watch</a>
+            <a class="github-button" href="https://github.com/rism-digital/verovio" data-icon="octicon-star" data-size="large" data-show-count="false" aria-label="Star rism-digital/verovio on GitHub">Star</a>
+        </div>
+
+        <p>
+            The source code is available on <a href="https://github.com/rism-digital/verovio">GitHub</a> under the <a href="http://www.gnu.org/copyleft/lgpl.html" target="_blank">LGPLv3 license</a>.
+        </p>
+
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    <a href="https://rism.digital" target="_blank">
+                        <img alt="RISM logo" src="{{ site.baseurl }}/images/rism-digital.png" class="support-logo img-responsive"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="http://www.snf.ch" target="_blank">
+                        <img alt="SNF logo" src="{{ site.baseurl }}/images/snf.png" class="support-logo img-responsive"/>
+                    </a>
+                </td>
+                <td>
+                    <a href="http://www.mozarteum.at" target="_blank">
+                        <img alt="Mozarteum logo" src="{{ site.baseurl }}/images/mozarteum.png" class="support-logo img-responsive"/>
+                    </a>
+                </td>
+                <!--<td>
+                    <a href="http://www.mozarteum.at" target="_blank">
+                        <img alt="SNF logo" src="{{ site.baseurl }}/images/saw.png" class="support-logo img-responsive"/>
+                    </a>
+                </td>-->
+            </tr>
+        </table>
+
+        <p>
+            Many thanks to all the contributors
+        </p>
+        <img alt="contributors" class="img-responsive" src="https://contrib.rocks/image?repo=rism-digital/verovio" />
+
+
+    </div>
+</div>
+
+<div class="row home-row home-row-flex">
+    <div class="col-sm-6 hidden-xs">
+        <div id="video-carousel" class="carousel slide" data-ride="carousel" data-interval="11000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#video-carousel" data-slide-to="0"></li>
+                <li data-target="#video-carousel" data-slide-to="1"></li>
+                <li data-target="#video-carousel" data-slide-to="2"></li>
+                <li data-target="#video-carousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
+                        <source src="/movies/editor.webm" type="video/webm"/>
+                        <source src="/movies/editor.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="item">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
+                        <source src="/movies/reflow.webm" type="video/webm"/>
+                        <source src="/movies/reflow.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="item">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
+                        <source src="/movies/layout.webm" type="video/webm"/>
+                        <source src="/movies/layout.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div class="item">
+                    <video autoplay="autoplay" loop="loop" class="img-responsive">
+                        <source src="/movies/choice.webm" type="video/webm"/>
+                        <source src="/movies/choice.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+        <div class="panel-body home-panel">
+            <p>
+                The SVG output of Verovio is designed as an <strong>intermediate reflowable layer</strong> that facilitates the development of <strong>interactive applications</strong>, such as music notation editors or interactive digital editions.
+            </p>
+            <table style="margin: auto;">
+                <tr>
+                    <td>
+                        <img alt="Verovio interaction" src="{{ site.baseurl }}/images/interaction.png" style="padding: 10px;" class="img-responsive"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="row home-row home-row-flex">
+    <div class="col-sm-9 col-xs-12">
+        <div class="panel-body home-panel">
+            <p>
+                Verovio is designed to be usable in a wide range of technical environments (<a href="{{ site.baseurl }}/command-line.xhtml">C++</a>, <a href="{{ site.baseurl }}/javascript.xhtml">JavaScript</a>, <a href="{{ site.baseurl }}/python.xhtml">Python</a>).
+            </p>
+            <p>
+                It works on desktop computers but also tablets and mobile devices. Verovio also provides basic support for other music notation format, such as <a href="{{ site.baseurl }}/musicxml.html">MusicXML import</a> and <a href="{{ site.baseurl }}/midi.xhtml">MIDI output</a>.
+            </p>
+        </div>
+    </div>
+    <div class="col-sm-3 hidden-xs">
+        <img alt="mobile devices" src="{{ site.baseurl }}/images/mobiles.png" class="img-responsive"/>
+    </div>
+</div>
+
+<div class="row home-row">
+    <div class="col-xs-12">
+        <p>
+            Verovio is designed to be used in a wide range of applications and has been adopted by several projects or institutions. It is currently used by:
+        </p>
+        <table style="margin: auto;">
+            {% for line in page.projects %}
+            <tr>
+                {% for p in line %}
+                    <td style="margin: auto;">
+                    {%- if p != empty -%}
+                           <a href="{{ p[0] }}" target="_blank">
+                               <img alt="project logo" src="{{ site.baseurl }}/images/projects/{{ p[1] }}.png" style="padding: 10px" class="img-responsive"/>
+                           </a>
+                    {%- endif -%}
+                    </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <p style="margin-top: 10px;">
+            Do you use Verovio? <a href="mailto:info@rism.digital">Let us know</a>!
+        </p>
+    </div>
+</div>
+
+<div class="row home-row">
+    <div class="col-xs-12 col-sm-8">
+        <h5>Why Verovio?</h5>
+        <p>
+            Verovio is named after a Dutch music engraver, Simone Verovio, who was active in Rome in the late sixteenth century. He was one of the very first to use engraving on copper plates for printing music, a technique that was revealed to be the most suited to music about one century later.
+        </p>
+    </div>
+    <div class="col-sm-4 hidden-xs">
+        <table style="margin: auto;">
+            <tr>
+                <td>
+                    <img alt="Verovio canon" src="{{ site.baseurl }}/images/verovio-canon.png" class="img-responsive"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+<script>
+//<![CDATA[
+    $( document ).ready(function() {
+        rand = Math.floor( Math.random() * 4);
+        $('#video-carousel .carousel-indicators li').eq(rand).addClass("active");
+        $('#video-carousel .carousel-inner div').eq(rand).addClass("active");
+    });
+//]]>
+</script>

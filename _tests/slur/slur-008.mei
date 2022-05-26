@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slur and beam/stem direction</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017">2017</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The slur direction is independent of the forced direction of the beams or stems.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="3s" meter.count="6" meter.unit="8" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0" type="m-0">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L5F1" dur="8" oct="4" pname="f" accid.ges="s" />
+                              <note xml:id="note-L6F1" dur="8" oct="5" pname="c" accid.ges="s" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="note-L8F1" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="note-L9F1" dur="8" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="4" pname="a" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L5F1" endid="#note-L6F1" />
+                     <slur staff="1" startid="#note-L8F1" endid="#note-L9F1" />
+                  </measure>
+                  <measure n="2" type="m-2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L12F1" dur="8" oct="4" pname="f" stem.dir="up" accid.ges="s" />
+                              <note xml:id="note-L13F1" dur="8" oct="5" pname="c" stem.dir="up" accid.ges="s" />
+                              <note dur="8" oct="4" pname="a" stem.dir="up" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="note-L15F1" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note xml:id="note-L16F1" dur="8" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="4" pname="a" stem.dir="down" accid.ges="n">
+                                 <artic artic="stacc" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L12F1" endid="#note-L13F1" />
+                     <slur staff="1" startid="#note-L15F1" endid="#note-L16F1" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
