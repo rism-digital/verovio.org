@@ -183,14 +183,27 @@
         loadFunction = window["loadExample_" + vrvVersion]; 
         loadFunction(customExample, "#localStorageFile", options, page );
     }
-    
-    function onVerovioLoaded() {
 
+    function onVerovioWasmLoaded() {
+        console.log("onVerovioWasmLoaded");
+        Module.onRuntimeInitialized = async _ => {
+            vrvToolkit = new verovio.toolkit();
+            console.log(vrvToolkit.getVersion());
+            onLoaded();
+        }
+    }
+     
+    function onVerovioLoaded() {
         vrvToolkit = new verovio.toolkit();
         console.log(vrvToolkit.getVersion());
-        vrvVersion = vrvToolkit.getVersion().slice(0,3).replace(".", "_");
+        onLoaded();
+    }
 
+    function onLoaded() {
         var strVersion = vrvToolkit.getVersion();
+        var arrVersion = strVersion.replace(/[^A-Za-z0-9]/g, ' ').split(' ');
+        var vrvVersion = arrVersion[0] + '_' + arrVersion[1];
+        console.log(vrvVersion);
         var n = strVersion.lastIndexOf('-');
         var commit = strVersion.substring(n + 1);
         $('#loading').hide();
@@ -203,7 +216,6 @@
         else {
             loadCustomFile();
         }
-       
     }
     
     function getParameterByName(name) {
@@ -351,7 +363,7 @@
         })
         
         // The default is the latest develop build
-        vrv = "{{ site.baseurl }}/javascript/develop/verovio-toolkit.js";
+        vrv = "{{ site.baseurl }}/javascript/develop/verovio-toolkit-wasm.js";
         
         // Hide the custom file placeholder
         //$(".test-group").last().hide();
@@ -366,6 +378,8 @@
             // Empty the list of examples to load
             examples = [];
         }
+
+        useWasm = true;
         
         // Version in the second frame ?
         if (iframe == "2") {
@@ -375,12 +389,18 @@
             else {
                 vrv = "{{ site.baseurl }}/javascript/latest/verovio-toolkit.js";
             }
+            useWasm = false;
         }
         
         var element = document.createElement("script");
         element.src = vrv;
         document.body.appendChild(element);
-        element.onload = onVerovioLoaded;
+        if (useWasm) {
+            element.onload = onVerovioWasmLoaded;
+        }
+        else {
+            element.onload = onVerovioLoaded;
+        }
     });
     //]]>
 </script>
