@@ -202,7 +202,7 @@
     function onLoaded() {
         var strVersion = vrvToolkit.getVersion();
         var arrVersion = strVersion.replace(/[^A-Za-z0-9]/g, ' ').split(' ');
-        var vrvVersion = arrVersion[0] + '_' + arrVersion[1];
+        vrvVersion = arrVersion[0] + '_' + arrVersion[1];
         console.log(vrvVersion);
         var n = strVersion.lastIndexOf('-');
         var commit = strVersion.substring(n + 1);
