@@ -57,7 +57,7 @@
                         </layer>
                      </staff>
                      <staff n="2">
-                        <layer n="5">
+                        <layer n="1">
                            <beam>
                               <tuplet num="3" numbase="2" bracket.visible="false">
                                  <note dur="8" oct="3" pname="e" accid="n" />
