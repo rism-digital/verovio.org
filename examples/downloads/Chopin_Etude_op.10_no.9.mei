@@ -320,7 +320,7 @@
          </change>
          <change n="9">
             <respStmt>
-               <persName resp="#Laurent Pugin"/>
+               <persName>Laurent Pugin</persName>
             </respStmt>
             <changeDesc>
                <p> Removing @staff, @timestamp and @timestamp2 and @dur in slurs and ties when duplicating @startid / @endid.</p>
@@ -329,7 +329,7 @@
          </change>
          <change n="10">
             <respStmt>
-               <persName resp="#Laurent Pugin"/>
+               <persName>Laurent Pugin</persName>
             </respStmt>
             <changeDesc>
                <p>Fixing hairpins, dynam and dir possitions</p>
@@ -341,7 +341,7 @@
          </change>
          <change n="11">
             <respStmt>
-               <persName resp="#Laurent Pugin"/>
+               <persName>Laurent Pugin</persName>
             </respStmt>
             <changeDesc>
                <p>Fixing tempo in header (changing back to dir)</p>
@@ -356,6 +356,15 @@
                   1.0 beta</p>
             </changeDesc>
             <date isodate="2016-12-13"/>
+         </change>
+         <change n="13">
+            <respStmt>
+               <persName>Klaus Rettinghaus</persName>
+            </respStmt>
+            <changeDesc>
+               <p>Removed duplicated articulations on chords</p>
+            </changeDesc>
+            <date isodate="2022-06-01"/>
          </change>
       </revisionDesc>
    </meiHead>
@@ -1455,12 +1464,10 @@
                            <beam>
                               <chord xml:id="d414548e1" dur="8" stem.dir="up">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e7750" pname="d" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e7769" pname="d" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414552e1" dur="8" stem.dir="up">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e7789" pname="e" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e7808" pname="e" oct="5" accid.ges="f"/>
@@ -1470,12 +1477,10 @@
                            <beam>
                               <chord xml:id="d414556e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e7836" pname="f" accid="f" oct="4"/>
                                  <note xml:id="d414233e7857" pname="f" accid="f" oct="5"/>
                               </chord>
                               <chord xml:id="d414560e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e7879" pname="g" accid="f" oct="4"/>
                                  <note xml:id="d414233e7900" pname="g" accid="f" oct="5"/>
@@ -1515,12 +1520,10 @@
                            <beam>
                               <chord xml:id="d414577e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e8168" pname="g" accid="n" oct="4"/>
                                  <note xml:id="d414233e8187" pname="g" accid="n" oct="5"/>
                               </chord>
                               <chord xml:id="d414581e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e8207" pname="a" accid="n" oct="4"/>
                                  <note xml:id="d414233e8226" pname="a" accid="n" oct="5"/>
@@ -1530,12 +1533,10 @@
                            <beam>
                               <chord xml:id="d414585e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e8254" pname="b" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e8273" pname="b" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414589e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e8293" pname="c" oct="5"/>
                                  <note xml:id="d414233e8310" pname="c" oct="6"/>
@@ -1681,18 +1682,15 @@
                            <beam>
                               <chord xml:id="d414668e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e9386" pname="d" oct="5" accid.ges="f"/>
                                  <note xml:id="d414233e9410" pname="d" oct="6" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414672e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e9430" pname="d" oct="5" accid.ges="f"/>
                                  <note xml:id="d414233e9449" pname="d" oct="6" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414676e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e9469" pname="d" oct="5" accid.ges="f"/>
                                  <note xml:id="d414233e9488" pname="d" oct="6" accid.ges="f"/>
@@ -1791,18 +1789,15 @@
                            <beam>
                               <chord xml:id="d414714e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e10136" pname="b" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e10160" pname="b" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414718e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e10180" pname="a" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e10199" pname="a" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414722e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e10219" pname="b" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e10238" pname="b" oct="5" accid.ges="f"/>
@@ -1887,30 +1882,25 @@
                               <tuplet num="5" numbase="3" bracket.visible="false">
                                  <chord xml:id="d414756e1" dur="8" stem.dir="down">
                                     <artic artic="stacc" place="above"/>
-                                    <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e10812" pname="d" oct="5" oct.ges="6" accid.ges="f"/>
                                     <note xml:id="d414233e10837" pname="d" oct="6" oct.ges="7" accid.ges="f"/>
                                  </chord>
                                  <chord xml:id="d414760e1" dur="8" stem.dir="down">
-                                    <artic artic="stacc" place="above"/>
                                     <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e10858" pname="d" oct="5" oct.ges="6" accid.ges="f"/>
                                     <note xml:id="d414233e10878" pname="d" oct="6" oct.ges="7" accid.ges="f"/>
                                  </chord>
                                  <chord xml:id="d414764e1" dur="8" stem.dir="down">
                                     <artic artic="stacc" place="above"/>
-                                    <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e10899" pname="d" oct="5" oct.ges="6" accid.ges="f"/>
                                     <note xml:id="d414233e10919" pname="d" oct="6" oct.ges="7" accid.ges="f"/>
                                  </chord>
                                  <chord xml:id="d414768e1" dur="8" stem.dir="down">
                                     <artic artic="stacc" place="above"/>
-                                    <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e10940" pname="d" oct="5" oct.ges="6" accid.ges="f"/>
                                     <note xml:id="d414233e10960" pname="d" oct="6" oct.ges="7" accid.ges="f"/>
                                  </chord>
                                  <chord xml:id="d414772e1" dur="8" stem.dir="down">
-                                    <artic artic="stacc" place="above"/>
                                     <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e10981" pname="d" oct="5" accid.ges="f"/>
                                     <note xml:id="d414233e11001" pname="d" oct="6" accid.ges="f"/>
@@ -2474,12 +2464,10 @@
                            <beam>
                               <chord xml:id="d414964e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15012" pname="f" oct="4"/>
                                  <note xml:id="d414233e15034" pname="f" oct="5"/>
                               </chord>
                               <chord xml:id="d414968e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15052" pname="g" oct="4"/>
                                  <note xml:id="d414233e15069" pname="g" oct="5"/>
@@ -2489,12 +2477,10 @@
                            <beam>
                               <chord xml:id="d414972e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15095" pname="a" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e15114" pname="a" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d414976e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15134" pname="b" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e15153" pname="b" oct="5" accid.ges="f"/>
@@ -2533,12 +2519,10 @@
                            <beam>
                               <chord xml:id="d414993e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15409" pname="c" oct="5"/>
                                  <note xml:id="d414233e15431" pname="c" oct="6"/>
                               </chord>
                               <chord xml:id="d414997e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15449" pname="d" oct="5" accid.ges="f"/>
                                  <note xml:id="d414233e15468" pname="d" oct="6" accid.ges="f"/>
@@ -2547,18 +2531,15 @@
                            <beam>
                               <chord xml:id="d415001e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15488" pname="c" oct="5"/>
                                  <note xml:id="d414233e15505" pname="c" oct="6"/>
                               </chord>
                               <chord xml:id="d415005e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15523" pname="a" oct="5" accid.ges="f"/>
                                  <note xml:id="d414233e15542" pname="a" oct="6" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d415009e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15562" pname="g" oct="5"/>
                                  <note xml:id="d414233e15579" pname="g" oct="6"/>
@@ -2595,18 +2576,15 @@
                            <beam>
                               <chord xml:id="d415026e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15823" pname="f" oct="5"/>
                                  <note xml:id="d414233e15840" pname="f" oct="6"/>
                               </chord>
                               <chord xml:id="d415030e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15858" pname="c" oct="5"/>
                                  <note xml:id="d414233e15880" pname="c" oct="6"/>
                               </chord>
                               <chord xml:id="d415034e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15898" pname="d" oct="5" accid.ges="f"/>
                                  <note xml:id="d414233e15917" pname="d" oct="6" accid.ges="f"/>
@@ -2615,18 +2593,15 @@
                            <beam>
                               <chord xml:id="d415038e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15937" pname="c" oct="5"/>
                                  <note xml:id="d414233e15954" pname="c" oct="6"/>
                               </chord>
                               <chord xml:id="d415042e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e15972" pname="a" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e15991" pname="a" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d415046e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e16011" pname="f" oct="4"/>
                                  <note xml:id="d414233e16029" pname="f" oct="5"/>
@@ -2694,12 +2669,10 @@
                            <beam>
                               <chord xml:id="d415080e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e16536" pname="f" oct="4"/>
                                  <note xml:id="d414233e16558" pname="f" oct="5"/>
                               </chord>
                               <chord xml:id="d415084e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e16576" pname="g" oct="4"/>
                                  <note xml:id="d414233e16593" pname="g" oct="5"/>
@@ -2709,12 +2682,10 @@
                            <beam>
                               <chord xml:id="d415088e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e16619" pname="a" accid="n" oct="4"/>
                                  <note xml:id="d414233e16638" pname="a" accid="n" oct="5"/>
                               </chord>
                               <chord xml:id="d415092e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e16658" pname="b" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e16677" pname="b" oct="5" accid.ges="f"/>
@@ -2803,12 +2774,10 @@
                            <beam>
                               <chord xml:id="d415134e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e17281" pname="b" accid="n" oct="4"/>
                                  <note xml:id="d414233e17305" pname="b" accid="n" oct="5"/>
                               </chord>
                               <chord xml:id="d415138e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e17325" pname="c" oct="5"/>
                                  <note xml:id="d414233e17342" pname="c" oct="6"/>
@@ -2818,12 +2787,10 @@
                            <beam>
                               <chord xml:id="d415142e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e17368" pname="d" accid="n" oct="5"/>
                                  <note xml:id="d414233e17387" pname="d" accid="n" oct="6"/>
                               </chord>
                               <chord xml:id="d415146e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e17407" pname="e" accid="n" oct="5"/>
                                  <note xml:id="d414233e17426" pname="e" accid="n" oct="6"/>
@@ -3125,18 +3092,15 @@
                            <beam>
                               <chord xml:id="d415324e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e19670" pname="g" oct="4"/>
                                  <note xml:id="d414233e19687" pname="g" oct="5"/>
                               </chord>
                               <chord xml:id="d415328e1" dur="8" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e19705" pname="g" oct="4"/>
                                  <note xml:id="d414233e19722" pname="g" oct="5"/>
                               </chord>
                               <chord xml:id="d415332e1" dur="8" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e19740" pname="g" oct="4"/>
                                  <note xml:id="d414233e19757" pname="g" oct="5"/>
@@ -3234,18 +3198,15 @@
                            <beam>
                               <chord xml:id="d415370e1" dur="8" stem.dir="up">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e20396" pname="e" accid="n" oct="4"/>
                                  <note xml:id="d414233e20420" pname="e" accid="n" oct="5"/>
                               </chord>
                               <chord xml:id="d415374e1" dur="8" stem.dir="up">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e20440" pname="d" accid="s" oct="4"/>
                                  <note xml:id="d414233e20466" pname="d" accid="s" oct="5"/>
                               </chord>
                               <chord xml:id="d415378e1" dur="8" stem.dir="up">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e20488" pname="e" oct="4"/>
                                  <note xml:id="d414233e20505" pname="e" oct="5"/>
@@ -3331,30 +3292,25 @@
                               <tuplet num="5" numbase="4" bracket.visible="false">
                                  <chord xml:id="d415412e1" dur="16" stem.dir="down">
                                     <artic artic="stacc" place="above"/>
-                                    <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e21092" pname="g" oct="5"/>
                                     <note xml:id="d414233e21114" pname="g" oct="6"/>
                                  </chord>
                                  <chord xml:id="d415416e1" dur="16" stem.dir="down">
-                                    <artic artic="stacc" place="above"/>
                                     <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e21132" pname="g" oct="5"/>
                                     <note xml:id="d414233e21149" pname="g" oct="6"/>
                                  </chord>
                                  <chord xml:id="d415420e1" dur="16" stem.dir="down">
                                     <artic artic="stacc" place="above"/>
-                                    <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e21167" pname="g" oct="5"/>
                                     <note xml:id="d414233e21184" pname="g" oct="6"/>
                                  </chord>
                                  <chord xml:id="d415424e1" dur="16" stem.dir="down">
                                     <artic artic="stacc" place="above"/>
-                                    <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e21202" pname="g" oct="5"/>
                                     <note xml:id="d414233e21219" pname="g" oct="6"/>
                                  </chord>
                                  <chord xml:id="d415428e1" dur="16" stem.dir="down">
-                                    <artic artic="stacc" place="above"/>
                                     <artic artic="stacc" place="above"/>
                                     <note xml:id="d414233e21237" pname="g" oct="5"/>
                                     <note xml:id="d414233e21254" pname="g" oct="6"/>
@@ -3363,7 +3319,6 @@
                            </beam>
                            <beam>
                               <chord xml:id="d415432e1" dur="16" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e21272" pname="g" oct="5"/>
                                  <note xml:id="d414233e21290" pname="g" oct="6"/>
@@ -3483,36 +3438,30 @@
                            <beam>
                               <chord xml:id="d415470e1" dur="16" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e22052" pname="e" accid="n" oct="4"/>
                                  <note xml:id="d414233e22076" pname="e" accid="n" oct="5"/>
                               </chord>
                               <chord xml:id="d415474e1" dur="16" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e22096" pname="f" oct="4"/>
                                  <note xml:id="d414233e22113" pname="f" oct="5"/>
                               </chord>
                               <chord xml:id="d415478e1" dur="16" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e22131" pname="g" oct="4"/>
                                  <note xml:id="d414233e22148" pname="g" oct="5"/>
                               </chord>
                               <chord xml:id="d415482e1" dur="16" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e22166" pname="a" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e22185" pname="a" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d415486e1" dur="16" stem.dir="down">
                                  <artic artic="stacc" place="above"/>
-                                 <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e22205" pname="b" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e22224" pname="b" oct="5" accid.ges="f"/>
                               </chord>
                               <chord xml:id="d415490e1" dur="16" stem.dir="down">
-                                 <artic artic="stacc" place="above"/>
                                  <artic artic="stacc" place="above"/>
                                  <note xml:id="d414233e22244" pname="a" oct="4" accid.ges="f"/>
                                  <note xml:id="d414233e22264" pname="a" oct="5" accid.ges="f"/>
