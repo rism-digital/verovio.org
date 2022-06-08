@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Line-break hyphenation</title>
          </titleStmt>
          <pubStmt>
-            <date isodate="2017-04-27">2017-04-27</date>
+            <respStmt>
+               <persName>Craig Sapp</persName>
+            </respStmt>
+            <date isodate="2016-11-22">22 Nov 2016</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/366" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -32,10 +38,11 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" meter.form="invis" />
                   </staffGrp>
                </scoreDef>
                <section>
+                  <pb />
                   <measure n="25">
                      <staff n="1">
                         <layer n="1">
@@ -110,6 +117,7 @@
                      </staff>
                      <harm staff="1" tstamp="1.000000">B♭/F</harm>
                   </measure>
+                  <sb />
                   <measure n="28">
                      <staff n="1">
                         <layer n="1">

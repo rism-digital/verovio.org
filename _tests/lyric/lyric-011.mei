@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Multilingual</title>
+            <title>Multilingual lyrics</title>
          </titleStmt>
          <pubStmt>
             <date isodate="2017-01-17">17 Jan 2017</date>
@@ -26,7 +26,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="1.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -46,7 +46,7 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note xml:id="note-0000000031256465" dots="1" dur="8" oct="4" pname="a" stem.dir="up">
+                              <note xml:id="nigqi6o" dots="1" dur="8" oct="4" pname="a" stem.dir="up">
                                  <verse xml:lang="de" n="1">
                                     <syl con="d" wordpos="i">Stil</syl>
                                  </verse>
@@ -59,7 +59,7 @@
                               </note>
                               <note dur="16" oct="4" pname="b" stem.dir="up" />
                            </beam>
-                           <note xml:id="note-0000000563691007" dur="8" oct="4" pname="a" stem.dir="up">
+                           <note xml:id="nis6065" dur="8" oct="4" pname="a" stem.dir="up">
                               <verse xml:lang="de" n="1">
                                  <syl>le</syl>
                               </verse>
@@ -70,7 +70,7 @@
                                  <syl>la</syl>
                               </verse>
                            </note>
-                           <note xml:id="note-0000001607673550" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
+                           <note xml:id="nhq18qa" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
                               <verse xml:lang="de" n="1">
                                  <syl>Nacht!</syl>
                               </verse>
@@ -81,7 +81,7 @@
                                  <syl>natt,</syl>
                               </verse>
                            </note>
-                           <rest dur="8" ploc="e" oloc="4" />
+                           <rest xml:id="rxtd7wh" dur="8" ploc="e" oloc="4" />
                         </layer>
                         <layer n="2">
                            <beam>
@@ -90,6 +90,7 @@
                            </beam>
                            <note dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
                            <note dur="4" oct="4" pname="d" stem.dir="down" />
+                           <rest sameas="#rxtd7wh" dur="8" />
                         </layer>
                      </staff>
                   </measure>
@@ -97,7 +98,7 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note xml:id="note-0000000567316984" dots="1" dur="8" oct="4" pname="a" stem.dir="up">
+                              <note xml:id="n1xxgrf" dots="1" dur="8" oct="4" pname="a" stem.dir="up">
                                  <verse xml:lang="de" n="1">
                                     <syl con="d" wordpos="i">Hei</syl>
                                  </verse>
@@ -108,7 +109,7 @@
                                     <syl con="d" wordpos="i">he</syl>
                                  </verse>
                               </note>
-                              <note xml:id="note-0000001484719018" dur="16" oct="4" pname="b" stem.dir="up">
+                              <note xml:id="n93glos" dur="16" oct="4" pname="b" stem.dir="up">
                                  <verse xml:lang="de" n="1">
                                     <syl wordpos="t">li</syl>
                                  </verse>
@@ -117,7 +118,7 @@
                                  </verse>
                               </note>
                            </beam>
-                           <note xml:id="note-0000000833564500" dur="8" oct="4" pname="a" stem.dir="up">
+                           <note xml:id="ngrv3o" dur="8" oct="4" pname="a" stem.dir="up">
                               <verse xml:lang="de" n="1">
                                  <syl>ge</syl>
                               </verse>
@@ -128,7 +129,7 @@
                                  <syl wordpos="t">ga</syl>
                               </verse>
                            </note>
-                           <note xml:id="note-0000000984552548" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
+                           <note xml:id="nqkrlad" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
                               <verse xml:lang="de" n="1">
                                  <syl>Nacht!</syl>
                               </verse>
@@ -139,7 +140,7 @@
                                  <syl>natt,</syl>
                               </verse>
                            </note>
-                           <rest dur="8" ploc="e" oloc="4" />
+                           <rest xml:id="r9ejran" dur="8" ploc="e" oloc="4" />
                         </layer>
                         <layer n="2">
                            <beam>
@@ -148,6 +149,7 @@
                            </beam>
                            <note dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
                            <note dur="4" oct="4" pname="d" stem.dir="down" />
+                           <rest sameas="#r9ejran" dur="8" />
                         </layer>
                      </staff>
                   </measure>
@@ -155,7 +157,7 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note xml:id="note-0000000113672414" dots="1" dur="8" oct="5" pname="e" stem.dir="up">
+                              <note xml:id="nwxxtah" dots="1" dur="8" oct="5" pname="e" stem.dir="up">
                                  <verse xml:lang="de" n="1">
                                     <syl con="d" wordpos="i">Al</syl>
                                  </verse>
@@ -170,7 +172,7 @@
                                  <accid accid="s" />
                               </note>
                            </beam>
-                           <note xml:id="note-0000001898561446" dur="8" oct="5" pname="e" stem.dir="up">
+                           <note xml:id="n86eepz" dur="8" oct="5" pname="e" stem.dir="up">
                               <verse xml:lang="de" n="1">
                                  <syl>les</syl>
                               </verse>
@@ -181,7 +183,7 @@
                                  <syl>var</syl>
                               </verse>
                            </note>
-                           <note xml:id="note-0000000178982502" dur="4" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                           <note xml:id="nim8osq" dur="4" oct="5" pname="c" stem.dir="up" accid.ges="s">
                               <verse xml:lang="de" n="1">
                                  <syl>schläft,</syl>
                               </verse>
@@ -192,7 +194,7 @@
                                  <syl>tyst,</syl>
                               </verse>
                            </note>
-                           <rest dur="8" ploc="e" oloc="4" />
+                           <rest xml:id="rbxmn0v" dur="8" ploc="e" oloc="4" />
                         </layer>
                         <layer n="2">
                            <beam>
@@ -201,6 +203,7 @@
                            </beam>
                            <note dur="8" oct="4" pname="g" stem.dir="down" />
                            <note dur="4" oct="4" pname="e" stem.dir="down" />
+                           <rest sameas="#rbxmn0v" dur="8" />
                         </layer>
                      </staff>
                   </measure>
@@ -208,7 +211,7 @@
                      <staff n="1">
                         <layer n="1">
                            <beam>
-                              <note xml:id="note-0000001854903841" dots="1" dur="8" oct="5" pname="d" stem.dir="up">
+                              <note xml:id="nrk9f60" dots="1" dur="8" oct="5" pname="d" stem.dir="up">
                                  <verse xml:lang="de" n="1">
                                     <syl con="d" wordpos="i">ein</syl>
                                  </verse>
@@ -221,7 +224,7 @@
                               </note>
                               <note dur="16" oct="5" pname="c" stem.dir="up" accid.ges="s" />
                            </beam>
-                           <note xml:id="note-0000001346760084" dur="8" oct="5" pname="d" stem.dir="up">
+                           <note xml:id="ng4ueyb" dur="8" oct="5" pname="d" stem.dir="up">
                               <verse xml:lang="de" n="1">
                                  <syl>sam</syl>
                               </verse>
@@ -232,7 +235,7 @@
                                  <syl wordpos="t">samt</syl>
                               </verse>
                            </note>
-                           <note xml:id="note-0000000110535855" dur="4" oct="4" pname="a" stem.dir="up">
+                           <note xml:id="nd40lke" dur="4" oct="4" pname="a" stem.dir="up">
                               <verse xml:lang="de" n="1">
                                  <syl>wacht</syl>
                               </verse>
@@ -243,7 +246,7 @@
                                  <syl>satt</syl>
                               </verse>
                            </note>
-                           <rest dur="8" ploc="e" oloc="4" />
+                           <rest xml:id="r9cmlj3" dur="8" ploc="e" oloc="4" />
                         </layer>
                         <layer n="2">
                            <beam>
@@ -252,6 +255,7 @@
                            </beam>
                            <note dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
                            <note dur="4" oct="4" pname="c" stem.dir="down" accid.ges="s" />
+                           <rest sameas="#r9cmlj3" dur="8" />
                         </layer>
                      </staff>
                   </measure>
