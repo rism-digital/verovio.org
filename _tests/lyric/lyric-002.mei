@@ -31,7 +31,7 @@
          <mdiv>
             <score>
                <scoreDef key.mode="major" meter.count="4" meter.unit="4">
-                  <staffGrp symbol="bracket" n="1" bar.thru="false">
+                  <staffGrp n="1" bar.thru="false" symbol="bracket">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                      <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
                   </staffGrp>
