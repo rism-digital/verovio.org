@@ -186,7 +186,7 @@
 
     function onVerovioWasmLoaded() {
         console.log("onVerovioWasmLoaded");
-        Module.onRuntimeInitialized = async _ => {
+        verovio.module.onRuntimeInitialized = async _ => {
             vrvToolkit = new verovio.toolkit();
             console.log(vrvToolkit.getVersion());
             onLoaded();

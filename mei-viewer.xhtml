@@ -707,6 +707,8 @@ downloads:
     </div>
 </div>
 
+<script src="{{ site.baseurl }}/javascript/develop/verovio-toolkit-wasm.js"></script>
+
 <script>
 //<![CDATA[
     $( document ).ready(function() {
@@ -844,7 +846,7 @@ downloads:
         });
     });
 
-    // Preload the WASM module - 
+    // Once the WASM module has loaded 
     verovio.module.onRuntimeInitialized = function() {
         // Load the default file or the file passed in the URL
         
@@ -925,10 +927,6 @@ downloads:
             });
         }
     }
-    
-    var script=document.createElement( 'script' );
-    script.src="{{ site.baseurl }}/javascript/develop/verovio-toolkit-wasm.js";
-    document.body.appendChild(script);
 
 //]]>
 </script>
