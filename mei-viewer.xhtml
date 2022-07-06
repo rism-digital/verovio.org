@@ -845,79 +845,77 @@ downloads:
     });
 
     // Preload the WASM module - 
-    var Module = {
-        noInitialRun: false,
-        onRuntimeInitialized: function() {
-            // Load the default file or the file passed in the URL
-            
-            var file = getParameterByName("file");
+    verovio.module.onRuntimeInitialized = function() {
+        // Load the default file or the file passed in the URL
+        
+        var file = getParameterByName("file");
 
-            /*
-            if (!file || (file.length == 0)) {
-                file = "examples/musicxml/Schubert_Staendchen_D.923.mxl";
-            }
+        /*
+        if (!file || (file.length == 0)) {
+            file = "examples/musicxml/Schubert_Staendchen_D.923.mxl";
+        }
 
-            vrvToolkit = new verovio.toolkit();
-            console.log("Loaded!");
-            console.log(vrvToolkit.getVersion());
+        vrvToolkit = new verovio.toolkit();
+        console.log("Loaded!");
+        console.log(vrvToolkit.getVersion());
 
-            var oReq = new XMLHttpRequest();
-            oReq.open("GET", file, true);
-            oReq.responseType = "arraybuffer";
+        var oReq = new XMLHttpRequest();
+        oReq.open("GET", file, true);
+        oReq.responseType = "arraybuffer";
 
-            oReq.onload = function(oEvent) {
-                var arrayBuffer = oReq.response;
-                load_data(arrayBuffer);
-                };
+        oReq.onload = function(oEvent) {
+            var arrayBuffer = oReq.response;
+            load_data(arrayBuffer);
+            };
 
-            oReq.send();
-            */
+        oReq.send();
+        */
 
+        if (!file || (file.length == 0)) {
+            file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
+        }
+
+        vrvToolkit = new verovio.toolkit();
+        console.log("Loaded!");
+        console.log(vrvToolkit.getVersion());
+
+        load_form_options();
+
+        for (opt in disabledOptions) {
+            console.log(disabledOptions[opt]);
+            $("#option-form :input[name='" + disabledOptions[opt] + "']").prop("disabled", true);
+        }
+
+        var version = vrvToolkit.getVersion();
+        var n = version.lastIndexOf('-');
+        var commit = version.substring(n + 1);
+        $('#version').text( version );
+        $("#version").attr( "href", "http://github.com/rism-digital/verovio/commit/" + commit ) ;
+
+        // Load the default file or the file passed in the URL
+        var file = getParameterByName("file");
+        var musicxml = getParameterByName("musicxml");
+        var local = getParameterByName("local");
+
+        if (musicxml == "true") {
+            format = 'musicxml';
+            $("#mei_download").show();
+        }
+
+        if (local == "true") {
+            data = localStorage.getItem("musicxml_file");
+            outputFilename = localStorage.getItem("musicxml_filename");
+            load_data( data );
+        }
+        else {
             if (!file || (file.length == 0)) {
                 file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
             }
-
-            vrvToolkit = new verovio.toolkit();
-            console.log("Loaded!");
-            console.log(vrvToolkit.getVersion());
-
-            load_form_options();
-
-            for (opt in disabledOptions) {
-                console.log(disabledOptions[opt]);
-                $("#option-form :input[name='" + disabledOptions[opt] + "']").prop("disabled", true);
-            }
-
-            var version = vrvToolkit.getVersion();
-            var n = version.lastIndexOf('-');
-            var commit = version.substring(n + 1);
-            $('#version').text( version );
-            $("#version").attr( "href", "http://github.com/rism-digital/verovio/commit/" + commit ) ;
-
-            // Load the default file or the file passed in the URL
-            var file = getParameterByName("file");
-            var musicxml = getParameterByName("musicxml");
-            var local = getParameterByName("local");
-
-            if (musicxml == "true") {
-                format = 'musicxml';
-                $("#mei_download").show();
-            }
-
-            if (local == "true") {
-                data = localStorage.getItem("musicxml_file");
-                outputFilename = localStorage.getItem("musicxml_filename");
-                load_data( data );
-            }
             else {
-                if (!file || (file.length == 0)) {
-                    file = "examples/downloads/Chopin_Etude_op.10_no.9.mei";
-                }
-                else {
-                    target = window.location.hash;
-                }
-                $("#overlay").show();
-                $.ajax({
+                target = window.location.hash;
+            }
+            $("#overlay").show();
+            $.ajax({
                 url: file
                 , dataType: "text"
                 , success: function(data) {
@@ -925,9 +923,8 @@ downloads:
                     load_data( data );
                 }
             });
-            }
         }
-    };
+    }
     
     var script=document.createElement( 'script' );
     script.src="{{ site.baseurl }}/javascript/develop/verovio-toolkit-wasm.js";
