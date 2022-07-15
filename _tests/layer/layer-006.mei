@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Layers with altered unisons</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Place each accidental beside each part so that it is clear which accidental belongs to which part.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 91, example 3</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="d" />
+                              <note dur="8" oct="5" pname="c">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dur="8" oct="5" pname="d">
+                                 <accid accid="f" />
+                              </note>
+                              <note dur="8" oct="5" pname="c">
+                                 <accid accid="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="note-0000002139386084" dur="2" oct="4" pname="f" tie="i">
+                              <accid accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="f">
+                              <accid accid="n" />
+                           </note>
+                           <rest dur="4" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="note-0000001245590624" dur="2" oct="4" pname="f" tie="t">
+                              <accid accid.ges="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

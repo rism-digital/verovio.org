@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Articulations and slurs</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-01-27">2021-01-27</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slur placement should take articulations into account.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="n1" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note xml:id="n2" dur="8" oct="4" pname="g" stem.dir="up">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n3" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                              <note xml:id="n4" dur="8" oct="4" pname="g" stem.dir="up">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n5" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                              <note xml:id="n6" dur="8" oct="4" pname="g" stem.dir="up">
+                                 <artic artic="stacc" place="above" />
+                              </note>
+                           </beam>
+                           <beam>
+                              <note xml:id="n7" dur="8" oct="4" pname="f" stem.dir="up">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                              <note xml:id="n8" dur="8" oct="4" pname="g" stem.dir="up">
+                                 <artic artic="stacc" place="below" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#n1" endid="#n2" />
+                     <slur startid="#n3" endid="#n4" />
+                     <slur startid="#n5" endid="#n6" curvedir="above" />
+                     <slur startid="#n7" endid="#n8" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

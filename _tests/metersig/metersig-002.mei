@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Additive meters</title>
+            <respStmt>
+               <persName role="composer">Béla Bartók</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-05-28">28 May 2021</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio correctly renders additive meters.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>No. 153 from Mikrokosmos</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.5.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="224">
+                  <staffGrp bar.thru="true">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="3+3+2" unit="8" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <meterSig count="3+3+2" unit="8" />
+                     </staffDef>
+                     <grpSym symbol="brace" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dots="1" dur="4" stem.dir="down">
+                              <artic artic="marc" />
+                              <note oct="4" pname="g">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="e" />
+                           </chord>
+                           <chord dots="1" dur="4" stem.dir="down">
+                              <artic artic="marc" />
+                              <note oct="4" pname="g" accid.ges="s" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="e" />
+                           </chord>
+                           <chord dur="4" stem.dir="up">
+                              <artic artic="marc" />
+                              <note oct="4" pname="f">
+                                 <accid accid="s" />
+                              </note>
+                              <note oct="4" pname="a" />
+                              <note oct="5" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <beam>
+                              <note xml:id="ex_1539979075" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="ex_0670571348" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ex_0988481891" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="ex_1206272372" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ex_0644303028" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="ex_0423192807" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" tstamp="1.000000">f</dynam>
+                     <slur startid="#ex_1539979075" endid="#ex_0670571348" curvedir="above" />
+                     <slur startid="#ex_0988481891" endid="#ex_1206272372" curvedir="above" />
+                     <slur startid="#ex_0644303028" endid="#ex_0423192807" curvedir="above" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dots="1" dur="4" stem.dir="down">
+                              <artic artic="marc" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <beam>
+                              <note xml:id="ex_1606356497" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="ex_1255815493" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ex_0441908099" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="ex_1943497040" dur="8" oct="4" pname="e" stem.dir="down" />
+                              <note dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note xml:id="ex_0202493491" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note xml:id="ex_1974671644" dur="8" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#ex_1606356497" endid="#ex_1255815493" curvedir="above" />
+                     <slur startid="#ex_0441908099" endid="#ex_1943497040" curvedir="above" />
+                     <slur startid="#ex_0202493491" endid="#ex_1974671644" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

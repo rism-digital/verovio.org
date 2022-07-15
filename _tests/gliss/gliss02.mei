@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Glissandi in chords</title>
+            <respStmt>
+               <persName role="editor">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2020-04-25">2020-04-25</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Glissandi may connect chords in notes.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="C" clef.line="1" key.sig="4s" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="note-0000000387804174" oct="4" pname="e" />
+                              <note xml:id="note-0000000821839605" oct="4" pname="b" />
+                              <note xml:id="note-0000000774533766" oct="5" pname="f" />
+                           </chord>
+                           <chord dur="2">
+                              <note xml:id="note-0000001641057499" oct="4" pname="d" />
+                              <note xml:id="note-0000001592091470" oct="4" pname="a" />
+                              <note xml:id="note-0000000184866789" oct="5" pname="e" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <gliss startid="#note-0000000387804174" endid="#note-0000001641057499" color="purple" />
+                     <gliss startid="#note-0000000821839605" endid="#note-0000001592091470" color="orange" />
+                     <gliss startid="#note-0000000774533766" endid="#note-0000000184866789" color="blue" />
+                     <gliss startid="#note-0000001641057499" endid="#note-0000000115699169" color="cyan" />
+                     <gliss startid="#note-0000001592091470" endid="#note-0000001606207059" color="darkgreen" />
+                     <gliss startid="#note-0000000184866789" endid="#note-0000000115699169" color="violet" />
+                  </measure>
+                  <measure right="end" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="note-0000000993369007" oct="4" pname="e" />
+                              <note xml:id="note-0000001606207059" oct="4" pname="g" />
+                              <note xml:id="note-0000000115699169" oct="4" pname="b" />
+                           </chord>
+                           <chord dur="2">
+                              <note xml:id="note-0000000230987856" oct="3" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note xml:id="note-0000000656887221" oct="5" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <gliss startid="#note-0000000993369007" endid="#note-0000000230987856" color="chartreuse" />
+                     <gliss startid="#note-0000001606207059" endid="#note-0000000656887221" color="goldenrod" />
+                     <gliss startid="#note-0000000115699169" endid="#note-0000000656887221" color="hotpink" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

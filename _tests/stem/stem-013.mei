@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Double-stemmed adjacent notes and overlapping parts</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-06-18">2021-06-18</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The two parts may share ledger lines, which should extend either side of all noteheads between the stave and the displaced part.</annot>
+            <annot>When parts overlap, ledger lines that are not shared by the part whose pitch is closest to the stave should not cut through its stem.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 27, example 3</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp>
+                        <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.sig="4s" meter.count="3" meter.unit="4" />
+                        <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.sig="4s" meter.count="3" meter.unit="4" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure left="invis" right="invis" label="overlapping parts">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="g" />
+                              <note oct="3" pname="g" staff="2"/>
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="c" staff="2"/>
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="e" staff="2"/>
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="2">
+                           <chord dur="4">
+                              <note oct="4" pname="c" />
+                              <note oct="3" pname="e" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="e" />
+                              <note oct="3" pname="e" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="4" pname="c" />
+                              <note oct="3" pname="e" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

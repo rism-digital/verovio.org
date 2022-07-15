@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Single stemmed dotted unisons</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-07-09">2021-07-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot n="1">
+               <p>Each notehead requires a dot. Each dot must have a separate stave-space, even though the noteheads are in the same space or on the same line; they will otherwise appear to be double-dotted</p>
+            </annot>
+         </notesStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef  shape="G" line="2" visible="false"/>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure left="invis" right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dots="1" dur="4" n="1">
+                              <note oct="4" pname="b" />
+                              <note oct="4" pname="b" />
+                           </chord>
+                           <chord dots="1" dur="2" n="2">
+                              <note oct="5" pname="c" />
+                              <note oct="5" pname="c" />
+                           </chord>
+                           <chord dots="1" dur="1" n="3">
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

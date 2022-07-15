@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Grace group alignments</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-18">2021-11-18</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2469" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <label>Piano</label>
+                        <staffDef n="1" lines="5">
+                           <clef shape="G" line="2" />
+                           <keySig sig="5s" />
+                        </staffDef>
+                        <staffDef n="2" lines="5">
+                           <clef shape="F" line="4" />
+                           <keySig sig="5s" />
+                        </staffDef>
+                        <grpSym symbol="brace" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord-0000000108671512" dur="1">
+                              <note oct="5" pname="d" accid.ges="s" />
+                              <note oct="5" pname="f" accid.ges="s" />
+                              <note oct="5" pname="b" accid.ges="n" />
+                              <note oct="6" pname="d" accid.ges="s" />
+                              <note oct="6" pname="f" accid.ges="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <graceGrp grace="unacc">
+                              <beam>
+                                 <note dur="16" oct="1" pname="b" stem.dir="up" />
+                                 <note dur="16" oct="2" pname="b" stem.dir="up" />
+                              </beam>
+                           </graceGrp>
+                           <chord xml:id="chord-0000000742047178" dur="1">
+                              <note oct="3" pname="f" accid.ges="s" />
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note oct="4" pname="d" accid.ges="s" />
+                              <note oct="4" pname="f" accid.ges="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord-0000000108671512" />
+                     <fermata staff="1" startid="#chord-0000000108671512" form="norm" place="above" />
+                     <arpeg plist="#chord-0000000742047178" />
+                     <fermata staff="2" startid="#chord-0000000742047178" form="norm" place="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

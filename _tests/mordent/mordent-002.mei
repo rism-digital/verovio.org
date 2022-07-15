@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Mordents example (2)</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-17">2017-05-17</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The correct placement of ornaments is not affected by the presence of tuplets.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="0" meter.count="2" meter.unit="2" meter.sym="cut" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="6" numbase="4" bracket.visible="false" num.format="count">
+                              <beam>
+                                 <note xml:id="note-L10F1" dur="8" oct="4" pname="f" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="c" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="d" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                     <mordent staff="1" startid="#note-L10F1" form="lower" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

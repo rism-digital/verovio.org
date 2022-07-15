@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Bwo tremolos and shared stem</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Norbert Dubowy</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-02-13">2022-02-13</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2639" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>There should be only one slash when notes share one common stem.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.pname="a" key.sig="4f" meter.count="2" meter.unit="4">
+                  <staffGrp>
+                     <staffGrp symbol="bracket">
+                        <staffDef n="4" lines="5" trans.semi="-9.000000" clef.shape="G" clef.line="2" key.sig="0">
+                           <label>Corni<lb /> in Mi♭/Es</label>
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="59">
+                     <staff n="4">
+                        <layer n="1">
+                           <bTrem form="meas" unitdur="8">
+                              <note dur="2" oct="4" pname="g" stem.mod="1slash" tstamp="1" />
+                           </bTrem>
+                        </layer>
+                        <layer n="2">
+                           <bTrem form="meas" unitdur="8">
+                              <note dur="2" oct="3" pname="g" stem.mod="1slash" tstamp="1" />
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="59">
+                     <staff n="4">
+                        <layer n="1">
+                           <bTrem form="meas" unitdur="8">
+                              <note xml:id="note_12033" dur="2" oct="4" pname="g" stem.mod="1slash" tstamp="1" />
+                           </bTrem>
+                        </layer>
+                        <layer n="2">
+                           <bTrem form="meas" unitdur="8">
+                              <note dur="2" oct="3" pname="g" stem.mod="1slash" stem.sameas="#note_12033" tstamp="1" />
+                           </bTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tuplets on rests (2)</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-02">2017-05-02</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Numbers and brackets of tuplets containing only rests, when the other tuplet notes carry beams, are displayed
+					appropriately.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="4" pname="c" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <rest dur="8" />
+                                 <rest dur="8" />
+                                 <rest dur="8" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="4" pname="c" accid.ges="n" />
+                                 <rest dur="8" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <rest dur="8" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                                 <rest dur="8" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <rest dur="8" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="4" pname="c" accid.ges="n" />
+                                 <note dur="8" oct="4" pname="d" accid.ges="n" />
+                                 <rest dur="8" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <rest dur="8" />
+                                 <rest dur="8" />
+                                 <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="8" oct="4" pname="c" accid.ges="n" />
+                                 <rest dur="8" />
+                                 <rest dur="8" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

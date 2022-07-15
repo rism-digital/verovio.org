@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Color example</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2016-10-14">14 Oct 2016</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/334" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the "color" attributes on many elements.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="8" color="#EF0B12" />
+                           <note xml:id="d414233e2598" dur="8" oct="4" pname="f" stem.dir="up" />
+                           <beatRpt color="purple" slash="1" />
+                           <note xml:id="d414233e2644" dur="4" oct="4" pname="g" />
+                           <note xml:id="d414233e2665" dur="4" oct="4" pname="g">
+                              <artic artic="marc" color="rgb(243,107,10)" place="below" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <tempo tstamp="1.000000">
+                        <rend color="hsl(0,100%,50%)">A</rend>
+                        <rend color="hsl(35,100%,50%)">n</rend>
+                        <rend color="hsl(70,100%,50%)">d</rend>
+                        <rend color="hsl(105,100%,50%)">a</rend>
+                        <rend color="hsl(140,100%,50%)">n</rend>
+                        <rend color="hsl(175,100%,50%)">t</rend>
+                        <rend color="hsl(210,100%,50%)">i</rend>
+                        <rend color="hsl(245,100%,50%)">n</rend>
+                        <rend color="hsl(280,100%,50%)">o</rend>
+                     </tempo>
+                     <tie startid="#d414233e2644" endid="#d414233e2665" color="hsl(240,85%,35%)" />
+                     <hairpin startid="#d414233e2598" endid="#d414233e2665" color="rgb(24,231,76)" form="cres" place="above" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="4" pname="a" color="gray">
+                              <accid accid="ff" color="maroon" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <fermata tstamp="1.000000" color="rgb(60,120,240)" place="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

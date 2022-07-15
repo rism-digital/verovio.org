@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Trills example (2)</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Trills are placed next to the note, beneath performing directives.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="5f" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="5f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="91">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="8" oct="4" pname="f" grace="acc" stem.dir="up" accid="f" />
+                           <note xml:id="note-L9F2" dur="4" oct="4" pname="f" accid.ges="f" />
+                           <beam>
+                              <note dur="8" oct="4" pname="e">
+                                 <accid accid="f" func="caution" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="f" />
+                              <note dur="8" oct="4" pname="g" accid.ges="f" />
+                              <note xml:id="note-L14F2" dur="8" oct="4" pname="a" accid.ges="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="g">
+                              <accid accid="f" func="caution" />
+                           </note>
+                           <chord dur="4">
+                              <note oct="3" pname="e">
+                                 <accid accid="f" func="caution" />
+                              </note>
+                              <note oct="3" pname="b" accid="ff" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="e" accid.ges="f" />
+                              <note oct="3" pname="b" accid.ges="ff" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">sotto voce</dir>
+                     <trill staff="1" tstamp="1.000000" />
+                     <slur staff="1" startid="#note-L9F2" endid="#note-L14F2" />
+                     <pedal staff="2" tstamp="1.000000" dir="down" />
+                     <pedal staff="2" tstamp="3.500000" dir="up" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

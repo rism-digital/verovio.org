@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Vertical placement of rests</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-04-27">2017-04-27</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders the vertical placement of rests starting from a default position in the middle of the staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="0" meter.count="4" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" ploc="d" oloc="5" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" ploc="b" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" ploc="g" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" ploc="e" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" ploc="d" oloc="5" />
+                           <rest dur="2" ploc="b" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" ploc="g" oloc="4" />
+                           <rest dur="2" ploc="e" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" ploc="d" oloc="5" />
+                           <rest dur="4" ploc="b" oloc="4" />
+                           <rest dur="4" ploc="g" oloc="4" />
+                           <rest dur="4" ploc="e" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="8" ploc="d" oloc="5" />
+                           <rest dur="8" ploc="b" oloc="4" />
+                           <rest dur="8" ploc="g" oloc="4" />
+                           <rest dur="8" ploc="e" oloc="4" />
+                           <rest dur="16" ploc="d" oloc="5" />
+                           <rest dur="16" ploc="b" oloc="4" />
+                           <rest dur="16" ploc="g" oloc="4" />
+                           <rest dur="16" ploc="e" oloc="4" />
+                           <rest dur="32" ploc="d" oloc="5" />
+                           <rest dur="32" ploc="b" oloc="4" />
+                           <rest dur="32" ploc="g" oloc="4" />
+                           <rest dur="32" ploc="e" oloc="4" />
+                           <rest dur="64" ploc="d" oloc="5" />
+                           <rest dur="64" ploc="b" oloc="4" />
+                           <rest dur="64" ploc="g" oloc="4" />
+                           <rest dur="64" ploc="e" oloc="4" />
+                           <rest dur="128" ploc="d" oloc="5" />
+                           <rest dur="128" ploc="b" oloc="4" />
+                           <rest dur="128" ploc="g" oloc="4" />
+                           <rest dur="128" ploc="e" oloc="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

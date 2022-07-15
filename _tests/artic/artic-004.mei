@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Articulation and stave spacing interaction</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-02">2017-05-02</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When two notes from different staves carrying articulation signs are close to each other, Verovio increases the stave
+					separation to clarify which note the articulation is attached to.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="240.000000">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="173">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <clef shape="G" line="2" />
+                           <note dur="4" oct="4" pname="g" accid="s">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="4" pname="a" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="5" pname="c" accid.ges="s">
+                              <artic artic="stacc" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="174">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="d" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="5" pname="e" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="5" pname="f" accid="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="5" pname="g" accid="s">
+                              <artic artic="stacc" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="175">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="a" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="4" />
+                           <rest dur="2" />
+                           <clef shape="F" line="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="176">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="a" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="4" />
+                           <rest dur="2" />
+                           <clef shape="G" line="2" />
+                        </layer>
+                     </staff>
+                     <dynam staff="2" tstamp="1.000000">sf</dynam>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

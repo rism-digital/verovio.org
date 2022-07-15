@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beam slope regularity</title>
+         </titleStmt>
+         <pubStmt />
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Beam should have a regular slope on identical motifs with different pitches</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application isodate="2020-03-24T02:43:30" version="2.7.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="b" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="b" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

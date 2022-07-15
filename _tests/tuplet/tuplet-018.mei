@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tuplet number with slurs</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder" auth.uri="http://d-nb.info/gnd" auth="GND" codedval="1138881465">Werner Goebl</persName>
+            </respStmt>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="1f" meter.count="4" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tuplet num="3" numbase="2" num.place="below" bracket.visible="false">
+                                 <note xml:id="note-0000001058404577" dur="32" oct="4" pname="g" stem.dir="up" />
+                                 <note dur="32" oct="4" pname="a" stem.dir="up" />
+                                 <note xml:id="note-0000000185008559" dur="32" oct="4" pname="b" stem.dir="up" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="5" numbase="4" num.place="below" bracket.visible="false">
+                                 <note xml:id="note-0000001058404572" dur="32" oct="4" pname="g" stem.dir="up" />
+                                 <note dur="32" oct="4" pname="a" stem.dir="up">
+                                    <accid accid="n" />
+                                 </note>
+                                 <note dur="32" oct="4" pname="b" stem.dir="up">
+                                    <accid accid="n" />
+                                 </note>
+                                 <note dur="32" oct="5" pname="c" stem.dir="up" />
+                                 <note xml:id="note-0000000759612348" dur="32" oct="5" pname="d" stem.dir="up" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.place="above" bracket.visible="false">
+                                 <note xml:id="note-0000001058405423" dur="32" oct="4" pname="b" stem.dir="down" />
+                                 <note dur="32" oct="5" pname="c" stem.dir="down" />
+                                 <note xml:id="note-0000000185007765" dur="32" oct="5" pname="d" stem.dir="down" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="3" numbase="2" num.place="above" bracket.visible="false">
+                                 <note xml:id="note-0000001058405347" dur="32" oct="4" pname="g" stem.dir="up" />
+                                 <note dur="32" oct="4" pname="a" stem.dir="up" />
+                                 <note xml:id="note-0000000185007569" dur="32" oct="4" pname="b" stem.dir="up" />
+                              </tuplet>
+                           </beam>
+                           <beam>
+                              <tuplet num="5" numbase="4" num.place="above" bracket.visible="false">
+                                 <note xml:id="note-0000001058404645" dur="32" oct="4" pname="g" stem.dir="up" />
+                                 <note dur="32" oct="4" pname="a" stem.dir="up">
+                                    <accid accid="n" />
+                                 </note>
+                                 <note dur="32" oct="4" pname="b" stem.dir="up">
+                                    <accid accid="n" />
+                                 </note>
+                                 <note dur="32" oct="5" pname="c" stem.dir="up" />
+                                 <note xml:id="note-0000000759612645" dur="32" oct="5" pname="d" stem.dir="up" />
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-0000001058404577" endid="#note-0000000185008559" curvedir="below" layer="1" />
+                     <slur staff="1" startid="#note-0000001058404572" endid="#note-0000000759612348" curvedir="below" layer="1" />
+                     <slur staff="1" startid="#note-0000001058405347" endid="#note-0000000185007569" curvedir="above" layer="1" />
+                     <slur staff="1" startid="#note-0000001058404645" endid="#note-0000000759612645" curvedir="above" layer="1" />
+                     <slur staff="1" startid="#note-0000001058405423" endid="#note-0000000185007765" curvedir="above" layer="1" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

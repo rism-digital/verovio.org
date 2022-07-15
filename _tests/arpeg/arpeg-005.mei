@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Broken arpeggios</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-05-21">2021-05-21</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>
+               <p>A broken arpeggio, in which both hands arpeggiate simultaneously, has a separate arpeggio sign for each hand and, if included, an arrow for each sign.</p>
+            </annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 132, example 2a</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true">
+                     <staffDef n="1" lines="5" ppq="1">
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig count="2" unit="4" form="invis" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" ppq="1">
+                        <clef shape="F" line="4" />
+                        <keySig sig="0" />
+                        <meterSig count="2" unit="4" form="invis" />
+                     </staffDef>
+                     <grpSym symbol="brace" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="ex_1179776871" dur="2">
+                              <note xml:id="ex_0407027738" oct="4" pname="e" />
+                              <note xml:id="ex_0244395599" oct="4" pname="a" />
+                              <note xml:id="ex_1568099329" oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <chord xml:id="ex_1552330911" dur="2">
+                              <note xml:id="ex_0698883822" oct="2" pname="a" />
+                              <note xml:id="ex_0246793774" oct="3" pname="e" />
+                              <note xml:id="ex_1072037261" oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg plist="#ex_1179776871" />
+                     <arpeg plist="#ex_1552330911" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="ex_1453522232" dur="2">
+                              <note xml:id="ex_1357676401" oct="4" pname="e" />
+                              <note xml:id="ex_0889483715" oct="4" pname="a" />
+                              <note xml:id="ex_0919131238" oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <chord xml:id="ex_0490720989" dur="2">
+                              <note xml:id="ex_0128441232" oct="2" pname="a" />
+                              <note xml:id="ex_1210457643" oct="3" pname="e" />
+                              <note xml:id="ex_1049017870" oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg plist="#ex_1453522232" order="down" arrow="true" />
+                     <arpeg plist="#ex_0490720989" order="down" arrow="true" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="ex_1604003173" dur="4">
+                              <note xml:id="ex_0907540481" oct="4" pname="e" />
+                              <note xml:id="ex_1183350314" oct="4" pname="a" />
+                              <note xml:id="ex_0722672531" oct="5" pname="c" />
+                           </chord>
+                           <chord xml:id="ex_0600358557" dur="4">
+                              <note xml:id="ex_1937204732" oct="4" pname="e" />
+                              <note xml:id="ex_1461583801" oct="4" pname="a" />
+                              <note xml:id="ex_1920989021" oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <chord xml:id="ex_0313159917" dur="4">
+                              <note xml:id="ex_1867551267" oct="2" pname="a" />
+                              <note xml:id="ex_1943789869" oct="3" pname="e" />
+                              <note xml:id="ex_1755090119" oct="3" pname="a" />
+                           </chord>
+                           <chord xml:id="ex_0526533847" dur="4">
+                              <note xml:id="ex_2111738488" oct="2" pname="a" />
+                              <note xml:id="ex_1821740889" oct="3" pname="e" />
+                              <note xml:id="ex_1324766144" oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg plist="#ex_1604003173" order="up" arrow="true" />
+                     <arpeg plist="#ex_0313159917" order="down" arrow="true" />
+                     <arpeg plist="#ex_0600358557" order="down" arrow="true" />
+                     <arpeg plist="#ex_0526533847" order="up" arrow="true" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

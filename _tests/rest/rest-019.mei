@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Rests in layers</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-02-11">2022-02-11</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+         </pubStmt>
+         <notesStmt>
+            <annot>Rest shouldn't overlap.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.sig="0">
+                  <staffGrp n="1">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="long" />
+                           <rest dur="breve" />
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                           <rest dur="32" />
+                           <rest dur="64" />
+                           <rest dur="128" />
+                           <rest dur="256" />
+                           <rest dur="512" />
+                           <rest dur="1024" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="long" />
+                           <rest dur="breve" />
+                           <rest dur="1" />
+                           <rest dur="2" />
+                           <rest dur="4" />
+                           <rest dur="8" />
+                           <rest dur="16" />
+                           <rest dur="32" />
+                           <rest dur="64" />
+                           <rest dur="128" />
+                           <rest dur="256" />
+                           <rest dur="512" />
+                           <rest dur="1024" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dots="1" dur="1" />
+                           <rest dots="1" dur="2" />
+                           <rest dots="1" dur="4" />
+                           <rest dots="1" dur="8" />
+                           <rest dots="1" dur="16" />
+                           <rest dots="1" dur="32" />
+                           <rest dots="1" dur="64" />
+                           <rest dots="1" dur="128" />
+                           <rest dots="1" dur="256" />
+                           <rest dots="1" dur="512" />
+                           <rest dots="1" dur="1024" />
+                        </layer>
+                        <layer n="2">
+                           <rest dots="1" dur="1" />
+                           <rest dots="1" dur="2" />
+                           <rest dots="1" dur="4" />
+                           <rest dots="1" dur="8" />
+                           <rest dots="1" dur="16" />
+                           <rest dots="1" dur="32" />
+                           <rest dots="1" dur="64" />
+                           <rest dots="1" dur="128" />
+                           <rest dots="1" dur="256" />
+                           <rest dots="1" dur="512" />
+                           <rest dots="1" dur="1024" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                           <rest dur="32" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="32" dur.ges="4" />
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                           <rest dur="16" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="64" dur.ges="4" />
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                           <rest dur="8" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="128" dur.ges="4" />
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="1" dur.ges="4" />
+                           <rest dur="2" dur.ges="4" />
+                           <rest dur="4" dur.ges="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="256" dur.ges="4" />
+                           <rest dur="512" dur.ges="4" />
+                           <rest dur="1024" dur.ges="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

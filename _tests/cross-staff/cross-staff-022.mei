@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Positions with cross-staff</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date>2021-01-19</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Positions of control events should not be affected by cross-staff beams.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="4" dots="1" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam place="below">
+                              <note dur="8" oct="3" pname="c" />
+                              <note dur="8" staff="1" oct="4" pname="c" color="coral" />
+                              <note dur="8" oct="3" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dir staff="2" tstamp="2.200000">t</dir>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam place="below">
+                              <note dur="8" staff="2" oct="3" pname="c" color="coral"/>
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" staff="2" oct="3" pname="c" color="coral"/>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="4" dots="1" />
+                        </layer>
+                     </staff>
+                     <dir staff="2" tstamp="2.200000">t</dir>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="4" dots="1" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam place="above">
+                              <note dur="8" oct="4" pname="c" />
+                              <note dur="8" staff="1" oct="5" pname="c" color="coral" />
+                              <note dur="8" oct="4" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <dir staff="1" tstamp="2.600000" place="above">t</dir>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam place="above">
+                              <note dur="8" staff="2" oct="4" pname="c" color="coral" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" staff="2" oct="4" pname="c" color="coral" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <space dur="4" dots="1" />
+                        </layer>
+                     </staff>
+                     <dir staff="1" tstamp="2.600000" place="above">t</dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

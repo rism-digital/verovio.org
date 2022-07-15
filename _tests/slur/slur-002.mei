@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs on mixed stem directions</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017">2017</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slurs on notes with stems pointing both upwards and downwards are placed by default above the staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="240">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="4f" meter.count="2" meter.unit="2" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="4f" meter.count="2" meter.unit="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L12F3" dur="4" oct="4" pname="c" stem.dir="up" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <dynam place="below" staff="1" tstamp="1.000000">p</dynam>
+                     <slur staff="1" startid="#note-L12F3" endid="#note-L17F3" />
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="f" stem.dir="up" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="4" pname="a" stem.dir="up" accid.ges="f">
+                              <artic artic="stacc" />
+                           </note>
+                           <note dur="4" oct="5" pname="c" stem.dir="down" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <note xml:id="note-L17F3" dur="4" oct="5" pname="f" stem.dir="down" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L19F3" dots="1" dur="4" oct="5" pname="a" stem.dir="down" accid.ges="f" />
+                           <beam>
+                              <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                                 <note dur="16" oct="5" pname="g" stem.dir="down" accid.ges="n" />
+                                 <note dur="16" oct="5" pname="f" stem.dir="down" accid.ges="n" />
+                                 <note dur="16" oct="5" pname="e" stem.dir="down" accid="n" />
+                              </tuplet>
+                           </beam>
+                           <note xml:id="note-L25F3" dur="4" oct="5" pname="f" stem.dir="down" accid.ges="n">
+                              <artic artic="stacc" />
+                           </note>
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="f" accid.ges="n" />
+                              <note oct="3" pname="a" accid.ges="f" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="f" accid.ges="n" />
+                              <note oct="3" pname="a" accid.ges="f" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                           <chord dur="4" stem.dir="down">
+                              <note oct="3" pname="f" accid.ges="n" />
+                              <note oct="3" pname="a" accid.ges="f" />
+                              <note oct="4" pname="c" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L19F3" endid="#note-L25F3" />
+                     <dynam staff="2" tstamp="1.500000">p</dynam>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

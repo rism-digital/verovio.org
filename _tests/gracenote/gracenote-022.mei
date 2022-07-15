@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cue and regular note interaction with beams</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-03">2021-11-03</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/808" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Beam with are mix or cue and regular notes are treated are regular beams.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="5s">
+                        <label />
+                     </staffDef>
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="5s" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="4" pname="a" accid.ges="s" />
+                           <beam>
+                              <note dur="8" oct="4" pname="b" grace="unacc" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" grace="unacc" accid.ges="s" />
+                              <note dur="8" oct="4" pname="g" grace="unacc" accid="x" />
+                              <note dur="8" oct="4" pname="a" grace="unacc" accid.ges="s" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note-L14F2" dur.ges="16" dur="8" oct="5" pname="d" cue="true" accid.ges="s" />
+                              <note dur.ges="16" dur="8" oct="5" pname="d" cue="true" accid="n" />
+                              <note dur.ges="16" dur="8" oct="5" pname="c" cue="true" accid.ges="s" />
+                              <note dur.ges="16" dur="8" oct="5" pname="c" cue="true" accid="n" />
+                              <note xml:id="note-L19F2" dur="8" oct="4" pname="b" cue="true" accid.ges="n" />
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <space dots="1" dur="4" />
+                           <note dur="4" oct="5" pname="d" accid.ges="s" />
+                           <note dur="8" oct="4" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L3F1" dur="8" oct="2" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="b" stem.dir="down" accid.ges="n" />
+                              <note dur="8" oct="3" pname="d" stem.dir="down" accid.ges="s" />
+                              <note dur="8" oct="2" pname="b" stem.dir="down" accid.ges="n" />
+                              <note dur="8" oct="3" pname="a" stem.dir="down" accid.ges="s" />
+                              <note xml:id="note-L19F1" dur="8" oct="3" pname="d" stem.dir="down" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L14F2" endid="#note-L19F2" />
+                     <slur staff="2" startid="#note-L3F1" endid="#note-L19F1" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

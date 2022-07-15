@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Notes on ledger lines</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The outer stave-line must be clearly visible; tails closer to noteheads will obscure ledger lines.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 16, example 4</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure left="invis" right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="16" oct="6" pname="e" stem.dir="down" />
+                           <note dur="32" oct="6" pname="d" stem.dir="down" />
+                           <note dur="64" oct="6" pname="a" stem.dir="down" />
+                           <note dur="16" oct="3" pname="b" stem.dir="up" />
+                           <note dur="64" oct="3" pname="f" stem.dir="up" />
+                           <space dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

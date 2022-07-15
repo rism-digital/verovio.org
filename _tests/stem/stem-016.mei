@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Note placement with stem sameas</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-03-16">2022-03-16</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2702" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Unison or adjacent notes with @stem.sameas should not overlap.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.10.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef optimize="false" key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp bar.thru="false">
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2">
+                        <label>Oboi</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="n-01" dur="4" oct="5" pname="g" accid="s" />
+                           <note xml:id="n-02" dur="4" oct="4" pname="g" accid="s" />
+                           <beam>
+                              <note xml:id="n-03" dur="4" oct="5" pname="g" />
+                              <note xml:id="n-04" dur="4" oct="5" pname="g" />
+                           </beam>
+                           <beam>
+                              <note xml:id="n-05" dur="4" oct="4" pname="g" />
+                              <note xml:id="n-06" dur="4" oct="4" pname="g" />
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="5" pname="f" stem.sameas="#n-01" accid="n" />
+                           <note dur="4" oct="4" pname="f" stem.sameas="#n-02" accid="n" />
+                           <beam>
+                              <note dur="4" oct="5" pname="f" stem.sameas="#n-03" />
+                              <note dur="4" oct="5" pname="g" stem.sameas="#n-04" />
+                           </beam>
+                           <beam>
+                              <note dur="4" oct="4" pname="f" stem.sameas="#n-05" />
+                              <note dur="4" oct="4" pname="g" stem.sameas="#n-06" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="n-07" dur="2" oct="5" pname="g" accid="s" />
+                           <note xml:id="n-08" dur="2" oct="4" pname="g" accid="s" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="2" oct="5" pname="g" stem.sameas="#n-07" accid="s" />
+                           <note dur="2" oct="4" pname="g" stem.sameas="#n-08" accid="s" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

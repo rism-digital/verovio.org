@@ -1,0 +1,30 @@
+name: Verovio
+description: Music notation engraving library for MEI with MusicXML and Humdrum support and various toolkits (JavaScript, Python) 
+markdown: kramdown
+baseurl: "https://www.verovio.org"
+exclude: []
+
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+
+tests-edit-path: "https://github.com/rism-digital/verovio.org/edit/gh-pages"
+tests-verovio-edit-path: "https://editor.verovio.org/?file=https://raw.githubusercontent.com/rism-digital/verovio.org/gh-pages"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+remote_theme: rism-digital/verovio-theme
+
+twitter: card
+
+collections:
+    tests:
+        output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: https://repository-images.githubusercontent.com/15762693/2a735d80-6e89-11ea-9ee5-6c078d91846f
