@@ -1,2 +1,0 @@
-
-console.warn('The use of this build of the JS toolkit is deprecated. See https://github.com/rism-digital/verovio/discussions/2897');
