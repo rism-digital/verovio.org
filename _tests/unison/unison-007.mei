@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Unisons with unequal number of dots</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <persName role="funder">Enote GmbH</persName>
+            </respStmt>
+            <date isodate="2022-07-25">2022-07-25</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2982" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When unison notes have diverging numbers of dots, they are not merged.</annot>
+         </notesStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="5" pname="c" />
+                           <note dots="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="2" oct="5" pname="c" />
+                           <note dots="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="5" pname="c" />
+                           <note dots="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="2" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="8" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="8" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="2" oct="5" pname="c" />
+                           <note dots="1" dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
