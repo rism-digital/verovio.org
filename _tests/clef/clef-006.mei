@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -14,6 +14,9 @@
                <corpName role="funder">Enote GmbH</corpName>
             </respStmt>
             <date isodate="2021-03-16">2021-03-16</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio.org/pull/34" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -40,7 +43,7 @@
                         <grpSym symbol="bracket" />
                         <staffDef n="1" lines="5">
                            <label>Tenore</label>
-                           <clef shape="G" line="2" dis="8" dis.place="below" glyph.name="gClef8vbCClef" />
+                           <clef shape="G" glyph.name="gClef8vbCClef" line="2" dis="8" dis.place="below" />
                            <keySig sig="1f" />
                            <meterSig count="2" sym="cut" unit="2" />
                         </staffDef>
