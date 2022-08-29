@@ -1,113 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Repeat dots</title>
-      </titleStmt>
-      <pubStmt>
-        <respStmt>
-          <persName role="encoder">Klaus Rettinghaus</persName>
-          <corpName role="funder">Enote GmbH</corpName>
-        </respStmt>
-        <date isodate="2020">2020</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot>Verovio places dots on repeat barlines according to the current staff size.</annot>
-      </notesStmt>
-    </fileDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef label="feature-example">
-            <meterSig unit="4" count="4" />
-            <staffGrp>
-              <staffGrp symbol="bracketsq" bar.thru="true" xml:id="System">
-                <staffDef n="1" clef.line="2" clef.shape="G" lines="5" scale="75%" />
-                <staffGrp symbol="brace" xml:id="klammern">
-                  <staffDef n="2" clef.line="2" clef.shape="G" lines="5" />
-                  <staffDef n="3" clef.line="2" clef.shape="G" lines="5" />
-                </staffGrp>
-              </staffGrp>
-              <staffDef n="4" clef.line="2" clef.shape="G" lines="5" scale="50%" />
-            </staffGrp>
-          </scoreDef>
-          <section>
-            <measure n="4" right="rptstart">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="2">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="3">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="4">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="5" right="rptboth">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="2">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="3">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="4">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="6" right="rptend">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="2">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="3">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-              <staff n="4">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Repeat dots</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020">2020</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio places dots on repeat barlines according to the current staff size.</annot>
+         </notesStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <meterSig count="4" unit="4" />
+                  <staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracketsq">
+                        <staffDef n="1" scale="75%" lines="5" clef.shape="G" clef.line="2" />
+                        <staffGrp symbol="brace">
+                           <staffDef n="2" lines="5" clef.shape="G" clef.line="2" />
+                           <staffDef n="3" lines="5" clef.shape="G" clef.line="2" />
+                        </staffGrp>
+                     </staffGrp>
+                     <staffDef n="4" scale="50%" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="rptstart" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="rptboth" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="rptend" n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>
