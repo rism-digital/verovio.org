@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-Mensural.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-Mensural.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Multiple stems on notes</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2022-08-24">2022-08-24</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/3008" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders stem children in mensural notation.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" notationtype="mensural" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer n="1">
+                        <note dur="minima" oct="5" pname="c">
+                           <stem dir="up" xml:id="stem-01a" />
+                           <stem dir="down" xml:id="stem-01b" />
+                        </note>
+                        <note dur="semiminima" oct="5" pname="c">
+                           <stem dir="up" xml:id="stem-02a" />
+                           <stem dir="down" xml:id="stem-02b" />
+                        </note>
+                        <note dur="fusa" oct="5" pname="c">
+                           <stem dir="up" xml:id="stem-03" />
+                        </note>
+                        <note dur="semifusa" oct="5" pname="c">
+                        </note>
+                        <note dur="maxima" oct="5" pname="c">
+                           <stem dir="up" xml:id="stem-maxima_a" />
+                           <stem dir="down" xml:id="stem-maxima_b" />
+                        </note>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
