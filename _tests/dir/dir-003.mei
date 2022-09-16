@@ -28,7 +28,7 @@
             <score>
                <scoreDef midi.bpm="140">
                   <staffGrp>
-                     <staffGrp label="Piano" symbol="brace" barthru="true">
+                     <staffGrp label="Piano" symbol="brace" bar.thru="true">
                         <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="4" meter.unit="4" meter.sym="common" />
                         <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="3f" meter.count="4" meter.unit="4" meter.sym="common" />
                      </staffGrp>
