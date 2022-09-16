@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Symbol mixed with text or within editorial markup</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-09-16"></date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Symbol can be mixed with text or place within editorial markup.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1">Symbols such as <symbol glyph.auth="smufl" glyph.name="coda" color="orange"></symbol> can be mixed with text</dir>
+                     <dir place="below" staff="1" tstamp="1">
+                        This
+                        <choice>
+                           <sic><symbol glyph.auth="smufl" glyph.name="ottavaAlta" color="orange"></symbol></sic>
+                           <corr/>
+                        </choice>
+                        &#xA0;is in editorial markup
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
