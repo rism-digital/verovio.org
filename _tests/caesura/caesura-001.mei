@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Caesura</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <persName role="funder">Enote GmbH</persName>
+            </respStmt>
+            <date isodate="2022-08-09" />
+         </pubStmt>
+         <notesStmt>
+            <annot>Verovio renders caesura elements</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L6F1" dur="1" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <caesura staff="1" startid="#note-L6F1" place="below" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="d" accid.ges="n" />
+                           <note dur="2" oct="4" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <caesura staff="1" tstamp="1.900000" />
+                     <caesura tstamp="4.000000" glyph.name="caesuraCurved" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                           <chord xml:id="chord-L13F1" dur="4">
+                              <note oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="e" accid.ges="n" />
+                              <note oct="4" pname="g" accid.ges="n" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <caesura startid="#chord-L13F1" glyph.name="caesuraThick" place="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

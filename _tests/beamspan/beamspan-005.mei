@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs with spanning beams</title>
+            <respStmt>
+               <persName role="encoder">Andriy Makarchuk</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-09-16" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Rendering of slurs with cross-staff beamSpan elements.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <staffDef n="1" lines="5">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="2" lines="5">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <grpSym symbol="brace" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="nx4sq2g" dur="16" staff="2" oct="5" pname="f" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="a" stem.dir="up" accid="f" />
+                           <note dur="16" oct="6" pname="c" stem.dir="down" />
+                           <note xml:id="n1cojmad" dur="16" oct="6" pname="f" stem.dir="down" />
+                           <note xml:id="n11h7ld9" dur="16" staff="2" oct="5" pname="e" stem.dir="up" accid="f" />
+                           <note dur="16" staff="2" oct="5" pname="a" stem.dir="up" accid.ges="f" />
+                           <note dur="16" oct="6" pname="c" stem.dir="down" />
+                           <note xml:id="nqg6e2s" dur="16" oct="6" pname="e" stem.dir="down" accid="f" />
+                           <note xml:id="n1xigmo0" dur="16" staff="2" oct="5" pname="d" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="e" stem.dir="up" accid.ges="f" />
+                           <note dur="16" oct="5" pname="a" stem.dir="down" accid.ges="f" />
+                           <note xml:id="n1g20rnd" dur="16" oct="6" pname="d" stem.dir="down" />
+                           <note xml:id="n14tgd9x" dur="16" staff="2" oct="5" pname="c" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="e" stem.dir="up" accid.ges="f" />
+                           <note dur="16" oct="5" pname="a" stem.dir="down" accid.ges="f" />
+                           <note xml:id="nll6y1l" dur="16" oct="6" pname="c" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="2">
+                           <note dur="4" oct="5" pname="f" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="e" stem.dir="down" accid="f">
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="d" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="c" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <beamSpan startid="#nx4sq2g" endid="#n1cojmad" />
+                     <slur startid="#nx4sq2g" endid="#n1cojmad" curvedir="above" />
+                     <beamSpan startid="#n11h7ld9" endid="#nqg6e2s" />
+                     <slur startid="#n11h7ld9" endid="#nqg6e2s" curvedir="above" />
+                     <beamSpan startid="#n1xigmo0" endid="#n1g20rnd" />
+                     <slur startid="#n1xigmo0" endid="#n1g20rnd" curvedir="above" />
+                     <beamSpan startid="#n14tgd9x" endid="#nll6y1l" />
+                     <slur startid="#n14tgd9x" endid="#nll6y1l" curvedir="above" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="nyursii" dur="16" staff="2" oct="5" pname="d" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="e" stem.dir="up" accid="n" />
+                           <note dur="16" oct="5" pname="g" stem.dir="down" />
+                           <note xml:id="n1d2fdxo" dur="16" oct="6" pname="d" stem.dir="down" />
+                           <note xml:id="n1n9odzq" dur="16" staff="2" oct="5" pname="c" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="e" stem.dir="up" />
+                           <note dur="16" oct="5" pname="g" stem.dir="down" />
+                           <note xml:id="n1v8xz9t" dur="16" oct="6" pname="c" stem.dir="down" />
+                           <note xml:id="n8d99cr" dur="16" staff="2" oct="4" pname="b" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="c" stem.dir="up" />
+                           <note dur="16" oct="5" pname="g" stem.dir="down" />
+                           <note xml:id="n1sdtbk0" dur="16" oct="6" pname="c" stem.dir="down" />
+                           <note xml:id="nhhmpqg" dur="16" staff="2" oct="4" pname="a" stem.dir="up" />
+                           <note dur="16" staff="2" oct="5" pname="c" stem.dir="up" />
+                           <note dur="16" oct="5" pname="e" stem.dir="down" />
+                           <note xml:id="n14r47ne" dur="16" oct="5" pname="a" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="2">
+                           <note dur="4" oct="5" pname="d" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="5" pname="c" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="b" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                           <note dur="4" oct="4" pname="a" stem.dir="down">
+                              <artic artic="ten" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <beamSpan startid="#nyursii" endid="#n1d2fdxo" />
+                     <slur startid="#nyursii" endid="#n1d2fdxo" curvedir="above" />
+                     <slur startid="#nyursii" endid="#n5r8tdx" curvedir="below" />
+                     <beamSpan startid="#n1n9odzq" endid="#n1v8xz9t" />
+                     <slur startid="#n1n9odzq" endid="#n1v8xz9t" curvedir="above" />
+                     <beamSpan startid="#n8d99cr" endid="#n1sdtbk0" />
+                     <slur startid="#n8d99cr" endid="#n1sdtbk0" curvedir="above" />
+                     <beamSpan startid="#nhhmpqg" endid="#n14r47ne" />
+                     <slur startid="#nhhmpqg" endid="#n14r47ne" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

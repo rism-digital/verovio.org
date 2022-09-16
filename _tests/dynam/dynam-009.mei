@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Dynamic example with single glpyhs rendering</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-04">2017-05-04</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>The option --dynam-single-glyphs allow to switch from using SMuFL's pre-defined compound dynamics glyphs to combined single glyphs for rendering.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta>
+         <![CDATA[ { "dynamSingleGlyphs": true, "font": "Bravura" }]]>
+      </extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1" label="feature-example">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="d" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="f" />
+                        </layer>
+                     </staff>
+                     <dynam staff="1" tstamp="1.000000">p</dynam>
+                     <dynam staff="1" tstamp="2.000000">f</dynam>
+                     <dynam staff="1" tstamp="3.000000">pf</dynam>
+                     <dynam staff="1" tstamp="4.000000">rfz</dynam>
+                  </measure>
+                  <measure n="2" label="feature-example">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="a" />
+                           <note dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <dynam staff="1" tstamp="1.000000">mf</dynam>
+                     <dynam staff="1" tstamp="2.000000">mp</dynam>
+                     <dynam staff="1" tstamp="3.000000">sfp</dynam>
+                     <dynam staff="1" tstamp="4.000000">sfz</dynam>
+                  </measure>
+                  <measure n="3" label="feature-example">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="g" />
+                           <note dur="2" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <dynam staff="1" tstamp="1.000000">ppppp</dynam>
+                     <dynam staff="1" tstamp="3.000000">fffff</dynam>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

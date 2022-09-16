@@ -91,7 +91,7 @@
                      </staff>
                      <tempo place="above" staff="1" tstamp="1.000000" xml:lang="it" midi.bpm="108.000000" mm="100.000000" mm.unit="4">
                         <rend fontfam="Palatino ldsLat Condensed Italic">Brightly</rend>
-                        <rend fontname="VerovioText"></rend> = 100–108</tempo>
+                        <rend fontfam="smufl"></rend> = 100–108</tempo>
                      <dir place="above" staff="1" tstamp="1.000000" vgrp="210">
                         <rend fontfam="DingPI ldsDpi">⌜</rend>
                      </dir>
