@@ -19,13 +19,6 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="0.9.13">
-               <name>Verovio</name>
-            </application>
-         </appInfo>
-      </encodingDesc>
-      <encodingDesc>
-         <appInfo>
             <application version="2.0.0" label="2">
                <name>Verovio</name>
             </application>
