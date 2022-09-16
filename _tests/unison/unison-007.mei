@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
@@ -24,6 +24,13 @@
             <annot>When unison notes have diverging numbers of dots, they are not merged.</annot>
          </notesStmt>
       </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
    </meiHead>
    <music>
       <body>
