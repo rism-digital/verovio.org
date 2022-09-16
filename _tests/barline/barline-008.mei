@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Bar line with @bar.method mensur or takt</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">David Bauer</persName>
+               <persName role="funder">Enote GmbH</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2018-05-29" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the @bar.method on staffGrp and on staffDef.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true" bar.method="mensur">
+                        <grpSym symbol="bracket" />
+                        <staffDef n="1" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
+                        <staffGrp>
+                           <grpSym symbol="brace" />
+                           <staffDef n="2" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
+                           <staffDef n="3" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
+                        </staffGrp>
+                     </staffGrp>
+                     <staffDef n="4" lines="5" clef.shape="G" clef.line="2" bar.method="takt" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="3">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="rptstart" n="4">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="rptboth" n="5">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+                  <measure right="rptend" n="6">
+                     <staff n="1">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="2">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="3">
+                        <layer n="1" />
+                     </staff>
+                     <staff n="4">
+                        <layer n="1" />
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
