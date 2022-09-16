@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
             <title>Hairpin example with different widths</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-15</date>
+            <date isodate="2017-05-15">2017-05-15</date>
          </pubStmt>
          <notesStmt>
             <annot>Short hairpin ends are not as wide as the ends of long hairpins.</annot>
@@ -16,7 +16,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="2.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

@@ -34,7 +34,7 @@
               <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
             </staffGrp>
           </scoreDef>
-          <section label="feature-example">
+          <section>
             <measure n="1" label="1">
               <staff n="1">
                 <layer n="1">

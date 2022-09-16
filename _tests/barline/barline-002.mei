@@ -1,134 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
-  <meiHead>
-    <fileDesc>
-      <titleStmt>
-        <title>Measure barline example (2)</title>
-      </titleStmt>
-      <pubStmt>
-        <date>2017-05-15</date>
-      </pubStmt>
-      <seriesStmt>
-        <title>Verovio test suite</title>
-      </seriesStmt>
-      <notesStmt>
-        <annot>Verovio renders different barline styles.</annot>
-      </notesStmt>
-    </fileDesc>
-    <encodingDesc>
-      <appInfo>
-        <application version="2.0.0" label="2">
-          <name>Verovio</name>
-        </application>
-      </appInfo>
-    </encodingDesc>
-  </meiHead>
-  <music>
-    <body>
-      <mdiv>
-        <score>
-          <scoreDef>
-            <staffGrp>
-              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common" />
-            </staffGrp>
-          </scoreDef>
-          <section>
-            <measure n="1">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbldashed" n="2">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dotted" n="3">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dashed" n="4">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="rptend" n="5">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="dbl" n="6">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="end" n="7">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="8">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="9">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="10">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="11">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure right="invis" n="12">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-            <measure n="13">
-              <staff n="1">
-                <layer n="1">
-                  <mRest />
-                </layer>
-              </staff>
-            </measure>
-          </section>
-        </score>
-      </mdiv>
-    </body>
-  </music>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Measure barline example (2)</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-15">2017-05-15</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders different barline styles.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbldashed" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dotted" n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dashed" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="rptend" n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="dbl" n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="10">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="invis" n="12">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="13">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
 </mei>

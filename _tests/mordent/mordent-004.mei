@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -12,7 +12,7 @@
                <persName role="encoder">Klaus Rettinghaus</persName>
                <corpName role="funder">eNote GmbH</corpName>
             </respStmt>
-            <date isodate="2020-09-09">2020-09-09</date>
+            <date isodate="2020-09-09">9 Sep 2020</date>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
@@ -23,7 +23,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="3.0.0" label="0">
+            <application version="3.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

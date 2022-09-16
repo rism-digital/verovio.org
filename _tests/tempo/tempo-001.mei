@@ -5,7 +5,7 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Hairpin example on multiple lines</title>
+            <title>Tempo and metronome marking</title>
          </titleStmt>
          <pubStmt>
             <date isodate="2017-05-04">2017-05-04</date>
@@ -22,7 +22,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="2.0.0" label="2">
                <name>Verovio</name>
             </application>
          </appInfo>

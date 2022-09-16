@@ -71,9 +71,9 @@
                      </staff>
                      <slur startid="#d414233e2598" endid="#d414233e2617" />
                      <slur startid="#d414233e2644" endid="#d414233e2665" />
-                     <dir label="feature-example" place="above" staff="1" tstamp="1.000000">a tempo</dir>
-                     <dir label="feature-example" staff="1" tstamp="1.000000">sotto voce</dir>
-                     <dir label="feature-example" staff="2" tstamp="1.000000">sempre legatissimo</dir>
+                     <dir place="above" staff="1" tstamp="1.000000">a tempo</dir>
+                     <dir staff="1" tstamp="1.000000">sotto voce</dir>
+                     <dir staff="2" tstamp="1.000000">sempre legatissimo</dir>
                   </measure>
                </section>
             </score>

@@ -74,7 +74,7 @@
                         </layer>
                      </staff>
                      <dynam place="below" staff="1" tstamp="1.100000">p</dynam>
-                     <tempo label="feature-example" staff="1" tstamp="1.000000">
+                     <tempo staff="1" tstamp="1.000000">
                         <rend fontweight="normal">Modérément animé</rend>
                      </tempo>
                      <slur staff="1" startid="#d1e116" tstamp2="0m+5.0000" curvedir="below" />

@@ -39,7 +39,7 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <tuplet label="feature-example" num="12" numbase="8">
+                           <tuplet num="12" numbase="8">
                               <beam>
                                  <note dur="64" oct="4" pname="a" tuplet="i1" />
                                  <note dur="64" oct="4" pname="d" tuplet="m1">

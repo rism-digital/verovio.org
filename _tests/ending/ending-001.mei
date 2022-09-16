@@ -8,7 +8,7 @@
             <title>Ending example</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
          <notesStmt>
             <annot>Verovio supports "ending" elements. Consecutive endings are aligned horizontally. By default, Verovio renders endings on top of
@@ -36,7 +36,7 @@
                      </staffGrp>
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure>
                      <staff n="1">
                         <layer n="1">

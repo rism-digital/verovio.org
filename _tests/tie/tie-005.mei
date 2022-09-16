@@ -47,7 +47,7 @@
                 </layer>
               </staff>
             </measure>
-            <measure n="2" label="feature-example">
+            <measure n="2">
               <staff n="1">
                 <layer n="1">
                   <chord dur="2" tie="m">

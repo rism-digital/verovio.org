@@ -38,7 +38,7 @@
                </scoreDef>
                <section>
                   <pb />
-                  <measure n="1" label="feature-example">
+                  <measure n="1">
                      <staff n="1">
                         <layer n="1">
                            <beam>
@@ -86,7 +86,7 @@
                      </staff>
                      <slur startid="#n1" endid="#n21" />
                   </measure>
-                  <measure n="2" label="feature-example">
+                  <measure n="2">
                      <staff n="1">
                         <layer n="1">
                            <note xml:id="n28" dur="8" oct="4" pname="c" accid="x" />
