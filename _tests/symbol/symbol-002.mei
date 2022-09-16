@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Symbol example</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2022-08-12" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports symbols within directives including @color and @fontsize.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="bracket">
+                     <staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                              <note dur="16" oct="4" pname="e" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="e" />
+                           </beam>
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <dir place="above" tstamp="1.000000">
+                        <symbol glyph.auth="smufl" glyph.num="U+E530" />
+                        <symbol color="crimson" glyph.auth="smufl" glyph.name="dynamicForte" />
+                     </dir>
+                     <dir place="above" tstamp="2.000000">
+                        <symbol glyph.auth="smufl" glyph.num="U+E7E4" />
+                     </dir>
+                     <dir place="above" tstamp="3.000000">
+                        <symbol color="darkcyan" glyph.auth="smufl" glyph.num="U+E7E4" fontsize="x-large" />
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
