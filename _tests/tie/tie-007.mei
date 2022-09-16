@@ -41,7 +41,7 @@
               </staffDef>
             </staffGrp>
           </scoreDef>
-          <section label="feature-example">
+          <section>
             <measure>
               <staff n="1">
                 <layer n="1">

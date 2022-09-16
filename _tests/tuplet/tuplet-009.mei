@@ -36,7 +36,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure n="1" label="feature-example">
+                  <measure n="1">
                      <staff n="1">
                         <layer n="1">
                            <tuplet num="3" numbase="2">

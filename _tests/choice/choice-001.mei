@@ -8,7 +8,7 @@
             <title>Choice</title>
          </titleStmt>
          <pubStmt>
-            <date>2017-05-04</date>
+            <date isodate="2017-05-04">2017-05-04</date>
          </pubStmt>
          <notesStmt>
             <annot>Verovio supports "choice" elements. During rendering, only one version is rendered. The first is chosen by default. Optionally,
@@ -32,7 +32,7 @@
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
                </scoreDef>
-               <section label="feature-example">
+               <section>
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">

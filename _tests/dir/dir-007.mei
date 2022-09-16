@@ -70,11 +70,11 @@
                      </staff>
                      <slur startid="#d414233e2598" endid="#d414233e2617" />
                      <slur startid="#d414233e2644" endid="#d414233e2665" />
-                     <dir label="feature-example" place="above" staff="1" tstamp="1.000000">a tempo</dir>
-                     <dir label="feature-example" staff="1" tstamp="5.000000">
+                     <dir place="above" staff="1" tstamp="1.000000">a tempo</dir>
+                     <dir staff="1" tstamp="5.000000">
                         <rend halign="right">sotto<lb />voce</rend>
                      </dir>
-                     <dir label="feature-example" staff="2" tstamp="1.000000">sempre <lb />legatissimo</dir>
+                     <dir staff="2" tstamp="1.000000">sempre <lb />legatissimo</dir>
                   </measure>
                </section>
             </score>

@@ -34,7 +34,7 @@
                <section>
                   <measure n="1" label="1">
                      <staff n="1">
-                        <layer n="1" label="feature-example">
+                        <layer n="1">
                            <app>
                               <rdg source="#src1">
                                  <note dur="1" oct="5" pname="d" />

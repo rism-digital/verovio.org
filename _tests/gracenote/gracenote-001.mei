@@ -70,7 +70,7 @@
                         </layer>
                      </staff>
                   </measure>
-                  <measure right="end" n="4" label="feature-example">
+                  <measure right="end" n="4">
                      <staff n="1">
                         <layer n="1">
                            <note dur="8" oct="4" pname="a" grace="acc" />

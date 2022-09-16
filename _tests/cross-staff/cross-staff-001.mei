@@ -39,7 +39,7 @@
                   <measure n="1" label="1">
                      <staff n="1">
                         <layer n="1">
-                           <beam label="feature-example">
+                           <beam>
                               <chord dur="16">
                                  <note dur="16" oct="4" pname="f" />
                                  <note dur="16" oct="5" pname="c" />
