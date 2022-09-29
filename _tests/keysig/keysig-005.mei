@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Key signatures with @glyph.num or @glyph.name</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">David Bauer</persName>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2022-09-29"></date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders key signatures encoded with keyAccid with @glyph.num or @glyph.name.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400" key.mode="aeolian" key.sig="5f" keysig.showchange="false">
+                  <staffGrp bar.thru="false">
+                     <staffDef n="1" lines="5" meter.count="4" meter.unit="2">
+                        <label>Canto</label>
+                        <labelAbbr>C</labelAbbr>
+                        <clef shape="G" line="2" visible="false" />
+                        <keySig>
+                           <keyAccid pname="b" glyph.num="U+E444" />
+                           <keyAccid pname="f" glyph.name="accidentalBuyukMucennebSharp" />
+                        </keySig>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
