@@ -36,7 +36,7 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffGrp bar.thru="true" bar.method="mensur">
+                     <staffGrp bar.method="mensur" bar.thru="true">
                         <grpSym symbol="bracket" />
                         <staffDef n="1" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
                         <staffGrp>
@@ -45,7 +45,7 @@
                            <staffDef n="3" scale="66.00%" lines="5" clef.shape="G" clef.line="2" />
                         </staffGrp>
                      </staffGrp>
-                     <staffDef n="4" lines="5" clef.shape="G" clef.line="2" bar.method="takt" />
+                     <staffDef bar.method="takt" n="4" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
                </scoreDef>
                <section>

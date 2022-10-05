@@ -36,7 +36,7 @@
             <score>
                <scoreDef bar.method="mensur">
                   <staffGrp>
-                     <staffDef n="1" lines="5" ppq="4" trans.diat="6.000000" trans.semi="10.000000">
+                     <staffDef n="1" lines="5" ppq="4" trans.diat="6" trans.semi="10">
                         <instrDef midi.channel="0" midi.instrnum="56" midi.volume="78.00%" />
                         <clef shape="G" line="2" />
                         <keySig sig="4s" />
