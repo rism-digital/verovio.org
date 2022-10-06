@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Nexting rend and font size</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2022-10-06"></date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>
+               <p>Verovio font size applies to the children of a rend too.</p>
+            </annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1">
+                        <rend rend="box" fontsize="50%">Text at 50% with <rend fontsize="200%">text a 200%</rend> but not all</rend>
+                     </dir>
+                     <dir place="below" staff="1" tstamp="1">
+                        <rend fontsize="75%">Text at 75% with <rend fontsize="smaller">smaller <rend fontsize="smaller">and even smaller</rend></rend> text</rend>
+                     </dir>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="3">
+                        <rend  fontsize="large" fontstyle="normal">large <symbol glyph.auth="smufl" glyph.name="ornamentTrill"></symbol></rend>
+                     </dir>
+                     <dir place="below" staff="1" tstamp="3">
+                        <rend rend="circle" fontsize="x-small" fontstyle="normal">x-small <symbol glyph.auth="smufl" glyph.name="ornamentTrill"></symbol></rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
