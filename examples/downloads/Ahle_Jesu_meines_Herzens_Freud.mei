@@ -306,10 +306,10 @@
                      <rend halign="center" valign="top">
                         <rend fontsize="x-large">Jesu, meines Herzens Freud</rend>
                      </rend>
-                     <rend halign="left" valign="bottom" fontfam="Times New Roman" fontsize="12" fontweight="bold">
+                     <rend halign="left" valign="bottom" fontfam="Times New Roman" fontweight="bold">
                         <rend>Johann Flittner</rend>
                      </rend>
-                     <rend halign="right" valign="bottom" fontfam="Times New Roman" fontsize="12" fontweight="bold">
+                     <rend halign="right" valign="bottom" fontfam="Times New Roman" fontweight="bold">
                         <rend>Johann R. Ahle</rend><lb />
                         <rend>Satz: J. Knuth</rend>
                      </rend>
@@ -510,8 +510,8 @@
                            <note xml:id="d23378e1027" pname="e" oct="3" dur="2" stem.dir="down"/>
                         </layer>
                      </staff>
-                     <slur tstamp="3" curvedir="below" startid="#d23378e835" endid="#d23378e917" staff="1" tstamp2="0m+4"/>
-                     <slur tstamp="3" curvedir="above" startid="#d23378e964" endid="#d23378e980" staff="2" tstamp2="0m+4"/>
+                     <slur curvedir="below" startid="#d23378e835" endid="#d23378e917" staff="1" />
+                     <slur curvedir="above" startid="#d23378e964" endid="#d23378e980" staff="2" />
                   </measure>
                   <measure n="4" xml:id="d23378e1041">
                      <staff n="1">
@@ -736,9 +736,9 @@
                            <note xml:id="d23378e2041" pname="b" oct="2" dur="4" stem.dir="down"/>
                         </layer>
                      </staff>
-                     <slur tstamp="3" curvedir="below" startid="#d23378e1838" endid="#d23378e1915" staff="1" tstamp2="0m+4"/>
-                     <tie tstamp="3" curvedir="above" startid="#d23378e1962" endid="#d23378e1978" staff="2" tstamp2="0m+4"/>
-                     <slur tstamp="3" curvedir="below" startid="#d23378e2025" endid="#d23378e2041" staff="2" tstamp2="0m+4"/>
+                     <slur curvedir="below" startid="#d23378e1838" endid="#d23378e1915" staff="1" />
+                     <tie curvedir="above" startid="#d23378e1962" endid="#d23378e1978" staff="2" />
+                     <slur curvedir="below" startid="#d23378e2025" endid="#d23378e2041" staff="2" />
                   </measure>
                   <measure n="8" xml:id="d23378e2058">
                      <staff n="1">
@@ -898,7 +898,7 @@
                            <note xml:id="d23378e2720" pname="e" oct="3" dur="2" stem.dir="down"/>
                         </layer>
                      </staff>
-                     <slur tstamp="1" curvedir="below" startid="#d23378e2529" endid="#d23378e2560" staff="1" tstamp2="0m+1.5"/>
+                     <slur curvedir="below" startid="#d23378e2529" endid="#d23378e2560" staff="1" />
                   </measure>
                   <measure n="11" xml:id="d23378e2734">
                      <staff n="1">
@@ -964,8 +964,8 @@
                            <note xml:id="d23378e3044" pname="e" oct="3" dur="2" stem.dir="down"/>
                         </layer>
                      </staff>
-                     <slur tstamp="3" curvedir="below" startid="#d23378e2857" endid="#d23378e2934" staff="1" tstamp2="0m+4"/>
-                     <slur tstamp="3" curvedir="above" startid="#d23378e2981" endid="#d23378e2997" staff="2" tstamp2="0m+4"/>
+                     <slur curvedir="below" startid="#d23378e2857" endid="#d23378e2934" staff="1" />
+                     <slur curvedir="above" startid="#d23378e2981" endid="#d23378e2997" staff="2" />
                   </measure>
                   <measure n="12" xml:id="d23378e3058">
                      <staff n="1">
@@ -1115,8 +1115,8 @@
                            <note xml:id="d23378e3680" pname="a" oct="2" dur="2" stem.dir="down"/>
                         </layer>
                      </staff>
-                     <slur tstamp="1" curvedir="below" startid="#d23378e3511" endid="#d23378e3564" staff="1" tstamp2="0m+2"/>
-                     <slur tstamp="1" curvedir="above" startid="#d23378e3617" endid="#d23378e3633" staff="2" tstamp2="0m+2"/>
+                     <slur curvedir="below" startid="#d23378e3511" endid="#d23378e3564" staff="1" />
+                     <slur curvedir="above" startid="#d23378e3617" endid="#d23378e3633" staff="2" />
                   </measure>
                </section>
             </score>
