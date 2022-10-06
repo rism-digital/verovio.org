@@ -47,7 +47,7 @@
                         </staffDef>
                      </staffGrp>
                      <staffGrp bar.thru="true" symbol="bracket">
-                        <staffDef n="4" lines="5" trans.diat="-7.000000" trans.semi="-12.000000" clef.shape="G" clef.line="2" key.sig="0">
+                        <staffDef n="4" lines="5" trans.diat="-7" trans.semi="-12" clef.shape="G" clef.line="2" key.sig="0">
                            <label>Corni<lb /> in Do/C</label>
                         </staffDef>
                      </staffGrp>
