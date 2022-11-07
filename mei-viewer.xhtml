@@ -451,7 +451,7 @@ downloads:
     }
     
     function non_default_options (options) {
-        var defaultOptions = vrvToolkit.getOptions(true);
+        var defaultOptions = vrvToolkit.getDefaultOptions();
         var nonDefaultOptions = {};
         for(var key in defaultOptions) {
             if (options[key] && (defaultOptions[key] != options[key])) {
@@ -792,16 +792,16 @@ downloads:
 
         $("#option-form :input").change(function() {
             // Reset all options to default 
-            vrvToolkit.setOptions(vrvToolkit.getOptions(true));
+            vrvToolkit.setOptions(vrvToolkit.getDefaultOptions());
             // console.log("Applying options");
             customOptions = non_default_options(JSON.parse($('#option-form').toJSON()));
             apply_zoom();
         });
 
         $("#optionDialog").on("show.bs.modal", function () {
-            savedOptions = non_default_options(vrvToolkit.getOptions(false));
-            var currentOptions = vrvToolkit.getOptions(false)
-            var defaultOptions = vrvToolkit.getOptions(true);
+            savedOptions = non_default_options(vrvToolkit.getOptions());
+            var currentOptions = vrvToolkit.getOptions()
+            var defaultOptions = vrvToolkit.getDefaultOptions();
             for(var key in defaultOptions) {
                 
                 if (disabledOptions.includes(key)) {
@@ -839,7 +839,7 @@ downloads:
             savedOptions = undefined;
             customOptions = undefined;
             // Reset to default and clear local storage
-            vrvToolkit.setOptions(vrvToolkit.getOptions(true));
+            vrvToolkit.setOptions(vrvToolkit.getDefaultOptions());
             localStorage.clear('customOptions');
             //console.debug("Resetting options");
             $('#optionDialog').modal('hide');
