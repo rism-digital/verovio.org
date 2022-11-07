@@ -149,7 +149,26 @@
     loadExample_3_10 = loadExample_3_9;
     loadExample_3_11 = loadExample_3_10;
     loadExample_3_12 = loadExample_3_11;
-    loadExample_3_13 = loadExample_3_12;
+    
+    function loadExample_3_13(data, div, options, page = 1) {
+        let svg = '';
+        try {
+            // Reset default options
+            defaultOptions = vrvToolkit.getDefaultOptions();
+            vrvToolkit.setOptions( defaultOptions );
+            // Set the passed options
+            vrvToolkit.setOptions( options );
+            vrvToolkit.loadData(data);
+            $(div + '-meiCode pre').text(data);
+            $(div + '-meiDiv').show();
+            svg = vrvToolkit.renderToSVG(page, {});
+        }
+        catch(err) {
+            $(div + '-errLog pre').html(err);
+            $(div + '-errDiv').show();
+        }
+        $(div).html(svg);
+    }
 
     /////////////////////////////
     
