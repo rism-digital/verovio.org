@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Turn glyphs with accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020-09-09">2020-09-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Turn can have upper or lower accidentals.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="m2k1yrz">
+            <score xml:id="s13r9c4p">
+               <scoreDef xml:id="s1ah6gqo">
+                  <staffGrp xml:id="sw3ur0">
+                     <staffDef xml:id="s97u2tv" n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="sefudge">
+                  <measure xml:id="m595al7" right="dbl" n="1">
+                     <staff xml:id="s1wwg7oj" n="1">
+                        <layer xml:id="l3jwgtx" n="1">
+                           <note xml:id="ex_0026251991" dur="4" oct="4" pname="g" />
+                           <note xml:id="ex_1783472943" dur="4" oct="4" pname="g" />
+                           <note xml:id="ex_0290776165" dur="4" oct="4" pname="g" />
+                           <note xml:id="ex_1264550794" dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <turn xml:id="tz2mhpe" staff="1" startid="#ex_0026251991" accidlower="s" form="lower" />
+                     <turn xml:id="teikehw" staff="1" startid="#ex_1783472943" accidupper="f" form="upper" />
+                     <turn xml:id="t181aodg" type="vertical" staff="1" startid="#ex_0290776165" glyph.auth="smufl" glyph.num="U+E56B" accidlower="s" form="lower" />
+                     <turn xml:id="t1xqgn4w" type="vertical" staff="1" startid="#ex_1264550794" glyph.auth="smufl" glyph.num="U+E56A" accidupper="f" form="upper" />
+                     
+                  </measure>
+                  <measure xml:id="m1rfk0cj" right="dbl" n="1">
+                     <staff xml:id="s172gaq7" n="1">
+                        <layer xml:id="l1i5zh33" n="1">
+                           <note xml:id="nmjj4ps" dur="2" oct="4" pname="f" />
+                           <note xml:id="n11rxuei" dur="2" oct="4" pname="f" />
+                        </layer>
+                     </staff>
+                     <turn type="slashed" staff="1" startid="#nmjj4ps" glyph.auth="smufl" glyph.num="U+E569" accidlower="s" />
+                     <turn type="slashed" staff="1" startid="#n11rxuei" glyph.auth="smufl" glyph.num="U+E569" accidupper="f" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
