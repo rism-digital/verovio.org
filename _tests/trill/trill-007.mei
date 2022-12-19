@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Trills with accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2020-09-09">2020-09-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Trills can have upper or lower accidentals.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ex_0026251991" dur="4" oct="4" pname="g" />
+                           <note xml:id="ex_1783472943" dur="4" oct="4" pname="g" />
+                           <note xml:id="ex_0290776165" dur="4" oct="4" pname="g" />
+                           <note xml:id="ex_1264550794" dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" startid="#ex_0026251991" accidlower="s" />
+                     <trill staff="1" startid="#ex_1783472943" accidupper="s" />
+                     <trill staff="1" startid="#ex_0290776165" accidlower="f" />
+                     <trill staff="1" startid="#ex_1264550794" accidupper="f" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
