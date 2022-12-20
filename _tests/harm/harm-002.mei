@@ -28,9 +28,9 @@
             <score>
                <scoreDef>
                   <staffGrp symbol="bracket">
-                     <staffDef label="Superius" n="1" lines="5" label.abbr="S" clef.shape="G" clef.line="2" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
-                     <staffDef label="Tenor" n="2" lines="5" label.abbr="T" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
-                     <staffDef label="Contra" n="3" lines="5" label.abbr="C" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
+                     <staffDef n="3" lines="5" clef.shape="G" clef.line="2" clef.dis="8" clef.dis.place="below" key.sig="0" meter.count="2" meter.unit="1" meter.sym="cut" />
                   </staffGrp>
                </scoreDef>
                <section>
@@ -55,18 +55,18 @@
                            <note xml:id="note-L19F1" dur="2" oct="3" pname="a" accid.ges="n" />
                         </layer>
                      </staff>
-                     <harm staff="1" tstamp="1.000000">4</harm>
-                     <harm staff="1" tstamp="1.000000">0</harm>
-                     <harm staff="1" tstamp="1.250000">4</harm>
-                     <harm staff="1" tstamp="1.250000">2</harm>
-                     <harm staff="1" tstamp="1.500000">4</harm>
-                     <harm staff="1" tstamp="1.500000">1</harm>
-                     <harm staff="1" tstamp="1.750000">4</harm>
-                     <harm staff="1" tstamp="1.750000">2</harm>
-                     <harm staff="1" tstamp="2.000000">2</harm>
-                     <harm staff="1" tstamp="2.000000">0</harm>
-                     <harm staff="1" tstamp="2.500000">2</harm>
-                     <harm staff="1" tstamp="2.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.000000">0</harm>
+                     <harm staff="1" n="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.250000">2</harm>
+                     <harm staff="1" n="1" tstamp="1.500000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="1.750000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.750000">2</harm>
+                     <harm staff="1" n="1" tstamp="2.000000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.000000">0</harm>
+                     <harm staff="1" n="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.500000">1</harm>
                      <tie startid="#note-L19F1" endid="#note-L21F1" />
                   </measure>
                   <measure n="2">
@@ -88,13 +88,13 @@
                            <note dur="2" oct="3" pname="b" accid.ges="n" />
                         </layer>
                      </staff>
-                     <harm staff="1" tstamp="1.000000">4</harm>
-                     <harm staff="1" tstamp="1.250000">4</harm>
-                     <harm staff="1" tstamp="1.250000">2</harm>
-                     <harm staff="1" tstamp="1.500000">1</harm>
-                     <harm staff="1" tstamp="1.500000">1</harm>
-                     <harm staff="1" tstamp="2.500000">2</harm>
-                     <harm staff="1" tstamp="2.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" n="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.250000">2</harm>
+                     <harm staff="1" n="1" tstamp="1.500000">1</harm>
+                     <harm staff="1" n="2" tstamp="1.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.500000">1</harm>
                   </measure>
                   <measure n="3">
                      <staff n="1">
@@ -119,18 +119,18 @@
                            <note xml:id="note-L31F1" dur="2" oct="3" pname="f" accid.ges="n" />
                         </layer>
                      </staff>
-                     <harm staff="1" tstamp="1.000000">4</harm>
-                     <harm staff="1" tstamp="1.000000">0</harm>
-                     <harm staff="1" tstamp="1.250000">4</harm>
-                     <harm staff="1" tstamp="1.250000">2</harm>
-                     <harm staff="1" tstamp="1.500000">4</harm>
-                     <harm staff="1" tstamp="1.500000">1</harm>
-                     <harm staff="1" tstamp="1.750000">4</harm>
-                     <harm staff="1" tstamp="1.750000">2</harm>
-                     <harm staff="1" tstamp="2.000000">2</harm>
-                     <harm staff="1" tstamp="2.000000">0</harm>
-                     <harm staff="1" tstamp="2.500000">2</harm>
-                     <harm staff="1" tstamp="2.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.000000">0</harm>
+                     <harm staff="1" n="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.250000">2</harm>
+                     <harm staff="1" n="1" tstamp="1.500000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="1.750000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.750000">2</harm>
+                     <harm staff="1" n="1" tstamp="2.000000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.000000">0</harm>
+                     <harm staff="1" n="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.500000">1</harm>
                      <tie startid="#note-L31F2" endid="#note-L33F2" />
                      <tie startid="#note-L31F1" endid="#note-L33F1" />
                   </measure>
@@ -155,15 +155,15 @@
                            <note dur="1" oct="3" pname="d" accid.ges="n" />
                         </layer>
                      </staff>
-                     <harm staff="1" tstamp="1.000000">4</harm>
-                     <harm staff="1" tstamp="1.250000">4</harm>
-                     <harm staff="1" tstamp="1.250000">2</harm>
-                     <harm staff="1" tstamp="1.500000">2</harm>
-                     <harm staff="1" tstamp="1.500000">1</harm>
-                     <harm staff="1" tstamp="2.000000">2</harm>
-                     <harm staff="1" tstamp="2.000000">0</harm>
-                     <harm staff="1" tstamp="2.500000">2</harm>
-                     <harm staff="1" tstamp="2.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="1.000000">4</harm>
+                     <harm staff="1" n="1" tstamp="1.250000">4</harm>
+                     <harm staff="1" n="2" tstamp="1.250000">2</harm>
+                     <harm staff="1" n="1" tstamp="1.500000">2</harm>
+                     <harm staff="1" n="2" tstamp="1.500000">1</harm>
+                     <harm staff="1" n="1" tstamp="2.000000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.000000">0</harm>
+                     <harm staff="1" n="1" tstamp="2.500000">2</harm>
+                     <harm staff="1" n="2" tstamp="2.500000">1</harm>
                   </measure>
                </section>
             </score>
