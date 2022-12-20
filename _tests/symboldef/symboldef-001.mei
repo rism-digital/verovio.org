@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>User defined symbols</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2022-12-20"/>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports user defined symbols on fermata, breath and ceasura as svg or graphic elements</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="2s" meter.sym="common">
+                  <symbolTable>
+                     <symbolDef xml:id="custom-fermata">
+                        <graphic width="6.425vu" height="3.75vu" target="http://upload.wikimedia.org/wikipedia/commons/f/f3/Fermata_doubleround.svg" ulx="0" uly="0"></graphic>
+                     </symbolDef>
+                     <symbolDef xml:id="breath-salzedo">
+                        <graphic width="36px" height="36px" mimetype="image/png" target="data:image/png;base64,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" ulx="0" uly="0"></graphic>
+                     </symbolDef>
+                     <symbolDef xml:id="smile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="30" viewBox="0 0 92 120">
+                           <g color="orange" fill="orange" transform="scale(0.25, 0.25)"><path d="M45.5,0L45.5,0c25.03,0,45.5,20.48,45.5,45.5v76.61l-11.45-10.8l-11.43,11.16l-11.43-11.02l-11.43,11.43 l-11.83-11.7l-10.89,11.56l-11.7-11.43L0,121.49V45.5C0,20.48,20.48,0,45.5,0L45.5,0z M72.99,49.47c3.27,0,5.91,2.99,5.91,6.68 c0,1.98-0.76,3.75-1.96,4.98c4.07-1.8,6.91-5.88,6.91-10.62c0-6.41-5.2-11.61-11.61-11.61c-6.41,0-11.61,5.2-11.61,11.61 c0,5.63,4.01,10.32,9.33,11.38c-1.73-1.17-2.88-3.3-2.88-5.74C67.08,52.47,69.73,49.47,72.99,49.47L72.99,49.47z M42.39,49.47 c3.27,0,5.91,2.99,5.91,6.68c0,1.93-0.73,3.68-1.89,4.9c3.98-1.84,6.74-5.87,6.74-10.54c0-6.41-5.2-11.61-11.61-11.61 c-6.41,0-11.61,5.2-11.61,11.61c0,5.68,4.08,10.4,9.46,11.41c-1.75-1.16-2.92-3.31-2.92-5.77C36.47,52.47,39.12,49.47,42.39,49.47 L42.39,49.47z"/></g>
+                        </svg>
+                     </symbolDef>
+                  </symbolTable>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" scale="80%" />
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2" />
+                        <staffDef n="3" lines="5" clef.shape="F" clef.line="4" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" dots="1" oct="5" pname="g" />
+                           <note dur="4" oct="5" pname="g" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note dur="2" oct="2" pname="g" />
+                           <note dur="2" oct="2" pname="g" />
+                        </layer>
+                     </staff>
+                     <breath staff="1 2" altsym="#breath-salzedo" tstamp="3.5"/>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="f" />
+                           <note dur="4" oct="5" pname="e" />
+                           <note dur="4" oct="5" pname="d" />
+                           <note dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest xml:id="mrest1"/>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest/>
+                        </layer>
+                     </staff>
+                     <fermata staff="2 3" startid="#mrest1" altsym="#custom-fermata" enclose="brack" />
+                     <caesura staff="1 2" tstamp="4.3" altsym="#smile" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
