@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Bar line with @bar.method and @bar.thru</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">David Bauer</persName>
+               <persName role="funder">Enote GmbH</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2018-05-29" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Bar line with @bar.method mensur are rendered differently depending on whether @bar.thru is set or not.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.12.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef bar.method="mensur">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="4" trans.diat="6.000000" trans.semi="10.000000">
+                        <instrDef midi.channel="0" midi.instrnum="56" midi.volume="78.00%" />
+                        <clef shape="G" line="2" />
+                        <keySig sig="4s" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                     <staffGrp>
+                        <staffGrp bar.thru="true">
+                           <grpSym symbol="bracket" />
+                           <instrDef midi.channel="2" midi.instrnum="19" midi.volume="78.00%" />
+                           <staffGrp>
+                              <grpSym symbol="brace" />
+                              <staffDef n="2" lines="5" ppq="4">
+                                 <clef shape="G" line="2" />
+                                 <keySig sig="2s" />
+                                 <meterSig count="3" unit="4" />
+                              </staffDef>
+                              <staffDef n="3" lines="5" ppq="4">
+                                 <clef shape="F" line="4" />
+                                 <keySig sig="2s" />
+                                 <meterSig count="3" unit="4" />
+                              </staffDef>
+                           </staffGrp>
+                           <staffDef n="4" lines="5" ppq="4">
+                              <clef shape="F" line="4" />
+                              <keySig sig="2s" />
+                              <meterSig count="3" unit="4" />
+                           </staffDef>
+                        </staffGrp>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="0">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur.ppq="4" dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur.ppq="4" dur="4" oct="4" pname="a" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="5">
+                           <rest dur.ppq="4" dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="9">
+                           <rest dur.ppq="4" dur="4" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur.ppq="4" dur="4" stem.dir="up">
+                              <note oct="4" pname="f" accid.ges="s" />
+                              <note oct="4" pname="a" />
+                              <note oct="5" pname="d" />
+                           </chord>
+                           <beam>
+                              <chord dur.ppq="2" dur="8" stem.dir="down">
+                                 <note oct="5" pname="d" />
+                                 <note oct="5" pname="f" accid.ges="s" />
+                              </chord>
+                              <chord dur.ppq="2" dur="8" stem.dir="down">
+                                 <note oct="5" pname="c" accid.ges="s" />
+                                 <note oct="5" pname="e" />
+                              </chord>
+                           </beam>
+                           <note dur.ppq="4" dur="4" oct="5" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="5">
+                           <chord dur.ppq="4" dur="4" stem.dir="up">
+                              <note oct="2" pname="d" />
+                              <note oct="3" pname="d" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="d" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="d" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="9">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur.ppq="4" dur="4" stem.dir="up">
+                              <note oct="5" pname="e" />
+                              <note oct="5" pname="a" />
+                           </chord>
+                           <beam>
+                              <note dur.ppq="2" dur="8" oct="5" pname="f" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="e" stem.dir="up" />
+                           </beam>
+                           <note dur.ppq="4" dur="4" oct="5" pname="d" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="4" dur="4" oct="4" pname="a" stem.dir="down" />
+                           <note dur.ppq="4" dur="4" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                           <note xml:id="ns357g7" dur.ppq="4" dur="4" oct="5" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="5">
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="c" accid.ges="s" />
+                              <note oct="4" pname="c" accid.ges="s" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="2" pname="a" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="2" pname="b" />
+                              <note oct="3" pname="b" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="9">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <tie startid="#ns357g7" endid="#nr4q7wk" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur.ppq="2" dur="8" oct="5" pname="e" stem.dir="up" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="d" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="2" dur="8" oct="5" pname="e" stem.dir="up" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="g" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="2" dur="8" oct="5" pname="f" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="e" stem.dir="up" />
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="nr4q7wk" dur.ppq="4" dur="4" oct="5" pname="d" stem.dir="down" />
+                           <note dur.ppq="8" dur="2" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="5">
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="g" />
+                              <note oct="3" pname="b" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="g" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="2" pname="a" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="9">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur.ppq="4" dur="4" stem.dir="up">
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="f" accid.ges="s" />
+                           </chord>
+                           <beam>
+                              <note dur.ppq="2" dur="8" oct="5" pname="d" stem.dir="up" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="e" stem.dir="up" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="2" dur="8" oct="5" pname="f" stem.dir="up" accid.ges="s" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="a" stem.dir="up" />
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="4" dur="4" oct="4" pname="a" stem.dir="down" />
+                           <note dur.ppq="4" dur="4" oct="4" pname="a" stem.dir="down" />
+                           <note dur.ppq="4" dur="4" oct="5" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="5">
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="f" accid.ges="s" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="d" />
+                              <note oct="3" pname="f" accid.ges="s" />
+                           </chord>
+                           <chord dur.ppq="4" dur="4" stem.dir="down">
+                              <note oct="3" pname="f" accid.ges="s" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="9">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

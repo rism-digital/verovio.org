@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Lyric example</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-09">2017-05-09</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports basic "verse" and "syl" elements. The layout algorithm takes into account the lyrics and spaces the notes and
+					the staves appropriately.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ed4n0v1b1s1" dur="4" oct="4" pname="a">
+                              <verse>
+                                 <syl>O</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="cd4n0v1b2s1" dur="4" oct="4" pname="d">
+                              <verse>
+                                 <syl>mi-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="bd3n128v1b2s1" dur="4" oct="3" pname="a">
+                              <verse>
+                                 <syl>stress</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="cd4n256v1b2s1" dur="4" oct="3" pname="f" accid="s">
+                              <verse>
+                                 <syl>mine,</syl>
+                              </verse>
+                           </note>
+                           <rest dur="8" />
+                           <note xml:id="bd3n384v1b2s1" dur="8" oct="4" pname="e">
+                              <verse>
+                                 <syl>where</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ed4n0v1b3s1" dur="4" oct="4" pname="a">
+                              <verse>
+                                 <syl>are</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="dd4n128v1b3s1" dur="4" oct="4" pname="d">
+                              <verse>
+                                 <syl>you</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="ed4n256v1b3s1" dur="4" oct="3" pname="g">
+                              <verse>
+                                 <syl>roam-</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="dd4n384v1b3s1" dur="4" oct="4" pname="d" />
+                        </layer>
+                     </staff>
+                     <slur startid="#ed4n256v1b3s1" endid="#dd4n384v1b3s1" />
+                  </measure>
+                  <measure right="invis" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="bd3n512v1b4s1" dur="4" oct="3" pname="b" tie="t">
+                              <verse>
+                                 <syl>ing?</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

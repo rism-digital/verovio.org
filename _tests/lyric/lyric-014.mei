@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Hyphens between lyric syllables</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Samuel Bradshaw</persName>
+            </respStmt>
+            <date isodate="2022-01-23">2022-01-23</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2565" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>When note-heads of unison notes are merged, dots are merged too.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="8">
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="80.00%" />
+                        <clef shape="G" line="2" />
+                        <keySig mode="major" sig="1s" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" ppq="2">
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="80.00%" />
+                        <clef shape="F" line="4" />
+                        <keySig mode="major" sig="1s" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="0">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="nskfde2" dur.ppq="8" dur="4" oct="4" pname="d" stem.dir="up">
+                              <verse n="1">
+                                 <label>1.</label>
+                                 <syl con="d" wordpos="i">A</syl>
+                              </verse>
+                              <verse n="2">
+                                 <label>2.</label>
+                                 <syl con="s" wordpos="s">From</syl>
+                              </verse>
+                              <verse n="3">
+                                 <label>3.</label>
+                                 <syl con="s" wordpos="s">Thru</syl>
+                              </verse>
+                              <verse n="4">
+                                 <label>4.</label>
+                                 <syl con="s" wordpos="s">Oh,</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="8" dur="4" oct="4" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur.ppq="2" dur="4" oct="3" pname="d" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="2" dur="4" oct="3" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <tempo place="above" staff="1" tstamp="1.000000" xml:lang="it" midi.bpm="108.000000" mm="100.000000" mm.unit="4">
+                        <rend fontfam="Palatino ldsLat Condensed Italic">Brightly</rend>
+                        <rend fontfam="smufl"></rend> = 100–108</tempo>
+                     <dir place="above" staff="1" tstamp="1.000000" vgrp="210">
+                        <rend fontfam="DingPI ldsDpi">⌜</rend>
+                     </dir>
+                  </measure>
+                  <measure n="X1">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ngvj89j" dur.ppq="8" dur="4" oct="4" pname="g" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="t">rise,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">Zi</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">pain</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="s">grant,</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nz3v004" dur.ppq="8" dur="4" oct="5" pname="d" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">O</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="t">on’s</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="t">ful</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">E</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="n2pwlv8" dur.ppq="8" dur="4" oct="4" pname="b" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">glo</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">fa</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">trib</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="m">ter</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="n15wwk1" dur.ppq="8" dur="4" oct="4" pname="g" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="t">rious</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="t">vored</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="m">u</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="t">nal</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="8" dur="4" oct="4" pname="g" stem.dir="down" />
+                           <note dur.ppq="8" dur="4" oct="5" pname="d" stem.dir="down" />
+                           <note dur.ppq="8" dur="4" oct="4" pname="b" stem.dir="down" />
+                           <note dur.ppq="8" dur="4" oct="4" pname="g" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="up" />
+                           <note dur.ppq="2" dur="4" oct="4" pname="d" stem.dir="up" />
+                           <note dur.ppq="2" dur="4" oct="3" pname="b" stem.dir="up" />
+                           <note dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="down" />
+                           <note dur.ppq="2" dur="4" oct="4" pname="d" stem.dir="down" />
+                           <rest dur.ppq="2" dur="4" />
+                           <note dur.ppq="2" dur="4" oct="3" pname="g" stem.dir="down" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="X2">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="cknnj0z" dur.ppq="16" dur="2" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">Zi</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">dwell</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="m">la</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">Fa</syl>
+                              </verse>
+                              <note oct="4" pname="e" />
+                              <note oct="5" pname="c" />
+                           </chord>
+                           <chord xml:id="co4ornu" dots="1" dur.ppq="12" dur="4" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="t">on,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="t">ing</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="t">tion</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="t">ther,</syl>
+                              </verse>
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="b" />
+                           </chord>
+                           <chord xml:id="cbpdpm5" dur.ppq="4" dur="8" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">Thou</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="s">The</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="s">We</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="s">That</syl>
+                              </verse>
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="b" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur.ppq="4" dur="2" oct="3" pname="g" stem.dir="up" />
+                           <note dots="1" dur.ppq="3" dur="4" oct="3" pname="g" stem.dir="up" />
+                           <chord dur.ppq="1" dur="8" stem.dir="down">
+                              <note oct="3" pname="g" accid="s" />
+                              <note oct="4" pname="d" />
+                           </chord>
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dur.ppq="1" dur="8" oct="3" pname="c" stem.dir="down" />
+                              <note dur.ppq="1" dur="8" oct="3" pname="d" stem.dir="down" />
+                              <note dur.ppq="1" dur="8" oct="3" pname="e" stem.dir="down" />
+                              <note dur.ppq="1" dur="8" oct="3" pname="f" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <note dots="1" dur.ppq="3" dur="4" oct="3" pname="g" stem.dir="down" />
+                           <space dur.ppq="1" dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="X3">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="c7yrlcz" dots="1" dur.ppq="12" dur="4" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">joy</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">gos</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="s">walk</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="s">we</syl>
+                              </verse>
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="b" />
+                           </chord>
+                           <chord xml:id="c2mvpf2" dur.ppq="4" dur="8" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">of</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="t">pel</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="s">the</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="s">may</syl>
+                              </verse>
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                           <chord xml:id="c1hrzry" dur.ppq="8" dur="4" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">lat</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="d" wordpos="i">is</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="d" wordpos="i">nar</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="d" wordpos="i">faith</syl>
+                              </verse>
+                              <note oct="4" pname="c" accid="s" />
+                              <note oct="4" pname="a" />
+                           </chord>
+                           <chord xml:id="c772a1x" dur.ppq="8" dur="4" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="t">ter</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="t">sues</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="t">row</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="t">ful</syl>
+                              </verse>
+                              <note oct="4" pname="c" accid.ges="s" />
+                              <note oct="4" pname="g" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dots="1" dur.ppq="3" dur="4" stem.dir="down">
+                              <note oct="3" pname="a" />
+                              <note oct="4" pname="c" accid="s" />
+                           </chord>
+                           <chord dur.ppq="1" dur="8" stem.dir="down">
+                              <note oct="3" pname="a" />
+                              <note oct="4" pname="c" accid.ges="s" />
+                           </chord>
+                           <chord dur.ppq="2" dur="4" stem.dir="down">
+                              <note oct="2" pname="a" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <chord dur.ppq="2" dur="4" stem.dir="down">
+                              <note oct="2" pname="a" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="invis" n="X4">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="cfpnih8" dots="1" dur.ppq="24" dur="2" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">days,</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="s">forth,</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="s">road</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="s">be,</syl>
+                              </verse>
+                              <note oct="4" pname="d" />
+                              <note oct="4" pname="f" accid.ges="s" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dots="1" dur.ppq="6" dur="2" stem.dir="down">
+                              <note oct="3" pname="d" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="3.000000" vgrp="210">
+                        <rend halign="right" fontfam="DingPI ldsDpi">⌝</rend>
+                     </dir>
+                  </measure>
+                  <sb />
+                  <measure n="X5">
+                     <mNum />
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="nmvqywc" dur.ppq="8" dur="4" oct="4" pname="d" stem.dir="up">
+                              <verse n="1">
+                                 <syl con="s" wordpos="s">Whom</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="s" wordpos="s">The</syl>
+                              </verse>
+                              <verse n="3">
+                                 <syl con="s" wordpos="s">And</syl>
+                              </verse>
+                              <verse n="4">
+                                 <syl con="s" wordpos="s">With</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="8" dur="4" oct="4" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur.ppq="2" dur="4" oct="3" pname="d" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="2" dur="4" oct="3" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

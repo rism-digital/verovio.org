@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Single-note (bowed) temolo example</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-04">2017-05-04</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports bowed tremolos encoded with "btrem" elements, permitting to specify the number of slashes to be displayed.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="1f" meter.count="4" meter.unit="4">
+                  <staffGrp symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                     <staffDef n="2" lines="5" clef.shape="C" clef.line="3" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <bTrem>
+                              <chord dur="1" stem.mod="3slash" tie="i">
+                                 <note xml:id="note-0000000451591036" oct="4" pname="d" />
+                                 <note xml:id="note-0000000683333554" oct="4" pname="f" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <fTrem beams="3">
+                              <note dur="2" oct="4" pname="d" />
+                              <note dur="2" oct="4" pname="f" />
+                           </fTrem>
+                        </layer>
+                        <layer n="2">
+                           <note dur="1" oct="3" pname="d" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4" stem.dir="up" tie="t">
+                              <note xml:id="note-0000001548057727" oct="4" pname="d" />
+                              <note xml:id="note-0000001441834284" oct="4" pname="f" />
+                           </chord>
+                           <rest dur="4" />
+                           <bTrem>
+                              <chord dur="2">
+                                 <note oct="4" pname="f" />
+                                 <note oct="4" pname="a" />
+                              </chord>
+                           </bTrem>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="2" oct="4" pname="d" />
+                           <note dur="4" oct="4" pname="d" />
+                        </layer>
+                        <layer n="2">
+                           <fTrem beams="2">
+                              <note dur="1" oct="3" pname="d" />
+                              <note dur="1" oct="3" pname="f" />
+                           </fTrem>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

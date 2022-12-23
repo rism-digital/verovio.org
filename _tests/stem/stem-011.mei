@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Changing the stem position</title>
+         </titleStmt>
+         <pubStmt />
+         <notesStmt>
+            <annot>The note@stem.pos parameter can be used to change the side of the note the stem is attached, such as in measure 2 of this example</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application isodate="2020-03-24T21:50:47" version="2.7.0" label="0">
+               <name>Verovio</name>
+               <p>Transcoded from Humdrum</p>
+               <p>Problem: note@stem.pos is ignored when the note is within a beam</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <workList>
+         <work>
+            <title />
+         </work>
+      </workList>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="g" accid.ges="n" />
+                           <beam>
+                              <note dots="1" dur="8" oct="5" pname="f" accid.ges="n" />
+                              <note dur="16" oct="5" pname="g" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="5" pname="g" stem.pos="right" accid.ges="n" />
+                           <beam>
+                              <note dots="1" dur="8" oct="5" pname="f" stem.pos="right" accid.ges="n" />
+                              <note dur="16" oct="5" pname="g" stem.pos="right" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

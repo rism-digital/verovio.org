@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{ site.baseurl }}/javascript/carousel.js"></script>
+    <script src="{{ site.baseurl }}/javascript/jquery.touchSwipe.min.js"></script>
+    <script src="{{ site.baseurl }}/javascript/fileinput.js"></script>
+    {% if page.verovio-light %}
+    <script src="{{ site.baseurl }}/javascript/latest/verovio-toolkit-light.js"></script>
+    {% elsif page.verovio-hum %}
+    <script src="{{ site.baseurl }}/javascript/lastest/verovio-toolkit-hum.js"></script>
+    {% elsif page.verovio != false %}
+    <script src="{{ site.baseurl }}/javascript/latest/verovio-toolkit.js"></script>
+    {% endif %}
+    <!-- midi-player -->
+    {% if page.midiplayer %}
+    <script src="{{ site.baseurl }}/javascript/midi-player/wildwebmidi.js"></script>
+    <script src="{{ site.baseurl }}/javascript/midi-player/midiplayer.js"></script>
+    {% endif %}
+    <!--script src="{{ site.baseurl }}/javascript/canvg/rgbcolor.js"></script-->
+    <!--script src="{{ site.baseurl }}/javascript/canvg/StackBlur.js"></script-->
+    <!--script src="{{ site.baseurl }}/javascript/canvg/canvg.js"></script-->
+</div>
+<div>
+    {{ content }}
+</div>
+
+
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Clef change and spacing</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-02-02">2021-02-02</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2018" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>It is not necessary for clef changes on one staff to be allocated space on other staves </annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="112">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig pname="a" mode="major" sig="3s" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig pname="a" mode="major" sig="3s" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="15">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L9F2" dur="16" oct="5" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="g" accid.ges="s" />
+                              <note dur="16" oct="5" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="d" accid="s" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <clef shape="G" line="2" />
+                           <note dur="8" oct="4" pname="a" accid.ges="n">
+                              <artic artic="stacciss" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" tstamp="1.000000">mf</dynam>
+                     <slur staff="1" startid="#note-L9F2" endid="#note-L22F2" />
+                  </measure>
+                  <measure n="16">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="5" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="f" accid.ges="s" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="g" accid.ges="s" />
+                              <note xml:id="note-L22F2" dur="16" oct="4" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="s">
+                                 <artic artic="stacciss" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="s">
+                                 <artic artic="stacciss" />
+                              </note>
+                              <note dur="8" oct="4" pname="e" accid.ges="n">
+                                 <artic artic="stacciss" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Grace note and clef interaction</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-17</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Grace notes do not collide with cautionary clefs.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="2" meter.unit="2" meter.sym="cut" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="2s" meter.count="2" meter.unit="2" meter.sym="cut" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="12">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L168F2" dur="4" oct="5" pname="g">
+                              <accid accid="s" />
+                           </note>
+                           <note xml:id="note-L169F2" dur="8" oct="5" pname="a">
+                              <accid accid.ges="n" />
+                           </note>
+                           <rest dur="8" />
+                           <beam>
+                              <note dur="32" oct="4" pname="c" grace="unacc">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note dur="32" oct="4" pname="d" grace="unacc">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                           <note dur="4" oct="4" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <beam>
+                              <note dur="16" oct="4" pname="d">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="16" oct="4" pname="c">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note dur="16" oct="3" pname="b">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="16" oct="3" pname="a">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <chord xml:id="chord-L168F1" dur="4">
+                              <note xml:id="note-L168F1S1" oct="3" pname="a">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note oct="4" pname="d">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </chord>
+                           <chord xml:id="chord-L169F1" dur="8">
+                              <note xml:id="note-L169F1S1" oct="3" pname="a">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note oct="4" pname="c">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </chord>
+                           <rest dur="8" />
+                           <clef shape="F" line="4" />
+                           <beam>
+                              <note xml:id="note-L172F1" dur="32" oct="3" pname="c" grace="unacc">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note dur="32" oct="3" pname="d" grace="unacc">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                           <note xml:id="note-L174F1" dur="4" oct="3" pname="e">
+                              <accid accid.ges="n" />
+                           </note>
+                           <beam>
+                              <note dur="16" oct="3" pname="d">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="16" oct="3" pname="c">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <note dur="16" oct="2" pname="b">
+                                 <accid accid.ges="n" />
+                              </note>
+                              <note dur="16" oct="2" pname="a">
+                                 <accid accid.ges="n" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note-L168F2" endid="#note-L169F2" />
+                     <dynam staff="1" tstamp="2.000000">f</dynam>
+                     <tie startid="#note-L168F1S1" endid="#note-L169F1S1" />
+                     <slur staff="2" startid="#chord-L168F1" endid="#chord-L169F1" curvedir="above" />
+                     <slur staff="2" startid="#note-L172F1" endid="#note-L174F1" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

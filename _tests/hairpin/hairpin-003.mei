@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Hairpin example with different widths</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-15">2017-05-15</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Short hairpin ends are not as wide as the ends of long hairpins.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="1m+1.0000" form="cres" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="1" oct="4" pname="d" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           </beam>
+                           <space dots="1" dur="2" />
+                        </layer>
+                     </staff>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+1.5000" form="cres" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

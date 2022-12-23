@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+	<meiHead>
+		<fileDesc>
+			<titleStmt>
+				<title>Box/circle enclosures for directives</title>
+			</titleStmt>
+			<pubStmt>
+				<date>2021-09-28</date>
+			</pubStmt>
+			<notesStmt>
+				<annot>Verovio can draw different types of enclosures around text directives.</annot>
+			</notesStmt>
+		</fileDesc>
+		<encodingDesc>
+			<appInfo>
+				<application version="2.0.0" label="2">
+					<name>Verovio</name>
+				</application>
+			</appInfo>
+		</encodingDesc>
+	</meiHead>
+	<music>
+		<body>
+			<mdiv>
+				<score>
+					<scoreDef midi.bpm="400">
+						<staffGrp>
+							<staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+						</staffGrp>
+					</scoreDef>
+					<section>
+						<measure n="0">
+							<staff n="1">
+								<layer n="1">
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+								</layer>
+							</staff>
+							<dir place="above" staff="1" tstamp="1.000000">
+								<rend fontstyle="normal" rend="box" fontweight="bold">A</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="2.000000">
+								<rend fontstyle="normal" rend="box" fontweight="bold">a</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="3.000000">
+								<rend fontstyle="normal" rend="box" fontweight="bold">J</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="4.000000">
+								<rend fontstyle="normal" rend="box" fontweight="bold">x</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="5.000000">
+								<rend fontstyle="normal" rend="box" fontweight="bold">22a</rend>
+							</dir>
+						</measure>
+						<measure n="1">
+							<staff n="1">
+								<layer n="1">
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+									<note dur="4" oct="4" pname="e" accid.ges="n" />
+								</layer>
+							</staff>
+							<dir place="above" staff="1" tstamp="1.000000">
+								<rend fontstyle="normal" rend="circle" fontweight="bold">K</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="2.000000">
+								<rend fontstyle="normal" rend="circle" fontweight="bold">a</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="3.000000">
+								<rend fontstyle="normal" rend="circle" fontweight="bold">J</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="4.000000">
+								<rend fontstyle="normal" rend="circle" fontweight="bold">x</rend>
+							</dir>
+							<dir place="above" staff="1" tstamp="5.000000">
+								<rend fontstyle="normal" rend="circle" fontweight="bold">22a</rend>
+							</dir>
+						</measure>						
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Clef change and spacing</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-02-02">2021-02-02</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2019" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Clef changes should use as little space as possible</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig sig="3s" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig sig="3s" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure left="rptstart">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L9F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L13F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L17F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L21F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <clef shape="G" line="2" />
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam>
+                                 <note xml:id="note-L10F1" dur="16" oct="4" pname="e" accid.ges="n" />
+                                 <note xml:id="note-L11F1" dur="16" oct="4" pname="g" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam>
+                                 <note xml:id="note-L14F1" dur="16" oct="4" pname="f" accid.ges="s" />
+                                 <note xml:id="note-L15F1" dur="16" oct="4" pname="a" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam>
+                                 <note xml:id="note-L18F1" dur="16" oct="4" pname="g" accid.ges="s" />
+                                 <note xml:id="note-L19F1" dur="16" oct="4" pname="b" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam type="placed">
+                                 <note xml:id="note-L22F1" dur="16" oct="4" pname="a" stem.dir="up" accid.ges="n" />
+                                 <note xml:id="note-L23F1" dur="16" oct="5" pname="c" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <clef shape="G" line="2" />
+                        </layer>
+                     </staff>
+                     <turn staff="1" startid="#note-L9F2" accidlower="s" form="upper" />
+                     <dir place="between" staff="1 2" tstamp="1.000000">dolce</dir>
+                     <turn staff="1" startid="#note-L13F2" form="upper" />
+                     <turn staff="1" startid="#note-L17F2" form="upper" />
+                     <turn staff="1" startid="#note-L21F2" form="upper" />
+                     <slur staff="2" startid="#note-L10F1" endid="#note-L11F1" />
+                     <slur staff="2" startid="#note-L14F1" endid="#note-L15F1" />
+                     <slur staff="2" startid="#note-L18F1" endid="#note-L19F1" />
+                     <slur staff="2" startid="#note-L22F1" endid="#note-L23F1" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L27F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L31F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L36F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                           <note xml:id="note-L40F2" dur="8" oct="5" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam>
+                                 <note xml:id="note-L28F1" dur="16" oct="4" pname="e" accid.ges="n" />
+                                 <note xml:id="note-L29F1" dur="16" oct="4" pname="g" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam>
+                                 <note xml:id="note-L32F1" dur="16" oct="4" pname="f" accid.ges="s" />
+                                 <note xml:id="note-L33F1" dur="16" oct="4" pname="a" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <clef shape="G" line="2" />
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam>
+                                 <note xml:id="note-L37F1" dur="16" oct="4" pname="g" accid.ges="s" />
+                                 <note xml:id="note-L38F1" dur="16" oct="4" pname="b" accid.ges="n" />
+                              </beam>
+                           </tuplet>
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <rest dur="16" />
+                              <beam type="placed">
+                                 <note xml:id="note-L41F1" dur="16" oct="4" pname="a" stem.dir="up" accid.ges="n" />
+                                 <note xml:id="note-L42F1" dur="16" oct="5" pname="c" stem.dir="up" accid.ges="s" />
+                              </beam>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                     <turn staff="1" startid="#note-L27F2" accidlower="s" form="upper" />
+                     <dir place="between" staff="1 2" tstamp="1.000000">dolce</dir>
+                     <turn staff="1" startid="#note-L31F2" form="upper" />
+                     <turn staff="1" startid="#note-L36F2" form="upper" />
+                     <turn staff="1" startid="#note-L40F2" form="upper" />
+                     <slur staff="2" startid="#note-L28F1" endid="#note-L29F1" />
+                     <slur staff="2" startid="#note-L32F1" endid="#note-L33F1" />
+                     <slur staff="2" startid="#note-L37F1" endid="#note-L38F1" />
+                     <slur staff="2" startid="#note-L41F1" endid="#note-L42F1" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

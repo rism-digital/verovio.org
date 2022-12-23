@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beat repetition with different renditions</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-04">2017-05-04</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the 'mixed' rendering of beatRpt.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="4" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="32" oct="4" pname="f" />
+                              <note dur="32" oct="4" pname="a" />
+                              <note dur="32" oct="5" pname="c" />
+                              <note dur="32" oct="5" pname="f" />
+                              <note dur="32" oct="5" pname="c" />
+                              <note dur="32" oct="5" pname="f" />
+                              <note dur="32" oct="5" pname="c" />
+                              <note dur="32" oct="4" pname="a" />
+                           </beam>
+                           <beatRpt slash="3" />
+                           <beatRpt slash="3" />
+                           <beatRpt slash="3" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="f" />
+                              <tuplet num="3" numbase="2">
+                                 <note dur="16" oct="4" pname="a" />
+                                 <note dur="16" oct="5" pname="c" />
+                                 <note dur="16" oct="4" pname="a" />
+                              </tuplet>
+                           </beam>
+                           <beatRpt slash="mixed" />
+                           <beatRpt slash="mixed" />
+                           <beatRpt slash="mixed" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

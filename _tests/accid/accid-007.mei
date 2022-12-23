@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Arabic accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2021-01-29">29 Jan 2021</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/910" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio renders Arel-Ezgi-Uzdilek (AEU) accidentals.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="invis">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="bms" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="kms" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="bs" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="ks" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="kf" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="bf" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="kmf" />
+                           </note>
+                           <note dur="4" oct="5" pname="c">
+                              <accid accid="bmf" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Use of beatRpt with compound meters</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-17">2022-01-11</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2564" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>With compound meters, beatRpt@beatdef can be set to fill the duration appropriately.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "breaks": "encoded" }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="12" unit="8" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <meterSig count="12" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                              <note dur="8" oct="5" pname="d" accid.ges="n" />
+                              <note dur="8" oct="4" pname="b" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="5" pname="e" accid.ges="n" />
+                              <note dur="8" oct="5" pname="c" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="b" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="e" accid.ges="n" />
+                              <note dur="8" oct="3" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                           </beam>
+                           <beatRpt beatdef="3.000000" slash="1" />
+                           <beam>
+                              <note dur="8" oct="3" pname="f" accid.ges="n" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                              <note dur="8" oct="4" pname="d" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="f" accid.ges="n" />
+                              <note dur="8" oct="4" pname="c" accid.ges="n" />
+                              <note dur="8" oct="4" pname="e" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

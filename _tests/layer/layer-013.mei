@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Handling of whole notes with multi-layer</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Andriy Makarchuk</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-08-04">2021-08-04</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2315" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Whole note collision should be avoided on multi-layer</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.6.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur.ppq="2" dur="2" stem.dir="up">
+                              <note oct="4" pname="g" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                           <rest dur.ppq="2" dur="2" />
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="4" dur="1" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur.ppq="2" dur="2" stem.dir="down">
+                              <note oct="4" pname="g" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                           <rest dur.ppq="2" dur="2" />
+                        </layer>
+                        <layer n="2">
+                           <note dur.ppq="4" dur="1" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur.ppq="4" dur="1" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <chord dur.ppq="2" dur="2" stem.dir="down">
+                              <note oct="4" pname="g" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                           <rest dur.ppq="2" dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure right="end" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur.ppq="4" dur="1" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <chord dur.ppq="2" dur="2" stem.dir="up">
+                              <note oct="4" pname="g" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                           <rest dur.ppq="2" dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

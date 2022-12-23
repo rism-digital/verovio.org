@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beam spans across measure</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+            <date isodate="2022-02-24">2022-02-24</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issue/2657" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Beam spans are useful represent beams across measures.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <note xml:id="note-L4F1" dur="8" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <beamSpan plist="#note-L4F1 #note-L6F1 #note-L7F1" startid="#note-L4F1" endid="#note-L7F1" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L6F1" dur="8" oct="4" pname="d" />
+                           <note xml:id="note-L7F1" dur="8" oct="4" pname="c" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <note xml:id="note-L11F1" dur="8" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <beamSpan plist="#note-L11F1 #note-L13F1 #note-L14F1" startid="#note-L11F1" endid="#note-L14F1" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L13F1" dur="8" oct="4" pname="f" />
+                           <note xml:id="note-L14F1" dur="8" oct="4" pname="g" />
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

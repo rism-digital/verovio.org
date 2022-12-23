@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Mensural clefs</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2022-01-21">2022-01-21</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio uses appropriate glyphs for clefs in mensural notation.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="mensural" lines="5">
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer n="1">
+                        <clef shape="F" line="4" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <clef shape="C" line="1" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <clef shape="C" line="2" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <clef shape="C" line="3" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <clef shape="C" line="4" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <clef shape="C" line="5" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <clef shape="G" line="2" />
+                        <note dur="brevis" oct="4" pname="c" />
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

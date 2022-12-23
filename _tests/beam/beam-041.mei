@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beam break example</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-05-04</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the attribute "breaksec" in the element "beam" for breaking secondary beams.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="4f" meter.count="2" meter.unit="4">
+                  <staffGrp symbol="brace">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="4f" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.sig="4f" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="12" numbase="8">
+                              <beam>
+                                 <note dur="64" oct="4" pname="a" tuplet="i1" />
+                                 <note dur="64" oct="4" pname="d" tuplet="m1">
+                                    <accid accid="n" />
+                                 </note>
+                                 <note breaksec="2" dur="64" oct="4" pname="e" tuplet="m1" />
+                                 <note dur="64" oct="4" pname="f" tuplet="m1" />
+                                 <note dur="64" oct="4" pname="e" tuplet="m1" />
+                                 <note breaksec="1" dur="64" oct="4" pname="d" tuplet="m1" />
+                                 <note dur="64" oct="4" pname="a" tuplet="m1" />
+                                 <note dur="64" oct="4" pname="g" tuplet="m1" />
+                                 <note breaksec="2" dur="64" oct="4" pname="f" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="d" tuplet="m1">
+                                    <accid accid="n" />
+                                 </note>
+                                 <note dur="64" oct="5" pname="c" tuplet="m1" />
+                                 <note dur="64" oct="4" pname="b" tuplet="t1" />
+                              </beam>
+                           </tuplet>
+                           <beam>
+                              <tuplet num="3" numbase="2">
+                                 <note dur="64" oct="5" pname="f" tuplet="i1" />
+                                 <note dur="64" oct="5" pname="e" tuplet="m1" />
+                                 <note breaksec="2" dur="64" oct="5" pname="d" tuplet="t1" />
+                              </tuplet>
+                              <tuplet num="3" numbase="2">
+                                 <note dur="64" oct="5" pname="a" tuplet="i1" />
+                                 <note dur="64" oct="5" pname="g" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="f" tuplet="t1" />
+                              </tuplet>
+                              <note xml:id="d1e611" dur="16" oct="6" pname="c" tie="i" />
+                           </beam>
+                           <beam>
+                              <note xml:id="d1e634" dots="1" dur="8" oct="6" pname="c" tie="t" />
+                              <tuplet num="7" numbase="4">
+                                 <note dur="64" oct="6" pname="c" tuplet="i1" />
+                                 <note dur="64" oct="5" pname="b" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="a" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="g" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="f" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="e" tuplet="m1" />
+                                 <note dur="64" oct="5" pname="d" tuplet="t1">
+                                    <accid accid="n" />
+                                 </note>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="3" pname="b" />
+                                 <note oct="3" pname="a" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="3" pname="b" />
+                                 <note oct="3" pname="a" />
+                              </chord>
+                           </beam>
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="3" pname="b" />
+                                 <note oct="3" pname="a" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="3" pname="b" />
+                                 <note oct="3" pname="a" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

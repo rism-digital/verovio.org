@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Grace note ledger lines</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-08-16">2021-08-16</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Grace note ledger lines should not touch the main note ones</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.6.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <mdiv>
+               <score>
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                     </staffGrp>
+                  </scoreDef>
+                  <section>
+                     <measure right="invis">
+                        <staff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note dur="16" oct="5" pname="a" grace="unacc" />
+                                 <note dur="16" oct="5" pname="b" grace="unacc" />
+                              </beam>
+                              <note dur="4" oct="6" pname="c" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+               </score>
+            </mdiv>
+         </mdiv>
+      </body>
+   </music>
+</mei>

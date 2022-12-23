@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Notes stemmed together</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Oleksii Sapov</persName>
+            </respStmt>
+            <date isodate="2022-01-25">2022-01-25</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/2554" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports @stem.sameas for notes on a second layer.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="1">
+            <score>
+               <scoreDef optimize="false" key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp bar.thru="false">
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2">
+                           <label>Oboi</label>
+                        </staffDef>
+                        <staffDef n="3" lines="5" clef.shape="F" clef.line="4">
+                           <label>Fagotti</label>
+                        </staffDef>
+                     </staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="4" lines="5" trans.diat="-7.000000" trans.semi="-12.000000" clef.shape="G" clef.line="2" key.sig="0">
+                           <label>Corni<lb /> in Do/C</label>
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="note_234" dur="4" oct="5" pname="g" />
+                           <beam>
+                              <note xml:id="note_246" dots="1" dur="8" oct="5" pname="g" />
+                              <note xml:id="note_252" dur="16" oct="5" pname="g" />
+                           </beam>
+                           <note xml:id="note_258" dur="4" oct="5" pname="g" />
+                           <note xml:id="note_264" dur="4" oct="5" pname="g" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="5" pname="e" stem.sameas="#note_234" />
+                           <beam>
+                              <note dots="1" dur="8" oct="5" pname="e" stem.sameas="#note_246" />
+                              <note dur="16" oct="5" pname="e" stem.sameas="#note_252" />
+                           </beam>
+                           <note dur="4" oct="5" pname="e" stem.sameas="#note_258" />
+                           <note dur="4" oct="5" pname="e" stem.sameas="#note_264" />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <note xml:id="note_324" dur="4" oct="4" pname="e" />
+                           <beam>
+                              <note xml:id="note_336" dots="1" dur="8" oct="4" pname="e" />
+                              <note xml:id="note_342" dur="16" oct="4" pname="e" />
+                           </beam>
+                           <note xml:id="note_348" dur="4" oct="4" pname="e" />
+                           <note xml:id="note_354" dur="4" oct="4" pname="e" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="3" pname="g" stem.sameas="#note_324" />
+                           <beam>
+                              <note dots="1" dur="8" oct="3" pname="g" stem.sameas="#note_336" />
+                              <note dur="16" oct="3" pname="g" stem.sameas="#note_342" />
+                           </beam>
+                           <note dur="4" oct="3" pname="g" stem.sameas="#note_348" />
+                           <note dur="4" oct="3" pname="g" stem.sameas="#note_354" />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <note xml:id="note_414" dur="4" oct="5" pname="c" />
+                           <beam>
+                              <note xml:id="note_426" dots="1" dur="8" oct="5" pname="c" />
+                              <note xml:id="note_432" dur="16" oct="5" pname="c" />
+                           </beam>
+                           <note xml:id="note_438" dur="4" oct="5" pname="c" />
+                           <note xml:id="note_444" dur="4" oct="5" pname="c" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" stem.sameas="#note_414" />
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="c" stem.sameas="#note_426" />
+                              <note dur="16" oct="4" pname="c" stem.sameas="#note_432" />
+                           </beam>
+                           <note dur="4" oct="4" pname="c" stem.sameas="#note_438" />
+                           <note dur="4" oct="4" pname="c" stem.sameas="#note_444" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

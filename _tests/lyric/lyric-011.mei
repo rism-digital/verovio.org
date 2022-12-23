@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Multilingual lyrics</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-01-17">17 Jan 2017</date>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/405" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio recognizes the "xml.lang" attribute in text elements like "verse" and "syl" 
+               and transfers them to the SVG output.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.sig="2s" meter.count="6" meter.unit="8">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nigqi6o" dots="1" dur="8" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:lang="de" n="1">
+                                    <syl con="d" wordpos="i">Stil</syl>
+                                 </verse>
+                                 <verse xml:lang="en" n="2">
+                                    <syl con="d" wordpos="i">Sil</syl>
+                                 </verse>
+                                 <verse xml:lang="sv" n="3">
+                                    <syl con="d" wordpos="i">Stil</syl>
+                                 </verse>
+                              </note>
+                              <note dur="16" oct="4" pname="b" stem.dir="up" />
+                           </beam>
+                           <note xml:id="nis6065" dur="8" oct="4" pname="a" stem.dir="up">
+                              <verse xml:lang="de" n="1">
+                                 <syl>le</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl wordpos="t">ent</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl>la</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nhq18qa" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
+                              <verse xml:lang="de" n="1">
+                                 <syl>Nacht!</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl>night,</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl>natt,</syl>
+                              </verse>
+                           </note>
+                           <rest xml:id="rxtd7wh" dur="8" ploc="e" oloc="4" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                           <note dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                           <note dur="4" oct="4" pname="d" stem.dir="down" />
+                           <rest sameas="#rxtd7wh" dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="n1xxgrf" dots="1" dur="8" oct="4" pname="a" stem.dir="up">
+                                 <verse xml:lang="de" n="1">
+                                    <syl con="d" wordpos="i">Hei</syl>
+                                 </verse>
+                                 <verse xml:lang="en" n="2">
+                                    <syl con="d" wordpos="i">ho</syl>
+                                 </verse>
+                                 <verse xml:lang="sv" n="3">
+                                    <syl con="d" wordpos="i">he</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="n93glos" dur="16" oct="4" pname="b" stem.dir="up">
+                                 <verse xml:lang="de" n="1">
+                                    <syl wordpos="t">li</syl>
+                                 </verse>
+                                 <verse xml:lang="sv" n="3">
+                                    <syl con="d" wordpos="m">li</syl>
+                                 </verse>
+                              </note>
+                           </beam>
+                           <note xml:id="ngrv3o" dur="8" oct="4" pname="a" stem.dir="up">
+                              <verse xml:lang="de" n="1">
+                                 <syl>ge</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl wordpos="t">ly</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl wordpos="t">ga</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nqkrlad" dur="4" oct="4" pname="f" stem.dir="up" accid.ges="s">
+                              <verse xml:lang="de" n="1">
+                                 <syl>Nacht!</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl>night,</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl>natt,</syl>
+                              </verse>
+                           </note>
+                           <rest xml:id="r9ejran" dur="8" ploc="e" oloc="4" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="4" pname="g" stem.dir="down" />
+                           </beam>
+                           <note dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                           <note dur="4" oct="4" pname="d" stem.dir="down" />
+                           <rest sameas="#r9ejran" dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nwxxtah" dots="1" dur="8" oct="5" pname="e" stem.dir="up">
+                                 <verse xml:lang="de" n="1">
+                                    <syl con="d" wordpos="i">Al</syl>
+                                 </verse>
+                                 <verse xml:lang="en" n="2">
+                                    <syl>All</syl>
+                                 </verse>
+                                 <verse xml:lang="sv" n="3">
+                                    <syl>Alt</syl>
+                                 </verse>
+                              </note>
+                              <note dur="16" oct="5" pname="d" stem.dir="up">
+                                 <accid accid="s" />
+                              </note>
+                           </beam>
+                           <note xml:id="n86eepz" dur="8" oct="5" pname="e" stem.dir="up">
+                              <verse xml:lang="de" n="1">
+                                 <syl>les</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl>is</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl>var</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nim8osq" dur="4" oct="5" pname="c" stem.dir="up" accid.ges="s">
+                              <verse xml:lang="de" n="1">
+                                 <syl>schläft,</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl>calm,</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl>tyst,</syl>
+                              </verse>
+                           </note>
+                           <rest xml:id="rbxmn0v" dur="8" ploc="e" oloc="4" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="g" stem.dir="down" />
+                              <note dur="16" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                           </beam>
+                           <note dur="8" oct="4" pname="g" stem.dir="down" />
+                           <note dur="4" oct="4" pname="e" stem.dir="down" />
+                           <rest sameas="#rbxmn0v" dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nrk9f60" dots="1" dur="8" oct="5" pname="d" stem.dir="up">
+                                 <verse xml:lang="de" n="1">
+                                    <syl con="d" wordpos="i">ein</syl>
+                                 </verse>
+                                 <verse xml:lang="en" n="2">
+                                    <syl>all</syl>
+                                 </verse>
+                                 <verse xml:lang="sv" n="3">
+                                    <syl con="d" wordpos="i">en</syl>
+                                 </verse>
+                              </note>
+                              <note dur="16" oct="5" pname="c" stem.dir="up" accid.ges="s" />
+                           </beam>
+                           <note xml:id="ng4ueyb" dur="8" oct="5" pname="d" stem.dir="up">
+                              <verse xml:lang="de" n="1">
+                                 <syl>sam</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl>is</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl wordpos="t">samt</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="nd40lke" dur="4" oct="4" pname="a" stem.dir="up">
+                              <verse xml:lang="de" n="1">
+                                 <syl>wacht</syl>
+                              </verse>
+                              <verse xml:lang="en" n="2">
+                                 <syl>bright</syl>
+                              </verse>
+                              <verse xml:lang="sv" n="3">
+                                 <syl>satt</syl>
+                              </verse>
+                           </note>
+                           <rest xml:id="r9cmlj3" dur="8" ploc="e" oloc="4" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur="16" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <note dur="8" oct="4" pname="f" stem.dir="down" accid.ges="s" />
+                           <note dur="4" oct="4" pname="c" stem.dir="down" accid.ges="s" />
+                           <rest sameas="#r9cmlj3" dur="8" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Tempo and metronome marking</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2017-05-04">2017-05-04</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>
+               <p>Verovio supports "tempo" elements. Horizontal positioning can be specified. By default, tempi indications are placed above the
+					staff. The "rend" element can used within the text, for example for specifying metronome values.</p>
+            </annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="2.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.sym="cut">
+                  <staffGrp>
+                     <staffDef label="Violino" n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure type="upbeat">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="m0_s2_e1" dur="8" oct="5" pname="e" />
+                              <note xml:id="m0_s2_e2" dur="8" oct="5" pname="f" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <tempo midi.bpm="70" staff="1" tstamp="1.000000">Andante con moto <rend fontfam="smufl"></rend> = 70</tempo>
+                     <slur startid="#m0_s2_e1" endid="#m0_s2_e2" />
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="5" pname="g" />
+                           <note dur="8" oct="5" pname="g" />
+                           <note dur="4" oct="5" pname="g" />
+                           <beam>
+                              <note xml:id="m1_s2_e4" dur="8" oct="5" pname="g" />
+                              <note xml:id="m1_s2_e5" dur="8" oct="6" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#m1_s2_e4" endid="#m1_s2_e5" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

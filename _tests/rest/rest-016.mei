@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Straying rests</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-03-31">2021-03-31</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Semibreve and minim rests must never stray across the centre stave-line.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 36, example 4</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.4.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" visible="false" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section n="1">
+                  <measure metcon="false">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" stem.dir="down" />
+                           <note xml:id="ex_0670680947" dur="4" oct="4" pname="d" stem.dir="down" />
+                        </layer>
+                     </staff>
+                     <tie startid="#ex_0670680947" endid="#ex_0042585789" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="ex_0042585789" dur="2" oct="4" pname="d" stem.dir="down" />
+                           <note dur="2" oct="4" pname="c" stem.dir="down" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+               <section n="2" restart="true">
+                  <scoreDef>
+                     <staffGrp>
+                        <staffDef n="1" lines="5">
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </scoreDef>
+                     <measure metcon="false">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ex_1297524978" dur="2" oct="5" pname="f" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="2" />
+                        </layer>
+                     </staff>
+                     <tie startid="#ex_1297524978" endid="#ex_1511404477" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="ex_1511404477" dur="2" oct="5" pname="f" stem.dir="up" />
+                           <note dur="2" oct="5" pname="a" stem.dir="up" />
+                        </layer>
+                        <layer n="2">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

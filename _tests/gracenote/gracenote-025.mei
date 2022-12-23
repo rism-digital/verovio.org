@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Grace notes and slurs</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+            <date isodate="2022-01-29">2022-01-29</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2607" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot />
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="N1" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N2" dur="4" oct="4" pname="g" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N3" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N4" dur="4" oct="4" pname="a" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N5" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N6" dur="4" oct="4" pname="b" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N7" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N8" dur="4" oct="5" pname="c" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N9" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N10" dur="4" oct="5" pname="d" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N11" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N12" dur="4" oct="5" pname="e" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N13" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N14" dur="4" oct="5" pname="f" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N15" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N16" dur="4" oct="5" pname="a" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N17" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N18" dur="4" oct="6" pname="c" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N19" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N20" dur="4" oct="4" pname="e" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N21" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N22" dur="4" oct="4" pname="c" stem.dir="up" accid.ges="n" />
+                           <note xml:id="N23" dur="8" oct="5" pname="c" grace="acc" accid.ges="n" />
+                           <note xml:id="N24" dur="4" oct="3" pname="a" stem.dir="up" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#N1" endid="#N2" curvedir="above" />
+                     <slur staff="1" startid="#N3" endid="#N4" curvedir="above" />
+                     <slur staff="1" startid="#N5" endid="#N6" curvedir="above" />
+                     <slur staff="1" startid="#N7" endid="#N8" curvedir="above" />
+                     <slur staff="1" startid="#N9" endid="#N10" curvedir="above" />
+                     <slur staff="1" startid="#N11" endid="#N12" curvedir="above" />
+                     <slur staff="1" startid="#N13" endid="#N14" curvedir="above" />
+                     <slur staff="1" startid="#N15" endid="#N16" curvedir="above" />
+                     <slur staff="1" startid="#N17" endid="#N18" curvedir="above" />
+                     <slur staff="1" startid="#N19" endid="#N20" curvedir="above" />
+                     <slur staff="1" startid="#N21" endid="#N22" curvedir="above" />
+                     <slur staff="1" startid="#N23" endid="#N24" curvedir="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

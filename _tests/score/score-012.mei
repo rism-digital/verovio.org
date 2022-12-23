@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Support for duration defaults</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+            <date isodate="2022-01-23">2022-01-23</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2572" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Duration defaults can be given on scoreDef or on staffDef.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef dur.default="2">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.sig="3f" meter.sym="common" />
+                     <staffDef dur.default="16" n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.sig="3f" meter.sym="common" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord stem.dir="up" artic="acc">
+                              <note oct="4" pname="b" accid="n" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="f" />
+                              <note oct="5" pname="g" />
+                              <note oct="5" pname="b" accid="n" />
+                           </chord>
+                           <rest dur="2" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="8" />
+                           <beam>
+                              <note dur="16" oct="4" pname="a" accid.ges="f">
+                                 <artic artic="acc" place="above" />
+                              </note>
+                              <note dur="16" oct="4" pname="g" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="f">
+                                 <artic artic="acc" place="above" />
+                              </note>
+                              <note dur="16" oct="4" pname="d" />
+                              <note dur="16" oct="4" pname="e" accid.ges="f" />
+                              <note dur="16" oct="4" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="3">
+                           <space dur="2" />
+                           <beam>
+                              <note oct="3" pname="b" stem.dir="up" accid="n">
+                                 <artic artic="acc" place="above" />
+                              </note>
+                              <note oct="3" pname="g" />
+                              <note oct="3" pname="a" accid.ges="f" />
+                              <note oct="3" pname="g" />
+                           </beam>
+                           <beam>
+                              <note oct="3" pname="f" stem.dir="up">
+                                 <artic artic="acc" place="above" />
+                              </note>
+                              <note oct="3" pname="d" />
+                              <note oct="3" pname="e" accid.ges="f" />
+                              <note oct="3" pname="d" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

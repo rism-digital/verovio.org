@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beam span</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Andriy Makarchuk</persName>
+            </respStmt>
+            <date isodate="2022-02-15">2022-01-15</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2640" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>BeamSpans can be cross-staff and cross-measure.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.9.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="120" key.mode="major" key.sig="2f" meter.count="4" meter.unit="2" meter.sym="common">
+                  <staffGrp symbol="brace" bar.thru="true">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <instrDef midi.channel="0" midi.instrnum="0" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4">
+                        <instrDef midi.channel="1" midi.instrnum="0" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure metcon="false" n="222">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="c01" dur="32" oct="4" pname="g" stem.dir="up" />
+                           <note xml:id="c02" dur="32" oct="4" pname="f" stem.dir="up" />
+                           <note xml:id="c03" dur="32" oct="4" pname="e" stem.dir="up" />
+                           <note xml:id="c04" dur="32" oct="4" pname="d" stem.dir="up" />
+                           <note xml:id="c05" dur="32" oct="4" pname="c" stem.dir="up" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                        </layer>
+                     </staff>
+                     <beamSpan startid="#c01" endid="#c16" plist="#c01 #c02 #c03 #c04 #c05 #c13 #c14 #c15 #c16"/>
+                  </measure>
+                  <measure metcon="false" n="223">
+                     <staff n="1">
+                        <layer n="1">
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="c13" dur="32" oct="3" pname="b" stem.dir="up" />
+                           <note xml:id="c14" dur="32" oct="3" pname="a" stem.dir="up" />
+                           <note xml:id="c15" dur="32" oct="3" pname="g" stem.dir="up" />
+                           <note xml:id="c16" dur="32" oct="3" pname="f" stem.dir="up" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
