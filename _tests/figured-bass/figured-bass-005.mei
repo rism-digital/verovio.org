@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Figured bass with extender lines</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2023-01-11">11 Jan 2023</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/3199" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>Figured bass extenders.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.14.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig sig="0" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="g" />
+                           <note dur="4" oct="3" pname="g" />
+                           <note dur="4" oct="3" pname="f" />
+                           <note dur="4" oct="3" pname="f" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1">
+                        <fb>
+                           <f extender="true" tstamp="1" tstamp2="1m+5">6</f>
+                           <f extender="true" tstamp="1" tstamp2="1m+5">4</f>
+                        </fb>
+                     </harm>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="e" />
+                           <note dur="4" oct="3" pname="e" />
+                           <note dur="4" oct="3" pname="d" />
+                           <note dur="4" oct="3" pname="d" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="c" />
+                           <note dur="4" oct="3" pname="c" />
+                           <note dur="4" oct="3" pname="c" />
+                           <note dur="4" oct="3" pname="c" />
+                        </layer>
+                     </staff>
+                     <harm staff="1" tstamp="1">
+                        <fb>
+                           <f>5</f>
+                           <f>3</f>
+                        </fb>
+                     </harm>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
