@@ -270,6 +270,12 @@ version-footer: true
           }
         }
         current_oct = oct;
+
+        pitch_str += current_duration;
+        if (current_dot == 1) {
+            pitch_str += '.';
+        }
+
         switch (alteration) {
             /*
              case 0:
@@ -284,18 +290,12 @@ version-footer: true
              break;
         }
 
-            pitch_str += current_duration;
-            if (current_dot == 1) {
-                pitch_str += '.';
-            }
-
         pitch_str += pitch;
         undos.push( $('#incipit_01').val() );
         $('#incipit_01').val($('#incipit_01').val() + pitch_str );
         $("#incipit_01").trigger("input");
         update_incipit();
         activate_buttons();
-
     }
 
     function reset_undos( )
