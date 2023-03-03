@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Delayed turns on chords</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Craig Sapp</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-03-03"></date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/3266" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Delayed turn on chords using @startid are placed between the start and the next occuring note</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.6.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <meterSig count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note oct="3" pname="b" accid.ges="n" />
+                              <note xml:id="note-L4F1S2" oct="4" pname="d" accid.ges="n" />
+                           </chord>
+                           <note dur="2" oct="4" pname="e">
+                              <accid accid="n" func="caution" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <turn staff="1" startid="#note-L4F1S2" accidupper="f" accidlower="s" form="lower" />
+                     <dir place="below" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">not delayed</rend>
+                     </dir>
+                  </measure>
+                  <measure right="end" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2">
+                              <note xml:id="note-L8F1S1" oct="4" pname="d" accid.ges="n" />
+                              <note oct="3" pname="b" accid.ges="n" />
+                           </chord>
+                           <note dur="2" oct="4" pname="e">
+                              <accid accid="n" func="caution" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <turn staff="1" startid="#note-L8F1S1" accidupper="f" accidlower="s" delayed="true" form="lower" />
+                     <dir place="below" staff="1" tstamp="1.000000">
+                        <rend fontstyle="normal">delayed</rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
