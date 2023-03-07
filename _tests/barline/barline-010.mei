@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Single staff line and collisions</title>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-03-07" />
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/3309" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>A minimal staff distance should prevent collisions of floating elements with bar lines on the single line staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.16.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="2" lines="1">
+                        <label>Gran Cassa</label>
+                        <clef shape="perc" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <section>
+                     <measure corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <multiRest num="7" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest xml:id="second_fermata" />
+                           </layer>
+                        </staff>
+                        <fermata staff="2" startid="#second_fermata" />
+                     </measure>
+                     <measure corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <multiRest num="8" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure right="dbl" corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <multiRest num="4" />
+                           </layer>
+                        </staff>
+                        <reh staff="2" tstamp="0.000000">
+                           <rend halign="center" rend="box" fontsize="130.00%" fontstyle="normal" fontweight="bold">A</rend>
+                        </reh>
+                     </measure>
+                  </section>
+                  <section>
+                     <measure corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <multiRest num="4" />
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <multiRest num="16" />
+                           </layer>
+                        </staff>
+                        <tempo staff="2" tstamp="1.000000">Much much faster</tempo>
+                     </measure>
+                     <measure corresp="#none">
+                        <staff n="2">
+                           <layer n="1">
+                              <note dur="1" loc="0" ornam="t" />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
