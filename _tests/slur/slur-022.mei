@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Inner slurs and cross staff cases</title>
+            <respStmt>
+               <persName role="encoder">David Bauser</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-03-07" />
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/3304" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slur collision is avoided for inner slurs in cross staff cases.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.6.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
+                        <staffDef n="1" lines="5" ppq="4">
+                           <clef shape="G" line="2" />
+                           <keySig sig="0" />
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                        <staffDef n="2" lines="5" ppq="4">
+                           <clef shape="F" line="4" />
+                           <keySig sig="0" />
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                        <grpSym symbol="brace" />
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="28">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur.ppq="4" dur="4" />
+                           <beam>
+                              <note xml:id="ntp3tut" dur.ppq="2" dur="8" oct="5" pname="d" stem.dir="up" />
+                              <note dur.ppq="2" dur="8" oct="5" pname="e" stem.dir="up" />
+                           </beam>
+                           <note xml:id="ngxeh57" dur.ppq="8" dur="2" oct="5" pname="f" stem.dir="up" accid="s" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="2">
+                           <beam>
+                              <note xml:id="nk08i18" dur.ppq="1" dur="16" oct="3" pname="b" stem.dir="up" accid="f" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="e" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="g" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="b" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="d" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="b" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="g" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note dur.ppq="1" dur="16" staff="1" oct="5" pname="f" stem.dir="down" accid.ges="s" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="b" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="g" stem.dir="down" />
+                              <note xml:id="nusapwi" dur.ppq="1" dur="16" staff="1" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                           <beam>
+                              <note xml:id="nwzlx40" dur.ppq="1" dur="16" staff="1" oct="4" pname="e" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="b" stem.dir="down" />
+                              <note dur.ppq="1" dur="16" staff="1" oct="4" pname="g" stem.dir="down" />
+                              <note xml:id="nub8m7a" dur.ppq="1" dur="16" staff="1" oct="4" pname="e" stem.dir="down" />
+                           </beam>
+                        </layer>
+                        <layer n="5">
+                           <note xml:id="n8uv6q1" dur.ppq="16" dur="1" oct="3" pname="b" accid="f" />
+                        </layer>
+                     </staff>
+                     <slur startid="#ntp3tut" endid="#ngxeh57" curvedir="above" />
+                     <slur startid="#nk08i18" endid="#nub8m7a" curvedir="above" />
+                     <hairpin staff="1" tstamp="1.750000" tstamp2="0m+3.0000" form="cres" place="below" vgrp="86" />
+                     <tie startid="#nusapwi" endid="#nwzlx40" />
+                     <slur startid="#n8uv6q1" endid="#n7pvsfy" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
