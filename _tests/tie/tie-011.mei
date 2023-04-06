@@ -13,6 +13,9 @@
                <corpName role="funder">Enote GmbH</corpName>
             </respStmt>
             <date isodate="2021-07-01">2021-07-01</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2283" />
+            </pubPlace>
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
