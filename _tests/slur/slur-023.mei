@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>S-shaped slurs across staves</title>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-04-06">2023-04-06</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>S-shaped slurs may be encoded with a "mixed" curvedir.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.10.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <grpSym symbol="brace" />
+                        <staffDef n="1" lines="5">
+                           <clef shape="G" line="2" visible="false" />
+                           <keySig sig="0" visible="false" />
+                           <meterSig count="6" unit="8" form="invis" />
+                        </staffDef>
+                        <staffDef n="2" lines="5">
+                           <clef shape="F" line="4" visible="false" />
+                           <keySig sig="0" visible="false" />
+                           <meterSig count="6" unit="8" form="invis" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <space dur="8" />
+                           <space dur="8" />
+                           <space dur="8" />
+                           <beam>
+                              <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="g" />
+                              <note xml:id="n19lk1zn" dur="8" oct="4" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nirsexk" dur="8" oct="3" pname="e" />
+                              <note dur="8" oct="3" pname="g" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                           <space dur="8" />
+                           <space dur="8" />
+                           <space dur="8" />
+                        </layer>
+                     </staff>
+                     <slur startid="#nirsexk" endid="#n19lk1zn" curvedir="mixed" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <mSpace />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nghq3734" dur="8" oct="3" pname="e" />
+                              <note dur="8" oct="3" pname="g" />
+                              <note dur="8" oct="3" pname="b" />
+                           </beam>
+                           <beam staff="1">
+                              <note dur="8" oct="4" pname="e" staff="1" />
+                              <note dur="8" oct="4" pname="g" staff="1" />
+                              <note xml:id="nwv4568d" dur="8" oct="4" pname="b" staff="1" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <slur startid="#nghq3734" endid="#nwv4568d" curvedir="mixed" />
+                  </measure>
+                  <measure right="dbl">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="nsh8ep2f" dur="8" oct="3" pname="e" staff="2" />
+                              <note dur="8" oct="3" pname="g" staff="2" />
+                              <note dur="8" oct="3" pname="b" staff="2" />
+                           </beam>
+                           <beam staff="1">
+                              <note dur="8" oct="4" pname="e" />
+                              <note dur="8" oct="4" pname="g" />
+                              <note xml:id="nm28alw0" dur="8" oct="4" pname="b" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mSpace />
+                        </layer>
+                     </staff>
+                     <slur startid="#nsh8ep2f" endid="#nm28alw0" curvedir="mixed" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
