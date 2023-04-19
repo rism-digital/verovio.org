@@ -31,6 +31,13 @@
             </source>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.8.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
    </meiHead>
    <music>
       <body>
@@ -105,7 +112,7 @@
                   </measure>
                </section>
                <section xml:id="s1b8d9p" restart="true">
-                  <measure>
+                  <measure right="invis">
                      <staff n="1">
                         <layer n="1">
                            <chord dur="4">
@@ -124,7 +131,7 @@
                   </measure>
                </section>
                <section xml:id="s2egcme" restart="true">
-                  <measure>
+                  <measure right="invis">
                      <staff n="1">
                         <layer n="1">
                            <chord dur="4">
