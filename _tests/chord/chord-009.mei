@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Cluster chords</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2023-04-20">2023-04-20</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>
+               <p>Verovio draws rectangular tone clusters.</p>
+            </annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.16.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.sym="common" key.sig="0" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                           </chord>
+                           <chord dur="4" cluster="white">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                           </chord>
+                           <chord dur="4" cluster="black">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="c" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="e" />
+                           </chord>
+                           <chord dur="4" cluster="chromatic">
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="c" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="e" />
+                              <note oct="5" pname="f" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="2" cluster="black">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="c" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="e" />
+                           </chord>
+                           <chord dur="2" cluster="white">
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="c" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="e" />
+                              <note oct="5" pname="f" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="1" cluster="chromatic">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="f" />
+                              <note oct="4" pname="g" />
+                              <note oct="4" pname="a" />
+                              <note oct="4" pname="b" />
+                              <note oct="5" pname="c" />
+                              <note oct="5" pname="d" />
+                              <note oct="5" pname="e" />
+                              <note oct="5" pname="f" />
+                              <note oct="5" pname="g" />
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
