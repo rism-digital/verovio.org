@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Laissez Vibrer</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">Enote GmbH</corpName>
+            </respStmt>
+            <date isodate="2021-07-01">2021-07-01</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2283" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports the lv element when used like ties.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.5.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <chord dur="4">
+                              <note xml:id="n1tuq93d" oct="5" pname="a" />
+                              <note xml:id="nciq2mh" oct="6" pname="d" />
+                              <note xml:id="nv4fpxf" oct="6" pname="f" />
+                              <note xml:id="ndc9tyk" oct="6" pname="a" />
+                           </chord>
+                           <rest dur="4" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="4" />
+                           <chord dur="4">
+                              <note xml:id="nqgqi0" oct="4" pname="c" />
+                              <note xml:id="n1tlo9m4" oct="4" pname="d" />
+                              <note xml:id="ngzt3e1" oct="4" pname="f" />
+                              <note xml:id="nvuu01k" oct="4" pname="a" />
+                           </chord>
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <lv startid="#n1tuq93d" tstamp2="0m+3.0" />
+                     <lv startid="#nciq2mh" tstamp2="0m+3.0" />
+                     <lv startid="#nv4fpxf" tstamp2="0m+3.0" />
+                     <lv startid="#ndc9tyk" tstamp2="0m+3.0" />
+                     <lv startid="#nqgqi0" tstamp2="0m+3.0" />
+                     <lv startid="#n1tlo9m4" tstamp2="0m+3.0" />
+                     <lv startid="#ngzt3e1" tstamp2="0m+3.0" />
+                     <lv startid="#nvuu01k" tstamp2="0m+3.0" />
+                  </measure>
+                  <measure right="end" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="4" />
+                           <beam>
+                              <chord dur="8">
+                                 <note oct="5" pname="a" />
+                                 <note oct="6" pname="d" />
+                                 <note oct="6" pname="f" />
+                                 <note oct="6" pname="a" />
+                              </chord>
+                              <chord dur="8">
+                                 <note oct="5" pname="a" />
+                                 <note oct="6" pname="d" />
+                                 <note oct="6" pname="f" />
+                                 <note oct="6" pname="a" />
+                              </chord>
+                           </beam>
+                           <chord dur="8">
+                              <note xml:id="n1awfa10" oct="5" pname="a" />
+                              <note xml:id="nxqqg27" oct="6" pname="d" />
+                              <note xml:id="n1l7h763" oct="6" pname="f" />
+                              <note xml:id="n1osb8h3" oct="6" pname="a" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                        <layer n="2">
+                           <rest dur="4" />
+                           <chord dots="1" dur="4">
+                              <note xml:id="n171q2xw" oct="4" pname="c" />
+                              <note xml:id="n1rb8tvq" oct="4" pname="d" />
+                              <note xml:id="n1h2en3w" oct="4" pname="f" />
+                              <note xml:id="n1ymbffp" oct="4" pname="a" />
+                           </chord>
+                           <rest dur="8" />
+                        </layer>
+                     </staff>
+                     <lv startid="#n1awfa10" tstamp2="0m+3.6" />
+                     <lv startid="#nxqqg27" tstamp2="0m+3.6" />
+                     <lv startid="#n1l7h763" tstamp2="0m+3.6" />
+                     <lv startid="#n1osb8h3" tstamp2="0m+3.6" />
+                     <lv startid="#n171q2xw" tstamp2="0m+3.0" />
+                     <lv startid="#n1rb8tvq" tstamp2="0m+3.0" />
+                     <lv startid="#n1h2en3w" tstamp2="0m+3.0" />
+                     <lv startid="#n1ymbffp" tstamp2="0m+3.0" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
