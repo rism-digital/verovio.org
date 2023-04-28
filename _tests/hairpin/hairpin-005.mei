@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Hairpin example with niente circle</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+               <corpName role="funder">eNote GmbH</corpName>
+            </respStmt>
+            <date isodate="2023-04-28">2023-04-28</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio draws "al niente" hairpins with a small circle.</annot>
+         </notesStmt>
+         <sourceDesc>
+            <source>
+               <bibl>Behind Bars, p. 108, example 3</bibl>
+            </source>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.16.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="1" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n13spws0" dur="4" oct="4" stem.dir="up" />
+                           <bTrem>
+                              <note xml:id="nhue6vb" dur="2" oct="4" stem.dir="up" stem.mod="3slash" />
+                           </bTrem>
+                        </layer>
+                     </staff>
+                     <tie startid="#n13spws0" endid="#nhue6vb" />
+                     <tie startid="#nhue6vb" endid="#n1g2ikqo" />
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="1m+1.0000" form="cres" niente="true" opening="1.5000vu" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1g2ikqo" dur="4" oct="4" stem.dir="up" />
+                           <rest dur="4" />
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <dynam staff="1" tstamp="1.000000">p</dynam>
+                     <hairpin staff="1" tstamp="1.000000" tstamp2="0m+2.0000" form="dim" niente="true" opening="3.0000vu" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
