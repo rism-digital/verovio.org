@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Harm aligned labels</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-06-02" />
+         </pubStmt>
+         <notesStmt>
+            <annot>Sufficient horizontal space for harm right aligned labels.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="3.16.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig pname="a" mode="major" sig="3s" />
+                        <meterSig count="4" sym="common" unit="4" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="F" line="4" />
+                        <keySig pname="a" mode="major" sig="3s" />
+                        <meterSig count="4" sym="common" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="a" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid.ges="s" />
+                        </layer>
+                        <layer n="2">
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="3" pname="g" accid.ges="s" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <harm type="key-label" place="below" staff="2" tstamp="1.000000" n="1">
+                        <rend halign="right" fontweight="bold">VERY LONG LABEL:</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="1.000000" n="1">
+                        <rend>I</rend>
+                     </harm>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="a" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" accid.ges="n" />
+                           <note dur="4" oct="4" pname="a" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" accid.ges="s" />
+                           <beam>
+                              <note dur="8" oct="4" pname="c" accid.ges="s" />
+                              <note dur="8" oct="3" pname="b" accid.ges="n" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="a" accid.ges="n" />
+                              <note dur="8" oct="3" pname="g" accid.ges="s" />
+                           </beam>
+                           <note dur="4" oct="3" pname="f" accid.ges="s" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="3" pname="f" accid.ges="s" />
+                           <note dur="4" oct="3" pname="c" accid.ges="s" />
+                           <note dur="4" oct="3" pname="d" accid.ges="n" />
+                           <note dur="4" oct="3" pname="d" accid="s" />
+                        </layer>
+                     </staff>
+                     <harm place="below" staff="2" tstamp="1.000000" n="1">
+                        <rend>vi</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.000000" n="1">
+                        <rend>I<rend rend="sub">6</rend>
+                        </rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="3.000000" n="1">
+                        <rend>IV</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="4.000000" n="1">
+                        <rend>V<rend rend="sub">6</rend>/V</rend>
+                     </harm>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="g" accid="n" />
+                           <note dur="4" oct="4" pname="f" accid.ges="s" />
+                           <note xml:id="note-L24F4" dur="4" oct="4" pname="e" accid.ges="n" />
+                           <note dur="4" oct="4" pname="b" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                           <note dur="4" oct="4" pname="d" accid="s" />
+                           <note dur="4" oct="3" pname="b" accid.ges="n" />
+                           <note dur="4" oct="4" pname="g" accid="s" />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <note dots="1" dur="4" oct="3" pname="b" accid.ges="n" />
+                           <note dur="8" oct="3" pname="a" accid.ges="n" />
+                           <note dur="4" oct="3" pname="g">
+                              <accid accid="s" func="caution" />
+                           </note>
+                           <note dur="4" oct="4" pname="e" accid.ges="n" />
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="3" pname="e" accid.ges="n" />
+                           <note dur="4" oct="2" pname="b" accid.ges="n" />
+                           <note xml:id="note-L24F3" dur="4" oct="2" pname="e" accid.ges="n" />
+                           <note dur="4" oct="3" pname="e" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <fermata staff="1" startid="#note-L24F4" place="above" />
+                     <fermata staff="2" startid="#note-L24F3" place="below" />
+                     <harm place="below" staff="2" tstamp="1.000000" n="1">
+                        <rend>v</rend>
+                     </harm>
+                     <harm type="key-label" place="below" staff="2" tstamp="2.000000" n="1">
+                        <rend halign="right" fontweight="bold">LABEL:</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.000000" n="1">
+                        <rend>V/V</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="2.500000" n="1">
+                        <rend>(V<rend rend="sub">7</rend>/V)</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="3.000000" n="1">
+                        <rend>V</rend>
+                     </harm>
+                     <harm type="key-label" place="below" staff="2" tstamp="4.000000" n="1">
+                        <rend halign="right" fontweight="bold">LABEL:</rend>
+                     </harm>
+                     <harm place="below" staff="2" tstamp="4.000000" n="1">
+                        <rend>I</rend>
+                     </harm>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
