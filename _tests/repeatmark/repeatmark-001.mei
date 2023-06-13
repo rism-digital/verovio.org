@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0.0-dev">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title>Repeat marks example</title>
+            </titleStmt>
+            <pubStmt>
+                <date isodate="2023-06-13" />
+            </pubStmt>
+            <seriesStmt>
+                <title>Verovio test suite</title>
+            </seriesStmt>
+            <notesStmt>
+                <annot>Verovio supports default repeat marks encoded with repeatMark@func.</annot>
+            </notesStmt>
+        </fileDesc>
+        <encodingDesc>
+            <appInfo>
+                <application version="3.16.0" label="1">
+                    <name>Verovio</name>
+                </application>
+            </appInfo>
+        </encodingDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef keysig="4f" meter.sym="common">
+                        <staffGrp>
+                            <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure n="1">
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest />
+                                </layer>
+                            </staff>
+                            <repeatMark tstamp="0.0" staff="1" func="coda"/>
+                        </measure>
+                        <measure n="4">
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest />
+                                </layer>
+                            </staff>
+                            <repeatMark tstamp="0.0" staff="1" func="segno"/>
+                        </measure>
+                        <measure n="2">
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest />
+                                </layer>
+                            </staff>
+                            <repeatMark tstamp="0.0" staff="1" func="daCapo"/>
+                        </measure>
+                        <measure n="5">
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest />
+                                </layer>
+                            </staff>
+                            <repeatMark tstamp="0.0" staff="1" func="dalSegno"/>
+                        </measure>
+                        <measure n="5" right="dbl">
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest />
+                                </layer>
+                            </staff>
+                            <repeatMark tstamp="0.0" staff="1" func="fine"/>
+                        </measure>
+                        <measure right="end" n="2">
+                            <staff n="1">
+                                <layer n="1">
+                                    <mRest />
+                                </layer>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>
