@@ -18,7 +18,7 @@
                 <title>Verovio test suite</title>
             </seriesStmt>
             <notesStmt>
-                <annot>Arpeggio signs shoould precede any accidentals, and must come after a barline.</annot>
+                <annot>Arpeggio signs should precede any accidentals, and must come after a bar line.</annot>
             </notesStmt>
             <sourceDesc>
                 <source>
