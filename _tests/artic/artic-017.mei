@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
    <meiHead>
       <fileDesc>
@@ -36,9 +36,9 @@
       <body>
          <mdiv n="1">
             <score>
-               <scoreDef key.mode="major" key.pname="e" key.sig="3f">
+               <scoreDef key.mode="major" key.pname="e" keysig="3f">
                   <staffGrp bar.thru="true" symbol="none">
-                     <staffDef n="5" lines="5" trans.diat="2" trans.semi="3" clef.shape="G" clef.line="2" key.sig="0">
+                     <staffDef n="5" lines="5" trans.diat="2" trans.semi="3" clef.shape="G" clef.line="2" keysig="0">
                         <label>Clarini<lb /> in Mi♭/Es</label>
                      </staffDef>
                   </staffGrp>
