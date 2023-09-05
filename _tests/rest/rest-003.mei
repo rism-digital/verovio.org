@@ -29,7 +29,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef key.sig="0" meter.count="4" meter.unit="4">
+               <scoreDef keysig="0" meter.count="4" meter.unit="4">
                   <staffGrp>
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>

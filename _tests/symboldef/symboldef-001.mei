@@ -29,7 +29,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef key.sig="2s" meter.sym="common">
+               <scoreDef keysig="2s" meter.sym="common">
                   <symbolTable>
                      <symbolDef xml:id="curlew-sign">
                         <graphic width="50px" height="14px" target="https://smufl-browser.edirom.de/curlewSign.svg" ulx="0" uly="0"></graphic>

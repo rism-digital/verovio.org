@@ -33,7 +33,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef n="1" key.mode="major" key.pname="f" key.sig="1f" meter.count="3" meter.unit="8">
+               <scoreDef n="1" key.mode="major" key.pname="f" keysig="1f" meter.count="3" meter.unit="8">
                   <staffGrp bar.thru="true" symbol="bracket">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
                         <label>Flauto I, II</label>

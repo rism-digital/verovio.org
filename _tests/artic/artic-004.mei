@@ -32,8 +32,8 @@
             <score>
                <scoreDef midi.bpm="240.000000">
                   <staffGrp bar.thru="true" symbol="brace">
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
-                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" meter.count="4" meter.unit="4" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="2s" meter.count="4" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" keysig="2s" meter.count="4" meter.unit="4" />
                   </staffGrp>
                </scoreDef>
                <section>

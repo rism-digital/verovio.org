@@ -18,7 +18,7 @@
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>Verovio renders key signatures encoded with keyAccid with @glyph.num or @glyph.name.</annot>
+            <annot>Verovio renders keysignatures encoded with keyAccid with @glyph.num or @glyph.name.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -33,7 +33,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef midi.bpm="400" key.mode="aeolian" key.sig="5f" keysig.showchange="false">
+               <scoreDef midi.bpm="400" key.mode="aeolian" keysig="5f" keysig.cancelaccid="none">
                   <staffGrp bar.thru="false">
                      <staffDef n="1" lines="5" meter.count="4" meter.unit="2">
                         <label>Canto</label>

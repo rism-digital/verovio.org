@@ -36,10 +36,10 @@
             <score>
                <scoreDef midi.bpm="108">
                   <staffGrp bar.thru="true" symbol="brace">
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" keysig="3f" meter.count="2" meter.unit="4">
                         <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78.00%" />
                      </staffDef>
-                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4">
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" keysig="3f" meter.count="2" meter.unit="4">
                         <instrDef midi.channel="1" midi.instrnum="0" midi.volume="78.00%" />
                      </staffDef>
                   </staffGrp>

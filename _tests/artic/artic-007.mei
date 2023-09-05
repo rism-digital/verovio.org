@@ -35,7 +35,7 @@
                <scoreDef>
                   <staffGrp>
                      <staffGrp bar.thru="true">
-                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="3f" meter.count="2" meter.unit="4" />
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" keysig="3f" meter.count="2" meter.unit="4" />
                      </staffGrp>
                   </staffGrp>
                </scoreDef>

@@ -29,7 +29,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef key.sig="2s" meter.sym="common">
+               <scoreDef keysig="2s" meter.sym="common">
                   <symbolTable>
                      <symbolDef xml:id="custom-trill">
                         <svg xmlns="http://www.w3.org/2000/svg" width="19px" height="26px" viewBox="0 0 270 365">

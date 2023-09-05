@@ -32,11 +32,11 @@
             <score>
                <scoreDef>
                   <staffGrp symbol="bracket">
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
-                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
-                     <staffDef n="3" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
-                     <staffDef n="4" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
-                     <staffDef n="5" lines="5" clef.shape="F" clef.line="4" key.sig="1f" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="1f" />
+                     <staffDef n="2" lines="5" clef.shape="G" clef.line="2" keysig="1f" />
+                     <staffDef n="3" lines="5" clef.shape="G" clef.line="2" keysig="1f" />
+                     <staffDef n="4" lines="5" clef.shape="G" clef.line="2" keysig="1f" />
+                     <staffDef n="5" lines="5" clef.shape="F" clef.line="4" keysig="1f" />
                   </staffGrp>
                </scoreDef>
                <section>

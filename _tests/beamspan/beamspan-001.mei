@@ -36,7 +36,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef midi.bpm="120" key.mode="major" key.sig="2f" meter.count="4" meter.unit="2" meter.sym="common">
+               <scoreDef midi.bpm="120" key.mode="major" keysig="2f" meter.count="4" meter.unit="2" meter.sym="common">
                   <staffGrp symbol="brace" bar.thru="true">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
                         <instrDef midi.channel="0" midi.instrnum="0" />

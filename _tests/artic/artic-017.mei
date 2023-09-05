@@ -36,9 +36,9 @@
       <body>
          <mdiv n="1">
             <score>
-               <scoreDef key.mode="major" key.pname="e" key.sig="3f">
+               <scoreDef key.mode="major" key.pname="e" keysig="3f">
                   <staffGrp bar.thru="true" symbol="none">
-                     <staffDef n="5" lines="5" trans.diat="2" trans.semi="3" clef.shape="G" clef.line="2" key.sig="0">
+                     <staffDef n="5" lines="5" trans.diat="2" trans.semi="3" clef.shape="G" clef.line="2" keysig="0">
                         <label>Clarini<lb /> in Mi♭/Es</label>
                      </staffDef>
                   </staffGrp>

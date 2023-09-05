@@ -34,7 +34,7 @@
             <score>
                <scoreDef>
                   <staffGrp symbol="bracket">
-                     <staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef label="Violino I" n="1" lines="5" clef.shape="G" clef.line="2" keysig="1f" />
                   </staffGrp>
                </scoreDef>
                <section>

@@ -36,7 +36,7 @@
       <body>
          <mdiv n="1">
             <score>
-               <scoreDef optimize="false" key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common">
+               <scoreDef optimize="false" key.mode="major" key.pname="c" keysig="0" meter.count="4" meter.unit="4" meter.sym="common">
                   <staffGrp bar.thru="false">
                      <staffGrp bar.thru="true" symbol="bracket">
                         <staffDef n="2" lines="5" clef.shape="G" clef.line="2">
@@ -47,7 +47,7 @@
                         </staffDef>
                      </staffGrp>
                      <staffGrp bar.thru="true" symbol="bracket">
-                        <staffDef n="4" lines="5" trans.diat="-7" trans.semi="-12" clef.shape="G" clef.line="2" key.sig="0">
+                        <staffDef n="4" lines="5" trans.diat="-7" trans.semi="-12" clef.shape="G" clef.line="2" keysig="0">
                            <label>Corni<lb /> in Do/C</label>
                         </staffDef>
                      </staffGrp>

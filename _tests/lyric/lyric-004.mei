@@ -37,9 +37,9 @@
             <score>
                <scoreDef meter.count="2" meter.unit="4">
                   <staffGrp symbol="bracket">
-                     <staffDef lyric.name="Helvetica" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s" />
-                     <staffDef lyric.style="italic" n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s" />
-                     <staffDef lyric.weight="bold" n="3" lines="5" clef.shape="G" clef.line="2" key.sig="2s" />
+                     <staffDef lyric.name="Helvetica" n="1" lines="5" clef.shape="G" clef.line="2" keysig="2s" />
+                     <staffDef lyric.style="italic" n="2" lines="5" clef.shape="G" clef.line="2" keysig="2s" />
+                     <staffDef lyric.weight="bold" n="3" lines="5" clef.shape="G" clef.line="2" keysig="2s" />
                   </staffGrp>
                </scoreDef>
                <section>

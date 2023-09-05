@@ -38,7 +38,7 @@
             <score>
                <scoreDef system.leftline="false">
                   <staffGrp>
-                     <staffDef n="1" lines="5" key.sig="4s" meter.count="4" meter.unit="4" meter.sym="common" />
+                     <staffDef n="1" lines="5" keysig="4s" meter.count="4" meter.unit="4" meter.sym="common" />
                   </staffGrp>
                </scoreDef>
                <section>

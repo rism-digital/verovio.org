@@ -38,7 +38,7 @@
             <score>
                <scoreDef midi.bpm="120.000000">
                   <staffGrp>
-                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" key.sig="1f" meter.count="4" meter.unit="4" meter.sym="common" />
+                     <staffDef n="1" lines="5" clef.shape="F" clef.line="4" keysig="1f" meter.count="4" meter.unit="4" meter.sym="common" />
                   </staffGrp>
                </scoreDef>
                <section>

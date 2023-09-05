@@ -36,7 +36,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef key.sig="2s" meter.count="6" meter.unit="8">
+               <scoreDef keysig="2s" meter.count="6" meter.unit="8">
                   <staffGrp>
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>

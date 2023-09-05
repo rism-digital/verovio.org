@@ -32,7 +32,7 @@
             <score>
                <scoreDef meter.sym="common">
                   <staffGrp n="1">
-                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="1f" />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="1f" />
                   </staffGrp>
                </scoreDef>
                <section>

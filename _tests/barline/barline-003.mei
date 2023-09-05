@@ -32,16 +32,16 @@
                <scoreDef meter.count="2" meter.unit="4">
                   <staffGrp bar.thru="false">
                      <staffGrp bar.thru="true" symbol="bracket">
-                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.sig="2s">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="2s">
                            <label>Violino I</label>
                         </staffDef>
-                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2" key.sig="2s">
+                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2" keysig="2s">
                            <label>Violino II</label>
                         </staffDef>
-                        <staffDef n="3" lines="5" clef.shape="C" clef.line="3" key.sig="2s">
+                        <staffDef n="3" lines="5" clef.shape="C" clef.line="3" keysig="2s">
                            <label>Viola</label>
                         </staffDef>
-                        <staffDef n="4" lines="5" clef.shape="F" clef.line="4" key.sig="2s">
+                        <staffDef n="4" lines="5" clef.shape="F" clef.line="4" keysig="2s">
                            <label>Violoncello</label>
                         </staffDef>
                      </staffGrp>

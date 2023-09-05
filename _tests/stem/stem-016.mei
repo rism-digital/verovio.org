@@ -32,7 +32,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef optimize="false" key.mode="major" key.pname="c" key.sig="0" meter.count="4" meter.unit="4" meter.sym="common">
+               <scoreDef optimize="false" key.mode="major" key.pname="c" keysig="0" meter.count="4" meter.unit="4" meter.sym="common">
                   <staffGrp bar.thru="false">
                      <staffDef n="2" lines="5" clef.shape="G" clef.line="2">
                         <label>Oboi</label>

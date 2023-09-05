@@ -39,19 +39,19 @@
                <scoreDef>
                   <staffGrp>
                      <staffGrp>
-                        <staffDef xml:id="staffDef-01" n="1" lines="5" clef.shape="G" clef.line="2" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef xml:id="staffDef-01" n="1" lines="5" clef.shape="G" clef.line="2" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Flutes</label>
                            <labelAbbr>Fl.</labelAbbr>
                         </staffDef>
-                        <staffDef xml:id="staffDef-02" n="2" lines="5" clef.shape="G" clef.line="2" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef xml:id="staffDef-02" n="2" lines="5" clef.shape="G" clef.line="2" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Oboes</label>
                            <labelAbbr>Ob.</labelAbbr>
                         </staffDef>
-                        <staffDef xml:id="staffDef-03" n="3" lines="5" trans.diat="-1.000000" trans.semi="-2.000000" clef.shape="G" clef.line="2" key.sig="5s" meter.count="3" meter.unit="4">
+                        <staffDef xml:id="staffDef-03" n="3" lines="5" trans.diat="-1" trans.semi="-2" clef.shape="G" clef.line="2" keysig="5s" meter.count="3" meter.unit="4">
                            <label>Clarinets in B♭</label>
                            <labelAbbr>B♭ Cl.</labelAbbr>
                         </staffDef>
-                        <staffDef xml:id="staffDef-04" n="4" lines="5" clef.shape="F" clef.line="4" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef xml:id="staffDef-04" n="4" lines="5" clef.shape="F" clef.line="4" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Bassoons</label>
                            <labelAbbr>Bsn.</labelAbbr>
                         </staffDef>
@@ -62,38 +62,38 @@
                            <grpSym symbol="brace" />
                            <label>Horns in F</label>
                            <labelAbbr>F Hn.</labelAbbr>
-                           <staffDef n="5" lines="5" trans.diat="-4" trans.semi="-7" clef.shape="G" clef.line="2" key.sig="4s" meter.count="3" meter.unit="4" />
-                           <staffDef n="6" lines="5" trans.diat="-4" trans.semi="-7" clef.shape="G" clef.line="2" key.sig="4s" meter.count="3" meter.unit="4" />
+                           <staffDef n="5" lines="5" trans.diat="-4" trans.semi="-7" clef.shape="G" clef.line="2" keysig="4s" meter.count="3" meter.unit="4" />
+                           <staffDef n="6" lines="5" trans.diat="-4" trans.semi="-7" clef.shape="G" clef.line="2" keysig="4s" meter.count="3" meter.unit="4" />
                         </staffGrp>
-                        <staffDef n="7" lines="5" trans.diat="-1" trans.semi="-2" clef.shape="G" clef.line="2" key.sig="5s" meter.count="3" meter.unit="4">
+                        <staffDef n="7" lines="5" trans.diat="-1" trans.semi="-2" clef.shape="G" clef.line="2" keysig="5s" meter.count="3" meter.unit="4">
                            <label>Trumpets in B♭</label>
                            <labelAbbr>B♭ Tpt.</labelAbbr>
                         </staffDef>
                      </staffGrp>
                      <staffGrp symbol="bracket">
-                        <staffDef n="8" lines="5" clef.shape="F" clef.line="4" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef n="8" lines="5" clef.shape="F" clef.line="4" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Timpani</label>
                            <labelAbbr>Timp.</labelAbbr>
                         </staffDef>
                      </staffGrp>
                      <staffGrp symbol="bracket">
-                        <staffDef n="9" lines="5" clef.shape="G" clef.line="2" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef n="9" lines="5" clef.shape="G" clef.line="2" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Violins I</label>
                            <labelAbbr>Vln. I</labelAbbr>
                         </staffDef>
-                        <staffDef n="10" lines="5" clef.shape="G" clef.line="2" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef n="10" lines="5" clef.shape="G" clef.line="2" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Violins II</label>
                            <labelAbbr>Vln. II</labelAbbr>
                         </staffDef>
-                        <staffDef n="11" lines="5" clef.shape="C" clef.line="3" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef n="11" lines="5" clef.shape="C" clef.line="3" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Violas</label>
                            <labelAbbr>Vla.</labelAbbr>
                         </staffDef>
-                        <staffDef n="12" lines="5" clef.shape="F" clef.line="4" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef n="12" lines="5" clef.shape="F" clef.line="4" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Violoncellos</label>
                            <labelAbbr>Vc.</labelAbbr>
                         </staffDef>
-                        <staffDef n="13" lines="5" clef.shape="F" clef.line="4" key.sig="3s" meter.count="3" meter.unit="4">
+                        <staffDef n="13" lines="5" clef.shape="F" clef.line="4" keysig="3s" meter.count="3" meter.unit="4">
                            <label>Contrabasses</label>
                            <labelAbbr>Cb.</labelAbbr>
                         </staffDef>

@@ -33,7 +33,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef key.sig="0">
+               <scoreDef keysig="0">
                   <staffGrp n="1">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                   </staffGrp>
