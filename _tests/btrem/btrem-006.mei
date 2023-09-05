@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
    <meiHead>
       <fileDesc>
@@ -33,10 +33,10 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef key.mode="major" key.pname="a" key.sig="4f" meter.count="2" meter.unit="4">
+               <scoreDef key.mode="major" key.pname="a" keysig="4f" meter.count="2" meter.unit="4">
                   <staffGrp>
                      <staffGrp symbol="bracket">
-                        <staffDef n="4" lines="5" trans.semi="-9" clef.shape="G" clef.line="2" key.sig="0">
+                        <staffDef n="4" lines="5" trans.semi="-9" clef.shape="G" clef.line="2" keysig="0">
                            <label>Corni<lb /> in Mi♭/Es</label>
                         </staffDef>
                      </staffGrp>
