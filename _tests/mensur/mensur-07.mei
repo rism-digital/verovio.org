@@ -56,7 +56,7 @@
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" sign="O" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" dot="true" sign="O" />
                         <note dur="minima" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
@@ -98,7 +98,7 @@
                   </staff>
                   <staff n="2">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" sign="O" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" dot="true" sign="O" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
@@ -116,7 +116,7 @@
                   </staff>
                   <staff n="3">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" sign="O" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" dot="true" sign="O" />
                         <note dur="brevis" oct="4" pname="c" />
                         <note dur="brevis" oct="4" pname="c" />
                         <note dur="brevis" oct="4" pname="c" />
@@ -126,7 +126,7 @@
                   </staff>
                   <staff n="4">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" sign="O" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" dot="true" sign="O" />
                         <note dur="longa" oct="4" pname="c" />
                         <note dur="longa" oct="4" pname="c" />
                         <barLine />
@@ -134,7 +134,7 @@
                   </staff>
                   <staff n="5">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" sign="O" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="3" dot="true" sign="O" />
                         <note dur="maxima" oct="4" pname="c" />
                         <barLine />
                      </layer>
