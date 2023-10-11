@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Explicit mensur example</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2023-09-29" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Alignment with corresponding mensur</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>
+               <p>Modus maior imperfectus, modus minor imperfectus, tempus perfectum, prolatio minor</p>
+            </annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="4.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="200.000000">
+                  <staffGrp bar.thru="true" symbol="bracket">
+                     <staffDef n="1" notationtype="mensural.white" lines="5">
+                        <clef shape="C" line="3" />
+                     </staffDef>
+                     <staffDef n="2" notationtype="mensural.white" lines="5">
+                        <clef shape="C" line="3" />
+                     </staffDef>
+                     <staffDef n="3" notationtype="mensural.white" lines="5">
+                        <clef shape="C" line="3" />
+                     </staffDef>
+                     <staffDef n="4" notationtype="mensural.white" lines="5">
+                        <clef shape="C" line="3" />
+                     </staffDef>
+                     <staffDef n="5" notationtype="mensural.white" lines="5">
+                        <clef shape="C" line="3" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <barLine />
+                     </layer>
+                  </staff>
+                  <staff n="2">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine />
+                     </layer>
+                  </staff>
+                  <staff n="3">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine />
+                     </layer>
+                  </staff>
+                  <staff n="4">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <barLine />
+                     </layer>
+                  </staff>
+                  <staff n="5">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <note dur="maxima" oct="4" pname="c" />
+                        <barLine />
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
