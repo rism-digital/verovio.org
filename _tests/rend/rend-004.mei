@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Letter spacing</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2023-12-11" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Letter spacing can be controlled with rend@letterspacing.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="4.1.0" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="1f" meter.count="4" meter.unit="4">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1312x8i" dur="4" oct="4" pname="f" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="a" />
+                           <note xml:id="n13uobqg" dur="4" oct="4" pname="b">
+                              <accid accid.ges="f" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <tempo startid="#n1312x8i" midi.bpm="63.000000">
+                        <rend>Normal spacing</rend>
+                     </tempo>
+                     <dir type="mscore-playtech-annotation" startid="#n13uobqg">
+                        <rend letterspacing="2.000000">wider</rend>
+                     </dir>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c" />
+                           <note xml:id="nwmr6bu" dur="4" oct="4" pname="b">
+                              <accid accid.ges="f" />
+                           </note>
+                           <note dur="4" oct="4" pname="a" />
+                           <note dur="4" oct="4" pname="g" />
+                        </layer>
+                     </staff>
+                     <dir type="mscore-playtech-annotation" startid="#nwmr6bu">
+                        <rend letterspacing="-0.200000">narrower spacing</rend>
+                     </dir>
+                  </measure>
+                  <measure right="end" n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="f" />
+                           <rest dur="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
