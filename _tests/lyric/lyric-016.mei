@@ -84,7 +84,11 @@
                               <accid accid.ges="f" />
                            </note>
                            <rest dur="4" />
-                           <note dur="4" oct="4" pname="g" />
+                           <note xml:id="nnw3qi6" dur="4" oct="4" pname="g">
+                              <verse n="1">
+                                 <syl letterspacing="-0.200000" con="u" wordpos="t">er</syl>
+                              </verse>
+                           </note>
                         </layer>
                      </staff>
                   </measure>
