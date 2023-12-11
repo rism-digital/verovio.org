@@ -5,29 +5,24 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Cue with lyrics</title>
+            <title>Letter spacing in lyrics</title>
             <respStmt>
-               <persName role="composer">Johannes Brahms</persName>
-               <persName role="encoder">Klaus Rettinghaus</persName>
-               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Laurent Pugin</persName>
             </respStmt>
          </titleStmt>
          <pubStmt>
-            <date isodate="2022-02-08" type="encoding-date">2022-02-08</date>
-            <pubPlace>
-               <ref target="https://github.com/rism-digital/verovio/issue/2625" />
-            </pubPlace>
+            <date isodate="2023-12-11" />
          </pubStmt>
          <seriesStmt>
             <title>Verovio test suite</title>
          </seriesStmt>
          <notesStmt>
-            <annot>When a note is marked as cue note, lyrics are expected to have reduced size too.</annot>
+            <annot>Letter spacing in lyrics can be controlled with syl@letterspacing. The value should be given as MEI vu.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="3.9.0" label="0">
+            <application version="4.1.0" label="0">
                <name>Verovio</name>
             </application>
          </appInfo>
@@ -35,79 +30,69 @@
    </meiHead>
    <music>
       <body>
-         <mdiv xml:id="mhi7eim">
-            <score xml:id="s4aziq2">
-               <scoreDef xml:id="s707mxc">
-                  <pgHead xml:id="p16xez5o" func="first">
-                     <rend xml:id="r1qwja0d" halign="center" valign="top">
-                        <rend xml:id="rqshk0g" type="title" fontsize="x-large">Untitled score</rend>
-                        <lb xml:id="lomzb8u" />
-                        <rend xml:id="r1ob77lz" type="subtitle" fontsize="large">Subtitle</rend>
-                     </rend>
-                     <rend xml:id="rx7l2ih" halign="right" valign="bottom">
-                        <rend xml:id="r17khdw9" type="composer">Composer / arranger</rend>
-                     </rend>
-                  </pgHead>
-                  <staffGrp xml:id="szlez9">
-                     <staffDef xml:id="s1jdruzw" n="1" lines="5" keysig="1f" meter.count="4" meter.unit="4">
-                        <label xml:id="l112oa7f">Alto</label>
-                        <labelAbbr xml:id="lzwxbfe">A.</labelAbbr>
-                        <clef xml:id="cw5oye6" shape="G" line="2" />
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="1f" meter.count="4" meter.unit="4">
+                        <label>Alto</label>
+                        <labelAbbr>A.</labelAbbr>
+                        <clef shape="G" line="2" />
                      </staffDef>
                   </staffGrp>
                </scoreDef>
-               <section xml:id="s1wvckvx">
-                  <measure xml:id="mpdzwhu" n="1">
-                     <staff xml:id="s1h3d79m" n="1">
-                        <layer xml:id="lpzdy77" n="1">
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
                            <note xml:id="n123yyhr" dur="4" oct="4" pname="f">
-                              <verse xml:id="v1c071kr" n="1">
-                                 <syl xml:id="s1cj9a4z" con="d" wordpos="i">Nor</syl>
+                              <verse n="1">
+                                 <syl con="d" wordpos="i">Nor</syl>
                               </verse>
                            </note>
                            <note xml:id="nfbyegi" dur="4" oct="4" pname="g">
-                              <verse xml:id="v19upbyx" n="1">
-                                 <syl xml:id="sy4c8d" wordpos="t">mal</syl>
+                              <verse n="1">
+                                 <syl wordpos="t">mal</syl>
                               </verse>
                            </note>
                            <note xml:id="n1307hjq" dur="4" oct="4" pname="a">
-                              <verse xml:id="v5sixcl" n="1">
-                                 <syl xml:id="sdoey32" letterspacing="2.000000" con="d" wordpos="i">wid</syl>
+                              <verse n="1">
+                                 <syl letterspacing="2.000000" con="d" wordpos="i">wid</syl>
                               </verse>
                            </note>
                            <note xml:id="n1l7mqx4" dur="4" oct="4" pname="b">
-                              <verse xml:id="v1lss1k5" n="1">
-                                 <syl xml:id="sjzv8n7" letterspacing="2.000000" wordpos="t">der</syl>
+                              <verse n="1">
+                                 <syl letterspacing="2.000000" wordpos="t">der</syl>
                               </verse>
-                              <accid xml:id="a134mn5f" accid.ges="f" />
+                              <accid accid.ges="f" />
                            </note>
                         </layer>
                      </staff>
                   </measure>
-                  <measure xml:id="m1sac6ov" n="2">
-                     <staff xml:id="sv3ebh3" n="1">
-                        <layer xml:id="lud9ngu" n="1">
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
                            <note xml:id="n1x8gfg1" dur="4" oct="5" pname="c">
-                              <verse xml:id="v13er4uq" n="1">
-                                 <syl xml:id="s1w8ccbh" letterspacing="-0.200000" con="d" wordpos="i">nar</syl>
+                              <verse n="1">
+                                 <syl letterspacing="-0.200000" con="d" wordpos="i">nar</syl>
                               </verse>
                            </note>
                            <note xml:id="n1tuzjas" dur="4" oct="4" pname="b">
-                              <verse xml:id="v1qs3afz" n="1">
-                                 <syl xml:id="sa0w0a" letterspacing="-0.200000" con="d" wordpos="m">row</syl>
+                              <verse n="1">
+                                 <syl letterspacing="-0.200000" con="d" wordpos="m">row</syl>
                               </verse>
-                              <accid xml:id="a1j3i627" accid.ges="f" />
+                              <accid accid.ges="f" />
                            </note>
-                           <rest xml:id="rhi7eim" dur="4" />
-                           <note xml:id="npln01p" dur="4" oct="4" pname="g" />
+                           <rest dur="4" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure xml:id="mdh4z9k" right="end" n="3">
-                     <staff xml:id="s17q0103" n="1">
-                        <layer xml:id="l10wuc0a" n="1">
+                  <measure right="end" n="3">
+                     <staff n="1">
+                        <layer n="1">
                            <note xml:id="n6lxgga" dur="2" oct="4" pname="f" />
-                           <rest xml:id="r1o7y0zb" dur="2" />
+                           <rest dur="2" />
                         </layer>
                      </staff>
                   </measure>
