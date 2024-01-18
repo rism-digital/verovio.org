@@ -34,7 +34,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef midi.bpm="120" key.mode="major" key.sig="2f" meter.count="4" meter.unit="4" meter.sym="common">
+               <scoreDef midi.bpm="120" key.mode="major" keysig="2f" meter.count="4" meter.unit="4" meter.sym="common">
                   <staffGrp bar.thru="true" symbol="brace">
                      <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
                         <instrDef midi.channel="0" midi.instrnum="0" />
@@ -45,7 +45,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <scoreDef key.sig="0" />
+                  <scoreDef keysig="0" />
                   <measure metcon="false" n="221">
                      <staff n="1">
                         <layer n="1">
