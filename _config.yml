@@ -16,6 +16,7 @@ plugins:
   - jekyll-seo-tag
 
 remote_theme: rism-digital/verovio-theme
+#theme: verovio-theme
 
 twitter: card
 
