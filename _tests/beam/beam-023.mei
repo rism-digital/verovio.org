@@ -38,7 +38,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef meter.count="7" meter.unit="8" meter.form="invis">
+               <scoreDef meter.count="7" meter.unit="8" meter.visible="false">
                   <staffGrp>
                      <staffDef n="1" lines="5" />
                   </staffGrp>
