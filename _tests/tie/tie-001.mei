@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0" ?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron" ?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
   <meiHead>
     <fileDesc>
       <titleStmt>
@@ -31,8 +31,8 @@
         <score>
           <scoreDef meter.count="4" meter.unit="4">
             <staffGrp label="Piano" symbol="brace" n="1">
-              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" key.sig="1s" />
-              <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" key.sig="1s" />
+              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" key.mode="major" keysig="1s" />
+              <staffDef n="2" lines="5" clef.shape="F" clef.line="4" key.mode="major" keysig="1s" />
             </staffGrp>
           </scoreDef>
           <section>
