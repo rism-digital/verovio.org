@@ -43,7 +43,7 @@
                             </staff>
                             <repeatMark tstamp="0.0" staff="1" func="coda"/>
                         </measure>
-                        <measure n="4">
+                        <measure n="2">
                             <staff n="1">
                                 <layer n="1">
                                     <mRest />
@@ -51,7 +51,7 @@
                             </staff>
                             <repeatMark tstamp="0.0" staff="1" func="segno"/>
                         </measure>
-                        <measure n="2">
+                        <measure n="3">
                             <staff n="1">
                                 <layer n="1">
                                     <mRest />
@@ -59,7 +59,7 @@
                             </staff>
                             <repeatMark tstamp="0.0" staff="1" func="daCapo"/>
                         </measure>
-                        <measure n="5">
+                        <measure n="4">
                             <staff n="1">
                                 <layer n="1">
                                     <mRest />
