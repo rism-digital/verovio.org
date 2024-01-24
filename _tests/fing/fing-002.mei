@@ -38,8 +38,8 @@
             <score>
                <scoreDef>
                   <staffGrp bar.thru="true" symbol="brace">
-                     <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" key.sig="3f" meter.sym="common" />
-                     <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" key.sig="3f" meter.sym="common" />
+                     <staffDef n="1" lines="5" ppq="4" clef.shape="G" clef.line="2" keysig="3f" meter.sym="common" />
+                     <staffDef n="2" lines="5" ppq="4" clef.shape="F" clef.line="4" keysig="3f" meter.sym="common" />
                   </staffGrp>
                </scoreDef>
                <section>
