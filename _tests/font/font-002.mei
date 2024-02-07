@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Using a cutom font and selecting a fallback</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-02-07" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>A custom font can be loaded with --font-add-custom and the fallback changed with --font-fallback.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="4.2.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "font": "GoldenAge", "fontAddCustom": ["https://www.verovio.org/examples/fonts/custom/GoldenAge.txt"], "fontFallback": "Bravura" }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="112.000000">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" color="olive" line="2" fontname="Petaluma" />
+                        <keySig mode="major" sig="3s" pname="a" />
+                        <meterSig enclose="brack" count="3" sym="common" unit="8" fontname="Petaluma" color="olive" />
+                     </staffDef>
+                     <staffDef n="2" lines="5">
+                        <clef shape="G" line="2" />
+                        <keySig mode="major" sig="3s" pname="a" />
+                        <meterSig count="3" unit="8" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="15">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note xml:id="note-L9F2" dur="16" oct="5" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="g" accid.ges="s" />
+                              <note dur="16" oct="5" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="d" accid="s" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="8" />
+                           <rest dur="8" />
+                           <clef shape="G" line="2" />
+                           <note dur="8" oct="4" pname="a" accid.ges="n">
+                              <artic artic="stacciss" />
+                           </note>
+                        </layer>
+                     </staff>
+                     <dynam place="between" staff="1 2" tstamp="1.000000">mezzo f</dynam>
+                     <slur staff="1" startid="#note-L9F2" endid="#note-L22F2" />
+                  </measure>
+                  <measure n="16">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="5" pname="e" accid.ges="n" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="f" accid.ges="s" />
+                              <note dur="16" oct="4" pname="b" accid.ges="n" />
+                              <note dur="16" oct="5" pname="g" accid.ges="s" />
+                              <note xml:id="note-L22F2" dur="16" oct="4" pname="b" accid.ges="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="4" pname="g" accid.ges="s">
+                                 <artic artic="stacciss" />
+                              </note>
+                              <note dur="8" oct="4" pname="f" accid.ges="s">
+                                 <artic artic="stacciss" />
+                              </note>
+                              <note dur="8" oct="4" pname="e" accid.ges="n">
+                                 <artic artic="stacciss" />
+                              </note>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
