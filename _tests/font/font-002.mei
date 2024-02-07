@@ -41,7 +41,7 @@
                         <meterSig enclose="brack" count="3" sym="common" unit="8" fontname="Petaluma" color="olive" />
                      </staffDef>
                      <staffDef n="2" lines="5">
-                        <clef shape="G" line="2" />
+                        <clef shape="F" line="4" />
                         <keySig mode="major" sig="3s" pname="a" />
                         <meterSig count="3" unit="8" />
                      </staffDef>
@@ -65,7 +65,7 @@
                         <layer n="1">
                            <rest dur="8" />
                            <rest dur="8" />
-                           <clef shape="G" line="2" />
+                           <clef shape="G" line="2" color="orange" />
                            <note dur="8" oct="4" pname="a" accid.ges="n">
                               <artic artic="stacciss" />
                            </note>
