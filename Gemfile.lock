@@ -56,11 +56,11 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    nokogiri (1.15.6-arm64-darwin)
+    nokogiri (1.16.5-arm64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.6-x86_64-darwin)
+    nokogiri (1.16.5-x86_64-darwin)
       racc (~> 1.4)
-    nokogiri (1.15.6-x86_64-linux)
+    nokogiri (1.16.5-x86_64-linux)
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
@@ -89,7 +89,7 @@ DEPENDENCIES
   jekyll (> 4.1.1)
   jekyll-remote-theme
   jekyll-seo-tag
-  nokogiri (~> 1.15)
+  nokogiri (~> 1.16)
   verovio-theme!
   webrick (~> 1.7)
 

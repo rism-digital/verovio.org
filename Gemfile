@@ -13,7 +13,7 @@ gem "verovio-theme", git: 'https://github.com/rism-digital/verovio-theme'
 #gem "verovio-theme", path: '/Users/laurent/Documents/verovio/verovio-theme'
 
 gem "webrick", "~> 1.7"
-gem "nokogiri", "~> 1.15"
+gem "nokogiri", "~> 1.16"
 gem "jekyll-remote-theme"
 
 group :jekyll_plugins do
