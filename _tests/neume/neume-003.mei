@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Neumes notation</title>
+            <respStmt>
+               <persName role="encoder">DDMAL</persName>
+               <persName role="editor">Yinan Zhou</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-05-29" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Rendering of neume notation without facsimile</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="4.3.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>      
+      <extMeta><![CDATA[ { "breaks": "encoded", "scale": 10 }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="neume" lines="4" clef.shape="C" clef.line="3" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <sb />
+                  <section type="neon-neume-line">
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="C" line="4" />
+                           <syllable>
+                              <syl >he</syl>
+                              <neume>
+                                 <nc oct="2" pname="d" tilt="n" />
+                                 <nc oct="2" pname="c" />
+                              </neume>
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc oct="2" pname="f" tilt="s" />
+                              </neume>
+                              <syl />
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc oct="2" pname="a" />
+                                 <nc oct="2" pname="g" tilt="se" />
+                                 <nc oct="2" pname="f" tilt="se" />
+                              </neume>
+                              <syl />
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc oct="2" pname="f" curve="a">
+                                    <liquescent />
+                                 </nc>
+                              </neume>
+                              <syl />
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc oct="2" pname="b" curve="c">
+                                    <liquescent />
+                                 </nc>
+                              </neume>
+                              <syl />
+                           </syllable>
+                           <divLine form="maxima" />
+                           <divLine form="maxima" />
+                           <accid accid="f" />
+                           <divLine form="maxima" />
+                           <syllable>
+                              <sy >in</sy>
+                              <neume>
+                                 <nc oct="2" pname="a" />
+                                 <nc oct="2" pname="b" />
+                                 <nc oct="2" pname="a" />
+                              </neume>
+                           </syllable>
+                           <custos oct="2" pname="f" />
+                        </layer>
+                     </staff>
+                  </section>
+                  <sb />
+                  <section type="neon-neume-line">
+                     <staff n="1">
+                        <layer n="1">
+                           <clef shape="F" line="4" />
+                           <syllable>
+                              <syl >tem</syl>
+                              <neume>
+                                 <nc oct="2" pname="b" tilt="n" />
+                                 <nc oct="2" pname="a" />
+                              </neume>
+                           </syllable>
+                           <divLine form="maxima" />
+                           <syllable>
+                              <syl >que</syl>
+                              <neume>
+                                 <nc oct="2" pname="a" />
+                              </neume>
+                           </syllable>
+                           <accid accid="n" />
+                           <custos oct="3" pname="c" />
+                        </layer>
+                     </staff>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

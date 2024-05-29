@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Neumes notation</title>
+            <respStmt>
+               <persName role="encoder">DDMAL</persName>
+               <persName role="editor">Yinan Zhou</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-05-29" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Rendering of neume notation with facsimile</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="4.3.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>      
+      <extMeta><![CDATA[ { "breaks": "encoded", "scale": 10 }]]></extMeta>
+   </meiHead>
+   <music>
+      <facsimile xml:id="m-5a58254a-8580-49cd-9bad-23381501407f" type="transcription">
+         <surface xml:id="m-07936488-2a37-4829-b18b-b44bd091a94b" lrx="4872" lry="6496">
+            <zone xml:id="m-1c9e019c-05df-4aa2-ab71-8ee5d031cdcc" lrx="3830" lry="712" rotate="0.734987" ulx="623" uly="498" />
+            <zone xml:id="m-ce74aa6e-471f-487e-9b94-9ce7289af7f2" lrx="662" lry="525" ulx="623" uly="498" />
+            <zone xml:id="m-c15e2322-bd9b-4d72-837b-66d4206d839c" lrx="753" lry="820" ulx="670" uly="673" />
+            <zone xml:id="m-798034aa-80da-46a5-afe5-6745a0567387" lrx="718" lry="687" ulx="679" uly="660" />
+            <zone xml:id="m-aad0fb4a-8437-4d62-bdf5-523cddec911e" lrx="739" lry="714" ulx="700" uly="687" />
+            <zone xml:id="m-35d490b5-e192-4aea-91e1-4b4a96d44e47" lrx="1379" lry="716" ulx="1365" uly="482" />
+            <zone xml:id="m-4a26ea6d-57c5-4abe-a044-e19218e496f7" lrx="1733" lry="711" ulx="1720" uly="487" />
+            <zone xml:id="m-b102226b-2e68-43e7-baf2-f0872e47b145" lrx="2025" lry="542" ulx="2016" uly="456" />
+            <zone xml:id="m-6ff3caed-62b0-4350-8db9-36eebceb3a4f" lrx="2174" lry="838" ulx="2089" uly="691" />
+            <zone xml:id="m-30cb5bce-a524-4b73-ad6b-460771fc2b07" lrx="2131" lry="597" ulx="2092" uly="570" />
+            <zone xml:id="m-5a2d7859-e709-4849-b4cf-8f55bc4bbfe7" lrx="2165" lry="571" ulx="2126" uly="544" />
+            <zone xml:id="m-fcfc9293-3e83-4bcf-a0e4-15b17ff48f79" lrx="2201" lry="598" ulx="2162" uly="571" />
+            <zone xml:id="m-f5f5415f-365f-4669-9865-a07bebf0e90c" lrx="3875" lry="674" ulx="3836" uly="647" />
+            <zone xml:id="m-5ffcb1da-a98c-47fc-93b4-eb2f6bbd59c6" lrx="3809" lry="1047" rotate="0.512844" ulx="626" uly="845" />
+            <zone xml:id="m-76d632c7-694f-48b9-afb9-48bfaba66144" lrx="772" lry="1154" ulx="633" uly="1029" />
+            <zone xml:id="m-48b35456-4c19-4ccd-8682-1d0441902392" lrx="660" lry="873" ulx="620" uly="845" />
+            <zone xml:id="m-4f016e77-c96b-4ec0-9a6c-d4d15ddf77f3" lrx="709" lry="985" ulx="669" uly="957" />
+            <zone xml:id="m-716a71fe-1256-40d2-b469-33155adcda80" lrx="741" lry="1013" ulx="701" uly="985" />
+            <zone xml:id="m-5bb8525b-6ba7-4564-b100-719e6e04be9c" lrx="798" lry="1068" ulx="783" uly="832" />
+            <zone xml:id="m-99ff6fbc-546e-4369-ab89-c6d1a4dcd5d0" lrx="1000" lry="1157" ulx="846" uly="1032" />
+            <zone xml:id="m-991fed61-92c0-4244-9f1a-98057d53ec5b" lrx="979" lry="1015" ulx="939" uly="987" />
+            <zone xml:id="zone-0000000341653099" lrx="2044" lry="556" ulx="2005" uly="529" />
+            <zone xml:id="zone-0000001606290321" lrx="1081" lry="997" ulx="1041" uly="969" />
+            <zone xml:id="z11mfqd6" lrx="835" lry="635" ulx="797" uly="608" />
+            <zone xml:id="z1h48aie" lrx="905" lry="888" ulx="816" uly="713" />
+            <zone xml:id="z1fdlcho" lrx="973" lry="588" ulx="935" uly="561" />
+            <zone xml:id="z1b8zu84" lrx="1003" lry="614" ulx="965" uly="587" />
+            <zone xml:id="z1be0o25" lrx="1094" lry="890" ulx="954" uly="715" />
+            <zone xml:id="z11l8qc6" lrx="1036" lry="640" ulx="998" uly="613" />
+            <zone xml:id="zf5krl" lrx="1166" lry="640" ulx="1128" uly="613" />
+            <zone xml:id="z1dhlw19" lrx="1236" lry="892" ulx="1147" uly="717" />
+            <zone xml:id="z1u35p60" lrx="1243" lry="567" ulx="1205" uly="540" />
+            <zone xml:id="z10g0pj6" lrx="1313" lry="892" ulx="1224" uly="717" />
+            <zone xml:id="zz68cdo" lrx="3822" lry="847" ulx="3782" uly="819" />
+         </surface>
+      </facsimile>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="neume" lines="4" clef.shape="C" clef.line="3" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb facs="#m-07936488-2a37-4829-b18b-b44bd091a94b" />
+                  <sb facs="#m-1c9e019c-05df-4aa2-ab71-8ee5d031cdcc" />
+                  <section type="neon-neume-line">
+                     <staff facs="#m-1c9e019c-05df-4aa2-ab71-8ee5d031cdcc" n="1">
+                        <layer n="1">
+                           <clef facs="#m-ce74aa6e-471f-487e-9b94-9ce7289af7f2" shape="C" line="4" />
+                           <syllable>
+                              <syl facs="#m-c15e2322-bd9b-4d72-837b-66d4206d839c">he</syl>
+                              <neume>
+                                 <nc facs="#m-798034aa-80da-46a5-afe5-6745a0567387" oct="2" pname="d" tilt="n" />
+                                 <nc facs="#m-aad0fb4a-8437-4d62-bdf5-523cddec911e" oct="2" pname="c" />
+                              </neume>
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc facs="#z11mfqd6" oct="2" pname="f" tilt="s" />
+                              </neume>
+                              <syl facs="#z1h48aie" />
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc facs="#z1fdlcho" oct="2" pname="a" />
+                                 <nc facs="#z1b8zu84" oct="2" pname="g" tilt="se" />
+                                 <nc facs="#z11l8qc6" oct="2" pname="f" tilt="se" />
+                              </neume>
+                              <syl facs="#z1be0o25" />
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc facs="#zf5krl" oct="2" pname="f" curve="a">
+                                    <liquescent />
+                                 </nc>
+                              </neume>
+                              <syl facs="#z1dhlw19" />
+                           </syllable>
+                           <syllable>
+                              <neume>
+                                 <nc facs="#z1u35p60" oct="2" pname="b" curve="c">
+                                    <liquescent />
+                                 </nc>
+                              </neume>
+                              <syl facs="#z10g0pj6" />
+                           </syllable>
+                           <divLine facs="#m-35d490b5-e192-4aea-91e1-4b4a96d44e47" form="maxima" />
+                           <divLine facs="#m-4a26ea6d-57c5-4abe-a044-e19218e496f7" form="maxima" />
+                           <accid facs="#zone-0000000341653099" accid="f" />
+                           <divLine facs="#m-b102226b-2e68-43e7-baf2-f0872e47b145" form="maxima" />
+                           <syllable>
+                              <syl facs="#m-6ff3caed-62b0-4350-8db9-36eebceb3a4f">in</syl>
+                              <neume>
+                                 <nc facs="#m-30cb5bce-a524-4b73-ad6b-460771fc2b07" oct="2" pname="a" />
+                                 <nc facs="#m-5a2d7859-e709-4849-b4cf-8f55bc4bbfe7" oct="2" pname="b" />
+                                 <nc facs="#m-fcfc9293-3e83-4bcf-a0e4-15b17ff48f79" oct="2" pname="a" />
+                              </neume>
+                           </syllable>
+                           <custos oct="2" pname="f" facs="#m-f5f5415f-365f-4669-9865-a07bebf0e90c" />
+                        </layer>
+                     </staff>
+                  </section>
+                  <sb facs="#m-5ffcb1da-a98c-47fc-93b4-eb2f6bbd59c6" />
+                  <section type="neon-neume-line">
+                     <staff facs="#m-5ffcb1da-a98c-47fc-93b4-eb2f6bbd59c6" n="1">
+                        <layer n="1">
+                           <clef facs="#m-48b35456-4c19-4ccd-8682-1d0441902392" shape="F" line="4" />
+                           <syllable>
+                              <syl facs="#m-76d632c7-694f-48b9-afb9-48bfaba66144">tem</syl>
+                              <neume>
+                                 <nc facs="#m-4f016e77-c96b-4ec0-9a6c-d4d15ddf77f3" oct="2" pname="b" tilt="n" />
+                                 <nc facs="#m-716a71fe-1256-40d2-b469-33155adcda80" oct="2" pname="a" />
+                              </neume>
+                           </syllable>
+                           <divLine facs="#m-5bb8525b-6ba7-4564-b100-719e6e04be9c" form="maxima" />
+                           <syllable>
+                              <syl facs="#m-99ff6fbc-546e-4369-ab89-c6d1a4dcd5d0">que</syl>
+                              <neume>
+                                 <nc facs="#m-991fed61-92c0-4244-9f1a-98057d53ec5b" oct="2" pname="a" />
+                              </neume>
+                           </syllable>
+                           <accid facs="#zone-0000001606290321" accid="n" />
+                           <custos oct="3" pname="c" facs="#zz68cdo" />
+                        </layer>
+                     </staff>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
