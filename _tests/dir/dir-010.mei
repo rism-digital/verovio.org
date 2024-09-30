@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Unicode support in text</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2017-04-27</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Dir with different unicode characters</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="unknown">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="c" />
+                           <note dur="2" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">A (1 byte)</dir>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="d" />
+                           <note dur="2" oct="4" pname="d" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">é (2 bytes)</dir>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="e" />
+                           <note dur="2" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">अ (3 bytes)</dir>
+                  </measure>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="2" oct="4" pname="f" />
+                           <note dur="2" oct="4" pname="f" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1.000000">𠜎 (4 bytes)</dir>
+                  </measure>
+                  
+                  
+                  
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
