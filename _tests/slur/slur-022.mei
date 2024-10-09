@@ -103,7 +103,6 @@
                      <slur startid="#nk08i18" endid="#nub8m7a" curvedir="above" />
                      <hairpin staff="1" tstamp="1.750000" tstamp2="0m+3.0000" form="cres" place="below" vgrp="86" />
                      <tie startid="#nusapwi" endid="#nwzlx40" />
-                     <slur startid="#n8uv6q1" endid="#n7pvsfy" curvedir="below" />
                   </measure>
                </section>
             </score>

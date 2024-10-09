@@ -24,9 +24,7 @@
             </application>
          </appInfo>
       </encodingDesc>
-      <extMeta>
-         <![CDATA[ { "dynamSingleGlyphs": true, "font": "Bravura" }]]>
-      </extMeta>
+      <extMeta><![CDATA[ { "dynamSingleGlyphs": true, "font": "Bravura" }]]></extMeta>
    </meiHead>
    <music>
       <body>

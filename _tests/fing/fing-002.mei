@@ -96,7 +96,6 @@
                            </beam>
                         </layer>
                      </staff>
-                     <slur startid="#note-m17-l3-1" endid="#note-m19-l3-1" curvedir="above" />
                      <tie startid="#note-m17-l2-1" endid="#note-m17-l2-4" curvedir="below" />
                      <tie startid="#note-m17-l2-2" endid="#note-m17-l1-1" curvedir="above" />
                      <tie startid="#note-m17-l2-3" endid="#note-m17-l2-5" curvedir="above" />

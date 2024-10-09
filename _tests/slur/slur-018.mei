@@ -107,7 +107,6 @@
                            </note>
                         </layer>
                      </staff>
-                     <slur startid="#note-0006-11260-10990-1" endid="#note-0006-9540-11480-1" curvedir="above" />
                      <slur startid="#note-0006-11130-11080-2" endid="#note-0006-11200-11080-2" curvedir="below" />
                      <slur startid="#note-0006-11330-11030-2" endid="#note-0006-11400-11050-2" curvedir="below" />
                      <slur startid="#note-0006-11130-11270-1" endid="#note-0006-11200-11270-1" />
