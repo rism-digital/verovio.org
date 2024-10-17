@@ -43,54 +43,54 @@
                         <syllable>
                            <syl con="d" wordpos="i">Be</syl>
                            <neume>
-                              <nc oct="2" pname="e" />
-                              <nc oct="2" pname="e" />
-                              <nc oct="2" pname="f" tilt="s" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="f" tilt="s" />
                            </neume>
                            <neume>
-                              <nc oct="2" pname="d" />
-                              <nc oct="2" pname="e" tilt="s" />
+                              <nc oct="3" pname="d" />
+                              <nc oct="3" pname="e" tilt="s" />
                            </neume>
                         </syllable>
                         <syllable>
                            <syl con="d" wordpos="m">ne</syl>
                            <neume>
-                              <nc oct="2" pname="g" />
-                              <nc oct="2" pname="a" tilt="s" />
+                              <nc oct="3" pname="g" />
+                              <nc oct="3" pname="a" tilt="s" />
                            </neume>
                            <neume>
-                              <nc oct="2" pname="g" tilt="n" />
-                              <nc oct="2" pname="e" />
+                              <nc oct="3" pname="g" tilt="n" />
+                              <nc oct="3" pname="e" />
                            </neume>
                         </syllable>
                         <syllable>
                            <syl wordpos="t">di</syl>
                            <neume>
-                              <nc oct="2" pname="f" curve="c">
+                              <nc oct="3" pname="f" curve="c">
                                  <liquescent />
                               </nc>
                            </neume>
                            <neume>
-                              <nc oct="2" pname="g" tilt="n" />
-                              <nc oct="2" pname="e" />
+                              <nc oct="3" pname="g" tilt="n" />
+                              <nc oct="3" pname="e" />
                            </neume>
                            <neume>
-                              <nc oct="2" pname="f" ligated="true" tilt="n" />
-                              <nc oct="2" pname="d" ligated="true" />
-                              <nc oct="2" pname="e" />
-                              <nc oct="2" pname="d" />
+                              <nc oct="3" pname="f" ligated="true" tilt="n" />
+                              <nc oct="3" pname="d" ligated="true" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="d" />
                            </neume>
                         </syllable>
                         <syllable>
                            <syl con="d" wordpos="i">ci</syl>
                            <neume>
-                              <nc oct="2" pname="g" />
+                              <nc oct="3" pname="g" />
                            </neume>
                         </syllable>
                         <syllable>
                            <syl wordpos="t">te</syl>
                            <neume>
-                              <nc oct="2" pname="g" />
+                              <nc oct="3" pname="g" />
                            </neume>
                         </syllable>
                      </layer>
