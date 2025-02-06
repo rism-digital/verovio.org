@@ -35,16 +35,16 @@
             <score>
                <scoreDef>
                   <staffGrp n="1" symbol="bracket">
-                     <staffDef n="1" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="2">
+                     <staffDef n="1" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="3">
                         <label>2a</label>
                      </staffDef>
-                     <staffDef n="2" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="2">
+                     <staffDef n="2" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="3">
                         <label>2b</label>
                      </staffDef>
-                     <staffDef n="3" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="2">
+                     <staffDef n="3" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="3">
                         <label>2c</label>
                      </staffDef>
-                     <staffDef n="4" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="2">
+                     <staffDef n="4" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="3" prolatio="2" tempus="3">
                         <label>ref</label>
                      </staffDef>
                   </staffGrp>
@@ -52,7 +52,7 @@
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" num="3"/>
+                        <mensur modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="O" num="3"/>
                         <note dur="longa" oct="4" pname="c"/>
                         <barLine form="dashed"/>
                         <note dur="brevis" oct="4" pname="c"/>
@@ -64,7 +64,7 @@
                   </staff>
                   <staff n="2">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" num="3"/>
+                        <mensur modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="O" num="3"/>
                         <note dur="longa" oct="4" pname="c"/>
                         <barLine form="dashed"/>
                         <note dur="semibrevis" oct="4" pname="c"/>
@@ -77,7 +77,7 @@
                   </staff>
                   <staff n="3">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" num="3"/>
+                        <mensur modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="O" num="3"/>
                         <note dur="longa" oct="4" pname="c"/>
                         <barLine form="dashed"/>
                         <note dur="semibrevis" oct="4" pname="c"/>
@@ -91,7 +91,7 @@
                   </staff>
                   <staff n="4">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" num="3"/>
+                        <mensur modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="O" num="3"/>
                         <!-- reference -->
                         <note dur="brevis" oct="4" pname="c"/>
                         <note dur="brevis" oct="4" pname="c"/>

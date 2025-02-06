@@ -38,7 +38,7 @@
                         <label>default</label>
                      </staffDef>
                      <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="2" notationtype="mensural" prolatio="2" tempus="3">
-                        <label>dotsOfAug</label>
+                        <label>dotOfAug</label>
                      </staffDef>
                      <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="3" notationtype="mensural" prolatio="2" tempus="3">
                         <label>dotOfPerf</label>

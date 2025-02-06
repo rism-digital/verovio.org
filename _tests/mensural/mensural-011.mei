@@ -46,55 +46,55 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                     <staff n="1">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- 4 Semibreves - Imperfection a.p.p. -->
-                           <note dur="brevis" oct="4" pname="c" color="violet"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="brevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- 4 Semibreves - EXCEPTION: Dot of Perfection - Imperfection a.p.a. -->
-                           <note dur="brevis" oct="4" pname="c"/>
-                           <dot/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="brevis" oct="4" pname="c" color="violet"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
-                     <staff n="3">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- reference -->
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
+                  <staff n="1">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- 4 Semibreves - Imperfection a.p.p. -->
+                        <note dur="brevis" oct="4" pname="c" color="violet"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="brevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
+                  <staff n="2">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- 4 Semibreves - EXCEPTION: Dot of Perfection - Imperfection a.p.a. -->
+                        <note dur="brevis" oct="4" pname="c"/>
+                        <dot/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="brevis" oct="4" pname="c" color="violet"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
+                  <staff n="3">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- reference -->
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
                </section>
             </score>
          </mdiv>

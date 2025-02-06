@@ -41,7 +41,7 @@
                         <label>dotOfPerf</label>
                      </staffDef>
                      <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="3" notationtype="mensural" prolatio="2" tempus="3">
-                        <label></label>
+                        <label>smallNote</label>
                      </staffDef>
                      <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="4" notationtype="mensural" prolatio="2" tempus="3">
                         <label>ref</label>
@@ -49,54 +49,54 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                     <staff n="1">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- 1 Semibreve - Imperfection a.p.p. -->
-                           <note dur="brevis" oct="4" pname="c" color="violet"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="brevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
-                     <staff n="2">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- 1 Semibreve - EXCEPTION: Dot of Division - Imperfection a.p.a. -->
-                           <note dur="brevis" oct="4" pname="c"/>
-                           <dot/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="brevis" oct="4" pname="c" color="violet"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
-                     <staff n="3">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- 1 Semibreve - EXCEPTION: Start with Short Note - Imperfection a.p.a. -->
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="brevis" oct="4" pname="c" color="violet"/>
-                           <barLine form="dashed"/>
-                           <rest dur="brevis"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
-                     <staff n="4">
-                        <layer n="1">
-                           <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
-                           <!-- reference -->
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <note dur="semibrevis" oct="4" pname="c"/>
-                           <barLine form="dashed"/>
-                        </layer>
-                     </staff>
+                  <staff n="1">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- 1 Semibreve - Imperfection a.p.p. -->
+                        <note dur="brevis" oct="4" pname="c" color="violet"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="brevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
+                  <staff n="2">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- 1 Semibreve - EXCEPTION: Dot of Division - Imperfection a.p.a. -->
+                        <note dur="brevis" oct="4" pname="c"/>
+                        <dot/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="brevis" oct="4" pname="c" color="violet"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
+                  <staff n="3">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- 1 Semibreve - EXCEPTION: Start with Short Note - Imperfection a.p.a. -->
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="brevis" oct="4" pname="c" color="violet"/>
+                        <barLine form="dashed"/>
+                        <rest dur="brevis"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
+                  <staff n="4">
+                     <layer n="1">
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <!-- reference -->
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
+                        <barLine form="dashed"/>
+                     </layer>
+                  </staff>
                </section>
             </score>
          </mdiv>

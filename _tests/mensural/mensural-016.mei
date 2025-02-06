@@ -136,14 +136,10 @@
                         <dot/>
                         <barLine form="dashed"/>
                         <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="minima" oct="4" pname="c"/>
-                        <dot/>
-                        <note dur="semiminima" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
                         <note dur="semibrevis" oct="4" pname="c"/>
                         <barLine form="dashed"/>
-                        <note dur="minima" oct="4" pname="c"/>
-                        <dot/>
-                        <note dur="semiminima" oct="4" pname="c"/>
+                        <note dur="semibrevis" oct="4" pname="c"/>
                         <note dur="brevis" oct="4" pname="c"/>
                         <barLine form="dashed"/>
                      </layer>
