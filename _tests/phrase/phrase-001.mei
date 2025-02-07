@@ -42,7 +42,7 @@
                         </layer>
                      </staff>
                      <slur staff="1" startid="#note-000000180893861" endid="#note-000000090536214" />
-                     <dir place="above" staff="1" tstamp="2.000000">a tempo</dir>
+                     <dir place="above" staff="1" tstamp="2">a tempo</dir>
                      <phrase staff="1" startid="#note-000000034369893" endid="#note-000000110366772" />
                   </measure>
                   <measure n="2">

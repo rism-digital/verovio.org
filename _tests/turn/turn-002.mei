@@ -51,7 +51,7 @@
                            </beam>
                         </layer>
                      </staff>
-                     <turn label="delayed turn" staff="1" tstamp="2.660000" accidlower="s" place="above" delayed="true" />
+                     <turn label="delayed turn" staff="1" tstamp="2.66" accidlower="s" place="above" delayed="true" />
                   </measure>
                </section>
             </score>
