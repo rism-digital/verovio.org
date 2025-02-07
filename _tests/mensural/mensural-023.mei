@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -42,106 +45,106 @@
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="C" num="3"/>
-                        <note dur="longa" oct="4" pname="c" color="violet"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="longa" oct="4" pname="c"/>
-                        <dot/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c" color="violet"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c" color="green"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="longa" oct="4" pname="c" color="violet"/>
-                        <barLine form="dashed"/>
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="2" sign="C" dot="true"/>
-                        <note dur="longa" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="longa" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="longa" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="minima" oct="4" pname="c"/>
-                        <note dur="minima" oct="4" pname="c"/>
-                        <note dur="minima" oct="4" pname="c"/>
-                        <dot/>
-                        <barLine form="dashed"/>
-                        <note dur="minima" oct="4" pname="c"/>
-                        <note dur="minima" oct="4" pname="c" color="blue"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="longa" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
+                        <mensur num="3" modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="C" />
+                        <note dur="longa" oct="4" pname="c" color="violet" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <dot />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" color="violet" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" color="green" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="longa" oct="4" pname="c" color="violet" />
+                        <barLine form="dashed" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="2" dot="true" sign="C" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <dot />
+                        <barLine form="dashed" />
+                        <note dur="minima" oct="4" pname="c" />
+                        <note dur="minima" oct="4" pname="c" color="blue" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="longa" oct="4" pname="c" />
+                        <barLine form="dashed" />
                      </layer>
                   </staff>
                   <staff n="2">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="C" num="3"/>
+                        <mensur num="3" modusmaior="2" modusminor="3" prolatio="2" tempus="3" sign="C" />
                         <!-- reference -->
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="2" sign="C" dot="true"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <note dur="brevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <mensur modusmaior="2" modusminor="2" prolatio="3" tempus="2" dot="true" sign="C" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <note dur="brevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
                      </layer>
                   </staff>
                </section>

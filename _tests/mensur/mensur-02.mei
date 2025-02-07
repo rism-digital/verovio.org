@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -34,7 +34,7 @@
       <body>
          <mdiv>
             <score>
-               <scoreDef midi.bpm="200.000000">
+               <scoreDef midi.bpm="200">
                   <staffGrp bar.thru="true" symbol="bracket">
                      <staffDef n="1" notationtype="mensural.white" lines="5">
                         <clef shape="C" line="3" />
@@ -56,7 +56,7 @@
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <mensur num="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" />
                         <note dur="minima" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
@@ -86,7 +86,7 @@
                   </staff>
                   <staff n="2">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <mensur num="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
@@ -104,7 +104,7 @@
                   </staff>
                   <staff n="3">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <mensur num="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" />
                         <note dur="brevis" oct="4" pname="c" />
                         <note dur="brevis" oct="4" pname="c" />
                         <note dur="brevis" oct="4" pname="c" />
@@ -114,7 +114,7 @@
                   </staff>
                   <staff n="4">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <mensur num="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" />
                         <note dur="longa" oct="4" pname="c" />
                         <note dur="longa" oct="4" pname="c" />
                         <barLine />
@@ -122,7 +122,7 @@
                   </staff>
                   <staff n="5">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" num="3" />
+                        <mensur num="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="C" />
                         <note dur="maxima" oct="4" pname="c" />
                         <barLine />
                      </layer>

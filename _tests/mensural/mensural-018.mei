@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/5.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.0">
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -34,22 +34,22 @@
             <score>
                <scoreDef>
                   <staffGrp n="1" symbol="bracket">
-                     <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="1" notationtype="mensural" prolatio="2" tempus="3">
+                     <staffDef n="1" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3">
                         <label>default</label>
                      </staffDef>
-                     <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="2" notationtype="mensural" prolatio="2" tempus="3">
+                     <staffDef n="2" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3">
                         <label>dotsOfAug</label>
                      </staffDef>
-                     <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="3" notationtype="mensural" prolatio="2" tempus="3">
+                     <staffDef n="3" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3">
                         <label>dotOfPerf</label>
                      </staffDef>
-                     <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="4" notationtype="mensural" prolatio="2" tempus="3">
+                     <staffDef n="4" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3">
                         <label>mixedDots</label>
                      </staffDef>
-                     <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="5" notationtype="mensural" prolatio="2" tempus="3">
+                     <staffDef n="5" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3">
                         <label>forbidAlter</label>
                      </staffDef>
-                     <staffDef clef.line="3" clef.shape="C" lines="5" modusmaior="2" modusminor="2" n="6" notationtype="mensural" prolatio="2" tempus="3">
+                     <staffDef n="6" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" modusmaior="2" modusminor="2" prolatio="2" tempus="3">
                         <label>ref</label>
                      </staffDef>
                   </staffGrp>
@@ -57,7 +57,7 @@
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <!-- Default case: 6 Semibreves - Imperfection a.p.p. & Alteration -->
                         <note dur="brevis" oct="4" pname="c" color="violet" />
                         <note dur="semibrevis" oct="4" pname="c" />
@@ -75,17 +75,17 @@
                   </staff>
                   <staff n="2">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <!-- Dots of augmentation in the default case -->
                         <note dur="brevis" oct="4" pname="c" color="violet" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <barLine form="dashed" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <barLine form="dashed" />
                         <note dur="semibrevis" oct="4" pname="c" />
@@ -97,7 +97,7 @@
                   </staff>
                   <staff n="3">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <!-- Dot of perfection -->
                         <note dur="brevis" oct="4" pname="c" />
                         <dot />
@@ -116,17 +116,17 @@
                   </staff>
                   <staff n="4">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <!-- Mixed dots, with dot of perfection -->
                         <note dur="brevis" oct="4" pname="c" />
                         <dot />
                         <barLine form="dashed" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <barLine form="dashed" />
                         <note dur="semibrevis" oct="4" pname="c" />
@@ -139,22 +139,22 @@
                   </staff>
                   <staff n="5">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <!-- Smaller note values forbidding alteration and forcing a reinterpretation - Perfect breve at the beginning -->
-                        <note dur="brevis" oct="4" pname="c"/>
+                        <note dur="brevis" oct="4" pname="c" />
                         <barLine form="dashed" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <barLine form="dashed" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <note dur="minima" oct="4" pname="c" />
-                        <dot/>
+                        <dot />
                         <note dur="semiminima" oct="4" pname="c" />
                         <barLine form="dashed" />
                         <note dur="brevis" oct="4" pname="c" />
@@ -163,24 +163,24 @@
                   </staff>
                   <staff n="6">
                      <layer n="1">
-                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" sign="O" dot="false"/>
+                        <mensur modusmaior="2" modusminor="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <!-- reference -->
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <note dur="semibrevis" oct="4" pname="c"/>
-                        <barLine form="dashed"/>
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <note dur="semibrevis" oct="4" pname="c" />
+                        <barLine form="dashed" />
                      </layer>
                   </staff>
                </section>

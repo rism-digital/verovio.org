@@ -44,14 +44,14 @@
                      <staff n="1">
                         <layer n="1">
                            <chord dots="1" dur="2" stem.dir="up">
-                              <note xml:id="note-001" oct="3" pname="e" accid="n" staff="2" />
-                              <note xml:id="note-002" oct="3" pname="g" accid.ges="n" staff="2" />
+                              <note xml:id="note-001" staff="2" oct="3" pname="e" accid="n" />
+                              <note xml:id="note-002" staff="2" oct="3" pname="g" accid.ges="n" />
                               <note xml:id="note-003" oct="4" pname="c" accid.ges="n" />
                            </chord>
                            <chord dots="1" dur="4" stem.dir="up">
-                              <note xml:id="note-004" oct="3" pname="e" accid.ges="n" staff="2" />
-                              <note xml:id="note-005" oct="3" pname="g" accid.ges="n" staff="2" />
-                              <note xml:id="note-006" oct="4" pname="c" accid.ges="n" />
+                              <note xml:id="note-004" staff="2" oct="3" pname="e" accid.ges="n" />
+                              <note xml:id="note-005" staff="2" oct="3" pname="g" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
                            </chord>
                            <note xml:id="note-007" dur="4" oct="4" pname="c" stem.dir="up" accid.ges="n" />
                            <beam>
@@ -96,7 +96,7 @@
                            <chord dots="1" dur="4" staff="2" stem.dir="up">
                               <note xml:id="note-104" oct="3" pname="e" accid.ges="n" />
                               <note xml:id="note-105" oct="3" pname="g" accid.ges="n" />
-                              <note xml:id="note-106" oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
                            </chord>
                            <note xml:id="note-107" dur="4" staff="2" oct="4" pname="c" stem.dir="up" accid.ges="n" />
                            <beam>
@@ -141,7 +141,7 @@
                            <chord dots="1" dur="4" stem.dir="up">
                               <note xml:id="note-204" oct="3" pname="e" accid.ges="n" />
                               <note xml:id="note-205" oct="3" pname="g" accid.ges="n" />
-                              <note xml:id="note-206" oct="4" pname="c" accid.ges="n" />
+                              <note oct="4" pname="c" accid.ges="n" />
                            </chord>
                            <note xml:id="note-207" dur="4" oct="4" pname="c" stem.dir="up" accid.ges="n" />
                            <beam>
