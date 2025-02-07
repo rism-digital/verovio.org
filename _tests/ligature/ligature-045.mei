@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -50,7 +50,7 @@
                            <note dur="brevis" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="a" />
                         </ligature>
-                        <barLine form="invis"/>
+                        <barLine form="invis" />
                         <ligature>
                            <note dur="longa" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="d" />
@@ -85,7 +85,7 @@
                            <note dur="brevis" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="a" />
                         </ligature>
-                        <barLine form="invis"/>
+                        <barLine form="invis" />
                         <ligature>
                            <note dur="longa" oct="4" pname="f" />
                            <note dur="longa" oct="4" pname="d" />

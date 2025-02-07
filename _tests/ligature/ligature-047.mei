@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -36,66 +36,66 @@
                   <staff n="1">
                      <layer n="1">
                         <ligature>
-                            <note pname="d" oct="3" dur="brevis"/>
-                            <dot/>
-                            <note pname="a" oct="3" dur="brevis"/>
-                            <note pname="d" oct="3" dur="brevis"/>
+                           <note dur="brevis" oct="3" pname="d" />
+                           <dot />
+                           <note dur="brevis" oct="3" pname="a" />
+                           <note dur="brevis" oct="3" pname="d" />
                         </ligature>
                         <ligature form="obliqua">
-                            <note pname="f" oct="3" dur="semibrevis"/>
-                            <note pname="e" oct="3" dur="semibrevis"/>
-                            <dot/>
+                           <note dur="semibrevis" oct="3" pname="f" />
+                           <note dur="semibrevis" oct="3" pname="e" />
+                           <dot />
                         </ligature>
                         <ligature form="obliqua">
-                            <note pname="a" oct="3" dur="semibrevis"/>
-                            <dot/>
-                            <note pname="d" oct="3" dur="semibrevis"/>
-                            <dot/>
+                           <note dur="semibrevis" oct="3" pname="a" />
+                           <dot />
+                           <note dur="semibrevis" oct="3" pname="d" />
+                           <dot />
                         </ligature>
                         <ligature>
-                            <note pname="d" oct="3" dur="semibrevis"/>
-                            <dot/>
-                            <note pname="g" oct="3" dur="semibrevis"/>
+                           <note dur="semibrevis" oct="3" pname="d" />
+                           <dot />
+                           <note dur="semibrevis" oct="3" pname="g" />
                         </ligature>
                         <ligature>
-                            <note pname="g" oct="2" dur="brevis"/>
-                            <note pname="f" oct="3" dur="brevis"/>
-                            <note pname="g" oct="3" dur="brevis"/>
-                            <note pname="d" oct="3" dur="longa"/>
-                            <dot/>
+                           <note dur="brevis" oct="2" pname="g" />
+                           <note dur="brevis" oct="3" pname="f" />
+                           <note dur="brevis" oct="3" pname="g" />
+                           <note dur="longa" oct="3" pname="d" />
+                           <dot />
                         </ligature>
                      </layer>
                   </staff>
                   <staff n="2">
                      <layer n="1">
                         <ligature>
-                            <note pname="d" oct="3" dur="brevis"/>
-                            <dot/>
-                            <note pname="a" oct="3" dur="brevis"/>
-                            <note pname="d" oct="3" dur="brevis"/>
+                           <note dur="brevis" oct="3" pname="d" />
+                           <dot />
+                           <note dur="brevis" oct="3" pname="a" />
+                           <note dur="brevis" oct="3" pname="d" />
                         </ligature>
                         <ligature form="obliqua">
-                            <note pname="f" oct="3" dur="semibrevis"/>
-                            <note pname="e" oct="3" dur="semibrevis"/>
-                            <dot/>
+                           <note dur="semibrevis" oct="3" pname="f" />
+                           <note dur="semibrevis" oct="3" pname="e" />
+                           <dot />
                         </ligature>
                         <ligature form="obliqua">
-                            <note pname="a" oct="3" dur="semibrevis"/>
-                            <dot/>
-                            <note pname="d" oct="3" dur="semibrevis"/>
-                            <dot/>
+                           <note dur="semibrevis" oct="3" pname="a" />
+                           <dot />
+                           <note dur="semibrevis" oct="3" pname="d" />
+                           <dot />
                         </ligature>
                         <ligature>
-                            <note pname="d" oct="3" dur="semibrevis"/>
-                            <dot/>
-                            <note pname="g" oct="3" dur="semibrevis"/>
+                           <note dur="semibrevis" oct="3" pname="d" />
+                           <dot />
+                           <note dur="semibrevis" oct="3" pname="g" />
                         </ligature>
                         <ligature>
-                            <note pname="g" oct="2" dur="brevis"/>
-                            <note pname="f" oct="3" dur="brevis"/>
-                            <note pname="g" oct="3" dur="brevis"/>
-                            <note pname="d" oct="3" dur="longa"/>
-                            <dot/>
+                           <note dur="brevis" oct="2" pname="g" />
+                           <note dur="brevis" oct="3" pname="f" />
+                           <note dur="brevis" oct="3" pname="g" />
+                           <note dur="longa" oct="3" pname="d" />
+                           <dot />
                         </ligature>
                      </layer>
                   </staff>
@@ -105,4 +105,3 @@
       </body>
    </music>
 </mei>
-
