@@ -61,8 +61,8 @@
                      <fermata staff="1" startid="#chord-000000067789064" form="inv" shape="angular" place="below" />
                      <fermata staff="1" startid="#rest-000000131319457" form="norm" shape="square" place="above" />
                      <fermata staff="1" startid="#rest-000000070546468" form="inv" shape="square" place="above" />
-                     <fermata staff="1" tstamp="5.000000" place="above" />
-                     <fermata staff="1" tstamp="5.000000" place="below" />
+                     <fermata staff="1" tstamp="5" place="above" />
+                     <fermata staff="1" tstamp="5" place="below" />
                   </measure>
                   <measure right="end" n="2">
                      <staff n="1">

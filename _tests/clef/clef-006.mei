@@ -61,7 +61,7 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <note dur="1" oct="3" pname="g">
+                           <note xml:id="n6iio2o" dur="1" oct="3" pname="g">
                               <verse>
                                  <syl>Sol!</syl>
                               </verse>
@@ -70,7 +70,7 @@
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note dur="1" oct="3" pname="g">
+                           <note xml:id="n1uirdzn" dur="1" oct="3" pname="g">
                               <verse>
                                  <syl>Sol!</syl>
                               </verse>
@@ -81,12 +81,12 @@
                   <measure right="dbl" n="2">
                      <staff n="1">
                         <layer n="1">
-                           <mRest fermata="above" />
+                           <mRest xml:id="m1hab2jh" fermata="above" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <mRest fermata="above" />
+                           <mRest xml:id="m1jo4cik" fermata="above" />
                         </layer>
                      </staff>
                   </measure>

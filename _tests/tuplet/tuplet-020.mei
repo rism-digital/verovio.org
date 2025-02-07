@@ -34,61 +34,61 @@
    </meiHead>
    <music>
       <body>
-         <mdiv xml:id="mdiv-0000002140519904">
-            <score xml:id="score-0000001247944073">
-               <scoreDef xml:id="scoredef-0000001464122233">
-                  <staffGrp xml:id="staffgrp-0000000515865295" symbol="brace" bar.thru="true">
-                     <labelAbbr xml:id="labelAbbr-0000001059544640" />
-                     <staffDef xml:id="staffdef-0000000738709609" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" n="1" lines="5" />
-                     <staffDef xml:id="staffdef-0000000476248232" clef.shape="F" clef.line="4" meter.count="3" meter.unit="4" n="2" lines="5" />
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <labelAbbr />
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="3" meter.unit="4" />
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" meter.count="3" meter.unit="4" />
                   </staffGrp>
                </scoreDef>
-               <section xml:id="section-L1F1">
-                  <measure xml:id="measure-L1" n="0">
-                     <staff xml:id="staff-0000002039255049" n="1">
-                        <layer xml:id="layer-L1F2N1" n="1">
-                           <tuplet xml:id="tuplet-L5F2-L7F2" num="3" numbase="2" num.format="count">
-                              <note xml:id="note-L5F2" dur="8" staff="2" oct="3" pname="c" stem.dir="up" accid.ges="n" />
-                              <note xml:id="note-L6F2" dur="8" staff="2" oct="2" pname="b" stem.dir="up" accid.ges="n" />
-                              <note xml:id="note-L7F2" dur="8" staff="2" oct="2" pname="a" stem.dir="up" accid.ges="n" />
+               <section>
+                  <measure n="0">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" num.format="count">
+                              <note dur="8" staff="2" oct="3" pname="c" stem.dir="up" accid.ges="n" />
+                              <note dur="8" staff="2" oct="2" pname="b" stem.dir="up" accid.ges="n" />
+                              <note dur="8" staff="2" oct="2" pname="a" stem.dir="up" accid.ges="n" />
                            </tuplet>
-                           <rest xml:id="rest-L8F2" dur="4" />
-                           <tuplet xml:id="tuplet-L9F2-L11F2" num="3" numbase="2" bracket.visible="false" num.format="count">
-                              <beam xml:id="beam-L9F2-L11F2" beam.with="below">
-                                 <note xml:id="note-L9F2" dur="8" staff="2" oct="3" pname="g" stem.dir="up" accid.ges="n" />
-                                 <note xml:id="note-L10F2" dur="8" staff="2" oct="3" pname="f" stem.dir="up" accid.ges="n" />
-                                 <note xml:id="note-L11F2" dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="n" />
+                           <rest dur="4" />
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <beam beam.with="below">
+                                 <note dur="8" staff="2" oct="3" pname="g" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="f" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" staff="2" oct="3" pname="e" stem.dir="up" accid.ges="n" />
                               </beam>
                            </tuplet>
                         </layer>
                      </staff>
-                     <staff xml:id="staff-0000001940974881" n="2">
-                        <layer xml:id="layer-L1F1N1" n="1">
-                           <mRest xml:id="mrest-L5F1" ploc="g" oloc="2" />
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest ploc="g" oloc="2" />
                         </layer>
                      </staff>
                   </measure>
-                  <measure xml:id="measure-L12">
-                     <staff xml:id="staff-L12F2N1" n="1">
-                        <layer xml:id="layer-L12F2N1" n="1">
-                           <tuplet xml:id="tuplet-L13F2-L15F2" num="3" numbase="2" bracket.visible="false" num.format="count">
-                              <beam xml:id="beam-L13F2-L15F2">
-                                 <note xml:id="note-L13F2" dur="8" oct="5" pname="e" stem.dir="up" accid.ges="n" />
-                                 <note xml:id="note-L14F2" dur="8" oct="5" pname="d" accid.ges="n" />
-                                 <note xml:id="note-L15F2" dur="8" oct="5" pname="c" accid.ges="n" />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" bracket.visible="false" num.format="count">
+                              <beam>
+                                 <note dur="8" oct="5" pname="e" stem.dir="up" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="d" accid.ges="n" />
+                                 <note dur="8" oct="5" pname="c" accid.ges="n" />
                               </beam>
                            </tuplet>
-                           <rest xml:id="rest-L16F2" dur="4" />
-                           <tuplet xml:id="tuplet-L17F2-L19F2" num="3" numbase="2" num.format="count">
-                              <note xml:id="note-L17F2" dur="8" oct="4" pname="a" accid.ges="n" />
-                              <note xml:id="note-L18F2" dur="8" oct="4" pname="g" accid.ges="n" />
-                              <note xml:id="note-L19F2" dur="8" oct="4" pname="f" accid.ges="n" />
+                           <rest dur="4" />
+                           <tuplet num="3" numbase="2" num.format="count">
+                              <note dur="8" oct="4" pname="a" accid.ges="n" />
+                              <note dur="8" oct="4" pname="g" accid.ges="n" />
+                              <note dur="8" oct="4" pname="f" accid.ges="n" />
                            </tuplet>
                         </layer>
                      </staff>
-                     <staff xml:id="staff-L12F1N1" n="2">
-                        <layer xml:id="layer-L12F1N1" n="1">
-                           <mRest xml:id="mrest-L13F1" ploc="g" oloc="2" />
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest ploc="g" oloc="2" />
                         </layer>
                      </staff>
                   </measure>
