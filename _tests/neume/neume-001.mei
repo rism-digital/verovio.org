@@ -28,7 +28,7 @@
             </application>
          </appInfo>
       </encodingDesc>
-      <extMeta><![CDATA[ { "breaks": "encoded", "scale": 10 }]]></extMeta>
+      <extMeta><![CDATA[{ "breaks": "encoded", "scale": 10, "svgCss": "g.syl{ opacity: 0.0; }" }]]></extMeta>
    </meiHead>
    <music>
       <facsimile type="transcription">
