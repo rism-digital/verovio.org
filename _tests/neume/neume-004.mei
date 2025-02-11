@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Neumes as notes</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-07-04" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Rendering of neume notation as note</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="4.3.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "neumeAsNote": true }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="neume" lines="5" clef.shape="C" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer n="1">
+                        <syllable>
+                           <syl con="d" wordpos="i">Be</syl>
+                           <neume>
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="f" tilt="s" />
+                           </neume>
+                           <neume>
+                              <nc oct="3" pname="d" />
+                              <nc oct="3" pname="e" tilt="s" />
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl con="d" wordpos="m">ne</syl>
+                           <neume>
+                              <nc oct="3" pname="g" />
+                              <nc oct="3" pname="a" tilt="s" />
+                           </neume>
+                           <neume>
+                              <nc oct="3" pname="g" tilt="n" />
+                              <nc oct="3" pname="e" />
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl wordpos="t">di</syl>
+                           <neume>
+                              <nc oct="3" pname="f" curve="c">
+                                 <liquescent />
+                              </nc>
+                           </neume>
+                           <neume>
+                              <nc oct="3" pname="g" tilt="n" />
+                              <nc oct="3" pname="e" />
+                           </neume>
+                           <neume>
+                              <nc oct="3" pname="f" ligated="true" tilt="n" />
+                              <nc oct="3" pname="d" ligated="true" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="d" />
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl con="d" wordpos="i">ci</syl>
+                           <neume>
+                              <nc oct="3" pname="g" />
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl wordpos="t">te</syl>
+                           <neume>
+                              <nc oct="3" pname="g" />
+                           </neume>
+                        </syllable>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
