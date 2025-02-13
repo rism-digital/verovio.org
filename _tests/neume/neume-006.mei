@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Syllable without neume</title>
+            <respStmt>
+               <persName role="encoder">Martha E. Thomae</persName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2024-07-04" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Spacing syllable should be correct even without neume</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.1.0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" notationtype="neume"/>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer n="1">
+                        <clef shape="C" line="4"/>
+                        <syllable>
+                           <syl>Be</syl>
+                           <neume>
+                              <nc pname="e" oct="3"/>
+                              <nc pname="e" oct="3"/>
+                              <nc tilt="s" pname="f" oct="3"/>
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl>ne</syl>
+                        </syllable>
+                        <syllable>
+                           <syl>di</syl>
+                           <neume>
+                              <nc pname="g" oct="3"/>
+                              <nc tilt="s" pname="a" oct="3"/>
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl>ci </syl>
+                           <neume>
+                              <nc tilt="n" pname="g" oct="3"/>
+                              <nc pname="e" oct="3"/>
+                           </neume>
+                        </syllable>
+                        <syllable>
+                           <syl>te</syl>
+                           <neume>
+                              <nc curve="c" pname="f" oct="3">
+                                 <liquescent/>
+                              </nc>
+                           </neume>
+                           <neume>
+                              <nc ligated="true" tilt="n" pname="f" oct="3"/>
+                              <nc ligated="true" pname="d" oct="3"/>
+                              <nc pname="e" oct="3"/>
+                              <nc pname="d" oct="3"/>
+                           </neume>
+                        </syllable>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
