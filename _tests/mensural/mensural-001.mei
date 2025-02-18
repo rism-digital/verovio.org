@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/4.0.0/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0">
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -31,17 +31,17 @@
             <score>
                <scoreDef>
                   <staffGrp symbol="bracket">
-                     <staffDef n="1" notationtype="mensural" lines="5" clef.shape="G" clef.line="2" >
-                        <mensur num="1" numbase="3" prolatio="3" tempus="3"/>
+                     <staffDef n="1" notationtype="mensural" lines="5" clef.shape="G" clef.line="2">
+                        <mensur num="1" numbase="3" prolatio="3" tempus="3" dot="true" sign="O" />
                      </staffDef>
-                     <staffDef n="2" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" >
-                        <mensur num="2" prolatio="2" tempus="3"/>
+                     <staffDef n="2" notationtype="mensural" lines="5" clef.shape="C" clef.line="3">
+                        <mensur num="2" prolatio="2" tempus="3" dot="false" sign="O" />
                      </staffDef>
-                     <staffDef n="3" notationtype="mensural" lines="5" clef.shape="C" clef.line="3" >
-                        <mensur num="1" numbase="2" prolatio="3" tempus="2" />
+                     <staffDef n="3" notationtype="mensural" lines="5" clef.shape="C" clef.line="3">
+                        <mensur num="1" numbase="2" prolatio="3" tempus="2" dot="true" sign="C" />
                      </staffDef>
-                     <staffDef n="4" notationtype="mensural" lines="5" clef.shape="F" clef.line="4" >
-                        <mensur prolatio="2" tempus="3" />
+                     <staffDef n="4" notationtype="mensural" lines="5" clef.shape="F" clef.line="4">
+                        <mensur prolatio="2" tempus="3" dot="false" sign="O" />
                      </staffDef>
                   </staffGrp>
                </scoreDef>
@@ -56,7 +56,7 @@
                         <!-- imp -->
                         <note dur="minima" oct="5" pname="c" />
                         <barLine />
-                        <mensur num="1" numbase="2" prolatio="3" tempus="2" />
+                        <mensur num="1" numbase="2" prolatio="3" tempus="2" dot="true" sign="C" />
                         <note dur="minima" oct="4" pname="b" />
                         <note dur="semiminima" oct="4" pname="g" />
                         <note dur="semiminima" oct="4" pname="b" />
@@ -69,7 +69,7 @@
                         <note dur="minima" oct="4" pname="g" />
                         <note dur="semiminima" oct="4" pname="f" />
                         <barLine />
-                        <mensur prolatio="2" tempus="3" />
+                        <mensur prolatio="2" tempus="3" dot="false" sign="O" />
                         <note dur="minima" oct="4" pname="g" />
                         <note dur="semibrevis" oct="5" pname="d" />
                         <note dur="minima" oct="5" pname="c" />
@@ -79,7 +79,7 @@
                         <note dur="semibrevis" oct="4" pname="b" />
                         <note dur="minima" oct="4" pname="a" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="2" />
+                        <mensur num="3" prolatio="2" tempus="2" dot="false" sign="C" />
                         <!-- tempus perfectum in the source -->
                         <note dur="semibrevis" oct="4" pname="b" />
                         <rest dur="semibrevis" />
@@ -98,7 +98,7 @@
                         <!-- coloration 3/2 * imperfection 2/3 = 6/6 -->
                         <note dur="brevis" num="6" numbase="6" oct="4" pname="g" colored="true" />
                         <barLine />
-                        <mensur prolatio="2" tempus="2" />
+                        <mensur prolatio="2" tempus="2" dot="false" sign="C" />
                         <note dur="semibrevis" oct="4" pname="f" />
                         <rest dur="semibrevis" />
                         <note dur="semibrevis" oct="4" pname="f" />
@@ -108,7 +108,7 @@
                         <note dur="semibrevis" oct="4" pname="b" />
                         <note dur="semibrevis" oct="5" pname="c" />
                         <barLine />
-                        <mensur num="2" prolatio="2" tempus="2" />
+                        <mensur num="2" prolatio="2" tempus="2" dot="false" sign="C" />
                         <note dur="brevis" oct="5" pname="d" />
                         <rest dur="brevis" />
                         <note dur="brevis" oct="4" pname="f" />
@@ -117,7 +117,7 @@
                         <note dur="brevis" oct="4" pname="b" />
                         <note dur="brevis" oct="5" pname="c" />
                         <barLine />
-                        <mensur num="3" modusminor="2" prolatio="2" tempus="2" />
+                        <mensur num="3" modusminor="2" prolatio="2" tempus="2" dot="false" sign="C" />
                         <note dur="semibrevis" num="2" numbase="3" oct="4" pname="b" />
                         <!-- augmentationis -->
                         <dot />
@@ -156,7 +156,7 @@
                         <!-- imperfectio -->
                         <note dur="semibrevis" oct="4" pname="c" />
                         <barLine />
-                        <mensur num="3" numbase="2" prolatio="2" tempus="2" />
+                        <mensur num="3" numbase="2" prolatio="2" tempus="2" dot="false" sign="C" />
                         <note dur="minima" oct="4" pname="d" />
                         <rest dur="semiminima" />
                         <note dur="semiminima" oct="4" pname="d" />
@@ -172,7 +172,7 @@
                         <note dur="minima" oct="4" pname="e" />
                         <note dur="semibrevis" oct="4" pname="d" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="2" slash="1" />
+                        <mensur num="3" prolatio="2" tempus="2" dot="false" sign="C" slash="1" />
                         <note dur="semibrevis" oct="3" pname="b" />
                         <note dur="semibrevis" oct="3" pname="g" />
                         <note dur="brevis" oct="4" pname="g" />
@@ -187,7 +187,7 @@
                         <note dur="semibrevis" oct="4" pname="e" />
                         <note dur="brevis" oct="4" pname="f" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="3" />
+                        <mensur num="3" prolatio="2" tempus="3" dot="false" sign="O" />
                         <note dur="semibrevis" num="2" numbase="3" oct="4" pname="d" />
                         <!-- augm -->
                         <dot />
@@ -227,7 +227,7 @@
                         <note dur="semibrevis" oct="3" pname="b" colored="true" />
                         <note dur="brevis" num="3" numbase="2" oct="3" pname="g" colored="true" />
                         <barLine />
-                        <mensur num="4" modusminor="2" prolatio="2" tempus="2" slash="1" />
+                        <mensur num="4" modusminor="2" prolatio="2" tempus="2" dot="false" sign="C" slash="1" />
                         <note dur="brevis" oct="3" pname="a" />
                         <note dur="semibrevis" num="2" numbase="3" oct="4" pname="d" />
                         <dot />
@@ -264,7 +264,7 @@
                         <note dur="semibrevis" oct="4" pname="e" />
                         <note dur="semibrevis" oct="4" pname="e" />
                         <barLine />
-                        <mensur num="8" modusminor="2" prolatio="2" tempus="2" slash="1" />
+                        <mensur num="8" modusminor="2" prolatio="2" tempus="2" dot="false" sign="C" slash="1" />
                         <note dur="longa" oct="4" pname="d" />
                         <note dur="longa" oct="3" pname="a" />
                         <note dur="brevis" oct="3" pname="b" />
@@ -309,16 +309,16 @@
                         <note dur="semiminima" oct="3" pname="a" />
                         <note dur="minima" oct="3" pname="g" />
                         <barLine />
-                        <mensur prolatio="2" tempus="3" />
+                        <mensur prolatio="2" tempus="3" dot="false" sign="O" />
                         <rest dur="minima" />
                         <note dur="minima" oct="4" pname="d" />
                         <note dur="semiminima" oct="4" pname="e" />
                         <note dur="semiminima" oct="4" pname="d" />
                         <note dur="semibrevis" oct="4" pname="g" />
                         <note dur="minima" oct="4" pname="f" />
-                        <barLine form="invis"/>
+                        <barLine form="invis" />
                         <!-- bug in 3.2.0 - we need to repeat it after the barLine in case of a system break -->
-                        <mensur prolatio="2" tempus="3" />
+                        <mensur prolatio="2" tempus="3" dot="false" sign="O" />
                         <note dur="semibrevis" oct="4" pname="g" />
                         <rest dur="minima" />
                         <note dur="minima" oct="3" pname="g" />
@@ -331,7 +331,7 @@
                         <note dur="minima" oct="4" pname="c" />
                         <note dur="semibrevis" oct="3" pname="a" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="2" />
+                        <mensur num="3" prolatio="2" tempus="2" dot="false" sign="C" />
                         <!-- tempus perfectum in the source -->
                         <note dur="semibrevis" num="2" numbase="3" oct="3" pname="g" />
                         <!-- augm -->
@@ -347,7 +347,7 @@
                         <note dur="brevis" oct="3" pname="b" />
                         <note dur="brevis" oct="4" pname="c" />
                         <barLine />
-                        <mensur num="3" numbase="2" prolatio="2" tempus="2" />
+                        <mensur num="3" numbase="2" prolatio="2" tempus="2" dot="false" sign="C" />
                         <note dur="semibrevis" oct="3" pname="b" />
                         <rest dur="minima" />
                         <note dur="minima" oct="4" pname="d" />
@@ -367,7 +367,7 @@
                         <note dur="semibrevis" oct="4" pname="d" />
                         <note dur="minima" oct="4" pname="c" />
                         <barLine />
-                        <mensur num="2" prolatio="2" tempus="2" slash="1" />
+                        <mensur num="2" prolatio="2" tempus="2" dot="false" sign="C" slash="1" />
                         <note dur="minima" num="2" numbase="3" oct="4" pname="d" />
                         <dot />
                         <note dur="semiminima" oct="4" pname="c" />
@@ -396,7 +396,7 @@
                         <rest dur="semibrevis" />
                         <note dur="semibrevis" oct="4" pname="c" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="2" slash="1" />
+                        <mensur num="3" prolatio="2" tempus="2" dot="false" sign="C" slash="1" />
                         <note dur="semibrevis" num="2" numbase="3" oct="4" pname="f" />
                         <!-- augmentationis -->
                         <dot />
@@ -427,7 +427,7 @@
                         <note dur="minima" oct="4" pname="e" />
                         <note dur="semibrevis" oct="4" pname="d" />
                         <note dur="minima" oct="4" pname="c" />
-                        <mensur num="6" modusminor="2" prolatio="2" tempus="2" slash="1" />
+                        <mensur num="6" modusminor="2" prolatio="2" tempus="2" dot="false" sign="C" slash="1" />
                         <note dur="brevis" num="2" numbase="3" oct="4" pname="d" colored="true" />
                         <!-- augmentationis -->
                         <dot />
@@ -455,7 +455,7 @@
                         <note dur="semibrevis" oct="3" pname="g" />
                         <note dur="semibrevis" oct="3" pname="a" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="3" />
+                        <mensur num="3" prolatio="2" tempus="3" dot="false" sign="O" />
                         <note dur="longa" oct="3" pname="g" />
                         <barLine />
                         <note dur="brevis" num="3" numbase="2" oct="3" pname="d" />
@@ -466,7 +466,7 @@
                         <note dur="semibrevis" oct="3" pname="c" />
                         <note dur="brevis" oct="3" pname="d" />
                         <barLine />
-                        <mensur num="3" numbase="2" prolatio="2" tempus="2" />
+                        <mensur num="3" numbase="2" prolatio="2" tempus="2" dot="false" sign="C" />
                         <rest dur="minima" />
                         <note dur="semibrevis" oct="3" pname="g" />
                         <note dur="minima" num="2" numbase="3" oct="3" pname="c" />
@@ -481,7 +481,7 @@
                         <note dur="minima" oct="3" pname="g" />
                         <note dur="semibrevis" oct="3" pname="f" />
                         <barLine />
-                        <mensur num="3" prolatio="2" tempus="2" />
+                        <mensur num="3" prolatio="2" tempus="2" dot="false" sign="C" />
                         <note dur="minima" num="2" numbase="3" oct="3" pname="b" />
                         <!-- augm -->
                         <dot />
@@ -502,7 +502,7 @@
                         <note dur="semibrevis" oct="3" pname="f" />
                         <note dur="brevis" oct="3" pname="e" />
                         <barLine />
-                        <mensur num="2" prolatio="2" tempus="3" />
+                        <mensur num="2" prolatio="2" tempus="3" dot="false" sign="O" />
                         <note dur="brevis" oct="3" pname="d" />
                         <dot />
                         <!-- divisionis -->
