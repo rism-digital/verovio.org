@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Ligatures (second to octave)</title>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-02-21"/>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot />
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[ { "evenNoteSpacing": true, "ligatureOblique": "straight" }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" notationtype="mensural.black" lines="5" clef.shape="C" clef.line="1" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <staff n="1">
+                     <layer n="1">
+                        <ligature>
+                           <note dur="brevis" oct="4" pname="e" />
+                           <note dur="brevis" oct="4" pname="c" />
+                        </ligature>
+                        <ligature>
+                           <note dur="brevis" oct="4" pname="f" />
+                           <note dur="brevis" oct="4" pname="c" />
+                        </ligature>
+                        <ligature>
+                           <note dur="brevis" oct="4" pname="g" />
+                           <note dur="brevis" oct="4" pname="c" />
+                        </ligature>
+                        <ligature>
+                           <note dur="brevis" oct="4" pname="a" />
+                           <note dur="brevis" oct="4" pname="c" />
+                        </ligature>
+                        <ligature>
+                           <note dur="brevis" oct="4" pname="b" />
+                           <note dur="brevis" oct="4" pname="c" />
+                        </ligature>
+                        <ligature>
+                           <note dur="brevis" oct="5" pname="c" />
+                           <note dur="brevis" oct="4" pname="c" />
+                        </ligature>
+                        <!-- c.o.p. -->
+                        <ligature form="obliqua">
+                           <note dur="semibrevis" oct="4" pname="c" />
+                           <note dur="semibrevis" oct="4" pname="d" />
+                        </ligature>
+                        <ligature form="obliqua">
+                           <note dur="semibrevis" oct="4" pname="c" />
+                           <note dur="semibrevis" oct="4" pname="e" />
+                        </ligature>
+                        <ligature form="obliqua">
+                           <note dur="semibrevis" oct="4" pname="c" />
+                           <note dur="semibrevis" oct="4" pname="f" />
+                        </ligature>
+                        <ligature form="obliqua">
+                           <note dur="semibrevis" oct="4" pname="c" />
+                           <note dur="semibrevis" oct="4" pname="g" />
+                        </ligature>
+                        <ligature form="obliqua">
+                           <note dur="semibrevis" oct="4" pname="c" />
+                           <note dur="semibrevis" oct="4" pname="b" />
+                        </ligature>
+                        <ligature form="obliqua">
+                           <note dur="semibrevis" oct="4" pname="c" />
+                           <note dur="semibrevis" oct="5" pname="c" />
+                        </ligature>
+                     </layer>
+                  </staff>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
