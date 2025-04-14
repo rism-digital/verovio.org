@@ -56,6 +56,8 @@
                            <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondBlackWide" />
                            <note dur="4" oct="4" pname="a" glyph.name="noteheadDiamondWhiteWide" />
                            <note dur="4" oct="4" pname="a" glyph.name="noteheadNull" />
+                           <note dur="4" oct="4" pname="a" head.shape="U+E0B3" />
+                           <note dur="8" oct="4" pname="a" head.shape="U+E0B5" />
                         </layer>
                      </staff>
                      <staff n="2">
@@ -76,6 +78,8 @@
                            <note dur="4" oct="5" pname="c" glyph.name="noteheadDiamondBlackWide" />
                            <note dur="4" oct="5" pname="c" glyph.name="noteheadDiamondWhiteWide" />
                            <note dur="4" oct="5" pname="c" glyph.name="noteheadNull" />
+                           <note dur="4" oct="5" pname="c" head.shape="U+E0B3" />
+                           <note dur="8" oct="5" pname="c" head.shape="U+E0B5" />
                         </layer>
                      </staff>
                   </measure>
