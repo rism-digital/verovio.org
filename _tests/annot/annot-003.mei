@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Support for score annotations by tstamp</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder" 
+                        auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
+            </respStmt>
+            <date isodate="2025-04-14">14 April 2025</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>MEI elements that are described using an annotation with @type "score" 
+               are delimited using @tstamp and @tstamp2 are indicated in the score with a 
+               ribbon over the staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.2.0-dev-4702b5e" label="5.2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef n="1">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" xml:id="note-1"/>
+                           <note dur="4" oct="4" pname="c" xml:id="note-2"/>
+                           <note dur="4" oct="4" pname="g" xml:id="note-3"/>
+                           <note dur="4" oct="4" pname="g" xml:id="note-4"/>
+                        </layer>
+                     </staff>
+                     <annot type="score" xml:id="annot-1" tstamp="2" tstamp2="4" staff="1">
+                       The region between timestamps is indicated with a ribbon over 
+                       the indicated staff.</annot>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
