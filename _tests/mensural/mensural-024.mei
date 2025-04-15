@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>CMN aligned with mensural notation in tempus imperfectum and prolatio minor</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application isodate="2024-01-21T23:47:45" version="4.2.0-dev-80ec72d">
+               <name>Verovio</name>
+               <p>Transcoded from Humdrum</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta>
+         <frames xmlns="http://www.humdrum.org/ns/humxml" />
+      </extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="m1nqzhnh">
+            <score xml:id="sb4wmi1">
+               <scoreDef xml:id="sa8w0lu" midi.bpm="400">
+                  <staffGrp xml:id="sc13tqg">
+                     <staffDef xml:id="szft6fm" n="1" lines="5">
+                        <clef xml:id="c1i2cs03" shape="C" line="3" />
+                        <meterSig xml:id="mqbos32" count="4" unit="1" />
+                     </staffDef>
+                     <staffDef xml:id="s1sa0f3w" n="2" notationtype="mensural" lines="5">
+                        <clef xml:id="c1c77xk2" shape="C" line="3" />
+                        <mensur xml:id="m1n5s8am" prolatio="2" tempus="2" sign="C" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="s14m8cyi">
+                  <measure xml:id="m11m0kgq">
+                     <staff xml:id="s134a423" n="1">
+                        <layer xml:id="l1cuz1d6" n="1">
+                           <note xml:id="nvtoi16" dur="breve" oct="4" pname="c" accid.ges="n" />
+                           <note xml:id="nclg8qy" dur="1" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n19aaxt5" dur="2" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n1kbdubh" dur="2" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="s5ury4e" n="2">
+                        <layer xml:id="l1iwd0b3" n="1">
+                           <note xml:id="n1431bx1" dur="brevis" oct="4" pname="c" accid.ges="n" />
+                           <note xml:id="n14dgoo4" dur="semibrevis" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="ndia6if" dur="minima" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n1x2yam7" dur="minima" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="mml8mwz" n="2">
+                     <staff xml:id="ssj5mw7" n="1">
+                        <layer xml:id="l2vl8de" n="1">
+                           <note xml:id="n15m0q24" dots="1" dur="breve" oct="3" pname="b" accid.ges="n" />
+                           <note xml:id="n1dlxll1" dur="1" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="sw9akby" n="2">
+                        <layer xml:id="lje7t91" n="1">
+                           <note xml:id="n1n5rxeb" dur="brevis" dur.quality="perfecta" oct="3" pname="b" accid.ges="n" />
+                           <dot xml:id="d1tt1sod" />
+                           <note xml:id="n1lg557u" dur="semibrevis" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m85g0ir" n="3">
+                     <staff xml:id="s1uxm90h" n="1">
+                        <layer xml:id="lxxha0" n="1">
+                           <note xml:id="n1f6ktu1" dur="1" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n9era9i" dur="1" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n18p0a84" dur="breve" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="s1opx3r4" n="2">
+                        <layer xml:id="l17s6hmz" n="1">
+                           <note xml:id="n1xggd9g" dur="semibrevis" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n1vkwkc8" dur="semibrevis" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n1icueal" dur="brevis" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
