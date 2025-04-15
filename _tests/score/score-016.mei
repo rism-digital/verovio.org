@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>ScoreDef with a different order in the content and the use of @part</title>
+         </titleStmt>
+         <pubStmt>
+            <date>2025-04-04</date>
+         </pubStmt>
+         <notesStmt>
+            <annot>Control events with @part="%all" are placed on above the top staff.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="7">
+            <score>
+               <scoreDef keysig="3s" meter.count="2" meter.unit="4">
+                  <staffGrp bar.thru="false">
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffGrp symbol="brace">
+                           <staffDef n="5" lines="5" clef.shape="G" clef.line="2">
+                              <label>Violino I</label>
+                              <labelAbbr>Vl I</labelAbbr>
+                           </staffDef>
+                           <staffDef n="6" lines="5" clef.shape="G" clef.line="2">
+                              <label>Violino II</label>
+                              <labelAbbr>Vl II</labelAbbr>
+                           </staffDef>
+                        </staffGrp>
+                        <staffDef n="7" lines="5" clef.shape="C" clef.line="3">
+                           <label>Viola I, II</label>
+                           <labelAbbr>Va</labelAbbr>
+                           <layerDef n="1" type="divisi" decls="#perfRes_06" />
+                           <layerDef n="2" type="divisi" decls="#perfRes_06" />
+                        </staffDef>
+                     </staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                           <label>Flauto</label>
+                           <labelAbbr>Fl</labelAbbr>
+                        </staffDef>
+                        <staffDef n="2" lines="5" clef.shape="G" clef.line="2">
+                           <label>Oboe I, II</label>
+                           <labelAbbr>Ob</labelAbbr>
+                           <layerDef n="1" type="part" decls="#perfRes_02" />
+                           <layerDef n="2" type="part" decls="#perfRes_02" />
+                        </staffDef>
+                        <staffDef n="3" lines="5" clef.shape="F" clef.line="4">
+                           <label>Fagotto I, II</label>
+                           <labelAbbr>Fag</labelAbbr>
+                           <layerDef n="1" type="part" decls="#perfRes_03" />
+                           <layerDef n="2" type="part" decls="#perfRes_03" />
+                        </staffDef>
+                     </staffGrp>
+                     <staffGrp symbol="bracket">
+                        <staffDef n="4" lines="5" trans.diat="-2" trans.semi="-3" clef.shape="G" clef.line="2" keysig="0">
+                           <label>Corno I, II<lb />in La</label>
+                           <labelAbbr>Cor (La)</labelAbbr>
+                           <layerDef n="1" type="part" decls="#perfRes_04" />
+                           <layerDef n="2" type="part" decls="#perfRes_04" />
+                        </staffDef>
+                     </staffGrp>
+                     <staffDef n="8" lines="5" clef.shape="G" clef.line="2">
+                        <label>ZERLINA</label>
+                        <labelAbbr>Z</labelAbbr>
+                     </staffDef>
+                     <staffDef n="9" lines="5" clef.shape="F" clef.line="4">
+                        <label>DON GIOVANNI</label>
+                        <labelAbbr>D G</labelAbbr>
+                     </staffDef>
+                     <staffGrp symbol="bracket">
+                        <staffDef n="10" lines="5" clef.shape="F" clef.line="4">
+                           <label>Violoncello<lb />e Basso</label>
+                           <labelAbbr>Vc e Bs</labelAbbr>
+                           <layerDef n="1" type="part" decls="#perfRes_09" />
+                           <layerDef n="2" type="part" decls="#perfRes_10" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <section>
+                     <pb />
+                     <measure n="1">
+                        <tempo type="tempo" place="above" staff="1" tstamp="1" midi.bpm="55" n="1" part="%all">Andante</tempo>
+                        <tempo type="heading" place="above" staff="1" tstamp="0.5" part="%all">
+                           <rend halign="center" fontsize="x-large" fontweight="normal">No. 7 Duettino</rend>
+                        </tempo>
+                        <staff n="1">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="5">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note xml:id="note_1656" dur="8" oct="4" pname="a" />
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="a" />
+                           </layer>
+                        </staff>
+                        <staff n="6">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note xml:id="note_1698" dur="8" oct="4" pname="c">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="c">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="7">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note xml:id="note_1740" dur="8" oct="4" pname="e" />
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="e" />
+                           </layer>
+                        </staff>
+                        <staff n="8">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="9">
+                           <layer n="1">
+                              <note xml:id="note_1800" dur="8" oct="3" pname="a">
+                                 <verse>
+                                    <syl>Là</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_1827" dur="16" oct="3" pname="a">
+                                 <verse>
+                                    <syl>ci</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_1854" dur="16" oct="3" pname="b">
+                                 <verse>
+                                    <syl con="d" wordpos="i">da</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_1881" dur="8" oct="4" pname="c">
+                                 <accid accid.ges="s" />
+                                 <verse>
+                                    <syl wordpos="t">rem</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_1908" dur="8" oct="3" pname="a">
+                                 <verse>
+                                    <syl>la</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="10">
+                           <layer n="1">
+                              <note xml:id="note_1956" dur="8" oct="2" pname="a" />
+                              <rest dur="8" />
+                              <note dur="8" oct="2" pname="a" />
+                              <rest dur="8" />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <dynam staff="5" startid="#note_1656">p</dynam>
+                        <dynam staff="6" startid="#note_1698">p</dynam>
+                        <dynam staff="7" startid="#note_1740" layer="1">p</dynam>
+                        <dynam staff="10" startid="#note_1956" layer="1 2">p</dynam>
+                     </measure>
+                     <measure n="2">
+                        <staff n="1">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="5">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="b" />
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="a" />
+                           </layer>
+                        </staff>
+                        <staff n="6">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="f">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="f">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="7">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="d" />
+                              <rest dur="8" />
+                              <note dur="8" oct="3" pname="b" />
+                           </layer>
+                        </staff>
+                        <staff n="8">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="9">
+                           <layer n="1">
+                              <note xml:id="note_2292" dur="8" oct="3" pname="f">
+                                 <accid accid.ges="s" />
+                                 <verse>
+                                    <syl con="d" wordpos="i">ma</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_2319" dots="1" dur="4" oct="3" pname="b">
+                                 <verse>
+                                    <syl wordpos="t">no,</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="10">
+                           <layer n="1">
+                              <note dur="8" oct="3" pname="d" />
+                              <rest dur="8" />
+                              <note dur="8" oct="3" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                              <rest dur="8" />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                     </measure>
+                     <measure n="3">
+                        <staff n="1">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                        <staff n="5">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="g">
+                                 <accid accid.ges="s" />
+                              </note>
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="f">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="6">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="e" />
+                              <rest dur="8" />
+                              <note dur="8" oct="4" pname="d">
+                                 <accid accid="s" />
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="7">
+                           <layer n="1">
+                              <rest dur="8" />
+                              <note dur="8" oct="3" pname="b" />
+                              <rest dur="8" />
+                              <note dur="8" oct="3" pname="a" />
+                           </layer>
+                        </staff>
+                        <staff n="8">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="9">
+                           <layer n="1">
+                              <note xml:id="note_2664" dur="8" oct="3" pname="g">
+                                 <accid accid.ges="s" />
+                                 <verse>
+                                    <syl>là</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_2691" dur="16" oct="3" pname="g">
+                                 <accid accid.ges="s" />
+                                 <verse>
+                                    <syl>mi</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_2718" dur="16" oct="3" pname="g">
+                                 <accid accid.ges="s" />
+                                 <verse>
+                                    <syl con="d" wordpos="i">di</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_2745" dur="8" oct="3" pname="a">
+                                 <verse>
+                                    <syl wordpos="t">rai</syl>
+                                 </verse>
+                              </note>
+                              <note xml:id="note_2772" dur="8" oct="3" pname="b">
+                                 <verse>
+                                    <syl>di</syl>
+                                 </verse>
+                              </note>
+                           </layer>
+                        </staff>
+                        <staff n="10">
+                           <layer n="1">
+                              <note dur="8" oct="3" pname="e" />
+                              <rest dur="8" />
+                              <note dur="8" oct="2" pname="b" />
+                              <rest dur="8" />
+                           </layer>
+                           <layer n="2" />
+                        </staff>
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
