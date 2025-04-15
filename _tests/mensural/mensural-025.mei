@@ -7,19 +7,23 @@
          <titleStmt>
             <title>CMN aligned with mensural notation in tempus perfectum and prolatio maior</title>
          </titleStmt>
-         <pubStmt />
+         <pubStmt>
+            <date isodate="2025-04-14" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot />
+         </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application isodate="2024-01-21T23:47:45" version="4.2.0-dev-80ec72d">
+            <application version="5.2.0" label="2">
                <name>Verovio</name>
-               <p>Transcoded from Humdrum</p>
             </application>
          </appInfo>
       </encodingDesc>
-      <extMeta>
-         <frames xmlns="http://www.humdrum.org/ns/humxml" />
-      </extMeta>
    </meiHead>
    <music>
       <body>
