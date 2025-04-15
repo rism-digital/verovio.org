@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>CMN aligned with mensural notation in tempus perfectum and prolatio maior</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application isodate="2024-01-21T23:47:45" version="4.2.0-dev-80ec72d">
+               <name>Verovio</name>
+               <p>Transcoded from Humdrum</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta>
+         <frames xmlns="http://www.humdrum.org/ns/humxml" />
+      </extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="m1miza2">
+            <score xml:id="svr005u">
+               <scoreDef xml:id="s1xnpqb9" midi.bpm="400">
+                  <staffGrp xml:id="swzy3ec">
+                     <staffDef xml:id="s11ozrlo" n="1" lines="5">
+                        <clef xml:id="ci95yd4" shape="C" line="3" />
+                        <meterSig xml:id="m15km9ep" count="9" unit="2" />
+                     </staffDef>
+                     <staffDef xml:id="s1nfiwqi" n="2" notationtype="mensural" lines="5">
+                        <clef xml:id="cfrn3u3" shape="C" line="3" />
+                        <mensur xml:id="mzszlhj" prolatio="3" tempus="3" dot="true" sign="O" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="so4ee4a">
+                  <measure xml:id="m2pefcx">
+                     <staff xml:id="s12ubxu0" n="1">
+                        <layer xml:id="l1bor2nx" n="1">
+                           <note xml:id="nwfmhjk" dur="breve" oct="4" pname="c" accid.ges="n" />
+                           <tuplet xml:id="t1omecu9" num="9" numbase="4" num.visible="false" bracket.visible="false">
+                              <note xml:id="n1bmgix5" dur="2" oct="4" pname="d" accid.ges="n" />
+                           </tuplet>
+                           <tuplet xml:id="tj77q00" num="9" numbase="4" num.visible="false" bracket.visible="false">
+                              <note xml:id="n16g8f9e" dur="2" oct="4" pname="c" accid.ges="n" />
+                           </tuplet>
+                           <tuplet xml:id="t1js6g7c" num="9" numbase="4" num.visible="false" bracket.visible="false">
+                              <note xml:id="n1dkf8ui" dur="4" oct="4" pname="d" accid.ges="n" />
+                           </tuplet>
+                           <tuplet xml:id="t1y1mgxh" num="9" numbase="4" num.visible="false" bracket.visible="false">
+                              <note xml:id="n1vplvve" dur="4" oct="4" pname="c" accid.ges="n" />
+                           </tuplet>
+                        </layer>
+                     </staff>
+                     <staff xml:id="sddv0ri" n="2">
+                        <layer xml:id="l1wugmch" n="1">
+                           <note xml:id="n3838hl" dur="brevis" oct="4" pname="c" accid.ges="n" />
+                           <note xml:id="n1vifptt" dur="minima" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="npd1qnq" dur="minima" oct="4" pname="c" accid.ges="n" />
+                           <note xml:id="n17prpan" dur="semiminima" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="n2yar3d" dur="semiminima" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m154wvr1" n="2">
+                     <staff xml:id="s18wlm3l" n="1">
+                        <layer xml:id="l1jy649" n="1">
+                           <note xml:id="n19c8hp6" dots="1" dur="breve" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="s1nmk4lp" n="2">
+                        <layer xml:id="l8n0erx" n="1">
+                           <note xml:id="n11py65k" dots="1" dur="brevis" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m1fui6cf" n="3">
+                     <staff xml:id="s1yx9lr3" n="1">
+                        <layer xml:id="l1pe3h1n" n="1">
+                           <tuplet xml:id="t12jrufd" num="3" numbase="2" num.visible="false" bracket.visible="false">
+                              <note xml:id="nuliurc" dur="1" oct="4" pname="d" accid.ges="n" />
+                           </tuplet>
+                           <note xml:id="n17glthj" dur="breve" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="s4l117g" n="2">
+                        <layer xml:id="lcuq7yy" n="1">
+                           <note xml:id="neh1osz" dur="semibrevis" oct="4" pname="d" accid.ges="n" />
+                           <note xml:id="nc7avtd" dur="brevis" oct="3" pname="b" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure xml:id="m7nve8j" right="end" n="4">
+                     <staff xml:id="s12egnpa" n="1">
+                        <layer xml:id="l11pynnw" n="1">
+                           <note xml:id="n5uf2yz" dots="1" dur="breve" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <staff xml:id="s1weiass" n="2">
+                        <layer xml:id="lswjylh" n="1">
+                           <note xml:id="n14egkc2" dots="1" dur="brevis" oct="4" pname="c" accid.ges="n" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
