@@ -65,7 +65,7 @@
                             staff="1 2">
                        The region between specified notes is indicated with a ribbon over 
                        the indicated staves (here the notes are in the same layer).</annot>
-                     <annot type="score" xml:id="annot-1" startid="#note-3" endid="#note-8">
+                     <annot type="score" xml:id="annot-2" startid="#note-3" endid="#note-8">
                        The region between notes is indicated. In this case, which staves
                        are involved is not explicit, and is ambiguous from the guidelines.
                        </annot>
