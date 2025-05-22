@@ -51,9 +51,9 @@
                            <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <annot xml:id="annot-1" type="score" staff="1" startid="#note-2" endid="#note-3">Middle annotation.</annot>
-                     <annot xml:id="annot-2" type="score" staff="1" startid="#note-1" endid="#note-3">Start annotation.</annot>
-                     <annot xml:id="annot-3" type="score" staff="1" tstamp="1.5" tstamp2="0m+4">Long annotation.</annot>
+                     <annot type="score" staff="1" startid="#note-2" endid="#note-3">Middle annotation.</annot>
+                     <annot type="score" staff="1" startid="#note-1" endid="#note-3">Start annotation.</annot>
+                     <annot type="score" staff="1" tstamp="1.5" tstamp2="0m+4">Long annotation.</annot>
                   </measure>
                </section>
             </score>

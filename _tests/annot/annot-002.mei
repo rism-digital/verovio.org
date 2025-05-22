@@ -53,7 +53,7 @@
                            <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <annot type="score" xml:id="annot-1" plist="#note-2 #note-3">Notes in the plist have 
+                     <annot type="score" plist="#note-2 #note-3">Notes in the plist have 
                         @data-plist-referring and can by styled, coloured or made interactive
                         using CSS and lightweight JavaScript.</annot>
                   </measure>

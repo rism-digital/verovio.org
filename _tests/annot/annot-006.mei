@@ -51,7 +51,7 @@
                            <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <annot xml:id="annot-1" type="score" staff="1" startid="#note-2" endid="#note-11">The region between timestamps is indicated with a ribbon over 
+                     <annot type="score" staff="1" startid="#note-2" endid="#note-11">The region between timestamps is indicated with a ribbon over 
                         the indicated staff.</annot>
                   </measure>
                   <sb />
