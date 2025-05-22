@@ -35,19 +35,19 @@
             <score>
                <scoreDef>
                   <staffGrp>
-                     <staffDef n="1" lines="5" notationtype="neume"/>
+                     <staffDef n="1" notationtype="neume" lines="5" />
                   </staffGrp>
                </scoreDef>
                <section>
                   <staff n="1">
                      <layer n="1">
-                        <clef shape="C" line="4"/>
+                        <clef shape="C" line="4" />
                         <syllable>
                            <syl>Be</syl>
                            <neume>
-                              <nc pname="e" oct="3"/>
-                              <nc pname="e" oct="3"/>
-                              <nc tilt="s" pname="f" oct="3"/>
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="f" tilt="s" />
                            </neume>
                         </syllable>
                         <syllable>
@@ -56,29 +56,29 @@
                         <syllable>
                            <syl>di</syl>
                            <neume>
-                              <nc pname="g" oct="3"/>
-                              <nc tilt="s" pname="a" oct="3"/>
+                              <nc oct="3" pname="g" />
+                              <nc oct="3" pname="a" tilt="s" />
                            </neume>
                         </syllable>
                         <syllable>
-                           <syl>ci </syl>
+                           <syl>ci</syl>
                            <neume>
-                              <nc tilt="n" pname="g" oct="3"/>
-                              <nc pname="e" oct="3"/>
+                              <nc oct="3" pname="g" tilt="n" />
+                              <nc oct="3" pname="e" />
                            </neume>
                         </syllable>
                         <syllable>
                            <syl>te</syl>
                            <neume>
-                              <nc curve="c" pname="f" oct="3">
-                                 <liquescent/>
+                              <nc oct="3" pname="f" curve="c">
+                                 <liquescent />
                               </nc>
                            </neume>
                            <neume>
-                              <nc ligated="true" tilt="n" pname="f" oct="3"/>
-                              <nc ligated="true" pname="d" oct="3"/>
-                              <nc pname="e" oct="3"/>
-                              <nc pname="d" oct="3"/>
+                              <nc oct="3" pname="f" ligated="true" tilt="n" />
+                              <nc oct="3" pname="d" ligated="true" />
+                              <nc oct="3" pname="e" />
+                              <nc oct="3" pname="d" />
                            </neume>
                         </syllable>
                      </layer>

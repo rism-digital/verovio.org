@@ -25,7 +25,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="1.0.0" label="2">
+            <application version="1.0.0" label="2" type="skip-round-trip">
                <name>Verovio</name>
             </application>
          </appInfo>

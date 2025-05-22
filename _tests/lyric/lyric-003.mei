@@ -151,13 +151,14 @@
                   <measure right="end">
                      <staff n="1">
                         <layer n="1">
-                           <note xml:id="note-0000000559916323" dur="1" fermata="above" oct="5" pname="d">
+                           <note xml:id="note-0000000559916323" dur="1" oct="5" pname="d">
                               <verse n="1">
                                  <syl wordpos="t">zo.</syl>
                               </verse>
                            </note>
                         </layer>
                      </staff>
+                     <fermata startid="#note-0000000559916323" place="above" />
                   </measure>
                </section>
             </score>

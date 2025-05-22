@@ -12,12 +12,12 @@
          </pubStmt>
          <notesStmt>
             <annot>Fermatas (whether as elements or as attributes) are placed at an appropriate distance from elements, and they are centred on
-					rests.</annot>
+               rests.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="2.0.0" label="2">
+            <application version="2.0.0" label="2" type="skip-round-trip">
                <name>Verovio</name>
             </application>
          </appInfo>

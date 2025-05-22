@@ -71,16 +71,18 @@
                   <measure right="end">
                      <staff n="1">
                         <layer n="1">
-                           <note xml:id="note-0000000799167449" dots="1" dur="2" fermata="above" oct="4" pname="f" accid.ges="n" />
+                           <note xml:id="note-0000000799167449" dots="1" dur="2" oct="4" pname="f" accid.ges="n" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
                            <note dur="4" />
                            <rest dur="4" />
-                           <rest xml:id="rest-0000000800873190" dur="4" fermata="above" />
+                           <rest xml:id="rest-0000000800873190" dur="4" />
                         </layer>
                      </staff>
+                     <fermata startid="#note-0000000799167449" place="above" />
+                     <fermata startid="#rest-0000000800873190" place="above" />
                   </measure>
                </section>
             </score>

@@ -9,8 +9,7 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <persName role="encoder" 
-                        auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
+               <persName role="encoder" auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
             </respStmt>
             <date isodate="2025-04-14">14 April 2025</date>
             <pubPlace>
@@ -46,18 +45,15 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c" xml:id="note-1"/>
-                           <note dur="4" oct="4" pname="c" xml:id="note-2"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-3"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-4"/>
+                           <note xml:id="note-1" dur="4" oct="4" pname="c" />
+                           <note xml:id="note-2" dur="4" oct="4" pname="c" />
+                           <note xml:id="note-3" dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <annot type="score" xml:id="annot-1" startid="#note-2" endid="#note-3" staff="1">
-                       Middle annotation.</annot>
-                     <annot type="score" xml:id="annot-2" startid="#note-1" endid="#note-3" staff="1">
-                       Start annotation.</annot>
-                     <annot type="score" xml:id="annot-3" tstamp="1.5" tstamp2="4" staff="1">
-                       Long annotation.</annot>
+                     <annot xml:id="annot-1" type="score" staff="1" startid="#note-2" endid="#note-3">Middle annotation.</annot>
+                     <annot xml:id="annot-2" type="score" staff="1" startid="#note-1" endid="#note-3">Start annotation.</annot>
+                     <annot xml:id="annot-3" type="score" staff="1" tstamp="1.5" tstamp2="0m+4">Long annotation.</annot>
                   </measure>
                </section>
             </score>

@@ -57,7 +57,7 @@
                                  <verse n="1">
                                     <label>V 1.</label>
                                     <labelAbbr>1.</labelAbbr>
-                                    <syl con="d" wordpos="i"> E</syl>
+                                    <syl con="d" wordpos="i">E</syl>
                                  </verse>
                                  <verse n="2">
                                     <label>V 2.</label>
@@ -89,7 +89,7 @@
                                  <verse n="1">
                                     <label>V 1.</label>
                                     <labelAbbr>1.</labelAbbr>
-                                    <syl con="d" wordpos="i"> E</syl>
+                                    <syl con="d" wordpos="i">E</syl>
                                  </verse>
                                  <verse n="2">
                                     <label>V 2.</label>
@@ -190,7 +190,7 @@
                                        <syl>che'l</syl>
                                     </verse>
                                     <verse n="2">
-                                       <syl> E</syl>
+                                       <syl>E</syl>
                                     </verse>
                                  </note>
                                  <note dur="8" oct="4" pname="e" accid.ges="n" />
@@ -220,7 +220,7 @@
                                     <syl>che'l</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl> E</syl>
+                                    <syl>E</syl>
                                  </verse>
                               </note>
                            </layer>
@@ -258,7 +258,7 @@
                                     <syl>le</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl> i</syl>
+                                    <syl>i</syl>
                                  </verse>
                               </note>
                            </layer>
@@ -294,7 +294,7 @@
                                     <syl>le</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl> i</syl>
+                                    <syl>i</syl>
                                  </verse>
                               </note>
                            </layer>
@@ -352,7 +352,7 @@
                                     <syl con="d" wordpos="i">Tem</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl> E</syl>
+                                    <syl>E</syl>
                                  </verse>
                               </note>
                               <beam>
@@ -372,7 +372,7 @@
                                     <syl con="d" wordpos="i">Tem</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl> E</syl>
+                                    <syl>E</syl>
                                  </verse>
                               </note>
                               <note dur="4" oct="4" pname="c" accid.ges="n" />
@@ -404,7 +404,7 @@
                                     <syl>na</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl con="d" wordpos="i"> a</syl>
+                                    <syl con="d" wordpos="i">a</syl>
                                  </verse>
                               </note>
                               <note xml:id="note-0000001426289890" dur="8" oct="4" pname="f" accid.ges="n">
@@ -440,7 +440,7 @@
                                     <syl>na</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl con="d" wordpos="i"> a</syl>
+                                    <syl con="d" wordpos="i">a</syl>
                                  </verse>
                               </note>
                               <note xml:id="note-0000000075155698" dur="8" oct="4" pname="d" accid.ges="n">
@@ -503,7 +503,7 @@
                            <layer n="1">
                               <note xml:id="note-0000001193172580" dur="2" oct="4" pname="a" accid.ges="n">
                                  <verse n="1">
-                                    <syl> E</syl>
+                                    <syl>E</syl>
                                  </verse>
                                  <verse n="2">
                                     <syl con="d" wordpos="i">so</syl>
@@ -523,7 +523,7 @@
                            <layer n="1">
                               <note xml:id="note-0000001509413012" dur="2" oct="4" pname="d" accid.ges="n">
                                  <verse n="1">
-                                    <syl> E</syl>
+                                    <syl>E</syl>
                                  </verse>
                                  <verse n="2">
                                     <syl con="d" wordpos="i">so</syl>
@@ -824,7 +824,7 @@
                                     <syl>che</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl con="d" wordpos="i"> o</syl>
+                                    <syl con="d" wordpos="i">o</syl>
                                  </verse>
                               </note>
                               <note xml:id="note-0000000792193352" dur="4" oct="4" pname="f" accid.ges="n">
@@ -852,7 +852,7 @@
                                     <syl>che</syl>
                                  </verse>
                                  <verse n="2">
-                                    <syl con="d" wordpos="i"> o</syl>
+                                    <syl con="d" wordpos="i">o</syl>
                                  </verse>
                               </note>
                               <note xml:id="note-0000001248225738" dur="4" oct="4" pname="d" accid.ges="n">

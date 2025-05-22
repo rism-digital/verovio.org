@@ -43,7 +43,7 @@
                <section>
                   <measure>
                      <staff n="1">
-                        <annot>staff annotation</annot>
+                        <annot xml:id="uz1twtd">staff annotation</annot>
                         <layer n="1">
                            <note dur="8" oct="5" pname="a" />
                            <note dur="8" oct="5" pname="b" />
@@ -54,20 +54,20 @@
                            <note dur="8" oct="5" pname="a" />
                            <note dur="8" oct="4" pname="c" />
                            <note dur="8" oct="4" pname="d" />
-                           <annot>layer annotation</annot>
+                           <annot xml:id="g5nt2mx">layer annotation</annot>
                         </layer>
                      </staff>
                      <dir staff="1" tstamp="1">
-                        <annot>annotation before text</annot>
+                        <annot xml:id="j1j6mgcl">annotation before text</annot>
                         molto dolce</dir>
-                     <dir staff="1" tstamp="2">più
-                        <annot>annotation between text</annot>
+                     <dir staff="1" tstamp="2">pi&#249;
+                        <annot xml:id="o1mrbo7s">annotation between text</annot>
                         exp.</dir>
-                     <dir staff="1" tstamp="3">bouche fermée
+                     <dir staff="1" tstamp="3">bouche ferm&#233;e
                         <del>totalement</del>
-                        <annot>annotation after text</annot>
+                        <annot xml:id="vfysx2g">annotation after text</annot>
                      </dir>
-                     <annot label="should be child of measure">measure annotation</annot>
+                     <annot xml:id="x1lcqu8j" label="should be child of measure">measure annotation</annot>
                   </measure>
                </section>
             </score>

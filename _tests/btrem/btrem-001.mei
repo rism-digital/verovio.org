@@ -40,7 +40,7 @@
                      <staff n="1">
                         <layer n="1">
                            <bTrem>
-                              <chord dur="1" stem.mod="3slash" tie="i">
+                              <chord dur="1" stem.mod="3slash">
                                  <note xml:id="note-0000000451591036" oct="4" pname="d" />
                                  <note xml:id="note-0000000683333554" oct="4" pname="f" />
                               </chord>
@@ -58,11 +58,13 @@
                            <note dur="1" oct="3" pname="d" />
                         </layer>
                      </staff>
+                     <tie startid="#note-0000000451591036" endid="#note-0000001548057727" />
+                     <tie startid="#note-0000000683333554" endid="#note-0000001441834284" />
                   </measure>
                   <measure n="2">
                      <staff n="1">
                         <layer n="1">
-                           <chord dur="4" stem.dir="up" tie="t">
+                           <chord dur="4" stem.dir="up">
                               <note xml:id="note-0000001548057727" oct="4" pname="d" />
                               <note xml:id="note-0000001441834284" oct="4" pname="f" />
                            </chord>

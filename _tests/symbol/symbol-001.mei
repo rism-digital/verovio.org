@@ -41,15 +41,15 @@
                            <note dur="4" oct="4" pname="c" />
                         </layer>
                      </staff>
-                     <dir place="above" staff="1" tstamp="1">Symbols such as <symbol glyph.auth="smufl" glyph.name="coda" color="orange"></symbol> can be mixed with text</dir>
-                     <dir place="below" staff="1" tstamp="1">
-                        This
+                     <dir place="above" staff="1" tstamp="1">Symbols such as <symbol color="orange" glyph.auth="smufl" glyph.name="coda" /> can be mixed with text</dir>
+                     <dir place="below" staff="1" tstamp="1">This
                         <choice>
-                           <sic><symbol glyph.auth="smufl" glyph.name="ottavaAlta" color="orange"></symbol></sic>
-                           <corr/>
+                           <sic>
+                              <symbol color="orange" glyph.auth="smufl" glyph.name="ottavaAlta" />
+                           </sic>
+                           <corr />
                         </choice>
-                        &#xA0;is in editorial markup
-                     </dir>
+                        &#160;is in editorial markup</dir>
                   </measure>
                </section>
             </score>

@@ -59,10 +59,11 @@
                   <measure right="end" n="3">
                      <staff n="1">
                         <layer n="1">
-                           <mRest xml:id="mrest-000000020800024" fermata="above" />
+                           <mRest xml:id="mrest-000000020800024" />
                         </layer>
                      </staff>
                      <pedal staff="1" tstamp="3.75" dir="up" />
+                     <fermata startid="#mrest-000000020800024" place="above" />
                   </measure>
                </section>
             </score>

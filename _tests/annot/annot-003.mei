@@ -9,8 +9,7 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <persName role="encoder" 
-                        auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
+               <persName role="encoder" auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
             </respStmt>
             <date isodate="2025-04-14">14 April 2025</date>
             <pubPlace>
@@ -47,15 +46,14 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c" xml:id="note-1"/>
-                           <note dur="4" oct="4" pname="c" xml:id="note-2"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-3"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-4"/>
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <annot type="score" xml:id="annot-1" tstamp="2" tstamp2="4" staff="1">
-                       The region between timestamps is indicated with a ribbon over 
-                       the indicated staff.</annot>
+                     <annot xml:id="annot-1" type="score" staff="1" tstamp="2" tstamp2="0m+4">The region between timestamps is indicated with a ribbon over 
+                        the indicated staff.</annot>
                   </measure>
                </section>
             </score>

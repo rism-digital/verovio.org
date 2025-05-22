@@ -35,7 +35,7 @@
                   <measure n="1">
                      <staff n="1">
                         <layer n="1">
-                           <note xml:id="note-000000180893861" dur="4" fermata="above" oct="4" pname="e" />
+                           <note xml:id="note-000000180893861" dur="4" oct="4" pname="e" />
                            <note xml:id="note-000000090536214" dur="4" oct="4" pname="d" />
                            <note xml:id="note-000000034369893" dur="4" oct="5" pname="d" />
                            <note dur="4" oct="5" pname="f" accid.ges="n" />
@@ -44,6 +44,7 @@
                      <slur staff="1" startid="#note-000000180893861" endid="#note-000000090536214" />
                      <dir place="above" staff="1" tstamp="2">a tempo</dir>
                      <phrase staff="1" startid="#note-000000034369893" endid="#note-000000110366772" />
+                     <fermata startid="#note-000000180893861" place="above" />
                   </measure>
                   <measure n="2">
                      <staff n="1">

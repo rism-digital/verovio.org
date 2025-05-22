@@ -70,10 +70,10 @@
                                  <note dur="64" oct="5" pname="g" tuplet="m1" />
                                  <note dur="64" oct="5" pname="f" tuplet="t1" />
                               </tuplet>
-                              <note xml:id="d1e611" dur="16" oct="6" pname="c" tie="i" />
+                              <note xml:id="d1e611" dur="16" oct="6" pname="c" />
                            </beam>
                            <beam>
-                              <note xml:id="d1e634" dots="1" dur="8" oct="6" pname="c" tie="t" />
+                              <note xml:id="d1e634" dots="1" dur="8" oct="6" pname="c" />
                               <tuplet num="7" numbase="4">
                                  <note dur="64" oct="6" pname="c" tuplet="i1" />
                                  <note dur="64" oct="5" pname="b" tuplet="m1" />
@@ -112,6 +112,7 @@
                            </beam>
                         </layer>
                      </staff>
+                     <tie startid="#d1e611" endid="#d1e634" />
                   </measure>
                </section>
             </score>

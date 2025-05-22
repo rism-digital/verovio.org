@@ -21,12 +21,12 @@
          </seriesStmt>
          <notesStmt>
             <annot>For more control over fermatas the fermata element may be used. Verovio takes the attributes form, place, and shape into
-					account.</annot>
+               account.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="1.0.0" label="2">
+            <application version="1.0.0" label="2" type="skip-round=trip">
                <name>Verovio</name>
             </application>
          </appInfo>

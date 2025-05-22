@@ -81,14 +81,16 @@
                   <measure right="dbl" n="2">
                      <staff n="1">
                         <layer n="1">
-                           <mRest xml:id="m1hab2jh" fermata="above" />
+                           <mRest xml:id="m1hab2jh" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <mRest xml:id="m1jo4cik" fermata="above" />
+                           <mRest xml:id="m1jo4cik" />
                         </layer>
                      </staff>
+                     <fermata startid="#m1hab2jh" place="above" />
+                     <fermata startid="#m1jo4cik" place="above" />
                   </measure>
                </section>
             </score>

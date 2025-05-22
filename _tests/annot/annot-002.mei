@@ -47,10 +47,10 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c" xml:id="note-1"/>
+                           <note dur="4" oct="4" pname="c" />
                            <note dur="4" oct="4" pname="c" xml:id="note-2"/>
                            <note dur="4" oct="4" pname="g" xml:id="note-3"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-4"/>
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
                      <annot type="score" xml:id="annot-1" plist="#note-2 #note-3">Notes in the plist have 

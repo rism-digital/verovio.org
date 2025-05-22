@@ -44,14 +44,15 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note xml:id="note-0000001881047863" dots="1" dur="4" oct="5" pname="g" stem.dir="down" tie="i" />
+                           <note xml:id="note-0000001881047863" dots="1" dur="4" oct="5" pname="g" stem.dir="down" />
                            <beam>
-                              <note xml:id="note-0000000623735762" dots="1" dur="16" oct="5" pname="g" stem.dir="down" tie="t" />
+                              <note xml:id="note-0000000623735762" dots="1" dur="16" oct="5" pname="g" stem.dir="down" />
                               <note dur="32" oct="5" pname="a" stem.dir="down" />
                            </beam>
                         </layer>
                      </staff>
                      <turn label="delayed turn" staff="1" tstamp="2.66" accidlower="s" place="above" delayed="true" />
+                     <tie startid="#note-0000001881047863" endid="#note-0000000623735762" />
                   </measure>
                </section>
             </score>

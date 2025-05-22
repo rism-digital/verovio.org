@@ -39,33 +39,40 @@
                      <staff n="1">
                         <layer n="1">
                            <rest dur="8" />
-                           <note xml:id="note-0000000533095021" dur="8" oct="4" pname="b" tie="i" />
-                           <note xml:id="note-0000000426242663" dur="2" oct="4" pname="b" tie="t" />
-                           <chord dur="4" tie="i">
-                              <note xml:id="note-0000000221777088" dur="4" oct="4" pname="e" tie="i" />
-                              <note xml:id="note-0000001523390471" dur="4" oct="4" pname="g" tie="i" />
-                              <note xml:id="note-0000001323606563" dur="4" oct="4" pname="b" tie="i" />
-                              <note xml:id="note-0000000072405068" dur="4" oct="5" pname="d" tie="i" />
-                              <note xml:id="note-0000001436233674" dur="4" oct="5" pname="f" tie="i" />
+                           <note xml:id="note-0000000533095021" dur="8" oct="4" pname="b" />
+                           <note xml:id="note-0000000426242663" dur="2" oct="4" pname="b" />
+                           <chord dur="4">
+                              <note xml:id="note-0000000221777088" dur="4" oct="4" pname="e" />
+                              <note xml:id="note-0000001523390471" dur="4" oct="4" pname="g" />
+                              <note xml:id="note-0000001323606563" dur="4" oct="4" pname="b" />
+                              <note xml:id="note-0000000072405068" dur="4" oct="5" pname="d" />
+                              <note xml:id="note-0000001436233674" dur="4" oct="5" pname="f" />
                            </chord>
                         </layer>
                         <layer n="2">
                            <space dur="8" />
-                           <note xml:id="note-0000002126280073" dur="8" oct="4" pname="g" tie="i" />
-                           <note xml:id="note-0000000113817184" dur="2" oct="4" pname="g" tie="t" />
+                           <note xml:id="note-0000002126280073" dur="8" oct="4" pname="g" />
+                           <note xml:id="note-0000000113817184" dur="2" oct="4" pname="g" />
                            <space dur="4" />
                         </layer>
                      </staff>
+                     <tie startid="#note-0000000533095021" endid="#note-0000000426242663" />
+                     <tie startid="#note-0000000221777088" endid="#note-0000000569453428" />
+                     <tie startid="#note-0000001523390471" endid="#note-0000001616633364" />
+                     <tie startid="#note-0000001323606563" endid="#note-0000000793846904" />
+                     <tie startid="#note-0000000072405068" endid="#note-0000002016500364" />
+                     <tie startid="#note-0000001436233674" endid="#note-0000001882184441" />
+                     <tie startid="#note-0000002126280073" endid="#note-0000000113817184" />
                   </measure>
                   <measure n="2">
                      <staff n="1">
                         <layer n="1">
-                           <chord dur="2" tie="t">
-                              <note xml:id="note-0000000569453428" dur="4" oct="4" pname="e" tie="t" />
-                              <note xml:id="note-0000001616633364" dur="4" oct="4" pname="g" tie="t" />
-                              <note xml:id="note-0000000793846904" dur="4" oct="4" pname="b" tie="t" />
-                              <note xml:id="note-0000002016500364" dur="4" oct="5" pname="d" tie="t" />
-                              <note xml:id="note-0000001882184441" dur="4" oct="5" pname="f" tie="t" />
+                           <chord dur="2">
+                              <note xml:id="note-0000000569453428" dur="4" oct="4" pname="e" />
+                              <note xml:id="note-0000001616633364" dur="4" oct="4" pname="g" />
+                              <note xml:id="note-0000000793846904" dur="4" oct="4" pname="b" />
+                              <note xml:id="note-0000002016500364" dur="4" oct="5" pname="d" />
+                              <note xml:id="note-0000001882184441" dur="4" oct="5" pname="f" />
                            </chord>
                            <chord dur="2">
                               <note xml:id="n01" dur="4" oct="4" pname="e" />

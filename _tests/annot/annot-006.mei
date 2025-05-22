@@ -9,8 +9,7 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <persName role="encoder" 
-                        auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
+               <persName role="encoder" auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
             </respStmt>
             <date isodate="2025-04-14">14 April 2025</date>
             <pubPlace>
@@ -22,7 +21,7 @@
          </seriesStmt>
          <notesStmt>
             <annot>MEI annotations with @type "score" can span systems. 
-              The ribbon will also span scores, showing start, end and middle clearly.</annot>
+               The ribbon will also span scores, showing start, end and middle clearly.</annot>
          </notesStmt>
       </fileDesc>
       <encodingDesc>
@@ -46,36 +45,34 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c" xml:id="note-1"/>
-                           <note dur="4" oct="4" pname="c" xml:id="note-2"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-3"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-4"/>
+                           <note dur="4" oct="4" pname="c" />
+                           <note xml:id="note-2" dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <annot type="score" xml:id="annot-1" startid="#note-2" endid="#note-11" 
-                            staff="1">
-                       The region between timestamps is indicated with a ribbon over 
-                       the indicated staff.</annot>
+                     <annot xml:id="annot-1" type="score" staff="1" startid="#note-2" endid="#note-11">The region between timestamps is indicated with a ribbon over 
+                        the indicated staff.</annot>
                   </measure>
-                  <sb/>
+                  <sb />
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="a" xml:id="note-5"/>
-                           <note dur="4" oct="4" pname="a" xml:id="note-6"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-7"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-8"/>
+                           <note dur="4" oct="4" pname="a" />
+                           <note dur="4" oct="4" pname="a" />
+                           <note dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
                   </measure>
-                   <sb/>
-                 <measure>
+                  <sb />
+                  <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="f" xml:id="note-9"/>
-                           <note dur="4" oct="4" pname="f" xml:id="note-10"/>
-                           <note dur="4" oct="4" pname="e" xml:id="note-11"/>
-                           <note dur="4" oct="4" pname="e" xml:id="note-12"/>
+                           <note dur="4" oct="4" pname="f" />
+                           <note dur="4" oct="4" pname="f" />
+                           <note xml:id="note-11" dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="e" />
                         </layer>
                      </staff>
                   </measure>

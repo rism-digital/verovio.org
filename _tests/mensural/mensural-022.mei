@@ -22,7 +22,7 @@
       </fileDesc>
       <encodingDesc>
          <appInfo>
-            <application version="unknown">
+            <application version="unknown" type="skip-round-trip">
                <name>Verovio</name>
             </application>
          </appInfo>

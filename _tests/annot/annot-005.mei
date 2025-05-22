@@ -9,8 +9,7 @@
          </titleStmt>
          <pubStmt>
             <respStmt>
-               <persName role="encoder" 
-                        auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
+               <persName role="encoder" auth.uri="https://orcid.org/0000-0003-4151-0499">David Lewis</persName>
             </respStmt>
             <date isodate="2025-04-14">14 April 2025</date>
             <pubPlace>
@@ -47,28 +46,24 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <note dur="4" oct="4" pname="c" xml:id="note-1"/>
-                           <note dur="4" oct="4" pname="c" xml:id="note-2"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-3"/>
-                           <note dur="4" oct="4" pname="g" xml:id="note-4"/>
+                           <note xml:id="note-1" dur="4" oct="4" pname="c" />
+                           <note xml:id="note-2" dur="4" oct="4" pname="c" />
+                           <note xml:id="note-3" dur="4" oct="4" pname="g" />
+                           <note dur="4" oct="4" pname="g" />
                         </layer>
                      </staff>
                      <staff n="2">
                         <layer n="1">
-                           <note dur="4" oct="2" pname="c" xml:id="note-5"/>
-                           <note dur="4" oct="3" pname="c" xml:id="note-6"/>
-                           <note dur="4" oct="3" pname="e" xml:id="note-7"/>
-                           <note dur="4" oct="3" pname="c" xml:id="note-8"/>
+                           <note dur="4" oct="2" pname="c" />
+                           <note dur="4" oct="3" pname="c" />
+                           <note dur="4" oct="3" pname="e" />
+                           <note xml:id="note-8" dur="4" oct="3" pname="c" />
                         </layer>
                      </staff>
-                     <annot type="score" xml:id="annot-1" startid="#note-1" endid="#note-2"
-                            staff="1 2">
-                       The region between specified notes is indicated with a ribbon over 
-                       the indicated staves (here the notes are in the same layer).</annot>
-                     <annot type="score" xml:id="annot-2" startid="#note-3" endid="#note-8">
-                       The region between notes is indicated. In this case, which staves
-                       are involved is not explicit, and is ambiguous from the guidelines.
-                       </annot>
+                     <annot xml:id="annot-1" type="score" staff="1 2" startid="#note-1" endid="#note-2">The region between specified notes is indicated with a ribbon over 
+                        the indicated staves (here the notes are in the same layer).</annot>
+                     <annot xml:id="annot-2" type="score" startid="#note-3" endid="#note-8">The region between notes is indicated. In this case, which staves
+                        are involved is not explicit, and is ambiguous from the guidelines.</annot>
                   </measure>
                </section>
             </score>
