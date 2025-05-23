@@ -72,11 +72,12 @@
                            <mRest />
                         </layer>
                         <layer n="2">
-                           <note xml:id="note-0000002139386084" dur="2" oct="4" pname="f" tie="i">
+                           <note xml:id="note-0000002139386084" dur="2" oct="4" pname="f">
                               <accid accid="s" />
                            </note>
                         </layer>
                      </staff>
+                     <tie startid="#note-0000002139386084" endid="#note-0000001245590624" />
                   </measure>
                   <measure>
                      <staff n="1">
@@ -87,7 +88,7 @@
                            <rest dur="4" />
                         </layer>
                         <layer n="2">
-                           <note xml:id="note-0000001245590624" dur="2" oct="4" pname="f" tie="t">
+                           <note xml:id="note-0000001245590624" dur="2" oct="4" pname="f">
                               <accid accid.ges="s" />
                            </note>
                         </layer>

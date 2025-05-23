@@ -67,9 +67,10 @@
                   <measure right="end" n="2">
                      <staff n="1">
                         <layer n="1">
-                           <mRest xml:id="mrest-000000001988686" fermata="above" />
+                           <mRest xml:id="mrest-000000001988686" />
                         </layer>
                      </staff>
+                     <fermata startid="#mrest-000000001988686" place="above" />
                   </measure>
                </section>
             </score>
