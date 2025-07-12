@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Measure rest in up-beat measure</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2025-07-12" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>MRest in up-beat has a spacing / playing duration of 0</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.4.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp bar.thru="true">
+                        <grpSym symbol="brace" />
+                        <staffDef n="3" lines="5" ppq="4">
+                           <clef shape="G" line="2" />
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                        <staffDef n="4" lines="5" ppq="4">
+                           <clef shape="F" line="4" />
+                           <meterSig count="4" unit="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure metcon="false" n="0">
+                     <staff n="3">
+                        <layer n="1">
+                           <rest dur="4" />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="3">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="3">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
