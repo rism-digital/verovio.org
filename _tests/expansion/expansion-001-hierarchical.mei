@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xml:id="m7j5ysz1" meiversion="5.1" xmlns="http://www.music-encoding.org/ns/mei">
+   <meiHead xml:id="m5idx691">
+      <fileDesc xml:id="fkzcz1w2">
+         <titleStmt xml:id="tb7nfqc">
+            <title xml:id="tiaw8sh1">Menuett und Trio</title>
+         </titleStmt>
+         <pubStmt xml:id="pr5zzpf1">
+            <respStmt xml:id="rmke3db">
+               <persName xml:id="p0u9qk2" role="encoder">Werner Goebl</persName>
+            </respStmt>
+            <date xml:id="d3t6p3p2" isodate="2023-02-01" type="encoding-date">2023-02-01</date>
+            <pubPlace xml:id="pyqkcbw1">
+               <ref xml:id="rdirraq2" target="https://github.com/rism-digital/verovio/pull/1152"/>
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt xml:id="srwb2k61">
+            <title xml:id="thl8uaj1">Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt xml:id="n3atgny2">
+            <annot xml:id="a98u7kf">Verovio supports different rendering of the score's repetition structure using the expansion element.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc xml:id="encodingdesc-1odnoym">
+         <appInfo xml:id="appinfo-17odj0a">
+            <application xml:id="a6defjg1" label="2" version="2.5.0">
+               <name xml:id="ni7r92l1">Verovio</name>
+            </application>
+            <application xml:id="aljf6ho1" enddate="2025-10-14T17:48:48" startdate="2023-04-04T08:15:22" version="1.2.9">
+               <name xml:id="n0wch9w1">mei-friend</name>
+               <p xml:id="p9h2ga8">First edit by mei-friend 0.8.9, 2 April 2023.</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music xml:id="m8aj6m5">
+      <body xml:id="bw94i411">
+         <mdiv xml:id="m4x9w72">
+            <score xml:id="s130l825">
+               <scoreDef xml:id="sy03eph" mm="144" mm.dots="1" mm.unit="2">
+                  <staffGrp xml:id="s1cz2i29">
+                     <staffDef xml:id="P1" lines="5" n="1" ppq="1">
+                        <instrDef xml:id="i1sta03d" midi.channel="0" midi.instrnum="0" midi.volume="78.00%"/>
+                        <clef xml:id="cio3b5n" line="2" shape="G"/>
+                        <keySig xml:id="km313xq" sig="2s"/>
+                        <meterSig xml:id="mx0qgii" count="3" unit="4"/>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="all">
+                  <expansion xml:id="expansion-minimal" plist="#expansion-menuett-minimal #expansion-trio-minimal #expansion-menuett-minimal"/>
+                  <expansion xml:id="expansion-minuet-trio" plist="#expansion-menuett-default #expansion-trio-default"/>
+                  <expansion xml:id="expansion-default" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-minimal"/>
+                  <expansion xml:id="expansion-maximal" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-default"/>
+                  <section xml:id="Menuett">
+                     <expansion xml:id="expansion-menuett-default" plist="#A #A1 #A #A2"/>
+                     <expansion xml:id="expansion-menuett-minimal" plist="#A #A2"/>
+                     <section xml:id="A">
+                        <measure xml:id="mllgqby" n="1">
+                           <staff xml:id="s19vz3pf" n="1">
+                              <layer xml:id="ljc87zu" n="1">
+                                 <note xml:id="nhh1hp9" dur="4" oct="4" pname="a" stem.dir="up"/>
+                                 <note xml:id="n1vcwqkb" dur="4" oct="4" pname="b" stem.dir="down"/>
+                                 <note xml:id="n1kyira7" accid.ges="s" dur="4" oct="5" pname="c" stem.dir="down"/>
+                              </layer>
+                           </staff>
+                           <tempo xml:id="tj90u8f1" staff="1" startid="#nhh1hp9">Menuett</tempo>
+                           <dir xml:id="dbf3mxc" place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend xml:id="rlnnucj1" color="red" fontsize="larger" fontstyle="normal" fontweight="bold">A</rend>
+                           </dir>
+                        </measure>
+                     </section>
+                     <ending xml:id="A1" lendsym="angledown" n="1.">
+                        <measure xml:id="m1rh9m44" n="2" right="rptend">
+                           <staff xml:id="sgn121j" n="1">
+                              <layer xml:id="l138uayg" n="1">
+                                 <note xml:id="n1106llg" dur="2" oct="4" pname="a" stem.dir="up"/>
+                                 <rest xml:id="r16lb964" dur="4"/>
+                              </layer>
+                           </staff>
+                           <dir xml:id="dprp7mj2" place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend xml:id="reyoj4a" color="red" fontsize="larger" fontstyle="normal" fontweight="bold">A1</rend>
+                           </dir>  
+                        </measure>
+                     </ending>
+                     <ending xml:id="A2" lendsym="angledown" n="2.">
+                        <measure xml:id="m1tmifa3" n="3">
+                           <staff xml:id="stf3txs" n="1">
+                              <layer xml:id="losvurm" n="1">
+                                 <note xml:id="n1jqo8a" dur="2" oct="5" pname="d" stem.dir="down"/>
+                                 <rest xml:id="r150q1ua" dur="4"/>
+                              </layer>
+                           </staff>
+                           <dir xml:id="dvk6xni2" place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend xml:id="r82f5wg" color="red" fontsize="larger" fontstyle="normal" fontweight="bold">A2</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                  </section>
+                  <section xml:id="Trio">
+                     <expansion xml:id="expansion-trio-default" plist="#B #B1 #B #B2"/>
+                     <expansion xml:id="expansion-trio-minimal" plist="#B #B2"/>
+                     <section xml:id="B">
+                        <measure xml:id="m1dp0ln2" left="rptstart" n="4">
+                           <staff xml:id="s1172cur" n="1">
+                              <layer xml:id="lnwcybk" n="1">
+                                 <note xml:id="n1687zus" dur="4" oct="5" pname="d" stem.dir="down"/>
+                                 <note xml:id="n1480mzs" accid.ges="s" dur="4" oct="5" pname="c" stem.dir="down"/>
+                                 <note xml:id="n5crjrn" dur="4" oct="4" pname="b" stem.dir="down"/>
+                              </layer>
+                           </staff>
+                           <tempo xml:id="t9chw3v2" staff="1" startid="#n1687zus">Trio</tempo>
+                           <dir xml:id="dpov44p2" place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend xml:id="rmtkiss1" color="red" fontsize="larger" fontstyle="normal" fontweight="bold">B</rend>
+                           </dir>
+                        </measure>
+                     </section>
+                     <ending xml:id="B1" lendsym="angledown" n="1.">
+                        <measure xml:id="m2xlnjc" n="5" right="rptend">
+                           <staff xml:id="s19tw80h" n="1">
+                              <layer xml:id="lbmq3cz" n="1">
+                                 <note xml:id="n1vrkc62" dur="2" oct="4" pname="a" stem.dir="up"/>
+                                 <rest xml:id="r1d6lbpc" dur="4"/>
+                              </layer>
+                           </staff>
+                           <dir xml:id="dionej11" place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend xml:id="r37cqwp1" color="red" fontsize="larger" fontstyle="normal" fontweight="bold">B1</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                     <ending xml:id="B2" lendsym="angledown" n="2.">
+                        <measure xml:id="m1sufr06" n="6" right="end">
+                           <staff xml:id="s1iw9zf4" n="1">
+                              <layer xml:id="l1ciko0e" n="1">
+                                 <note xml:id="nd6fmt7" dur="2" oct="5" pname="d" stem.dir="down"/>
+                                 <rest xml:id="r1x5f7f" dur="4"/>
+                              </layer>
+                           </staff>
+                           <dir xml:id="dyso80c1" staff="1" tstamp="4"><rend xml:id="rbhoi2a" halign="right">Menuett da capo</rend></dir>
+                           <dir xml:id="d7rt3sr1" place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend xml:id="reb11xb" color="red" fontsize="larger" fontstyle="normal" fontweight="bold">B2</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
