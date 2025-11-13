@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Trills with enclosings</title>
+         </titleStmt>
+         <pubStmt>
+            <persName role="editor">Klaus Rettinghaus</persName>
+            <persName role="encoder">Craig Sapp</persName>
+            <corpName role="funder">eNote GmbH</corpName>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Trills can have enclosings.</annot>
+         </notesStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="400" tempo.dist="3vu">
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L4F1" dur="1" oct="4" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" startid="#note-L4F1" enclose="brack" />
+                     <dir place="below" staff="1" tstamp="1">
+                        <rend fontstyle="normal">brack</rend>
+                     </dir>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L7F1" dur="1" oct="4" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" startid="#note-L7F1" enclose="paren" />
+                     <dir place="below" staff="1" tstamp="1">
+                        <rend fontstyle="normal">paren</rend>
+                     </dir>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L10F1" dur="1" oct="4" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" startid="#note-L10F1" enclose="box" />
+                     <dir place="below" staff="1" tstamp="1">
+                        <rend fontstyle="normal">box</rend>
+                     </dir>
+                  </measure>
+                  <measure right="end" n="4">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note-L13F1" dur="1" oct="4" pname="f" accid.ges="n" />
+                        </layer>
+                     </staff>
+                     <trill staff="1" startid="#note-L13F1" enclose="none" />
+                     <dir place="below" staff="1" tstamp="1">
+                        <rend fontstyle="normal">none</rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
