@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Visual offset on note</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-11-24" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Note support of `@ho`</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" ho="1vu" oct="5" pname="c">
+                              <accid accid="s" />
+                           </note>
+                           <note dur="4" ho="1vu" oct="5" pname="c">
+                              <accid ho="-1vu" accid="s" />
+                           </note>
+                        </layer>
+                        <layer n="2">
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid="s" />
+                           </note>
+                           <note dur="4" oct="4" pname="c">
+                              <accid accid="s" />
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
