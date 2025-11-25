@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Visual offset on arpeggios</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-11-24" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Arpeg support of `@ho` and `@vo`</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp bar.thru="true">
+                     <grpSym symbol="brace" />
+                     <grpSym symbol="brace" />
+                     <staffDef n="1" lines="5" ppq="1">
+                        <clef shape="G" line="2" />
+                        <keySig sig="0" />
+                        <meterSig count="2" unit="4" visible="false" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" ppq="1">
+                        <clef shape="F" line="4" />
+                        <keySig sig="0" />
+                        <meterSig count="2" unit="4" visible="false" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord1" dur="2">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="a" />
+                              <note oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <chord xml:id="chord2" dur="2">
+                              <note oct="2" pname="a" />
+                              <note oct="3" pname="e" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg plist="#chord1" />
+                     <arpeg plist="#chord2" />
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <chord xml:id="chord3" dur="2">
+                              <note oct="4" pname="e" />
+                              <note oct="4" pname="a" />
+                              <note oct="5" pname="c" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="5">
+                           <chord xml:id="chord4" dur="2">
+                              <note oct="2" pname="a" />
+                              <note oct="3" pname="e" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                        </layer>
+                     </staff>
+                     <arpeg ho="-0.5vu" vo="2vu" plist="#chord3" />
+                     <arpeg ho="0.5vu" vo="-3vu" plist="#chord4" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Multiple accidentals</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-10-14">2025-10-14</date>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio respects the ordering of multiple accidentals for a single note, even within chords.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="1.0.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef system.leftline="false">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="invis" n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4">
+                              <note oct="4" pname="d">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                              <note oct="5" pname="b" accid="f" />
+                           </chord>
+                           <chord dur="4">
+                              <note oct="3" pname="g" accid="n" />
+                              <note oct="3" pname="a" accid="n" />
+                              <note oct="4" pname="d" accid="n" />
+                              <note oct="4" pname="e" accid="s" />
+                              <note oct="4" pname="f" accid="s" />
+                              <note oct="4" pname="g" accid="s" />
+                              <note oct="5" pname="b">
+                                 <accid accid="bms" />
+                                 <accid accid="kms" />
+                                 <accid accid="ks" />
+                              </note>
+                           </chord>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
