@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Visual start and end offset on tie</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-11-24" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Tie support of `@start/endvo` and `@start/endho`</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="1">
+            <score>
+               <scoreDef key.mode="major" key.pname="c" meter.count="2" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="2" lines="5" clef.shape="F" clef.line="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="n1" dur="2" oct="4" pname="c" tstamp="1" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="3" pname="g" stem.dir="up" tstamp="1" />
+                           <note dur="8" oct="3" pname="b" stem.dir="up" tstamp="2.5" accid="f" />
+                        </layer>
+                        <layer n="3">
+                           <note xml:id="n2" dur="2" oct="3" pname="e" stem.dir="down" tstamp="1" />
+                        </layer>
+                     </staff>
+                     <dynam staff="2" startid="#n2">f</dynam>
+                     <slur staff="2" startid="#n2" endid="#n4" curvedir="below" />
+                     <tie staff="2" startid="#n1" endid="#n3" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4" tstamp="1">
+                              <note xml:id="n3" oct="4" pname="c" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <rest dur="4" ploc="d" oloc="3" tstamp="2" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="n4" dur="4" oct="3" pname="f" tstamp="1" />
+                           <space dur="4" tstamp="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="2">
+                        <layer n="1">
+                           <note xml:id="n5" dur="2" oct="4" pname="c" tstamp="1" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="3" pname="g" stem.dir="up" tstamp="1" />
+                           <note dur="8" oct="3" pname="b" stem.dir="up" tstamp="2.5" accid="f" />
+                        </layer>
+                        <layer n="3">
+                           <note xml:id="n6" dur="2" oct="3" pname="e" stem.dir="down" tstamp="1" />
+                        </layer>
+                     </staff>
+                     <slur staff="2" startid="#n6" endid="#n8" curvedir="below" />
+                     <tie vo="4.2vu" endho="2vu" staff="2" startid="#n5" endid="#n7" />
+                  </measure>
+                  <measure n="4">
+                     <staff n="2">
+                        <layer n="1">
+                           <chord dur="4" tstamp="1">
+                              <note xml:id="n7" oct="4" pname="c" />
+                              <note oct="3" pname="a" />
+                           </chord>
+                           <rest dur="4" ploc="d" oloc="3" tstamp="2" />
+                        </layer>
+                        <layer n="2">
+                           <note xml:id="n8" dur="4" oct="3" pname="f" tstamp="1" />
+                           <space dur="4" tstamp="2" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

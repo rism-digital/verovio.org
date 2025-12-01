@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Visual start and end offset on slur</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-11-24" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Slur support of `@start/endvo` and `@start/endho`</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="d">
+            <score>
+               <scoreDef keysig="3s" n="1" key.mode="major" key.pname="a" meter.count="3" meter.unit="8">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <chord dur="4" tstamp="4">
+                              <note xml:id="note_132" oct="4" pname="b" />
+                              <note xml:id="note_138" oct="4" pname="g">
+                                 <accid accid.ges="s" />
+                              </note>
+                           </chord>
+                           <note xml:id="note_150" dur="8" oct="4" pname="a" tstamp="6" />
+                        </layer>
+                        <layer n="2">
+                           <note dots="1" dur="4" oct="4" pname="e" tstamp="4" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note_132" endid="#note_150" />
+                     <slur startho="2vu" startvo="1.5vu" staff="1" startid="#note_138" endid="#note_150" curvedir="below" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

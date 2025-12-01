@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Slurs with visual offsets at system break</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">David Bauer</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2021-11-17">2021-11-17</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/2482" />
+            </pubPlace>
+         </pubStmt>
+         <notesStmt>
+            <annot>The vertical and horizontal location of slur start and end points are influenced by the visual offsets</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.7.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "breaks": "encoded", "minLastJustification": 0.2 }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="3" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                        <label />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="np1ao4t1" dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="b" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#np1ao4t1" endid="#ns5hu7w" curvedir="above" />
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="b" />
+                           <note xml:id="ns5hu7w" dur="4" oct="4" pname="b" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="np1ao4t2" dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="b" />
+                        </layer>
+                     </staff>
+                     <slur startho="2.5vu" endho="-5vu" startvo="-2vu" endvo="5vu" staff="1" startid="#np1ao4t2" endid="#ns5hu7x" curvedir="above" />
+                  </measure>
+                  <sb />
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="b" />
+                           <note dur="4" oct="4" pname="b" />
+                           <note xml:id="ns5hu7x" dur="4" oct="4" pname="b" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
