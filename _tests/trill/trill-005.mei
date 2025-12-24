@@ -73,7 +73,7 @@
                         </layer>
                      </staff>
                      <turn staff="1" startid="#m-72" form="upper" layer="1" />
-                     <trill staff="1" startid="#m-77" ho="0.1562mm" layer="1" />
+                     <trill ho="0.1562vu" staff="1" startid="#m-77" layer="1" />
                   </measure>
                   <measure n="2">
                      <staff n="1">
@@ -109,7 +109,7 @@
                         </layer>
                      </staff>
                      <turn staff="1" startid="#m-172" form="upper" layer="1" />
-                     <trill staff="1" startid="#m-177" ho="0.1562mm" layer="1" />
+                     <trill ho="0.1562vu" staff="1" startid="#m-177" layer="1" />
                   </measure>
                </section>
             </score>

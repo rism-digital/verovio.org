@@ -44,7 +44,7 @@
                            <note dur="2" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <hairpin staff="1" tstamp="1" tstamp2="1m+4" form="cres" startho="4" endho="4" endvo="-3.0" startvo="2.0" niente="true" />
+                     <hairpin staff="1" tstamp="1" tstamp2="1m+4" form="cres" startho="4vu" endho="4vu" endvo="-3vu" startvo="2vu" niente="true" />
                   </measure>
                   <measure n="2">
                      <staff n="1">
@@ -61,7 +61,7 @@
                            <note dur="2" oct="4" pname="g" />
                         </layer>
                      </staff>
-                     <hairpin staff="1" tstamp="1" tstamp2="3m+4" form="dim" startho="2" endho="-2" endvo="1.0" startvo="-3.0" niente="true" />
+                     <hairpin staff="1" tstamp="1" tstamp2="3m+4" form="dim" startho="2vu" endho="-2vu" endvo="1vu" startvo="-3vu" niente="true" />
                   </measure>
                   <sb />
                   <measure n="4">

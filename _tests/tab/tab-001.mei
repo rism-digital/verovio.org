@@ -89,7 +89,7 @@
                         </layer>
                      </staff>
                      <fing startid="#id7" playingHand="right" playingFinger="1" />
-                     <ornam startid="#id8" ho="-2">#</ornam>
+                     <ornam startid="#id8" ho="-2vu">#</ornam>
                   </measure>
                   <measure n="19">
                      <staff n="1">

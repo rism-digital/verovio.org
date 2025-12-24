@@ -25,7 +25,7 @@
       </fileDesc>
       <encodingDesc xml:id="e157ayih">
          <appInfo xml:id="amae9l6">
-            <application xml:id="a6defjg1" label="2" version="5.2.0">
+            <application xml:id="a6defjg1" label="2" version="5.2.0" type="skip-round-trip">
                <name xml:id="ni7r92l1">Verovio</name>
             </application>
             <application xml:id="anpom9i1" enddate="2025-08-27T14:24:22" startdate="2025-02-27T16:36:07" version="1.2.8">
