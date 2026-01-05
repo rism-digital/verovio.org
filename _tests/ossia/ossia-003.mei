@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Ossia on multiple staves</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-12-10" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.8.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "breaks": "encoded", "minLastJustification": 0.2 }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="4f" meter.count="6" meter.unit="8">
+                        <label>Soprano</label>
+                        <instrDef midi.instrnum="52" />
+                        <clef shape="C" line="3" />
+                     </staffDef>
+                     <staffDef n="2" lines="5" trans.diat="-1" trans.semi="-2" keysig="2f" meter.count="6" meter.unit="8">
+                        <label>B♭ Clarinet</label>
+                        <instrDef midi.instrnum="71" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                     <staffGrp bar.thru="true" symbol="brace">
+                        <label>Piano</label>
+                        <instrDef midi.instrnum="0" />
+                        <staffDef n="3" lines="5" keysig="4f" meter.count="6" meter.unit="8">
+                           <clef shape="G" line="2" />
+                        </staffDef>
+                        <staffDef n="4" lines="5" keysig="4f" meter.count="6" meter.unit="8">
+                           <clef shape="F" line="4" />
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="1">
+                     <ossia type="show.scoredef.true">
+                        <oStaff n="1">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <ossia>
+                        <oStaff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure left="single" n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <section restart="true">
+                     <scoreDef keysig="3s" />
+                     <measure n="4">
+                        <staff n="1">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <ossia type="show.scoredef.true">
+                           <oStaff n="2">
+                              <layer n="1">
+                                 <mRest />
+                              </layer>
+                           </oStaff>
+                           <staff n="2">
+                              <layer n="1">
+                                 <mRest />
+                              </layer>
+                           </staff>
+                        </ossia>
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+                  <measure n="5">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.scoredef.true">
+                        <oStaff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.scoredef.true">
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="7">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="8">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.barlines.true">
+                        <oStaff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure left="dbl" n="9">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.barlines.true">
+                        <oStaff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <staff n="2">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <ossia>
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <oStaff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                  </measure>
+                  <measure n="10">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia>
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <oStaff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                  </measure>
+                  <measure n="12">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="shw.scoredef.true">
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <oStaff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                  </measure>
+                  <measure n="13">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="14">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.scoredef.false show.barlines.true">
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <oStaff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                  </measure>
+                  <measure n="15">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.scoredef.false">
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <oStaff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                  </measure>
+                  <measure right="end" n="16">
+                     <staff n="1">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <mRest />
+                        </layer>
+                     </staff>
+                     <ossia type="show.barlines.true show.scoredef.false">
+                        <staff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <staff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </staff>
+                        <oStaff n="3">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                        <oStaff n="4">
+                           <layer n="1">
+                              <mRest />
+                           </layer>
+                        </oStaff>
+                     </ossia>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Ossia with clef change</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-12-10" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.8.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[{ "breaks": "encoded", "minLastJustification": 0.2 }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="3s" meter.count="4" meter.unit="4">
+                        <label>Violin 1</label>
+                        <labelAbbr>Vln. 1</labelAbbr>
+                        <instrDef midi.instrnum="40" />
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <pb />
+                  <measure n="1">
+                     <ossia>
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="5" pname="e" />
+                              <note dur="2" oct="5" pname="e" />
+                           </layer>
+                           <layer n="2">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <clef shape="C" line="1" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                  </measure>
+                  <!--                  <scoreDef keysig="2s" meter.sym="common"/>-->
+                  <measure n="2">
+                     <ossia>
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="5" pname="e" />
+                              <note dur="2" oct="5" pname="e" />
+                           </layer>
+                           <layer n="2">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <sb />
+                  <measure n="4">
+                     <ossia type="show.scoredef.true">
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="5" pname="e" />
+                              <clef xml:id="c1" shape="C" line="2" />
+                              <note dur="2" oct="5" pname="e" />
+                           </layer>
+                           <layer n="2">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <clef sameas="#c1" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                  </measure>
+                  <measure n="5">
+                     <ossia type="show.scoredef.true">
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="5" pname="e" />
+                              <note dur="2" oct="5" pname="e" />
+                           </layer>
+                           <layer n="2">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                  </measure>
+                  <measure n="6">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                           <note dur="4" oct="5" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="7">
+                     <ossia>
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="5" pname="e" />
+                              <clef xml:id="c2" shape="G" line="2" />
+                              <note dur="2" oct="5" pname="e" />
+                           </layer>
+                           <layer n="2">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <clef sameas="#c2" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <clef shape="C" line="2" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                  </measure>
+                  <measure n="8">
+                     <ossia>
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="2" oct="5" pname="e" />
+                              <note dur="2" oct="5" pname="e" />
+                           </layer>
+                           <layer n="2">
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                              <note dur="8" oct="5" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                              <note dur="4" oct="5" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

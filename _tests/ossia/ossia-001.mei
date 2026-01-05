@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Ossia</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-12-10" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.8.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="2f" meter.count="4" meter.unit="4">
+                        <label>Violoncello</label>
+                        <labelAbbr>Vc.</labelAbbr>
+                        <instrDef midi.instrnum="42" />
+                        <clef shape="F" line="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="8" oct="3" pname="d" />
+                              <note dur="8" oct="3" pname="e">
+                                 <accid accid.ges="f" />
+                              </note>
+                              <note dur="8" oct="3" pname="d" />
+                              <note dur="8" oct="3" pname="c" />
+                           </beam>
+                           <beam>
+                              <note dur="8" oct="3" pname="d" />
+                              <note dur="8" oct="3" pname="e">
+                                 <accid accid.ges="f" />
+                              </note>
+                              <note dur="8" oct="3" pname="d" />
+                              <note dur="8" oct="3" pname="c" />
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <ossia>
+                        <oStaff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note xml:id="k17n1hmv" dur="8" oct="3" pname="b" />
+                                 <note xml:id="l139zbt3" dur="8" oct="3" pname="g" />
+                              </beam>
+                              <beam>
+                                 <note xml:id="n1tkuu6c" dur="8" oct="4" pname="c" />
+                                 <note xml:id="o1gk3s6c" dur="8" oct="3" pname="a" />
+                              </beam>
+                              <note dur="4" oct="3" pname="d" />
+                              <note dur="4" oct="3" pname="c" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note dur="16" oct="3" pname="b">
+                                    <accid accid.ges="f" />
+                                 </note>
+                                 <note dur="16" oct="3" pname="a" />
+                                 <note dur="16" oct="3" pname="g" />
+                                 <note dur="16" oct="3" pname="f" />
+                              </beam>
+                              <beam>
+                                 <note dur="16" oct="4" pname="c" />
+                                 <note dur="16" oct="3" pname="b">
+                                    <accid accid.ges="f" />
+                                 </note>
+                                 <note dur="16" oct="3" pname="a" />
+                                 <note dur="16" oct="3" pname="g" />
+                              </beam>
+                              <note dur="4" oct="3" pname="d" />
+                              <note dur="4" oct="3" pname="c" />
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <slur startid="#k17n1hmv" endid="#l139zbt3" />
+                     <slur startid="#n1tkuu6c" endid="#o1gk3s6c" />
+                  </measure>
+                  <measure n="3">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="2" pname="b">
+                              <accid accid.ges="f" />
+                           </note>
+                           <note dur="4" oct="2" pname="a" />
+                           <note dur="2" oct="2" pname="g" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

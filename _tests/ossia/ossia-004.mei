@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Ossia after score definition change</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2025-12-10" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="5.8.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" keysig="1s" meter.count="4" meter.unit="4">
+                        <label>Violoncello</label>
+                        <labelAbbr>Vc.</labelAbbr>
+                        <instrDef midi.instrnum="42" />
+                        <clef shape="F" line="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure right="dbl" n="11">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="c10q5kzh" dur="1" oct="3" pname="d" />
+                        </layer>
+                     </staff>
+                     <fermata startid="#c10q5kzh" place="above" />
+                  </measure>
+                  <scoreDef keysig="2f" />
+                  <measure n="12">
+                     <ossia type="show.scoredef.true">
+                        <oStaff n="1">
+                           <layer n="1">
+                              <note dur="4" oct="3" pname="d" />
+                              <note dur="4" oct="3" pname="d" />
+                              <note dur="4" oct="3" pname="d" />
+                              <note dur="4" oct="3" pname="d" />
+                           </layer>
+                        </oStaff>
+                        <staff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note dur="8" oct="3" pname="d" />
+                                 <note dur="8" oct="3" pname="e">
+                                    <accid accid.ges="f" />
+                                 </note>
+                                 <note dur="8" oct="3" pname="d" />
+                                 <note dur="8" oct="3" pname="c" />
+                              </beam>
+                              <beam>
+                                 <note dur="8" oct="3" pname="d" />
+                                 <note dur="8" oct="3" pname="e">
+                                    <accid accid.ges="f" />
+                                 </note>
+                                 <note dur="8" oct="3" pname="d" />
+                                 <note dur="8" oct="3" pname="c" />
+                              </beam>
+                           </layer>
+                        </staff>
+                     </ossia>
+                     <reh tstamp="0.0" ><rend rend="box">A</rend></reh>
+                  </measure>
+                  <measure n="13">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <note dur="16" oct="3" pname="b">
+                                 <accid accid.ges="f" />
+                              </note>
+                              <note dur="16" oct="3" pname="a" />
+                              <note dur="16" oct="3" pname="g" />
+                              <note dur="16" oct="3" pname="f" />
+                           </beam>
+                           <beam>
+                              <note dur="16" oct="4" pname="c" />
+                              <note dur="16" oct="3" pname="b">
+                                 <accid accid.ges="f" />
+                              </note>
+                              <note dur="16" oct="3" pname="a" />
+                              <note dur="16" oct="3" pname="g" />
+                           </beam>
+                           <note dur="4" oct="3" pname="d" />
+                           <note dur="4" oct="3" pname="c" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
