@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Stage direction</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Oleksii Sapov-Erlinger</persName>
+               <corpName role="funder">NMA digital</corpName>
+               <persName role="editor">Laurent Pugin</persName>
+            </respStmt>
+            <date isodate="2026-02-12" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="6.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef key.mode="major" key.pname="g" keysig="1s" meter.count="4" meter.unit="4" meter.sym="common">
+                  <staffGrp n="1" bar.thru="false">
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2">
+                           <label>Flauto</label>
+                           <labelAbbr>Fl</labelAbbr>
+                        </staffDef>
+                     </staffGrp>
+                     <staffDef n="10" lines="5" clef.shape="F" clef.line="4">
+                        <label>PAPAGENO</label>
+                        <labelAbbr>P</labelAbbr>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="35">
+                     <stageDir type="scene_heading" place="above" part="%all" staff="1" tstamp="1">
+                        <rend halign="left" fontweight="normal">PAPAGENO, Vorige.</rend>
+                     </stageDir>
+                     <stageDir type="scene_number" place="above" part="%all" staff="1" tstamp="1">
+                        <rend halign="left" fontsize="x-large" fontweight="normal">Zwölfter Auftritt</rend>
+                     </stageDir>
+                     <staff n="1">
+                        <layer n="1">
+                           <rest dur="2" tstamp="1" />
+                           <rest dur="4" tstamp="3" />
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="g" tstamp="4" />
+                              <note dur="16" oct="4" pname="b" tstamp="4.75" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="10">
+                        <layer n="1">
+                           <mRest tstamp="1" />
+                        </layer>
+                     </staff>
+                     <stageDir type="stageDir" place="above" staff="10" tstamp="1">
+                        <rend halign="left">PAPAGENO (am Fenster von außen, <lb />ohne gleich gesehen zu werden)</rend>
+                     </stageDir>
+                  </measure>
+                  <measure n="36">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="8" oct="5" pname="d" tstamp="1" />
+                           <rest dur="8" tstamp="1.5" />
+                           <note dur="8" oct="5" pname="g" tstamp="2" artic="spicc" />
+                           <rest dur="8" tstamp="2.5" />
+                           <note dur="8" oct="5" pname="b" tstamp="3" artic="spicc" />
+                           <rest dur="8" tstamp="3.5" />
+                           <note dur="8" oct="6" pname="d" tstamp="4" artic="spicc" />
+                           <rest dur="8" tstamp="4.5" />
+                        </layer>
+                     </staff>
+                     <staff n="10">
+                        <layer n="1">
+                           <rest dur="2" tstamp="1" />
+                           <rest dur="4" tstamp="3" />
+                           <note xml:id="note_21876" dur="4" oct="4" pname="d" tstamp="4">
+                              <verse>
+                                 <syl>Wo</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="37">
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="6" pname="d" tstamp="1" />
+                           <note dur="4" oct="5" pname="e" tstamp="2" />
+                           <rest dur="4" tstamp="3" />
+                           <beam>
+                              <note dots="1" dur="8" oct="4" pname="a" tstamp="4" />
+                              <note dur="16" oct="5" pname="c" tstamp="4.75" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="10">
+                        <layer n="1">
+                           <note xml:id="note_22278" dots="1" dur="8" oct="4" pname="d" tstamp="1">
+                              <verse>
+                                 <syl>bin</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note_22302" dur="16" oct="3" pname="e" tstamp="1.75">
+                              <verse>
+                                 <syl>ich</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="note_22326" dur="4" oct="3" pname="e" tstamp="2">
+                              <verse>
+                                 <syl>wohl!</syl>
+                              </verse>
+                           </note>
+                           <rest dur="2" tstamp="3" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
