@@ -389,7 +389,6 @@
                                  <note oct="4" pname="c" />
                                  <note oct="4" pname="f" />
                               </chord>
-                              <space dur="4" />
                            </layer>
                         </staff>
                         <staff n="2">
@@ -403,7 +402,6 @@
                                  <note dur="16" oct="2" pname="g" stem.dir="up" />
                               </beam>
                               <note dur="4" oct="2" pname="f" stem.dir="up" />
-                              <space dur="4" />
                            </layer>
                         </staff>
                      </measure>
@@ -506,7 +504,6 @@
                         <staff n="1">
                            <layer n="1">
                               <note dots="1" dur="2" oct="4" pname="f" stem.dir="up" />
-                              <space dur="4" />
                            </layer>
                            <layer n="2">
                               <beam>
