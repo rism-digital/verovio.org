@@ -55,7 +55,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="C" clef.line="3" keysig="7s" />
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="3" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
@@ -69,7 +69,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="C" clef.line="4" keysig="7s" />
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="4" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
@@ -83,7 +83,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="F" clef.line="4" keysig="7s" />
+                        <staffDef n="1" lines="5" clef.shape="F" clef.line="4" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
@@ -97,7 +97,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="7f" />
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="7f" keysig.cancelaccid="none" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
@@ -111,7 +111,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="C" clef.line="3" keysig="7f" />
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="3" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
@@ -125,7 +125,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="C" clef.line="4" keysig="7f" />
+                        <staffDef n="1" lines="5" clef.shape="C" clef.line="4" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
@@ -139,7 +139,7 @@
                <section restart="true">
                   <scoreDef>
                      <staffGrp>
-                        <staffDef n="1" lines="5" clef.shape="F" clef.line="4" keysig="7f" />
+                        <staffDef n="1" lines="5" clef.shape="F" clef.line="4" />
                      </staffGrp>
                   </scoreDef>
                   <measure right="invis">
