@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Sections with restart and different key changes</title>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <corpName role="encoder">NMA/&gt;</corpName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-02-26" />
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv n="3">
+            <score>
+               <scoreDef optimize="true" n="1" key.mode="minor" key.pname="g" meter.count="3" meter.unit="4">
+                  <staffGrp bar.thru="false">
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="2f">
+                           <label>Flauto</label>
+                        </staffDef>
+                        <staffDef n="2" lines="5" trans.diat="-1" trans.semi="-2" clef.shape="G" clef.line="2" keysig="0">
+                           <label>Clarinetto</label>
+                        </staffDef>
+                     </staffGrp>
+                     <staffGrp symbol="bracket">
+                        <staffDef n="3" lines="5" trans.diat="-3" trans.semi="-5" clef.shape="G" clef.line="2" keysig="0">
+                           <label>Corno</label>
+                        </staffDef>
+                     </staffGrp>
+                     <staffGrp bar.thru="true" symbol="bracket">
+                        <staffDef n="4" lines="5" clef.shape="F" clef.line="4" keysig="2f">
+                           <label>Basso</label>
+                        </staffDef>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <section label="Menuetto">
+                     <section>
+                        <measure right="rptend" metcon="false" n="42a">
+                           <staff n="1">
+                              <layer n="1">
+                                 <rest dur="4" tstamp="2" />
+                              </layer>
+                           </staff>
+                           <staff n="2">
+                              <layer n="1">
+                                 <rest dur="4" tstamp="2" />
+                              </layer>
+                           </staff>
+                           <staff n="3">
+                              <layer n="1">
+                                 <rest dur="4" tstamp="2" />
+                              </layer>
+                           </staff>
+                           <staff n="4">
+                              <layer n="1">
+                                 <rest dur="4" tstamp="2" />
+                              </layer>
+                           </staff>
+                        </measure>
+                     </section>
+                  </section>
+                  <section restart="true" label="Trio">
+                     <scoreDef optimize="true" n="2" key.mode="major" key.pname="g">
+                        <staffGrp bar.thru="false">
+                           <staffGrp bar.thru="true" symbol="bracket">
+                              <staffDef n="1" lines="5" clef.shape="G" clef.line="2" keysig="1s" keysig.cancelaccid="before">
+                                 <label>Flauto</label>
+                              </staffDef>
+                           </staffGrp>
+                           <staffGrp symbol="bracket">
+                              <staffDef n="3" lines="5" trans.diat="-3" trans.semi="-5" clef.shape="G" clef.line="2" keysig="0" keysig.cancelaccid="before">
+                                 <label>Corno</label>
+                              </staffDef>
+                           </staffGrp>
+                           <staffGrp bar.thru="true" symbol="bracket">
+                              <staffDef n="4" lines="5" clef.shape="F" clef.line="4" keysig="1s" keysig.cancelaccid="before">
+                                 <label>Basso</label>
+                              </staffDef>
+                           </staffGrp>
+                        </staffGrp>
+                     </scoreDef>
+                     <section>
+                        <measure right="rptend" metcon="false" n="42">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note dur="4" oct="5" pname="g" tstamp="1" />
+                              </layer>
+                           </staff>
+                           <staff n="3">
+                              <layer n="1">
+                                 <note dur="4" oct="5" pname="c" tstamp="1" />
+                              </layer>
+                           </staff>
+                           <staff n="4">
+                              <layer n="1">
+                                 <note dur="4" oct="2" pname="g" tstamp="1" />
+                              </layer>
+                           </staff>
+                        </measure>
+                     </section>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
