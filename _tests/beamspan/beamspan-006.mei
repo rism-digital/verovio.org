@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead xml:id="m1nk55l0">
+      <fileDesc xml:id="fmxyw0k">
+         <titleStmt>
+            <title>Beamspan over repeats</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="editor">Laurent Pugin</persName>
+               <persName role="encoder">Klaus Rettinghaus</persName>
+            </respStmt>
+            <date isodate="2026-03-06"/>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/4290" />
+            </pubPlace>
+         </pubStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="6.1.0" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="dbe2xfi">
+            <score xml:id="e1y00r9">
+               <scoreDef xml:id="fnzbnmt">
+                  <staffGrp xml:id="h1a34uhc">
+                     <staffDef xml:id="P1" n="1" lines="5" ppq="1">
+                        <meterSig xml:id="qb1o1rc" count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="g1po6e6r">
+                  <measure xml:id="r2f9c5o" metcon="false" n="1">
+                     <staff xml:id="a1x0sr8q" n="1">
+                        <layer xml:id="b1x4qppj" n="1">
+                           <note xml:id="cv6mq9l" dur.ppq="1" dur="8" oct="4" pname="c" />
+                        </layer>
+                     </staff>
+                     <beamSpan xml:id="d18ivoq0" startid="#cv6mq9l" endid="#p1jfa0p5" />
+                  </measure>
+                  <measure xml:id="e15j5jih" right="rptend" metcon="false" n="2">
+                     <staff xml:id="n1gnanyu" n="1">
+                        <layer xml:id="omcdd3x" n="1">
+                           <note xml:id="p1jfa0p5" dur.ppq="1" dur="8" oct="4" pname="e" />
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
