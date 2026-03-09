@@ -1,0 +1,232 @@
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beams for guitar tablature</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-03-09"/>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="6.1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef midi.bpm="132">
+                  <staffGrp bar.thru="true" symbol="brace">
+                     <staffDef n="1" notationtype="tab.guitar" lines="6" ppq="24">
+                        <clef shape="TAB" enclose="brack" line="3"/>
+                        <tuning/>
+                     </staffDef>
+                     <staffDef n="2" notationtype="tab.guitar" lines="6" ppq="24" type="stems.within">
+                        <clef shape="TAB"/>
+                        <tuning/>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                              <note vel="72" tab.course="3" tab.fret="0"/>
+                              <note vel="72" tab.course="2" tab.fret="2"/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                              <note vel="67" tab.course="3" tab.fret="2"/>
+                              <note vel="67" tab.course="2" tab.fret="1" accid="n"/>
+                              <note vel="67" tab.course="1" tab.fret="2"/>
+                           </tabGrp>
+                        </layer>
+                        <layer n="2">
+                           <tabGrp dur.ppq="24" dur="4">
+                              <tabDurSym/>
+                              <note vel="64" tab.course="5" tab.fret="0"/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="24" dur="8">
+                              <tabDurSym/>
+                              <note vel="65" tab.course="6" tab.fret="0"/>
+                           </tabGrp>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                              <note vel="72" tab.course="3" tab.fret="0"/>
+                              <note vel="72" tab.course="2" tab.fret="2"/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="12" dur="8">
+                              <tabDurSym/>
+                              <note vel="67" tab.course="3" tab.fret="2"/>
+                              <note vel="67" tab.course="2" tab.fret="1" accid="n"/>
+                              <note vel="67" tab.course="1" tab.fret="2"/>
+                           </tabGrp>
+                        </layer>
+                        <layer n="2">
+                           <tabGrp dur.ppq="24" dur="4">
+                              <tabDurSym/>
+                              <note vel="64" tab.course="5" tab.fret="0"/>
+                           </tabGrp>
+                           <tabGrp dur.ppq="24" dur="16">
+                              <tabDurSym/>
+                              <note vel="65" tab.course="6" tab.fret="0"/>
+                           </tabGrp>
+                        </layer>
+                     </staff>
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <beam>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="83" tab.course="2" tab.fret="3"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="76" tab.course="3" tab.fret="0"/>
+                              </tabGrp>
+                           </beam>
+                           <beam xml:id="bnm8ab7">
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="78" tab.course="1" tab.fret="2"/>
+                              </tabGrp>
+                              <tuplet num="3" numbase="2" bracket.visible="false">
+                                 <tabGrp dur.ppq="4" dur="16">
+                                    <tabDurSym/>
+                                    <note vel="67" tab.course="4" tab.fret="4"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="4" dur="16">
+                                    <tabDurSym/>
+                                    <note vel="77" tab.course="4" tab.fret="6"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="4" dur="16">
+                                    <tabDurSym/>
+                                    <note vel="69" tab.course="4" tab.fret="4"/>
+                                 </tabGrp>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <beam xml:id="b1cexeg">
+                              <tabGrp dur.ppq="6" dur="16">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="6" dur="16">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                           </beam>
+                           <beam xml:id="b9uoc2t">
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="89" tab.course="5" tab.fret="1" accid="s"/>
+                              </tabGrp>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <beam>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="83" tab.course="2" tab.fret="3"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="76" tab.course="3" tab.fret="0"/>
+                              </tabGrp>
+                           </beam>
+                           <beam xml:id="bnm8ab7">
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="78" tab.course="1" tab.fret="2"/>
+                              </tabGrp>
+                              <tuplet num="3" numbase="2" bracket.visible="false">
+                                 <tabGrp dur.ppq="4" dur="16">
+                                    <tabDurSym/>
+                                    <note vel="67" tab.course="4" tab.fret="4"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="4" dur="16">
+                                    <tabDurSym/>
+                                    <note vel="77" tab.course="4" tab.fret="6"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="4" dur="16">
+                                    <tabDurSym/>
+                                    <note vel="69" tab.course="4" tab.fret="4"/>
+                                 </tabGrp>
+                              </tuplet>
+                           </beam>
+                        </layer>
+                        <layer n="2">
+                           <beam xml:id="b1cexeg">
+                              <tabGrp dur.ppq="6" dur="16">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="6" dur="16">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                           </beam>
+                           <beam xml:id="b9uoc2t">
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note tab.course="5" tab.fret="2"/>
+                              </tabGrp>
+                              <tabGrp dur.ppq="12" dur="8">
+                                 <tabDurSym/>
+                                 <note vel="89" tab.course="5" tab.fret="1" accid="s"/>
+                              </tabGrp>
+                           </beam>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
