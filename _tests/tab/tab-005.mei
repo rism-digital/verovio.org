@@ -1,0 +1,277 @@
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Beams for guitar tablature</title>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-03-09"/>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="6.1">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffGrp>
+                        <grpSym/>
+                        <staffGrp bar.thru="true">
+                           <label>Acoustic Guitar</label>
+                           <labelAbbr>Guit.</labelAbbr>
+                           <instrDef midi.channel="1" midi.instrnum="25"/>
+                           <staffDef n="1" lines="5" ppq="4">
+                              <clef shape="G" line="2" dis="8" dis.place="below"/>
+                              <keySig sig="0"/>
+                              <meterSig count="4" unit="4"/>
+                           </staffDef>
+                           <staffDef n="2" notationtype="tab.guitar" lines="4" ppq="4" keysig="0">
+                              <clef shape="TAB" line="5"/>
+                              <tuning>
+                                 <course n="4" oct="3" pname="c"/>
+                                 <course n="3" oct="3" pname="g"/>
+                                 <course n="2" oct="4" pname="d"/>
+                                 <course n="1" oct="4" pname="a"/>
+                              </tuning>
+                              <meterSig count="4" unit="4"/>
+                           </staffDef>
+                        </staffGrp>
+                     </staffGrp>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <section>
+                     <measure n="1">
+                        <staff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="3" pname="g" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="d" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="a" stem.dir="down"/>
+                              </beam>
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="d" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="d" stem.dir="down"/>
+                              </beam>
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="3" pname="g" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="d" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="a" stem.dir="down"/>
+                              </beam>
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="d" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="d" stem.dir="down"/>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="5">
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="3"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="1"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="2"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="3"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="1"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="2"/>
+                                 </tabGrp>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <tempo place="above" staff="1" tstamp="1" midi.bpm="55" mm="55" mm.unit="4">
+                           <rend glyph.auth="smufl"></rend> = 55</tempo>
+                     </measure>
+                     <measure right="end" n="2">
+                        <staff n="1">
+                           <layer n="1">
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="3" pname="g" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                              </beam>
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
+                              </beam>
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="3" pname="g" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
+                              </beam>
+                              <beam>
+                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
+                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
+                              </beam>
+                           </layer>
+                        </staff>
+                        <staff n="2">
+                           <layer n="5">
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="3"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="3" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="3" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="3" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="2"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="0" tab.course="3"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="3" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="1"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="3" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="2"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="3" tab.course="1"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note tab.fret="2" tab.course="2"/>
+                                 </tabGrp>
+                              </beam>
+                           </layer>
+                        </staff>
+                     </measure>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
