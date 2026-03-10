@@ -4,7 +4,7 @@
    <meiHead>
       <fileDesc>
          <titleStmt>
-            <title>Beams for guitar tablature</title>
+            <title>Beams for tablature</title>
          </titleStmt>
          <pubStmt>
             <date isodate="2026-03-09"/>
@@ -29,23 +29,20 @@
                   <staffGrp>
                      <staffGrp>
                         <grpSym/>
-                        <staffGrp bar.thru="true">
-                           <label>Acoustic Guitar</label>
-                           <labelAbbr>Guit.</labelAbbr>
-                           <instrDef midi.channel="1" midi.instrnum="25"/>
-                           <staffDef n="1" lines="5" ppq="4">
+                        <staffGrp bar.thru="true" symbol="bracket">
+                           <staffDef n="1" lines="5">
+                              <label>Staff notation</label>
                               <clef shape="G" line="2" dis="8" dis.place="below"/>
-                              <keySig sig="0"/>
                               <meterSig count="4" unit="4"/>
                            </staffDef>
-                           <staffDef n="2" notationtype="tab.guitar" lines="4" ppq="4" keysig="0">
+                           <staffDef n="2" notationtype="tab.guitar" lines="4">
+                              <label>Guitar tablature</label>
                               <clef shape="TAB" line="5"/>
-                              <tuning>
-                                 <course n="4" oct="3" pname="c"/>
-                                 <course n="3" oct="3" pname="g"/>
-                                 <course n="2" oct="4" pname="d"/>
-                                 <course n="1" oct="4" pname="a"/>
-                              </tuning>
+                              <meterSig count="4" unit="4"/>
+                           </staffDef>
+                           <staffDef n="3" notationtype="tab.staff-like" lines="5">
+                              <label>Staff-like notation</label>
+                              <clef shape="G" line="2" dis="8" dis.place="below"/>
                               <meterSig count="4" unit="4"/>
                            </staffDef>
                         </staffGrp>
@@ -159,110 +156,78 @@
                               </beam>
                            </layer>
                         </staff>
-                        <tempo place="above" staff="1" tstamp="1" midi.bpm="55" mm="55" mm.unit="4">
-                           <rend glyph.auth="smufl"></rend> = 55</tempo>
-                     </measure>
-                     <measure right="end" n="2">
-                        <staff n="1">
-                           <layer n="1">
-                              <beam>
-                                 <note dur.ppq="1" dur="16" oct="3" pname="g" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
-                              </beam>
-                              <beam>
-                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
-                              </beam>
-                              <beam>
-                                 <note dur.ppq="1" dur="16" oct="3" pname="g" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="b" stem.dir="down"/>
-                              </beam>
-                              <beam>
-                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="5" pname="c" stem.dir="down"/>
-                                 <note dur.ppq="1" dur="16" oct="4" pname="e" stem.dir="down"/>
-                              </beam>
-                           </layer>
-                        </staff>
-                        <staff n="2">
+                        <staff n="3">
                            <layer n="5">
                               <beam>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="0" tab.course="3"/>
+                                    <note dur="16" oct="3" pname="g"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="2" tab.course="2"/>
+                                    <note dur="16" oct="4" pname="d"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="3" tab.course="1"/>
+                                    <note dur="16" oct="4" pname="b"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="2" tab.course="1"/>
-                                 </tabGrp>
-                              </beam>
-                              <beam>
-                                 <tabGrp dur.ppq="1" dur="16">
-                                    <tabDurSym/>
-                                    <note tab.fret="3" tab.course="1"/>
-                                 </tabGrp>
-                                 <tabGrp dur.ppq="1" dur="16">
-                                    <tabDurSym/>
-                                    <note tab.fret="2" tab.course="2"/>
-                                 </tabGrp>
-                                 <tabGrp dur.ppq="1" dur="16">
-                                    <tabDurSym/>
-                                    <note tab.fret="3" tab.course="1"/>
-                                 </tabGrp>
-                                 <tabGrp dur.ppq="1" dur="16">
-                                    <tabDurSym/>
-                                    <note tab.fret="2" tab.course="2"/>
+                                    <note dur="16" oct="4" pname="a"/>
                                  </tabGrp>
                               </beam>
                               <beam>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="0" tab.course="3"/>
+                                    <note dur="16" oct="4" pname="b"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="2" tab.course="2"/>
+                                    <note dur="16" oct="4" pname="d"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="3" tab.course="1"/>
+                                    <note dur="16" oct="4" pname="b"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="2" tab.course="1"/>
+                                    <note dur="16" oct="4" pname="d"/>
                                  </tabGrp>
                               </beam>
                               <beam>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="3" tab.course="1"/>
+                                    <note dur="16" oct="3" pname="g"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="2" tab.course="2"/>
+                                    <note dur="16" oct="4" pname="d"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="3" tab.course="1"/>
+                                    <note dur="16" oct="4" pname="b"/>
                                  </tabGrp>
                                  <tabGrp dur.ppq="1" dur="16">
                                     <tabDurSym/>
-                                    <note tab.fret="2" tab.course="2"/>
+                                    <note dur="16" oct="4" pname="a"/>
+                                 </tabGrp>
+                              </beam>
+                              <beam>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note dur="16" oct="4" pname="b"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note dur="16" oct="4" pname="d"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note dur="16" oct="4" pname="b"/>
+                                 </tabGrp>
+                                 <tabGrp dur.ppq="1" dur="16">
+                                    <tabDurSym/>
+                                    <note dur="16" oct="4" pname="d"/>
                                  </tabGrp>
                               </beam>
                            </layer>
