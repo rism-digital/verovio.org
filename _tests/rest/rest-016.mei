@@ -70,8 +70,6 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
-               <section n="2" restart="true">
                   <scoreDef>
                      <staffGrp>
                         <staffDef n="1" lines="5">

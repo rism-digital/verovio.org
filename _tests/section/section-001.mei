@@ -31,7 +31,7 @@
             </application>
          </appInfo>
       </encodingDesc>
-      <extMeta><![CDATA[{ "breaks": "encoded" }]]></extMeta>
+      <extMeta><![CDATA[{ "breaks": "encoded", "expandNever": true }]]></extMeta>
    </meiHead>
    <music>
       <body>

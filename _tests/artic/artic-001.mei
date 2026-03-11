@@ -56,8 +56,6 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
-               <section label="String techniques">
                   <measure>
                      <staff n="1">
                         <layer n="1">
@@ -69,8 +67,6 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
-               <section label="Brass techniques">
                   <measure>
                      <staff n="1">
                         <layer n="1">
@@ -79,8 +75,6 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
-               <section label="Uninterpreted symbols">
                   <measure right="invis">
                      <staff n="1">
                         <layer n="1">

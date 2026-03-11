@@ -40,7 +40,7 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <measure left="invis" right="invis">
+                  <measure>
                      <staff n="1">
                         <layer n="1">
                            <beam>
@@ -60,9 +60,7 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
-               <section restart="true">
-                  <measure left="invis" right="invis">
+                  <measure right="invis">
                      <staff n="1">
                         <layer n="1">
                            <beam>

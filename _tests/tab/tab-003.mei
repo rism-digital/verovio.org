@@ -21,8 +21,8 @@
                <bibl>
                   <title>Recercar Sexto</title>
                   <title type="main">Itabulatura de lauto</title>
-                  <composer>Giovanni Maria da Crema</composer>
-                  <arranger>Francesco da Milano</arranger>
+                  <persName role="composer">Giovanni Maria da Crema</persName>
+                  <persName role="arranger">Francesco da Milano</persName>
                   <date>1546</date>
                   <locus>B1v-B2r</locus>
                </bibl>
@@ -36,12 +36,6 @@
             </application>
          </appInfo>
       </encodingDesc>
-      <workList>
-         <work>
-            <title>Recercar Sexto</title>
-            <composer>Giovanni Maria da Crema</composer>
-         </work>
-      </workList>
    </meiHead>
    <music>
       <body>
@@ -114,7 +108,6 @@
                            </tabGrp>
                         </layer>
                      </staff>
-                     <fing startid="#id15" playingHand="right" playingFinger="1" />
                   </measure>
                   <measure n="21">
                      <staff n="1">
@@ -174,8 +167,6 @@
                            </tabGrp>
                         </layer>
                      </staff>
-                     <fing startid="#id16" playingHand="right" playingFinger="1" />
-                     <fing startid="#id17" playingHand="right" playingFinger="1" />
                   </measure>
                   <measure metcon="false" n="23">
                      <staff n="1">
@@ -194,7 +185,6 @@
                            </tabGrp>
                         </layer>
                      </staff>
-                     <fing startid="#id18" playingHand="right" playingFinger="1" />
                   </measure>
                   <measure n="25">
                      <staff n="1">

@@ -38,7 +38,7 @@
                      <staffDef n="1" lines="5" meter.count="2" meter.unit="4" meter.form="num" />
                   </staffGrp>
                </scoreDef>
-               <section label="same durations">
+               <section>
                   <measure>
                      <staff n="1">
                         <layer n="1">
@@ -139,8 +139,6 @@
                         </layer>
                      </staff>
                   </measure>
-               </section>
-               <section label="different durations">
                   <measure>
                      <staff n="1">
                         <layer n="1">
