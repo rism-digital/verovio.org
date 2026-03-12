@@ -77,7 +77,9 @@
                            </layer>
                         </staff>
                      </ossia>
-                     <reh tstamp="0" ><rend rend="box">A</rend></reh>
+                     <reh tstamp="0">
+                        <rend rend="box">A</rend>
+                     </reh>
                   </measure>
                   <measure n="13">
                      <staff n="1">

@@ -49,8 +49,8 @@
                            <beam>
                               <note xml:id="note-L6F1" dots="1" dur="16" oct="6" pname="c" stem.dir="down" />
                               <note dur="32" oct="3" pname="a" stem.dir="up" />
-                              <note dots="1" dur="16" oct="4" pname="c" stem.dir="up" />
-                              <note dur="32" oct="4" pname="f" stem.dir="up" />
+                              <note dots="1" dur="16" oct="3" pname="b" stem.dir="up" />
+                              <note dur="32" oct="3" pname="a" stem.dir="up" />
                            </beam>
                         </layer>
                      </staff>

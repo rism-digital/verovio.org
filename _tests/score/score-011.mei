@@ -99,7 +99,6 @@
                         </staffDef>
                      </staffGrp>
                   </staffGrp>
-                  <grpSym level="1" symbol="bracket" startid="#staffDef-01" endid="#staffDef-04" />
                </scoreDef>
                <section>
                   <measure left="rptstart" n="1">

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Menuett und Trio</title>
+         </titleStmt>
+         <pubStmt>
+            <respStmt>
+               <persName role="encoder">Werner Goebl</persName>
+            </respStmt>
+            <date isodate="2023-02-01" type="encoding-date">2023-02-01</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/pull/1152" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Verovio supports different rendering of the score's repetition structure using the expansion element.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application label="2" version="2.5.0" type="skip-round-trip">
+               <name>Verovio</name>
+            </application>
+            <application enddate="2025-10-14T17:48:48" startdate="2023-04-04T08:15:22" version="1.2.9">
+               <name>mei-friend</name>
+               <p>First edit by mei-friend 0.8.9, 2 April 2023.</p>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[ { "expand": "expansion-maximal" }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef mm="144" mm.unit="2" mm.dots="1">
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1">
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78%" />
+                        <clef shape="G" line="2" />
+                        <keySig sig="2s" />
+                        <meterSig count="3" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <expansion xml:id="expansion-minimal" plist="#expansion-menuett-minimal #expansion-trio-minimal #expansion-menuett-minimal"/>
+                  <expansion xml:id="expansion-minuet-trio" plist="#expansion-menuett-default #expansion-trio-default"/>
+                  <expansion xml:id="expansion-default" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-minimal"/>
+                  <expansion xml:id="expansion-maximal" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-default"/>
+                  <section xml:id="Menuett">
+                     <expansion xml:id="expansion-menuett-default" plist="#A #A1 #A #A2"/>
+                     <expansion xml:id="expansion-menuett-minimal" plist="#A #A2"/>
+                     <section xml:id="A">
+                        <measure n="1">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note xml:id="nhh1hp9" dur="4" oct="4" pname="a" stem.dir="up" />
+                                 <note dur="4" oct="4" pname="b" stem.dir="down" />
+                                 <note dur="4" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                              </layer>
+                           </staff>
+                           <tempo staff="1" startid="#nhh1hp9">Menuett</tempo>
+                           <dir place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend color="red" fontsize="larger" fontstyle="normal" fontweight="bold">A</rend>
+                           </dir>
+                        </measure>
+                     </section>
+                     <ending xml:id="A1" lendsym="angledown" n="1.">
+                        <measure right="rptend" n="2">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note dur="2" oct="4" pname="a" stem.dir="up" />
+                                 <rest dur="4" />
+                              </layer>
+                           </staff>
+                           <dir place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend color="red" fontsize="larger" fontstyle="normal" fontweight="bold">A1</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                     <ending xml:id="A2" lendsym="angledown" n="2.">
+                        <measure n="3">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note dur="2" oct="5" pname="d" stem.dir="down" />
+                                 <rest dur="4" />
+                              </layer>
+                           </staff>
+                           <dir place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend color="red" fontsize="larger" fontstyle="normal" fontweight="bold">A2</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                  </section>
+                  <section>
+                     <expansion plist="#B #B1 #B #B2" xml:id="expansion-trio-default" />
+                     <expansion plist="#B #B2" xml:id="expansion-trio-minimal" />
+                     <section xml:id="B">
+                        <measure left="rptstart" n="4">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note xml:id="n1687zus" dur="4" oct="5" pname="d" stem.dir="down" />
+                                 <note dur="4" oct="5" pname="c" stem.dir="down" accid.ges="s" />
+                                 <note dur="4" oct="4" pname="b" stem.dir="down" />
+                              </layer>
+                           </staff>
+                           <tempo staff="1" startid="#n1687zus">Trio</tempo>
+                           <dir place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend color="red" fontsize="larger" fontstyle="normal" fontweight="bold">B</rend>
+                           </dir>
+                        </measure>
+                     </section>
+                     <ending xml:id="B1" lendsym="angledown" n="1.">
+                        <measure right="rptend" n="5">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note dur="2" oct="4" pname="a" stem.dir="up" />
+                                 <rest dur="4" />
+                              </layer>
+                           </staff>
+                           <dir place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend color="red" fontsize="larger" fontstyle="normal" fontweight="bold">B1</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                     <ending xml:id="B2" lendsym="angledown" n="2.">
+                        <measure right="end" n="6">
+                           <staff n="1">
+                              <layer n="1">
+                                 <note dur="2" oct="5" pname="d" stem.dir="down" />
+                                 <rest dur="4" />
+                              </layer>
+                           </staff>
+                           <dir staff="1" tstamp="4">
+                              <rend halign="right">Menuett da capo</rend>
+                           </dir>
+                           <dir place="below" staff="1" tstamp="1" vgrp="1">
+                              <rend color="red" fontsize="larger" fontstyle="normal" fontweight="bold">B2</rend>
+                           </dir>
+                        </measure>
+                     </ending>
+                  </section>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
