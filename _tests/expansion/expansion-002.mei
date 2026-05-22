@@ -60,8 +60,8 @@
                   </staffGrp>
                </scoreDef>
                <section>
-                  <expansion xml:id="minimal" plist="#Upbeat #A #A2 #B #A #A-Fine"/>
                   <expansion xml:id="default" plist="#Upbeat #A #A1 #A #A2 #B #A #A-Fine"/>
+                  <expansion xml:id="minimal" plist="#Upbeat #A #A2 #B #A #A-Fine"/>
                   <expansion xml:id="unsorted" plist="#Upbeat #B #A #A1 #A #A-Fine"/>
                   <expansion xml:id="test-no-plist"/>
                   <section xml:id="Upbeat">

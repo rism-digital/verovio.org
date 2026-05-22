@@ -51,9 +51,9 @@
                   </staffGrp>
                </scoreDef>
                <section>
+                  <expansion xml:id="expansion-default" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-minimal"/>
                   <expansion xml:id="expansion-minimal" plist="#expansion-menuett-minimal #expansion-trio-minimal #expansion-menuett-minimal"/>
                   <expansion xml:id="expansion-minuet-trio" plist="#expansion-menuett-default #expansion-trio-default"/>
-                  <expansion xml:id="expansion-default" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-minimal"/>
                   <expansion xml:id="expansion-maximal" plist="#expansion-menuett-default #expansion-trio-default #expansion-menuett-default"/>
                   <section xml:id="Menuett">
                      <expansion xml:id="expansion-menuett-default" plist="#A #A1 #A #A2"/>

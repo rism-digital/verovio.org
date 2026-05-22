@@ -51,9 +51,9 @@
                   </staffGrp>
                </scoreDef>
                <section>
+                  <expansion xml:id="expansion-default" plist="#A #A1 #A #A2 #B #B1 #B #B2 #A #A2"/>
                   <expansion xml:id="expansion-minimal" plist="#A #A2 #B #B2 #A #A2"/>
                   <expansion xml:id="expansion-minuet-trio" plist="#A #A1 #A #A2 #B #B1 #B #B2"/>
-                  <expansion xml:id="expansion-default" plist="#A #A1 #A #A2 #B #B1 #B #B2 #A #A2"/>
                   <expansion xml:id="expansion-maximal" plist="#A #A1 #A #A2 #B #B1 #B #B2 #A #A1 #A #A2"/>
                   <section xml:id="A">
                      <measure n="1">
