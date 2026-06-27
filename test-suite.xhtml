@@ -23,8 +23,8 @@ tools-active: test-suite
                         {% endfor %}
                     {% endif %}
                 {% endfor %}
-    
-                {% assign categories = categories | uniq | sort %}
+
+                {% assign categories = categories | uniq | sort | where_exp: "item", "item != 'midi'" %}
                 {% for category in categories %}
                     <a class="list-group-item" href="{{ site.baseurl }}/test-suite.xhtml?cat={{category}}">{{ category | capitalize }}</a>
                 {% endfor %}
