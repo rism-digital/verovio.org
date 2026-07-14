@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Numeric font sizes on symbol elements</title>
+            <respStmt>
+               <persName role="encoder">Simon Waloschek</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-07-14">2026-07-14</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/4399" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>Numeric symbol font sizes are interpreted as printer points before SMuFL scaling.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="6.2.1" label="2">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5">
+                        <clef shape="G" line="2" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure>
+                     <staff n="1">
+                        <layer n="1">
+                           <note dur="4" oct="4" pname="c" />
+                           <note dur="4" oct="4" pname="d" />
+                           <note dur="4" oct="4" pname="e" />
+                           <note dur="4" oct="4" pname="f" />
+                        </layer>
+                     </staff>
+                     <dir place="above" staff="1" tstamp="1">
+                        <symbol fontsize="10pt" glyph.auth="smufl" glyph.name="dynamicForte" />
+                     </dir>
+                     <dir place="above" staff="1" tstamp="3">
+                        <symbol fontsize="20pt" glyph.auth="smufl" glyph.name="dynamicForte" />
+                     </dir>
+                     <dir place="below" staff="1" tstamp="4">
+                        <symbol fontsize="50%" glyph.auth="smufl" glyph.name="dynamicForte" />
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
