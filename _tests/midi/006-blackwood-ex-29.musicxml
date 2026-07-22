@@ -181,6 +181,7 @@
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.5</alter>
           <octave>5</octave>
           </pitch>
         <duration>2</duration>
@@ -193,6 +194,7 @@
       <note default-x="155.29" default-y="-20">
         <pitch>
           <step>B</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -271,6 +273,7 @@
         <chord/>
         <pitch>
           <step>D</step>
+          <alter>-0.5</alter>
           <octave>5</octave>
           </pitch>
         <duration>2</duration>
@@ -283,6 +286,7 @@
       <note default-x="96.77" default-y="-25">
         <pitch>
           <step>A</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -361,6 +365,7 @@
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -373,7 +378,7 @@
       <note default-x="86.45" default-y="-35">
         <pitch>
           <step>F</step>
-          <alter>1</alter>
+          <alter>0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -451,6 +456,7 @@
         <chord/>
         <pitch>
           <step>A</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -463,6 +469,7 @@
       <note default-x="95.49" default-y="-40">
         <pitch>
           <step>E</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -541,6 +548,7 @@
         <chord/>
         <pitch>
           <step>G</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -553,6 +561,7 @@
       <note default-x="96.77" default-y="-45">
         <pitch>
           <step>D</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -634,6 +643,7 @@
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.5</alter>
           <octave>4</octave>
           </pitch>
         <duration>4</duration>
