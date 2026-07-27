@@ -187,6 +187,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -243,6 +244,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>A</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -283,6 +285,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -306,6 +309,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-1.40949</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -344,6 +348,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.92179</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -367,6 +372,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-0.92179</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -380,6 +386,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
       <note default-x="25.24" default-y="-20">
         <pitch>
           <step>B</step>
+          <alter>-1.13685</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -405,6 +412,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
       <note default-x="56.81" default-y="-25">
         <pitch>
           <step>A</step>
+          <alter>-0.92179</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -443,6 +451,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -525,6 +534,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>F</step>
+          <alter>0.53273</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -541,6 +551,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-1.40949</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -553,6 +564,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -602,6 +614,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>A</step>
+          <alter>-0.64915</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -614,13 +627,14 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
         <tie type="stop"/>
         <voice>1</voice>
         <type>quarter</type>
-        <accidental smufl="accSagittal5CommaDown" cautionary="yes" parentheses="no">other</accidental>
+        <accidental smufl="accSagittal5CommaDown">other</accidental>
         <stem>up</stem>
         <notations>
           <tied type="stop"/>
@@ -656,6 +670,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -716,6 +731,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-1.40949</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -739,6 +755,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-0.60412</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -818,6 +835,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>F</step>
+          <alter>-0.27264</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -841,6 +859,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>B</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -866,6 +885,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>F</step>
+          <alter>0.92179</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -879,6 +899,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
       <note default-x="37.2" default-y="-35">
         <pitch>
           <step>F</step>
+          <alter>-0.27264</alter>
           <octave>4</octave>
           </pitch>
         <duration>2</duration>
@@ -890,6 +911,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
       <note default-x="72.23" default-y="-40">
         <pitch>
           <step>E</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>1</duration>
@@ -1011,6 +1033,7 @@ Automatically generated tuning from the score file:///home/kratib/src/infojunkie
         <chord/>
         <pitch>
           <step>E</step>
+          <alter>-0.21506</alter>
           <octave>4</octave>
           </pitch>
         <duration>4</duration>
