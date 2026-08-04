@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?><mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
    <meiHead xml:id="maxej2j">
       <fileDesc xml:id="f10ajc3v">
          <titleStmt xml:id="t1wvzu47">
             <title>keys and accidentals</title>
-            <respStmt />
+            <respStmt/>
          </titleStmt>
          <pubStmt xml:id="p15oxaea">
             <date isodate="2025-08-28" type="encoding-date">2025-08-28</date>
@@ -20,302 +17,302 @@
             </application>
          </appInfo>
       </encodingDesc>
-      <extMeta><![CDATA[ { "tuningFile": "! keys-and-accidentals.ascl\n!\nA tuning for the keys-and-accidentals.musicxml test score.\n!\n! default tuning: degree 18 (900.0 cents) 440 Hz, or degree 0 = 261.625565 Hz\n!\n24\n!\n50.0 ! tC\n100.0 ! C♯|D♭\n150.0 ! dD\n200.0 ! D\n250.0 ! tD\n300.0 ! E♭\n350.0 ! dE\n400.0 ! E\n450.0 ! dF\n500.0 ! F\n550.0 ! tF\n600.0 ! F♯|G♭\n650.0 ! dG\n700.0 ! G\n750.0 ! tG\n800.0 ! G♯|A♭\n850.0 ! dA\n900.0 ! A\n950.0 ! tA\n1000.0 ! A♯|B♭\n1050.0 ! dB\n1100.0 ! B\n1150.0 ! dC\n2/1 ! C\n!\n! Note names are formatted per MEI accidentals.\n!\n! @ABL NOTE_NAMES \"Bs/BaccSagittalSharp/C\" \"C1qs\" \"Cs/Df\" \"Dbf\" \"D\" \"D1qs\" \"Ds/Ef\" \"Ebf\" \"E/Ff\" \"E1qs/Fbf\" \"Es/F\" \"F1qs\" \"Fs/Gf\" \"Gbf\" \"G\" \"G1qs\" \"Gs/Af\" \"Abf\" \"A\" \"A1qs\" \"As/Bf/BaccSagittalFlat\" \"Bbf/BaccSagittal11MediumDiesisDown\" \"B/Cf\" \"B1qs/BaccSagittal11MediumDiesisUp/Cbf\"\n! @ABL REFERENCE_PITCH 4 18 440.0" }]]></extMeta>
+      <extMeta> { "tuningFile": "! keys-and-accidentals.ascl\n!\nA tuning for the keys-and-accidentals.musicxml test score.\n!\n! default tuning: degree 18 (900.0 cents) 440 Hz, or degree 0 = 261.625565 Hz\n!\n24\n!\n50.0 ! tC\n100.0 ! C&#9839;|D&#9837;\n150.0 ! dD\n200.0 ! D\n250.0 ! tD\n300.0 ! E&#9837;\n350.0 ! dE\n400.0 ! E\n450.0 ! dF\n500.0 ! F\n550.0 ! tF\n600.0 ! F&#9839;|G&#9837;\n650.0 ! dG\n700.0 ! G\n750.0 ! tG\n800.0 ! G&#9839;|A&#9837;\n850.0 ! dA\n900.0 ! A\n950.0 ! tA\n1000.0 ! A&#9839;|B&#9837;\n1050.0 ! dB\n1100.0 ! B\n1150.0 ! dC\n2/1 ! C\n!\n! Note names are formatted per MEI accidentals.\n!\n! @ABL NOTE_NAMES \"Bs/BaccSagittalSharp/C\" \"C1qs\" \"Cs/Df\" \"Dbf\" \"D\" \"D1qs\" \"Ds/Ef\" \"Ebf\" \"E/Ff\" \"E1qs/Fbf\" \"Es/F\" \"F1qs\" \"Fs/Gf\" \"Gbf\" \"G\" \"G1qs\" \"Gs/Af\" \"Abf\" \"A\" \"A1qs\" \"As/Bf/BaccSagittalFlat\" \"Bbf/BaccSagittal11MediumDiesisDown\" \"B/Cf\" \"B1qs/BaccSagittal11MediumDiesisUp/Cbf\"\n! @ABL REFERENCE_PITCH 4 18 440.0" }</extMeta>
    </meiHead>
    <music>
       <body>
-         <mdiv xml:id="rj02r8f">
-            <score xml:id="s15u3lt4">
-               <scoreDef xml:id="t11zs9ps">
-                  <pgHead xml:id="yuh8na9" func="first">
-                     <rend xml:id="waa116r" halign="center" valign="top">Keys and accidentals</rend>
-                     <rend xml:id="z1q3mg80" halign="center" valign="top">Advanced accidentals</rend>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <pgHead func="first">
+                     <rend halign="center" valign="top">Keys and accidentals</rend>
+                     <rend halign="center" valign="top">Advanced accidentals</rend>
                   </pgHead>
-                  <staffGrp xml:id="b1o4v8ek">
-                     <staffDef xml:id="P1" n="1" lines="5" ppq="1">
-                        <label xml:id="crhfivq">Piano</label>
-                        <labelAbbr xml:id="e1w388sp">Pno.</labelAbbr>
-                        <instrDef xml:id="gr59hrd" midi.channel="0" midi.instrnum="0" midi.volume="78%" />
-                        <clef xml:id="prv136w" shape="G" line="2" />
-                        <keySig xml:id="qats0ch" sig="0" />
-                        <meterSig xml:id="r16fta2" count="4" unit="4" />
+                  <staffGrp>
+                     <staffDef n="1" lines="5" ppq="1">
+                        <label>Piano</label>
+                        <labelAbbr>Pno.</labelAbbr>
+                        <instrDef midi.channel="0" midi.instrnum="0" midi.volume="78%"/>
+                        <clef shape="G" line="2"/>
+                        <keySig sig="0"/>
+                        <meterSig count="4" unit="4"/>
                      </staffDef>
                   </staffGrp>
                </scoreDef>
-               <section xml:id="u8xx3ob">
-                  <expansion plist="#pc7ekk" xml:id="q1bas91a" />
-                  <pb xml:id="v4ijlg" />
+               <section>
+                  <expansion plist="#pc7ekk"/>
+                  <pb/>
                   <section xml:id="pc7ekk">
-                     <measure xml:id="s1gg5d39" n="1">
-                        <staff xml:id="b6id1x9" n="1">
-                           <layer xml:id="c1h00f5s" n="1">
-                              <note xml:id="d1yosof3" dur.ppq="1" dur="4" oct="4" pname="c" stem.dir="up">
-                                 <accid xml:id="e1igeodz" />
+                     <measure n="1">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="c" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="fx4qnxg" dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
-                                 <accid xml:id="g1wuqyzh" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="h14m1d7s" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="i6yjv6h" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="j7cue87" dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
-                                 <accid xml:id="k2bqbcq" />
-                              </note>
-                           </layer>
-                        </staff>
-                     </measure>
-                     <measure xml:id="lmvovm2" right="dbl" n="2">
-                        <staff xml:id="u1wb8hlh" n="1">
-                           <layer xml:id="vsbcmlu" n="1">
-                              <note xml:id="w1725l7c" dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
-                                 <accid xml:id="x19kfhub" />
-                              </note>
-                              <note xml:id="yvoyzy7" dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
-                                 <accid xml:id="zlarvz1" />
-                              </note>
-                              <note xml:id="a1f4wudh" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="bufq1qg" />
-                              </note>
-                              <note xml:id="c1o9q0wa" dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
-                                 <accid xml:id="dveppi1" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
+                                 <accid/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <sb xml:id="odtq2n3" />
-                     <scoreDef xml:id="p19d439y">
-                        <keySig xml:id="qrukxrl">
-                           <keyAccid xml:id="rg1ojk0" pname="b" accid="bf" />
-                           <keyAccid xml:id="s1byeu9g" pname="e" accid="bf" />
+                     <measure right="dbl" n="2">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
+                                 <accid/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <accid/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
+                                 <accid/>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <sb/>
+                     <scoreDef>
+                        <keySig>
+                           <keyAccid pname="b" accid="bf"/>
+                           <keyAccid pname="e" accid="bf"/>
                         </keySig>
                      </scoreDef>
-                     <measure xml:id="e19p6cjn" n="3">
-                        <staff xml:id="nzppls8" n="1">
-                           <layer xml:id="t4kb1g9" n="1">
-                              <note xml:id="ue4vc9o" dur.ppq="1" dur="4" oct="4" pname="c" stem.dir="up">
-                                 <accid xml:id="v5yyztd" />
+                     <measure n="3">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="c" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="w1x214zo" dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
-                                 <accid xml:id="xnx4gl8" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="y1cvzonf" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="z1o8rj05" glyph.auth="smufl" glyph.name="accidentalBakiyeFlat" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid glyph.auth="smufl" glyph.name="accidentalBakiyeFlat"/>
                               </note>
-                              <note xml:id="ah9sbfm" dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
-                                 <accid xml:id="b1lo4dwz" />
-                              </note>
-                           </layer>
-                        </staff>
-                     </measure>
-                     <measure xml:id="cxema1l" right="dbl" n="4">
-                        <staff xml:id="lkquzov" n="1">
-                           <layer xml:id="m11l9593" n="1">
-                              <note xml:id="n1fwxux5" dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
-                                 <accid xml:id="o4uf1fl" />
-                              </note>
-                              <note xml:id="p1rbarrb" dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
-                                 <accid xml:id="qs9m0hz" />
-                              </note>
-                              <note xml:id="r1awezbx" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="s18y7kwi" glyph.auth="smufl" glyph.name="accidentalBakiyeFlat" />
-                              </note>
-                              <note xml:id="txyo2as" dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
-                                 <accid xml:id="u1i3uqcl" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
+                                 <accid/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <sb xml:id="f121xbf7" />
-                     <measure xml:id="v1gua71p" n="5">
-                        <staff xml:id="e1cqqoft" n="1">
-                           <layer xml:id="g12odmqk" n="1">
-                              <note xml:id="h1m3mqbl" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="it2zii9" glyph.auth="smufl" glyph.name="accidentalBakiyeFlat" />
+                     <measure right="dbl" n="4">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="j1w0iewh" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="k1iteo7i" accid="n" accid.ges="n" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="l1hk8kws" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="mh6mfhq" accid="bf" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid glyph.auth="smufl" glyph.name="accidentalBakiyeFlat"/>
                               </note>
-                              <note xml:id="n1wtmwfw" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="o1kedy5w" accid="f" accid.ges="f" />
-                              </note>
-                           </layer>
-                        </staff>
-                     </measure>
-                     <measure xml:id="prnpk5y" right="dbl" n="6">
-                        <staff xml:id="y1ry52nj" n="1">
-                           <layer xml:id="zt0t31a" n="1">
-                              <note xml:id="a1nxczhu" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="bdds17f" glyph.auth="smufl" glyph.name="accidentalBakiyeFlat" />
-                              </note>
-                              <note xml:id="clyu0uy" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="d1xhyjyi" accid="1qs" accid.ges="su" />
-                              </note>
-                              <note xml:id="e1vu6w8k" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="f1h36n6v" accid.ges="su" glyph.auth="smufl" glyph.name="accidentalQuarterToneSharpStein" />
-                              </note>
-                              <note xml:id="gpakva4" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="h15g4i5p" accid="s" accid.ges="s" />
+                              <note dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
+                                 <accid/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <sb xml:id="s4ml1w1" />
-                     <scoreDef xml:id="t1xntmub">
-                        <keySig xml:id="u104rln9">
-                           <keyAccid xml:id="v1dsu12g" pname="g" accid="f" />
-                           <keyAccid xml:id="w10mqbra" pname="b" accid="f" />
-                           <keyAccid xml:id="x17g4efo" pname="e" accid="bf" />
+                     <sb/>
+                     <measure n="5">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid glyph.auth="smufl" glyph.name="accidentalBakiyeFlat"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid accid="n" accid.ges="n"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid accid="bf"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid accid="f" accid.ges="f"/>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure right="dbl" n="6">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid glyph.auth="smufl" glyph.name="accidentalBakiyeFlat"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid accid="1qs" accid.ges="su"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid accid.ges="su" glyph.auth="smufl" glyph.name="accidentalQuarterToneSharpStein"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid accid="s" accid.ges="s"/>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <sb/>
+                     <scoreDef>
+                        <keySig>
+                           <keyAccid pname="g" accid="f"/>
+                           <keyAccid pname="b" accid="f"/>
+                           <keyAccid pname="e" accid="bf"/>
                         </keySig>
                      </scoreDef>
-                     <measure xml:id="icq7ky4" n="7">
-                        <staff xml:id="ry56hr8" n="1">
-                           <layer xml:id="y1q6968x" n="1">
-                              <note xml:id="z1g4e81u" dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
-                                 <accid xml:id="a16pz66v" />
+                     <measure n="7">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="b1w0yaww" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="cftjqjf" glyph.auth="smufl" glyph.name="accidentalBakiyeFlat" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid glyph.auth="smufl" glyph.name="accidentalBakiyeFlat"/>
                               </note>
-                              <note xml:id="d1f25154" dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
-                                 <accid xml:id="e1f55w61" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="fgbvcb5" dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
-                                 <accid xml:id="gvesm1" accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat" />
-                              </note>
-                           </layer>
-                        </staff>
-                     </measure>
-                     <measure xml:id="h179gs54" n="8">
-                        <staff xml:id="qnpchwj" n="1">
-                           <layer xml:id="rgek1eu" n="1">
-                              <note xml:id="s182ytch" dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
-                                 <accid xml:id="t1n24611" />
-                              </note>
-                              <note xml:id="u16bi78" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="v11tgpcl" accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat" />
-                              </note>
-                              <note xml:id="w1iiz8pf" dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
-                                 <accid xml:id="xbvjd4z" />
-                              </note>
-                              <note xml:id="y1tajg2h" dur.ppq="1" dur="4" oct="5" pname="d" stem.dir="down">
-                                 <accid xml:id="zaibuoa" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
+                                 <accid accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat"/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <sb xml:id="k1wl67" />
-                     <measure xml:id="aok7cn1" n="9">
-                        <staff xml:id="j12xmpmy" n="1">
-                           <layer xml:id="l11qjseg" n="1">
-                              <note xml:id="m6c2sw8" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="nvhynlh" accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat" />
+                     <measure n="8">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="oa4g3a3" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="p6dh4s1" accid="n" accid.ges="n" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat"/>
                               </note>
-                              <note xml:id="q2hqff0" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="r1fg78zc" accid.ges="n" glyph.auth="smufl" glyph.name="accidentalNatural" />
+                              <note dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
+                                 <accid/>
                               </note>
-                              <note xml:id="s1i2es8u" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="tt3jdvk" accid="bf" />
-                              </note>
-                           </layer>
-                        </staff>
-                     </measure>
-                     <measure xml:id="uicmcte" right="dbl" n="10">
-                        <staff xml:id="djxupvk" n="1">
-                           <layer xml:id="e1jckfhq" n="1">
-                              <note xml:id="fp3u7ve" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="g1w77zbp" accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat" />
-                              </note>
-                              <note xml:id="h6rkzf9" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="izqywrr" accid="s" accid.ges="s" />
-                              </note>
-                              <note xml:id="j1a3nlyq" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="kgpsxst" accid="f" accid.ges="f" />
-                              </note>
-                              <note xml:id="lwt0ily" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="m1xyoyq3" accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat" />
+                              <note dur.ppq="1" dur="4" oct="5" pname="d" stem.dir="down">
+                                 <accid/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <sb xml:id="x3a4n76" />
-                     <scoreDef xml:id="y16fhf59">
-                        <keySig xml:id="z1wcwflp" sig="0" />
+                     <sb/>
+                     <measure n="9">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="n" accid.ges="n"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="n" glyph.auth="smufl" glyph.name="accidentalNatural"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="bf"/>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure right="dbl" n="10">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="s" accid.ges="s"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="f" accid.ges="f"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="f" glyph.auth="smufl" glyph.name="accidentalFlat"/>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <sb/>
+                     <scoreDef>
+                        <keySig sig="0"/>
                      </scoreDef>
-                     <measure xml:id="n1j8can5" n="11">
-                        <staff xml:id="w177sjb6" n="1">
-                           <layer xml:id="ag2bgox" n="1">
-                              <note xml:id="b1suiul7" dur.ppq="1" dur="4" oct="4" pname="c" stem.dir="up">
-                                 <accid xml:id="c1iehnej" />
+                     <measure n="11">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="c" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="df4izlj" dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
-                                 <accid xml:id="e1iioi7n" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="d" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="fkyp4bs" dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
-                                 <accid xml:id="gbt2m4v" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="e" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="h1pp4ych" dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
-                                 <accid xml:id="ij4criy" />
-                              </note>
-                           </layer>
-                        </staff>
-                     </measure>
-                     <measure xml:id="j18gm96n" n="12">
-                        <staff xml:id="s18iei7m" n="1">
-                           <layer xml:id="t1or1w1l" n="1">
-                              <note xml:id="u1csz4xp" dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
-                                 <accid xml:id="vjk2kbw" />
-                              </note>
-                              <note xml:id="w1k7rwng" dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
-                                 <accid xml:id="x1p1xd20" />
-                              </note>
-                              <note xml:id="y1u5oc8q" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="z1kffvhw" />
-                              </note>
-                              <note xml:id="a17hx9xs" dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
-                                 <accid xml:id="b1bj2053" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="f" stem.dir="up">
+                                 <accid/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <sb xml:id="makmscu" />
-                     <measure xml:id="c1yaom11" n="13">
-                        <staff xml:id="l19tbc58" n="1">
-                           <layer xml:id="n17zr6b1" n="1">
-                              <note xml:id="o12eha9s" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="pby9g7a" />
+                     <measure n="12">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="g" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="q1gcmcy6" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="r16a3beg" accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittal11MediumDiesisDown" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="a" stem.dir="up">
+                                 <accid/>
                               </note>
-                              <note xml:id="s3wufi0" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="t1yxmsvt" accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalFlat" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid/>
                               </note>
-                              <note xml:id="u2ihd7a" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="vk0qcs" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalFlat" />
+                              <note dur.ppq="1" dur="4" oct="5" pname="c" stem.dir="down">
+                                 <accid/>
                               </note>
                            </layer>
                         </staff>
                      </measure>
-                     <measure xml:id="w1em01sd" right="end" n="14">
-                        <staff xml:id="fqzl1ej" n="1">
-                           <layer xml:id="gtmtxn1" n="1">
-                              <note xml:id="h1c71zl0" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="i1o2jwok" />
+                     <sb/>
+                     <measure n="13">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid/>
                               </note>
-                              <note xml:id="j1bew521" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="k2h5ihu" accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittal11MediumDiesisUp" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittal11MediumDiesisDown"/>
                               </note>
-                              <note xml:id="l1mqmxd4" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="mw4yh6n" accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalSharp" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalFlat"/>
                               </note>
-                              <note xml:id="n10928er" dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
-                                 <accid xml:id="o1xncedb" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalSharp" />
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalFlat"/>
+                              </note>
+                           </layer>
+                        </staff>
+                     </measure>
+                     <measure right="end" n="14">
+                        <staff n="1">
+                           <layer n="1">
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittal11MediumDiesisUp"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid="n" accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalSharp"/>
+                              </note>
+                              <note dur.ppq="1" dur="4" oct="4" pname="b" stem.dir="down">
+                                 <accid accid.ges="n" glyph.auth="smufl" glyph.name="accSagittalSharp"/>
                               </note>
                            </layer>
                         </staff>
