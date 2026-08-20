@@ -1,4 +1,4 @@
 [submodule "musicxmlTestSuite"]
 	path = musicxmlTestSuite
-	url = https://github.com/cuthbertLab/musicxmlTestSuite
+	url = https://github.com/w3c-cg/musicxmlTestSuite
 	branch = main
