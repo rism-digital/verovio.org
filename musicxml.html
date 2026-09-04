@@ -70,11 +70,11 @@ examples:
                  <div class="row">
                     <div class="col-xs-7">
                         <p>
-                        <a href="{{ site.baseurl }}/examples/musicxml/{{ d.link }}">{{ d.name }}</a> ({{ d.size }})
+                        <a href="{{ site.url }}/examples/musicxml/{{ d.link }}">{{ d.name }}</a> ({{ d.size }})
                         </p>
                     </div>
                     <div class="col-xs-5">
-                        <a href="{{ site.baseurl }}/mei-viewer.xhtml?file=https://www.verovio.org/examples/musicxml/{{ d.link }}&amp;musicxml=true">
+                        <a href="{{ site.url }}/mei-viewer.xhtml?file=https://www.verovio.org/examples/musicxml/{{ d.link }}&amp;musicxml=true">
                             <button type="button" class="btn btn-default btn-xs">
                                 <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Convert to MEI
                             </button>
@@ -124,7 +124,7 @@ examples:
             return function(e) {
                 $('.row-offcanvas').toggleClass('active');
                 localStorage.setItem("musicxml_file", e.target.result);
-                window.location.href = "{{ site.baseurl }}/mei-viewer.xhtml?musicxml=true&local=true";
+                window.location.href = "{{ site.url }}/mei-viewer.xhtml?musicxml=true&local=true";
             };
         })(f);
 

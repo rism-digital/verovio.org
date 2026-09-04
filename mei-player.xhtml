@@ -342,8 +342,8 @@ downloads:
     <button type="button" id="mei_download" class="navbar-toggle menu-download" style="display: none;">
         <span class="glyphicon glyphicon-download"></span><span> MEI</span>
     </button>
-    <a class="navbar-brand logo-nav" href="{{ site.baseurl }}/index.xhtml">
-        <img alt="Verovio logo" src="{{ site.baseurl }}/images/verovio-fadded-50.png" />
+    <a class="navbar-brand logo-nav" href="{{ site.url }}/index.xhtml">
+        <img alt="Verovio logo" src="{{ site.url }}/images/verovio-fadded-50.png" />
     </a>
     <div style="clear: both;"></div>
     <hr/>
@@ -436,7 +436,7 @@ downloads:
                     {% for d in page.downloads %}
                     <div {% if d.hidden == true %}class="hidden-sm hidden-xs"{% endif %}>
                         <p>
-                        <a href="{{ site.baseurl }}/{{ page.name }}?file=examples/downloads/{{ d.link }}&amp;audio=examples/player/{{ d.audio }}">{{ d.name }}</a><br/>
+                        <a href="{{ site.url }}/{{ page.name }}?file=examples/downloads/{{ d.link }}&amp;audio=examples/player/{{ d.audio }}">{{ d.name }}</a><br/>
                          {{ d.description }}
                         </p>
                     </div>
