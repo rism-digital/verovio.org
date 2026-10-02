@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0">
+  <work>
+    <work-title>Tied snare drum roll</work-title>
+  </work>
+  <identification>
+    <miscellaneous>
+      <miscellaneous-field name="description">A snare drum roll: a quarter note tied to an eighth note, both with a single-note tremolo (three slashes). The MIDI output should have one roll of 12 thirty-second notes over the whole tied value.</miscellaneous-field>
+    </miscellaneous>
+  </identification>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Snare Drum</part-name>
+      <score-instrument id="P1-I39"><instrument-name>Snare</instrument-name></score-instrument>
+      <midi-instrument id="P1-I39"><midi-channel>10</midi-channel><midi-unpitched>39</midi-unpitched></midi-instrument>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <measure number="1">
+      <attributes>
+        <divisions>2</divisions>
+        <time><beats>4</beats><beat-type>4</beat-type></time>
+        <clef><sign>percussion</sign><line>2</line></clef>
+      </attributes>
+      <note>
+        <unpitched><display-step>C</display-step><display-octave>5</display-octave></unpitched>
+        <duration>2</duration>
+        <tie type="start"/>
+        <instrument id="P1-I39"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>up</stem>
+        <notations>
+          <tied type="start"/>
+          <ornaments><tremolo type="single">3</tremolo></ornaments>
+        </notations>
+      </note>
+      <note>
+        <unpitched><display-step>C</display-step><display-octave>5</display-octave></unpitched>
+        <duration>1</duration>
+        <tie type="stop"/>
+        <instrument id="P1-I39"/>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+        <notations>
+          <tied type="stop"/>
+          <ornaments><tremolo type="single">3</tremolo></ornaments>
+        </notations>
+      </note>
+      <note>
+        <unpitched><display-step>C</display-step><display-octave>5</display-octave></unpitched>
+        <duration>1</duration>
+        <instrument id="P1-I39"/>
+        <voice>1</voice>
+        <type>eighth</type>
+        <stem>up</stem>
+      </note>
+      <note>
+        <unpitched><display-step>C</display-step><display-octave>5</display-octave></unpitched>
+        <duration>2</duration>
+        <instrument id="P1-I39"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>up</stem>
+      </note>
+      <note>
+        <unpitched><display-step>C</display-step><display-octave>5</display-octave></unpitched>
+        <duration>2</duration>
+        <instrument id="P1-I39"/>
+        <voice>1</voice>
+        <type>quarter</type>
+        <stem>up</stem>
+      </note>
+    </measure>
+  </part>
+</score-partwise>
