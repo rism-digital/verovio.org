@@ -26,7 +26,7 @@ tools-active: test-suite
 
                 {% assign categories = categories | uniq | sort | where_exp: "item", "item != 'midi'" %}
                 {% for category in categories %}
-                    <a class="list-group-item" href="{{ site.baseurl }}/test-suite.xhtml?cat={{category}}">{{ category | capitalize }}</a>
+                    <a class="list-group-item" href="{{ site.url }}/test-suite.xhtml?cat={{category}}">{{ category | capitalize }}</a>
                 {% endfor %}
             </div>
         </div>
@@ -40,7 +40,7 @@ tools-active: test-suite
                 This section provides a test suite for some of the features of Verovio. Select a category in the submenu on the left to see example files rendered with the latest develop version of the <a href="https://book.verovio.org/installing-or-building-from-sources/javascript-and-webassembly.html">JavaScript toolkit</a>.
             </p>
             <p>
-                It is also possible to compare these tests, or selected files, with previous versions in the <a href="{{ site.baseurl }}/comparison.xhtml">comparison page</a>.
+                It is also possible to compare these tests, or selected files, with previous versions in the <a href="{{ site.url }}/comparison.xhtml">comparison page</a>.
             </p>
         </div>
 

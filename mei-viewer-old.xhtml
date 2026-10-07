@@ -564,7 +564,7 @@ downloads:
                     {% for d in page.downloads %}
                     <div {% if d.hidden == true %}class="hidden-sm hidden-xs"{% endif %}>
                         <p>
-                        <a href="{{ site.baseurl }}/{{ page.name }}?file=examples/downloads/{{ d.link }}">{{ d.name }}</a><br/>
+                        <a href="{{ site.url }}/{{ page.name }}?file=examples/downloads/{{ d.link }}">{{ d.name }}</a><br/>
                          {{ d.description }}
                         </p>
                     </div>
@@ -606,7 +606,7 @@ downloads:
 
     <div class="sidebar-panel">
         <p>This viewer uses the latest development version <a href="" id="version">[version]</a> and might be unstable.</p>
-        <p>Do you need the old MEI viewer? It is available <a href="{{ site.baseurl }}/mei-viewer-old.xhtml">here</a>.</p>
+        <p>Do you need the old MEI viewer? It is available <a href="{{ site.url }}/mei-viewer-old.xhtml">here</a>.</p>
     </div>
 
 </div>
@@ -634,8 +634,8 @@ downloads:
         <button type="button" id="mei_download" class="navbar-toggle menu-download" style="display: none;">
             <span class="glyphicon glyphicon-download"></span><span> MEI</span>
         </button>
-        <a class="navbar-brand logo-nav" href="{{ site.baseurl }}/index.xhtml">
-            <img alt="Verovio logo" src="{{ site.baseurl }}/images/verovio-fadded-50.png" />
+        <a class="navbar-brand logo-nav" href="{{ site.url }}/index.xhtml">
+            <img alt="Verovio logo" src="{{ site.url }}/images/verovio-fadded-50.png" />
         </a>
         <div style="clear: both;"></div>
         <hr/>
@@ -707,7 +707,7 @@ downloads:
     </div>
 </div>
 
-<script src="{{ site.baseurl }}/javascript/develop/verovio-toolkit-wasm.js"></script>
+<script src="{{ site.url }}/javascript/develop/verovio-toolkit-wasm.js"></script>
 
 <script>
 //<![CDATA[
