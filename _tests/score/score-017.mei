@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title label="NMA digital" type="unit">KV 370/3, m. 96, polymetric</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef optimize="false">
+                  <staffGrp bar.thru="true" symbol="bracket">
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="2" meter.unit="2" meter.sym="cut">
+                        <label>Oboe</label>
+                     </staffDef>
+                     <staffDef type="prout" num="6" numbase="8" n="2" lines="5" clef.shape="G" clef.line="2" meter.count="6" meter.unit="8">
+                        <label>Violino</label>
+                     </staffDef>
+                     <staffDef num="6" numbase="8" n="3" lines="5" clef.shape="C" clef.line="3" meter.count="6" meter.unit="8">
+                        <label>Viola</label>
+                     </staffDef>
+                     <staffDef num="6" numbase="8" n="4" lines="5" clef.shape="F" clef.line="4" meter.count="6" meter.unit="8">
+                        <label>Violoncello</label>
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="96">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="note_192" dur="8" oct="5" pname="a" grace="unknown" stem.dir="up" accid="f" />
+                           <note xml:id="note_198" dur="4" oct="5" pname="g" tstamp="1" />
+                           <beam>
+                              <note dur="8" oct="5" pname="f" tstamp="2.5" accid="s" />
+                              <note xml:id="note_216" dur="8" oct="5" pname="g" tstamp="3.25" />
+                           </beam>
+                           <beam>
+                              <note xml:id="note_228" dur="8" oct="5" pname="b" tstamp="4" accid="f" />
+                              <note dur="8" oct="5" pname="a" tstamp="4.75" accid="f" />
+                              <note dur="8" oct="5" pname="g" tstamp="5.5" />
+                              <note xml:id="note_246" dur="8" oct="5" pname="f" tstamp="6.25" accid="n" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="2">
+                        <layer n="1">
+                           <rest dur="8" tstamp="1" />
+                           <beam>
+                              <chord dur="8" tstamp="2">
+                                 <note oct="4" pname="e" accid="f" />
+                                 <note oct="3" pname="g" />
+                              </chord>
+                              <chord dur="8" tstamp="3">
+                                 <note oct="4" pname="e" accid.ges="f" />
+                                 <note oct="3" pname="g" />
+                              </chord>
+                           </beam>
+                           <rest dur="8" tstamp="4" />
+                           <beam>
+                              <chord dur="8" tstamp="5">
+                                 <note oct="4" pname="f" />
+                                 <note oct="3" pname="a" accid="f" />
+                              </chord>
+                              <chord dur="8" tstamp="6">
+                                 <note oct="4" pname="f" />
+                                 <note oct="3" pname="a" accid.ges="f" />
+                              </chord>
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="3">
+                        <layer n="1">
+                           <rest dur="8" tstamp="1" />
+                           <beam>
+                              <note dur="8" oct="4" pname="c" tstamp="2" />
+                              <note dur="8" oct="4" pname="c" tstamp="3" />
+                           </beam>
+                           <rest dur="8" tstamp="4" />
+                           <beam>
+                              <note dur="8" oct="4" pname="d" tstamp="5" />
+                              <note dur="8" oct="4" pname="d" tstamp="6" />
+                           </beam>
+                        </layer>
+                     </staff>
+                     <staff n="4">
+                        <layer n="1">
+                           <note dur="4" oct="3" pname="c" tstamp="1" />
+                           <rest dur="8" tstamp="3" />
+                           <note dur="4" oct="3" pname="f" tstamp="4" />
+                           <rest dur="8" tstamp="6" />
+                        </layer>
+                     </staff>
+                     <slur staff="1" startid="#note_192" endid="#note_198" />
+                     <slur staff="1" startid="#note_198" endid="#note_216" />
+                     <slur staff="1" startid="#note_228" endid="#note_246" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>

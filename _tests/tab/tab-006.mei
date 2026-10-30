@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Guitar TAB ties and tuplet placement</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef meter.count="1" meter.unit="4">
+                  <staffGrp>
+                     <staffDef n="1" notationtype="tab.guitar" scale="150%" lines="6" clef.shape="TAB" clef.line="5" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <tabGrp dur="8">
+                              <note xml:id="a1" tab.fret="2" tab.course="1" />
+                              <note xml:id="a2" tab.fret="0" tab.course="2" />
+                              <note xml:id="a3" tab.fret="2" tab.course="3" />
+                              <note xml:id="a4" tab.fret="1" tab.course="4" />
+                              <note xml:id="a5" tab.fret="2" tab.course="5" />
+                           </tabGrp>
+                           <tabGrp dur="8">
+                              <note xml:id="b1" tab.fret="2" tab.course="1" />
+                              <note xml:id="b2" tab.fret="0" tab.course="2" />
+                              <note xml:id="b3" tab.fret="2" tab.course="3" />
+                              <note xml:id="b4" tab.fret="1" tab.course="4" />
+                              <note xml:id="b5" tab.fret="2" tab.course="5" />
+                           </tabGrp>
+                        </layer>
+                     </staff>
+                     <tie startid="#a1" endid="#b1" curvedir="above" />
+                     <tie startid="#a2" endid="#b2" curvedir="above" />
+                     <tie startid="#a3" endid="#b3" curvedir="above" />
+                     <tie startid="#a4" endid="#b4" curvedir="above" />
+                     <tie startid="#a5" endid="#b5" curvedir="above" />
+                  </measure>
+                  <measure n="2">
+                     <staff n="1">
+                        <layer n="1">
+                           <tuplet num="3" numbase="2" num.place="below" bracket.visible="false">
+                              <tabGrp dur="8">
+                                 <note tab.fret="7" tab.course="1" />
+                              </tabGrp>
+                              <tabGrp dur="8">
+                                 <note tab.fret="0" tab.course="2" />
+                              </tabGrp>
+                              <tabGrp dur="8">
+                                 <note tab.fret="0" tab.course="3" />
+                              </tabGrp>
+                           </tuplet>
+                        </layer>
+                     </staff>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
