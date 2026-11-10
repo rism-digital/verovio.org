@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>SVG bounding boxes of text elements</title>
+            <respStmt>
+               <persName role="encoder">Ed Wei</persName>
+            </respStmt>
+         </titleStmt>
+         <pubStmt>
+            <date isodate="2026-11-09" type="encoding-date">2026-11-09</date>
+            <pubPlace>
+               <ref target="https://github.com/rism-digital/verovio/issues/3375" />
+            </pubPlace>
+         </pubStmt>
+         <seriesStmt>
+            <title>Verovio test suite</title>
+         </seriesStmt>
+         <notesStmt>
+            <annot>With svgBoundingBoxes, text elements (dir, rend, syl and their text) are expected to have a bounding box around the text. The boxes are made visible with svgCss: element boxes in red, text and syl boxes in blue. The @label titles must not change the rendering.</annot>
+         </notesStmt>
+      </fileDesc>
+      <encodingDesc>
+         <appInfo>
+            <application version="6.5.0-dev" label="0">
+               <name>Verovio</name>
+            </application>
+         </appInfo>
+      </encodingDesc>
+      <extMeta><![CDATA[ { "svgBoundingBoxes": true, "svgCss": "g.bounding-box rect { stroke: red; stroke-width: 10px; } g.text.bounding-box rect, g.syl.bounding-box rect { stroke: blue; }" }]]></extMeta>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv>
+            <score>
+               <scoreDef>
+                  <staffGrp>
+                     <staffDef n="1" lines="5" clef.shape="G" clef.line="2" meter.count="4" meter.unit="4" />
+                  </staffGrp>
+               </scoreDef>
+               <section>
+                  <measure n="1">
+                     <staff n="1">
+                        <layer n="1">
+                           <note xml:id="n1" dur="4" oct="4" pname="g">
+                              <verse n="1">
+                                 <syl wordpos="i" con="d" label="syl-label">Hal</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>Ty<rend fontweight="bold">pe</rend>
+                                 </syl>
+                              </verse>
+                           </note>
+                           <note xml:id="n2" dur="4" oct="4" pname="a">
+                              <verse n="1">
+                                 <syl wordpos="t">le</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl con="b">go</syl>
+                                 <syl>in</syl>
+                              </verse>
+                           </note>
+                           <note xml:id="n3" dur="2" oct="5" pname="c">
+                              <verse n="1">
+                                 <syl>jah</syl>
+                              </verse>
+                              <verse n="2">
+                                 <syl>Oh!</syl>
+                              </verse>
+                           </note>
+                        </layer>
+                     </staff>
+                     <dir staff="1" tstamp="1" place="above" label="dir-label">Andante</dir>
+                     <dir staff="1" tstamp="3" place="above">
+                        <rend fontstyle="italic">dolce</rend>
+                     </dir>
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
