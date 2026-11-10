@@ -24,8 +24,7 @@ tools-active: test-suite
                     {% endif %}
                 {% endfor %}
 
-                {% assign categories = categories | uniq | sort | where_exp: "item", "item != 'midi'" %}
-                {% for category in categories %}
+{% assign categories = categories | uniq | sort | where_exp: "item", "item != 'midi' and item != 'musicxml'" %}                {% for category in categories %}
                     <a class="list-group-item" href="{{ site.url }}/test-suite.xhtml?cat={{category}}">{{ category | capitalize }}</a>
                 {% endfor %}
             </div>
