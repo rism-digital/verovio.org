@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
+   <meiHead>
+      <fileDesc>
+         <titleStmt>
+            <title>Octave ending on a grace note</title>
+         </titleStmt>
+         <pubStmt />
+      </fileDesc>
+   </meiHead>
+   <music>
+      <body>
+         <mdiv xml:id="moqsi69">
+            <score xml:id="njft1g2">
+               <scoreDef xml:id="qmlovzj">
+                  <staffGrp xml:id="r13jbbey">
+                     <staffDef xml:id="spw8dyc" n="1" lines="5">
+                        <clef xml:id="zmyzslu" shape="G" line="2" />
+                        <meterSig xml:id="a6ug31v" count="4" unit="4" />
+                     </staffDef>
+                  </staffGrp>
+               </scoreDef>
+               <section xml:id="b1bcu6sn">
+                  <measure xml:id="c1k4iy3e" n="1">
+                     <staff xml:id="lzosgrv" n="1">
+                        <layer xml:id="m1q84ocf" n="1">
+                           <note xml:id="a1" dur="4" oct="5" pname="c" />
+                           <note xml:id="g1" dur="8" oct="5" pname="d" grace="unacc" />
+                           <note xml:id="a2" dur="4" oct="5" pname="e" />
+                           <note xml:id="a3" dur="4" oct="5" pname="f" />
+                           <note xml:id="a4" dur="4" oct="5" pname="g" />
+                        </layer>
+                     </staff>
+                     <octave xml:id="o1" staff="1" startid="#a1" endid="#g1" dis="8" dis.place="above" />
+                  </measure>
+               </section>
+            </score>
+         </mdiv>
+      </body>
+   </music>
+</mei>
