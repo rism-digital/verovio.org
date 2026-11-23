@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://music-encoding.org/schema/5.1/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="5.1">
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://music-encoding.org/schema/dev/mei-all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="6.0-dev">
    <meiHead>
       <fileDesc>
          <titleStmt>
@@ -13,7 +13,7 @@
             </respStmt>
             <date isodate="2021-01-27">14 Nov 2025</date>
             <pubPlace>
-               <ref target="https://github.com/rism-digital/verovio/issues/2002" />
+               <ref target="https://github.com/rism-digital/verovio/issues/2002"/>
             </pubPlace>
          </pubStmt>
          <seriesStmt>
@@ -35,7 +35,7 @@
                <scoreDef midi.bpm="400">
                   <staffGrp>
                      <staffDef n="1" lines="5">
-                        <clef shape="G" line="2" />
+                        <clef shape="G" line="2"/>
                      </staffDef>
                   </staffGrp>
                </scoreDef>
@@ -43,10 +43,10 @@
                   <measure>
                      <staff n="1">
                         <layer n="1">
-                           <rest dur="2" ploc="a" oloc="5" />
-                           <rest dur="1" ploc="a" oloc="5" />
-                           <rest dur="breve" ploc="a" oloc="5" />
-                           <rest dur="breve" ploc="f" oloc="5" />
+                           <rest dur="2" ploc="a" oloc="5"/>
+                           <rest dur="1" ploc="a" oloc="5"/>
+                           <rest dur="breve" ploc="a" oloc="5"/>
+                           <rest dur="breve" ploc="f" oloc="5"/>
                         </layer>
                      </staff>
                   </measure>
