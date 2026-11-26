@@ -1,4 +1,3 @@
-[submodule "musicxmlTestSuite"]
-	path = musicxmlTestSuite
-	url = https://github.com/w3c-cg/musicxmlTestSuite
-	branch = main
+[submodule "verovio-test-suite"]
+	path = _tests
+	url = https://github.com/rism-digital/verovio-test-suite
